@@ -1,185 +1,207 @@
-let questions = [];
+const githubAPI = "https://api.github.com/repos/h455en/cct-mcq/contents/Collection";
+const rawBaseURL = "https://raw.githubusercontent.com/h455en/cct-mcq/main/Collection/";
+
+let quizzes = {};  // To hold all quizzes
+let currentQuiz = null; // To store the selected quiz
+let userAnswers = [];  // To store user's answers
 let currentQuestionIndex = 0;
-let userAnswers = [];
-let remainingTime = 0;
-let totalQuizTime = 0;
-let timer;
+let timerInterval;
+let totalTime;
 
-const fileInput = document.getElementById('file-input');
-const startBtn = document.getElementById('start-btn');
-const quizContainer = document.getElementById('quiz-container');
-const questionContainer = document.getElementById('question-container');
-const timerBar = document.getElementById('timer-bar');
-const nextBtn = document.getElementById('next-btn');
-const answersTextarea = document.getElementById('answers');
-const copyBtn = document.getElementById('copy-btn');
-const submitSection = document.getElementById('submit-section');
-const alertContainer = document.getElementById('alert-container');
-const questionProgress = document.getElementById('question-progress');
-const questionProgressBar = document.getElementById('question-progress-bar');
-const scoreDisplay = document.getElementById('score-display');
+// Elements
+const quizDropdown = document.getElementById("quizDropdown");
+const uploadFile = document.getElementById("uploadFile");
+const startQuizBtn = document.getElementById("startQuizBtn");
+const quizSelectionPage = document.getElementById("quiz-selection");
+const quizRunPage = document.getElementById("quiz-run");
+const quizEvaluationPage = document.getElementById("quiz-evaluation");
+const questionTitle = document.getElementById("questionTitle");
+const optionsContainer = document.getElementById("optionsContainer");
+const nextBtn = document.getElementById("nextBtn");
+const progressBar = document.getElementById("progressBar");
+const timer = document.getElementById("timer");
+const resultsArea = document.getElementById("resultsArea");
+const userAnswerArea = document.getElementById("userAnswers");
+const correctAnswerArea = document.getElementById("correctAnswers");
 
-fileInput.addEventListener('change', function (event) {
-    const file = event.target.files[0];
-    if (file && file.name.endsWith('.json')) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
+// Fetch quizzes from GitHub
+async function fetchQuizzes() {
+    try {
+        const response = await fetch(githubAPI);
+        const files = await response.json();
+
+        if (!Array.isArray(files)) {
+            throw new Error("Unable to load quiz files.");
+        }
+
+        const dropdownHTML = files.map(file => {
+            return `<option value="${file.name}">${file.name}</option>`;
+        }).join("");
+        quizDropdown.innerHTML = `<option value="" disabled selected>Choose a Quiz</option>` + dropdownHTML;
+
+        // Preload quiz data
+        files.forEach(async file => {
             try {
-                questions = JSON.parse(e.target.result);
-                document.getElementById('file-info').innerText = `${questions.length} questions loaded.`;
-                startBtn.disabled = false;
-            } catch {
-                showAlert('danger', 'Invalid JSON file');
+                const quizResponse = await fetch(rawBaseURL + file.name);
+                const quizData = await quizResponse.json();
+                quizzes[file.name] = preprocessQuizData(quizData); // Ensure we preprocess each quiz
+            } catch (error) {
+                console.error(`Error loading quiz file ${file.name}:`, error);
             }
-        };
-        reader.readAsText(file);
-    }
-});
-
-startBtn.addEventListener('click', function () {
-    totalQuizTime = questions.length * 30;
-    remainingTime = totalQuizTime;
-    document.getElementById('loader-container').style.display = 'none';
-    quizContainer.style.display = 'block';
-    generateQuiz();
-    startTimer();
-    updateQuestionProgress();
-});
-
-nextBtn.addEventListener('click', handleNextQuestion);
-
-function generateQuiz() {
-    nextBtn.style.display = 'none';
-    const currentQuestion = questions[currentQuestionIndex];
-    questionContainer.innerHTML = `<div class="question">${currentQuestionIndex + 1}. ${currentQuestion.question}</div>`;
-    const optionsList = document.createElement('ul');
-    optionsList.classList.add('options');
-    currentQuestion.options.forEach((option, i) => {
-        const optionItem = document.createElement('li');
-        optionItem.classList.add('option-item');
-        optionItem.innerHTML = `
-            <input type="radio" name="option" id="option${i}" value="${option}">
-            <label for="option${i}">${String.fromCharCode(65 + i)}. ${option}</label>`;
-        optionItem.addEventListener('click', function () {
-            userAnswers[currentQuestionIndex] = option;
-            highlightSelection(optionItem);
-            nextBtn.style.display = 'block';
         });
-        optionsList.appendChild(optionItem);
-    });
-    questionContainer.appendChild(optionsList);
-}
-
-function handleNextQuestion() {
-    if (currentQuestionIndex < questions.length - 1) {
-        currentQuestionIndex++;
-        generateQuiz();
-        updateQuestionProgress();
-    } else {
-        endQuiz();
+    } catch (error) {
+        console.error("Error fetching quiz data:", error);
     }
 }
 
-function highlightSelection(selectedItem) {
-    const options = document.querySelectorAll('.option-item');
-    options.forEach((option) => option.classList.remove('selected'));
-    selectedItem.classList.add('selected');
+// Process and store correct answers
+function preprocessQuizData(quizData) {
+    quizData.forEach(q => {
+        const correctAnswerLetter = getOptionLetter(q.correct_index);
+        q.correctAnswer = correctAnswerLetter;  // Store correct answer directly in each question
+    });
+    console.log("Processed Quiz Data:", quizData); // Debugging log
+    return quizData; // Return processed quiz data
 }
 
-function startTimer() {
-    clearInterval(timer);
-    timer = setInterval(() => {
-        remainingTime--;
-        updateTimer();
-        if (remainingTime <= 0) {
-            clearInterval(timer);
-            endQuiz();
+// Convert index to option letter (A, B, C, D)
+function getOptionLetter(index) {
+    return ['A', 'B', 'C', 'D'][index];
+}
+
+// Handle quiz start
+startQuizBtn.addEventListener("click", () => {
+    const selectedQuiz = quizDropdown.value;
+
+    if (uploadFile.files.length > 0) {
+        const file = uploadFile.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function (event) {
+            const jsonData = JSON.parse(event.target.result);
+            currentQuiz = preprocessQuizData(jsonData);
+            console.log("Uploaded Quiz:", currentQuiz); // Debugging log
+            startQuiz();
+        };
+
+        reader.readAsText(file);
+        return;
+    }
+
+    if (!selectedQuiz) return alert("Please select a quiz!");
+
+    currentQuiz = quizzes[selectedQuiz];
+    console.log("Selected Quiz:", currentQuiz); // Debugging log
+
+    if (!currentQuiz) return alert("Quiz not loaded yet, please try again.");
+
+    startQuiz();
+});
+
+// Start Quiz
+function startQuiz() {
+    if (!currentQuiz || currentQuiz.length === 0) {
+        console.error("Error: No quiz data loaded!");
+        return alert("Quiz data not loaded properly.");
+    }
+
+    quizSelectionPage.classList.add("d-none");
+    quizRunPage.classList.remove("d-none");
+
+    currentQuestionIndex = 0;
+    userAnswers = []; // Reset user answers
+    startTimer(currentQuiz.length * 30);
+    loadQuestion();
+}
+
+// Load Question
+function loadQuestion() {
+    const currentQuestion = currentQuiz[currentQuestionIndex];
+    questionTitle.innerText = `Q${currentQuestionIndex + 1}: ${currentQuestion.question}`;
+    optionsContainer.innerHTML = currentQuestion.options.map((option, index) => `
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="option" value="${index}" id="option${index}">
+            <label class="form-check-label" for="option${index}">${option}</label>
+        </div>
+    `).join("");
+
+    updateProgressBar();
+}
+
+// Record User's Answer (As 'A', 'B', 'C', 'D')
+nextBtn.addEventListener("click", () => {
+    const selectedOption = document.querySelector('input[name="option"]:checked');
+    if (!selectedOption) return alert("Please select an option!");
+
+    const selectedIndex = parseInt(selectedOption.value);
+    userAnswers[currentQuestionIndex] = getOptionLetter(selectedIndex); // Store the answer as 'A', 'B', 'C', 'D'
+
+    currentQuestionIndex++;
+
+    if (currentQuestionIndex < currentQuiz.length) {
+        loadQuestion();
+    } else {
+        showEvaluation(); // Call evaluation when all questions are answered
+    }
+});
+
+// Timer Function with mm:ss format
+function startTimer(duration) {
+    totalTime = duration;
+    let timeLeft = totalTime;
+    timerInterval = setInterval(() => {
+        let minutes = Math.floor(timeLeft / 60);
+        let seconds = timeLeft % 60;
+        timer.innerText = `Time Left: ${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        timeLeft--;
+
+        if (timeLeft < 0) {
+            clearInterval(timerInterval);
+            showEvaluation();
         }
     }, 1000);
 }
 
-function updateTimer() {
-    const minutes = Math.floor(remainingTime / 60);
-    const seconds = remainingTime % 60;
-    timerBar.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-    timerBar.style.width = `${(remainingTime / totalQuizTime) * 100}%`;
+// Progress Bar
+function updateProgressBar() {
+    const progress = ((currentQuestionIndex + 1) / currentQuiz.length) * 100;
+    progressBar.style.width = `${progress}%`;
+    progressBar.innerText = `${currentQuestionIndex + 1}/${currentQuiz.length}`;
 }
 
+//------------
+// Show Evaluation
+function showEvaluation() {
+    clearInterval(timerInterval);
+    quizRunPage.classList.add("d-none");
+    quizEvaluationPage.classList.remove("d-none");
 
-function updateQuestionProgress() {
-    // Update the text showing the current question and total questions
-    questionProgress.textContent = `${currentQuestionIndex + 1}/${questions.length}`;
+    let score = 0;
+    let userAnswersHTML = "";
 
-    // Calculate the percentage of progress
-    const progressPercentage = ((currentQuestionIndex + 1) / questions.length) * 100;
+    // Prepare correctAnswers array based on correct_index from currentQuiz
+    const correctAnswers = currentQuiz.map(q => q.correct_index);
 
-    // Update the progress bar style
-    questionProgressBar.style.width = `${progressPercentage}%`;
-    questionProgressBar.setAttribute('aria-valuenow', Math.round(progressPercentage)); // For accessibility
-    questionProgressBar.textContent = `${currentQuestionIndex + 1}/${questions.length}`;
-}
+    currentQuiz.forEach((q, index) => {
+        const userAnswer = userAnswers[index] || "No Answer";
+        const correctAnswer = correctAnswers[index];  // Get the correct answer for the current question
+        const isCorrect = userAnswer === correctAnswer;
 
+        if (isCorrect) score++;
 
-
-
-function endQuiz() {
-    quizContainer.style.display = 'none';
-    submitSection.style.display = 'block';
-
-    // Calculate score
-    const correctCount = calculateScore();
-    const scorePercentage = Math.round((correctCount / questions.length) * 100);
-    scoreDisplay.textContent = `You scored: ${scorePercentage}% (${correctCount}/${questions.length})`;
-
-    // Generate detailed results with question numbers
-    let results = '';
-    questions.forEach((q, i) => {
-        const correctOptionIndex = q.options.indexOf(q.correct);
-        const userAnswerIndex = q.options.indexOf(userAnswers[i]);
-        const isCorrect = userAnswerIndex === correctOptionIndex;
-
-        const resultSymbol = isCorrect ? '✅' : '❌';
-        const userOptionLetter = userAnswerIndex !== -1 ? String.fromCharCode(65 + userAnswerIndex) : 'N/A'; // Handle unanswered cases
-
-        results += `${i + 1}.${userOptionLetter} ${resultSymbol}\n`;
+        userAnswersHTML += `
+            <div>
+                <strong>${index + 1}.</strong> ${userAnswer} 
+                <span class="${isCorrect ? 'text-success' : 'text-danger'}">
+                    ${isCorrect ? '✅' : '❌'}
+                </span>
+            </div>
+        `;
     });
 
-    // Show results in the textarea
-    answersTextarea.value = results.trim();
-
-    // Expand textarea to fit content
-    answersTextarea.style.height = 'auto';
-    answersTextarea.style.height = `${answersTextarea.scrollHeight}px`;
+    resultsArea.innerHTML = `<h4>Your Score: ${score} / ${currentQuiz.length}</h4>`;
+    userAnswerArea.innerHTML = userAnswersHTML;
 }
 
-
-
-
-function calculateScore() {
-    let correctCount = 0;
-    questions.forEach((question, index) => {
-        if (userAnswers[index] === question.correct) {
-            correctCount++;
-        }
-    });
-    return correctCount;
-}
-
-
-copyBtn.addEventListener('click', function () {
-    navigator.clipboard.writeText(answersTextarea.value)
-        .then(() => showAlert('success', 'Answers copied to clipboard!'))
-        .catch(() => showAlert('danger', 'Failed to copy answers.'));
-});
-
-function showAlert(type, message) {
-    const alert = document.createElement('div');
-    alert.classList.add('alert', `alert-${type}`);
-    alert.innerText = message;
-    alertContainer.appendChild(alert);
-
-    // Automatically dismiss after 5 seconds
-    setTimeout(() => {
-        alert.remove();
-    }, 5000);
-}
+// Load quizzes on page load
+fetchQuizzes();
