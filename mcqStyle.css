@@ -1,100 +1,91 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Fira+Sans:wght@400;500&display=swap');
+
 body {
-    font-family: 'Roboto', sans-serif;
     background-color: #f8f9fa;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-    font-size: 1.5rem;
+h2,
+h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#questionTitle {
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    color: #212529;
-    margin-bottom: 20px;
 }
 
-#quiz-container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
-    margin-bottom: 20px;
+#optionsContainer {
+    font-family: 'Fira Sans', sans-serif;
 }
 
-.question {
-    margin-bottom: 20px;
+#timer {
     font-size: 1.2rem;
-    font-weight: bold;
-    color: #212529;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
+    color: red;
 }
 
-.options {
-    padding: 0;
-    margin: 0;
+.progress-bar {
+    transition: width 0.5s;
 }
 
-.option-item {
-    list-style: none;
-    padding: 15px;
-    margin-bottom: 10px;
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.text-area {
+    width: 48%;
+    padding: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    min-height: 100px;
     border-radius: 5px;
-    cursor: pointer;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    resize: both;
+    box-sizing: border-box;
+}
+
+.correct {
+    background-color: #d4edda;
+}
+
+.incorrect {
+    background-color: #f8d7da;
+}
+
+/* Custom styling for option cards */
+.option-card {
+    border: 1px solid #ddd;
+    /* Light border */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    padding: 10px;
     transition: all 0.3s ease;
 }
 
-.option-item:hover {
-    background-color: #e9ecef;
+.option-card:hover {
+    background-color: #f9f9f9;
+    /* Light background on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    /* Stronger shadow on hover */
 }
 
-.option-item.selected {
-    background-color: #d1e7dd;
-    border-color: #0f5132;
+.option-card input[type="radio"] {
+    margin-right: 10px;
+    /* Space between radio and label */
 }
 
-.progress {
-    height: 20px;
+.option-card .card-body {
+    padding: 10px;
 }
 
-
-#question-progress-bar {
-    height: 25px;
-    font-size: 1rem;
-    line-height: 25px;
-    text-align: center;
-    transition: width 0.3s ease;
-}
-
-
-#submit-section {
-    display: none;
-}
-
-textarea {
-    width: 100%;
-    height: 100px;
-    resize: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-    #quiz-container {
-        padding: 15px;
-    }
-
-    .question {
-        font-size: 1rem;
-    }
-
-    .option-item {
-        font-size: 0.9rem;
-    }
+/* Optional: Add some padding to question text */
+#questionTitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
 }
