@@ -1,0 +1,62 @@
+[
+  {
+    "question_number": 1,
+    "question": "Which protocol is used for centralized authentication of remote users and includes accounting services?",
+    "options": [
+      "Kerberos",
+      "TACACS+",
+      "RADIUS",
+      "IPsec"
+    ],
+    "correct_index": "C",
+    "explanation": "RADIUS is a protocol that provides centralized authentication, authorization, and accounting (AAA) services for remote users."
+  },
+  {
+    "question_number": 2,
+    "question": "Which of the following is an advantage of TACACS+ over RADIUS?",
+    "options": [
+      "Stronger encryption for the entire payload",
+      "Better performance in wireless networks",
+      "Support for IPsec authentication",
+      "Uses UDP for faster communication"
+    ],
+    "correct_index": "A",
+    "explanation": "TACACS+ encrypts the entire payload, making it more secure than RADIUS, which only encrypts the password field."
+  },
+  {
+    "question_number": 3,
+    "question": "Which protocol uses tickets for secure authentication over an untrusted network?",
+    "options": [
+      "Kerberos",
+      "S/MIME",
+      "IPsec",
+      "LDAP"
+    ],
+    "correct_index": "A",
+    "explanation": "Kerberos uses tickets issued by a trusted Key Distribution Center (KDC) for secure authentication."
+  },
+  {
+    "question_number": 4,
+    "question": "What is the main function of DNSSEC?",
+    "options": [
+      "Encrypt DNS queries",
+      "Authenticate the origin of DNS data",
+      "Enable faster DNS resolution",
+      "Prevent man-in-the-middle attacks"
+    ],
+    "correct_index": "B",
+    "explanation": "DNSSEC ensures the authenticity and integrity of DNS data by adding digital signatures to DNS records."
+  },
+  {
+    "question_number": 5,
+    "question": "Which secure email protocol provides end-to-end encryption using certificates?",
+    "options": [
+      "POP3S",
+      "S/MIME",
+      "SMTP",
+      "PGP"
+    ],
+    "correct_index": "B",
+    "explanation": "S/MIME uses certificates for end-to-end email encryption and ensures data integrity."
+  }
+]

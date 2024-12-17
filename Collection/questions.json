@@ -1,0 +1,102 @@
+[
+    {
+        "question": "What is the primary reason Telnet is considered insecure for remote access?",
+        "options": [
+            "It uses weak encryption algorithms",
+            "It transmits data in plaintext, including credentials",
+            "It is vulnerable to denial-of-service attacks",
+            "It requires manual key management for encryption"
+        ],
+        "correct": "It transmits data in plaintext, including credentials"
+    },
+    {
+        "question": "Which type of log is most critical for identifying DNS poisoning or redirection attacks?",
+        "options": [
+            "Web server logs",
+            "DNS server logs",
+            "Firewall logs",
+            "Endpoint protection logs"
+        ],
+        "correct": "DNS server logs"
+    },
+    {
+        "question": "What is a key advantage of using Kismet over other wireless network tools like Aircrack-ng?",
+        "options": [
+            "It actively cracks Wi-Fi passwords",
+            "It can be used to perform packet injection attacks",
+            "It passively detects wireless access points and identifies rogue devices",
+            "It secures wireless networks by enforcing WPA3"
+        ],
+        "correct": "It passively detects wireless access points and identifies rogue devices"
+    },
+    {
+        "question": "In a Smurf attack, what role does ICMP play?",
+        "options": [
+            "It is used to flood the victim's system with malformed packets",
+            "It is used to spoof DNS requests for redirection",
+            "It amplifies the attack by broadcasting packets to a network’s hosts",
+            "It establishes unauthorized connections to the victim’s system"
+        ],
+        "correct": "It amplifies the attack by broadcasting packets to a network’s hosts"
+    },
+    {
+        "question": "What is the main difference between split tunneling and full tunneling in VPNs?",
+        "options": [
+            "Split tunneling encrypts all traffic, while full tunneling encrypts selected traffic",
+            "Split tunneling allows direct access to local networks while routing only specific traffic through the VPN",
+            "Full tunneling requires dual authentication, while split tunneling does not",
+            "Split tunneling is designed for secure browsing, while full tunneling is for secure file transfers"
+        ],
+        "correct": "Split tunneling allows direct access to local networks while routing only specific traffic through the VPN"
+    },
+    {
+        "question": "Which of the following scenarios is the best use case for tokenization?",
+        "options": [
+            "Securing files transmitted over a VPN",
+            "Protecting sensitive payment card information in a database",
+            "Generating temporary access tokens for API authentication",
+            "Encrypting user credentials stored on a web server"
+        ],
+        "correct": "Protecting sensitive payment card information in a database"
+    },
+    {
+        "question": "Why is it critical to review and monitor DNS server logs in a corporate environment?",
+        "options": [
+            "To prevent brute-force login attempts",
+            "To detect and mitigate DNS-based attacks such as DNS poisoning",
+            "To monitor internet usage for policy violations",
+            "To identify vulnerabilities in encrypted communications"
+        ],
+        "correct": "To detect and mitigate DNS-based attacks such as DNS poisoning"
+    },
+    {
+        "question": "What is one of the most effective ways to detect and prevent rogue wireless access points?",
+        "options": [
+            "Configuring strict firewall rules",
+            "Conducting regular physical inspections of the premises",
+            "Using wireless intrusion detection systems (WIDS) like Kismet",
+            "Disabling unused network ports"
+        ],
+        "correct": "Using wireless intrusion detection systems (WIDS) like Kismet"
+    },
+    {
+        "question": "Why is split tunneling considered a security risk?",
+        "options": [
+            "It bypasses VPN encryption for certain traffic, potentially exposing sensitive data",
+            "It allows unauthorized devices to connect to the VPN",
+            "It routes all traffic through a less secure backup network",
+            "It disables encryption for local traffic within the network"
+        ],
+        "correct": "It bypasses VPN encryption for certain traffic, potentially exposing sensitive data"
+    },
+    {
+        "question": "In the context of securing remote access, what is the most appropriate action for systems still using Telnet?",
+        "options": [
+            "Apply additional encryption layers over Telnet",
+            "Configure Telnet to use non-standard ports",
+            "Disable Telnet and replace it with SSH",
+            "Limit Telnet access to trusted IP addresses"
+        ],
+        "correct": "Disable Telnet and replace it with SSH"
+    }
+]

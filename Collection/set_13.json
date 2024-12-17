@@ -1,0 +1,152 @@
+[
+  {
+    "question": "While investigating a suspected breach, you discover multiple failed login attempts in the security logs followed by a successful login. What is your first step?",
+    "options": [
+      "Block the user account immediately",
+      "Initiate a full network scan for threats",
+      "Contact the user to confirm the activity",
+      "Review the source IP and device details of the login"
+    ],
+    "correct": "Review the source IP and device details of the login"
+  },
+  {
+    "question": "During an incident response, a team member reports unusual traffic to a remote IP address. Which tool would you use to analyze the network traffic in real-time?",
+    "options": [
+      "Wireshark",
+      "Nmap",
+      "Autopsy",
+      "FTK Imager"
+    ],
+    "correct": "Wireshark"
+  },
+  {
+    "question": "A forensic investigation requires acquiring a disk image from a suspected compromised machine. Which of the following should you ensure?",
+    "options": [
+      "The disk image is compressed to save storage space",
+      "The original disk is not altered during the process",
+      "The disk image is encrypted immediately after acquisition",
+      "Only critical files are imaged to save time"
+    ],
+    "correct": "The original disk is not altered during the process"
+  },
+  {
+    "question": "You are tasked with recovering deleted files from a Linux server. Which tool would be most appropriate?",
+    "options": [
+      "Autopsy",
+      "Metasploit",
+      "Netcat",
+      "tcpdump"
+    ],
+    "correct": "Autopsy"
+  },
+  {
+    "question": "A malware analysis reveals encrypted traffic being sent to an unknown IP. What would be your next step?",
+    "options": [
+      "Block the IP address at the firewall",
+      "Decrypt the traffic using the suspected malware",
+      "Monitor the traffic for more details",
+      "Terminate the affected process on the host"
+    ],
+    "correct": "Block the IP address at the firewall"
+  },
+  {
+    "question": "A user reports that their system is unusually slow, and pop-ups are appearing frequently. What is the most appropriate first step?",
+    "options": [
+      "Disconnect the system from the network",
+      "Run a complete system malware scan",
+      "Check the browser extensions for malicious plugins",
+      "Inspect system logs for unusual activity"
+    ],
+    "correct": "Disconnect the system from the network"
+  },
+  {
+    "question": "You need to collect volatile data from a running system. Which of the following would you collect first?",
+    "options": [
+      "Memory dump",
+      "System logs",
+      "Network connections",
+      "Running processes"
+    ],
+    "correct": "Memory dump"
+  },
+  {
+    "question": "A critical system is compromised, and you need to perform live forensics. What should be your primary concern?",
+    "options": [
+      "Minimizing system downtime",
+      "Maintaining the integrity of collected data",
+      "Performing a root cause analysis immediately",
+      "Eradicating the detected malware"
+    ],
+    "correct": "Maintaining the integrity of collected data"
+  },
+  {
+    "question": "While monitoring network traffic, you notice a large amount of outbound traffic from a single host. What could this indicate?",
+    "options": [
+      "A Distributed Denial of Service (DDoS) attack",
+      "An internal backup operation",
+      "Data exfiltration",
+      "A hardware malfunction"
+    ],
+    "correct": "Data exfiltration"
+  },
+  {
+    "question": "A compromised system has been identified. Before shutting it down, what critical step must you perform?",
+    "options": [
+      "Capture a memory dump",
+      "Notify the affected user",
+      "Disable the user account",
+      "Remove the system from the network"
+    ],
+    "correct": "Capture a memory dump"
+  },
+  {
+    "question": "A forensic image of a disk reveals an encrypted partition. What is the most appropriate action?",
+    "options": [
+      "Attempt to decrypt using known credentials",
+      "Use brute force to break the encryption",
+      "Analyze unencrypted portions for clues",
+      "Skip the encrypted partition to save time"
+    ],
+    "correct": "Analyze unencrypted portions for clues"
+  },
+  {
+    "question": "A server is experiencing an unknown issue, and logs are required for analysis. Which log file would you prioritize on a Linux server?",
+    "options": [
+      "/var/log/messages",
+      "/var/log/secure",
+      "/var/log/httpd/access_log",
+      "/var/log/boot.log"
+    ],
+    "correct": "/var/log/messages"
+  },
+  {
+    "question": "During a forensic investigation, you need to ensure that timestamps on files are accurate. What process would you follow?",
+    "options": [
+      "Synchronize system clocks across all systems",
+      "Manually verify each file’s timestamp",
+      "Ignore timestamps as they can be altered",
+      "Correlate timestamps with network logs"
+    ],
+    "correct": "Correlate timestamps with network logs"
+  },
+  {
+    "question": "An organization suspects unauthorized changes in their Group Policy Objects (GPOs). Which tool should be used for auditing GPO changes?",
+    "options": [
+      "Group Policy Management Console",
+      "Wireshark",
+      "Event Viewer",
+      "Active Directory Users and Computers"
+    ],
+    "correct": "Group Policy Management Console"
+  },
+  {
+    "question": "A forensic team is investigating a suspected insider threat. What is the best first step?",
+    "options": [
+      "Review user activity logs",
+      "Conduct interviews with employees",
+      "Scan the network for malware",
+      "Suspend the suspected user’s account"
+    ],
+    "correct": "Review user activity logs"
+  }
+]

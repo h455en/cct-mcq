@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Which of the following is an example of a technical control in network security?",
+        "options": [
+            "Security awareness training",
+            "Firewall configurations",
+            "Employee background checks",
+            "Incident response planning"
+        ],
+        "correct": "Firewall configurations"
+    },
+    {
+        "question": "What is the primary purpose of a vulnerability scanner in a network security assessment?",
+        "options": [
+            "To identify misconfigured devices",
+            "To detect and block malicious traffic",
+            "To monitor real-time network traffic",
+            "To scan for known security weaknesses"
+        ],
+        "correct": "To scan for known security weaknesses"
+    },
+    {
+        "question": "Which network troubleshooting tool is commonly used to trace the route of packets across a network?",
+        "options": [
+            "Ping",
+            "Traceroute",
+            "Netstat",
+            "Wireshark"
+        ],
+        "correct": "Traceroute"
+    },
+    {
+        "question": "In network traffic monitoring, what does a high number of SYN packets indicate?",
+        "options": [
+            "Normal TCP communication",
+            "An ongoing DoS attack",
+            "A DNS query flood",
+            "Fragmented packet reassembly"
+        ],
+        "correct": "An ongoing DoS attack"
+    },
+    {
+        "question": "Which tool is most appropriate for capturing and analyzing network traffic?",
+        "options": [
+            "Wireshark",
+            "Nmap",
+            "OpenVAS",
+            "Metasploit"
+        ],
+        "correct": "Wireshark"
+    },
+    {
+        "question": "What is the primary purpose of reviewing network logs?",
+        "options": [
+            "To identify unauthorized changes in configuration",
+            "To detect and analyze security incidents",
+            "To prevent hardware failures",
+            "To calculate bandwidth utilization"
+        ],
+        "correct": "To detect and analyze security incidents"
+    },
+    {
+        "question": "Which network assessment tool is used for scanning open ports on a network?",
+        "options": [
+            "Nmap",
+            "Netcat",
+            "Wireshark",
+            "Burp Suite"
+        ],
+        "correct": "Nmap"
+    },
+    {
+        "question": "What does the term MTU (Maximum Transmission Unit) represent in network troubleshooting?",
+        "options": [
+            "The size of the largest packet that can be sent over a network",
+            "The maximum number of hops a packet can take",
+            "The time required to resolve an IP address to a hostname",
+            "The delay caused by network congestion"
+        ],
+        "correct": "The size of the largest packet that can be sent over a network"
+    },
+    {
+        "question": "In log monitoring, what does the term 'event correlation' mean?",
+        "options": [
+            "Combining logs from multiple sources to detect patterns",
+            "Categorizing events based on severity levels",
+            "Identifying missing log entries in a sequence",
+            "Filtering out irrelevant logs"
+        ],
+        "correct": "Combining logs from multiple sources to detect patterns"
+    },
+    {
+        "question": "Which command-line tool can be used to check for active TCP connections on a system?",
+        "options": [
+            "Ping",
+            "Netstat",
+            "Traceroute",
+            "ARP"
+        ],
+        "correct": "Netstat"
+    }
+]

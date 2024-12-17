@@ -1,0 +1,152 @@
+[
+  {
+    "question": "A new network security framework mandates regular audits of firewall rules. What should be your first step to comply with this framework?",
+    "options": [
+      "Remove all existing rules and reconfigure them from scratch.",
+      "Export the current rules and review them for outdated or unnecessary entries.",
+      "Implement a new firewall solution with automatic rule auditing.",
+      "Schedule the audit for the next quarter to align with other reviews."
+    ],
+    "correct": "Export the current rules and review them for outdated or unnecessary entries."
+  },
+  {
+    "question": "An attacker bypasses your network defenses and gains access to a file server. What immediate action should you take to minimize damage?",
+    "options": [
+      "Perform a full server backup.",
+      "Disconnect the server from the network.",
+      "Initiate an internal investigation.",
+      "Reboot the server to terminate unauthorized sessions."
+    ],
+    "correct": "Disconnect the server from the network."
+  },
+  {
+    "question": "Your organization uses an IAM solution to control access to sensitive systems. A user reports being unable to access a critical application. What is your first troubleshooting step?",
+    "options": [
+      "Reset the user’s password.",
+      "Check the user’s permissions in the IAM system.",
+      "Restart the application server.",
+      "Temporarily disable the IAM solution."
+    ],
+    "correct": "Check the user’s permissions in the IAM system."
+  },
+  {
+    "question": "Which framework would you use to ensure comprehensive network security by defining policies, procedures, and guidelines?",
+    "options": [
+      "ISO/IEC 27001",
+      "NIST Cybersecurity Framework",
+      "COBIT",
+      "ITIL"
+    ],
+    "correct": "NIST Cybersecurity Framework"
+  },
+  {
+    "question": "Your organization implements a new zero-trust model. What is a key principle of this approach?",
+    "options": [
+      "Granting broad access to trusted users.",
+      "Trusting devices within the corporate network.",
+      "Always verifying user and device identity.",
+      "Eliminating network segmentation."
+    ],
+    "correct": "Always verifying user and device identity."
+  },
+  {
+    "question": "During a routine security review, you discover that a critical network defense mechanism is outdated. What should you do first?",
+    "options": [
+      "Disable the mechanism to prevent vulnerabilities.",
+      "Update the mechanism immediately after testing.",
+      "Replace it with a third-party solution.",
+      "Report the issue and continue monitoring."
+    ],
+    "correct": "Update the mechanism immediately after testing."
+  },
+  {
+    "question": "A third-party vendor requests temporary access to your network for maintenance. How should you provide access securely?",
+    "options": [
+      "Create a permanent account for the vendor.",
+      "Grant access using your administrative credentials.",
+      "Set up a time-limited guest account with specific permissions.",
+      "Share the credentials of an existing user account."
+    ],
+    "correct": "Set up a time-limited guest account with specific permissions."
+  },
+  {
+    "question": "An employee leaves the company, and their IAM account remains active. What risk does this pose?",
+    "options": [
+      "Loss of productivity for other employees.",
+      "Potential insider threats and unauthorized access.",
+      "Increased network latency due to inactive accounts.",
+      "Confusion during future audits."
+    ],
+    "correct": "Potential insider threats and unauthorized access."
+  },
+  {
+    "question": "What is the primary purpose of implementing network segmentation as a defense strategy?",
+    "options": [
+      "Improve overall network speed.",
+      "Restrict access to sensitive resources.",
+      "Facilitate easier network expansion.",
+      "Centralize all network management tasks."
+    ],
+    "correct": "Restrict access to sensitive resources."
+  },
+  {
+    "question": "Your organization uses multi-factor authentication (MFA). A user claims they are unable to complete the authentication process. What should you check first?",
+    "options": [
+      "If the user’s account is locked.",
+      "If the MFA server is operational.",
+      "If the user has the correct password.",
+      "If the user’s device supports MFA."
+    ],
+    "correct": "If the MFA server is operational."
+  },
+  {
+    "question": "An IAM audit reveals that several users have excessive privileges. What is the best course of action?",
+    "options": [
+      "Leave the privileges unchanged to avoid disruption.",
+      "Revoke all user privileges immediately.",
+      "Apply the principle of least privilege.",
+      "Enable automatic privilege escalation."
+    ],
+    "correct": "Apply the principle of least privilege."
+  },
+  {
+    "question": "Your network’s intrusion detection system (IDS) alerts you to unusual activity from an internal IP address. What should you do first?",
+    "options": [
+      "Notify the user associated with the IP address.",
+      "Isolate the device associated with the IP address.",
+      "Reboot the affected network devices.",
+      "Ignore the alert if no immediate damage is visible."
+    ],
+    "correct": "Isolate the device associated with the IP address."
+  },
+  {
+    "question": "An employee uses their personal device to access the corporate network without prior authorization. What should you do?",
+    "options": [
+      "Block the device and inform the employee.",
+      "Allow the device and monitor its activity.",
+      "Add the device to the corporate inventory.",
+      "Request the employee to update their antivirus software."
+    ],
+    "correct": "Block the device and inform the employee."
+  },
+  {
+    "question": "Which of the following is a primary benefit of using a network security framework?",
+    "options": [
+      "Reduced costs for hardware procurement.",
+      "Improved clarity in defining security objectives.",
+      "Faster network speed and reduced latency.",
+      "Simplified user access to all network resources."
+    ],
+    "correct": "Improved clarity in defining security objectives."
+  },
+  {
+    "question": "What is the primary reason for logging all IAM-related changes in an organization?",
+    "options": [
+      "Ensure accountability and traceability.",
+      "Facilitate faster password resets.",
+      "Reduce the cost of managing IAM systems.",
+      "Simplify user onboarding processes."
+    ],
+    "correct": "Ensure accountability and traceability."
+  }
+]
