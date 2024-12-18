@@ -14,6 +14,8 @@ _First Web site_
 
 https://h455en.github.io/cct-mcq/
 
+https://quizz-04tyr.statichost.site/
+
 
 </header>
 
