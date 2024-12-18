@@ -1,0 +1,242 @@
+[
+  {
+    "number": 1,
+    "question": "An IT administrator receives reports that multiple users cannot access a specific website, but other websites work fine. The administrator pings the website’s IP and receives a 'Destination Unreachable' message. What is the most likely cause?",
+    "options": [
+      "The website is offline",
+      "A routing issue to the website’s server",
+      "The DNS server is down",
+      "The user’s local network is misconfigured"
+    ],
+    "correct_index": "B",
+    "explanation": "'Destination Unreachable' typically points to a routing issue preventing packets from reaching the website."
+  },
+  {
+    "number": 2,
+    "question": "A network technician receives an alert that a network cable is unplugged for a critical server. Upon inspection, all cables appear connected. What should be the next troubleshooting step?",
+    "options": [
+      "Restart the server",
+      "Replace the cable immediately",
+      "Check the switch port configuration and link status",
+      "Run a full network diagnostic tool"
+    ],
+    "correct_index": "C",
+    "explanation": "The issue may lie with the switch port or the link status rather than the physical cable."
+  },
+  {
+    "number": 3,
+    "question": "A user reports intermittent internet connectivity on a wireless network. After checking, the technician finds no hardware faults. What is the most likely cause?",
+    "options": [
+      "Wireless interference from nearby devices",
+      "Incorrect IP address configuration",
+      "A broken access point",
+      "An unplugged network cable"
+    ],
+    "correct_index": "A",
+    "explanation": "Wireless interference, such as from other devices or overlapping channels, commonly causes intermittent connectivity issues."
+  },
+  {
+    "number": 4,
+    "question": "A server cannot be reached from a specific subnet, but other subnets have no issue. What is the most probable cause?",
+    "options": [
+      "The server is offline",
+      "The network cable to the server is unplugged",
+      "A routing table error",
+      "A misconfigured DNS server"
+    ],
+    "correct_index": "C",
+    "explanation": "A routing table error may prevent traffic from a specific subnet from reaching the server."
+  },
+  {
+    "number": 5,
+    "question": "An employee receives a 'Time Exceeded' message when attempting to ping a remote server. What does this indicate?",
+    "options": [
+      "The destination server is down",
+      "A routing loop or excessive hop count in the network",
+      "The local network is misconfigured",
+      "The user is using the wrong IP address"
+    ],
+    "correct_index": "B",
+    "explanation": "'Time Exceeded' messages occur when packets exceed their TTL, often due to a routing loop or excessive hops."
+  },
+  {
+    "number": 6,
+    "question": "A network path cannot be found when trying to connect to a shared folder. The server is online and accessible from other devices. What should the technician check first?",
+    "options": [
+      "The user’s access permissions",
+      "The network cable of the user’s device",
+      "The physical location of the server",
+      "The router's configuration"
+    ],
+    "correct_index": "A",
+    "explanation": "Access permissions can prevent a user from accessing shared network resources even if the server is online."
+  },
+  {
+    "number": 7,
+    "question": "A network administrator uses the 'traceroute' command and sees that packets stop responding after reaching a particular router. What should the administrator investigate first?",
+    "options": [
+      "The endpoint server's configuration",
+      "The router causing the packet loss",
+      "The DNS configuration",
+      "The user's local device"
+    ],
+    "correct_index": "B",
+    "explanation": "The router where packets stop responding is likely misconfigured or has a connectivity issue."
+  },
+  {
+    "number": 8,
+    "question": "An engineer notices that ICMP redirect messages are frequently sent in the network. What might this indicate?",
+    "options": [
+      "A misconfigured network router",
+      "Normal network behavior",
+      "A Denial-of-Service attack",
+      "A failure in DNS resolution"
+    ],
+    "correct_index": "A",
+    "explanation": "Frequent ICMP redirect messages often indicate a misconfiguration, such as improper default gateway settings."
+  },
+  {
+    "number": 9,
+    "question": "A laptop connects to the Wi-Fi but cannot access the internet. Other devices on the same network are working fine. What should the technician check first?",
+    "options": [
+      "The user's firewall settings",
+      "The DHCP lease on the laptop",
+      "The router's configuration",
+      "The signal strength of the Wi-Fi network"
+    ],
+    "correct_index": "B",
+    "explanation": "If DHCP fails to assign an IP address, the device may connect to Wi-Fi but lack internet access."
+  },
+  {
+    "number": 10,
+    "question": "A technician is troubleshooting a local connectivity issue where devices on the same network cannot communicate. What is the most likely cause?",
+    "options": [
+      "A disabled network adapter",
+      "A DNS misconfiguration",
+      "A faulty default gateway",
+      "A firewall rule blocking local traffic"
+    ],
+    "correct_index": "D",
+    "explanation": "A restrictive firewall rule may block communication between devices on the same network."
+  },
+  {
+    "number": 11,
+    "question": "An employee reports slow file transfers over the network. The technician finds high CPU usage on the employee's computer. What is the most likely issue?",
+    "options": [
+      "The user’s computer is infected with malware",
+      "The network is experiencing high latency",
+      "The computer's network adapter is faulty",
+      "The user’s system resources are overloaded"
+    ],
+    "correct_index": "D",
+    "explanation": "High CPU usage can slow down file transfers due to limited system resources available for network operations."
+  },
+  {
+    "number": 12,
+    "question": "A network administrator finds that a device cannot obtain an IP address. What could be the issue?",
+    "options": [
+      "A malfunctioning DHCP server",
+      "An invalid default gateway",
+      "A misconfigured DNS server",
+      "Incorrect network credentials"
+    ],
+    "correct_index": "A",
+    "explanation": "If the DHCP server fails, devices cannot automatically obtain IP addresses, leading to connectivity issues."
+  },
+  {
+    "number": 13,
+    "question": "A technician troubleshooting a routing problem identifies that packets are being dropped when sent to an external network. What should they verify first?",
+    "options": [
+      "The firewall's outbound rules",
+      "The endpoint's DNS settings",
+      "The internal switch configurations",
+      "The default gateway on the source device"
+    ],
+    "correct_index": "A",
+    "explanation": "Outbound firewall rules may block packets from leaving the network."
+  },
+  {
+    "number": 14,
+    "question": "A network troubleshooting tool displays an 'IP Parameter Problem' message. What does this suggest?",
+    "options": [
+      "An IP address conflict",
+      "A malformed packet header",
+      "An unreachable host",
+      "A routing loop"
+    ],
+    "correct_index": "B",
+    "explanation": "'IP Parameter Problem' indicates an issue with the packet header structure, such as an invalid option or checksum."
+  },
+  {
+    "number": 15,
+    "question": "A user connects to a Wi-Fi network but frequently gets disconnected. The technician discovers that the signal strength is low. What is the best solution?",
+    "options": [
+      "Install a Wi-Fi extender",
+      "Change the DHCP lease duration",
+      "Reboot the access point",
+      "Switch to a 2.4 GHz band"
+    ],
+    "correct_index": "A",
+    "explanation": "Installing a Wi-Fi extender boosts signal strength in areas with weak coverage."
+  },
+  {
+    "number": 16,
+    "question": "A technician using a cable tester finds that one pair of wires in an Ethernet cable is not connected. What is the impact?",
+    "options": [
+      "The cable will work at a slower speed",
+      "The cable will not work at all",
+      "The cable will function intermittently",
+      "The cable will affect other connected devices"
+    ],
+    "correct_index": "B",
+    "explanation": "An Ethernet cable requires all pairs to be properly connected for full functionality."
+  },
+  {
+    "number": 17,
+    "question": "A technician uses the 'ping' command but receives no response from the target. What could be the issue?",
+    "options": [
+      "The target is unreachable due to a firewall",
+      "The DNS server is down",
+      "The ping command is not valid",
+      "The network adapter is disabled"
+    ],
+    "correct_index": "A",
+    "explanation": "Firewalls often block ICMP echo requests, preventing ping responses."
+  },
+  {
+    "number": 18,
+    "question": "A network path cannot be found between two VLANs. What is the most likely issue?",
+    "options": [
+      "A misconfigured router interface",
+      "A faulty Ethernet cable",
+      "A disabled switch port",
+      "A blocked MAC address"
+    ],
+    "correct_index": "A",
+    "explanation": "Inter-VLAN routing requires properly configured router interfaces."
+  },
+  {
+    "number": 19,
+    "question": "A new wireless network has been set up, but some users report being unable to connect. What is the most likely issue?",
+    "options": [
+      "The SSID is hidden",
+      "The access point is offline",
+      "Incorrect wireless encryption settings",
+      "Too many users are connected"
+    ],
+    "correct_index": "C",
+    "explanation": "Incorrect wireless encryption settings can prevent devices from successfully authenticating with the network."
+  },
+  {
+    "number": 20,
+    "question": "A technician troubleshooting a network discovers that some devices cannot communicate with others on the same network. What could be the cause?",
+    "options": [
+      "Mismatched subnet masks",
+      "An unplugged network cable",
+      "A disabled firewall",
+      "An offline router"
+    ],
+    "correct_index": "A",
+    "explanation": "Mismatched subnet masks prevent devices from correctly identifying devices within the same network."
+  }
+]
