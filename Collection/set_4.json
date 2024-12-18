@@ -7,7 +7,7 @@
             "Wireshark",
             "John the Ripper"
         ],
-        "correct": "Cain & Abel"
+        "correct_index": "Cain & Abel"
     },
     {
         "question": "What is the primary function of MAC flooding in network attacks?",
@@ -17,7 +17,7 @@
             "Exploiting buffer overflow vulnerabilities in network devices",
             "Injecting malicious traffic into the network using spoofed IP addresses"
         ],
-        "correct": "Overloading a switch’s MAC address table to cause a denial of service"
+        "correct_index": "Overloading a switch’s MAC address table to cause a denial of service"
     },
     {
         "question": "What command in hping3 can be used to perform a DoS attack on a target host?",
@@ -27,7 +27,7 @@
             "hping3 -A -p 80 <target>",
             "hping3 -F -p 22 <target>"
         ],
-        "correct": "hping3 -S -p 80 <target>"
+        "correct_index": "hping3 -S -p 80 <target>"
     },
     {
         "question": "Which tool is commonly used to perform SQL injection attacks against MSSQL to extract databases?",
@@ -37,7 +37,7 @@
             "Hydra",
             "Burp Suite"
         ],
-        "correct": "sqlmap"
+        "correct_index": "sqlmap"
     },
     {
         "question": "What does parameter tampering with Burp Suite typically involve?",
@@ -47,7 +47,7 @@
             "Hijacking session cookies using cross-site scripting (XSS)",
             "Performing SQL injection attacks via the application’s database"
         ],
-        "correct": "Intercepting and modifying HTTP requests to alter parameters"
+        "correct_index": "Intercepting and modifying HTTP requests to alter parameters"
     },
     {
         "question": "What is the primary purpose of John the Ripper in password auditing?",
@@ -57,7 +57,7 @@
             "Performing a brute force attack on web applications",
             "Monitoring network traffic for weak passwords"
         ],
-        "correct": "Cracking password hashes to recover plaintext passwords"
+        "correct_index": "Cracking password hashes to recover plaintext passwords"
     },
     {
         "question": "Which social engineering technique involves manipulating users into revealing sensitive information such as login credentials?",
@@ -67,7 +67,7 @@
             "Pretexting",
             "Tailgating"
         ],
-        "correct": "Phishing"
+        "correct_index": "Phishing"
     },
     {
         "question": "What is the primary purpose of Aircrack-ng in wireless network security testing?",
@@ -77,7 +77,7 @@
             "Performing a DoS attack on wireless access points",
             "Scanning for open wireless networks"
         ],
-        "correct": "Cracking WPA2 passwords using brute-force methods"
+        "correct_index": "Cracking WPA2 passwords using brute-force methods"
     },
     {
         "question": "Which technique is commonly used to exploit vulnerabilities in an Android device by creating binary payloads?",
@@ -87,7 +87,7 @@
             "Reverse engineering APKs",
             "Creating custom payloads for Metasploit"
         ],
-        "correct": "Creating custom payloads for Metasploit"
+        "correct_index": "Creating custom payloads for Metasploit"
     },
     {
         "question": "What is the purpose of using AWS CLI to exploit open S3 buckets?",
@@ -97,7 +97,7 @@
             "Performing a buffer overflow attack on AWS EC2 instances",
             "Encrypting data stored in AWS for secure transfer"
         ],
-        "correct": "Accessing unsecured data stored in Amazon S3"
+        "correct_index": "Accessing unsecured data stored in Amazon S3"
     },
     {
         "question": "What type of attack does Cain & Abel primarily facilitate in network environments?",
@@ -107,7 +107,7 @@
             "Phishing",
             "Cross-Site Scripting (XSS)"
         ],
-        "correct": "Man-in-the-Middle (MITM)"
+        "correct_index": "Man-in-the-Middle (MITM)"
     },
     {
         "question": "Which attack method does macof exploit in network security?",
@@ -117,7 +117,7 @@
             "Session hijacking",
             "DNS poisoning"
         ],
-        "correct": "MAC address flooding"
+        "correct_index": "MAC address flooding"
     },
     {
         "question": "What is the primary use case for sqlmap in penetration testing?",
@@ -127,7 +127,7 @@
             "Intercepting web application requests to manipulate parameters",
             "Performing brute force attacks on SQL servers"
         ],
-        "correct": "Automating SQL injection attacks to extract databases"
+        "correct_index": "Automating SQL injection attacks to extract databases"
     },
     {
         "question": "How does Burp Suite assist with parameter tampering during a web application penetration test?",
@@ -137,7 +137,7 @@
             "By exploiting buffer overflow vulnerabilities in web servers",
             "By injecting SQL commands into HTTP headers"
         ],
-        "correct": "By capturing and modifying HTTP requests to alter parameters"
+        "correct_index": "By capturing and modifying HTTP requests to alter parameters"
     },
     {
         "question": "What is the first step in cracking WPA2 encryption with Aircrack-ng?",
@@ -147,6 +147,6 @@
             "Disassociating clients from the access point",
             "Scanning for WPA2 networks"
         ],
-        "correct": "Capturing a valid handshake"
+        "correct_index": "Capturing a valid handshake"
     }
 ]

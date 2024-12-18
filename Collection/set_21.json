@@ -7,7 +7,7 @@
       "Reconnaissance",
       "Exploitation"
     ],
-    "correct": "Reconnaissance"
+    "correct_index": "Reconnaissance"
   },
   {
     "question": "Which framework provides a detailed matrix of adversarial Tactics, Techniques, and Procedures (TTPs)?",
@@ -17,7 +17,7 @@
       "Cyber Kill Chain",
       "OWASP"
     ],
-    "correct": "MITRE ATT&CK"
+    "correct_index": "MITRE ATT&CK"
   },
   {
     "question": "In the Diamond Model of Intrusion Analysis, which element refers to the victim’s assets or resources?",
@@ -27,7 +27,7 @@
       "Victim",
       "Capability"
     ],
-    "correct": "Victim"
+    "correct_index": "Victim"
   },
   {
     "question": "What is the primary goal of reconnaissance attacks?",
@@ -37,7 +37,7 @@
       "Gathering information",
       "Manipulating users"
     ],
-    "correct": "Gathering information"
+    "correct_index": "Gathering information"
   },
   {
     "question": "Which tool is commonly used for network scanning?",
@@ -47,7 +47,7 @@
       "Metasploit",
       "Wireshark"
     ],
-    "correct": "Nmap"
+    "correct_index": "Nmap"
   },
   {
     "question": "What is DNS footprinting primarily used for?",
@@ -57,7 +57,7 @@
       "Amplifying DoS attacks",
       "Hijacking domain names"
     ],
-    "correct": "Collecting domain information"
+    "correct_index": "Collecting domain information"
   },
   {
     "question": "Which attack involves intercepting and altering communication between two parties?",
@@ -67,7 +67,7 @@
       "ARP Spoofing",
       "MAC Flooding"
     ],
-    "correct": "Man-in-the-Middle Attack"
+    "correct_index": "Man-in-the-Middle Attack"
   },
   {
     "question": "How does ARP spoofing work?",
@@ -77,7 +77,7 @@
       "By cloning an IP address",
       "By starving the DHCP server"
     ],
-    "correct": "By sending fake ARP messages"
+    "correct_index": "By sending fake ARP messages"
   },
   {
     "question": "What type of attack results in the exhaustion of IP addresses in a network?",
@@ -87,7 +87,7 @@
       "IP Spoofing",
       "Switch Port Stealing"
     ],
-    "correct": "DHCP Starvation"
+    "correct_index": "DHCP Starvation"
   },
   {
     "question": "What is the key characteristic of a Distributed Denial-of-Service (DDoS) attack?",
@@ -97,7 +97,7 @@
       "It focuses on a specific port or service.",
       "It involves IP spoofing."
     ],
-    "correct": "It uses multiple systems to attack a target."
+    "correct_index": "It uses multiple systems to attack a target."
   },
   {
     "question": "What is an Advanced Persistent Threat (APT)?",
@@ -107,7 +107,7 @@
       "An attack using only malware",
       "A physical attack on hardware"
     ],
-    "correct": "A long-term, targeted attack"
+    "correct_index": "A long-term, targeted attack"
   },
   {
     "question": "Which OWASP risk involves injecting malicious SQL queries?",
@@ -117,7 +117,7 @@
       "Broken Authentication",
       "Insecure Deserialization"
     ],
-    "correct": "SQL Injection"
+    "correct_index": "SQL Injection"
   },
   {
     "question": "What is the main objective of a Cross-Site Scripting (XSS) attack?",
@@ -127,7 +127,7 @@
       "To gain root access",
       "To bypass authentication"
     ],
-    "correct": "To steal session cookies"
+    "correct_index": "To steal session cookies"
   },
   {
     "question": "What does a Directory Traversal attack aim to achieve?",
@@ -137,7 +137,7 @@
       "Crashing the application",
       "Hijacking user sessions"
     ],
-    "correct": "Accessing unauthorized files or directories"
+    "correct_index": "Accessing unauthorized files or directories"
   },
   {
     "question": "Which attack uses legitimate-looking websites to lure victims?",
@@ -147,7 +147,7 @@
       "Man-in-the-Browser Attack",
       "Session Replay Attack"
     ],
-    "correct": "Watering Hole Attack"
+    "correct_index": "Watering Hole Attack"
   },
   {
     "question": "What is the purpose of DNS amplification attacks?",
@@ -157,7 +157,7 @@
       "To hijack domain names",
       "To disrupt DHCP services"
     ],
-    "correct": "To flood a target with DNS response traffic"
+    "correct_index": "To flood a target with DNS response traffic"
   },
   {
     "question": "How does a CSRF attack work?",
@@ -167,7 +167,7 @@
       "By intercepting network packets",
       "By modifying HTTP headers"
     ],
-    "correct": "By tricking users into performing actions on their behalf"
+    "correct_index": "By tricking users into performing actions on their behalf"
   },
   {
     "question": "What vulnerability is exploited by XML External Entity (XXE) attacks?",
@@ -177,7 +177,7 @@
       "Session management flaws",
       "Unvalidated redirects"
     ],
-    "correct": "Insecure XML parsing"
+    "correct_index": "Insecure XML parsing"
   },
   {
     "question": "Which attack leverages trust between a web server and a user’s browser to perform malicious actions?",
@@ -187,7 +187,7 @@
       "Session Replay Attack",
       "Application-level DoS Attack"
     ],
-    "correct": "Man-in-the-Browser Attack"
+    "correct_index": "Man-in-the-Browser Attack"
   },
   {
     "question": "What is a common target of API attacks?",
@@ -197,6 +197,6 @@
       "Authentication tokens",
       "All of the above"
     ],
-    "correct": "All of the above"
+    "correct_index": "All of the above"
   }
 ]

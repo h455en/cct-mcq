@@ -7,7 +7,7 @@
       "Wireshark",
       "Memdump"
     ],
-    "correct": "FTK Imager"
+    "correct_index": "FTK Imager"
   },
   {
     "question": "What is the primary purpose of acquiring RAM from a Windows workstation in a forensic investigation?",
@@ -17,7 +17,7 @@
       "Create a disk partition clone",
       "Validate user login credentials"
     ],
-    "correct": "Extract encryption keys, running processes, and passwords"
+    "correct_index": "Extract encryption keys, running processes, and passwords"
   },
   {
     "question": "Which command can be used on a Windows system to gather volatile information such as network connections and running processes?",
@@ -27,7 +27,7 @@
       "ipconfig /all",
       "All of the above"
     ],
-    "correct": "All of the above"
+    "correct_index": "All of the above"
   },
   {
     "question": "What is the role of Autopsy in analyzing the file system of a Linux image?",
@@ -37,7 +37,7 @@
       "To parse file systems, identify files, and carve deleted content",
       "To perform memory analysis on captured RAM dumps"
     ],
-    "correct": "To parse file systems, identify files, and carve deleted content"
+    "correct_index": "To parse file systems, identify files, and carve deleted content"
   },
   {
     "question": "Which type of information is typically extracted during the analysis of a memory dump from a Linux system?",
@@ -47,7 +47,7 @@
       "Disk partitions and file structure",
       "File permissions and ownership"
     ],
-    "correct": "Running processes and network connections"
+    "correct_index": "Running processes and network connections"
   },
   {
     "question": "What is a forensic image file typically used for?",
@@ -57,7 +57,7 @@
       "Encrypting sensitive user data for privacy",
       "Storing volatile information from a live system"
     ],
-    "correct": "Storing a bit-for-bit copy of data for analysis without altering the source"
+    "correct_index": "Storing a bit-for-bit copy of data for analysis without altering the source"
   },
   {
     "question": "Which of the following is considered volatile information in a live Windows system?",
@@ -67,7 +67,7 @@
       "Registry hives",
       "Disk partition tables"
     ],
-    "correct": "Open network connections"
+    "correct_index": "Open network connections"
   },
   {
     "question": "Which file format is most commonly used for forensic disk images?",
@@ -77,7 +77,7 @@
       ".zip",
       ".vmdk"
     ],
-    "correct": ".raw"
+    "correct_index": ".raw"
   },
   {
     "question": "Which of the following best describes the difference between a disk image and a memory dump?",
@@ -87,7 +87,7 @@
       "Memory dumps include deleted files, while disk images include only existing data.",
       "There is no functional difference between the two."
     ],
-    "correct": "Disk images store entire partitions, while memory dumps capture the current state of the RAM."
+    "correct_index": "Disk images store entire partitions, while memory dumps capture the current state of the RAM."
   },
   {
     "question": "Which command-line utility on Linux is commonly used to create a memory dump?",
@@ -97,7 +97,7 @@
       "autopsy",
       "tcpdump"
     ],
-    "correct": "memdump"
+    "correct_index": "memdump"
   },
   {
     "question": "What kind of evidence can be recovered using tools like Autopsy from a Linux image?",
@@ -107,7 +107,7 @@
       "Active processes and network configurations",
       "User session logs and login attempts"
     ],
-    "correct": "Deleted files, file metadata, and timestamps"
+    "correct_index": "Deleted files, file metadata, and timestamps"
   },
   {
     "question": "Which tool is used to analyze and view the contents of a forensic image file?",
@@ -117,7 +117,7 @@
       "HashCalc",
       "OpenStego"
     ],
-    "correct": "FTK Imager"
+    "correct_index": "FTK Imager"
   },
   {
     "question": "Why is hashing important when creating a disk image for forensic purposes?",
@@ -127,7 +127,7 @@
       "To compress the image file size",
       "To enable indexing of files within the image"
     ],
-    "correct": "To ensure the integrity of the image matches the original data"
+    "correct_index": "To ensure the integrity of the image matches the original data"
   },
   {
     "question": "What is the significance of acquiring a write-blocked forensic image?",
@@ -137,7 +137,7 @@
       "Compresses data to reduce image size",
       "Automatically decrypts encrypted partitions"
     ],
-    "correct": "Prevents accidental modification of source data"
+    "correct_index": "Prevents accidental modification of source data"
   },
   {
     "question": "Which of the following artifacts would most likely be found in a captured RAM dump?",
@@ -147,6 +147,6 @@
       "Browser session cookies",
       "Hidden partitions"
     ],
-    "correct": "Browser session cookies"
+    "correct_index": "Browser session cookies"
   }
 ]

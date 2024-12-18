@@ -7,7 +7,7 @@
             "Employee background checks",
             "Incident response planning"
         ],
-        "correct": "Firewall configurations"
+        "correct_index": "Firewall configurations"
     },
     {
         "question": "What is the primary purpose of a vulnerability scanner in a network security assessment?",
@@ -17,7 +17,7 @@
             "To monitor real-time network traffic",
             "To scan for known security weaknesses"
         ],
-        "correct": "To scan for known security weaknesses"
+        "correct_index": "To scan for known security weaknesses"
     },
     {
         "question": "Which network troubleshooting tool is commonly used to trace the route of packets across a network?",
@@ -27,7 +27,7 @@
             "Netstat",
             "Wireshark"
         ],
-        "correct": "Traceroute"
+        "correct_index": "Traceroute"
     },
     {
         "question": "In network traffic monitoring, what does a high number of SYN packets indicate?",
@@ -37,7 +37,7 @@
             "A DNS query flood",
             "Fragmented packet reassembly"
         ],
-        "correct": "An ongoing DoS attack"
+        "correct_index": "An ongoing DoS attack"
     },
     {
         "question": "Which tool is most appropriate for capturing and analyzing network traffic?",
@@ -47,7 +47,7 @@
             "OpenVAS",
             "Metasploit"
         ],
-        "correct": "Wireshark"
+        "correct_index": "Wireshark"
     },
     {
         "question": "What is the primary purpose of reviewing network logs?",
@@ -57,7 +57,7 @@
             "To prevent hardware failures",
             "To calculate bandwidth utilization"
         ],
-        "correct": "To detect and analyze security incidents"
+        "correct_index": "To detect and analyze security incidents"
     },
     {
         "question": "Which network assessment tool is used for scanning open ports on a network?",
@@ -67,7 +67,7 @@
             "Wireshark",
             "Burp Suite"
         ],
-        "correct": "Nmap"
+        "correct_index": "Nmap"
     },
     {
         "question": "What does the term MTU (Maximum Transmission Unit) represent in network troubleshooting?",
@@ -77,7 +77,7 @@
             "The time required to resolve an IP address to a hostname",
             "The delay caused by network congestion"
         ],
-        "correct": "The size of the largest packet that can be sent over a network"
+        "correct_index": "The size of the largest packet that can be sent over a network"
     },
     {
         "question": "In log monitoring, what does the term 'event correlation' mean?",
@@ -87,7 +87,7 @@
             "Identifying missing log entries in a sequence",
             "Filtering out irrelevant logs"
         ],
-        "correct": "Combining logs from multiple sources to detect patterns"
+        "correct_index": "Combining logs from multiple sources to detect patterns"
     },
     {
         "question": "Which command-line tool can be used to check for active TCP connections on a system?",
@@ -97,6 +97,6 @@
             "Traceroute",
             "ARP"
         ],
-        "correct": "Netstat"
+        "correct_index": "Netstat"
     }
 ]

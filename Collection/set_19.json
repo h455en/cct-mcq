@@ -7,7 +7,7 @@
       "Threat Modeling",
       "Error Handling"
     ],
-    "correct": "Input Validation"
+    "correct_index": "Input Validation"
   },
   {
     "question": "What is the primary purpose of parameterized queries in secure coding?",
@@ -17,7 +17,7 @@
       "To standardize database queries.",
       "To optimize query execution plans."
     ],
-    "correct": "To prevent SQL injection attacks."
+    "correct_index": "To prevent SQL injection attacks."
   },
   {
     "question": "During the threat modeling process, what is the first step to identify potential threats?",
@@ -27,7 +27,7 @@
       "Perform a data flow analysis.",
       "Develop mitigation strategies."
     ],
-    "correct": "Understand the application architecture."
+    "correct_index": "Understand the application architecture."
   },
   {
     "question": "A web application uses a weak session cookie mechanism. What is the best approach to improve its security?",
@@ -37,7 +37,7 @@
       "Store session cookies in local storage.",
       "Implement plaintext session IDs for simplicity."
     ],
-    "correct": "Enable HttpOnly and Secure attributes on cookies."
+    "correct_index": "Enable HttpOnly and Secure attributes on cookies."
   },
   {
     "question": "What is the primary goal of a Web Application Firewall (WAF)?",
@@ -47,7 +47,7 @@
       "To protect web applications from common attacks.",
       "To scan application source code for vulnerabilities."
     ],
-    "correct": "To protect web applications from common attacks."
+    "correct_index": "To protect web applications from common attacks."
   },
   {
     "question": "Which security testing technique focuses on analyzing the source code of an application for vulnerabilities?",
@@ -57,7 +57,7 @@
       "Static Application Security Testing (SAST)",
       "Penetration Testing"
     ],
-    "correct": "Static Application Security Testing (SAST)"
+    "correct_index": "Static Application Security Testing (SAST)"
   },
   {
     "question": "What does OWASP's top 10 list primarily focus on?",
@@ -67,7 +67,7 @@
       "Improving operating system security.",
       "Enhancing physical security measures."
     ],
-    "correct": "Listing the most critical web application vulnerabilities."
+    "correct_index": "Listing the most critical web application vulnerabilities."
   },
   {
     "question": "Which of the following is NOT a secure coding practice?",
@@ -77,7 +77,7 @@
       "Encoding output to prevent injection attacks.",
       "Using parameterized queries for database interactions."
     ],
-    "correct": "Using hard-coded credentials in the application code."
+    "correct_index": "Using hard-coded credentials in the application code."
   },
   {
     "question": "How does application sandboxing enhance security?",
@@ -87,7 +87,7 @@
       "By automating application updates.",
       "By improving application performance."
     ],
-    "correct": "By isolating application processes from the underlying system."
+    "correct_index": "By isolating application processes from the underlying system."
   },
   {
     "question": "What is the primary difference between SAST and DAST?",
@@ -97,7 +97,7 @@
       "SAST is manual, whereas DAST is always automated.",
       "SAST focuses on network vulnerabilities, DAST on application vulnerabilities."
     ],
-    "correct": "SAST analyzes code while DAST analyzes runtime behavior."
+    "correct_index": "SAST analyzes code while DAST analyzes runtime behavior."
   },
   {
     "question": "A bug bounty program is used to:",
@@ -107,7 +107,7 @@
       "Reduce licensing costs for third-party software.",
       "Automate application security testing."
     ],
-    "correct": "Identify and reward users who report application vulnerabilities."
+    "correct_index": "Identify and reward users who report application vulnerabilities."
   },
   {
     "question": "What is the primary role of application whitelisting?",
@@ -117,7 +117,7 @@
       "To allow unrestricted application access.",
       "To backup critical application data."
     ],
-    "correct": "To prevent unauthorized applications from running."
+    "correct_index": "To prevent unauthorized applications from running."
   },
   {
     "question": "Why is output encoding critical in web application security?",
@@ -127,7 +127,7 @@
       "To reduce resource utilization.",
       "To simplify debugging processes."
     ],
-    "correct": "To protect against injection attacks."
+    "correct_index": "To protect against injection attacks."
   },
   {
     "question": "A developer uses code signing in their application. What is the primary benefit of this practice?",
@@ -137,7 +137,7 @@
       "It improves application runtime performance.",
       "It enables seamless application updates."
     ],
-    "correct": "It ensures the authenticity and integrity of the application code."
+    "correct_index": "It ensures the authenticity and integrity of the application code."
   },
   {
     "question": "Which software security framework focuses on building security into an organization's software development process?",
@@ -147,7 +147,7 @@
       "Web Application Firewall (WAF)",
       "Static Application Security Testing (SAST)"
     ],
-    "correct": "Building Security In Maturity Model (BSIMM)"
+    "correct_index": "Building Security In Maturity Model (BSIMM)"
   },
   {
     "question": "A system administrator uses ManageEngine Desktop Central for application blacklisting. What does this tool primarily help with?",
@@ -157,7 +157,7 @@
       "Backing up critical system configurations.",
       "Monitoring application logs for anomalies."
     ],
-    "correct": "Preventing unauthorized applications from running."
+    "correct_index": "Preventing unauthorized applications from running."
   },
   {
     "question": "What is the main advantage of configuring secure response headers in a web application?",
@@ -167,7 +167,7 @@
       "To simplify user authentication.",
       "To optimize network traffic."
     ],
-    "correct": "To protect against Cross-Site Scripting (XSS) attacks."
+    "correct_index": "To protect against Cross-Site Scripting (XSS) attacks."
   },
   {
     "question": "A developer is configuring a WAF for a production web application. Which configuration is most critical?",
@@ -177,7 +177,7 @@
       "Deploying the WAF in a monitoring-only mode.",
       "Adding hard-coded credentials to the WAF configuration."
     ],
-    "correct": "Setting up rate limiting to prevent DDoS attacks."
+    "correct_index": "Setting up rate limiting to prevent DDoS attacks."
   },
   {
     "question": "What is the purpose of using Unicode normalization in secure coding?",
@@ -187,7 +187,7 @@
       "To simplify debugging processes.",
       "To support multiple database types."
     ],
-    "correct": "To prevent encoding-related security vulnerabilities."
+    "correct_index": "To prevent encoding-related security vulnerabilities."
   },
   {
     "question": "An organization uses application sandboxing to secure their software. Which tool is commonly used for this purpose?",
@@ -197,6 +197,6 @@
       "Wireshark",
       "Metasploit"
     ],
-    "correct": "Docker"
+    "correct_index": "Docker"
   }
   ]

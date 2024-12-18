@@ -7,7 +7,7 @@
       "Application log",
       "Setup log"
     ],
-    "correct": "Security log"
+    "correct_index": "Security log"
   },
   {
     "question": "What is the default location of Windows Event Logs on a Windows system?",
@@ -17,7 +17,7 @@
       "C:\\Windows\\System32\\winevt\\Logs",
       "C:\\Users\\Public\\EventLogs"
     ],
-    "correct": "C:\\Windows\\System32\\winevt\\Logs"
+    "correct_index": "C:\\Windows\\System32\\winevt\\Logs"
   },
   {
     "question": "Which Linux command is used to view log files in real-time?",
@@ -27,7 +27,7 @@
       "tail -f",
       "grep"
     ],
-    "correct": "tail -f"
+    "correct_index": "tail -f"
   },
   {
     "question": "What is the primary purpose of the `/var/log/messages` file in Linux?",
@@ -37,7 +37,7 @@
       "To log general system messages, including boot information",
       "To store firewall-related logs"
     ],
-    "correct": "To log general system messages, including boot information"
+    "correct_index": "To log general system messages, including boot information"
   },
   {
     "question": "Which tool can be used on Linux to perform automated security checks for configuration vulnerabilities?",
@@ -47,7 +47,7 @@
       "Wireshark",
       "Metasploit"
     ],
-    "correct": "Buck-security"
+    "correct_index": "Buck-security"
   },
   {
     "question": "In Windows Event Viewer, which log category would you use to analyze software crashes?",
@@ -57,7 +57,7 @@
       "Application",
       "Setup"
     ],
-    "correct": "Application"
+    "correct_index": "Application"
   },
   {
     "question": "What does the `last` command in Linux display?",
@@ -67,7 +67,7 @@
       "Kernel log messages",
       "System boot logs"
     ],
-    "correct": "User login history"
+    "correct_index": "User login history"
   },
   {
     "question": "Which Group Policy feature is used to enforce password complexity requirements in Windows?",
@@ -77,7 +77,7 @@
       "Audit Policy",
       "System Services Policy"
     ],
-    "correct": "Password Policy"
+    "correct_index": "Password Policy"
   },
   {
     "question": "What type of information can be retrieved using the Windows `gpresult` command?",
@@ -87,7 +87,7 @@
       "Open network connections",
       "Installed applications"
     ],
-    "correct": "User's applied Group Policies"
+    "correct_index": "User's applied Group Policies"
   },
   {
     "question": "Which log file in Linux is used to monitor failed authentication attempts?",
@@ -97,7 +97,7 @@
       "/var/log/dmesg",
       "/var/log/syslog"
     ],
-    "correct": "/var/log/auth.log"
+    "correct_index": "/var/log/auth.log"
   },
   {
     "question": "Which of the following tools is best for capturing and analyzing live network traffic?",
@@ -107,7 +107,7 @@
       "Nmap",
       "Metasploit"
     ],
-    "correct": "Wireshark"
+    "correct_index": "Wireshark"
   },
   {
     "question": "What is the purpose of the 'Audit Policy' in Group Policy Management?",
@@ -117,7 +117,7 @@
       "To track and log user or system activities",
       "To set password expiration rules"
     ],
-    "correct": "To track and log user or system activities"
+    "correct_index": "To track and log user or system activities"
   },
   {
     "question": "Which malware analysis step involves observing malware behavior in a controlled environment?",
@@ -127,7 +127,7 @@
       "Memory analysis",
       "Hashing analysis"
     ],
-    "correct": "Behavioral analysis"
+    "correct_index": "Behavioral analysis"
   },
   {
     "question": "Which Linux command is used to filter logs by keyword?",
@@ -137,7 +137,7 @@
       "awk",
       "sort"
     ],
-    "correct": "grep"
+    "correct_index": "grep"
   },
   {
     "question": "Which of the following is a key step in incident validation during malware analysis?",
@@ -147,6 +147,6 @@
       "Blocking all network traffic",
       "Deleting suspected files immediately"
     ],
-    "correct": "Cross-checking activity with baseline logs"
+    "correct_index": "Cross-checking activity with baseline logs"
   }
 ]

@@ -7,7 +7,7 @@
       "Notify all employees to change their passwords.",
       "Disable the VPN permanently."
     ],
-    "correct": "Terminate all VPN sessions and force reauthentication."
+    "correct_index": "Terminate all VPN sessions and force reauthentication."
   },
   {
     "question": "A load balancer in your environment is configured to distribute traffic across multiple web servers. What would be the impact if the load balancer is compromised?",
@@ -17,7 +17,7 @@
       "Decreased server utilization efficiency.",
       "Complete network downtime."
     ],
-    "correct": "Attackers can redirect traffic to malicious servers."
+    "correct_index": "Attackers can redirect traffic to malicious servers."
   },
   {
     "question": "Which network segmentation approach would best protect critical database servers from being accessed by unauthorized devices?",
@@ -27,7 +27,7 @@
       "Setting up a flat network structure.",
       "Deploying a WAF (Web Application Firewall)."
     ],
-    "correct": "Using VLANs to separate traffic."
+    "correct_index": "Using VLANs to separate traffic."
   },
   {
     "question": "A red team uses a transparent proxy server to intercept user traffic. How can the blue team detect and mitigate this?",
@@ -37,7 +37,7 @@
       "Monitor traffic for unusual SSL/TLS handshake patterns.",
       "Disable all proxy servers in the network."
     ],
-    "correct": "Monitor traffic for unusual SSL/TLS handshake patterns."
+    "correct_index": "Monitor traffic for unusual SSL/TLS handshake patterns."
   },
   {
     "question": "During a red team engagement, attackers deploy a high-interaction honeypot in the environment. What is the goal of this tactic?",
@@ -47,7 +47,7 @@
       "To disable the organization's IDS/IPS systems.",
       "To steal sensitive data from endpoints."
     ],
-    "correct": "To gather intelligence on internal blue team operations."
+    "correct_index": "To gather intelligence on internal blue team operations."
   },
   {
     "question": "A firewall in your organization allows unrestricted outbound traffic. What is the primary risk of this configuration?",
@@ -57,7 +57,7 @@
       "Unauthorized access to internal resources.",
       "Increased latency in internal communications."
     ],
-    "correct": "Sensitive data exfiltration by attackers."
+    "correct_index": "Sensitive data exfiltration by attackers."
   },
   {
     "question": "A blue team discovers that multiple endpoints are infected with ransomware. Which antivirus/anti-malware feature would be most effective in containing the spread?",
@@ -67,7 +67,7 @@
       "Signature-based detection.",
       "Scheduled full disk scans."
     ],
-    "correct": "Behavioral analysis."
+    "correct_index": "Behavioral analysis."
   },
   {
     "question": "A red team exploits a poorly configured IDS/IPS system. What specific misconfiguration might they exploit?",
@@ -77,7 +77,7 @@
       "Overloading the system with too many signatures.",
       "Enabling TLS encryption for all communications."
     ],
-    "correct": "Failing to monitor internal network segments."
+    "correct_index": "Failing to monitor internal network segments."
   },
   {
     "question": "An attacker uses a reverse proxy to disguise their IP address during a web application attack. How can the blue team identify the attacker?",
@@ -87,7 +87,7 @@
       "Deploy a honeypot to attract the attacker.",
       "Analyze all network packets for anomalies."
     ],
-    "correct": "Inspect the X-Forwarded-For headers."
+    "correct_index": "Inspect the X-Forwarded-For headers."
   },
   {
     "question": "A new VPN protocol is being evaluated for use in your organization. What is the most critical security feature to assess?",
@@ -97,7 +97,7 @@
       "Compatibility with endpoint devices.",
       "Bandwidth consumption."
     ],
-    "correct": "Encryption strength and methods."
+    "correct_index": "Encryption strength and methods."
   },
   {
     "question": "An organization deploys network segmentation to improve security. Which approach best supports high-availability for critical resources?",
@@ -107,7 +107,7 @@
       "Implementing load balancers within each segment.",
       "Centralizing all resources in one segment."
     ],
-    "correct": "Implementing load balancers within each segment."
+    "correct_index": "Implementing load balancers within each segment."
   },
   {
     "question": "During a penetration test, a red team targets the DNS protocol. Which technique might they use?",
@@ -117,7 +117,7 @@
       "SMB relay attack.",
       "SQL injection."
     ],
-    "correct": "DNS cache poisoning."
+    "correct_index": "DNS cache poisoning."
   },
   {
     "question": "A red team uses a low-interaction honeypot to identify blue team monitoring capabilities. What is the limitation of this approach?",
@@ -127,7 +127,7 @@
       "It increases the risk of data exfiltration.",
       "It exposes the attacker’s presence to the blue team."
     ],
-    "correct": "It cannot detect advanced threat actor behavior."
+    "correct_index": "It cannot detect advanced threat actor behavior."
   },
   {
     "question": "A blue team implements a next-generation firewall (NGFW) in their network. Which feature is unique to NGFWs compared to traditional firewalls?",
@@ -137,7 +137,7 @@
       "Application-level inspection.",
       "Network address translation (NAT)."
     ],
-    "correct": "Application-level inspection."
+    "correct_index": "Application-level inspection."
   },
   {
     "question": "Your IDS flags a potential data exfiltration attempt. How should the blue team respond first?",
@@ -147,6 +147,6 @@
       "Start a forensic analysis on the affected system.",
       "Reboot the affected system to terminate the connection."
     ],
-    "correct": "Disable internet access for the suspected host."
+    "correct_index": "Disable internet access for the suspected host."
   }
 ]

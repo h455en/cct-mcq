@@ -7,7 +7,7 @@
             "It is vulnerable to denial-of-service attacks",
             "It requires manual key management for encryption"
         ],
-        "correct": "It transmits data in plaintext, including credentials"
+        "correct_index": "It transmits data in plaintext, including credentials"
     },
     {
         "question": "Which type of log is most critical for identifying DNS poisoning or redirection attacks?",
@@ -17,7 +17,7 @@
             "Firewall logs",
             "Endpoint protection logs"
         ],
-        "correct": "DNS server logs"
+        "correct_index": "DNS server logs"
     },
     {
         "question": "What is a key advantage of using Kismet over other wireless network tools like Aircrack-ng?",
@@ -27,7 +27,7 @@
             "It passively detects wireless access points and identifies rogue devices",
             "It secures wireless networks by enforcing WPA3"
         ],
-        "correct": "It passively detects wireless access points and identifies rogue devices"
+        "correct_index": "It passively detects wireless access points and identifies rogue devices"
     },
     {
         "question": "In a Smurf attack, what role does ICMP play?",
@@ -37,7 +37,7 @@
             "It amplifies the attack by broadcasting packets to a network’s hosts",
             "It establishes unauthorized connections to the victim’s system"
         ],
-        "correct": "It amplifies the attack by broadcasting packets to a network’s hosts"
+        "correct_index": "It amplifies the attack by broadcasting packets to a network’s hosts"
     },
     {
         "question": "What is the main difference between split tunneling and full tunneling in VPNs?",
@@ -47,7 +47,7 @@
             "Full tunneling requires dual authentication, while split tunneling does not",
             "Split tunneling is designed for secure browsing, while full tunneling is for secure file transfers"
         ],
-        "correct": "Split tunneling allows direct access to local networks while routing only specific traffic through the VPN"
+        "correct_index": "Split tunneling allows direct access to local networks while routing only specific traffic through the VPN"
     },
     {
         "question": "Which of the following scenarios is the best use case for tokenization?",
@@ -57,7 +57,7 @@
             "Generating temporary access tokens for API authentication",
             "Encrypting user credentials stored on a web server"
         ],
-        "correct": "Protecting sensitive payment card information in a database"
+        "correct_index": "Protecting sensitive payment card information in a database"
     },
     {
         "question": "Why is it critical to review and monitor DNS server logs in a corporate environment?",
@@ -67,7 +67,7 @@
             "To monitor internet usage for policy violations",
             "To identify vulnerabilities in encrypted communications"
         ],
-        "correct": "To detect and mitigate DNS-based attacks such as DNS poisoning"
+        "correct_index": "To detect and mitigate DNS-based attacks such as DNS poisoning"
     },
     {
         "question": "What is one of the most effective ways to detect and prevent rogue wireless access points?",
@@ -77,7 +77,7 @@
             "Using wireless intrusion detection systems (WIDS) like Kismet",
             "Disabling unused network ports"
         ],
-        "correct": "Using wireless intrusion detection systems (WIDS) like Kismet"
+        "correct_index": "Using wireless intrusion detection systems (WIDS) like Kismet"
     },
     {
         "question": "Why is split tunneling considered a security risk?",
@@ -87,7 +87,7 @@
             "It routes all traffic through a less secure backup network",
             "It disables encryption for local traffic within the network"
         ],
-        "correct": "It bypasses VPN encryption for certain traffic, potentially exposing sensitive data"
+        "correct_index": "It bypasses VPN encryption for certain traffic, potentially exposing sensitive data"
     },
     {
         "question": "In the context of securing remote access, what is the most appropriate action for systems still using Telnet?",
@@ -97,6 +97,6 @@
             "Disable Telnet and replace it with SSH",
             "Limit Telnet access to trusted IP addresses"
         ],
-        "correct": "Disable Telnet and replace it with SSH"
+        "correct_index": "Disable Telnet and replace it with SSH"
     }
 ]

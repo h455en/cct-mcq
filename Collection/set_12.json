@@ -7,7 +7,7 @@
       "To enhance system performance",
       "To encrypt sensitive information"
     ],
-    "correct": "To preserve the original data integrity"
+    "correct_index": "To preserve the original data integrity"
   },
   {
     "question": "Which tool is commonly used to acquire RAM from a Windows workstation in a live forensic analysis?",
@@ -17,7 +17,7 @@
       "Memdump",
       "WinHex"
     ],
-    "correct": "FTK Imager"
+    "correct_index": "FTK Imager"
   },
   {
     "question": "When acquiring volatile information from a live Windows system, which of the following is NOT typically collected?",
@@ -27,7 +27,7 @@
       "Installed software list",
       "System uptime"
     ],
-    "correct": "Installed software list"
+    "correct_index": "Installed software list"
   },
   {
     "question": "In Linux forensic analysis, which file system metadata is crucial for understanding file access patterns?",
@@ -37,7 +37,7 @@
       "Boot sector",
       "Partition table"
     ],
-    "correct": "Inode information"
+    "correct_index": "Inode information"
   },
   {
     "question": "Which command is used to capture a memory dump on a Linux system?",
@@ -47,7 +47,7 @@
       "tar -cvf /dev/mem /path/to/dump",
       "gzip /dev/mem > /path/to/dump"
     ],
-    "correct": "dd if=/dev/mem of=/path/to/dump"
+    "correct_index": "dd if=/dev/mem of=/path/to/dump"
   },
   {
     "question": "What is the significance of maintaining a chain of custody in forensic investigations?",
@@ -57,7 +57,7 @@
       "Reducing storage requirements",
       "Enhancing encryption strength"
     ],
-    "correct": "Ensuring evidence is admissible in court"
+    "correct_index": "Ensuring evidence is admissible in court"
   },
   {
     "question": "Which of the following is a primary concern when analyzing a forensic image file?",
@@ -67,7 +67,7 @@
       "User access permissions",
       "System uptime"
     ],
-    "correct": "Data integrity"
+    "correct_index": "Data integrity"
   },
   {
     "question": "What is the role of hash functions in computer forensics?",
@@ -77,7 +77,7 @@
       "Verifying data integrity",
       "Allocating disk space"
     ],
-    "correct": "Verifying data integrity"
+    "correct_index": "Verifying data integrity"
   },
   {
     "question": "Which Linux tool is commonly used to analyze file systems in forensic investigations?",
@@ -87,7 +87,7 @@
       "Nmap",
       "Metasploit"
     ],
-    "correct": "Autopsy"
+    "correct_index": "Autopsy"
   },
   {
     "question": "During a forensic investigation, why is it important to acquire volatile data before shutting down a system?",
@@ -97,7 +97,7 @@
       "To improve system performance",
       "To ensure compliance with legal standards"
     ],
-    "correct": "To capture data that would be lost on shutdown"
+    "correct_index": "To capture data that would be lost on shutdown"
   },
   {
     "question": "Which of the following best describes 'live acquisition' in computer forensics?",
@@ -107,7 +107,7 @@
       "Retrieving data from backup tapes",
       "Extracting data from archived logs"
     ],
-    "correct": "Gathering data from a system while it is running"
+    "correct_index": "Gathering data from a system while it is running"
   },
   {
     "question": "What is the primary function of the 'dd' command in Linux forensics?",
@@ -117,7 +117,7 @@
       "Displaying disk usage",
       "Defragmenting the disk"
     ],
-    "correct": "Copying and converting files"
+    "correct_index": "Copying and converting files"
   },
   {
     "question": "In the context of computer forensics, what does 'write-blocking' refer to?",
@@ -127,7 +127,7 @@
       "Encrypting data for security",
       "Monitoring user activities"
     ],
-    "correct": "Blocking write operations to preserve data"
+    "correct_index": "Blocking write operations to preserve data"
   },
   {
     "question": "Which file format is commonly used for forensic disk images?",
@@ -137,7 +137,7 @@
       "MP4",
       "TXT"
     ],
-    "correct": "E01"
+    "correct_index": "E01"
   },
   {
     "question": "Why is time synchronization important in forensic investigations?",
@@ -147,6 +147,6 @@
       "To reduce storage requirements",
       "To enhance encryption protocols"
     ],
-    "correct": "To ensure accurate event correlation"
+    "correct_index": "To ensure accurate event correlation"
   }
 ]

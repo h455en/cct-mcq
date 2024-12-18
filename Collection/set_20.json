@@ -7,7 +7,7 @@
       "Performance degradation",
       "Limited resource allocation"
     ],
-    "correct": "Container escape vulnerabilities"
+    "correct_index": "Container escape vulnerabilities"
   },
   {
     "question": "Which Kubernetes component is responsible for maintaining the desired state of the cluster?",
@@ -17,7 +17,7 @@
       "Controller Manager",
       "Scheduler"
     ],
-    "correct": "Controller Manager"
+    "correct_index": "Controller Manager"
   },
   {
     "question": "What is the key difference between containers and virtual machines?"
@@ -27,7 +27,7 @@
       "Containers share the host OS kernel, while VMs include a full OS stack.",
       "VMs use Docker for deployment, while containers use Kubernetes."
     ],
-    "correct": "Containers share the host OS kernel, while VMs include a full OS stack."
+    "correct_index": "Containers share the host OS kernel, while VMs include a full OS stack."
   },
   {
     "question": "In serverless computing, what is one of the main security challenges?",
@@ -37,7 +37,7 @@
       "Complex microservices architecture",
       "High storage costs"
     ],
-    "correct": "Dependency on vendor-specific security tools"
+    "correct_index": "Dependency on vendor-specific security tools"
   },
   {
     "question": "What is the purpose of VM escape protection in virtualization security?",
@@ -47,7 +47,7 @@
       "To optimize VM resource allocation",
       "To secure virtual network interfaces"
     ],
-    "correct": "To isolate VMs from each other and the host system"
+    "correct_index": "To isolate VMs from each other and the host system"
   },
   {
     "question": "Which of the following is a best practice for securing Docker containers?",
@@ -57,7 +57,7 @@
       "Expose all ports for easier debugging.",
       "Disable logging to improve performance."
     ],
-    "correct": "Use minimal base images."
+    "correct_index": "Use minimal base images."
   },
   {
     "question": "What is the role of a Cloud Access Security Broker (CASB)?",
@@ -67,7 +67,7 @@
       "To encrypt cloud data at rest.",
       "To optimize cloud storage performance."
     ],
-    "correct": "To monitor and enforce security policies for cloud services."
+    "correct_index": "To monitor and enforce security policies for cloud services."
   },
   {
     "question": "In Kubernetes, what is the primary security concern when using secrets?",
@@ -77,7 +77,7 @@
       "They are only accessible to the master node.",
       "They cannot be used with ConfigMaps."
     ],
-    "correct": "They are stored in plaintext by default."
+    "correct_index": "They are stored in plaintext by default."
   },
   {
     "question": "How does IAM enhance cloud security?",
@@ -87,7 +87,7 @@
       "By automating backup and recovery processes.",
       "By encrypting all network traffic within the cloud."
     ],
-    "correct": "By allowing granular access control for users and services."
+    "correct_index": "By allowing granular access control for users and services."
   },
   {
     "question": "What is a key benefit of using Kubernetes for container orchestration?",
@@ -97,7 +97,7 @@
       "Automated scaling and self-healing of applications.",
       "Enhanced network encryption for containers."
     ],
-    "correct": "Automated scaling and self-healing of applications."
+    "correct_index": "Automated scaling and self-healing of applications."
   },
   {
     "question": "Which cloud computing model offers the highest level of customer control?",
@@ -107,7 +107,7 @@
       "Software as a Service (SaaS)",
       "Function as a Service (FaaS)"
     ],
-    "correct": "Infrastructure as a Service (IaaS)"
+    "correct_index": "Infrastructure as a Service (IaaS)"
   },
   {
     "question": "What is the primary purpose of a Web Application Firewall (WAF) in cloud environments?",
@@ -117,7 +117,7 @@
       "To optimize application performance.",
       "To encrypt data at rest."
     ],
-    "correct": "To block malicious traffic targeting web applications."
+    "correct_index": "To block malicious traffic targeting web applications."
   },
   {
     "question": "Which of the following best describes VM sprawl?",
@@ -127,7 +127,7 @@
       "Excessive resource allocation to VMs.",
       "Security misconfigurations across VMs."
     ],
-    "correct": "Over-deployment of VMs beyond operational needs."
+    "correct_index": "Over-deployment of VMs beyond operational needs."
   },
   {
     "question": "What is the role of edge computing in cloud environments?",
@@ -137,7 +137,7 @@
       "To provide additional redundancy for cloud services.",
       "To encrypt data during transit."
     ],
-    "correct": "To bring data processing closer to the data source."
+    "correct_index": "To bring data processing closer to the data source."
   },
   {
     "question": "What is a key advantage of serverless computing over containers?",
@@ -147,7 +147,7 @@
       "Enhanced isolation between applications.",
       "Faster networking speeds."
     ],
-    "correct": "No need to manage the underlying infrastructure."
+    "correct_index": "No need to manage the underlying infrastructure."
   },
   {
     "question": "Which of the following is a security challenge in Kubernetes?",
@@ -157,7 +157,7 @@
       "Misconfigured Role-Based Access Control (RBAC).",
       "Inability to integrate with cloud platforms."
     ],
-    "correct": "Misconfigured Role-Based Access Control (RBAC)."
+    "correct_index": "Misconfigured Role-Based Access Control (RBAC)."
   },
   {
     "question": "What is the purpose of using fog computing in IoT ecosystems?",
@@ -167,7 +167,7 @@
       "To enhance long-term data storage capabilities.",
       "To encrypt IoT data at rest."
     ],
-    "correct": "To bring computation and storage closer to IoT devices."
+    "correct_index": "To bring computation and storage closer to IoT devices."
   },
   {
     "question": "What is a common container security threat?",
@@ -177,7 +177,7 @@
       "Excessive storage usage by containers.",
       "Limited container orchestration tools."
     ],
-    "correct": "Unrestricted inter-container communication."
+    "correct_index": "Unrestricted inter-container communication."
   },
   {
     "question": "Which Docker security threat involves exploiting outdated base images?",
@@ -187,7 +187,7 @@
       "Image vulnerabilities",
       "Unrestricted network access"
     ],
-    "correct": "Image vulnerabilities"
+    "correct_index": "Image vulnerabilities"
   },
   {
     "question": "What is the primary purpose of using Security Assertion Markup Language (SAML) in cloud IAM?",
@@ -197,6 +197,6 @@
       "To monitor user activity logs.",
       "To provide multi-factor authentication."
     ],
-    "correct": "To enable Single Sign-On (SSO) capabilities."
+    "correct_index": "To enable Single Sign-On (SSO) capabilities."
   }
 ]

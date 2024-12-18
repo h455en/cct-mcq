@@ -7,7 +7,7 @@
       "Contact the user to confirm the activity",
       "Review the source IP and device details of the login"
     ],
-    "correct": "Review the source IP and device details of the login"
+    "correct_index": "Review the source IP and device details of the login"
   },
   {
     "question": "During an incident response, a team member reports unusual traffic to a remote IP address. Which tool would you use to analyze the network traffic in real-time?",
@@ -17,7 +17,7 @@
       "Autopsy",
       "FTK Imager"
     ],
-    "correct": "Wireshark"
+    "correct_index": "Wireshark"
   },
   {
     "question": "A forensic investigation requires acquiring a disk image from a suspected compromised machine. Which of the following should you ensure?",
@@ -27,7 +27,7 @@
       "The disk image is encrypted immediately after acquisition",
       "Only critical files are imaged to save time"
     ],
-    "correct": "The original disk is not altered during the process"
+    "correct_index": "The original disk is not altered during the process"
   },
   {
     "question": "You are tasked with recovering deleted files from a Linux server. Which tool would be most appropriate?",
@@ -37,7 +37,7 @@
       "Netcat",
       "tcpdump"
     ],
-    "correct": "Autopsy"
+    "correct_index": "Autopsy"
   },
   {
     "question": "A malware analysis reveals encrypted traffic being sent to an unknown IP. What would be your next step?",
@@ -47,7 +47,7 @@
       "Monitor the traffic for more details",
       "Terminate the affected process on the host"
     ],
-    "correct": "Block the IP address at the firewall"
+    "correct_index": "Block the IP address at the firewall"
   },
   {
     "question": "A user reports that their system is unusually slow, and pop-ups are appearing frequently. What is the most appropriate first step?",
@@ -57,7 +57,7 @@
       "Check the browser extensions for malicious plugins",
       "Inspect system logs for unusual activity"
     ],
-    "correct": "Disconnect the system from the network"
+    "correct_index": "Disconnect the system from the network"
   },
   {
     "question": "You need to collect volatile data from a running system. Which of the following would you collect first?",
@@ -67,7 +67,7 @@
       "Network connections",
       "Running processes"
     ],
-    "correct": "Memory dump"
+    "correct_index": "Memory dump"
   },
   {
     "question": "A critical system is compromised, and you need to perform live forensics. What should be your primary concern?",
@@ -77,7 +77,7 @@
       "Performing a root cause analysis immediately",
       "Eradicating the detected malware"
     ],
-    "correct": "Maintaining the integrity of collected data"
+    "correct_index": "Maintaining the integrity of collected data"
   },
   {
     "question": "While monitoring network traffic, you notice a large amount of outbound traffic from a single host. What could this indicate?",
@@ -87,7 +87,7 @@
       "Data exfiltration",
       "A hardware malfunction"
     ],
-    "correct": "Data exfiltration"
+    "correct_index": "Data exfiltration"
   },
   {
     "question": "A compromised system has been identified. Before shutting it down, what critical step must you perform?",
@@ -97,7 +97,7 @@
       "Disable the user account",
       "Remove the system from the network"
     ],
-    "correct": "Capture a memory dump"
+    "correct_index": "Capture a memory dump"
   },
   {
     "question": "A forensic image of a disk reveals an encrypted partition. What is the most appropriate action?",
@@ -107,7 +107,7 @@
       "Analyze unencrypted portions for clues",
       "Skip the encrypted partition to save time"
     ],
-    "correct": "Analyze unencrypted portions for clues"
+    "correct_index": "Analyze unencrypted portions for clues"
   },
   {
     "question": "A server is experiencing an unknown issue, and logs are required for analysis. Which log file would you prioritize on a Linux server?",
@@ -117,7 +117,7 @@
       "/var/log/httpd/access_log",
       "/var/log/boot.log"
     ],
-    "correct": "/var/log/messages"
+    "correct_index": "/var/log/messages"
   },
   {
     "question": "During a forensic investigation, you need to ensure that timestamps on files are accurate. What process would you follow?",
@@ -127,7 +127,7 @@
       "Ignore timestamps as they can be altered",
       "Correlate timestamps with network logs"
     ],
-    "correct": "Correlate timestamps with network logs"
+    "correct_index": "Correlate timestamps with network logs"
   },
   {
     "question": "An organization suspects unauthorized changes in their Group Policy Objects (GPOs). Which tool should be used for auditing GPO changes?",
@@ -137,7 +137,7 @@
       "Event Viewer",
       "Active Directory Users and Computers"
     ],
-    "correct": "Group Policy Management Console"
+    "correct_index": "Group Policy Management Console"
   },
   {
     "question": "A forensic team is investigating a suspected insider threat. What is the best first step?",
@@ -147,6 +147,6 @@
       "Scan the network for malware",
       "Suspend the suspected user’s account"
     ],
-    "correct": "Review user activity logs"
+    "correct_index": "Review user activity logs"
   }
 ]

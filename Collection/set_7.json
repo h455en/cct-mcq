@@ -7,7 +7,7 @@
       "filetype:",
       "inurl:"
     ],
-    "correct": "filetype:"
+    "correct_index": "filetype:"
   },
   {
     "question": "Which tool allows you to gather threat intelligence from multiple open-source feeds and sources in a unified manner?",
@@ -17,7 +17,7 @@
       "threatfeeds.io",
       "Wireshark"
     ],
-    "correct": "threatfeeds.io"
+    "correct_index": "threatfeeds.io"
   },
   {
     "question": "In the Common Weakness Enumeration (CWE) database, which vulnerability type describes the improper validation of input leading to command execution?",
@@ -27,7 +27,7 @@
       "CWE-89",
       "CWE-94"
     ],
-    "correct": "CWE-20"
+    "correct_index": "CWE-20"
   },
   {
     "question": "What is the primary purpose of a vulnerability scanner in a vulnerability assessment process?",
@@ -37,7 +37,7 @@
       "Identifies vulnerabilities by testing the system for known flaws",
       "Scans for malware in files"
     ],
-    "correct": "Identifies vulnerabilities by testing the system for known flaws"
+    "correct_index": "Identifies vulnerabilities by testing the system for known flaws"
   },
   {
     "question": "What application whitelisting tool is often used to enforce policies on applications executing on Windows-based systems?",
@@ -47,7 +47,7 @@
       "McAfee Application Control",
       "AntiVir"
     ],
-    "correct": "AppLocker"
+    "correct_index": "AppLocker"
   },
   {
     "question": "What method in Burp Suite can you use to intercept and modify HTTP requests to inject malicious code for testing vulnerabilities?",
@@ -57,7 +57,7 @@
       "Intruder",
       "Repeater"
     ],
-    "correct": "Proxy Intercept"
+    "correct_index": "Proxy Intercept"
   },
   {
     "question": "Which tool is used to identify SQL injection vulnerabilities by injecting malicious SQL code into web application forms?",
@@ -67,7 +67,7 @@
       "Wapiti",
       "Acunetix"
     ],
-    "correct": "SQLmap"
+    "correct_index": "SQLmap"
   },
   {
     "question": "When using Burp Suite to detect injection vulnerabilities, which of the following is a common parameter type you should target?",
@@ -77,7 +77,7 @@
       "Referer",
       "X-Forwarded-For"
     ],
-    "correct": "Cookie"
+    "correct_index": "Cookie"
   },
   {
     "question": "What web application vulnerability is commonly exploited through user input fields, allowing attackers to inject scripts that execute in the user's browser?",
@@ -87,7 +87,7 @@
       "Server-Side Request Forgery (SSRF)",
       "SQL Injection"
     ],
-    "correct": "Cross-Site Scripting (XSS)"
+    "correct_index": "Cross-Site Scripting (XSS)"
   },
   {
     "question": "Which of the following is a tool that can be used to detect file inclusion vulnerabilities in PHP-based web applications?",
@@ -97,7 +97,7 @@
       "Dirbuster",
       "Wapiti"
     ],
-    "correct": "Burp Suite"
+    "correct_index": "Burp Suite"
   },
   {
     "question": "What is the purpose of sandboxing an application using tools like Sandboxie?",
@@ -107,7 +107,7 @@
       "To increase user interface responsiveness",
       "To prevent unauthorized system shutdowns"
     ],
-    "correct": "To isolate potentially harmful applications from the host system"
+    "correct_index": "To isolate potentially harmful applications from the host system"
   },
   {
     "question": "Which of the following techniques is commonly used to identify web application vulnerabilities by sending automated requests designed to discover flaws in input validation?",
@@ -117,7 +117,7 @@
       "Phishing",
       "Brute Force"
     ],
-    "correct": "Fuzzing"
+    "correct_index": "Fuzzing"
   },
   {
     "question": "Which database vulnerability would be exploited using an SQL injection attack on an MSSQL server?",
@@ -127,7 +127,7 @@
       "Broken Authentication",
       "Sensitive Data Exposure"
     ],
-    "correct": "Injection flaws"
+    "correct_index": "Injection flaws"
   },
   {
     "question": "In the context of web server footprinting, which of the following tools is used to detect the technologies used by a web server?",
@@ -137,7 +137,7 @@
       "Wireshark",
       "Metasploit"
     ],
-    "correct": "WhatWeb"
+    "correct_index": "WhatWeb"
   },
   {
     "question": "What is the primary benefit of implementing application whitelisting with AppLocker on an enterprise network?",
@@ -147,6 +147,6 @@
       "It provides comprehensive endpoint protection",
       "It improves system stability"
     ],
-    "correct": "It prevents unauthorized applications from running"
+    "correct_index": "It prevents unauthorized applications from running"
   }
 ]

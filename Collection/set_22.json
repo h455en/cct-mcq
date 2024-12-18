@@ -8,7 +8,7 @@
       "To steal DNS records",
       "To disrupt network routing"
     ],
-    "correct": "To redirect traffic to a malicious site"
+    "correct_index": "To redirect traffic to a malicious site"
   },
   {
     "question_number": 2,
@@ -19,7 +19,7 @@
       "ARP Spoofing",
       "DHCP Spoofing"
     ],
-    "correct": "Domain Hijacking"
+    "correct_index": "Domain Hijacking"
   },
   {
     "question_number": 3,
@@ -30,7 +30,7 @@
       "ARP tables are poisoned",
       "DNS requests are intercepted"
     ],
-    "correct": "The switch’s CAM table is overflowed"
+    "correct_index": "The switch’s CAM table is overflowed"
   },
   {
     "question_number": 4,
@@ -41,7 +41,7 @@
       "ARP Spoofing",
       "DHCP Starvation"
     ],
-    "correct": "MAC Spoofing"
+    "correct_index": "MAC Spoofing"
   },
   {
     "question_number": 5,
@@ -52,7 +52,7 @@
       "To compromise a single target",
       "To exhaust a server’s bandwidth"
     ],
-    "correct": "To amplify attack traffic using third-party servers"
+    "correct_index": "To amplify attack traffic using third-party servers"
   },
   {
     "question_number": 6,
@@ -63,7 +63,7 @@
       "It focuses solely on physical security",
       "It relies on brute force methods"
     ],
-    "correct": "It is highly targeted and long-term"
+    "correct_index": "It is highly targeted and long-term"
   },
   {
     "question_number": 7,
@@ -74,7 +74,7 @@
       "They only affect web applications",
       "They depend on social engineering"
     ],
-    "correct": "They exploit weaknesses in AI models"
+    "correct_index": "They exploit weaknesses in AI models"
   },
   {
     "question_number": 8,
@@ -85,7 +85,7 @@
       "Parameter Tampering",
       "ARP Spoofing"
     ],
-    "correct": "Parameter Tampering"
+    "correct_index": "Parameter Tampering"
   },
   {
     "question_number": 9,
@@ -96,7 +96,7 @@
       "Weak cryptographic algorithms",
       "Unsecured APIs"
     ],
-    "correct": "A victim's browser’s trust in the web server"
+    "correct_index": "A victim's browser’s trust in the web server"
   },
   {
     "question_number": 10,
@@ -107,7 +107,7 @@
       "To inject malicious scripts",
       "To flood the server with traffic"
     ],
-    "correct": "To access internal resources from the server"
+    "correct_index": "To access internal resources from the server"
   },
   {
     "question_number": 11,
@@ -118,7 +118,7 @@
       "Steal cookies from web browsers",
       "Bypass firewalls using malicious payloads"
     ],
-    "correct": "Target specific users by compromising trusted websites"
+    "correct_index": "Target specific users by compromising trusted websites"
   },
   {
     "question_number": 12,
@@ -129,7 +129,7 @@
       "Weak session management",
       "Insufficient encryption"
     ],
-    "correct": "Insecure XML parsing"
+    "correct_index": "Insecure XML parsing"
   },
   {
     "question_number": 13,
@@ -140,7 +140,7 @@
       "CSRF Attack",
       "Parameter Tampering"
     ],
-    "correct": "Session Replay Attack"
+    "correct_index": "Session Replay Attack"
   },
   {
     "question_number": 14,
@@ -151,7 +151,7 @@
       "To spoof IP addresses",
       "To hijack DNS queries"
     ],
-    "correct": "To send a flood of traffic to the victim"
+    "correct_index": "To send a flood of traffic to the victim"
   },
   {
     "question_number": 15,
@@ -162,7 +162,7 @@
       "API attacks",
       "DNS amplification"
     ],
-    "correct": "API attacks"
+    "correct_index": "API attacks"
   },
   {
     "question_number": 16,
@@ -173,7 +173,7 @@
       "Hijacking user sessions",
       "Exfiltrating database credentials"
     ],
-    "correct": "Gaining access to unauthorized files or directories"
+    "correct_index": "Gaining access to unauthorized files or directories"
   },
   {
     "question_number": 17,
@@ -184,7 +184,7 @@
       "Physical hardware devices",
       "DNS servers"
     ],
-    "correct": "The application layer to exhaust resources"
+    "correct_index": "The application layer to exhaust resources"
   },
   {
     "question_number": 18,
@@ -195,7 +195,7 @@
       "To hijack DNS queries",
       "To perform privilege escalation"
     ],
-    "correct": "To intercept and modify transactions in the browser"
+    "correct_index": "To intercept and modify transactions in the browser"
   },
   {
     "question_number": 19,
@@ -206,7 +206,7 @@
       "Application-layer threats",
       "Mitigation strategies"
     ],
-    "correct": "The relationship between adversary, victim, capability, and infrastructure"
+    "correct_index": "The relationship between adversary, victim, capability, and infrastructure"
   },
   {
     "question_number": 20,
@@ -217,6 +217,6 @@
       "To clone MAC addresses",
       "To intercept ARP requests"
     ],
-    "correct": "To provide false IP configuration details"
+    "correct_index": "To provide false IP configuration details"
   }
 ]

@@ -7,7 +7,7 @@
       "EaseUS Data Recovery Wizard",
       "Genie Backup Manager"
     ],
-    "correct": "HashCalc"
+    "correct_index": "HashCalc"
   },
   {
     "question": "What does MD5 hashing provide?",
@@ -17,7 +17,7 @@
       "One-way data integrity verification",
       "Secure file transfer"
     ],
-    "correct": "One-way data integrity verification"
+    "correct_index": "One-way data integrity verification"
   },
   {
     "question": "Which tool is used to create and manage certificates?",
@@ -27,7 +27,7 @@
       "OpenSSL",
       "DiskPart Utility"
     ],
-    "correct": "OpenSSL"
+    "correct_index": "OpenSSL"
   },
   {
     "question": "What is the main purpose of OpenStego?",
@@ -37,7 +37,7 @@
       "Data backup",
       "Image steganography"
     ],
-    "correct": "Image steganography"
+    "correct_index": "Image steganography"
   },
   {
     "question": "Which command is used in Windows to perform disk partitioning and data destruction?",
@@ -47,7 +47,7 @@
       "netsh",
       "getmac"
     ],
-    "correct": "diskpart"
+    "correct_index": "diskpart"
   },
   {
     "question": "What does BitLocker Drive Encryption primarily protect?",
@@ -57,7 +57,7 @@
       "Data in transit",
       "File system-level permissions"
     ],
-    "correct": "Data at rest on a drive"
+    "correct_index": "Data at rest on a drive"
   },
   {
     "question": "Which tool allows disk encryption and supports creating hidden volumes?",
@@ -67,7 +67,7 @@
       "VeraCrypt",
       "Genie Backup Manager"
     ],
-    "correct": "VeraCrypt"
+    "correct_index": "VeraCrypt"
   },
   {
     "question": "Which command-line utility is best suited for troubleshooting DNS issues?",
@@ -77,7 +77,7 @@
       "nslookup",
       "netstat"
     ],
-    "correct": "nslookup"
+    "correct_index": "nslookup"
   },
   {
     "question": "What is the primary function of Hping3?",
@@ -87,7 +87,7 @@
       "Recover lost data from a drive",
       "Create self-signed certificates"
     ],
-    "correct": "Send custom-crafted network packets"
+    "correct_index": "Send custom-crafted network packets"
   },
   {
     "question": "Which of the following tools can recover deleted files from a disk?",
@@ -97,7 +97,7 @@
       "BitLocker",
       "OpenStego"
     ],
-    "correct": "EaseUS Data Recovery Wizard"
+    "correct_index": "EaseUS Data Recovery Wizard"
   },
   {
     "question": "Which encryption method is built into Windows file systems?",
@@ -107,7 +107,7 @@
       "EFS (Encrypting File System)",
       "OpenSSL"
     ],
-    "correct": "EFS (Encrypting File System)"
+    "correct_index": "EFS (Encrypting File System)"
   },
   {
     "question": "Which utility is used for backing up data and restoring it in Windows?",
@@ -117,7 +117,7 @@
       "OpenSSL",
       "HashCalc"
     ],
-    "correct": "Genie Backup Manager"
+    "correct_index": "Genie Backup Manager"
   },
   {
     "question": "Which tool enables you to access a remote machine via SSH?",
@@ -127,7 +127,7 @@
       "Hping3",
       "DiskPart Utility"
     ],
-    "correct": "PuTTY"
+    "correct_index": "PuTTY"
   },
   {
     "question": "What does the 'tracert' command do?",
@@ -137,7 +137,7 @@
       "Displays the route taken by packets to reach a destination",
       "Resolves domain names to IP addresses"
     ],
-    "correct": "Displays the route taken by packets to reach a destination"
+    "correct_index": "Displays the route taken by packets to reach a destination"
   },
   {
     "question": "Which tool would you use to detect vulnerabilities in a web application?",
@@ -147,6 +147,6 @@
       "OpenStego",
       "HashCalc"
     ],
-    "correct": "Burp Suite"
+    "correct_index": "Burp Suite"
   }
 ]

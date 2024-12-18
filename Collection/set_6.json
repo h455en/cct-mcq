@@ -7,7 +7,7 @@
             "Maltego",
             "Nmap"
         ],
-        "correct": "threatfeeds.io"
+        "correct_index": "threatfeeds.io"
     },
     {
         "question": "What is the primary purpose of using search engines during network security assessments?",
@@ -17,7 +17,7 @@
             "To exploit web applications",
             "To perform phishing attacks"
         ],
-        "correct": "To gather publicly available information about a target"
+        "correct_index": "To gather publicly available information about a target"
     },
     {
         "question": "What type of information can you find in the Common Weakness Enumeration (CWE) database?",
@@ -27,7 +27,7 @@
             "Software weakness descriptions and patterns",
             "Penetration testing tools"
         ],
-        "correct": "Software weakness descriptions and patterns"
+        "correct_index": "Software weakness descriptions and patterns"
     },
     {
         "question": "Which tool is commonly used to detect web application vulnerabilities by simulating attacks?",
@@ -37,7 +37,7 @@
             "Sandboxie",
             "Metasploit"
         ],
-        "correct": "Burp Suite"
+        "correct_index": "Burp Suite"
     },
     {
         "question": "What is the role of AppLocker in application whitelisting?",
@@ -47,7 +47,7 @@
             "To manage user account credentials",
             "To encrypt application data"
         ],
-        "correct": "To prevent unauthorized application execution"
+        "correct_index": "To prevent unauthorized application execution"
     },
     {
         "question": "Which of the following techniques is most effective for detecting injection vulnerabilities?",
@@ -57,7 +57,7 @@
             "Port scanning with Nmap",
             "Network traffic analysis with Wireshark"
         ],
-        "correct": "Simulating SQL queries with Burp Suite"
+        "correct_index": "Simulating SQL queries with Burp Suite"
     },
     {
         "question": "What does OWASP ZAP primarily help detect?",
@@ -67,7 +67,7 @@
             "Web application vulnerabilities",
             "Malware samples"
         ],
-        "correct": "Web application vulnerabilities"
+        "correct_index": "Web application vulnerabilities"
     },
     {
         "question": "When performing application sandboxing using Sandboxie, what is the primary benefit?",
@@ -77,7 +77,7 @@
             "Reducing application startup times",
             "Encrypting sensitive files used by applications"
         ],
-        "correct": "Isolation of applications to prevent malicious code execution on the host"
+        "correct_index": "Isolation of applications to prevent malicious code execution on the host"
     },
     {
         "question": "Which of the following is an example of an application-level attack?",
@@ -87,7 +87,7 @@
             "MAC flooding",
             "Man-in-the-middle attack"
         ],
-        "correct": "Cross-Site Scripting (XSS)"
+        "correct_index": "Cross-Site Scripting (XSS)"
     },
     {
         "question": "Which tool is often used for vulnerability assessment of a target network?",
@@ -97,7 +97,7 @@
             "AppLocker",
             "OWASP ZAP"
         ],
-        "correct": "Nessus"
+        "correct_index": "Nessus"
     },
     {
         "question": "What is the primary goal of web server footprinting?",
@@ -107,7 +107,7 @@
             "To exploit the web server’s application layer",
             "To detect injection vulnerabilities"
         ],
-        "correct": "To identify the web server software, version, and configuration details"
+        "correct_index": "To identify the web server software, version, and configuration details"
     },
     {
         "question": "Which technique is used to blacklist an application using ManageEngine Desktop Central?",
@@ -117,7 +117,7 @@
             "Implementing endpoint detection",
             "Enabling antivirus scans"
         ],
-        "correct": "Creating application control policies"
+        "correct_index": "Creating application control policies"
     },
     {
         "question": "What type of vulnerability does an injection attack target?",
@@ -127,7 +127,7 @@
             "Input handling mechanisms",
             "Cryptographic protocols"
         ],
-        "correct": "Input handling mechanisms"
+        "correct_index": "Input handling mechanisms"
     },
     {
         "question": "What is the purpose of gathering threat intelligence during a network security assessment?",
@@ -137,7 +137,7 @@
             "To block malicious traffic in real-time",
             "To generate a denial-of-service attack"
         ],
-        "correct": "To identify potential threats and vulnerabilities from external sources"
+        "correct_index": "To identify potential threats and vulnerabilities from external sources"
     },
     {
         "question": "Which of the following tools is NOT typically used for web application footprinting?",
@@ -147,6 +147,6 @@
             "Burp Suite",
             "Wappalyzer"
         ],
-        "correct": "Netcat"
+        "correct_index": "Netcat"
     }
 ]

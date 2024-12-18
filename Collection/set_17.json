@@ -7,7 +7,7 @@
       "Implement a new firewall solution with automatic rule auditing.",
       "Schedule the audit for the next quarter to align with other reviews."
     ],
-    "correct": "Export the current rules and review them for outdated or unnecessary entries."
+    "correct_index": "Export the current rules and review them for outdated or unnecessary entries."
   },
   {
     "question": "An attacker bypasses your network defenses and gains access to a file server. What immediate action should you take to minimize damage?",
@@ -17,7 +17,7 @@
       "Initiate an internal investigation.",
       "Reboot the server to terminate unauthorized sessions."
     ],
-    "correct": "Disconnect the server from the network."
+    "correct_index": "Disconnect the server from the network."
   },
   {
     "question": "Your organization uses an IAM solution to control access to sensitive systems. A user reports being unable to access a critical application. What is your first troubleshooting step?",
@@ -27,7 +27,7 @@
       "Restart the application server.",
       "Temporarily disable the IAM solution."
     ],
-    "correct": "Check the user’s permissions in the IAM system."
+    "correct_index": "Check the user’s permissions in the IAM system."
   },
   {
     "question": "Which framework would you use to ensure comprehensive network security by defining policies, procedures, and guidelines?",
@@ -37,7 +37,7 @@
       "COBIT",
       "ITIL"
     ],
-    "correct": "NIST Cybersecurity Framework"
+    "correct_index": "NIST Cybersecurity Framework"
   },
   {
     "question": "Your organization implements a new zero-trust model. What is a key principle of this approach?",
@@ -47,7 +47,7 @@
       "Always verifying user and device identity.",
       "Eliminating network segmentation."
     ],
-    "correct": "Always verifying user and device identity."
+    "correct_index": "Always verifying user and device identity."
   },
   {
     "question": "During a routine security review, you discover that a critical network defense mechanism is outdated. What should you do first?",
@@ -57,7 +57,7 @@
       "Replace it with a third-party solution.",
       "Report the issue and continue monitoring."
     ],
-    "correct": "Update the mechanism immediately after testing."
+    "correct_index": "Update the mechanism immediately after testing."
   },
   {
     "question": "A third-party vendor requests temporary access to your network for maintenance. How should you provide access securely?",
@@ -67,7 +67,7 @@
       "Set up a time-limited guest account with specific permissions.",
       "Share the credentials of an existing user account."
     ],
-    "correct": "Set up a time-limited guest account with specific permissions."
+    "correct_index": "Set up a time-limited guest account with specific permissions."
   },
   {
     "question": "An employee leaves the company, and their IAM account remains active. What risk does this pose?",
@@ -77,7 +77,7 @@
       "Increased network latency due to inactive accounts.",
       "Confusion during future audits."
     ],
-    "correct": "Potential insider threats and unauthorized access."
+    "correct_index": "Potential insider threats and unauthorized access."
   },
   {
     "question": "What is the primary purpose of implementing network segmentation as a defense strategy?",
@@ -87,7 +87,7 @@
       "Facilitate easier network expansion.",
       "Centralize all network management tasks."
     ],
-    "correct": "Restrict access to sensitive resources."
+    "correct_index": "Restrict access to sensitive resources."
   },
   {
     "question": "Your organization uses multi-factor authentication (MFA). A user claims they are unable to complete the authentication process. What should you check first?",
@@ -97,7 +97,7 @@
       "If the user has the correct password.",
       "If the user’s device supports MFA."
     ],
-    "correct": "If the MFA server is operational."
+    "correct_index": "If the MFA server is operational."
   },
   {
     "question": "An IAM audit reveals that several users have excessive privileges. What is the best course of action?",
@@ -107,7 +107,7 @@
       "Apply the principle of least privilege.",
       "Enable automatic privilege escalation."
     ],
-    "correct": "Apply the principle of least privilege."
+    "correct_index": "Apply the principle of least privilege."
   },
   {
     "question": "Your network’s intrusion detection system (IDS) alerts you to unusual activity from an internal IP address. What should you do first?",
@@ -117,7 +117,7 @@
       "Reboot the affected network devices.",
       "Ignore the alert if no immediate damage is visible."
     ],
-    "correct": "Isolate the device associated with the IP address."
+    "correct_index": "Isolate the device associated with the IP address."
   },
   {
     "question": "An employee uses their personal device to access the corporate network without prior authorization. What should you do?",
@@ -127,7 +127,7 @@
       "Add the device to the corporate inventory.",
       "Request the employee to update their antivirus software."
     ],
-    "correct": "Block the device and inform the employee."
+    "correct_index": "Block the device and inform the employee."
   },
   {
     "question": "Which of the following is a primary benefit of using a network security framework?",
@@ -137,7 +137,7 @@
       "Faster network speed and reduced latency.",
       "Simplified user access to all network resources."
     ],
-    "correct": "Improved clarity in defining security objectives."
+    "correct_index": "Improved clarity in defining security objectives."
   },
   {
     "question": "What is the primary reason for logging all IAM-related changes in an organization?",
@@ -147,6 +147,6 @@
       "Reduce the cost of managing IAM systems.",
       "Simplify user onboarding processes."
     ],
-    "correct": "Ensure accountability and traceability."
+    "correct_index": "Ensure accountability and traceability."
   }
 ]
