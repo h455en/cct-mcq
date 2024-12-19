@@ -1,0 +1,110 @@
+[
+    {
+        "question_number": 13,
+        "question": "Kairo, a database administrator, was trying to back up all the data of his organization for security purposes without disturbing the running business operations. To achieve this, he employed a backup technique in which the system continues to perform the backup even when the user is accessing the system. Which of the following backup techniques has Kairo employed in the above scenario?",
+        "options": [
+            "Hot backup",
+            "Cold backup",
+            "Warm backup",
+            "Nearline backup"
+        ],
+        "correct_index": "A",
+        "explanation": "A hot backup allows data to be backed up while the system is running and accessible, ensuring no disruption to business operations."
+    },
+    {
+        "question_number": 14,
+        "question": "Collin, a forensic officer, was investigating a crime scene. After collecting a suspected laptop from the spot, Collin started inspecting a specific portion of the drive where the criminal had saved the victim’s data while performing the malicious activity. Collin collected the files required for the investigation as well as fragments of deleted data. Which of the following data acquisition methods did Collin perform in the above scenario?",
+        "options": [
+            "Logical acquisition",
+            "Sparse acquisition",
+            "Bit-stream disk-to-image-file",
+            "Bit-stream disk-to-disk"
+        ],
+        "correct_index": "B",
+        "explanation": "Sparse acquisition involves collecting specific portions of data, such as files or fragments, rather than acquiring the entire disk image."
+    },
+    {
+        "question_number": 15,
+        "question": "Judah, a security professional, performed a security audit on a newly developed application to identify its weak points. Judah tested the application in an isolated virtual environment to protect the production environment from being affected by the system. Identify the technique used by Judah to test the application in the above scenario.",
+        "options": [
+            "Application whitelisting/blacklisting",
+            "Application sandboxing",
+            "Application patch management",
+            "Application-level firewall (WAF) deployment"
+        ],
+        "correct_index": "B",
+        "explanation": "Application sandboxing involves testing applications in isolated virtual environments to ensure that vulnerabilities do not affect the production environment."
+    },
+    {
+        "question_number": 16,
+        "question": "Which of the following ciphers can resist a wide range of attacks and provides message secrecy and integrity and uses a one-way mathematical function that is capable of factoring large prime numbers?",
+        "options": [
+            "Transposition ciphers",
+            "Substitution ciphers",
+            "Modern ciphers",
+            "Classical ciphers"
+        ],
+        "correct_index": "C",
+        "explanation": "Modern ciphers, such as those using public-key cryptography, provide secrecy, integrity, and advanced mathematical resistance against attacks."
+    },
+    {
+        "question_number": 17,
+        "question": "In which of the following types of Internet access policies, the majority of Internet traffic is accepted, except for several well-known and dangerous services/attacks and it is impossible for security professionals to monitor current exploits?",
+        "options": [
+            "Promiscuous policy",
+            "Permissive policy",
+            "Paranoid policy",
+            "Prudent policy"
+        ],
+        "correct_index": "B",
+        "explanation": "Permissive policies allow most traffic but block known dangerous services, making it hard to track new exploits."
+    },
+    {
+        "question_number": 18,
+        "question": "Daniella, a medical assistant, was appointed to take care of a physically paralyzed patient at a ward. Daniella placed a smart wearable on the patient’s wrist that sends alerts to Daniella’s interfaced monitoring system (mobile) in case of an emergency during her inactive hours. One day, when Daniella was in the canteen, she received an emergency alert indicating that the patient’s pulse was fluctuating. Which of the following types of IoT communication models was demonstrated in the above scenario?",
+        "options": [
+            "Device-to-device",
+            "Device-to-cloud",
+            "Device-to-gateway",
+            "Cloud-to-cloud"
+        ],
+        "correct_index": "B",
+        "explanation": "Device-to-cloud communication involves devices sending data to the cloud for processing and alerts."
+    },
+    {
+        "question_number": 19,
+        "question": "Jacob, an application developer, developed an eCommerce website. He decided to host his application on a cloud server as it saves costs and no personal maintenance is required. He opted for a cloud deployment model that provides services for free, and the application is accessible to everyone over the Internet. Which of the following cloud deployment models has Jacob employed in the above scenario?",
+        "options": [
+            "Public cloud",
+            "Private cloud",
+            "Community cloud",
+            "Multi cloud"
+        ],
+        "correct_index": "A",
+        "explanation": "A public cloud is a cost-effective model that offers services to the public over the Internet."
+    },
+    {
+        "question_number": 20,
+        "question": "Susan, a security professional, wanted to confirm the identity of newly joined employees. She sent email links of the company's portal to all the newly joined employees. The employees need to enter initial access token to login on to the portal, then they will receive an OTP on their mobile phone to upload their scanned certificate copies. Which of the following types of authentication has Susan implemented in the above scenario?",
+        "options": [
+            "Password authentication",
+            "Two-factor authentication",
+            "Biometric authentication",
+            "Single sign-on (SSO) authentication"
+        ],
+        "correct_index": "B",
+        "explanation": "Two-factor authentication combines an initial access token (something you have) and OTP (something you know)."
+    },
+    {
+        "question_number": 21,
+        "question": "Karl, a security professional at an organization, while analyzing Windows event logs identified that a threat actor made multiple attempts to gain access to the organization’s network but failed to do so, due to strong security controls deployed on the network. Identify the type of event data discussed in the above scenario.",
+        "options": [
+            "Error",
+            "Warning",
+            "Success audit",
+            "Failure audit"
+        ],
+        "correct_index": "D",
+        "explanation": "Failure audit logs record unsuccessful attempts to access systems due to strong security measures."
+    }
+]
