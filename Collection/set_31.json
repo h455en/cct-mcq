@@ -1,242 +1,242 @@
 [
-  {
-    "number": 1,
-    "question": "A user reports that their computer cannot access the internet, but others in the office can. What should be checked first?",
-    "options": [
-      "The user's network cable connection",
-      "The status of the company's internet connection",
-      "The user's antivirus software",
-      "The IP configuration on the user's computer"
-    ],
-    "correct_index": "A",
-    "explanation": "The network cable connection should be checked first, as a physical disconnection is a common issue."
-  },
-  {
-    "number": 2,
-    "question": "A server is unable to communicate with other devices on the same network. What could be the issue?",
-    "options": [
-      "Incorrect DNS configuration",
-      "IP address conflict",
-      "Outdated network drivers",
-      "Blocked firewall ports"
-    ],
-    "correct_index": "B",
-    "explanation": "An IP address conflict can prevent a server from communicating properly on the network."
-  },
-  {
-    "number": 3,
-    "question": "A device is receiving an 'IP address not found' error. What should be checked?",
-    "options": [
-      "DHCP server status",
-      "Router's NAT settings",
-      "DNS server configuration",
-      "Firewall rules"
-    ],
-    "correct_index": "A",
-    "explanation": "The DHCP server assigns IP addresses. If it is offline or misconfigured, devices may fail to receive an IP."
-  },
-  {
-    "number": 4,
-    "question": "While troubleshooting a network issue, you notice an excessive number of ICMP redirect messages. What could be causing this?",
-    "options": [
-      "A routing loop",
-      "An unplugged network cable",
-      "A misconfigured DNS server",
-      "A faulty firewall"
-    ],
-    "correct_index": "A",
-    "explanation": "Excessive ICMP redirects are typically caused by a routing loop, which requires immediate attention."
-  },
-  {
-    "number": 5,
-    "question": "What could cause a wireless device to lose connection periodically?",
-    "options": [
-      "Outdated firmware on the wireless router",
-      "Network cable unplugged",
-      "Firewall misconfiguration",
-      "Overloaded DNS server"
-    ],
-    "correct_index": "A",
-    "explanation": "Outdated firmware can cause stability issues, leading to periodic disconnections."
-  },
-  {
-    "number": 6,
-    "question": "A technician is troubleshooting an unreachable network. They successfully ping the router but fail to ping any external addresses. What is the likely cause?",
-    "options": [
-      "The router's NAT configuration",
-      "The firewall's outbound rules",
-      "The DNS server's response time",
-      "The cable's signal strength"
-    ],
-    "correct_index": "A",
-    "explanation": "Issues with the router's NAT configuration can prevent external connectivity while internal pings succeed."
-  },
-  {
-    "number": 7,
-    "question": "After replacing a network switch, users report slower speeds. What should be verified first?",
-    "options": [
-      "Cable compatibility",
-      "Port speed settings",
-      "Firewall rules",
-      "Switch firmware version"
-    ],
-    "correct_index": "B",
-    "explanation": "Port speed settings on the new switch should be verified to ensure compatibility with the connected devices."
-  },
-  {
-    "number": 8,
-    "question": "What should be done if a 'Destination Unreachable' message is encountered during troubleshooting?",
-    "options": [
-      "Check the routing table for accuracy",
-      "Replace the network cable",
-      "Update the DNS records",
-      "Restart the endpoint device"
-    ],
-    "correct_index": "A",
-    "explanation": "A 'Destination Unreachable' message often indicates routing issues that require checking the routing table."
-  },
-  {
-    "number": 9,
-    "question": "A wireless device fails to connect to the network, showing an 'authentication error' message. What should be checked?",
-    "options": [
-      "The SSID visibility",
-      "The wireless password",
-      "The device's IP address",
-      "The router's MAC filtering settings"
-    ],
-    "correct_index": "B",
-    "explanation": "An incorrect wireless password can lead to an authentication error."
-  },
-  {
-    "number": 10,
-    "question": "What is the most likely cause of a 'Network path not found' error?",
-    "options": [
-      "Incorrect DNS settings",
-      "An unplugged network cable",
-      "Incorrect IP configuration",
-      "A disabled network card"
-    ],
-    "correct_index": "C",
-    "explanation": "Incorrect IP configuration can result in the 'Network path not found' error."
-  },
-  {
-    "number": 11,
-    "question": "A user's device cannot find a wireless network after a network name change. What step should be taken first?",
-    "options": [
-      "Restart the router",
-      "Reconnect the device to the network",
-      "Update the network name on the device",
-      "Reboot the user's device"
-    ],
-    "correct_index": "C",
-    "explanation": "The network name (SSID) must be updated on the device to match the new name."
-  },
-  {
-    "number": 12,
-    "question": "What could cause a 'Time Exceeded' ICMP message during a traceroute operation?",
-    "options": [
-      "A misconfigured router",
-      "A packet's TTL reaching zero",
-      "A failed NAT translation",
-      "A dropped TCP connection"
-    ],
-    "correct_index": "B",
-    "explanation": "A 'Time Exceeded' message occurs when a packet's TTL expires before reaching its destination."
-  },
-  {
-    "number": 13,
-    "question": "What should be done if a network cable is suspected to be faulty?",
-    "options": [
-      "Replace the cable",
-      "Use a cable tester",
-      "Update the network driver",
-      "Reconfigure the switch port"
-    ],
-    "correct_index": "B",
-    "explanation": "A cable tester can quickly verify whether a network cable is functioning correctly."
-  },
-  {
-    "number": 14,
-    "question": "A newly deployed server cannot access other servers on the same subnet. What could be the issue?",
-    "options": [
-      "Incorrect subnet mask",
-      "Misconfigured DNS server",
-      "Disabled server firewall",
-      "Faulty Ethernet cable"
-    ],
-    "correct_index": "A",
-    "explanation": "An incorrect subnet mask prevents devices from communicating within the same subnet."
-  },
-  {
-    "number": 15,
-    "question": "After a network configuration change, users report connectivity issues. What should be checked first?",
-    "options": [
-      "The change management records",
-      "The network topology map",
-      "The router's running configuration",
-      "The switch port assignments"
-    ],
-    "correct_index": "C",
-    "explanation": "Reviewing the router's running configuration can help identify any recent misconfigurations."
-  },
-  {
-    "number": 16,
-    "question": "A device reports 'IP address conflict detected.' What should be done?",
-    "options": [
-      "Restart the device",
-      "Assign a new static IP",
-      "Update the DHCP pool",
-      "Verify DNS resolution"
-    ],
-    "correct_index": "B",
-    "explanation": "Assigning a new static IP address resolves IP address conflicts."
-  },
-  {
-    "number": 17,
-    "question": "A user's computer can ping internal devices but cannot browse the internet. What could be the problem?",
-    "options": [
-      "Incorrect DNS settings",
-      "Outdated browser version",
-      "Corrupted TCP/IP stack",
-      "A blocked firewall port"
-    ],
-    "correct_index": "A",
-    "explanation": "Incorrect DNS settings can prevent domain name resolution required for internet browsing."
-  },
-  {
-    "number": 18,
-    "question": "What should be checked if users on a VLAN cannot communicate with other VLANs?",
-    "options": [
-      "Switch port assignments",
-      "Inter-VLAN routing configuration",
-      "Firewall rules",
-      "VLAN IDs"
-    ],
-    "correct_index": "B",
-    "explanation": "Inter-VLAN routing must be configured to enable communication between VLANs."
-  },
-  {
-    "number": 19,
-    "question": "A new wireless network has been set up, but some users report being unable to connect. What is the most likely issue?",
-    "options": [
-      "The SSID is hidden",
-      "The access point is offline",
-      "Incorrect wireless encryption settings",
-      "Too many users are connected"
-    ],
-    "correct_index": "C",
-    "explanation": "Incorrect wireless encryption settings can prevent devices from authenticating with the network."
-  },
-  {
-    "number": 20,
-    "question": "A technician discovers that some devices cannot communicate with others on the same network. What could be the cause?",
-    "options": [
-      "Mismatched subnet masks",
-      "An unplugged network cable",
-      "A disabled firewall",
-      "An offline router"
-    ],
-    "correct_index": "A",
-    "explanation": "Mismatched subnet masks prevent devices from identifying others in the same network."
-  }
+    {
+        "number":  1,
+        "question":  "A user reports that their computer cannot access the internet, but others in the office can. What should be checked first?",
+        "options":  [
+                        "The user\u0027s network cable connection",
+                        "The status of the company\u0027s internet connection",
+                        "The user\u0027s antivirus software",
+                        "The IP configuration on the user\u0027s computer"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "The network cable connection should be checked first, as a physical disconnection is a common issue."
+    },
+    {
+        "number":  2,
+        "question":  "A server is unable to communicate with other devices on the same network. What could be the issue?",
+        "options":  [
+                        "Incorrect DNS configuration",
+                        "IP address conflict",
+                        "Outdated network drivers",
+                        "Blocked firewall ports"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "An IP address conflict can prevent a server from communicating properly on the network."
+    },
+    {
+        "number":  3,
+        "question":  "A device is receiving an \u0027IP address not found\u0027 error. What should be checked?",
+        "options":  [
+                        "DHCP server status",
+                        "Router\u0027s NAT settings",
+                        "DNS server configuration",
+                        "Firewall rules"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "The DHCP server assigns IP addresses. If it is offline or misconfigured, devices may fail to receive an IP."
+    },
+    {
+        "number":  4,
+        "question":  "While troubleshooting a network issue, you notice an excessive number of ICMP redirect messages. What could be causing this?",
+        "options":  [
+                        "A routing loop",
+                        "An unplugged network cable",
+                        "A misconfigured DNS server",
+                        "A faulty firewall"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Excessive ICMP redirects are typically caused by a routing loop, which requires immediate attention."
+    },
+    {
+        "number":  5,
+        "question":  "What could cause a wireless device to lose connection periodically?",
+        "options":  [
+                        "Outdated firmware on the wireless router",
+                        "Network cable unplugged",
+                        "Firewall misconfiguration",
+                        "Overloaded DNS server"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Outdated firmware can cause stability issues, leading to periodic disconnections."
+    },
+    {
+        "number":  6,
+        "question":  "A technician is troubleshooting an unreachable network. They successfully ping the router but fail to ping any external addresses. What is the likely cause?",
+        "options":  [
+                        "The router\u0027s NAT configuration",
+                        "The firewall\u0027s outbound rules",
+                        "The DNS server\u0027s response time",
+                        "The cable\u0027s signal strength"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Issues with the router\u0027s NAT configuration can prevent external connectivity while internal pings succeed."
+    },
+    {
+        "number":  7,
+        "question":  "After replacing a network switch, users report slower speeds. What should be verified first?",
+        "options":  [
+                        "Cable compatibility",
+                        "Port speed settings",
+                        "Firewall rules",
+                        "Switch firmware version"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Port speed settings on the new switch should be verified to ensure compatibility with the connected devices."
+    },
+    {
+        "number":  8,
+        "question":  "What should be done if a \u0027Destination Unreachable\u0027 message is encountered during troubleshooting?",
+        "options":  [
+                        "Check the routing table for accuracy",
+                        "Replace the network cable",
+                        "Update the DNS records",
+                        "Restart the endpoint device"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "A \u0027Destination Unreachable\u0027 message often indicates routing issues that require checking the routing table."
+    },
+    {
+        "number":  9,
+        "question":  "A wireless device fails to connect to the network, showing an \u0027authentication error\u0027 message. What should be checked?",
+        "options":  [
+                        "The SSID visibility",
+                        "The wireless password",
+                        "The device\u0027s IP address",
+                        "The router\u0027s MAC filtering settings"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "An incorrect wireless password can lead to an authentication error."
+    },
+    {
+        "number":  10,
+        "question":  "What is the most likely cause of a \u0027Network path not found\u0027 error?",
+        "options":  [
+                        "Incorrect DNS settings",
+                        "An unplugged network cable",
+                        "Incorrect IP configuration",
+                        "A disabled network card"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Incorrect IP configuration can result in the \u0027Network path not found\u0027 error."
+    },
+    {
+        "number":  11,
+        "question":  "A user\u0027s device cannot find a wireless network after a network name change. What step should be taken first?",
+        "options":  [
+                        "Restart the router",
+                        "Reconnect the device to the network",
+                        "Update the network name on the device",
+                        "Reboot the user\u0027s device"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "The network name (SSID) must be updated on the device to match the new name."
+    },
+    {
+        "number":  12,
+        "question":  "What could cause a \u0027Time Exceeded\u0027 ICMP message during a traceroute operation?",
+        "options":  [
+                        "A misconfigured router",
+                        "A packet\u0027s TTL reaching zero",
+                        "A failed NAT translation",
+                        "A dropped TCP connection"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "A \u0027Time Exceeded\u0027 message occurs when a packet\u0027s TTL expires before reaching its destination."
+    },
+    {
+        "number":  13,
+        "question":  "What should be done if a network cable is suspected to be faulty?",
+        "options":  [
+                        "Replace the cable",
+                        "Use a cable tester",
+                        "Update the network driver",
+                        "Reconfigure the switch port"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "A cable tester can quickly verify whether a network cable is functioning correctly."
+    },
+    {
+        "number":  14,
+        "question":  "A newly deployed server cannot access other servers on the same subnet. What could be the issue?",
+        "options":  [
+                        "Incorrect subnet mask",
+                        "Misconfigured DNS server",
+                        "Disabled server firewall",
+                        "Faulty Ethernet cable"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "An incorrect subnet mask prevents devices from communicating within the same subnet."
+    },
+    {
+        "number":  15,
+        "question":  "After a network configuration change, users report connectivity issues. What should be checked first?",
+        "options":  [
+                        "The change management records",
+                        "The network topology map",
+                        "The router\u0027s running configuration",
+                        "The switch port assignments"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Reviewing the router\u0027s running configuration can help identify any recent misconfigurations."
+    },
+    {
+        "number":  16,
+        "question":  "A device reports \u0027IP address conflict detected.\u0027 What should be done?",
+        "options":  [
+                        "Restart the device",
+                        "Assign a new static IP",
+                        "Update the DHCP pool",
+                        "Verify DNS resolution"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Assigning a new static IP address resolves IP address conflicts."
+    },
+    {
+        "number":  17,
+        "question":  "A user\u0027s computer can ping internal devices but cannot browse the internet. What could be the problem?",
+        "options":  [
+                        "Incorrect DNS settings",
+                        "Outdated browser version",
+                        "Corrupted TCP/IP stack",
+                        "A blocked firewall port"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Incorrect DNS settings can prevent domain name resolution required for internet browsing."
+    },
+    {
+        "number":  18,
+        "question":  "What should be checked if users on a VLAN cannot communicate with other VLANs?",
+        "options":  [
+                        "Switch port assignments",
+                        "Inter-VLAN routing configuration",
+                        "Firewall rules",
+                        "VLAN IDs"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Inter-VLAN routing must be configured to enable communication between VLANs."
+    },
+    {
+        "number":  19,
+        "question":  "A new wireless network has been set up, but some users report being unable to connect. What is the most likely issue?",
+        "options":  [
+                        "The SSID is hidden",
+                        "The access point is offline",
+                        "Incorrect wireless encryption settings",
+                        "Too many users are connected"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Incorrect wireless encryption settings can prevent devices from authenticating with the network."
+    },
+    {
+        "number":  20,
+        "question":  "A technician discovers that some devices cannot communicate with others on the same network. What could be the cause?",
+        "options":  [
+                        "Mismatched subnet masks",
+                        "An unplugged network cable",
+                        "A disabled firewall",
+                        "An offline router"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Mismatched subnet masks prevent devices from identifying others in the same network."
+    }
 ]

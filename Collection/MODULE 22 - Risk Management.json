@@ -1,194 +1,194 @@
 [
-  {
-    "number": 1,
-    "question": "A financial institution identifies that its online banking system is vulnerable to phishing attacks. What is the first step in managing this risk?",
-    "options": [
-      "Develop a phishing awareness campaign",
-      "Conduct a risk assessment to evaluate the threat",
-      "Deploy multi-factor authentication",
-      "Monitor for phishing attempts in real-time"
-    ],
-    "correct_index": "B",
-    "explanation": "The first step is to conduct a risk assessment to evaluate the potential threat, its likelihood, and impact."
-  },
-  {
-    "number": 2,
-    "question": "A retail company prioritizes risks using a risk matrix. What information does the matrix primarily consider?",
-    "options": [
-      "Cost of mitigation and recovery time",
-      "Impact severity and likelihood of occurrence",
-      "Compliance requirements and legal impact",
-      "Mitigation strategies and response time"
-    ],
-    "correct_index": "B",
-    "explanation": "A risk matrix helps prioritize risks based on their impact severity and likelihood of occurrence."
-  },
-  {
-    "number": 3,
-    "question": "An organization determines that a potential data breach could result in a $1M loss. Which risk management step does this scenario represent?",
-    "options": [
-      "Risk Identification",
-      "Risk Prioritization",
-      "Risk Analysis",
-      "Risk Treatment"
-    ],
-    "correct_index": "C",
-    "explanation": "Quantifying the potential financial loss from a risk is part of the risk analysis step."
-  },
-  {
-    "number": 4,
-    "question": "A company chooses to transfer its risk of hardware failure to an insurance provider. Which risk treatment option does this represent?",
-    "options": [
-      "Risk Avoidance",
-      "Risk Mitigation",
-      "Risk Acceptance",
-      "Risk Transfer"
-    ],
-    "correct_index": "D",
-    "explanation": "Risk transfer involves shifting the responsibility for managing a risk to a third party, such as an insurer."
-  },
-  {
-    "number": 5,
-    "question": "A manufacturing firm installs redundant systems to prevent downtime. Which risk treatment option is being implemented?",
-    "options": [
-      "Risk Avoidance",
-      "Risk Mitigation",
-      "Risk Transfer",
-      "Risk Acceptance"
-    ],
-    "correct_index": "B",
-    "explanation": "Risk mitigation involves implementing measures to reduce the likelihood or impact of a risk."
-  },
-  {
-    "number": 6,
-    "question": "An IT company conducts quarterly reviews of its risk management plan. What phase of risk management does this activity fall under?",
-    "options": [
-      "Risk Assessment",
-      "Risk Tracking and Review",
-      "Risk Treatment",
-      "Risk Prioritization"
-    ],
-    "correct_index": "B",
-    "explanation": "Regular reviews and monitoring are part of the Risk Tracking and Review phase."
-  },
-  {
-    "number": 7,
-    "question": "A multinational enterprise adopts the NIST Risk Management Framework (RMF). What is the primary goal of this framework?",
-    "options": [
-      "To manage IT operational costs",
-      "To integrate risk management into the system lifecycle",
-      "To reduce the need for compliance audits",
-      "To enhance employee productivity"
-    ],
-    "correct_index": "B",
-    "explanation": "The NIST RMF aims to integrate risk management throughout the system development lifecycle."
-  },
-  {
-    "number": 8,
-    "question": "A risk assessment identifies that third-party vendors pose a significant threat to data security. What is the best course of action?",
-    "options": [
-      "Terminate contracts with all vendors",
-      "Implement a vendor risk management program",
-      "Reduce the scope of vendor services",
-      "Focus only on internal risks"
-    ],
-    "correct_index": "B",
-    "explanation": "A vendor risk management program helps address and mitigate risks associated with third-party vendors."
-  },
-  {
-    "number": 9,
-    "question": "A healthcare provider determines that the likelihood of a ransomware attack is high but the impact is low. How should this risk be managed?",
-    "options": [
-      "Accept the risk",
-      "Avoid the risk by disconnecting systems",
-      "Mitigate the risk with regular data backups",
-      "Transfer the risk to a cybersecurity insurer"
-    ],
-    "correct_index": "C",
-    "explanation": "Mitigating the risk with regular data backups ensures recovery with minimal disruption if an attack occurs."
-  },
-  {
-    "number": 10,
-    "question": "An IT manager uses Key Risk Indicators (KRIs) to monitor risks. What is the primary benefit of this approach?",
-    "options": [
-      "Predicting potential risks before they materialize",
-      "Reducing the cost of risk mitigation",
-      "Improving compliance with legal standards",
-      "Eliminating the need for risk tracking"
-    ],
-    "correct_index": "A",
-    "explanation": "KRIs provide early warnings of potential risks, enabling proactive management."
-  },
-  {
-    "number": 11,
-    "question": "An organization is comparing COBIT and ITIL frameworks for risk management. Which statement correctly differentiates the two?",
-    "options": [
-      "COBIT focuses on business goals, while ITIL focuses on IT services.",
-      "ITIL provides risk analysis tools, while COBIT focuses on data recovery.",
-      "COBIT emphasizes compliance, while ITIL emphasizes cybersecurity.",
-      "ITIL is a regulatory framework, while COBIT is risk-specific."
-    ],
-    "correct_index": "A",
-    "explanation": "COBIT aligns IT processes with business goals, while ITIL focuses on IT service management."
-  },
-  {
-    "number": 12,
-    "question": "A retail company avoids operating in regions prone to natural disasters. Which risk treatment option does this illustrate?",
-    "options": [
-      "Risk Mitigation",
-      "Risk Acceptance",
-      "Risk Avoidance",
-      "Risk Transfer"
-    ],
-    "correct_index": "C",
-    "explanation": "Risk avoidance involves eliminating activities that pose a risk, such as operating in disaster-prone areas."
-  },
-  {
-    "number": 13,
-    "question": "A software company documents its plan to address identified risks and assigns roles to team members. What is this plan called?",
-    "options": [
-      "Risk Mitigation Strategy",
-      "Risk Treatment Plan",
-      "Risk Management Framework",
-      "Incident Response Plan"
-    ],
-    "correct_index": "B",
-    "explanation": "A Risk Treatment Plan outlines the actions to address risks and assigns roles for execution."
-  },
-  {
-    "number": 14,
-    "question": "An enterprise implements multifactor authentication to address the risk of unauthorized access. In which phase of risk management does this activity occur?",
-    "options": [
-      "Risk Identification",
-      "Risk Analysis",
-      "Risk Prioritization",
-      "Risk Treatment"
-    ],
-    "correct_index": "D",
-    "explanation": "Implementing controls such as multifactor authentication is part of the Risk Treatment phase."
-  },
-  {
-    "number": 15,
-    "question": "During a risk assessment, a team calculates both qualitative and quantitative risk levels. Which phase of risk management does this represent?",
-    "options": [
-      "Risk Treatment",
-      "Risk Prioritization",
-      "Risk Tracking and Review",
-      "Risk Analysis"
-    ],
-    "correct_index": "D",
-    "explanation": "Calculating risk levels is part of the Risk Analysis step within the Risk Assessment phase."
-  },
-  {
-    "number": 16,
-    "question": "An organization monitors its Key Risk Indicators (KRIs) to ensure risk levels remain acceptable. Which phase of risk management does this activity belong to?",
-    "options": [
-      "Risk Identification",
-      "Risk Tracking and Review",
-      "Risk Prioritization",
-      "Risk Treatment"
-    ],
-    "correct_index": "B",
-    "explanation": "Monitoring KRIs to track and adjust risks is part of the Risk Tracking and Review phase."
-  }
+    {
+        "number":  1,
+        "question":  "A financial institution identifies that its online banking system is vulnerable to phishing attacks. What is the first step in managing this risk?",
+        "options":  [
+                        "Develop a phishing awareness campaign",
+                        "Conduct a risk assessment to evaluate the threat",
+                        "Deploy multi-factor authentication",
+                        "Monitor for phishing attempts in real-time"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "The first step is to conduct a risk assessment to evaluate the potential threat, its likelihood, and impact."
+    },
+    {
+        "number":  2,
+        "question":  "A retail company prioritizes risks using a risk matrix. What information does the matrix primarily consider?",
+        "options":  [
+                        "Cost of mitigation and recovery time",
+                        "Impact severity and likelihood of occurrence",
+                        "Compliance requirements and legal impact",
+                        "Mitigation strategies and response time"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "A risk matrix helps prioritize risks based on their impact severity and likelihood of occurrence."
+    },
+    {
+        "number":  3,
+        "question":  "An organization determines that a potential data breach could result in a $1M loss. Which risk management step does this scenario represent?",
+        "options":  [
+                        "Risk Identification",
+                        "Risk Prioritization",
+                        "Risk Analysis",
+                        "Risk Treatment"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Quantifying the potential financial loss from a risk is part of the risk analysis step."
+    },
+    {
+        "number":  4,
+        "question":  "A company chooses to transfer its risk of hardware failure to an insurance provider. Which risk treatment option does this represent?",
+        "options":  [
+                        "Risk Avoidance",
+                        "Risk Mitigation",
+                        "Risk Acceptance",
+                        "Risk Transfer"
+                    ],
+        "correct_index":  "D",
+        "explanation":  "Risk transfer involves shifting the responsibility for managing a risk to a third party, such as an insurer."
+    },
+    {
+        "number":  5,
+        "question":  "A manufacturing firm installs redundant systems to prevent downtime. Which risk treatment option is being implemented?",
+        "options":  [
+                        "Risk Avoidance",
+                        "Risk Mitigation",
+                        "Risk Transfer",
+                        "Risk Acceptance"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Risk mitigation involves implementing measures to reduce the likelihood or impact of a risk."
+    },
+    {
+        "number":  6,
+        "question":  "An IT company conducts quarterly reviews of its risk management plan. What phase of risk management does this activity fall under?",
+        "options":  [
+                        "Risk Assessment",
+                        "Risk Tracking and Review",
+                        "Risk Treatment",
+                        "Risk Prioritization"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Regular reviews and monitoring are part of the Risk Tracking and Review phase."
+    },
+    {
+        "number":  7,
+        "question":  "A multinational enterprise adopts the NIST Risk Management Framework (RMF). What is the primary goal of this framework?",
+        "options":  [
+                        "To manage IT operational costs",
+                        "To integrate risk management into the system lifecycle",
+                        "To reduce the need for compliance audits",
+                        "To enhance employee productivity"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "The NIST RMF aims to integrate risk management throughout the system development lifecycle."
+    },
+    {
+        "number":  8,
+        "question":  "A risk assessment identifies that third-party vendors pose a significant threat to data security. What is the best course of action?",
+        "options":  [
+                        "Terminate contracts with all vendors",
+                        "Implement a vendor risk management program",
+                        "Reduce the scope of vendor services",
+                        "Focus only on internal risks"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "A vendor risk management program helps address and mitigate risks associated with third-party vendors."
+    },
+    {
+        "number":  9,
+        "question":  "A healthcare provider determines that the likelihood of a ransomware attack is high but the impact is low. How should this risk be managed?",
+        "options":  [
+                        "Accept the risk",
+                        "Avoid the risk by disconnecting systems",
+                        "Mitigate the risk with regular data backups",
+                        "Transfer the risk to a cybersecurity insurer"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Mitigating the risk with regular data backups ensures recovery with minimal disruption if an attack occurs."
+    },
+    {
+        "number":  10,
+        "question":  "An IT manager uses Key Risk Indicators (KRIs) to monitor risks. What is the primary benefit of this approach?",
+        "options":  [
+                        "Predicting potential risks before they materialize",
+                        "Reducing the cost of risk mitigation",
+                        "Improving compliance with legal standards",
+                        "Eliminating the need for risk tracking"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "KRIs provide early warnings of potential risks, enabling proactive management."
+    },
+    {
+        "number":  11,
+        "question":  "An organization is comparing COBIT and ITIL frameworks for risk management. Which statement correctly differentiates the two?",
+        "options":  [
+                        "COBIT focuses on business goals, while ITIL focuses on IT services.",
+                        "ITIL provides risk analysis tools, while COBIT focuses on data recovery.",
+                        "COBIT emphasizes compliance, while ITIL emphasizes cybersecurity.",
+                        "ITIL is a regulatory framework, while COBIT is risk-specific."
+                    ],
+        "correct_index":  "A",
+        "explanation":  "COBIT aligns IT processes with business goals, while ITIL focuses on IT service management."
+    },
+    {
+        "number":  12,
+        "question":  "A retail company avoids operating in regions prone to natural disasters. Which risk treatment option does this illustrate?",
+        "options":  [
+                        "Risk Mitigation",
+                        "Risk Acceptance",
+                        "Risk Avoidance",
+                        "Risk Transfer"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Risk avoidance involves eliminating activities that pose a risk, such as operating in disaster-prone areas."
+    },
+    {
+        "number":  13,
+        "question":  "A software company documents its plan to address identified risks and assigns roles to team members. What is this plan called?",
+        "options":  [
+                        "Risk Mitigation Strategy",
+                        "Risk Treatment Plan",
+                        "Risk Management Framework",
+                        "Incident Response Plan"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "A Risk Treatment Plan outlines the actions to address risks and assigns roles for execution."
+    },
+    {
+        "number":  14,
+        "question":  "An enterprise implements multifactor authentication to address the risk of unauthorized access. In which phase of risk management does this activity occur?",
+        "options":  [
+                        "Risk Identification",
+                        "Risk Analysis",
+                        "Risk Prioritization",
+                        "Risk Treatment"
+                    ],
+        "correct_index":  "D",
+        "explanation":  "Implementing controls such as multifactor authentication is part of the Risk Treatment phase."
+    },
+    {
+        "number":  15,
+        "question":  "During a risk assessment, a team calculates both qualitative and quantitative risk levels. Which phase of risk management does this represent?",
+        "options":  [
+                        "Risk Treatment",
+                        "Risk Prioritization",
+                        "Risk Tracking and Review",
+                        "Risk Analysis"
+                    ],
+        "correct_index":  "D",
+        "explanation":  "Calculating risk levels is part of the Risk Analysis step within the Risk Assessment phase."
+    },
+    {
+        "number":  16,
+        "question":  "An organization monitors its Key Risk Indicators (KRIs) to ensure risk levels remain acceptable. Which phase of risk management does this activity belong to?",
+        "options":  [
+                        "Risk Identification",
+                        "Risk Tracking and Review",
+                        "Risk Prioritization",
+                        "Risk Treatment"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Monitoring KRIs to track and adjust risks is part of the Risk Tracking and Review phase."
+    }
 ]

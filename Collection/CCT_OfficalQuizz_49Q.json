@@ -1,122 +1,122 @@
 [
     {
-        "question_number": 1,
-        "question": "In which of the following phases of business impact analysis (BIA) does the BIA team adopt different information-gathering methods such as interviews and questionnaire surveys to determine assets that are critical to different business functions?",
-        "options": [
-            "Initiation of the BIA",
-            "Acquisition of information",
-            "Analysis of information",
-            "Documentation of findings"
-        ],
-        "correct_index": "B",
-        "explanation": "The acquisition of information phase involves using interviews, surveys, and other methods to gather data about critical assets."
+        "question_number":  1,
+        "question":  "In which of the following phases of business impact analysis (BIA) does the BIA team adopt different information-gathering methods such as interviews and questionnaire surveys to determine assets that are critical to different business functions?",
+        "options":  [
+                        "Initiation of the BIA",
+                        "Acquisition of information",
+                        "Analysis of information",
+                        "Documentation of findings"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "The acquisition of information phase involves using interviews, surveys, and other methods to gather data about critical assets."
     },
     {
-        "question_number": 2,
-        "question": "Geon, a security professional at an organization, was instructed to secure the organization\u2019s network. For this purpose, Geon has deployed a packet sniffer that can be used for network troubleshooting to investigate security issues and to analyze and understand network protocols. Identify the tool employed by Geon in the above scenario.",
-        "options": [
-            "Wireshark",
-            "ShellPhish",
-            "Norton Ghost",
-            "SyncBackPro"
-        ],
-        "correct_index": "A",
-        "explanation": "Wireshark is a widely-used network packet sniffer that helps in analyzing network protocols and troubleshooting issues."
+        "question_number":  2,
+        "question":  "Geon, a security professional at an organization, was instructed to secure the organization’s network. For this purpose, Geon has deployed a packet sniffer that can be used for network troubleshooting to investigate security issues and to analyze and understand network protocols. Identify the tool employed by Geon in the above scenario.",
+        "options":  [
+                        "Wireshark",
+                        "ShellPhish",
+                        "Norton Ghost",
+                        "SyncBackPro"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Wireshark is a widely-used network packet sniffer that helps in analyzing network protocols and troubleshooting issues."
     },
     {
-        "question_number": 3,
-        "question": "Which of the data deidentification techniques involves the process of attaching random characters to a hashed field in a table to increase the complexity and difficulty in retrieving the hashes, providing strong defense against dictionary and rainbow table attacks?",
-        "options": [
-            "Masking",
-            "Bucketing",
-            "Tokenization",
-            "Salting"
-        ],
-        "correct_index": "D",
-        "explanation": "Salting enhances hashing by adding random data to the input, making it resistant to attacks like dictionary or rainbow table attacks."
+        "question_number":  3,
+        "question":  "Which of the data deidentification techniques involves the process of attaching random characters to a hashed field in a table to increase the complexity and difficulty in retrieving the hashes, providing strong defense against dictionary and rainbow table attacks?",
+        "options":  [
+                        "Masking",
+                        "Bucketing",
+                        "Tokenization",
+                        "Salting"
+                    ],
+        "correct_index":  "D",
+        "explanation":  "Salting enhances hashing by adding random data to the input, making it resistant to attacks like dictionary or rainbow table attacks."
     },
     {
-        "question_number": 4,
-        "question": "Which of the following application logs records information related to the changes made to application data such as insert, update, or delete and is helpful in meeting policies and compliance requirements?",
-        "options": [
-            "Request log",
-            "Audit trail",
-            "Availability log",
-            "Threat log"
-        ],
-        "correct_index": "B",
-        "explanation": "Audit trails track changes made to application data, ensuring compliance and providing a history of transactions."
+        "question_number":  4,
+        "question":  "Which of the following application logs records information related to the changes made to application data such as insert, update, or delete and is helpful in meeting policies and compliance requirements?",
+        "options":  [
+                        "Request log",
+                        "Audit trail",
+                        "Availability log",
+                        "Threat log"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Audit trails track changes made to application data, ensuring compliance and providing a history of transactions."
     },
     {
-        "question_number": 5,
-        "question": "In which of the following phases of cyber kill chain methodology does an adversary establish a two-way encrypted channel for communication between the victim\u2019s system and the adversary-controlled server?",
-        "options": [
-            "Delivery",
-            "Exploitation",
-            "Weaponization",
-            "Command and control"
-        ],
-        "correct_index": "D",
-        "explanation": "The command and control phase involves setting up an encrypted channel for communication with the compromised system."
+        "question_number":  5,
+        "question":  "In which of the following phases of cyber kill chain methodology does an adversary establish a two-way encrypted channel for communication between the victim’s system and the adversary-controlled server?",
+        "options":  [
+                        "Delivery",
+                        "Exploitation",
+                        "Weaponization",
+                        "Command and control"
+                    ],
+        "correct_index":  "D",
+        "explanation":  "The command and control phase involves setting up an encrypted channel for communication with the compromised system."
     },
     {
-        "question_number": 6,
-        "question": "Peter, a network administrator, was tasked with detecting outdated services that are active on the organizational network. For this purpose, he executed an nmap command that retrieves all the service versions that are currently active on the organization\u2019s network. Identify the nmap command executed by Peter in the above scenario.",
-        "options": [
-            "nmap -sS <IP address>",
-            "nmap -O <IP address>",
-            "nmap -sT <IP address>",
-            "nmap -sV <IP address range>"
-        ],
-        "correct_index": "D",
-        "explanation": "The 'nmap -sV' command retrieves service versions running on the specified network, helping identify outdated services."
+        "question_number":  6,
+        "question":  "Peter, a network administrator, was tasked with detecting outdated services that are active on the organizational network. For this purpose, he executed an nmap command that retrieves all the service versions that are currently active on the organization’s network. Identify the nmap command executed by Peter in the above scenario.",
+        "options":  [
+                        "nmap -sS \u003cIP address\u003e",
+                        "nmap -O \u003cIP address\u003e",
+                        "nmap -sT \u003cIP address\u003e",
+                        "nmap -sV \u003cIP address range\u003e"
+                    ],
+        "correct_index":  "D",
+        "explanation":  "The \u0027nmap -sV\u0027 command retrieves service versions running on the specified network, helping identify outdated services."
     },
     {
-        "question_number": 7,
-        "question": "Which of the following mobile device connection methods is based on a single network tower that serves devices located within a specific radius and are installed in urban, suburban, & rural areas and cover a large distance?",
-        "options": [
-            "Cellular communication",
-            "Near-field communication",
-            "Infrared communication",
-            "Wi-Fi communication"
-        ],
-        "correct_index": "A",
-        "explanation": "Cellular communication uses network towers to serve devices within specific radii, supporting wide-area connectivity."
+        "question_number":  7,
+        "question":  "Which of the following mobile device connection methods is based on a single network tower that serves devices located within a specific radius and are installed in urban, suburban, \u0026 rural areas and cover a large distance?",
+        "options":  [
+                        "Cellular communication",
+                        "Near-field communication",
+                        "Infrared communication",
+                        "Wi-Fi communication"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Cellular communication uses network towers to serve devices within specific radii, supporting wide-area connectivity."
     },
     {
-        "question_number": 8,
-        "question": "Identify the VPN core functionality in which packets over a VPN are enclosed within another packet that has a different IP source and destination because concealing the source and destination of the packets can protect the integrity of the data sent.",
-        "options": [
-            "Authentication",
-            "Encapsulation",
-            "Encryption",
-            "Packet filtering"
-        ],
-        "correct_index": "B",
-        "explanation": "Encapsulation wraps packets within another packet with a different IP header, ensuring data confidentiality."
+        "question_number":  8,
+        "question":  "Identify the VPN core functionality in which packets over a VPN are enclosed within another packet that has a different IP source and destination because concealing the source and destination of the packets can protect the integrity of the data sent.",
+        "options":  [
+                        "Authentication",
+                        "Encapsulation",
+                        "Encryption",
+                        "Packet filtering"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Encapsulation wraps packets within another packet with a different IP header, ensuring data confidentiality."
     },
     {
-        "question_number": 9,
-        "question": "Which of the following levels of virtualization makes virtual devices independent of the physical computer hardware and creates a massive pool of storage areas for different virtual machines running on the hardware?",
-        "options": [
-            "File-system virtualization",
-            "Storage-device virtualization",
-            "Fabric virtualization",
-            "Server virtualization"
-        ],
-        "correct_index": "D",
-        "explanation": "Server virtualization decouples virtual devices from physical hardware, allowing flexible resource allocation."
+        "question_number":  9,
+        "question":  "Which of the following levels of virtualization makes virtual devices independent of the physical computer hardware and creates a massive pool of storage areas for different virtual machines running on the hardware?",
+        "options":  [
+                        "File-system virtualization",
+                        "Storage-device virtualization",
+                        "Fabric virtualization",
+                        "Server virtualization"
+                    ],
+        "correct_index":  "D",
+        "explanation":  "Server virtualization decouples virtual devices from physical hardware, allowing flexible resource allocation."
     },
     {
-        "question_number": 10,
-        "question": "Keegan, a security team member, conducted risk assessment for the network and devices in the organization. After analyzing and prioritizing each risk, Keegan decided to take immediate action on the risks that may cause service disruption to the organization. Identify the risk level that needs immediate action to prevent service disruption.",
-        "options": [
-            "Moderate",
-            "High",
-            "Medium",
-            "Low"
-        ],
-        "correct_index": "B",
-        "explanation": "High-risk issues have the greatest potential impact and require immediate attention to mitigate potential service disruptions."
+        "question_number":  10,
+        "question":  "Keegan, a security team member, conducted risk assessment for the network and devices in the organization. After analyzing and prioritizing each risk, Keegan decided to take immediate action on the risks that may cause service disruption to the organization. Identify the risk level that needs immediate action to prevent service disruption.",
+        "options":  [
+                        "Moderate",
+                        "High",
+                        "Medium",
+                        "Low"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "High-risk issues have the greatest potential impact and require immediate attention to mitigate potential service disruptions."
     }
 ]

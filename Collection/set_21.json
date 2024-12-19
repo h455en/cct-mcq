@@ -1,202 +1,202 @@
 [
-  {
-    "question": "What is the first stage in the Cyber Kill Chain methodology?",
-    "options": [
-      "Weaponization",
-      "Delivery",
-      "Reconnaissance",
-      "Exploitation"
-    ],
-    "correct_index": "Reconnaissance"
-  },
-  {
-    "question": "Which framework provides a detailed matrix of adversarial Tactics, Techniques, and Procedures (TTPs)?",
-    "options": [
-      "Diamond Model",
-      "MITRE ATT&CK",
-      "Cyber Kill Chain",
-      "OWASP"
-    ],
-    "correct_index": "MITRE ATT&CK"
-  },
-  {
-    "question": "In the Diamond Model of Intrusion Analysis, which element refers to the victim’s assets or resources?",
-    "options": [
-      "Infrastructure",
-      "Adversary",
-      "Victim",
-      "Capability"
-    ],
-    "correct_index": "Victim"
-  },
-  {
-    "question": "What is the primary goal of reconnaissance attacks?",
-    "options": [
-      "Stealing data",
-      "Disrupting services",
-      "Gathering information",
-      "Manipulating users"
-    ],
-    "correct_index": "Gathering information"
-  },
-  {
-    "question": "Which tool is commonly used for network scanning?",
-    "options": [
-      "Nmap",
-      "Burp Suite",
-      "Metasploit",
-      "Wireshark"
-    ],
-    "correct_index": "Nmap"
-  },
-  {
-    "question": "What is DNS footprinting primarily used for?",
-    "options": [
-      "Collecting domain information",
-      "Poisoning DNS caches",
-      "Amplifying DoS attacks",
-      "Hijacking domain names"
-    ],
-    "correct_index": "Collecting domain information"
-  },
-  {
-    "question": "Which attack involves intercepting and altering communication between two parties?",
-    "options": [
-      "Man-in-the-Middle Attack",
-      "Packet Sniffing",
-      "ARP Spoofing",
-      "MAC Flooding"
-    ],
-    "correct_index": "Man-in-the-Middle Attack"
-  },
-  {
-    "question": "How does ARP spoofing work?",
-    "options": [
-      "By flooding the switch with MAC addresses",
-      "By sending fake ARP messages",
-      "By cloning an IP address",
-      "By starving the DHCP server"
-    ],
-    "correct_index": "By sending fake ARP messages"
-  },
-  {
-    "question": "What type of attack results in the exhaustion of IP addresses in a network?",
-    "options": [
-      "MAC Flooding",
-      "DHCP Starvation",
-      "IP Spoofing",
-      "Switch Port Stealing"
-    ],
-    "correct_index": "DHCP Starvation"
-  },
-  {
-    "question": "What is the key characteristic of a Distributed Denial-of-Service (DDoS) attack?",
-    "options": [
-      "It targets a single host from one source.",
-      "It uses multiple systems to attack a target.",
-      "It focuses on a specific port or service.",
-      "It involves IP spoofing."
-    ],
-    "correct_index": "It uses multiple systems to attack a target."
-  },
-  {
-    "question": "What is an Advanced Persistent Threat (APT)?",
-    "options": [
-      "A temporary network-level attack",
-      "A long-term, targeted attack",
-      "An attack using only malware",
-      "A physical attack on hardware"
-    ],
-    "correct_index": "A long-term, targeted attack"
-  },
-  {
-    "question": "Which OWASP risk involves injecting malicious SQL queries?",
-    "options": [
-      "Cross-Site Scripting (XSS)",
-      "SQL Injection",
-      "Broken Authentication",
-      "Insecure Deserialization"
-    ],
-    "correct_index": "SQL Injection"
-  },
-  {
-    "question": "What is the main objective of a Cross-Site Scripting (XSS) attack?",
-    "options": [
-      "To steal session cookies",
-      "To crash the web server",
-      "To gain root access",
-      "To bypass authentication"
-    ],
-    "correct_index": "To steal session cookies"
-  },
-  {
-    "question": "What does a Directory Traversal attack aim to achieve?",
-    "options": [
-      "Exploiting insecure deserialization",
-      "Accessing unauthorized files or directories",
-      "Crashing the application",
-      "Hijacking user sessions"
-    ],
-    "correct_index": "Accessing unauthorized files or directories"
-  },
-  {
-    "question": "Which attack uses legitimate-looking websites to lure victims?",
-    "options": [
-      "Watering Hole Attack",
-      "DNS Poisoning",
-      "Man-in-the-Browser Attack",
-      "Session Replay Attack"
-    ],
-    "correct_index": "Watering Hole Attack"
-  },
-  {
-    "question": "What is the purpose of DNS amplification attacks?",
-    "options": [
-      "To flood a target with DNS response traffic",
-      "To spoof ARP tables",
-      "To hijack domain names",
-      "To disrupt DHCP services"
-    ],
-    "correct_index": "To flood a target with DNS response traffic"
-  },
-  {
-    "question": "How does a CSRF attack work?",
-    "options": [
-      "By injecting malicious SQL code",
-      "By tricking users into performing actions on their behalf",
-      "By intercepting network packets",
-      "By modifying HTTP headers"
-    ],
-    "correct_index": "By tricking users into performing actions on their behalf"
-  },
-  {
-    "question": "What vulnerability is exploited by XML External Entity (XXE) attacks?",
-    "options": [
-      "Improper authentication",
-      "Insecure XML parsing",
-      "Session management flaws",
-      "Unvalidated redirects"
-    ],
-    "correct_index": "Insecure XML parsing"
-  },
-  {
-    "question": "Which attack leverages trust between a web server and a user’s browser to perform malicious actions?",
-    "options": [
-      "Man-in-the-Browser Attack",
-      "Server-Side Request Forgery (SSRF)",
-      "Session Replay Attack",
-      "Application-level DoS Attack"
-    ],
-    "correct_index": "Man-in-the-Browser Attack"
-  },
-  {
-    "question": "What is a common target of API attacks?",
-    "options": [
-      "Database credentials",
-      "Unsecured endpoints",
-      "Authentication tokens",
-      "All of the above"
-    ],
-    "correct_index": "All of the above"
-  }
+    {
+        "question":  "What is the first stage in the Cyber Kill Chain methodology?",
+        "options":  [
+                        "Weaponization",
+                        "Delivery",
+                        "Reconnaissance",
+                        "Exploitation"
+                    ],
+        "correct_index":  "C"
+    },
+    {
+        "question":  "Which framework provides a detailed matrix of adversarial Tactics, Techniques, and Procedures (TTPs)?",
+        "options":  [
+                        "Diamond Model",
+                        "MITRE ATT\u0026CK",
+                        "Cyber Kill Chain",
+                        "OWASP"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "In the Diamond Model of Intrusion Analysis, which element refers to the victim’s assets or resources?",
+        "options":  [
+                        "Infrastructure",
+                        "Adversary",
+                        "Victim",
+                        "Capability"
+                    ],
+        "correct_index":  "C"
+    },
+    {
+        "question":  "What is the primary goal of reconnaissance attacks?",
+        "options":  [
+                        "Stealing data",
+                        "Disrupting services",
+                        "Gathering information",
+                        "Manipulating users"
+                    ],
+        "correct_index":  "C"
+    },
+    {
+        "question":  "Which tool is commonly used for network scanning?",
+        "options":  [
+                        "Nmap",
+                        "Burp Suite",
+                        "Metasploit",
+                        "Wireshark"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "What is DNS footprinting primarily used for?",
+        "options":  [
+                        "Collecting domain information",
+                        "Poisoning DNS caches",
+                        "Amplifying DoS attacks",
+                        "Hijacking domain names"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "Which attack involves intercepting and altering communication between two parties?",
+        "options":  [
+                        "Man-in-the-Middle Attack",
+                        "Packet Sniffing",
+                        "ARP Spoofing",
+                        "MAC Flooding"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "How does ARP spoofing work?",
+        "options":  [
+                        "By flooding the switch with MAC addresses",
+                        "By sending fake ARP messages",
+                        "By cloning an IP address",
+                        "By starving the DHCP server"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "What type of attack results in the exhaustion of IP addresses in a network?",
+        "options":  [
+                        "MAC Flooding",
+                        "DHCP Starvation",
+                        "IP Spoofing",
+                        "Switch Port Stealing"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "What is the key characteristic of a Distributed Denial-of-Service (DDoS) attack?",
+        "options":  [
+                        "It targets a single host from one source.",
+                        "It uses multiple systems to attack a target.",
+                        "It focuses on a specific port or service.",
+                        "It involves IP spoofing."
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "What is an Advanced Persistent Threat (APT)?",
+        "options":  [
+                        "A temporary network-level attack",
+                        "A long-term, targeted attack",
+                        "An attack using only malware",
+                        "A physical attack on hardware"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "Which OWASP risk involves injecting malicious SQL queries?",
+        "options":  [
+                        "Cross-Site Scripting (XSS)",
+                        "SQL Injection",
+                        "Broken Authentication",
+                        "Insecure Deserialization"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "What is the main objective of a Cross-Site Scripting (XSS) attack?",
+        "options":  [
+                        "To steal session cookies",
+                        "To crash the web server",
+                        "To gain root access",
+                        "To bypass authentication"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "What does a Directory Traversal attack aim to achieve?",
+        "options":  [
+                        "Exploiting insecure deserialization",
+                        "Accessing unauthorized files or directories",
+                        "Crashing the application",
+                        "Hijacking user sessions"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "Which attack uses legitimate-looking websites to lure victims?",
+        "options":  [
+                        "Watering Hole Attack",
+                        "DNS Poisoning",
+                        "Man-in-the-Browser Attack",
+                        "Session Replay Attack"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "What is the purpose of DNS amplification attacks?",
+        "options":  [
+                        "To flood a target with DNS response traffic",
+                        "To spoof ARP tables",
+                        "To hijack domain names",
+                        "To disrupt DHCP services"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "How does a CSRF attack work?",
+        "options":  [
+                        "By injecting malicious SQL code",
+                        "By tricking users into performing actions on their behalf",
+                        "By intercepting network packets",
+                        "By modifying HTTP headers"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "What vulnerability is exploited by XML External Entity (XXE) attacks?",
+        "options":  [
+                        "Improper authentication",
+                        "Insecure XML parsing",
+                        "Session management flaws",
+                        "Unvalidated redirects"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "Which attack leverages trust between a web server and a user’s browser to perform malicious actions?",
+        "options":  [
+                        "Man-in-the-Browser Attack",
+                        "Server-Side Request Forgery (SSRF)",
+                        "Session Replay Attack",
+                        "Application-level DoS Attack"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "What is a common target of API attacks?",
+        "options":  [
+                        "Database credentials",
+                        "Unsecured endpoints",
+                        "Authentication tokens",
+                        "All of the above"
+                    ],
+        "correct_index":  "D"
+    }
 ]

@@ -1,242 +1,242 @@
 [
-  {
-    "number": 1,
-    "question": "An IT team uses Wireshark to identify unusual spikes in FTP traffic during non-business hours. What type of traffic signature is being analyzed?",
-    "options": [
-      "Baseline Traffic Signature",
-      "Suspicious Traffic Signature",
-      "Normal Traffic Signature",
-      "Encrypted Traffic Signature"
-    ],
-    "correct_index": "B",
-    "explanation": "Unusual spikes in FTP traffic during non-business hours are considered suspicious traffic signatures."
-  },
-  {
-    "number": 2,
-    "question": "An administrator creates a baseline for network traffic by monitoring activity during a 30-day period. What is the primary benefit of this practice?",
-    "options": [
-      "Identifying vulnerabilities in encrypted traffic",
-      "Detecting malicious insider activity",
-      "Understanding normal network behavior",
-      "Blocking suspicious IP addresses"
-    ],
-    "correct_index": "C",
-    "explanation": "Baselining helps in understanding normal network behavior, making it easier to detect anomalies."
-  },
-  {
-    "number": 3,
-    "question": "A network monitoring tool generates alerts for unusually high volumes of HTTP requests from a single IP address. What is the most likely category of this suspicious traffic?",
-    "options": [
-      "Normal Traffic Signature",
-      "DoS Attack Signature",
-      "FTP Traffic Anomaly",
-      "Telnet Command Injection"
-    ],
-    "correct_index": "B",
-    "explanation": "High volumes of HTTP requests from a single source can indicate a potential DoS attack."
-  },
-  {
-    "number": 4,
-    "question": "A security analyst uses Wireshark’s 'Follow TCP Stream' feature to reconstruct a conversation. What type of analysis is being performed?",
-    "options": [
-      "Baseline Traffic Analysis",
-      "Encrypted Traffic Decryption",
-      "Suspicious Traffic Inspection",
-      "Network Behavior Monitoring"
-    ],
-    "correct_index": "C",
-    "explanation": "'Follow TCP Stream' allows analysts to view the complete data exchange, often used for inspecting suspicious traffic."
-  },
-  {
-    "number": 5,
-    "question": "While reviewing network logs, an administrator notices multiple failed login attempts over Telnet. What type of attack is likely occurring?",
-    "options": [
-      "DDoS Attack",
-      "Man-in-the-Middle Attack",
-      "Brute Force Attack",
-      "Phishing Attack"
-    ],
-    "correct_index": "C",
-    "explanation": "Multiple failed login attempts suggest a brute force attack aimed at guessing credentials."
-  },
-  {
-    "number": 6,
-    "question": "An organization uses network sniffers to capture traffic and detect anomalies. Which of the following is a potential advantage of this approach?",
-    "options": [
-      "Increased latency in network communications",
-      "Reduced need for firewalls",
-      "Early detection of potential security breaches",
-      "Automatic encryption of traffic"
-    ],
-    "correct_index": "C",
-    "explanation": "Network sniffers help in early detection of anomalies and potential breaches by capturing and analyzing traffic."
-  },
-  {
-    "number": 7,
-    "question": "A network administrator applies a Wireshark filter to display only HTTP traffic. Which type of monitoring is this?",
-    "options": [
-      "Baseline Monitoring",
-      "Protocol-specific Monitoring",
-      "Traffic Anomaly Detection",
-      "Encrypted Traffic Analysis"
-    ],
-    "correct_index": "B",
-    "explanation": "Using filters to isolate HTTP traffic is an example of protocol-specific monitoring."
-  },
-  {
-    "number": 8,
-    "question": "A company's traffic baseline reveals that peak network usage occurs between 9 AM and 5 PM. What action should be taken if high traffic is observed at 3 AM?",
-    "options": [
-      "Initiate an attack signature analysis",
-      "Notify all users about potential downtime",
-      "Log the event as normal traffic",
-      "Block all traffic at night"
-    ],
-    "correct_index": "A",
-    "explanation": "High traffic outside normal peak hours warrants an attack signature analysis to investigate potential anomalies."
-  },
-  {
-    "number": 9,
-    "question": "An analyst observes encrypted data being sent to an unknown IP address on port 443. Which network monitoring tool feature should be used to investigate further?",
-    "options": [
-      "Follow TCP Stream",
-      "IP Whitelisting",
-      "Baseline Traffic Comparison",
-      "Application Layer Inspection"
-    ],
-    "correct_index": "A",
-    "explanation": "'Follow TCP Stream' can help reconstruct the flow of data and identify suspicious activities."
-  },
-  {
-    "number": 10,
-    "question": "An IT team identifies a spike in traffic involving large file uploads to an external server via FTP. What type of suspicious traffic signature does this indicate?",
-    "options": [
-      "Normal Traffic",
-      "Data Exfiltration",
-      "Encrypted Traffic",
-      "Internal Network Misuse"
-    ],
-    "correct_index": "B",
-    "explanation": "Large file uploads to an external server suggest potential data exfiltration, a suspicious traffic signature."
-  },
-  {
-    "number": 11,
-    "question": "A company deploys a network monitoring tool that provides real-time alerts for abnormal traffic patterns. What is the key advantage of this approach?",
-    "options": [
-      "Complete elimination of insider threats",
-      "Immediate detection and response to anomalies",
-      "Improved encryption of sensitive data",
-      "Automated remediation of detected vulnerabilities"
-    ],
-    "correct_index": "B",
-    "explanation": "Real-time monitoring enables immediate detection and response to anomalies, enhancing network security."
-  },
-  {
-    "number": 12,
-    "question": "An employee is using Telnet to access a critical server. What should the monitoring team do to ensure security?",
-    "options": [
-      "Monitor Telnet traffic for suspicious commands",
-      "Block Telnet traffic entirely",
-      "Encrypt the Telnet session",
-      "Convert the session to FTP"
-    ],
-    "correct_index": "A",
-    "explanation": "Monitoring Telnet traffic for suspicious commands can help detect unauthorized actions while ensuring operational needs."
-  },
-  {
-    "number": 13,
-    "question": "An administrator configures Wireshark to filter all traffic except TCP and UDP packets. What is the purpose of this configuration?",
-    "options": [
-      "To identify encrypted traffic",
-      "To focus on commonly used transport layer protocols",
-      "To inspect application-specific behavior",
-      "To block unneeded traffic"
-    ],
-    "correct_index": "B",
-    "explanation": "Focusing on TCP and UDP packets narrows the analysis to transport layer protocols, where most network activity occurs."
-  },
-  {
-    "number": 14,
-    "question": "After observing unusual DNS queries, the IT team suspects a botnet command and control communication. What should their next step be?",
-    "options": [
-      "Shut down the DNS server",
-      "Capture and analyze the suspicious DNS packets",
-      "Block all outbound DNS traffic",
-      "Ignore the traffic if it is encrypted"
-    ],
-    "correct_index": "B",
-    "explanation": "Capturing and analyzing DNS packets can help confirm botnet communication and identify infected systems."
-  },
-  {
-    "number": 15,
-    "question": "A security analyst creates a baseline for HTTP traffic on the corporate network. What is the main reason for establishing this baseline?",
-    "options": [
-      "To block all unencrypted traffic",
-      "To understand normal HTTP usage patterns",
-      "To detect new HTTP protocols",
-      "To eliminate HTTP as a protocol"
-    ],
-    "correct_index": "B",
-    "explanation": "Baselining HTTP traffic helps in identifying deviations from normal usage patterns, which may indicate anomalies."
-  },
-  {
-    "number": 16,
-    "question": "During network monitoring, an IT team identifies unusual TCP connections from a single device to multiple external IPs. What is the likely scenario?",
-    "options": [
-      "A normal file-sharing activity",
-      "A potential port scanning activity",
-      "Encrypted traffic analysis",
-      "Baseline traffic signature"
-    ],
-    "correct_index": "B",
-    "explanation": "Multiple external connections from one device often indicate port scanning, a reconnaissance activity."
-  },
-  {
-    "number": 17,
-    "question": "An attacker uses a known vulnerability in an unpatched server to inject malicious HTTP payloads. What monitoring activity can detect this?",
-    "options": [
-      "Protocol-specific analysis",
-      "Attack signature detection",
-      "Baseline traffic monitoring",
-      "Anomaly-based filtering"
-    ],
-    "correct_index": "B",
-    "explanation": "Attack signature detection involves identifying patterns associated with known exploits or vulnerabilities."
-  },
-  {
-    "number": 18,
-    "question": "A network administrator monitors traffic using a sniffer and notices excessive ARP requests. What type of attack might this indicate?",
-    "options": [
-      "ARP Spoofing",
-      "DNS Poisoning",
-      "Session Hijacking",
-      "SQL Injection"
-    ],
-    "correct_index": "A",
-    "explanation": "Excessive ARP requests may indicate ARP spoofing, where attackers attempt to impersonate other devices on the network."
-  },
-  {
-    "number": 19,
-    "question": "After implementing a new network monitoring tool, the IT team finds high volumes of traffic using non-standard ports. What should they investigate?",
-    "options": [
-      "Baseline Traffic Logs",
-      "Suspicious Application Usage",
-      "Wireshark Filters",
-      "Encrypted File Transfers"
-    ],
-    "correct_index": "B",
-    "explanation": "Non-standard port usage often indicates unauthorized applications or malware communication."
-  },
-  {
-    "number": 20,
-    "question": "While reviewing network logs, the team discovers continuous SYN packets sent from an unknown source. What kind of attack is likely occurring?",
-    "options": [
-      "Brute Force Attack",
-      "SYN Flood Attack",
-      "Ping Sweep Attack",
-      "SQL Injection"
-    ],
-    "correct_index": "B",
-    "explanation": "Continuous SYN packets are indicative of a SYN flood attack, a common DoS attack method."
-  }
+    {
+        "number":  1,
+        "question":  "An IT team uses Wireshark to identify unusual spikes in FTP traffic during non-business hours. What type of traffic signature is being analyzed?",
+        "options":  [
+                        "Baseline Traffic Signature",
+                        "Suspicious Traffic Signature",
+                        "Normal Traffic Signature",
+                        "Encrypted Traffic Signature"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Unusual spikes in FTP traffic during non-business hours are considered suspicious traffic signatures."
+    },
+    {
+        "number":  2,
+        "question":  "An administrator creates a baseline for network traffic by monitoring activity during a 30-day period. What is the primary benefit of this practice?",
+        "options":  [
+                        "Identifying vulnerabilities in encrypted traffic",
+                        "Detecting malicious insider activity",
+                        "Understanding normal network behavior",
+                        "Blocking suspicious IP addresses"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Baselining helps in understanding normal network behavior, making it easier to detect anomalies."
+    },
+    {
+        "number":  3,
+        "question":  "A network monitoring tool generates alerts for unusually high volumes of HTTP requests from a single IP address. What is the most likely category of this suspicious traffic?",
+        "options":  [
+                        "Normal Traffic Signature",
+                        "DoS Attack Signature",
+                        "FTP Traffic Anomaly",
+                        "Telnet Command Injection"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "High volumes of HTTP requests from a single source can indicate a potential DoS attack."
+    },
+    {
+        "number":  4,
+        "question":  "A security analyst uses Wireshark’s \u0027Follow TCP Stream\u0027 feature to reconstruct a conversation. What type of analysis is being performed?",
+        "options":  [
+                        "Baseline Traffic Analysis",
+                        "Encrypted Traffic Decryption",
+                        "Suspicious Traffic Inspection",
+                        "Network Behavior Monitoring"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "\u0027Follow TCP Stream\u0027 allows analysts to view the complete data exchange, often used for inspecting suspicious traffic."
+    },
+    {
+        "number":  5,
+        "question":  "While reviewing network logs, an administrator notices multiple failed login attempts over Telnet. What type of attack is likely occurring?",
+        "options":  [
+                        "DDoS Attack",
+                        "Man-in-the-Middle Attack",
+                        "Brute Force Attack",
+                        "Phishing Attack"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Multiple failed login attempts suggest a brute force attack aimed at guessing credentials."
+    },
+    {
+        "number":  6,
+        "question":  "An organization uses network sniffers to capture traffic and detect anomalies. Which of the following is a potential advantage of this approach?",
+        "options":  [
+                        "Increased latency in network communications",
+                        "Reduced need for firewalls",
+                        "Early detection of potential security breaches",
+                        "Automatic encryption of traffic"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Network sniffers help in early detection of anomalies and potential breaches by capturing and analyzing traffic."
+    },
+    {
+        "number":  7,
+        "question":  "A network administrator applies a Wireshark filter to display only HTTP traffic. Which type of monitoring is this?",
+        "options":  [
+                        "Baseline Monitoring",
+                        "Protocol-specific Monitoring",
+                        "Traffic Anomaly Detection",
+                        "Encrypted Traffic Analysis"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Using filters to isolate HTTP traffic is an example of protocol-specific monitoring."
+    },
+    {
+        "number":  8,
+        "question":  "A company\u0027s traffic baseline reveals that peak network usage occurs between 9 AM and 5 PM. What action should be taken if high traffic is observed at 3 AM?",
+        "options":  [
+                        "Initiate an attack signature analysis",
+                        "Notify all users about potential downtime",
+                        "Log the event as normal traffic",
+                        "Block all traffic at night"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "High traffic outside normal peak hours warrants an attack signature analysis to investigate potential anomalies."
+    },
+    {
+        "number":  9,
+        "question":  "An analyst observes encrypted data being sent to an unknown IP address on port 443. Which network monitoring tool feature should be used to investigate further?",
+        "options":  [
+                        "Follow TCP Stream",
+                        "IP Whitelisting",
+                        "Baseline Traffic Comparison",
+                        "Application Layer Inspection"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "\u0027Follow TCP Stream\u0027 can help reconstruct the flow of data and identify suspicious activities."
+    },
+    {
+        "number":  10,
+        "question":  "An IT team identifies a spike in traffic involving large file uploads to an external server via FTP. What type of suspicious traffic signature does this indicate?",
+        "options":  [
+                        "Normal Traffic",
+                        "Data Exfiltration",
+                        "Encrypted Traffic",
+                        "Internal Network Misuse"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Large file uploads to an external server suggest potential data exfiltration, a suspicious traffic signature."
+    },
+    {
+        "number":  11,
+        "question":  "A company deploys a network monitoring tool that provides real-time alerts for abnormal traffic patterns. What is the key advantage of this approach?",
+        "options":  [
+                        "Complete elimination of insider threats",
+                        "Immediate detection and response to anomalies",
+                        "Improved encryption of sensitive data",
+                        "Automated remediation of detected vulnerabilities"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Real-time monitoring enables immediate detection and response to anomalies, enhancing network security."
+    },
+    {
+        "number":  12,
+        "question":  "An employee is using Telnet to access a critical server. What should the monitoring team do to ensure security?",
+        "options":  [
+                        "Monitor Telnet traffic for suspicious commands",
+                        "Block Telnet traffic entirely",
+                        "Encrypt the Telnet session",
+                        "Convert the session to FTP"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Monitoring Telnet traffic for suspicious commands can help detect unauthorized actions while ensuring operational needs."
+    },
+    {
+        "number":  13,
+        "question":  "An administrator configures Wireshark to filter all traffic except TCP and UDP packets. What is the purpose of this configuration?",
+        "options":  [
+                        "To identify encrypted traffic",
+                        "To focus on commonly used transport layer protocols",
+                        "To inspect application-specific behavior",
+                        "To block unneeded traffic"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Focusing on TCP and UDP packets narrows the analysis to transport layer protocols, where most network activity occurs."
+    },
+    {
+        "number":  14,
+        "question":  "After observing unusual DNS queries, the IT team suspects a botnet command and control communication. What should their next step be?",
+        "options":  [
+                        "Shut down the DNS server",
+                        "Capture and analyze the suspicious DNS packets",
+                        "Block all outbound DNS traffic",
+                        "Ignore the traffic if it is encrypted"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Capturing and analyzing DNS packets can help confirm botnet communication and identify infected systems."
+    },
+    {
+        "number":  15,
+        "question":  "A security analyst creates a baseline for HTTP traffic on the corporate network. What is the main reason for establishing this baseline?",
+        "options":  [
+                        "To block all unencrypted traffic",
+                        "To understand normal HTTP usage patterns",
+                        "To detect new HTTP protocols",
+                        "To eliminate HTTP as a protocol"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Baselining HTTP traffic helps in identifying deviations from normal usage patterns, which may indicate anomalies."
+    },
+    {
+        "number":  16,
+        "question":  "During network monitoring, an IT team identifies unusual TCP connections from a single device to multiple external IPs. What is the likely scenario?",
+        "options":  [
+                        "A normal file-sharing activity",
+                        "A potential port scanning activity",
+                        "Encrypted traffic analysis",
+                        "Baseline traffic signature"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Multiple external connections from one device often indicate port scanning, a reconnaissance activity."
+    },
+    {
+        "number":  17,
+        "question":  "An attacker uses a known vulnerability in an unpatched server to inject malicious HTTP payloads. What monitoring activity can detect this?",
+        "options":  [
+                        "Protocol-specific analysis",
+                        "Attack signature detection",
+                        "Baseline traffic monitoring",
+                        "Anomaly-based filtering"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Attack signature detection involves identifying patterns associated with known exploits or vulnerabilities."
+    },
+    {
+        "number":  18,
+        "question":  "A network administrator monitors traffic using a sniffer and notices excessive ARP requests. What type of attack might this indicate?",
+        "options":  [
+                        "ARP Spoofing",
+                        "DNS Poisoning",
+                        "Session Hijacking",
+                        "SQL Injection"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Excessive ARP requests may indicate ARP spoofing, where attackers attempt to impersonate other devices on the network."
+    },
+    {
+        "number":  19,
+        "question":  "After implementing a new network monitoring tool, the IT team finds high volumes of traffic using non-standard ports. What should they investigate?",
+        "options":  [
+                        "Baseline Traffic Logs",
+                        "Suspicious Application Usage",
+                        "Wireshark Filters",
+                        "Encrypted File Transfers"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Non-standard port usage often indicates unauthorized applications or malware communication."
+    },
+    {
+        "number":  20,
+        "question":  "While reviewing network logs, the team discovers continuous SYN packets sent from an unknown source. What kind of attack is likely occurring?",
+        "options":  [
+                        "Brute Force Attack",
+                        "SYN Flood Attack",
+                        "Ping Sweep Attack",
+                        "SQL Injection"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Continuous SYN packets are indicative of a SYN flood attack, a common DoS attack method."
+    }
 ]

@@ -1,152 +1,152 @@
 [
-  {
-    "question": "What is the primary purpose of creating a disk image file during a forensic investigation?",
-    "options": [
-      "To compress data for storage efficiency",
-      "To preserve the original data integrity",
-      "To enhance system performance",
-      "To encrypt sensitive information"
-    ],
-    "correct_index": "To preserve the original data integrity"
-  },
-  {
-    "question": "Which tool is commonly used to acquire RAM from a Windows workstation in a live forensic analysis?",
-    "options": [
-      "FTK Imager",
-      "Volatility",
-      "Memdump",
-      "WinHex"
-    ],
-    "correct_index": "FTK Imager"
-  },
-  {
-    "question": "When acquiring volatile information from a live Windows system, which of the following is NOT typically collected?",
-    "options": [
-      "Running processes",
-      "Open network connections",
-      "Installed software list",
-      "System uptime"
-    ],
-    "correct_index": "Installed software list"
-  },
-  {
-    "question": "In Linux forensic analysis, which file system metadata is crucial for understanding file access patterns?",
-    "options": [
-      "Inode information",
-      "Superblock data",
-      "Boot sector",
-      "Partition table"
-    ],
-    "correct_index": "Inode information"
-  },
-  {
-    "question": "Which command is used to capture a memory dump on a Linux system?",
-    "options": [
-      "dd if=/dev/mem of=/path/to/dump",
-      "cp /dev/mem /path/to/dump",
-      "tar -cvf /dev/mem /path/to/dump",
-      "gzip /dev/mem > /path/to/dump"
-    ],
-    "correct_index": "dd if=/dev/mem of=/path/to/dump"
-  },
-  {
-    "question": "What is the significance of maintaining a chain of custody in forensic investigations?",
-    "options": [
-      "Ensuring evidence is admissible in court",
-      "Improving data analysis speed",
-      "Reducing storage requirements",
-      "Enhancing encryption strength"
-    ],
-    "correct_index": "Ensuring evidence is admissible in court"
-  },
-  {
-    "question": "Which of the following is a primary concern when analyzing a forensic image file?",
-    "options": [
-      "Data integrity",
-      "File compression",
-      "User access permissions",
-      "System uptime"
-    ],
-    "correct_index": "Data integrity"
-  },
-  {
-    "question": "What is the role of hash functions in computer forensics?",
-    "options": [
-      "Encrypting data",
-      "Compressing files",
-      "Verifying data integrity",
-      "Allocating disk space"
-    ],
-    "correct_index": "Verifying data integrity"
-  },
-  {
-    "question": "Which Linux tool is commonly used to analyze file systems in forensic investigations?",
-    "options": [
-      "Autopsy",
-      "Wireshark",
-      "Nmap",
-      "Metasploit"
-    ],
-    "correct_index": "Autopsy"
-  },
-  {
-    "question": "During a forensic investigation, why is it important to acquire volatile data before shutting down a system?",
-    "options": [
-      "To prevent data corruption",
-      "To capture data that would be lost on shutdown",
-      "To improve system performance",
-      "To ensure compliance with legal standards"
-    ],
-    "correct_index": "To capture data that would be lost on shutdown"
-  },
-  {
-    "question": "Which of the following best describes 'live acquisition' in computer forensics?",
-    "options": [
-      "Collecting data from a powered-off system",
-      "Gathering data from a system while it is running",
-      "Retrieving data from backup tapes",
-      "Extracting data from archived logs"
-    ],
-    "correct_index": "Gathering data from a system while it is running"
-  },
-  {
-    "question": "What is the primary function of the 'dd' command in Linux forensics?",
-    "options": [
-      "Deleting files securely",
-      "Copying and converting files",
-      "Displaying disk usage",
-      "Defragmenting the disk"
-    ],
-    "correct_index": "Copying and converting files"
-  },
-  {
-    "question": "In the context of computer forensics, what does 'write-blocking' refer to?",
-    "options": [
-      "Preventing unauthorized access",
-      "Blocking write operations to preserve data",
-      "Encrypting data for security",
-      "Monitoring user activities"
-    ],
-    "correct_index": "Blocking write operations to preserve data"
-  },
-  {
-    "question": "Which file format is commonly used for forensic disk images?",
-    "options": [
-      "JPEG",
-      "E01",
-      "MP4",
-      "TXT"
-    ],
-    "correct_index": "E01"
-  },
-  {
-    "question": "Why is time synchronization important in forensic investigations?",
-    "options": [
-      "To ensure accurate event correlation",
-      "To speed up data processing",
-      "To reduce storage requirements",
-      "To enhance encryption protocols"
-    ],
-    "correct_index": "To ensure accurate event correlation"
-  }
+    {
+        "question":  "What is the primary purpose of creating a disk image file during a forensic investigation?",
+        "options":  [
+                        "To compress data for storage efficiency",
+                        "To preserve the original data integrity",
+                        "To enhance system performance",
+                        "To encrypt sensitive information"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "Which tool is commonly used to acquire RAM from a Windows workstation in a live forensic analysis?",
+        "options":  [
+                        "FTK Imager",
+                        "Volatility",
+                        "Memdump",
+                        "WinHex"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "When acquiring volatile information from a live Windows system, which of the following is NOT typically collected?",
+        "options":  [
+                        "Running processes",
+                        "Open network connections",
+                        "Installed software list",
+                        "System uptime"
+                    ],
+        "correct_index":  "C"
+    },
+    {
+        "question":  "In Linux forensic analysis, which file system metadata is crucial for understanding file access patterns?",
+        "options":  [
+                        "Inode information",
+                        "Superblock data",
+                        "Boot sector",
+                        "Partition table"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "Which command is used to capture a memory dump on a Linux system?",
+        "options":  [
+                        "dd if=/dev/mem of=/path/to/dump",
+                        "cp /dev/mem /path/to/dump",
+                        "tar -cvf /dev/mem /path/to/dump",
+                        "gzip /dev/mem \u003e /path/to/dump"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "What is the significance of maintaining a chain of custody in forensic investigations?",
+        "options":  [
+                        "Ensuring evidence is admissible in court",
+                        "Improving data analysis speed",
+                        "Reducing storage requirements",
+                        "Enhancing encryption strength"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "Which of the following is a primary concern when analyzing a forensic image file?",
+        "options":  [
+                        "Data integrity",
+                        "File compression",
+                        "User access permissions",
+                        "System uptime"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "What is the role of hash functions in computer forensics?",
+        "options":  [
+                        "Encrypting data",
+                        "Compressing files",
+                        "Verifying data integrity",
+                        "Allocating disk space"
+                    ],
+        "correct_index":  "C"
+    },
+    {
+        "question":  "Which Linux tool is commonly used to analyze file systems in forensic investigations?",
+        "options":  [
+                        "Autopsy",
+                        "Wireshark",
+                        "Nmap",
+                        "Metasploit"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "During a forensic investigation, why is it important to acquire volatile data before shutting down a system?",
+        "options":  [
+                        "To prevent data corruption",
+                        "To capture data that would be lost on shutdown",
+                        "To improve system performance",
+                        "To ensure compliance with legal standards"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "Which of the following best describes \u0027live acquisition\u0027 in computer forensics?",
+        "options":  [
+                        "Collecting data from a powered-off system",
+                        "Gathering data from a system while it is running",
+                        "Retrieving data from backup tapes",
+                        "Extracting data from archived logs"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "What is the primary function of the \u0027dd\u0027 command in Linux forensics?",
+        "options":  [
+                        "Deleting files securely",
+                        "Copying and converting files",
+                        "Displaying disk usage",
+                        "Defragmenting the disk"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "In the context of computer forensics, what does \u0027write-blocking\u0027 refer to?",
+        "options":  [
+                        "Preventing unauthorized access",
+                        "Blocking write operations to preserve data",
+                        "Encrypting data for security",
+                        "Monitoring user activities"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "Which file format is commonly used for forensic disk images?",
+        "options":  [
+                        "JPEG",
+                        "E01",
+                        "MP4",
+                        "TXT"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "Why is time synchronization important in forensic investigations?",
+        "options":  [
+                        "To ensure accurate event correlation",
+                        "To speed up data processing",
+                        "To reduce storage requirements",
+                        "To enhance encryption protocols"
+                    ],
+        "correct_index":  "A"
+    }
 ]

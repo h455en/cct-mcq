@@ -1,152 +1,152 @@
 [
     {
-        "question": "Which tool can be used to perform a Man-in-the-Middle (MITM) attack using ARP spoofing?",
-        "options": [
-            "Nmap",
-            "Cain & Abel",
-            "Wireshark",
-            "John the Ripper"
-        ],
-        "correct_index": "Cain & Abel"
+        "question":  "Which tool can be used to perform a Man-in-the-Middle (MITM) attack using ARP spoofing?",
+        "options":  [
+                        "Nmap",
+                        "Cain \u0026 Abel",
+                        "Wireshark",
+                        "John the Ripper"
+                    ],
+        "correct_index":  "B"
     },
     {
-        "question": "What is the primary function of MAC flooding in network attacks?",
-        "options": [
-            "Overloading a switch’s MAC address table to cause a denial of service",
-            "Intercepting network traffic using a rogue DHCP server",
-            "Exploiting buffer overflow vulnerabilities in network devices",
-            "Injecting malicious traffic into the network using spoofed IP addresses"
-        ],
-        "correct_index": "Overloading a switch’s MAC address table to cause a denial of service"
+        "question":  "What is the primary function of MAC flooding in network attacks?",
+        "options":  [
+                        "Overloading a switch’s MAC address table to cause a denial of service",
+                        "Intercepting network traffic using a rogue DHCP server",
+                        "Exploiting buffer overflow vulnerabilities in network devices",
+                        "Injecting malicious traffic into the network using spoofed IP addresses"
+                    ],
+        "correct_index":  "A"
     },
     {
-        "question": "What command in hping3 can be used to perform a DoS attack on a target host?",
-        "options": [
-            "hping3 -S -p 80 <target>",
-            "hping3 -S -p 443 <target>",
-            "hping3 -A -p 80 <target>",
-            "hping3 -F -p 22 <target>"
-        ],
-        "correct_index": "hping3 -S -p 80 <target>"
+        "question":  "What command in hping3 can be used to perform a DoS attack on a target host?",
+        "options":  [
+                        "hping3 -S -p 80 \u003ctarget\u003e",
+                        "hping3 -S -p 443 \u003ctarget\u003e",
+                        "hping3 -A -p 80 \u003ctarget\u003e",
+                        "hping3 -F -p 22 \u003ctarget\u003e"
+                    ],
+        "correct_index":  "A"
     },
     {
-        "question": "Which tool is commonly used to perform SQL injection attacks against MSSQL to extract databases?",
-        "options": [
-            "Metasploit",
-            "sqlmap",
-            "Hydra",
-            "Burp Suite"
-        ],
-        "correct_index": "sqlmap"
+        "question":  "Which tool is commonly used to perform SQL injection attacks against MSSQL to extract databases?",
+        "options":  [
+                        "Metasploit",
+                        "sqlmap",
+                        "Hydra",
+                        "Burp Suite"
+                    ],
+        "correct_index":  "B"
     },
     {
-        "question": "What does parameter tampering with Burp Suite typically involve?",
-        "options": [
-            "Intercepting and modifying HTTP requests to alter parameters",
-            "Exploiting buffer overflow vulnerabilities in web applications",
-            "Hijacking session cookies using cross-site scripting (XSS)",
-            "Performing SQL injection attacks via the application’s database"
-        ],
-        "correct_index": "Intercepting and modifying HTTP requests to alter parameters"
+        "question":  "What does parameter tampering with Burp Suite typically involve?",
+        "options":  [
+                        "Intercepting and modifying HTTP requests to alter parameters",
+                        "Exploiting buffer overflow vulnerabilities in web applications",
+                        "Hijacking session cookies using cross-site scripting (XSS)",
+                        "Performing SQL injection attacks via the application’s database"
+                    ],
+        "correct_index":  "A"
     },
     {
-        "question": "What is the primary purpose of John the Ripper in password auditing?",
-        "options": [
-            "Decrypting encrypted traffic",
-            "Cracking password hashes to recover plaintext passwords",
-            "Performing a brute force attack on web applications",
-            "Monitoring network traffic for weak passwords"
-        ],
-        "correct_index": "Cracking password hashes to recover plaintext passwords"
+        "question":  "What is the primary purpose of John the Ripper in password auditing?",
+        "options":  [
+                        "Decrypting encrypted traffic",
+                        "Cracking password hashes to recover plaintext passwords",
+                        "Performing a brute force attack on web applications",
+                        "Monitoring network traffic for weak passwords"
+                    ],
+        "correct_index":  "B"
     },
     {
-        "question": "Which social engineering technique involves manipulating users into revealing sensitive information such as login credentials?",
-        "options": [
-            "Phishing",
-            "Vishing",
-            "Pretexting",
-            "Tailgating"
-        ],
-        "correct_index": "Phishing"
+        "question":  "Which social engineering technique involves manipulating users into revealing sensitive information such as login credentials?",
+        "options":  [
+                        "Phishing",
+                        "Vishing",
+                        "Pretexting",
+                        "Tailgating"
+                    ],
+        "correct_index":  "A"
     },
     {
-        "question": "What is the primary purpose of Aircrack-ng in wireless network security testing?",
-        "options": [
-            "Cracking WPA2 passwords using brute-force methods",
-            "Monitoring network traffic for unauthorized access",
-            "Performing a DoS attack on wireless access points",
-            "Scanning for open wireless networks"
-        ],
-        "correct_index": "Cracking WPA2 passwords using brute-force methods"
+        "question":  "What is the primary purpose of Aircrack-ng in wireless network security testing?",
+        "options":  [
+                        "Cracking WPA2 passwords using brute-force methods",
+                        "Monitoring network traffic for unauthorized access",
+                        "Performing a DoS attack on wireless access points",
+                        "Scanning for open wireless networks"
+                    ],
+        "correct_index":  "A"
     },
     {
-        "question": "Which technique is commonly used to exploit vulnerabilities in an Android device by creating binary payloads?",
-        "options": [
-            "Privilege escalation",
-            "Buffer overflow exploitation",
-            "Reverse engineering APKs",
-            "Creating custom payloads for Metasploit"
-        ],
-        "correct_index": "Creating custom payloads for Metasploit"
+        "question":  "Which technique is commonly used to exploit vulnerabilities in an Android device by creating binary payloads?",
+        "options":  [
+                        "Privilege escalation",
+                        "Buffer overflow exploitation",
+                        "Reverse engineering APKs",
+                        "Creating custom payloads for Metasploit"
+                    ],
+        "correct_index":  "D"
     },
     {
-        "question": "What is the purpose of using AWS CLI to exploit open S3 buckets?",
-        "options": [
-            "Accessing unsecured data stored in Amazon S3",
-            "Launching a DDoS attack on Amazon Web Services",
-            "Performing a buffer overflow attack on AWS EC2 instances",
-            "Encrypting data stored in AWS for secure transfer"
-        ],
-        "correct_index": "Accessing unsecured data stored in Amazon S3"
+        "question":  "What is the purpose of using AWS CLI to exploit open S3 buckets?",
+        "options":  [
+                        "Accessing unsecured data stored in Amazon S3",
+                        "Launching a DDoS attack on Amazon Web Services",
+                        "Performing a buffer overflow attack on AWS EC2 instances",
+                        "Encrypting data stored in AWS for secure transfer"
+                    ],
+        "correct_index":  "A"
     },
     {
-        "question": "What type of attack does Cain & Abel primarily facilitate in network environments?",
-        "options": [
-            "Denial of Service",
-            "Man-in-the-Middle (MITM)",
-            "Phishing",
-            "Cross-Site Scripting (XSS)"
-        ],
-        "correct_index": "Man-in-the-Middle (MITM)"
+        "question":  "What type of attack does Cain \u0026 Abel primarily facilitate in network environments?",
+        "options":  [
+                        "Denial of Service",
+                        "Man-in-the-Middle (MITM)",
+                        "Phishing",
+                        "Cross-Site Scripting (XSS)"
+                    ],
+        "correct_index":  "B"
     },
     {
-        "question": "Which attack method does macof exploit in network security?",
-        "options": [
-            "Port scanning",
-            "MAC address flooding",
-            "Session hijacking",
-            "DNS poisoning"
-        ],
-        "correct_index": "MAC address flooding"
+        "question":  "Which attack method does macof exploit in network security?",
+        "options":  [
+                        "Port scanning",
+                        "MAC address flooding",
+                        "Session hijacking",
+                        "DNS poisoning"
+                    ],
+        "correct_index":  "B"
     },
     {
-        "question": "What is the primary use case for sqlmap in penetration testing?",
-        "options": [
-            "Automating SQL injection attacks to extract databases",
-            "Cracking password hashes in SQL databases",
-            "Intercepting web application requests to manipulate parameters",
-            "Performing brute force attacks on SQL servers"
-        ],
-        "correct_index": "Automating SQL injection attacks to extract databases"
+        "question":  "What is the primary use case for sqlmap in penetration testing?",
+        "options":  [
+                        "Automating SQL injection attacks to extract databases",
+                        "Cracking password hashes in SQL databases",
+                        "Intercepting web application requests to manipulate parameters",
+                        "Performing brute force attacks on SQL servers"
+                    ],
+        "correct_index":  "A"
     },
     {
-        "question": "How does Burp Suite assist with parameter tampering during a web application penetration test?",
-        "options": [
-            "By capturing and modifying HTTP requests to alter parameters",
-            "By decrypting encrypted traffic to expose sensitive data",
-            "By exploiting buffer overflow vulnerabilities in web servers",
-            "By injecting SQL commands into HTTP headers"
-        ],
-        "correct_index": "By capturing and modifying HTTP requests to alter parameters"
+        "question":  "How does Burp Suite assist with parameter tampering during a web application penetration test?",
+        "options":  [
+                        "By capturing and modifying HTTP requests to alter parameters",
+                        "By decrypting encrypted traffic to expose sensitive data",
+                        "By exploiting buffer overflow vulnerabilities in web servers",
+                        "By injecting SQL commands into HTTP headers"
+                    ],
+        "correct_index":  "A"
     },
     {
-        "question": "What is the first step in cracking WPA2 encryption with Aircrack-ng?",
-        "options": [
-            "Capturing a valid handshake",
-            "Performing a dictionary attack",
-            "Disassociating clients from the access point",
-            "Scanning for WPA2 networks"
-        ],
-        "correct_index": "Capturing a valid handshake"
+        "question":  "What is the first step in cracking WPA2 encryption with Aircrack-ng?",
+        "options":  [
+                        "Capturing a valid handshake",
+                        "Performing a dictionary attack",
+                        "Disassociating clients from the access point",
+                        "Scanning for WPA2 networks"
+                    ],
+        "correct_index":  "A"
     }
 ]
