@@ -1,122 +1,590 @@
 [
     {
-        "question_number":  1,
-        "question":  "In which of the following phases of business impact analysis (BIA) does the BIA team adopt different information-gathering methods such as interviews and questionnaire surveys to determine assets that are critical to different business functions?",
-        "options":  [
-                        "Initiation of the BIA",
-                        "Acquisition of information",
-                        "Analysis of information",
-                        "Documentation of findings"
-                    ],
-        "correct_index":  "B",
-        "explanation":  "The acquisition of information phase involves using interviews, surveys, and other methods to gather data about critical assets."
+        "question_number": 1,
+        "question": "In which of the following phases of business impact analysis (BIA) does the BIA team adopt different information-gathering methods such as interviews and questionnaire surveys to determine assets that are critical to different business functions?",
+        "options": [
+            "Initiation of the BIA",
+            "Acquisition of information",
+            "Analysis of information",
+            "Documentation of findings"
+        ],
+        "correct_index": "B",
+        "explanation": "Acquisition of information is the phase where data is collected through various methods like interviews and surveys."
     },
     {
-        "question_number":  2,
-        "question":  "Geon, a security professional at an organization, was instructed to secure the organization’s network. For this purpose, Geon has deployed a packet sniffer that can be used for network troubleshooting to investigate security issues and to analyze and understand network protocols. Identify the tool employed by Geon in the above scenario.",
-        "options":  [
-                        "Wireshark",
-                        "ShellPhish",
-                        "Norton Ghost",
-                        "SyncBackPro"
-                    ],
-        "correct_index":  "A",
-        "explanation":  "Wireshark is a widely-used network packet sniffer that helps in analyzing network protocols and troubleshooting issues."
+        "question_number": 2,
+        "question": "Geon, a security professional at an organization, was instructed to secure the organization's network. For this purpose, Geon has deployed a packet sniffer that can be used for network troubleshooting to investigate security issues and to analyze and understand network protocols. Identify the tool employed by Geon in the above scenario.",
+        "options": [
+            "Wireshark",
+            "ShellPhish",
+            "Norton Ghost",
+            "SyncBackPro"
+        ],
+        "correct_index": "A",
+        "explanation": "Wireshark is a popular packet sniffer used for network analysis and troubleshooting."
     },
     {
-        "question_number":  3,
-        "question":  "Which of the data deidentification techniques involves the process of attaching random characters to a hashed field in a table to increase the complexity and difficulty in retrieving the hashes, providing strong defense against dictionary and rainbow table attacks?",
-        "options":  [
-                        "Masking",
-                        "Bucketing",
-                        "Tokenization",
-                        "Salting"
-                    ],
-        "correct_index":  "D",
-        "explanation":  "Salting enhances hashing by adding random data to the input, making it resistant to attacks like dictionary or rainbow table attacks."
+        "question_number": 3,
+        "question": "Which of the data deidentification techniques involves the process of attaching random characters to a hashed field in a table to increase the complexity and difficulty in retrieving the hashes, providing strong defense against dictionary and rainbow table attacks?",
+        "options": [
+            "Masking",
+            "Bucketing",
+            "Tokenization",
+            "Salting"
+        ],
+        "correct_index": "D",
+        "explanation": "Salting adds random data to the input of a hash function to prevent dictionary and rainbow table attacks."
     },
     {
-        "question_number":  4,
-        "question":  "Which of the following application logs records information related to the changes made to application data such as insert, update, or delete and is helpful in meeting policies and compliance requirements?",
-        "options":  [
-                        "Request log",
-                        "Audit trail",
-                        "Availability log",
-                        "Threat log"
-                    ],
-        "correct_index":  "B",
-        "explanation":  "Audit trails track changes made to application data, ensuring compliance and providing a history of transactions."
+        "question_number": 4,
+        "question": "Which of the following application logs records information related to the changes made to application data such as insert, update, or delete and is helpful in meeting policies and compliance requirements?",
+        "options": [
+            "Request log",
+            "Audit trail",
+            "Availability log",
+            "Threat log"
+        ],
+        "correct_index": "B",
+        "explanation": "An audit trail specifically logs changes made to data, which is crucial for compliance."
     },
     {
-        "question_number":  5,
-        "question":  "In which of the following phases of cyber kill chain methodology does an adversary establish a two-way encrypted channel for communication between the victim’s system and the adversary-controlled server?",
-        "options":  [
-                        "Delivery",
-                        "Exploitation",
-                        "Weaponization",
-                        "Command and control"
-                    ],
-        "correct_index":  "D",
-        "explanation":  "The command and control phase involves setting up an encrypted channel for communication with the compromised system."
+        "question_number": 5,
+        "question": "In which of the following phases of cyber kill chain methodology does an adversary establish a two-way encrypted channel for communication between the victim's system and the adversary-controlled server?",
+        "options": [
+            "Delivery",
+            "Exploitation",
+            "Weaponization",
+            "Command and control"
+        ],
+        "correct_index": "D",
+        "explanation": "Command and control is the phase where the attacker establishes communication with the compromised system."
     },
     {
-        "question_number":  6,
-        "question":  "Peter, a network administrator, was tasked with detecting outdated services that are active on the organizational network. For this purpose, he executed an nmap command that retrieves all the service versions that are currently active on the organization’s network. Identify the nmap command executed by Peter in the above scenario.",
-        "options":  [
-                        "nmap -sS \u003cIP address\u003e",
-                        "nmap -O \u003cIP address\u003e",
-                        "nmap -sT \u003cIP address\u003e",
-                        "nmap -sV \u003cIP address range\u003e"
-                    ],
-        "correct_index":  "D",
-        "explanation":  "The \u0027nmap -sV\u0027 command retrieves service versions running on the specified network, helping identify outdated services."
+        "question_number": 6,
+        "question": "Peter, a network administrator, was tasked with detecting outdated services that are active on the organizational network. For this purpose, he executed an nmap command that retrieves all the service versions that are currently active on the organization's network. Identify the nmap command executed by Peter in the above scenario.",
+        "options": [
+            "nmap -sS <IP address>",
+            "nmap -O <IP address>",
+            "nmap -sT <IP address>",
+            "nmap -sV <IP address range>"
+        ],
+        "correct_index": "D",
+        "explanation": "The -sV option in nmap is used for service version detection."
     },
     {
-        "question_number":  7,
-        "question":  "Which of the following mobile device connection methods is based on a single network tower that serves devices located within a specific radius and are installed in urban, suburban, \u0026 rural areas and cover a large distance?",
-        "options":  [
-                        "Cellular communication",
-                        "Near-field communication",
-                        "Infrared communication",
-                        "Wi-Fi communication"
-                    ],
-        "correct_index":  "A",
-        "explanation":  "Cellular communication uses network towers to serve devices within specific radii, supporting wide-area connectivity."
+        "question_number": 7,
+        "question": "Which of the following mobile device connection methods is based on a single network tower that serves devices located within a specific radius and are installed in urban, suburban, & rural areas and cover a large distance?",
+        "options": [
+            "Cellular communication",
+            "Near-field communication",
+            "Infrared communication",
+            "Wi-Fi communication"
+        ],
+        "correct_index": "A",
+        "explanation": "Cellular communication uses cell towers to provide wide-area coverage."
     },
     {
-        "question_number":  8,
-        "question":  "Identify the VPN core functionality in which packets over a VPN are enclosed within another packet that has a different IP source and destination because concealing the source and destination of the packets can protect the integrity of the data sent.",
-        "options":  [
-                        "Authentication",
-                        "Encapsulation",
-                        "Encryption",
-                        "Packet filtering"
-                    ],
-        "correct_index":  "B",
-        "explanation":  "Encapsulation wraps packets within another packet with a different IP header, ensuring data confidentiality."
+        "question_number": 8,
+        "question": "Identify the VPN core functionality in which packets over a VPN are enclosed within another packet that has a different IP source and destination because concealing the source and destination of the packets can protect the integrity of the data sent.",
+        "options": [
+            "Authentication",
+            "Encapsulation",
+            "Encryption",
+            "Packet filtering"
+        ],
+        "correct_index": "B",
+        "explanation": "Encapsulation is the process of wrapping a packet within another packet."
     },
     {
-        "question_number":  9,
-        "question":  "Which of the following levels of virtualization makes virtual devices independent of the physical computer hardware and creates a massive pool of storage areas for different virtual machines running on the hardware?",
-        "options":  [
-                        "File-system virtualization",
-                        "Storage-device virtualization",
-                        "Fabric virtualization",
-                        "Server virtualization"
-                    ],
-        "correct_index":  "D",
-        "explanation":  "Server virtualization decouples virtual devices from physical hardware, allowing flexible resource allocation."
+        "question_number": 9,
+        "question": "Which of the following levels of virtualization makes virtual devices independent of the physical computer hardware and creates a massive pool of storage areas for different virtual machines running on the hardware?",
+        "options": [
+            "File-system virtualization",
+            "Storage-device virtualization",
+            "Fabric virtualization",
+            "Server virtualization"
+        ],
+        "correct_index": "C",
+        "explanation": "Fabric virtualization abstracts the underlying hardware to create a pool of resources."
     },
     {
-        "question_number":  10,
-        "question":  "Keegan, a security team member, conducted risk assessment for the network and devices in the organization. After analyzing and prioritizing each risk, Keegan decided to take immediate action on the risks that may cause service disruption to the organization. Identify the risk level that needs immediate action to prevent service disruption.",
-        "options":  [
-                        "Moderate",
-                        "High",
-                        "Medium",
-                        "Low"
-                    ],
-        "correct_index":  "B",
-        "explanation":  "High-risk issues have the greatest potential impact and require immediate attention to mitigate potential service disruptions."
+        "question_number": 10,
+        "question": "Keegan, a security team member, conducted risk assessment for the network and devices in the organization. After analyzing and prioritizing each risk, Keegan decided to take immediate action on the risks that may cause service disruption to the organization. Identify the risk level that needs immediate action to prevent service disruption.",
+        "options": [
+            "Moderate",
+            "High",
+            "Medium",
+            "Low"
+        ],
+        "correct_index": "B",
+        "explanation": "High-risk issues require immediate attention to prevent significant impact."
+    },
+    {
+        "question_number": 11,
+        "question": "In which of the following IH&R steps is the IH&R team responsible for taking over and analyzing the incident with critical reasoning and good judgment?",
+        "options": [
+            "Incident triage",
+            "Incident containment",
+            "Eradication",
+            "Notification"
+        ],
+        "correct_index": "A",
+        "explanation": "Incident triage is the initial assessment and prioritization of incidents."
+    },
+    {
+        "question_number": 12,
+        "question": "Franklin, a forensic officer, was appointed to investigate an online gold scam. For this purpose, Franklin obtained information about a popular online scamming website and claimed it as culprit in front of the jury by providing evidence supporting his claim. The jury reviewed the case and dismissed it as there was a lack of proper evidence. Which of the following rule of evidence was violated in the above scenario?",
+        "options": [
+            "Understandable",
+            "Authentic",
+            "Admissible",
+            "Complete"
+        ],
+        "correct_index": "D",
+        "explanation": "The evidence was not complete, as it didn't sufficiently link the website to the specific crime."
+    },
+    {
+        "question_number": 13,
+        "question": "Kairo, a database administrator, was trying to back up all the data of his organization for security purposes without disturbing the running business operations. To achieve this, he employed a backup technique in which the system continues to perform the backup even when the user is accessing the system. Which of the following backup techniques has Kairo employed in the above scenario?",
+        "options": [
+            "Hot backup",
+            "Cold backup",
+            "Warm backup",
+            "Nearline backup"
+        ],
+        "correct_index": "A",
+        "explanation": "Hot backups are performed while the system is online and operational."
+    },
+    {
+        "question_number": 14,
+        "question": "Collin, a forensic officer, was investigating a crime scene. After collecting a suspected laptop from the spot, Collin started inspecting a specific portion of the drive where the criminal had saved the victim's data while performing the malicious activity. Collin collected the files required for the investigation as well as fragments of deleted data. Which of the following data acquisition methods did Collin perform in the above scenario?",
+        "options": [
+            "Logical acquisition",
+            "Sparse acquisition",
+            "Bit-stream disk-to-image-file",
+            "Bit-stream disk-to-disk"
+        ],
+        "correct_index": "B",
+        "explanation": "Sparse acquisition targets specific files and unallocated space, which fits the description of collecting specific data and fragments."
+    },
+    {
+        "question_number": 15,
+        "question": "Judah, a security professional, performed a security audit on a newly developed application to identify its weak points. Judah tested the application in an isolated virtual environment to protect the production environment from being affected by the system. Identify the technique used by Judah to test the application in the above scenario.",
+        "options": [
+            "Application whitelisting/blacklisting",
+            "Application sandboxing",
+            "Application patch management",
+            "Application-level firewall (WAF) deployment"
+        ],
+        "correct_index": "B",
+        "explanation": "Application sandboxing isolates the application in a safe environment for testing."
+    },
+    {
+        "question_number": 16,
+        "question": "Which of the following ciphers can resist a wide range of attacks and provides message secrecy and integrity and uses a one-way mathematical function that is capable of factoring large prime numbers?",
+        "options": [
+            "Transposition ciphers",
+            "Substitution ciphers",
+            "Modern ciphers",
+            "Classical ciphers"
+        ],
+        "correct_index": "C",
+        "explanation": "Modern ciphers, like those using asymmetric cryptography (e.g., RSA), rely on the difficulty of factoring large prime numbers."
+    },
+    {
+        "question_number": 17,
+        "question": "In which of the following types of Internet access policies, the majority of Internet traffic is accepted, except for several well-known and dangerous services/attacks and it is impossible for security professionals to monitor current exploits?",
+        "options": [
+            "Promiscuous policy",
+            "Permissive policy",
+            "Paranoid policy",
+            "Prudent policy"
+        ],
+        "correct_index": "B",
+        "explanation": "A permissive policy allows most traffic but blocks known bad traffic, making it difficult to keep up with new exploits."
+    },
+    {
+        "question_number": 18,
+        "question": "Daniella, a medical assistant, was appointed to take care of a physically paralyzed patient at a ward. Daniella placed a smart wearable on the patient's wrist that sends alerts to Daniella's interfaced monitoring system (mobile) in case of an emergency during her inactive hours. One day, when Daniella was in the canteen, she received an emergency alert indicating that the patient's pulse was fluctuating. Which of the following types of IoT communication models was demonstrated in the above scenario?",
+        "options": [
+            "Device-to-device",
+            "Device-to-cloud",
+            "Device-to-gateway",
+            "Cloud-to-cloud"
+        ],
+        "correct_index": "B",
+        "explanation": "The wearable (device) sends data to Daniella's mobile (which acts as a cloud-connected interface), thus it's device-to-cloud."
+    },
+    {
+        "question_number": 19,
+        "question": "Jacob, an application developer, developed an eCommerce website. He decided to host his application on a cloud server as it saves costs and no personal maintenance is required. He opted for a cloud deployment model that provides services for free, and the application is accessible to everyone over the Internet. Which of the following cloud deployment models has Jacob employed in the above scenario?",
+        "options": [
+            "Public cloud",
+            "Private cloud",
+            "Community cloud",
+            "Multi cloud"
+        ],
+        "correct_index": "A",
+        "explanation": "A public cloud is available to everyone over the internet and often has free tier options."
+    },
+    {
+        "question_number": 20,
+        "question": "Susan, a security professional, wanted to confirm the identity of newly joined employees. She sent email links of the company's portal to all the newly joined employees. The employees need to enter initial access token to login on to the portal, then they will receive an OTP on their mobile phone to upload their scanned certificate copies. Which of the following types of authentication has Susan implemented in the above scenario?",
+        "options": [
+            "Password authentication",
+            "Two-factor authentication",
+            "Biometric authentication",
+            "Single sign-on (SSO) authentication"
+        ],
+        "correct_index": "B",
+        "explanation": "Using an access token and an OTP (one-time password) constitutes two-factor authentication."
+    },
+    {
+        "question_number": 21,
+        "question": "Karl, a security professional at an organization, while analyzing Windows event logs identified that a threat actor made multiple attempts to gain access to the organization's network but failed to do so, due to strong security controls deployed on the network. Identify the type of event data discussed in the above scenario.",
+        "options": [
+            "Error",
+            "Warning",
+            "Success audit",
+            "Failure audit"
+        ],
+        "correct_index": "D",
+        "explanation": "Failed login attempts are recorded as failure audits."
+    },
+    {
+        "question_number": 22,
+        "question": "Kevin, an administrator at an organization, was instructed by the management to ensure secure clientâ€“server communication. For this purpose, he implemented a protocol that provides AAA services separately and encrypts the entire communication between the client and server, including the user passwords. The protocol implemented by Kevin also provides protection against sniffing attacks. Identify the protocol implemented by Kevin in the above scenario.",
+        "options": [
+            "DNSSEC",
+            "SMTPS",
+            "TACACS+",
+            "LDAPS"
+        ],
+        "correct_index": "C",
+        "explanation": "TACACS+ provides separate AAA services and encrypts the entire communication, including passwords."
+    },
+    {
+        "question_number": 23,
+        "question": "Please choose the appropriate answer. A computer user was trying to read the latest news articles from a popular website, but the user was prevented from accessing the resources of the website as certain underlying vulnerabilities in the webpage allowed an attacker to inject fake requests into the network; as a result, the server stopped responding to legitimate user requests. What is the impact caused due to vulnerabilities in the above scenario?",
+        "options": [
+            "Privilege escalation",
+            "Denial of service",
+            "Information disclosure",
+            "None of the above"
+        ],
+        "correct_index": "B",
+        "explanation": "The server being unresponsive to legitimate requests is a classic symptom of a Denial of Service (DoS) attack."
+    },
+    {
+        "question_number": 24,
+        "question": "Bentley, a security inspector, was assigned to install a physical security control in the company premises to defend against intrusion attempts. He implemented a security control that involves motion sensors connected with video surveillance to monitor and identify illegitimate intrusion attempts. Which of the following types of physical security control has Bentley implemented in the above scenario?",
+        "options": [
+            "Deterrent controls",
+            "Recovery controls",
+            "Detective controls",
+            "Compensating controls"
+        ],
+        "correct_index": "C",
+        "explanation": "Motion sensors and video surveillance detect intrusions, making them detective controls."
+    },
+    {
+        "question_number": 25,
+        "question": "Which of the following firewalls works at the session layer of the OSI model or TCP layer of TCP/IP, forwards data between networks without verification, and blocks incoming packets from the host but allows traffic to pass through?",
+        "options": [
+            "Packet filtering firewall",
+            "Circuit-level gateway firewall",
+            "Application level gateway",
+            "Application proxy"
+        ],
+        "correct_index": "B",
+        "explanation": "Circuit-level gateways operate at the session layer and establish connections without deep packet inspection."
+    },
+    {
+        "question_number": 26,
+        "question": "Which of the following attack signature analysis techniques allows network defenders to detect suspicious activity by analyzing the data in the payload and matching a text string to a specific set of characters?",
+        "options": [
+            "Content-based signature analysis",
+            "Context-based signature analysis",
+            "Atomic-signature-based analysis",
+            "Composite-signature-based analysis"
+        ],
+        "correct_index": "A",
+        "explanation": "Content-based signature analysis looks for specific strings or patterns within the data payload."
+    },
+    {
+        "question_number": 27,
+        "question": "Which of the following is an accreditation standard that guides certification bodies on the formal processes they must follow when auditing their client's information security management systems (ISMSs) against ISO/IEC 27001 in order to certify or register them compliant?",
+        "options": [
+            "ISO/IEC 27005",
+            "ISO/IEC 27006",
+            "ISO/IEC TR 27008",
+            "ISO/IEC 27010"
+        ],
+        "correct_index": "B",
+        "explanation": "ISO/IEC 27006 provides guidelines for certification bodies auditing ISMS against ISO/IEC 27001."
+    },
+    {
+        "question_number": 28,
+        "question": "Kayson, a network engineer at an organization, was troubleshooting a network issue in the organization's network. This error occurred when a system on the network tried to access files from another system without ethernet. While troubleshooting the issue, Kayson received an error code with value 0x80070035. Which of the following network issues was Kayson trying to resolve in the above scenario?",
+        "options": [
+            "Network cable is unplugged",
+            "Network path cannot be found",
+            "Physical connectivity issues",
+            "Local connectivity issues"
+        ],
+        "correct_index": "B",
+        "explanation": "Error code 0x80070035 typically indicates that the network path cannot be found, often due to network connectivity or sharing issues."
+    },
+    {
+        "question_number": 29,
+        "question": "In which of the following PKI trust models the certificate authorities do not contain any intermediate CAs or trust anchor and the clients usually depend on their local CAs, which serves as a starting point?",
+        "options": [
+            "Peer-to-peer trust model",
+            "Hybrid trust model",
+            "Bridge trust model",
+            "Hierarchical trust model"
+        ],
+        "correct_index": "A",
+        "explanation": "In a peer-to-peer trust model, each CA directly trusts the others without a central hierarchy."
+    },
+    {
+        "question_number": 30,
+        "question": "Which of the following zones of the Purdue model is a part of IT, in which supply-chain management and scheduling are performed using business systems such as SAP and ERP?",
+        "options": [
+            "Enterprise zone",
+            "Manufacturing zone",
+            "OT systems",
+            "Industrial demilitarized zone"
+        ],
+        "correct_index": "A",
+        "explanation": "The Enterprise Zone in the Purdue model is where typical IT systems like ERP and business applications reside."
+    },
+    {
+        "question_number": 31,
+        "question": "Which of the following application security risks occurs when untrusted data is sent to an interpreter as part of a command or query, according to the OWASP?",
+        "options": [
+            "A1 â€“ injection",
+            "A6 â€“ security misconfiguration",
+            "A4 â€“ XML external entity (XXE)",
+            "A3 â€“ sensitive data exposure"
+        ],
+        "correct_index": "A",
+        "explanation": "Injection flaws, like SQL injection, occur when untrusted data is sent to an interpreter as part of a command or query."
+    },
+    {
+        "question_number": 32,
+        "question": "John, a network specialist at an organization, was instructed to monitor unusual behaviors in the network. He implemented an IDS system that first creates models of possible intrusions and then compares these models with incoming events to make a detection decision. Identify the type of IDS detection method employed by John in the above scenario.",
+        "options": [
+            "Misuse detection",
+            "Anomaly detection",
+            "Not-use detection",
+            "Protocol anomaly detection"
+        ],
+        "correct_index": "B",
+        "explanation": "Anomaly detection establishes a baseline of normal activity and flags deviations as potentially malicious."
+    },
+    {
+        "question_number": 33,
+        "question": "Adonis, a security engineer, received a complaint from an employee stating his mobile device has been misplaced by a miscreant, and that it contains certain confidential organizational data. For this reason, Adonis used a technique that allows him to erase all the device data by remotely executing a command. Identify the technique used by Adonis in the above scenario.",
+        "options": [
+            "Remote wipe",
+            "Screen lock",
+            "Passwords and PINs",
+            "Biometrics"
+        ],
+        "correct_index": "A",
+        "explanation": "Remote wipe allows for remotely erasing data on a device."
+    },
+    {
+        "question_number": 34,
+        "question": "Which of the following types of antennas is a unidirectional that is commonly used in communications using the frequency band from 10 MHz to very high frequency (VHF) and ultra-high frequency (UHF)?",
+        "options": [
+            "Omnidirectional antenna",
+            "Yagi antenna",
+            "Reflector antenna",
+            "Dipole antenna"
+        ],
+        "correct_index": "B",
+        "explanation": "Yagi antennas are directional and commonly used for VHF and UHF communications."
+    },
+    {
+        "question_number": 35,
+        "question": "Jameson, a professional hacker, impersonates an external auditor and tries to persuade a conversation with one of the employees of his target organization. He encouraged the employee to ask questions and then manipulated certain questions to draw out the required information. Which of the following attack techniques was portrayed by Jameson in the above scenario?",
+        "options": [
+            "Eavesdropping",
+            "Shoulder surfing",
+            "Piggybacking",
+            "Reverse social engineering"
+        ],
+        "correct_index": "D",
+        "explanation": "Reverse social engineering involves manipulating the target into initiating contact and asking questions, thus revealing information."
+    },
+    {
+        "question_number": 36,
+        "question": "In which of the following IH&R steps does the IH&R team eliminate the root cause of an incident and closes all the attack vectors to prevent similar incidents in future?",
+        "options": [
+            "Recovery",
+            "Eradication",
+            "Containment",
+            "Incident triage"
+        ],
+        "correct_index": "B",
+        "explanation": "Eradication focuses on removing the root cause of the incident."
+    },
+    {
+        "question_number": 37,
+        "question": "Which of the following individuals are known as steering committees that hold complete control over the data in an organization and are solely responsible for the data assets of the organization?",
+        "options": [
+            "Data owners",
+            "Data controller",
+            "Data processor",
+            "Data steward"
+        ],
+        "correct_index": "A",
+        "explanation": "Data owners are responsible for the data and its usage within the organization."
+    },
+    {
+        "question_number": 38,
+        "question": "Identify the type of threat intelligence that provides information about specific threats to the organization, which includes contextual information about security events and incidents that help defenders identify potential risks.",
+        "options": [
+            "Operational threat intelligence",
+            "Tactical threat intelligence",
+            "Technical threat intelligence",
+            "Strategic threat intelligence"
+        ],
+        "correct_index": "B",
+        "explanation": "Tactical threat intelligence focuses on immediate threats and how to respond to them, providing context for incidents."
+    },
+    {
+        "question_number": 39,
+        "question": "Identify the type of vulnerability assessment in which organizations use synchronization techniques to simultaneously assess assets such as servers and clients that are at different locations.",
+        "options": [
+            "Non-credentialed assessment",
+            "Distributed assessment",
+            "Database assessment",
+            "Manual assessment"
+        ],
+        "correct_index": "B",
+        "explanation": "A distributed assessment allows for simultaneous scanning of multiple assets across different locations."
+    },
+    {
+        "question_number": 40,
+        "question": "Which of the following types of proxy servers is an Internet Engineering Task Force (IETF) standard that does not allow external network components to collect information on the client that generated the request?",
+        "options": [
+            "Explicit proxy",
+            "Non-transparent proxy",
+            "SOCKS proxy",
+            "Transparent proxy"
+        ],
+        "correct_index": "C",
+        "explanation": "SOCKS proxies operate at a lower level and don't modify or inspect traffic, thus preserving client anonymity."
+    },
+    {
+        "question_number": 41,
+        "question": "In which of the following tiers of a secure application development lifecycle is a program tested for a second time to ensure the stability of the application and then transferred to the production phase?",
+        "options": [
+            "Staging",
+            "Production",
+            "Quality assurance (QA)",
+            "Development"
+        ],
+        "correct_index": "A",
+        "explanation": "The staging environment is used for final testing before deployment to production."
+    },
+    {
+        "question_number": 42,
+        "question": "Which of the following types of information should be sent to a log file and rest should be restricted from being logged as they contain sensitive information?",
+        "options": [
+            "Creation of system-level objects",
+            "Encryption keys",
+            "Personal identifiable information",
+            "Passwords"
+        ],
+        "correct_index": "A",
+        "explanation": "Logging the creation of system-level objects is generally safe and useful for auditing. The others are sensitive and should not be logged."
+    },
+    {
+        "question_number": 43,
+        "question": "Graham, a certified pen tester, was appointed by an organization to test its security posture. Graham identified a security flaw in the network configuration and exploited it to compromise the main system connected with several nodes. Identify the phase of penetration testing in which Graham performed the above activity.",
+        "options": [
+            "Pre-attack phase",
+            "Attack phase",
+            "Post-attack phase",
+            "Documenting phase"
+        ],
+        "correct_index": "B",
+        "explanation": "Exploiting vulnerabilities to gain access is part of the attack phase of penetration testing."
+    },
+    {
+        "question_number": 44,
+        "question": "In which of the following investigation phases do forensic officers perform data acquisition, preservation, and analysis of the evidentiary data to identify the source of a crime and the culprit?",
+        "options": [
+            "Preparatory phase",
+            "Pre-investigation phase",
+            "Post-investigation phase",
+            "Investigation phase"
+        ],
+        "correct_index": "D",
+        "explanation": "The investigation phase is where the core forensic activities of acquisition, preservation, and analysis take place."
+    },
+    {
+        "question_number": 45,
+        "question": "Mateo, a professional hacker, was recruited by an agency to steal sensitive data from a rival company. From a remote location, he discovered vulnerabilities in the target company's network using a vulnerability scanner. He exploited them to intrude into the network and steal confidential data. Identify the threat source exploited by Mateo in the above scenario.",
+        "options": [
+            "External threats",
+            "Internal threats",
+            "Unintentional threats",
+            "Natural threats"
+        ],
+        "correct_index": "A",
+        "explanation": "Mateo is acting from outside the company's network, representing an external threat."
+    },
+    {
+        "question_number": 46,
+        "question": "Which of the following types of honeypot does not emulate anything but runs actual vulnerable services or software on production systems with a real OS and applications?",
+        "options": [
+            "Low-interaction honeypot",
+            "Medium-interaction honeypot",
+            "High-interaction honeypot",
+            "Pure honeypot"
+        ],
+        "correct_index": "C",
+        "explanation": "High-interaction honeypots use real operating systems and applications, providing attackers with a more realistic environment."
+    },
+    {
+        "question_number": 47,
+        "question": "Which of the following Wi-Fi authentication methods uses RADIUS server to distribute authentication keys over clients and the AP in the attempt of enabling an access point to identify a particular wireless client?",
+        "options": [
+            "Centralized authentication",
+            "Shared key authentication",
+            "Open system authentication",
+            "Single sign-on authentication"
+        ],
+        "correct_index": "A",
+        "explanation": "Centralized authentication, often using RADIUS, manages authentication centrally and distributes keys to clients and APs."
+    },
+    {
+        "question_number": 48,
+        "question": "Which of the following types of cable consists of a single copper conductor at its center and a plastic layer coated upon the conductor for moisture resistance?",
+        "options": [
+            "Coaxial cable",
+            "Fiber-optic cable",
+            "Shielded twisted pair",
+            "Unshielded twisted pair"
+        ],
+        "correct_index": "A",
+        "explanation": "Coaxial cable has a central conductor surrounded by insulation, a metallic shield, and an outer jacket."
+    },
+    {
+        "question_number": 49,
+        "question": "Which of the following techniques refers to spoofing a physical address with the physical address of a legitimate user on the network and involves sniffing a network for physical addresses of legitimate clients connected to the network?",
+        "options": [
+            "MAC cloning",
+            "DHCP spoofing attack",
+            "Domain hijacking",
+            "MAC flooding"
+        ],
+        "correct_index": "A",
+        "explanation": "MAC cloning involves copying the MAC address of a legitimate device to another device."
     }
 ]

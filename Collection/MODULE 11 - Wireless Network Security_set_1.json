@@ -1,0 +1,242 @@
+[
+    {
+      "question_number": 1,
+      "question": "You discover an access point (AP) broadcasting an SSID that doesn't match your organization's naming convention. What's the most likely concern?",
+      "options": [
+        "Interference with your authorized Wi-Fi network.",
+        "A misconfigured guest network.",
+        "A rogue AP potentially allowing unauthorized access.",
+        "A software update being pushed to employee devices."
+      ],
+      "correct_index": "C",
+      "explanation": "Unfamiliar SSIDs often indicate rogue APs, posing a significant security risk."
+    },
+    {
+      "question_number": 2,
+      "question": "An employee reports slow Wi-Fi speeds. Initial investigation reveals several nearby networks using the same channel. What mitigation strategy is most effective?",
+      "options": [
+        "Increase the AP's transmit power.",
+        "Change the AP's channel to a less congested one.",
+        "Upgrade all employee devices to the latest Wi-Fi standard.",
+        "Disable SSID broadcasting to reduce overhead."
+      ],
+      "correct_index": "B",
+      "explanation": "Changing the channel reduces co-channel interference, improving performance."
+    },
+    {
+      "question_number": 3,
+      "question": "You're configuring a guest Wi-Fi network. Which security measure is crucial to prevent guests from accessing internal resources?",
+      "options": [
+        "Using WEP encryption.",
+        "Implementing client isolation.",
+        "Disabling MAC address filtering.",
+        "Broadcasting the SSID."
+      ],
+      "correct_index": "B",
+      "explanation": "Client isolation prevents devices on the guest network from communicating with each other or the internal network."
+    },
+    {
+      "question_number": 4,
+      "question": "Which wireless encryption protocol is considered the most secure and recommended for modern Wi-Fi networks?",
+      "options": [
+        "WEP",
+        "WPA",
+        "WPA2",
+        "WPA3"
+      ],
+      "correct_index": "D",
+      "explanation": "WPA3 offers the strongest security with features like SAE (Simultaneous Authentication of Equals)."
+    },
+    {
+      "question_number": 5,
+      "question": "What is the primary vulnerability of WEP encryption?",
+      "options": [
+        "Its reliance on a short, static encryption key.",
+        "Its use of TKIP (Temporal Key Integrity Protocol).",
+        "Its susceptibility to WPS (Wi-Fi Protected Setup) attacks.",
+        "Its complexity and high computational overhead."
+      ],
+      "correct_index": "A",
+      "explanation": "WEP's short, static key makes it easily crackable with readily available tools."
+    },
+    {
+      "question_number": 6,
+      "question": "You need to implement strong authentication for your corporate Wi-Fi. Which method provides the highest level of security?",
+      "options": [
+        "Pre-Shared Key (PSK)",
+        "MAC address filtering",
+        "WPA2/3-Enterprise with RADIUS",
+        "SSID hiding"
+      ],
+      "correct_index": "C",
+      "explanation": "WPA2/3-Enterprise with RADIUS provides centralized authentication and dynamic key management."
+    },
+    {
+      "question_number": 7,
+      "question": "What is the purpose of SSID broadcasting?",
+      "options": [
+        "To encrypt wireless traffic.",
+        "To make the network visible to wireless clients.",
+        "To prevent unauthorized access to the network.",
+        "To improve Wi-Fi signal strength."
+      ],
+      "correct_index": "B",
+      "explanation": "SSID broadcasting makes the network name publicly visible for easy connection."
+    },
+    {
+      "question_number": 8,
+      "question": "Which of the following is a potential risk associated with WPS (Wi-Fi Protected Setup)?",
+      "options": [
+        "It uses strong encryption algorithms.",
+        "It can be vulnerable to brute-force attacks due to the PIN method.",
+        "It provides centralized authentication.",
+        "It improves network performance."
+      ],
+      "correct_index": "B",
+      "explanation": "The WPS PIN method has been found to be vulnerable to brute-force attacks, compromising network security."
+    },
+    {
+      "question_number": 9,
+      "question": "What is the difference between WPA2-Personal and WPA2-Enterprise?",
+      "options": [
+        "WPA2-Personal uses a pre-shared key, while WPA2-Enterprise uses a RADIUS server.",
+        "WPA2-Personal is more secure than WPA2-Enterprise.",
+        "WPA2-Personal is only for home networks, while WPA2-Enterprise is for businesses.",
+        "There is no difference between them."
+      ],
+      "correct_index": "A",
+      "explanation": "The authentication method is the key difference; PSK vs. RADIUS."
+    },
+    {
+      "question_number": 10,
+      "question": "You suspect a WPS attack on your network. What immediate action should you take?",
+      "options": [
+        "Change the Wi-Fi password.",
+        "Disable WPS on the AP.",
+        "Upgrade to WPA3.",
+        "Increase the AP's transmit power."
+      ],
+      "correct_index": "B",
+      "explanation": "Disabling WPS immediately stops the attack vector."
+    },
+      {
+      "question_number": 11,
+      "question": "Which of the following is a characteristic of an ad-hoc wireless network?",
+      "options": [
+        "It requires a central access point.",
+        "Devices communicate directly with each other.",
+        "It provides wide-area coverage.",
+        "It uses a wired backbone."
+      ],
+      "correct_index": "B",
+      "explanation": "Ad-hoc networks (IBSS) are peer-to-peer without an AP."
+    },
+    {
+      "question_number": 12,
+      "question": "What is the purpose of MAC address filtering?",
+      "options": [
+        "To encrypt wireless traffic.",
+        "To allow only specific devices to connect to the network.",
+        "To improve Wi-Fi signal strength.",
+        "To prevent eavesdropping."
+      ],
+      "correct_index": "B",
+      "explanation": "MAC filtering allows or denies network access based on device MAC addresses."
+    },
+    {
+      "question_number": 13,
+      "question": "Which protocol is commonly used for centralized authentication in WPA2/3-Enterprise?",
+      "options": [
+        "PSK",
+        "TKIP",
+        "RADIUS",
+        "AES"
+      ],
+      "correct_index": "C",
+      "explanation": "RADIUS servers handle authentication for Enterprise Wi-Fi."
+    },
+    {
+      "question_number": 14,
+      "question": "What is a common method used to crack WPA PSK passwords?",
+      "options": [
+        "Packet sniffing and brute-force attacks.",
+        "Exploiting WPS vulnerabilities.",
+        "Man-in-the-middle attacks.",
+        "DNS spoofing."
+      ],
+      "correct_index": "A",
+      "explanation": "Capturing the 4-way handshake and using a dictionary attack is common."
+    },
+    {
+      "question_number": 15,
+      "question": "What is the benefit of using WPA3 over WPA2?",
+      "options": [
+        "Increased speed.",
+        "Stronger encryption and protection against brute-force attacks.",
+        "Simplified configuration.",
+        "Wider device compatibility."
+      ],
+      "correct_index": "B",
+      "explanation": "WPA3 introduces SAE and other security enhancements."
+    },
+      {
+      "question_number": 16,
+      "question": "You need to secure a small office network with limited IT resources. Which Wi-Fi security configuration is the most practical and secure option?",
+      "options": [
+        "WEP with MAC filtering.",
+        "WPA2-Personal with a strong password.",
+        "WPA2-Enterprise with a RADIUS server.",
+        "Open Wi-Fi with no security."
+      ],
+      "correct_index": "B",
+      "explanation": "WPA2-Personal with a strong, unique password is a good balance of security and ease of implementation for small offices."
+    },
+    {
+      "question_number": 17,
+      "question": "What is the purpose of disabling SSID broadcasting?",
+      "options": [
+        "To prevent all unauthorized access.",
+        "To make the network slightly less visible to casual scanners.",
+        "To improve network performance significantly.",
+        "To encrypt wireless traffic."
+      ],
+      "correct_index": "B",
+      "explanation": "Hiding the SSID adds a small layer of obscurity but doesn't provide strong security."
+    },
+    {
+      "question_number": 18,
+      "question": "Which tool would be most effective for detecting rogue access points in your network?",
+      "options": [
+        "Ping",
+        "Nmap",
+        "Wireless network analyzer (e.g., Kismet, Wireshark)",
+        "Tracert"
+      ],
+      "correct_index": "C",
+      "explanation": "Wireless network analyzers are designed to detect and analyze wireless networks, including rogue APs."
+    },
+    {
+      "question_number": 19,
+      "question": "You suspect a man-in-the-middle attack on your Wi-Fi network. What could be an indicator?",
+      "options": [
+        "Sudden increase in internet speed.",
+        "Unusual disconnections or slow network performance.",
+        "New devices connecting to the network without authorization.",
+        "All of the above."
+      ],
+      "correct_index": "B",
+      "explanation": "Man-in-the-middle attacks often degrade network performance as traffic is being intercepted and potentially modified."
+    },
+    {
+      "question_number": 20,
+      "question": "What is the best practice for placing a wireless access point to maximize coverage and minimize interference?",
+      "options": [
+        "In a corner of the building.",
+        "Near metal objects or walls.",
+        "In a central, open location away from obstructions.",
+        "Hidden inside a cabinet or closet."
+      ],
+      "correct_index": "C",
+      "explanation": "A central, open location provides the best signal propagation and reduces interference."
+    }
+  ]
