@@ -1,0 +1,242 @@
+[
+  {
+    "question_number": 1,
+    "question": "A company prioritizes ease of use for its applications, but this leads to weak security measures. What fundamental security principle is being violated?",
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Security, Functionality, and Usability Triangle (Balance)"
+    ],
+    "correct_index": "D",
+    "explanation": "The security, functionality, and usability triangle emphasizes the need to balance these three aspects. Prioritizing one at the expense of others can lead to problems."
+  },
+  {
+    "question_number": 2,
+    "question": "A network experiences a Distributed Denial of Service (DDoS) attack, making its services unavailable to legitimate users. Which core security principle is primarily affected?",
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Non-repudiation"
+    ],
+    "correct_index": "C",
+    "explanation": "DDoS attacks aim to disrupt the availability of services."
+  },
+  {
+    "question_number": 3,
+    "question": "A database is modified by an unauthorized user, resulting in incorrect data. Which core security principle is violated?",
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Authentication"
+    ],
+    "correct_index": "B",
+    "explanation": "Integrity ensures that data is accurate and has not been tampered with."
+  },
+  {
+    "question_number": 4,
+    "question": "Sensitive customer data is accessed by an unauthorized individual. Which core security principle is breached?",
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Authorization"
+    ],
+    "correct_index": "A",
+    "explanation": "Confidentiality protects data from unauthorized disclosure."
+  },
+  {
+    "question_number": 5,
+    "question": "Your organization is implementing a cybersecurity framework to manage and reduce cybersecurity risk. Which framework provides a set of standards, guidelines, and best practices to manage cybersecurity risk?",
+    "options": [
+      "ISO 27001",
+      "NIST Cybersecurity Framework (CSF)",
+      "PCI DSS",
+      "HIPAA"
+    ],
+    "correct_index": "B",
+    "explanation": "The NIST CSF provides a flexible and adaptable framework for managing cybersecurity risk."
+  },
+  {
+    "question_number": 6,
+    "question": "A company implements strict access controls and strong encryption. What network defense approach is being emphasized?",
+    "options": [
+      "Prevention",
+      "Detection",
+      "Response",
+      "Recovery"
+    ],
+    "correct_index": "A",
+    "explanation": "Access controls and encryption are preventative measures designed to stop attacks before they occur."
+  },
+  {
+    "question_number": 7,
+    "question": "A network intrusion detection system (IDS) alerts security personnel to suspicious network activity. What network defense approach is being used?",
+    "options": [
+      "Prevention",
+      "Detection",
+      "Response",
+      "Recovery"
+    ],
+    "correct_index": "B",
+    "explanation": "IDS systems are designed to detect malicious activity on a network."
+  },
+  {
+    "question_number": 8,
+    "question": "After a successful cyberattack, the incident response team works to restore systems and data to their previous state. What network defense approach is this?",
+    "options": [
+      "Prevention",
+      "Detection",
+      "Response",
+      "Recovery"
+    ],
+    "correct_index": "D",
+    "explanation": "Recovery involves restoring systems and data after an incident."
+  },
+  {
+    "question_number": 9,
+    "question": "Implementing regular security awareness training for employees is an example of which type of network security control?",
+    "options": [
+      "Administrative control",
+      "Physical control",
+      "Technical control",
+      "Operational control"
+    ],
+    "correct_index": "A",
+    "explanation": "Security awareness training is an administrative control that focuses on policies, procedures, and training."
+  },
+  {
+    "question_number": 10,
+    "question": "Using firewalls, intrusion prevention systems (IPS), and antivirus software are examples of which type of network security control?",
+    "options": [
+      "Administrative control",
+      "Physical control",
+      "Technical control",
+      "Operational Control"
+    ],
+    "correct_index": "C",
+    "explanation": "Firewalls, IPS, and antivirus are technical controls implemented through hardware or software."
+  },
+    {
+    "question_number": 11,
+    "question": "Using security guards, locks, and surveillance cameras to protect a data center is an example of which type of network security control?",
+    "options": [
+      "Administrative control",
+      "Physical control",
+      "Technical control",
+        "Operational Control"
+    ],
+    "correct_index": "B",
+    "explanation": "Physical controls are tangible security measures designed to protect physical assets."
+  },
+  {
+    "question_number": 12,
+    "question": "What is a key principle of Information Assurance (IA)?",
+    "options": [
+      "Focusing solely on preventing attacks.",
+      "Balancing confidentiality, integrity, availability, authentication, and non-repudiation.",
+      "Prioritizing usability over security.",
+      "Minimizing investment in security technologies."
+    ],
+    "correct_index": "B",
+    "explanation": "IA aims to protect information in all its states by balancing the core security principles."
+  },
+  {
+    "question_number": 13,
+    "question": "What is a major challenge in network defense?",
+    "options": [
+      "The constantly evolving threat landscape.",
+      "The increasing complexity of networks.",
+      "The shortage of skilled cybersecurity professionals.",
+      "All of the above."
+    ],
+    "correct_index": "D",
+    "explanation": "All of these are significant challenges faced by network defenders."
+  },
+  {
+    "question_number": 14,
+    "question": "What does a continual/adaptive security strategy emphasize?",
+    "options": [
+      "Implementing security measures once and maintaining them indefinitely.",
+      "Continuously monitoring, assessing, and adapting security measures to the changing threat landscape.",
+      "Relying solely on preventative security controls.",
+      "Ignoring new threats and focusing on known vulnerabilities."
+    ],
+    "correct_index": "B",
+    "explanation": "An adaptive strategy recognizes that the threat landscape is dynamic and requires ongoing adjustments to security measures."
+  },
+  {
+    "question_number": 15,
+    "question": "Which network defense element focuses on the skills and training of security personnel?",
+    "options": [
+      "Technology",
+      "Operations",
+      "People",
+      "Processes"
+    ],
+    "correct_index": "C",
+    "explanation": "The 'People' element emphasizes the importance of skilled and trained personnel in implementing and managing security."
+  },
+    {
+    "question_number": 16,
+    "question": "Which team is responsible for responding to and containing security incidents?",
+    "options": [
+      "Computer Forensics Investigation Team",
+      "Network Defense Team",
+      "Incident Handling and Response (IH&R) Team",
+      "Security Audit Team"
+    ],
+    "correct_index": "C",
+    "explanation": "The IH&R team is specifically trained to handle security incidents."
+  },
+    {
+    "question_number": 17,
+    "question": "Which team is responsible for collecting and analyzing digital evidence after a security incident?",
+    "options": [
+      "Computer Forensics Investigation Team",
+      "Network Defense Team",
+      "Incident Handling and Response (IH&R) Team",
+      "Security Audit Team"
+    ],
+    "correct_index": "A",
+    "explanation": "The forensics team specializes in digital evidence collection and analysis."
+  },
+    {
+    "question_number": 18,
+    "question": "What is the primary goal of network defense?",
+    "options": [
+      "To completely eliminate all cyberattacks.",
+      "To protect network assets and data from unauthorized access, use, disclosure, disruption, modification, or destruction.",
+      "To maximize network performance at all costs.",
+      "To minimize security spending."
+    ],
+    "correct_index": "B",
+    "explanation": "Network defense aims to protect network assets and data from various threats."
+  },
+  {
+    "question_number": 19,
+    "question": "What is a benefit of having a well-defined incident handling and response plan?",
+    "options": [
+      "Reduced impact of security incidents.",
+      "Faster recovery time.",
+      "Improved communication and coordination during incidents.",
+      "All of the above."
+    ],
+    "correct_index": "D",
+    "explanation": "A well-defined plan helps minimize damage, speed up recovery, and ensure effective communication during incidents."
+  },
+  {
+    "question_number": 20,
+    "question": "Which of these is NOT a core principle of Information Assurance?",
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Obscurity"
+    ],
+    "correct_index": "D",
+    "explanation": "While obscurity can be a *part* of a defense-in-depth strategy, it's not a core principle of IA. The core principles are Confidentiality, Integrity, Availability, Authentication, and Non-Repudiation."
+  }
+]

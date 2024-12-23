@@ -548,8 +548,8 @@
             "High-interaction honeypot",
             "Pure honeypot"
         ],
-        "correct_index": "C",
-        "explanation": "High-interaction honeypots use real operating systems and applications, providing attackers with a more realistic environment."
+        "correct_index": "D",
+        "explanation": "A pure honeypot does not emulate anything; it is a real system that runs actual vulnerable services or software with a real OS and applications. Its primary function is to attract and interact with attackers in a controlled environment while monitoring their actions. This type of honeypot is fully functional and does not involve any virtualization or emulation techniques."
     },
     {
         "question_number": 47,
