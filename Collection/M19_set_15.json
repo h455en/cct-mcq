@@ -1,0 +1,152 @@
+[
+    {
+        "question":  "During a routine security review, you identify unusual outbound traffic to an IP address known to host malicious content. What is your immediate next step?",
+        "options":  [
+                        "Block the IP address at the firewall.",
+                        "Notify the senior management immediately.",
+                        "Initiate a full network scan for infected devices.",
+                        "Capture a packet trace for further analysis."
+                    ],
+        "correct_index":  "D"
+    },
+    {
+        "question":  "An employee reports receiving a suspicious email requesting sensitive information. How should you respond?",
+        "options":  [
+                        "Delete the email from their inbox.",
+                        "Instruct the employee to reply with fake information.",
+                        "Analyze the email headers for phishing indicators.",
+                        "Report the email to the IT helpdesk and ignore further actions."
+                    ],
+        "correct_index":  "C"
+    },
+    {
+        "question":  "During a penetration test, you discover that an internal web application does not validate user inputs. What is the risk of this vulnerability?",
+        "options":  [
+                        "Denial-of-service (DoS) attacks",
+                        "Cross-site scripting (XSS) attacks",
+                        "Privilege escalation attacks",
+                        "Brute force login attempts"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "A user’s workstation is exhibiting slow performance and frequent pop-ups. What should you do first?",
+        "options":  [
+                        "Reinstall the operating system.",
+                        "Run an antivirus scan on the workstation.",
+                        "Check for software updates and patches.",
+                        "Replace the workstation with a new one."
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "While reviewing system logs, you notice multiple failed login attempts from a single IP address. What does this indicate?",
+        "options":  [
+                        "A denial-of-service (DoS) attack",
+                        "A brute force attack",
+                        "An insider threat",
+                        "A misconfigured system"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "A server in the data center has unexpectedly shut down. What logs should you review to determine the cause?",
+        "options":  [
+                        "Application logs",
+                        "System logs",
+                        "Firewall logs",
+                        "Web server logs"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "A malicious actor exploits a zero-day vulnerability in your organization’s software. What is your immediate action?",
+        "options":  [
+                        "Wait for the vendor to release a patch.",
+                        "Isolate affected systems from the network.",
+                        "Notify law enforcement authorities.",
+                        "Disable all network traffic."
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "You are tasked with investigating a data breach. Which step should you take first?",
+        "options":  [
+                        "Identify the scope of the breach.",
+                        "Notify affected users immediately.",
+                        "Shut down all servers.",
+                        "Erase all compromised systems."
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "A vulnerability scan reveals an outdated version of Apache running on a web server. What should you do?",
+        "options":  [
+                        "Replace the server hardware.",
+                        "Apply the latest security patch for Apache.",
+                        "Reinstall the operating system.",
+                        "Disable the Apache service permanently."
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "What is the primary purpose of conducting a tabletop exercise in an organization?",
+        "options":  [
+                        "Test the speed of incident response tools.",
+                        "Evaluate the readiness of incident response teams.",
+                        "Train new employees on company policies.",
+                        "Identify network misconfigurations."
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "You find a rogue access point in your corporate network. What should you do first?",
+        "options":  [
+                        "Disable the access point.",
+                        "Conduct a wireless survey.",
+                        "Identify devices connected to the access point.",
+                        "Notify local law enforcement."
+                    ],
+        "correct_index":  "C"
+    },
+    {
+        "question":  "A cloud service provider informs you of a critical vulnerability in their platform. What is your first step?",
+        "options":  [
+                        "Switch to a different cloud provider.",
+                        "Assess your organization’s exposure to the vulnerability.",
+                        "Terminate all cloud services temporarily.",
+                        "Inform your clients immediately."
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "A phishing campaign has successfully compromised several employee accounts. What is your priority action?",
+        "options":  [
+                        "Notify affected employees.",
+                        "Reset compromised accounts and implement multifactor authentication.",
+                        "Block the phishing email sender.",
+                        "Initiate legal action against the attackers."
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "During a forensic investigation, you find a file with an unknown extension. How should you proceed?",
+        "options":  [
+                        "Open the file on the live system.",
+                        "Submit the file to a sandbox for analysis.",
+                        "Delete the file immediately.",
+                        "Rename the file and attempt to open it."
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "What is the primary goal of a Business Impact Analysis (BIA) during incident response planning?",
+        "options":  [
+                        "To identify critical systems and their recovery priorities.",
+                        "To evaluate the effectiveness of security policies.",
+                        "To calculate the cost of implementing security measures.",
+                        "To train employees on incident response protocols."
+                    ],
+        "correct_index":  "A"
+    }
+]

@@ -1,0 +1,242 @@
+[
+    {
+        "number":  1,
+        "question":  "An organization deploys an Intrusion Detection System (IDS) to monitor its network. During a routine scan, the IDS raises an alert about abnormal traffic from an internal server. What should the security team do first?",
+        "options":  [
+                        "Ignore the alert if the server has no history of issues.",
+                        "Block all incoming traffic to the server immediately.",
+                        "Analyze the server\u0027s traffic patterns for potential false positives.",
+                        "Disconnect the server from the network until further investigation."
+                    ],
+        "correct_index":  "C",
+        "explanation":  "The first step is to analyze traffic patterns to verify whether the alert is a false positive before taking disruptive actions."
+    },
+    {
+        "number":  2,
+        "question":  "A company uses a transparent proxy server to optimize network traffic. However, some employees report slow access to certain websites. What could be the issue?",
+        "options":  [
+                        "The proxy server may have caching issues.",
+                        "The websites could be blacklisted by the proxy.",
+                        "Transparent proxies do not support HTTPS traffic.",
+                        "Proxy servers increase bandwidth automatically."
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Caching issues in proxy servers can cause delays or stale data delivery."
+    },
+    {
+        "number":  3,
+        "question":  "A financial institution deploys a honeypot in its network. After a week, it detects a high number of interactions with the honeypot. What does this indicate?",
+        "options":  [
+                        "The honeypot is malfunctioning.",
+                        "Attackers are actively probing the network.",
+                        "Employees are using the honeypot for testing.",
+                        "The network is secure from threats."
+                    ],
+        "correct_index":  "B",
+        "explanation":  "High interactions with a honeypot suggest that attackers are probing the network for vulnerabilities."
+    },
+    {
+        "number":  4,
+        "question":  "During a penetration test, the tester uses anomaly-based detection to analyze network traffic. What kind of events is the tester looking for?",
+        "options":  [
+                        "Known attack signatures.",
+                        "Activities deviating from normal behavior.",
+                        "Specific exploits targeting vulnerabilities.",
+                        "Predefined rules in the firewall."
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Anomaly-based detection identifies deviations from established baselines to detect potential threats."
+    },
+    {
+        "number":  5,
+        "question":  "A security team configures an IDS with centralized logging but notices increased latency in alert processing. What could improve the system\u0027s efficiency?",
+        "options":  [
+                        "Add more sensors to the IDS.",
+                        "Switch to a distributed IDS structure.",
+                        "Disable low-priority alerts.",
+                        "Use real-time data analysis instead of interval-based analysis."
+                    ],
+        "correct_index":  "B",
+        "explanation":  "A distributed IDS reduces latency by distributing the workload across multiple systems."
+    },
+    {
+        "number":  6,
+        "question":  "A web application behind a proxy server reports frequent connection drops. What is the most likely cause?",
+        "options":  [
+                        "The proxy server is overloaded.",
+                        "The application server has a misconfigured firewall.",
+                        "The proxy server does not support the application protocol.",
+                        "The proxy server\u0027s cache is full."
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Connection drops are often due to proxy server overload or insufficient resources."
+    },
+    {
+        "number":  7,
+        "question":  "An e-commerce company wants to prevent brute-force login attempts on its platform. Which proxy feature can help mitigate this?",
+        "options":  [
+                        "Caching web pages.",
+                        "Rate limiting.",
+                        "DNS filtering.",
+                        "Forwarding traffic."
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Rate limiting restricts the number of login attempts from a single IP address, helping to mitigate brute-force attacks."
+    },
+    {
+        "number":  8,
+        "question":  "An organization notices unusually high outgoing traffic from its network. What IDS component would help identify the source of this traffic?",
+        "options":  [
+                        "Command console.",
+                        "Response system.",
+                        "Attack signature database.",
+                        "Network sensors."
+                    ],
+        "correct_index":  "D",
+        "explanation":  "Network sensors capture traffic data, which can be analyzed to identify the source of unusual activity."
+    },
+    {
+        "number":  9,
+        "question":  "What is the primary benefit of using a reverse proxy in a network?",
+        "options":  [
+                        "It hides internal server IPs from external users.",
+                        "It forwards internal traffic to external servers.",
+                        "It bypasses firewall restrictions.",
+                        "It reduces the need for IDS systems."
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Reverse proxies act as intermediaries for servers, hiding their IP addresses and providing an additional security layer."
+    },
+    {
+        "number":  10,
+        "question":  "A hybrid IDS implementation is chosen for a critical infrastructure. What is the key advantage of this approach?",
+        "options":  [
+                        "It uses only signature-based detection for precision.",
+                        "It combines host-based and network-based IDS for comprehensive coverage.",
+                        "It avoids the need for anomaly-based detection.",
+                        "It eliminates the need for a centralized console."
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Hybrid IDS integrates host-based and network-based IDS to provide a balanced and comprehensive detection strategy."
+    },
+    {
+        "number":  11,
+        "question":  "A newly deployed IDS frequently raises false-positive alerts. What is the most likely issue?",
+        "options":  [
+                        "The IDS is not receiving sufficient data.",
+                        "The anomaly detection thresholds are misconfigured.",
+                        "The IDS is in passive mode.",
+                        "The command console is overloaded."
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Misconfigured thresholds can lead to false positives by misidentifying normal traffic as suspicious."
+    },
+    {
+        "number":  12,
+        "question":  "A company uses a SOCKS proxy to route traffic. What is a unique benefit of this proxy type?",
+        "options":  [
+                        "It is protocol-independent.",
+                        "It caches web pages.",
+                        "It encrypts DNS requests.",
+                        "It performs load balancing."
+                    ],
+        "correct_index":  "A",
+        "explanation":  "SOCKS proxies operate at the transport layer and are protocol-independent, supporting various types of traffic."
+    },
+    {
+        "number":  13,
+        "question":  "A distributed IDS deployment faces synchronization issues between its components. What is a potential solution?",
+        "options":  [
+                        "Upgrade all IDS sensors.",
+                        "Implement a centralized logging system.",
+                        "Use real-time data analysis instead of interval-based analysis.",
+                        "Increase the number of response systems."
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Centralized logging helps maintain consistent data across distributed IDS components, reducing synchronization issues."
+    },
+    {
+        "number":  14,
+        "question":  "An organization configures its IDS with stateful protocol analysis. What does this configuration enable?",
+        "options":  [
+                        "Identification of zero-day vulnerabilities.",
+                        "Analysis of protocol behavior over time.",
+                        "Immediate detection of malware signatures.",
+                        "Increased processing speed for real-time detection."
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Stateful protocol analysis evaluates protocol behavior over time to detect deviations from expected patterns."
+    },
+    {
+        "number":  15,
+        "question":  "A honeypot is configured to interact with attackers. What type of honeypot is this?",
+        "options":  [
+                        "High-interaction honeypot.",
+                        "Low-interaction honeypot.",
+                        "Virtual honeypot.",
+                        "Passive honeypot."
+                    ],
+        "correct_index":  "A",
+        "explanation":  "High-interaction honeypots simulate real systems and allow attackers to interact extensively, providing valuable insights."
+    },
+    {
+        "number":  16,
+        "question":  "An attacker uses a proxy to hide their identity. How can an organization detect such behavior?",
+        "options":  [
+                        "Monitor for encrypted traffic.",
+                        "Check for frequent IP changes.",
+                        "Identify unusual DNS queries.",
+                        "Track packet fragmentation patterns."
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Frequent IP changes are a common sign of proxy usage to mask an attacker\u0027s identity."
+    },
+    {
+        "number":  17,
+        "question":  "A proxy server is deployed for content filtering. What limitation should the administrator be aware of?",
+        "options":  [
+                        "Proxies cannot cache secure web pages.",
+                        "Proxies are ineffective against encrypted traffic.",
+                        "Proxies increase bandwidth usage.",
+                        "Proxies bypass IDS functionality."
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Encrypted traffic, such as HTTPS, can limit the effectiveness of proxies in content filtering without SSL inspection."
+    },
+    {
+        "number":  18,
+        "question":  "A Snort-based IDS raises an alert for a suspected SQL injection attack. What type of detection is this an example of?",
+        "options":  [
+                        "Anomaly-based detection.",
+                        "Behavior-based detection.",
+                        "Signature-based detection.",
+                        "Stateful protocol analysis."
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Snort relies on pre-defined patterns or signatures to detect attacks like SQL injection."
+    },
+    {
+        "number":  19,
+        "question":  "A transparent proxy is set up for a corporate network. What is a key characteristic of this setup?",
+        "options":  [
+                        "It requires client-side configuration.",
+                        "Clients are unaware of the proxy\u0027s presence.",
+                        "It encrypts all outgoing traffic by default.",
+                        "It bypasses network firewalls."
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Transparent proxies operate without the need for client configuration, making them seamless for end users."
+    },
+    {
+        "number":  20,
+        "question":  "A network administrator configures an interval-based IDS. What is a potential disadvantage of this approach?",
+        "options":  [
+                        "It increases system resource usage.",
+                        "It may delay detection of intrusions.",
+                        "It generates excessive alerts.",
+                        "It is incompatible with host-based deployments."
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Interval-based IDS processes data at regular intervals, which may delay the detection of real-time intrusions."
+    }
+]

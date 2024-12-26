@@ -1,0 +1,242 @@
+[
+    {
+        "question_number":  1,
+        "question":  "Which protocol is used for centralized authentication of remote users and includes accounting services?",
+        "options":  [
+                        "Kerberos",
+                        "TACACS+",
+                        "RADIUS",
+                        "IPsec"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "RADIUS is a protocol that provides centralized authentication, authorization, and accounting (AAA) services for remote users."
+    },
+    {
+        "question_number":  2,
+        "question":  "Which of the following is an advantage of TACACS+ over RADIUS?",
+        "options":  [
+                        "Stronger encryption for the entire payload",
+                        "Better performance in wireless networks",
+                        "Support for IPsec authentication",
+                        "Uses UDP for faster communication"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "TACACS+ encrypts the entire payload, making it more secure than RADIUS, which only encrypts the password field."
+    },
+    {
+        "question_number":  3,
+        "question":  "Which protocol uses tickets for secure authentication over an untrusted network?",
+        "options":  [
+                        "Kerberos",
+                        "S/MIME",
+                        "IPsec",
+                        "LDAP"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Kerberos uses tickets issued by a trusted Key Distribution Center (KDC) for secure authentication."
+    },
+    {
+        "question_number":  4,
+        "question":  "What is the main function of DNSSEC?",
+        "options":  [
+                        "Encrypt DNS queries",
+                        "Authenticate the origin of DNS data",
+                        "Enable faster DNS resolution",
+                        "Prevent man-in-the-middle attacks"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "DNSSEC ensures the authenticity and integrity of DNS data by adding digital signatures to DNS records."
+    },
+    {
+        "question_number":  5,
+        "question":  "Which secure email protocol provides end-to-end encryption using certificates?",
+        "options":  [
+                        "POP3S",
+                        "S/MIME",
+                        "SMTP",
+                        "PGP"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "S/MIME uses certificates for end-to-end email encryption and ensures data integrity."
+    },
+    {
+        "question_number":  6,
+        "question":  "What is a key difference between PGP and S/MIME?",
+        "options":  [
+                        "PGP uses a centralized Certificate Authority (CA).",
+                        "S/MIME requires public key certificates.",
+                        "PGP supports DNSSEC for email delivery.",
+                        "S/MIME is not supported by modern email clients."
+                    ],
+        "correct_index":  "B",
+        "explanation":  "S/MIME requires certificates issued by a trusted Certificate Authority (CA), whereas PGP relies on a web of trust model."
+    },
+    {
+        "question_number":  7,
+        "question":  "Which secure protocol should you use to transfer files securely over an untrusted network?",
+        "options":  [
+                        "SFTP",
+                        "FTP",
+                        "SNMPv3",
+                        "IPsec"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "SFTP (Secure File Transfer Protocol) encrypts both commands and data for secure file transfer."
+    },
+    {
+        "question_number":  8,
+        "question":  "What is the primary role of SNMPv3 in network security?",
+        "options":  [
+                        "Provide secure management of network devices",
+                        "Encrypt DNS queries",
+                        "Secure file transfer",
+                        "Authenticate user sessions"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "SNMPv3 provides security features like encryption and authentication to manage network devices securely."
+    },
+    {
+        "question_number":  9,
+        "question":  "Which protocol is used for secure real-time communication in VoIP systems?",
+        "options":  [
+                        "IPsec",
+                        "SRTP",
+                        "LDAP",
+                        "TLS"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Secure Real-time Transport Protocol (SRTP) provides encryption and authentication for VoIP and multimedia communication."
+    },
+    {
+        "question_number":  10,
+        "question":  "Which network security protocol operates at the transport layer and ensures encryption for HTTP traffic?",
+        "options":  [
+                        "S-HTTP",
+                        "HTTPS",
+                        "SSL",
+                        "TLS"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "HTTPS secures HTTP traffic by using SSL or TLS to encrypt data at the transport layer."
+    },
+    {
+        "question_number":  11,
+        "question":  "Which of the following is a key benefit of network segmentation?",
+        "options":  [
+                        "Faster internet speeds",
+                        "Improved fault tolerance",
+                        "Minimized lateral movement during attacks",
+                        "Simplified network configuration"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Network segmentation restricts attackers\u0027 ability to move laterally across the network, improving security."
+    },
+    {
+        "question_number":  12,
+        "question":  "Which type of network segmentation isolates sensitive systems from the rest of the network?",
+        "options":  [
+                        "Logical segmentation",
+                        "Microsegmentation",
+                        "Physical segmentation",
+                        "Host-based segmentation"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Physical segmentation uses separate physical infrastructure to isolate sensitive systems for enhanced security."
+    },
+    {
+        "question_number":  13,
+        "question":  "What is the role of a bastion host in network security?",
+        "options":  [
+                        "Act as a secure gateway to a protected network",
+                        "Monitor network traffic for malicious activity",
+                        "Authenticate users for directory services",
+                        "Encrypt real-time communication"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "A bastion host is a hardened system used to provide secure access to a protected network or resources."
+    },
+    {
+        "question_number":  14,
+        "question":  "Which protocol provides authentication and encryption for directory services?",
+        "options":  [
+                        "LDAP",
+                        "LDAPS",
+                        "Kerberos",
+                        "RADIUS"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "LDAPS is a secure version of LDAP that uses SSL/TLS for encryption and authentication."
+    },
+    {
+        "question_number":  15,
+        "question":  "Which IPsec mode encrypts only the payload of an IP packet?",
+        "options":  [
+                        "Transport mode",
+                        "Tunnel mode",
+                        "Authentication mode",
+                        "Payload mode"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "IPsec transport mode encrypts only the payload, while tunnel mode encrypts the entire IP packet."
+    },
+    {
+        "question_number":  16,
+        "question":  "What is the primary use of OAuth in network security?",
+        "options":  [
+                        "Authentication of users",
+                        "Authorization for accessing resources",
+                        "Encrypting network traffic",
+                        "Providing secure email services"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "OAuth is an open standard for authorization, allowing users to grant access to resources without sharing credentials."
+    },
+    {
+        "question_number":  17,
+        "question":  "What is the role of OpenID Connect (OIDC) in network security?",
+        "options":  [
+                        "Provide user authentication and identity information",
+                        "Encrypt real-time communication",
+                        "Ensure secure directory access",
+                        "Securely transfer files over a network"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "OIDC is built on OAuth 2.0 and adds authentication to provide user identity information."
+    },
+    {
+        "question_number":  18,
+        "question":  "Which of the following is a key feature of HTTPS?",
+        "options":  [
+                        "Ensures data confidentiality and integrity",
+                        "Monitors network devices",
+                        "Prevents VoIP attacks",
+                        "Encrypts DNS records"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "HTTPS secures web communication by encrypting data to ensure confidentiality and integrity."
+    },
+    {
+        "question_number":  19,
+        "question":  "Which security protocol uses cryptographic keys for secure data exchange over untrusted networks?",
+        "options":  [
+                        "IPsec",
+                        "SNMPv3",
+                        "TACACS+",
+                        "S/MIME"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "IPsec uses cryptographic keys to encrypt and authenticate data exchanges over untrusted networks."
+    },
+    {
+        "question_number":  20,
+        "question":  "What is the primary purpose of Secure Shell (SSH)?",
+        "options":  [
+                        "Provide secure access to remote systems",
+                        "Encrypt email messages",
+                        "Authenticate directory services",
+                        "Manage VoIP communication"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "SSH is used to securely access and manage remote systems over an untrusted network."
+    }
+]
