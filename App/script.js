@@ -233,6 +233,30 @@ function showEvaluation() {
     const questionsAccordion = document.getElementById('questionsAccordion');
     questionsAccordion.innerHTML = ""; // Clear previous results
 
+    //__________________________________
+
+    // Create expandable text area
+    const resultsTextArea = document.createElement('textarea');
+    resultsTextArea.id = 'resultsTextArea';
+    resultsTextArea.className = 'form-control mt-3';
+    resultsTextArea.rows = 5; // Initial number of rows
+    resultsTextArea.style.resize = 'vertical'; // Allow vertical resizing
+    resultsArea.appendChild(resultsTextArea);
+
+    const now = new Date();
+    const dateTimeString = `${now.getDate().toString().padStart(2, '0')}.${(now.getMonth() + 1).toString().padStart(2, '0')}.${now.getFullYear()} - ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
+
+    let resultsText = ""; //`Quiz Name: ${selectedQuizName}\n`;
+    resultsText += `Run at =  ${dateTimeString}\n`;
+    //resultsText += `Score: ${score}/${currentQuiz.length} - ${percentage}%\n`;
+
+    var formattedUserAnswers = userAnswers.map((e, i) => (i + 1 + "." + e)).join(' ');
+    var formattedCorrectAnswers = correctAnswers.map((e, i) => (i + 1 + "." + e)).join(' ');
+
+    resultsText += `User answers =  ${formattedUserAnswers}\n`;
+    resultsText += `Correct answers =  ${formattedCorrectAnswers}\n`;
+    //__________________________________
+
     currentQuiz.forEach((q, index) => {
         const userAnswer = userAnswers[index] || "No Answer";
         const correctAnswer = correctAnswers[index];
@@ -241,6 +265,7 @@ function showEvaluation() {
 
         const accordionItem = document.createElement('div');
         accordionItem.className = 'accordion-item';
+        //evaluatedAnswer = "";
         accordionItem.innerHTML = `
               <h2 class="accordion-header" id="heading${index}">
                   <button class="accordion-button collapsed ${isCorrect ? "" : "text-danger"}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}" aria-expanded="false" aria-controls="collapse${index}">
@@ -262,23 +287,7 @@ function showEvaluation() {
         questionsAccordion.appendChild(accordionItem);
     });
 
-    //-----------------------
-    // Create expandable text area
-    const resultsTextArea = document.createElement('textarea');
-    resultsTextArea.id = 'resultsTextArea';
-    resultsTextArea.className = 'form-control mt-3';
-    resultsTextArea.rows = 5; // Initial number of rows
-    resultsTextArea.style.resize = 'vertical'; // Allow vertical resizing
-    resultsArea.appendChild(resultsTextArea);
 
-    const now = new Date();
-    const dateTimeString = `${now.getDate().toString().padStart(2, '0')}.${(now.getMonth() + 1).toString().padStart(2, '0')}.${now.getFullYear()} - ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
-
-    let resultsText = ''; //`Quiz Name: ${selectedQuizName}\n`;
-    resultsText += `Date/Time: ${dateTimeString}\n`;
-    //resultsText += `Score: ${score}/${currentQuiz.length} - ${percentage}%\n`;
-    resultsText += "User Answers:\n";
-    //-------------------------
 
     const percentage = Math.round((score / currentQuiz.length) * 100);
     document.getElementById('score').innerText = score;

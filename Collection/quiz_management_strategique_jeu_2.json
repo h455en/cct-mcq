@@ -1,0 +1,182 @@
+[
+    {
+        "question_number": 1,
+        "question": "Qu'est-ce qu'un signal faible en management stratégique ?",
+        "options": [
+            "Un indicateur macroéconomique évident",
+            "Un indice précoce de changement ou de tendance",
+            "Une donnée quantitative facilement mesurable",
+            "Un rapport annuel d'entreprise"
+        ],
+        "correct_index": "B",
+        "explanation": "Un signal faible est un indice précoce de changements ou tendances émergents, souvent non visibles immédiatement."
+    },
+    {
+        "question_number": 2,
+        "question": "Quel est l'objectif principal de l'analyse des signaux faibles ?",
+        "options": [
+            "Réduire les coûts opérationnels",
+            "Anticiper les changements stratégiques",
+            "Améliorer la satisfaction des employés",
+            "Maximiser les profits à court terme"
+        ],
+        "correct_index": "B",
+        "explanation": "L'analyse des signaux faibles permet d'anticiper les changements stratégiques et de mieux se préparer aux opportunités ou menaces."
+    },
+    {
+        "question_number": 3,
+        "question": "Quel outil est souvent utilisé pour identifier les signaux faibles dans un environnement concurrentiel ?",
+        "options": [
+            "Analyse SWOT",
+            "Étude de marché",
+            "Veille stratégique",
+            "Modèle des 5 forces de Porter"
+        ],
+        "correct_index": "C",
+        "explanation": "La veille stratégique est essentielle pour détecter des indices faibles sur les tendances ou évolutions futures."
+    },
+    {
+        "question_number": 4,
+        "question": "Quel type de données est souvent utilisé pour repérer les signaux faibles ?",
+        "options": [
+            "Données quantitatives uniquement",
+            "Données qualitatives issues de discussions ou publications",
+            "Rapports financiers exclusivement",
+            "Données historiques"
+        ],
+        "correct_index": "B",
+        "explanation": "Les signaux faibles sont souvent basés sur des observations qualitatives issues d'interviews, tendances sociales, ou publications spécialisées."
+    },
+    {
+        "question_number": 5,
+        "question": "Quelle est une caractéristique clé des signaux faibles ?",
+        "options": [
+            "Ils sont largement reconnus par tous les acteurs",
+            "Ils nécessitent une interprétation pour révéler leur importance",
+            "Ils sont toujours quantifiables",
+            "Ils proviennent uniquement de sources internes à l'entreprise"
+        ],
+        "correct_index": "B",
+        "explanation": "Les signaux faibles nécessitent une analyse approfondie pour comprendre leur pertinence stratégique."
+    },
+    {
+        "question_number": 6,
+        "question": "Quel est le principal défi lié à l'identification des signaux faibles ?",
+        "options": [
+            "Le manque de données quantitatives",
+            "La subjectivité dans leur interprétation",
+            "L'accès limité aux informations publiques",
+            "L'absence d'expertise technique"
+        ],
+        "correct_index": "B",
+        "explanation": "La subjectivité rend difficile l'identification et l'analyse des signaux faibles, car ils peuvent être interprétés différemment selon les perspectives."
+    },
+    {
+        "question_number": 7,
+        "question": "Comment une entreprise peut-elle mieux capter les signaux faibles ?",
+        "options": [
+            "En augmentant ses investissements en publicité",
+            "En renforçant sa veille stratégique",
+            "En centralisant toutes les décisions",
+            "En suivant uniquement les tendances du marché"
+        ],
+        "correct_index": "B",
+        "explanation": "Renforcer la veille stratégique permet de capter des informations émergentes et de mieux anticiper les évolutions."
+    },
+    {
+        "question_number": 8,
+        "question": "Quelle méthode peut être utilisée pour analyser des signaux faibles ?",
+        "options": [
+            "Le brainstorming collectif",
+            "L'analyse des tendances historiques",
+            "L'intelligence artificielle et l'apprentissage automatique",
+            "Les enquêtes quantitatives à grande échelle"
+        ],
+        "correct_index": "C",
+        "explanation": "L'intelligence artificielle aide à analyser un grand volume de données pour détecter des modèles et signaux faibles."
+    },
+    {
+        "question_number": 9,
+        "question": "Pourquoi est-il important d'évaluer la fiabilité des signaux faibles ?",
+        "options": [
+            "Pour éviter les coûts d'interprétation",
+            "Pour prioriser les ressources sur des opportunités crédibles",
+            "Pour exclure les données non quantifiables",
+            "Pour garantir des résultats immédiats"
+        ],
+        "correct_index": "B",
+        "explanation": "Évaluer la fiabilité aide à éviter de gaspiller des ressources sur des indices peu pertinents."
+    },
+    {
+        "question_number": 10,
+        "question": "Quels acteurs peuvent fournir des signaux faibles pertinents ?",
+        "options": [
+            "Les clients et utilisateurs finaux",
+            "Les concurrents directs uniquement",
+            "Les fournisseurs de données historiques",
+            "Les organismes gouvernementaux uniquement"
+        ],
+        "correct_index": "A",
+        "explanation": "Les clients et utilisateurs finaux peuvent révéler des besoins émergents ou des tendances naissantes."
+    },
+    {
+        "question_number": 11,
+        "question": "Dans quel contexte les signaux faibles sont-ils particulièrement cruciaux ?",
+        "options": [
+            "En période de stabilité économique",
+            "Lors de transformations majeures ou crises",
+            "Lorsque l'entreprise a une position dominante",
+            "Lors d'une réduction des effectifs"
+        ],
+        "correct_index": "B",
+        "explanation": "Les signaux faibles aident à anticiper les bouleversements dans des contextes incertains ou en pleine transformation."
+    },
+    {
+        "question_number": 12,
+        "question": "Quel est un exemple concret de signal faible ?",
+        "options": [
+            "Un rapport annuel d'une grande entreprise",
+            "Une nouvelle habitude d'achat chez un groupe restreint de clients",
+            "Un communiqué de presse largement diffusé",
+            "Une baisse généralisée du marché boursier"
+        ],
+        "correct_index": "B",
+        "explanation": "Les signaux faibles sont souvent de petites tendances émergentes, comme des changements dans les habitudes des clients."
+    },
+    {
+        "question_number": 13,
+        "question": "Quel rôle jouent les réseaux sociaux dans la détection des signaux faibles ?",
+        "options": [
+            "Ils ne jouent aucun rôle",
+            "Ils fournissent des données massives pour l'analyse",
+            "Ils remplacent les études de marché traditionnelles",
+            "Ils éliminent les biais dans les analyses"
+        ],
+        "correct_index": "B",
+        "explanation": "Les réseaux sociaux fournissent des données massives qui peuvent être analysées pour identifier des tendances émergentes."
+    },
+    {
+        "question_number": 14,
+        "question": "Comment les entreprises doivent-elles réagir face à un signal faible significatif ?",
+        "options": [
+            "Attendre de voir s'il se concrétise",
+            "Planifier des scénarios basés sur ce signal",
+            "Le partager uniquement avec les dirigeants",
+            "Ignorer les signaux qui ne sont pas quantifiables"
+        ],
+        "correct_index": "B",
+        "explanation": "Les entreprises doivent élaborer des scénarios et des plans d'action pour se préparer aux opportunités ou menaces potentielles."
+    },
+    {
+        "question_number": 15,
+        "question": "Quelle compétence est clé pour analyser les signaux faibles ?",
+        "options": [
+            "La maîtrise des logiciels financiers",
+            "La capacité à interpréter des données qualitatives",
+            "L'expertise en logistique",
+            "La gestion des ressources humaines"
+        ],
+        "correct_index": "B",
+        "explanation": "L'interprétation de données qualitatives est essentielle pour comprendre les signaux faibles et leur impact potentiel."
+    }
+]
