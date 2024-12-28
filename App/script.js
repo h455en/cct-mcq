@@ -63,8 +63,8 @@ function preprocessQuizData(quizData) {
         const correctAnswerLetter = getOptionLetter(q.correct_index);
         q.correctAnswer = correctAnswerLetter;  // Store correct answer directly in each question
     });
-    console.log("Processed Quiz Data:", quizData); // Debugging log
-    return quizData; // Return processed quiz data
+    //console.log("Processed Quiz Data:", quizData); // Debugging log
+    return quizData;
 }
 
 // Convert index to option letter (A, B, C, D)
@@ -200,8 +200,6 @@ function updateProgressBar() {
     progressBar.innerText = `${currentQuestionIndex + 1}/${currentQuiz.length}`;
 }
 
-
-
 // Restart the quiz and go back to quiz selection screen
 reStartQuizBtn.addEventListener("click", () => {
     quizRunPage.classList.add("d-none");  // Hide the quiz run page
@@ -243,18 +241,7 @@ function showEvaluation() {
     resultsTextArea.style.resize = 'vertical'; // Allow vertical resizing
     resultsArea.appendChild(resultsTextArea);
 
-    const now = new Date();
-    const dateTimeString = `${now.getDate().toString().padStart(2, '0')}.${(now.getMonth() + 1).toString().padStart(2, '0')}.${now.getFullYear()} - ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
 
-    let resultsText = ""; //`Quiz Name: ${selectedQuizName}\n`;
-    resultsText += `Run at =  ${dateTimeString}\n`;
-    //resultsText += `Score: ${score}/${currentQuiz.length} - ${percentage}%\n`;
-
-    var formattedUserAnswers = userAnswers.map((e, i) => (i + 1 + "." + e)).join(' ');
-    var formattedCorrectAnswers = correctAnswers.map((e, i) => (i + 1 + "." + e)).join(' ');
-
-    resultsText += `User answers =  ${formattedUserAnswers}\n`;
-    resultsText += `Correct answers =  ${formattedCorrectAnswers}\n`;
     //__________________________________
 
     currentQuiz.forEach((q, index) => {
@@ -288,20 +275,32 @@ function showEvaluation() {
     });
 
 
-
     const percentage = Math.round((score / currentQuiz.length) * 100);
+    const dateTimeString = formatDate();
+
+    let resultsText = `Run at =  ${dateTimeString}\n`;
+    resultsText += `Quiz Name: ${selectedQuizzName}\n`;
+    resultsText += `Score: ${score}/${currentQuiz.length} - ${percentage}%\n`;
+
+    var formattedUserAnswers = userAnswers.map((e, i) => (i + 1 + "." + e)).join(' ,');
+    var formattedCorrectAnswers = correctAnswers.map((e, i) => (i + 1 + "." + e)).join(' ,');
+
+    resultsText += `User answers =  ${formattedUserAnswers}\n`;
+    resultsText += `Correct answers =  ${formattedCorrectAnswers}\n`;
+
     document.getElementById('score').innerText = score;
     document.getElementById('totalQuestions').innerText = currentQuiz.length;
     document.getElementById('percentage').innerText = percentage;
     document.getElementById('qName').innerText = selectedQuizzName;
-    myResults = `<p>Correct Answer: ${selectedQuizzName} / Total = ${currentQuiz.length}</p>`;
     document.getElementById('resultsTextArea').innerHTML = resultsText;
 
 
 
-
-
-
+    function formatDate() {
+        const now = new Date();
+        const dateTimeString = `${now.getDate().toString().padStart(2, '0')}.${(now.getMonth() + 1).toString().padStart(2, '0')}.${now.getFullYear()} - ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
+        return dateTimeString;
+    }
 }
 
 //____________________________
