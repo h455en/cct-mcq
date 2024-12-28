@@ -217,21 +217,15 @@ function resetQuizState() {
     userAnswers = [];  // Clear user answers
     currentQuestionIndex = 0;  // Reset question index
     correctAnswers = [];  // Clear correct answers
-
     selectedQuizzName = null;
-    // resultsArea.innerHTML = '';  // Clear results display
-    // userAnswerArea.innerHTML = '';  // Clear user answers area
-    // correctAnswerArea.innerHTML = '';  // Clear correct answers area
 }
 
-//_________________________
 function showEvaluation() {
     clearInterval(timerInterval);
     quizRunPage.classList.add("d-none");
     quizEvaluationPage.classList.remove("d-none");
 
     let score = 0;
-
     // Prepare correctAnswers array based on correct_index from currentQuiz
     const correctAnswers = currentQuiz.map(q => q.correct_index);
     console.log("Correct answers = ", correctAnswers);
@@ -268,11 +262,37 @@ function showEvaluation() {
         questionsAccordion.appendChild(accordionItem);
     });
 
+    //-----------------------
+    // Create expandable text area
+    const resultsTextArea = document.createElement('textarea');
+    resultsTextArea.id = 'resultsTextArea';
+    resultsTextArea.className = 'form-control mt-3';
+    resultsTextArea.rows = 5; // Initial number of rows
+    resultsTextArea.style.resize = 'vertical'; // Allow vertical resizing
+    resultsArea.appendChild(resultsTextArea);
+
+    const now = new Date();
+    const dateTimeString = `${now.getDate().toString().padStart(2, '0')}.${(now.getMonth() + 1).toString().padStart(2, '0')}.${now.getFullYear()} - ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
+
+    let resultsText = ''; //`Quiz Name: ${selectedQuizName}\n`;
+    resultsText += `Date/Time: ${dateTimeString}\n`;
+    //resultsText += `Score: ${score}/${currentQuiz.length} - ${percentage}%\n`;
+    resultsText += "User Answers:\n";
+    //-------------------------
+
     const percentage = Math.round((score / currentQuiz.length) * 100);
     document.getElementById('score').innerText = score;
     document.getElementById('totalQuestions').innerText = currentQuiz.length;
     document.getElementById('percentage').innerText = percentage;
     document.getElementById('qName').innerText = selectedQuizzName;
+    myResults = `<p>Correct Answer: ${selectedQuizzName} / Total = ${currentQuiz.length}</p>`;
+    document.getElementById('resultsTextArea').innerHTML = resultsText;
+
+
+
+
+
+
 }
 
 //____________________________
