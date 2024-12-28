@@ -1,0 +1,139 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Fira+Sans:wght@400;500&display=swap');
+
+body {
+    background-color: #9eb1e6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2,
+h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#questionTitle {
+    font-family: 'Roboto';
+    font-weight: normal;
+}
+
+#optionsContainer {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#timer {
+    font-size: 0.8rem;
+    color: rgb(50, 2, 104);
+}
+
+.progress-bar {
+    transition: width 0.8s;
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.text-area {
+    width: 48%;
+    padding: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    min-height: 100px;
+    border-radius: 5px;
+    border: 2px solid #c7b7b7;
+    overflow-y: auto;
+    resize: both;
+    box-sizing: border-box;
+}
+
+.correct {
+    background-color: #25d350;
+}
+
+.incorrect {
+    background-color: #941621;
+}
+
+
+/* style.css */
+.option-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    /* Make it look clickable */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.option-box:hover {
+    background-color: #f0f0f0;
+    /* Light gray on hover */
+}
+
+.option-box.selected {
+    background-color: #d1e7dd;
+    /* Light green for selected option */
+    border-color: #badbcc;
+}
+
+.option-box label {
+    cursor: pointer;
+    display: block;
+}
+
+
+/* Optional: Add some padding to question text */
+#questionTitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.answer-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 200px;
+    /* Minimum height */
+    overflow-y: auto;
+    /* Allow scrolling if content exceeds height */
+    resize: both;
+    /* Enable resizing both horizontally and vertically */
+}
+
+/* style.css */
+.accordion-button {
+    background-color: #f8f9fa;
+    /* Light gray background */
+    border: none;
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e9ecef;
+    /* Slightly darker gray when open */
+    box-shadow: none;
+    /* Remove default box-shadow */
+}
+
+.accordion-item {
+    border: 1px solid #dee2e6;
+    /* Light border between items */
+    margin-bottom: 10px;
+    /* Spacing between items */
+    border-radius: 0.5rem;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Prevent content from overflowing rounded corners */
+}
+
+.accordion-body {
+    padding: 1rem 1.25rem;
+}
+
+.show-explanation-btn {
+    margin-top: 10px;
+}
