@@ -37,7 +37,8 @@
                         "Sandboxie",
                         "Metasploit"
                     ],
-        "correct_index":  "A"
+        "correct_index":  "A",
+        "explanation": "Metasploit is a powerful tool primarily used for penetration testing and exploiting vulnerabilities. While it can simulate attacks, it is more focused on exploiting known vulnerabilities rather than detecting them. For web application vulnerability detection specifically, Burp Suite is more commonly used because it includes features like scanning, interception, and analysis tailored for web applications."
     },
     {
         "question":  "What is the role of AppLocker in application whitelisting?",
