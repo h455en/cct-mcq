@@ -129,7 +129,8 @@ function startQuiz() {
 
     currentQuestionIndex = 0;
     userAnswers = []; // Reset user answers
-    startTimer(currentQuiz.length * 30);
+    let secondsPerQuestion = 300; // 30 by default 
+    startTimer(currentQuiz.length * secondsPerQuestion);
     loadQuestion();
 }
 
@@ -293,7 +294,6 @@ function showEvaluation() {
     document.getElementById('percentage').innerText = percentage;
     document.getElementById('qName').innerText = selectedQuizzName;
     document.getElementById('resultsTextArea').innerHTML = resultsText;
-
 
 
     function formatDate() {
