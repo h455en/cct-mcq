@@ -57,7 +57,8 @@
                         "Check the browser extensions for malicious plugins",
                         "Inspect system logs for unusual activity"
                     ],
-        "correct_index":  "A"
+        "correct_index":  "B",
+        "explanation": "While inspecting system logs for unusual activity can provide valuable insights, running a malware scan is typically the most immediate and effective step when dealing with symptoms like slow performance and frequent pop-ups. Pop-ups are often a result of malware or adware, and scanning for malicious software directly addresses the root cause. Inspecting logs might be more relevant in later stages if the issue persists or after the malware scan has been completed."
     },
     {
         "question":  "You need to collect volatile data from a running system. Which of the following would you collect first?",
