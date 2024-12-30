@@ -7,7 +7,8 @@
                         "Threat Modeling",
                         "Error Handling"
                     ],
-        "correct_index":  "A"
+        "correct_index":  "D",
+        "explanation": "The principle is Fail-Safe Defaults (or Fail Securely). This principle ensures that an application can manage unexpected input or errors gracefully without exposing sensitive information or creating vulnerabilities."
     },
     {
         "question":  "What is the primary purpose of parameterized queries in secure coding?",
