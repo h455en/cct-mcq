@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Fira+Sans:wght@400;500&display=swap');
 
 body {
-    background-color: #eff5c0;
+    background-color: #eef1d7;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -13,11 +13,12 @@ h4 {
 
 #questionTitle {
     font-family: 'Roboto';
-    font-weight: normal;
+    font-weight: bold;
 }
 
 #optionsContainer {
     font-family: 'Fira Sans', sans-serif;
+    font-size: large;
 }
 
 #timer-container {
@@ -27,7 +28,7 @@ h4 {
 }
 
 #timer {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     color: rgb(50, 2, 104);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
@@ -39,10 +40,8 @@ h4 {
     width: 100%;
 }
 
-
-
 .progress-bar {
-    transition: width 0.8s;
+    transition: width 1.2s;
 }
 
 .text-container {
@@ -56,31 +55,31 @@ h4 {
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
     min-height: 100px;
-    border-radius: 7px;
-    border: 1px solid #c7b7b7;
+    border-radius: 10px;
+    border: 2px solid #c7b7b7;
     overflow-y: auto;
     resize: both;
     box-sizing: border-box;
 }
 
 .correct {
-    background-color: #25d350;
+    background-color: #1ccc48;
 }
 
 .incorrect {
-    background-color: #941621;
+    background-color: #96141e;
 }
 
 
 /* style.css */
 .option-box {
-    border: 1px solid #a1d7f0;
+    border: 1px solid #073950;
     padding: 10px;
     margin-bottom: 10px;
     cursor: pointer;
     /* Make it look clickable */
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
     /* Smooth transition for hover effect */
 }
 
@@ -90,9 +89,9 @@ h4 {
 }
 
 .option-box.selected {
-    background-color: #d1e7dd;
+    background-color: #ceeedf;
     /* Light green for selected option */
-    border-color: #badbcc;
+    border-color: #96d4b9;
 }
 
 .option-box label {
@@ -104,14 +103,14 @@ h4 {
 /* Optional: Add some padding to question text */
 #questionTitle {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-bottom: 15px;
 }
 
 .answer-box {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #f0f7cb;
+    border-radius: 15px;
     min-height: 200px;
     /* Minimum height */
     overflow-y: auto;
@@ -140,7 +139,7 @@ h4 {
     /* Light border between items */
     margin-bottom: 10px;
     /* Spacing between items */
-    border-radius: 0.5rem;
+    border-radius: 0.8rem;
     /* Rounded corners */
     overflow: hidden;
     /* Prevent content from overflowing rounded corners */

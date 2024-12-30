@@ -225,7 +225,6 @@ function showEvaluation() {
     quizEvaluationPage.classList.remove("d-none");
 
     let score = 0;
-    // Prepare correctAnswers array based on correct_index from currentQuiz
     const correctAnswers = currentQuiz.map(q => q.correct_index);
     console.log("Correct answers = ", correctAnswers);
     console.log("   User answers = ", userAnswers);
@@ -241,7 +240,6 @@ function showEvaluation() {
     resultsTextArea.rows = 5; // Initial number of rows
     resultsTextArea.style.resize = 'vertical'; // Allow vertical resizing
     resultsArea.appendChild(resultsTextArea);
-
 
     //__________________________________
 
@@ -279,8 +277,7 @@ function showEvaluation() {
     const percentage = Math.round((score / currentQuiz.length) * 100);
     const dateTimeString = formatDate();
 
-    let resultsText = `Run at =  ${dateTimeString}\n`;
-    resultsText += `Quiz Name: ${selectedQuizzName}\n`;
+    let resultsText = `[${dateTimeString}] - Quiz Name: ${selectedQuizzName}\n`;
     resultsText += `Score: ${score}/${currentQuiz.length} - ${percentage}%\n`;
 
     var formattedUserAnswers = userAnswers.map((e, i) => (i + 1 + "." + e)).join(' ,');
