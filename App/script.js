@@ -25,6 +25,7 @@ const resultsArea = document.getElementById("resultsArea");
 const userAnswerArea = document.getElementById("userAnswers");
 const correctAnswerArea = document.getElementById("correctAnswers");
 const searchQuestionInput = document.getElementById('searchQuestion');
+const darkModeToggle = document.getElementById("darkModeToggle");
 
 // Fetch quizzes from GitHub
 async function fetchQuizzes() {
@@ -67,11 +68,18 @@ function preprocessQuizData(quizData) {
     return quizData;
 }
 
-// Convert index to option letter (A, B, C, D)
+
 function getOptionLetter(index) {
-    return ['A', 'B', 'C', 'D'][index];
+    return ['A', 'B', 'C', 'D'][index]; // Convert index to option letter (A, B, C, D)
 }
 
+
+
+// Add a click event listener to toggle dark mode
+darkModeToggle.addEventListener("click", () => {
+    console.log(">>> Activating dark mode ...")
+    document.body.classList.toggle("dark-mode"); // Toggle dark mode class
+});
 
 // After displayResults is called
 
@@ -131,6 +139,8 @@ function startQuiz() {
     userAnswers = []; // Reset user answers
     let secondsPerQuestion = 300; // 30 by default 
     startTimer(currentQuiz.length * secondsPerQuestion);
+
+    document.getElementById('qName').innerText = selectedQuizzName;
     loadQuestion();
 }
 
@@ -299,6 +309,7 @@ function showEvaluation() {
         return dateTimeString;
     }
 }
+
 
 //____________________________
 

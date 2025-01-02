@@ -23,7 +23,7 @@ h4 {
 
 #timer-container {
     /* Style for the container if needed */
-    position: relative;
+    position: fixed;
     /* Keep relative positioning for absolute child */
 }
 
@@ -31,13 +31,14 @@ h4 {
     font-size: 1.5rem;
     color: rgb(50, 2, 104);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: fixed;
     transform: translate(-50%, -50%);
     text-align: center;
     font-weight: bold;
     width: 100%;
+    left: 50;
+    top: 10;
+
 }
 
 .progress-bar {
@@ -84,7 +85,7 @@ h4 {
 }
 
 .option-box:hover {
-    background-color: #f0f0f0;
+    background-color: #0d5a5f;
     /* Light gray on hover */
 }
 
@@ -152,6 +153,22 @@ h4 {
 .show-explanation-btn {
     margin-top: 10px;
 }
+
+
+
+
+/* Light Mode */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
 
 
 #version {
