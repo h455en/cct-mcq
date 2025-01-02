@@ -162,17 +162,6 @@
       "Missing or incorrect routing configuration.",
       "IP address conflicts within the subnet.",
       "Faulty network cables within the subnet.",
-      "Incorrect
-      =======================
-
-      [
-  {
-    "question_number": 14,
-    "question": "A network administrator configures a new subnet but users in that subnet cannot communicate with other subnets. What is the most likely issue?",
-    "options": [
-      "Missing or incorrect routing configuration.",
-      "IP address conflicts within the subnet.",
-      "Faulty network cables within the subnet.",
       "Incorrect DNS server configuration within the subnet."
     ],
     "correct_index": "A",
