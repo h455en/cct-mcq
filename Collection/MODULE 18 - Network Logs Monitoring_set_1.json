@@ -140,8 +140,8 @@
                         "Encrypt the Telnet session",
                         "Convert the session to FTP"
                     ],
-        "correct_index":  "A",
-        "explanation":  "Monitoring Telnet traffic for suspicious commands can help detect unauthorized actions while ensuring operational needs."
+        "correct_index":  "B",
+        "explanation":  "Telnet is inherently insecure due to its lack of encryption. Blocking it ensures that employees use secure alternatives like SSH."
     },
     {
         "number":  13,
