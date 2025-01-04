@@ -200,8 +200,6 @@ startQuizBtn.addEventListener("click", () => {
 });
 
 
-
-
 // Start Quiz
 function startQuiz() {
     if (!currentQuiz || currentQuiz.length === 0) {
@@ -244,7 +242,6 @@ markRadio.addEventListener('change', () => {
     }
     console.log("Marked Answers:", markedAnswers);
 });
-
 
 
 // Record User's Answer (As 'A', 'B', 'C', 'D')
@@ -390,14 +387,12 @@ function showEvaluation() {
     document.getElementById('qName').innerText = selectedQuizzName;
     document.getElementById('resultsTextArea').innerHTML = resultsText;
 
-
     function formatDate() {
         const now = new Date();
         const dateTimeString = `${now.getDate().toString().padStart(2, '0')}.${(now.getMonth() + 1).toString().padStart(2, '0')}.${now.getFullYear()} - ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
         return dateTimeString;
     }
 }
-
 
 function resetMarkQuestionSwitch() {
     const markQuestionSwitch = document.getElementById('markQuestion');
@@ -407,7 +402,6 @@ function resetMarkQuestionSwitch() {
         console.error("markQuestion element not found!");
     }
 }
-
 
 
 //____________________________
