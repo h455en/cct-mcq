@@ -22,9 +22,8 @@ h4 {
 }
 
 #timer-container {
-    /* Style for the container if needed */
+    border: #073950;
     position: fixed;
-    /* Keep relative positioning for absolute child */
 }
 
 #timer {
@@ -154,9 +153,6 @@ h4 {
     margin-top: 10px;
 }
 
-
-
-
 /* Light Mode */
 body {
     background-color: white;
@@ -165,11 +161,9 @@ body {
 
 /* Dark Mode */
 body.dark-mode {
-    background-color: black;
-    color: white;
+    background-color: gray;
+    color: burlywood;
 }
-
-
 
 #version {
     position: fixed;

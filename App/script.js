@@ -4,6 +4,7 @@ const rawBaseURL = "https://raw.githubusercontent.com/h455en/cct-mcq/main/Collec
 let quizzes = {};  // To hold all quizzes
 let currentQuiz = null; // To store the selected quiz
 let userAnswers = [];  // To store user's answers
+let markedAnswers = [];
 let currentQuestionIndex = 0;
 let timerInterval;
 let totalTime;
@@ -26,6 +27,7 @@ const userAnswerArea = document.getElementById("userAnswers");
 const correctAnswerArea = document.getElementById("correctAnswers");
 const searchQuestionInput = document.getElementById('searchQuestion');
 const darkModeToggle = document.getElementById("darkModeToggle");
+const markRadio = document.getElementById('markQuestion'); // Get the radio button
 
 // Fetch quizzes from GitHub
 async function fetchQuizzes() {
@@ -72,8 +74,6 @@ function preprocessQuizData(quizData) {
 function getOptionLetter(index) {
     return ['A', 'B', 'C', 'D'][index]; // Convert index to option letter (A, B, C, D)
 }
-
-
 
 // Add a click event listener to toggle dark mode
 darkModeToggle.addEventListener("click", () => {
@@ -137,6 +137,7 @@ function startQuiz() {
 
     currentQuestionIndex = 0;
     userAnswers = []; // Reset user answers
+    markedAnswers = []; // Reset marked answers
     let secondsPerQuestion = 300; // 30 by default 
     startTimer(currentQuiz.length * secondsPerQuestion);
 
@@ -146,6 +147,8 @@ function startQuiz() {
 
 // Load Question
 function loadQuestion() {
+    resetMarkQuestionSwitch(); // Reset the switch when loading a new question
+    // Get if marked
     const currentQuestion = currentQuiz[currentQuestionIndex];
     questionTitle.innerText = `Q${currentQuestionIndex + 1}: ${currentQuestion.question}`;
     optionsContainer.innerHTML = currentQuestion.options.map((option, index) => `
@@ -158,6 +161,15 @@ function loadQuestion() {
     updateProgressBar();
 }
 
+markRadio.addEventListener('change', () => {
+    if (markRadio.checked) {
+        markedAnswers.push(currentQuestionIndex + 1);
+    }
+    console.log("Marked Answers:", markedAnswers);
+});
+
+
+
 // Record User's Answer (As 'A', 'B', 'C', 'D')
 nextBtn.addEventListener("click", () => {
     const selectedOption = document.querySelector('input[name="option"]:checked');
@@ -165,7 +177,6 @@ nextBtn.addEventListener("click", () => {
 
     const selectedIndex = parseInt(selectedOption.value);
     userAnswers[currentQuestionIndex] = getOptionLetter(selectedIndex); // Store the answer as 'A', 'B', 'C', 'D'
-
     currentQuestionIndex++;
 
     if (currentQuestionIndex < currentQuiz.length) {
@@ -227,6 +238,7 @@ function resetQuizState() {
     currentQuestionIndex = 0;  // Reset question index
     correctAnswers = [];  // Clear correct answers
     selectedQuizzName = null;
+    resetMarkQuestionSwitch();
 }
 
 function showEvaluation() {
@@ -242,22 +254,22 @@ function showEvaluation() {
     questionsAccordion.innerHTML = ""; // Clear previous results
 
     //__________________________________
-
     // Create expandable text area
     const resultsTextArea = document.createElement('textarea');
     resultsTextArea.id = 'resultsTextArea';
     resultsTextArea.className = 'form-control mt-3';
-    resultsTextArea.rows = 5; // Initial number of rows
+    resultsTextArea.rows = 6; // Initial number of rows
     resultsTextArea.style.resize = 'vertical'; // Allow vertical resizing
     resultsArea.appendChild(resultsTextArea);
-
     //__________________________________
-
+    let isMarked = false;
     currentQuiz.forEach((q, index) => {
         const userAnswer = userAnswers[index] || "No Answer";
         const correctAnswer = correctAnswers[index];
         const isCorrect = userAnswer === correctAnswer;
         score += isCorrect ? 1 : 0;
+        console.log("Marked = ", markedAnswers)
+        isMarked = markedAnswers.includes(index + 1);
 
         const accordionItem = document.createElement('div');
         accordionItem.className = 'accordion-item';
@@ -265,7 +277,7 @@ function showEvaluation() {
         accordionItem.innerHTML = `
               <h2 class="accordion-header" id="heading${index}">
                   <button class="accordion-button collapsed ${isCorrect ? "" : "text-danger"}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}" aria-expanded="false" aria-controls="collapse${index}">
-                      ${index + 1}. ${userAnswer} ${isCorrect ? "✅" : "❌"}
+                      ${index + 1}. ${userAnswer} ${isCorrect ? "✅" : "❌"} ${isMarked ? "💡" : ""}
                   </button>
               </h2>
               <div id="collapse${index}" class="accordion-collapse collapse" aria-labelledby="heading${index}" data-bs-parent="#questionsAccordion">
@@ -282,7 +294,6 @@ function showEvaluation() {
           `;
         questionsAccordion.appendChild(accordionItem);
     });
-
 
     const percentage = Math.round((score / currentQuiz.length) * 100);
     const dateTimeString = formatDate();
@@ -309,6 +320,17 @@ function showEvaluation() {
         return dateTimeString;
     }
 }
+
+
+function resetMarkQuestionSwitch() {
+    const markQuestionSwitch = document.getElementById('markQuestion');
+    if (markQuestionSwitch) { // Check if the element exists
+        markQuestionSwitch.checked = false;
+    } else {
+        console.error("markQuestion element not found!");
+    }
+}
+
 
 
 //____________________________

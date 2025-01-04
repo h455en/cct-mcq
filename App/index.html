@@ -18,7 +18,6 @@
             <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
         </div>
 
-
         <h2>Quiz Selection</h2>
         <div class="mb-3">
             <label for="quizDropdown" class="form-label">Select a Quiz</label>
@@ -34,8 +33,6 @@
 
     <!-- _______________________________ Quiz Run Page _______________________________ -->
     <div id="quiz-run" class="container mt-5 d-none">
-        <h6><span id="qName"></span></h6>
-
         <div class="mb-3">
             <div id="timer-container" class="position-relative">
                 <progress id="progress-bar" value="0" max="100" class="w-100"></progress>
@@ -43,6 +40,7 @@
                 </div>
             </div>
         </div>
+        <h6><span id="qName"></span></h6>
 
         <div class="progress mb-3">
             <div id="progressBar" class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"></div>
@@ -54,8 +52,8 @@
         </div>
         <br>
         <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">Mark Question</label>
+            <input class="form-check-input" type="checkbox" id="markQuestion">
+            <label class="form-check-label" for="markQuestion">Mark Question</label>
         </div>
 
         <button id="nextBtn" class="btn btn-primary btn-lg">Next</button>
@@ -64,7 +62,6 @@
     <!-- _______________________________ Evaluation Page _______________________________ -->
     <div id="quiz-evaluation" class="container mt-5 d-none">
         <h2>Results</h2>
-        <h6>Quizz name = <span id="qName"></span></h6>
         <h4>Your Score: <span id="score"></span> / <span id="totalQuestions"></span> (<span id="percentage"></span>%)
         </h4>
         <input type="number" id="searchQuestion" class="form-control mb-3" placeholder="Go to Question #">
@@ -76,12 +73,11 @@
         <div id="resultsTextArea"></div>
     </div>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 <footer>
-    <div id="version">v3.1.3</div>
+    <div id="version">v3.2.0</div>
 </footer>
 
 </html>
