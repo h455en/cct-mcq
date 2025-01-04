@@ -67,17 +67,19 @@
                         "Signature-based detection.",
                         "Scheduled full disk scans."
                     ],
-        "correct_index":  "B"
+        "correct_index":  "B",
+        "explanation": "Behavior-based detection and blocking : This feature identifies malicious activity, such as encryption of multiple files or attempts to modify critical system settings, and blocks the ransomware in real-time before it can spread further."
     },
     {
         "question":  "A red team exploits a poorly configured IDS/IPS system. What specific misconfiguration might they exploit?",
         "options":  [
                         "Failing to monitor internal network segments.",
-                        "Setting low thresholds for alerts.",
+                        "Disabled or insufficiently tuned rules",
                         "Overloading the system with too many signatures.",
                         "Enabling TLS encryption for all communications."
                     ],
-        "correct_index":  "A"
+        "correct_index":  "B",
+        "explanation": "Disabled or insufficiently tuned rules, Excessive false positives, Unmonitored network segments, Outdated signatures, Improper placement"
     },
     {
         "question":  "An attacker uses a reverse proxy to disguise their IP address during a web application attack. How can the blue team identify the attacker?",
@@ -87,7 +89,8 @@
                         "Deploy a honeypot to attract the attacker.",
                         "Analyze all network packets for anomalies."
                     ],
-        "correct_index":  "A"
+        "correct_index":  "A",
+        "explanation": "To detect and mitigate a transparent proxy server used by a red team, the blue team should: 1.Monitor network traffic for anomalies: Check for unexpected traffic redirections or unusual latency. 2.Inspect SSL/TLS certificates: Identify mismatched or untrusted certificates, indicating potential interception. 3.Enable DNS over HTTPS (DoH): Prevent unauthorized DNS resolution redirection."
     },
     {
         "question":  "A new VPN protocol is being evaluated for use in your organization. What is the most critical security feature to assess?",
@@ -137,7 +140,8 @@
                         "Application-level inspection.",
                         "Network address translation (NAT)."
                     ],
-        "correct_index":  "C"
+        "correct_index":  "C",
+        "explanation": "Application-level inspection is a feature unique to next-generation firewalls (NGFWs) that allows them to inspect and control traffic based on specific applications, rather than just ports and protocols. This capability distinguishes NGFWs from traditional firewalls."
     },
     {
         "question":  "Your IDS flags a potential data exfiltration attempt. How should the blue team respond first?",
@@ -147,6 +151,7 @@
                         "Start a forensic analysis on the affected system.",
                         "Reboot the affected system to terminate the connection."
                     ],
-        "correct_index":  "A"
+        "correct_index":  "C",
+        "explanation" : "Investigate the flagged activity to confirm if it is legitimate or malicious to the response is appropriate"
     }
 ]
