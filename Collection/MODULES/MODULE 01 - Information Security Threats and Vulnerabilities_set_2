@@ -1,0 +1,242 @@
+[
+  {
+    "question_number": 1,
+    "question": "A system administrator notices unusual network traffic originating from a server, even though no legitimate applications are running. Further investigation reveals hidden processes and modified system files. What type of malware is likely present?",
+    "options": [
+      "Adware",
+      "Spyware",
+      "Rootkit",
+      "Keylogger"
+    ],
+    "correct_index": "C",
+    "explanation": "Rootkits are designed to hide their presence and provide persistent access to a system."
+  },
+  {
+    "question_number": 2,
+    "question": "Users report seeing excessive pop-up advertisements and unwanted browser redirects. What type of potentially unwanted application (PUA) is likely the cause?",
+    "options": [
+      "Spyware",
+      "Keylogger",
+      "Adware",
+      "Rootkit"
+    ],
+    "correct_index": "C",
+    "explanation": "Adware is designed to display unwanted advertisements."
+  },
+  {
+    "question_number": 3,
+    "question": "An employee reports that their computer is running slowly and that their browser history shows websites they did not visit. What type of malware might be present?",
+    "options": [
+      "Ransomware",
+      "Spyware",
+      "Worm",
+      "Virus"
+    ],
+    "correct_index": "B",
+    "explanation": "Spyware often monitors user activity, including browsing history."
+  },
+  {
+    "question_number": 4,
+    "question": "A company's network experiences a sudden surge in traffic, originating from numerous compromised computers within the network. These computers are being controlled remotely by an attacker. What is this network of compromised computers called?",
+    "options": [
+      "Rootkit",
+      "Botnet",
+      "Worm",
+      "Virus"
+    ],
+    "correct_index": "B",
+    "explanation": "A botnet is a network of compromised computers controlled by a central command-and-control server."
+  },
+  {
+    "question_number": 5,
+    "question": "An attacker uses PowerShell scripts to execute malicious code directly in memory, without writing any files to the hard drive. What type of malware technique is this?",
+    "options": [
+      "Polymorphic malware",
+      "Fileless malware",
+      "Rootkit",
+      "Adware"
+    ],
+    "correct_index": "B",
+    "explanation": "Fileless malware operates in memory, making it harder to detect with traditional file-based antivirus solutions."
+  },
+  {
+    "question_number": 6,
+    "question": "A web server is running an outdated version of Apache with known security vulnerabilities. What type of vulnerability is this?",
+    "options": [
+      "Misconfiguration",
+      "Application flaw",
+      "Operating System Flaw/Poor Patch Management",
+      "Design Flaw"
+    ],
+    "correct_index": "C",
+    "explanation": "Using outdated software that the vendor no longer supports is an OS flaw/poor patch management."
+  },
+  {
+    "question_number": 7,
+    "question": "A router is configured with the default administrator password. What type of vulnerability is this?",
+    "options": [
+      "Misconfiguration",
+      "Default password",
+      "Zero-day vulnerability",
+      "Design flaw"
+    ],
+    "correct_index": "B",
+    "explanation": "Default passwords are easily guessable and provide easy access for attackers."
+  },
+  {
+    "question_number": 8,
+    "question": "A software application has a flaw in its code that allows an attacker to bypass authentication. What type of vulnerability is this?",
+    "options": [
+      "Application flaw/Design flaw",
+      "Operating system flaw",
+      "Poor patch management",
+      "Improper certificate and key management"
+    ],
+    "correct_index": "A",
+    "explanation": "Authentication bypass is a design or application flaw in the code."
+  },
+  {
+    "question_number": 9,
+    "question": "A company discovers that its SSL/TLS certificates have expired. What type of vulnerability or risk is this?",
+    "options": [
+      "Misconfiguration",
+      "Improper certificate and key management",
+      "Legacy platform vulnerability",
+      "System sprawl"
+    ],
+    "correct_index": "B",
+    "explanation": "Expired certificates can lead to security warnings and man-in-the-middle attacks."
+  },
+  {
+    "question_number": 10,
+    "question": "A company's network has numerous undocumented servers and devices. What type of security issue is this?",
+    "options": [
+      "System sprawl/Undocumented assets",
+      "Poor patch management",
+      "Default installations/Default configurations",
+      "Third-party risks"
+    ],
+    "correct_index": "A",
+    "explanation": "Undocumented assets increase the attack surface and make it difficult to manage security effectively."
+  },
+    {
+    "question_number": 11,
+    "question": "A software vendor releases a patch for a critical vulnerability. However, a company fails to apply the patch promptly. What type of security problem does this create?",
+    "options": [
+      "Zero-day vulnerability",
+      "Poor patch management",
+      "Design flaw",
+      "Misconfiguration"
+    ],
+    "correct_index": "B",
+    "explanation": "Failure to patch known vulnerabilities exposes systems to exploitation."
+  },
+  {
+    "question_number": 12,
+    "question": "An attacker discovers a vulnerability in a web application that was previously unknown to the vendor. What type of vulnerability is this?",
+    "options": [
+      "Legacy platform vulnerability",
+      "Zero-day vulnerability",
+      "Default password",
+      "Misconfiguration"
+    ],
+    "correct_index": "B",
+    "explanation": "A zero-day vulnerability is a previously unknown vulnerability."
+  },
+  {
+    "question_number": 13,
+    "question": "A company relies on a third-party vendor for critical software. A security breach at the vendor compromises the company's data. What type of risk is this?",
+    "options": [
+      "System sprawl",
+      "Third-party risk",
+      "Design flaw",
+      "Operating system flaw"
+    ],
+    "correct_index": "B",
+    "explanation": "Using third-party services introduces risk related to their security practices."
+  },
+  {
+    "question_number": 14,
+    "question": "A system is running an operating system that is no longer supported by the vendor and does not receive security updates. What type of vulnerability is this?",
+    "options": [
+      "Legacy platform vulnerability",
+      "Default installation",
+      "Misconfiguration",
+      "Application flaw"
+    ],
+    "correct_index": "A",
+    "explanation": "Legacy systems are no longer patched and are therefore more vulnerable."
+  },
+  {
+    "question_number": 15,
+    "question": "An attacker uses a combination of techniques, including social engineering and exploiting software vulnerabilities, to gain access to a system. What does this demonstrate?",
+    "options": [
+      "The importance of focusing on only one type of security control.",
+      "The need for a layered security approach (defense in depth).",
+      "The effectiveness of obscurity as a primary security measure.",
+      "That security is not a concern if you have antivirus software installed."
+    ],
+    "correct_index": "B",
+    "explanation": "A layered approach is essential because attackers often use multiple methods to compromise systems."
+  },
+  {
+    "question_number": 16,
+    "question": "What is a common reason attackers use fileless malware?",
+    "options": [
+      "To bypass traditional file-based antivirus detection.",
+      "To make analysis and forensics more difficult.",
+      "To reduce the footprint of the malware on the system.",
+      "All of the above."
+    ],
+    "correct_index": "D",
+    "explanation": "Fileless malware is harder to detect and analyze due to its in-memory execution."
+  },
+  {
+    "question_number": 17,
+    "question": "Which of the following describes a keylogger?",
+    "options": [
+      "Malware that encrypts user files.",
+      "Software that records user keystrokes.",
+      "A network of compromised computers.",
+      "Malware that hides its presence on a system."
+    ],
+    "correct_index": "B",
+    "explanation": "Keyloggers capture user input from the keyboard."
+  },
+  {
+    "question_number": 18,
+    "question": "What is a major risk associated with default installations or configurations?",
+    "options": [
+      "They often contain unnecessary services or features that can be exploited.",
+      "They always have strong security settings enabled by default.",
+      "They are always up-to-date with the latest security patches.",
+      "They never have any known vulnerabilities."
+    ],
+    "correct_index": "A",
+    "explanation": "Default installations often include unnecessary services and features that increase the attack surface."
+  },
+  {
+    "question_number": 19,
+    "question": "What is a common method for attackers to spread malware through compromised websites?",
+    "options": [
+      "Drive-by downloads",
+      "Phishing emails",
+      "Social engineering",
+      "Direct access to servers"
+    ],
+    "correct_index": "A",
+    "explanation": "Drive-by downloads automatically download and install malware when a user visits a compromised website."
+  },
+  {
+    "question_number": 20,
+    "question": "What is a potential risk associated with improper certificate and key management?",
+    "options": [
+      "Data breaches due to weak encryption or unauthorized access to private keys.",
+      "Improved network performance.",
+      "Reduced cost of IT infrastructure.",
+      "Enhanced user authentication."
+    ],
+    "correct_index": "A",
+    "explanation": "Compromised or improperly managed certificates and keys can lead to serious security breaches."
+  }
+]

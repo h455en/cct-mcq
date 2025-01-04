@@ -1,0 +1,243 @@
+[
+  {
+    "question_number": 1,
+    "question": "Your team detects unusual network activity at 3 AM, outside normal business hours. Instead of waiting for an alert, you proactively investigate potential threats. What type of activity is this?",
+    "options": [
+      "Vulnerability scanning",
+      "Incident response",
+      "Threat hunting",
+      "Penetration testing"
+    ],
+    "correct_index": "C",
+    "explanation": "Threat hunting is a proactive search for threats that have evaded existing security measures."
+  },
+  {
+    "question_number": 2,
+    "question": "You need to understand the attacker's tactics, techniques, and procedures (TTPs) to improve your defenses. Which type of threat intelligence is most relevant?",
+    "options": [
+      "Strategic threat intelligence",
+      "Tactical threat intelligence",
+      "Operational threat intelligence",
+      "Technical threat intelligence"
+    ],
+    "correct_index": "B",
+    "explanation": "Tactical threat intelligence focuses on short-term TTPs and how to defend against them."
+  },
+  {
+    "question_number": 3,
+    "question": "You're using a threat intelligence platform that aggregates data from various sources, including open-source feeds, commercial feeds, and your own internal logs. What is this process called?",
+    "options": [
+      "Vulnerability scanning",
+      "Threat intelligence aggregation",
+      "Penetration testing",
+      "Incident response"
+    ],
+    "correct_index": "B",
+    "explanation": "Aggregating threat intelligence from multiple sources provides a more comprehensive view of the threat landscape."
+  },
+  {
+    "question_number": 4,
+    "question": "You discover a CVE with a CVSS score of 9.8. What does this indicate?",
+    "options": [
+      "A low-severity vulnerability.",
+      "A medium-severity vulnerability.",
+      "A high-severity vulnerability that is likely easily exploitable.",
+      "A vulnerability that has not yet been assigned a severity score."
+    ],
+    "correct_index": "C",
+    "explanation": "A CVSS score of 9.8 indicates a critical vulnerability with high exploitability."
+  },
+  {
+    "question_number": 5,
+    "question": "You're conducting a vulnerability assessment. You use Nessus to scan your network for open ports and known vulnerabilities. What type of vulnerability assessment is this?",
+    "options": [
+      "Credentialed scan",
+      "Non-credentialed scan",
+      "Manual assessment",
+      "Penetration test"
+    ],
+    "correct_index": "B",
+    "explanation": "A non-credentialed scan is performed without providing any authentication credentials to the target systems."
+  },
+  {
+    "question_number": 6,
+    "question": "You need to simulate a real-world attack on your network to identify vulnerabilities and weaknesses in your defenses. What type of test should you conduct?",
+    "options": [
+      "Vulnerability assessment",
+      "Security audit",
+      "Penetration test",
+      "Compliance check"
+    ],
+    "correct_index": "C",
+    "explanation": "Penetration testing actively attempts to exploit vulnerabilities to assess their real-world impact."
+  },
+  {
+    "question_number": 7,
+    "question": "Your organization is performing a security assessment to ensure compliance with a specific industry regulation. What type of assessment is this?",
+    "options": [
+      "Goal-oriented penetration test",
+      "Compliance-oriented penetration test",
+      "Red-team-oriented penetration test",
+      "Vulnerability assessment"
+    ],
+    "correct_index": "B",
+    "explanation": "Compliance-oriented penetration tests are designed to verify adherence to specific standards and regulations."
+  },
+  {
+    "question_number": 8,
+    "question": "You're managing the configuration of your organization's servers. You need to ensure that all servers have the latest security patches installed and are configured according to your security baselines. What process are you performing?",
+    "options": [
+      "Asset management",
+      "Vulnerability management",
+      "Configuration management",
+      "Incident response"
+    ],
+    "correct_index": "C",
+    "explanation": "Configuration management ensures that systems are configured and maintained according to defined standards."
+  },
+  {
+    "question_number": 9,
+    "question": "You need to track all hardware and software assets in your organization, including their location, version, and ownership. What process are you implementing?",
+    "options": [
+      "Configuration management",
+      "Asset management",
+      "Change management",
+      "Vulnerability management"
+    ],
+    "correct_index": "B",
+    "explanation": "Asset management focuses on identifying and tracking all organizational assets."
+  },
+  {
+    "question_number": 10,
+    "question": "Your team is implementing a change to a critical server. You need to ensure that the change is properly documented, approved, and tested before it's deployed to production. What process are you following?",
+    "options": [
+      "Incident response",
+      "Vulnerability management",
+      "Change management",
+      "Configuration management"
+    ],
+    "correct_index": "C",
+    "explanation": "Change management ensures that changes are implemented in a controlled and documented manner."
+  },
+    {
+    "question_number": 11,
+    "question": "During a penetration test, the red team successfully gains access to a domain administrator account. What type of penetration test was likely performed?",
+    "options": [
+      "White box",
+      "Black box",
+      "Gray box",
+      "Red team"
+    ],
+    "correct_index": "D",
+    "explanation": "Red team exercises specifically simulate advanced persistent threats with the goal of testing the organization's detection and response capabilities."
+  },
+  {
+    "question_number": 12,
+    "question": "You are reviewing the security posture of a web application. You use Nikto to identify potential web server vulnerabilities. What type of tool are you using?",
+    "options": [
+      "Vulnerability scanner",
+      "Penetration testing framework",
+      "Configuration management tool",
+      "Threat intelligence platform"
+    ],
+    "correct_index": "A",
+    "explanation": "Nikto is a web server scanner that identifies potential vulnerabilities and misconfigurations."
+  },
+  {
+    "question_number": 13,
+    "question": "Your organization wants to proactively identify and mitigate security risks before they can be exploited by attackers. Which of the following activities is most relevant?",
+    "options": [
+      "Incident response",
+      "Vulnerability management",
+      "Forensic investigation",
+      "Disaster recovery"
+    ],
+    "correct_index": "B",
+    "explanation": "Vulnerability management is a proactive approach to identifying and mitigating security weaknesses."
+  },
+  {
+    "question_number": 14,
+    "question": "You need to compare the security posture of your organization against industry best practices and regulatory requirements. What type of assessment should you perform?",
+    "options": [
+      "Vulnerability assessment",
+      "Penetration test",
+      "Security audit",
+      "Threat hunt"
+    ],
+    "correct_index": "C",
+    "explanation": "Security audits assess compliance with standards, policies, and regulations."
+  },
+  {
+    "question_number": 15,
+    "question": "Which of the following is a key aspect of a well-defined Rules of Engagement (ROE) for a penetration test?",
+    "options": [
+      "Scope of the test (e.g., target systems, timeframes)",
+      "Authorized activities (e.g., types of attacks)",
+      "Communication plan and escalation procedures",
+      "All of the above"
+    ],
+    "correct_index": "D",
+    "explanation": "A comprehensive ROE defines the boundaries and expectations of the penetration test."
+  },
+    {
+    "question_number": 16,
+    "question": "You need to gather information about potential threats targeting your industry. Which of the following is a valuable source of threat intelligence?",
+    "options": [
+      "Vendor security advisories",
+      "Open-source threat intelligence feeds",
+      "Commercial threat intelligence platforms",
+      "All of the above"
+    ],
+    "correct_index": "D",
+    "explanation": "A combination of sources provides the most comprehensive threat intelligence."
+  },
+  {
+    "question_number": 17,
+    "question": "What is a key difference between blue teaming and red teaming?",
+    "options": [
+      "Blue teams conduct penetration tests, while red teams defend networks.",
+      "Blue teams defend networks, while red teams simulate attacks.",
+      "Blue teams focus on compliance, while red teams focus on finding vulnerabilities.",
+      "There is no difference between blue and red teams."
+    ],
+    "correct_index": "B",
+    "explanation": "Blue teams are the defenders, while red teams simulate attackers to test the defenses."
+  },
+  {
+    "question_number": 18,
+    "question": "You are implementing a vulnerability management lifecycle. What is a crucial first step?",
+    "options": [
+      "Remediation of vulnerabilities.",
+      "Vulnerability scanning and identification.",
+      "Reporting and documentation.",
+      "Prioritization of vulnerabilities."
+    ],
+    "correct_index": "B",
+    "explanation": "You can't manage vulnerabilities if you haven't identified them first."
+  },
+  {
+    "question_number": 19,
+    "question": "You are using a tool that automatically applies security patches to your systems. What type of tool is this?",
+    "options": [
+      "Vulnerability scanner",
+      "Configuration management tool",
+      "Patch management tool",
+      "Asset management tool"
+    ],
+    "correct_index": "C",
+    "explanation": "Patch management tools automate the process of deploying and managing software patches."
+  },
+  {
+    "question_number": 20,
+    "question": "You need to determine the effectiveness of your organization's incident response plan. Which exercise would be most suitable?",
+    "options": [
+      "Vulnerability assessment",
+      "Penetration test",
+      "Purple team exercise",
+      "Tabletop exercise"
+    ],
+    "correct_index": "D",
+    "explanation": "Tabletop exercises simulate incident scenarios in a collaborative setting to test the incident response plan."
+  }
+]
+
