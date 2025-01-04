@@ -29,36 +29,108 @@ const searchQuestionInput = document.getElementById('searchQuestion');
 const darkModeToggle = document.getElementById("darkModeToggle");
 const markRadio = document.getElementById('markQuestion'); // Get the radio button
 
-// Fetch quizzes from GitHub
+
+//------------
+
 async function fetchQuizzes() {
     try {
         const response = await fetch(githubAPI);
-        const files = await response.json();
+        if (!response.ok) {
+            throw new Error(`HTTP error ${response.status} fetching quiz list`);
+        }
+        const items = await response.json();
 
-        if (!Array.isArray(files)) {
-            throw new Error("Unable to load quiz files.");
+        if (!Array.isArray(items)) {
+            throw new Error("Invalid quiz list format received from API.");
         }
 
-        files.sort((a, b) => a.name.localeCompare(b.name));
-        const dropdownHTML = files.map(file => {
-            return `<option value="${file.name}">${file.name}</option>`;
-        }).join("");
+        const allItems = [];
+
+        async function fetchDirectoryContents(item) {
+            if (item.type === "dir") {
+                try {
+                    const dirResponse = await fetch(item.url); // Use item.url to fetch directory contents
+                    if (!dirResponse.ok) {
+                        throw new Error(`HTTP error ${dirResponse.status} fetching directory contents for ${item.name}`);
+                    }
+                    const dirContents = await dirResponse.json();
+                    // Extract only the necessary data from the directory contents
+                    const formattedDirContents = dirContents.map(dirItem => ({
+                        name: dirItem.name,
+                        type: dirItem.type,
+                        url: dirItem.url,
+                        download_url: dirItem.download_url
+                    }));
+                    item.content = formattedDirContents;
+                    allItems.push(item);
+                    for (const subItem of item.content) {
+                        await fetchDirectoryContents(subItem);
+                    }
+                } catch (dirError) {
+                    console.error(`Error fetching directory ${item.name}:`, dirError);
+                }
+            } else {
+                allItems.push(item);
+            }
+        }
+
+        for (const item of items) {
+            await fetchDirectoryContents(item);
+        }
+
+        // Now that all items (files and directories with contents) are fetched, build the dropdown
+        function buildDropdownOptions(data, depth = 0) {
+            let optionsHTML = "";
+            data.forEach(item => {
+                const indent = "  ".repeat(depth * 2);
+                optionsHTML += item.type === "dir"
+                    ? `<optgroup label="${indent}${item.name}">`
+                    + buildDropdownOptions(item.content || [], depth + 1) // Handle cases where content might be undefined
+                    + `</optgroup>`
+                    : `<option value="${item.download_url}">${indent}${item.name}</option>`; // Use download_url
+            });
+            return optionsHTML;
+        }
+
+        const dropdownHTML = buildDropdownOptions(allItems);
         quizDropdown.innerHTML = `<option value="" disabled selected>Choose a Quiz</option>` + dropdownHTML;
 
-        // Preload quiz data
-        files.forEach(async file => {
-            try {
-                const quizResponse = await fetch(rawBaseURL + file.name);
-                const quizData = await quizResponse.json();
-                quizzes[file.name] = preprocessQuizData(quizData); // Ensure we preprocess each quiz
-            } catch (error) {
-                console.error(`Error loading quiz file ${file.name}:`, error);
+        // Preload quiz data (adjusted for nested structure and download_url)
+        const loadQuizData = async (item) => {
+            if (item.download_url) { // Only load if it's a file with a download URL
+                try {
+                    const quizResponse = await fetch(item.download_url);
+                    if (!quizResponse.ok) {
+                        throw new Error(`HTTP error ${quizResponse.status} loading ${item.name}`);
+                    }
+                    const quizData = await quizResponse.json();
+                    quizzes[item.name] = preprocessQuizData(quizData);
+                } catch (error) {
+                    console.error(`Error loading quiz file ${item.name}:`, error);
+                }
             }
-        });
+        };
+
+        allItems.forEach(async item => await loadQuizData(item));
+        startQuizBtn.disabled = false;
     } catch (error) {
         console.error("Error fetching quiz data:", error);
+        alert("Failed to load quizzes. Please check your internet connection or the quiz source.");
+        startQuizBtn.disabled = true;
     }
 }
+//----------
+
+function getSelectedQuizName() {
+    if (uploadFile.files.length > 0) {
+        return uploadFile.files[0].name;
+    } else {
+        const selectedOption = quizDropdown.options[quizDropdown.selectedIndex];
+        return selectedOption ? selectedOption.text.trim() : null; // Get the text content
+    }
+}
+
+//----------
 
 // Process and store correct answers
 function preprocessQuizData(quizData) {
@@ -66,7 +138,6 @@ function preprocessQuizData(quizData) {
         const correctAnswerLetter = getOptionLetter(q.correct_index);
         q.correctAnswer = correctAnswerLetter;  // Store correct answer directly in each question
     });
-    //console.log("Processed Quiz Data:", quizData); // Debugging log
     return quizData;
 }
 
@@ -97,8 +168,8 @@ searchQuestionInput.addEventListener('input', () => {
 
 // Handle quiz start
 startQuizBtn.addEventListener("click", () => {
-    const selectedQuiz = quizDropdown.value;
-    selectedQuizzName = quizDropdown.value || (uploadFile.files.length > 0 ? uploadFile.files[0].name : null);
+    selectedQuizName = getSelectedQuizName();
+
     if (uploadFile.files.length > 0) {
         const file = uploadFile.files[0];
         const reader = new FileReader();
@@ -115,15 +186,21 @@ startQuizBtn.addEventListener("click", () => {
         return;
     }
 
-    if (!selectedQuiz) return alert("Please select a quiz!");
+    if (!selectedQuizName) return alert("Please select a quiz!");
 
-    currentQuiz = quizzes[selectedQuiz];
-    console.log("Selected Quiz:", currentQuiz); // Debugging log
+    // Find the quiz data based on the filename
+    const selectedQuizEntry = Object.entries(quizzes).find(([key, value]) => key.trim() === selectedQuizName.trim());
 
-    if (!currentQuiz) return alert("Quiz not loaded yet, please try again.");
+    if (!selectedQuizEntry) {
+        return alert("Quiz not loaded yet, please try again.");
+    }
 
+    currentQuiz = selectedQuizEntry[1];
     startQuiz();
 });
+
+
+
 
 // Start Quiz
 function startQuiz() {
