@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Fira+Sans:wght@400;500&display=swap');
 
 body {
-    background-color: #eef1d7;
+    background-color: #0800e6;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -84,7 +84,7 @@ h4 {
 }
 
 .option-box:hover {
-    background-color: #0d5a5f;
+    background-color: #1c7f86;
     /* Light gray on hover */
 }
 
