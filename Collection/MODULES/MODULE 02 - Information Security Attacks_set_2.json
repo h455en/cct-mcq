@@ -1,0 +1,242 @@
+[
+  {
+    "question_number": 1,
+    "question": "An attacker calls a help desk claiming to be a network administrator who has forgotten their password. What type of social engineering attack is this?",
+    "options": [
+      "Phishing",
+      "Impersonation (Vishing)",
+      "Shoulder surfing",
+      "Dumpster diving"
+    ],
+    "correct_index": "B",
+    "explanation": "Vishing uses phone calls to trick victims into revealing information or performing actions."
+  },
+  {
+    "question_number": 2,
+    "question": "An attacker physically observes someone entering their password at an ATM. What type of social engineering attack is this?",
+    "options": [
+      "Eavesdropping/Shoulder surfing",
+      "Dumpster diving",
+      "Piggybacking/Tailgating",
+      "Reverse social engineering"
+    ],
+    "correct_index": "A",
+    "explanation": "Shoulder surfing involves directly observing someone's actions, like typing a password."
+  },
+  {
+    "question_number": 3,
+    "question": "An attacker searches through a company's trash to find sensitive documents. What type of social engineering attack is this?",
+    "options": [
+      "Dumpster diving",
+      "Reverse social engineering",
+      "Piggybacking/Tailgating",
+      "Spam email"
+    ],
+    "correct_index": "A",
+    "explanation": "Dumpster diving involves retrieving discarded information."
+  },
+  {
+    "question_number": 4,
+    "question": "An attacker gains physical access to a secure building by following closely behind an authorized employee. What type of social engineering attack is this?",
+    "options": [
+      "Piggybacking/Tailgating",
+      "Hoax letters",
+      "Instant Chat Messenger",
+      "Spam email"
+    ],
+    "correct_index": "A",
+    "explanation": "Piggybacking or tailgating exploits physical access controls by following an authorized person."
+  },
+  {
+    "question_number": 5,
+    "question": "Users receive emails claiming to be from a legitimate bank, asking them to verify their account details. What type of attack is this?",
+    "options": [
+      "Phishing",
+      "Typosquatting",
+      "Elicitation",
+      "Identity theft"
+    ],
+    "correct_index": "A",
+    "explanation": "Phishing attempts to trick users into revealing sensitive information through deceptive emails or websites."
+  },
+  {
+    "question_number": 6,
+    "question": "An attacker registers a domain name that is a common misspelling of a legitimate website to trick users into visiting a malicious site. What type of attack is this?",
+    "options": [
+      "Typosquatting",
+      "Elicitation",
+      "Identity theft",
+      "Influence campaigns"
+    ],
+    "correct_index": "A",
+    "explanation": "Typosquatting exploits common typos in domain names."
+  },
+  {
+    "question_number": 7,
+    "question": "An attacker sets up a fake Wi-Fi hotspot that mimics a legitimate network to capture user credentials. What type of wireless attack is this?",
+    "options": [
+      "Rogue AP Attack/Evil Twin",
+      "AP MAC Spoofing",
+      "WarDriving",
+      "Jamming Signal Attack"
+    ],
+    "correct_index": "A",
+    "explanation": "An Evil Twin attack uses a rogue access point disguised as a legitimate one."
+  },
+  {
+    "question_number": 8,
+    "question": "An attacker sends deauthentication packets to disconnect users from a Wi-Fi network. What type of wireless attack is this?",
+    "options": [
+      "Denial-of-Service: Disassociation and De-authentication Attacks",
+      "Bluetooth Attacks",
+      "RFID Attacks",
+      "Ad-Hoc Connection Attack"
+    ],
+    "correct_index": "A",
+    "explanation": "Deauthentication attacks disrupt wireless communication by disconnecting clients from the access point."
+  },
+  {
+    "question_number": 9,
+    "question": "An attacker intercepts and modifies communication between an RFID tag and a reader. What type of attack is this?",
+    "options": [
+      "RFID Cloning/Spoofing",
+      "NFC Attacks",
+      "Eavesdropping",
+      "Data Modification Attack"
+    ],
+    "correct_index": "D",
+    "explanation": "Modifying data during transmission is a data modification attack, applicable to RFID as well."
+  },
+  {
+    "question_number": 10,
+    "question": "An attacker copies the data from an RFID tag to create a duplicate tag. What type of attack is this?",
+    "options": [
+      "RFID Cloning/Spoofing",
+      "NFC Attacks",
+      "Eavesdropping",
+      "Data Modification Attack"
+    ],
+    "correct_index": "A",
+    "explanation": "RFID cloning creates a duplicate tag that can be used for unauthorized access or tracking."
+  },
+    {
+    "question_number": 11,
+    "question": "An attacker intercepts NFC communication between two devices to steal data. What type of attack is this?",
+    "options": [
+      "NFC Attacks/Eavesdropping",
+      "Data Modification Attack",
+      "Data Corruption Attack",
+      "MITM Attack"
+    ],
+    "correct_index": "A",
+    "explanation": "Eavesdropping on NFC communications allows attackers to capture transmitted data."
+  },
+  {
+    "question_number": 12,
+    "question": "An attacker sends malicious SMS messages to mobile phone users to trick them into revealing sensitive information or installing malware. What type of attack is this?",
+    "options": [
+      "Mobile Spam",
+      "SMS Phishing Attack (SMiShing)",
+      "Android Rooting",
+      "Jailbreaking iOS"
+    ],
+    "correct_index": "B",
+    "explanation": "SMiShing is phishing conducted through SMS text messages."
+  },
+  {
+    "question_number": 13,
+    "question": "A user modifies the operating system of their Android device to gain root access. What is this process called?",
+    "options": [
+      "Android Rooting",
+      "Jailbreaking iOS",
+      "Hacking an Android Device Using Metasploit",
+      "Mobile Spam"
+    ],
+    "correct_index": "A",
+    "explanation": "Rooting grants users administrative privileges on Android devices."
+  },
+  {
+    "question_number": 14,
+    "question": "A user modifies the operating system of their iOS device to remove restrictions imposed by Apple. What is this process called?",
+    "options": [
+      "Android Rooting",
+      "Jailbreaking iOS",
+      "Hacking an Android Device Using Metasploit",
+      "Mobile Spam"
+    ],
+    "correct_index": "B",
+    "explanation": "Jailbreaking removes software restrictions on iOS devices."
+  },
+  {
+    "question_number": 15,
+    "question": "An attacker exploits a vulnerability in a cloud service to gain unauthorized access to data belonging to multiple customers. What type of attack is this?",
+    "options": [
+      "Cloud-based vs. On-premises Attacks",
+      "Side-Channel Attacks or Cross-guest VM Breaches",
+      "Man-in-the-Cloud (MITC) Attack",
+      "Cloud Hopper Attack"
+    ],
+    "correct_index": "B",
+    "explanation": "Cross-guest VM breaches exploit vulnerabilities in the hypervisor or cloud infrastructure to access other virtual machines."
+  },
+    {
+    "question_number": 16,
+    "question": "An attacker compromises the supply chain of a software vendor to distribute malware to a large number of users. What type of attack is this?",
+    "options": [
+      "Supply Chain Attacks",
+      "Exploiting Misconfigured AWS S3 Buckets",
+      "Cloud Cryptojacking",
+      "Cloudborne Attack"
+    ],
+    "correct_index": "A",
+    "explanation": "Supply chain attacks target the software development and distribution process."
+  },
+    {
+    "question_number": 17,
+    "question": "An attacker uses a brute-force approach to try every possible combination of characters to crack an encrypted password. What type of cryptographic attack is this?",
+    "options": [
+      "Brute-Force Attack",
+      "Birthday Attack",
+      "Side-Channel Attack",
+      "Hash Collision Attack"
+    ],
+    "correct_index": "A",
+    "explanation": "Brute-force attacks exhaustively try all possible keys or passwords."
+  },
+  {
+    "question_number": 18,
+    "question": "An attacker exploits a weakness in a hashing algorithm where two different inputs produce the same hash value. What type of cryptographic attack is this?",
+    "options": [
+      "Birthday Attack",
+      "Side-Channel Attack",
+      "Hash Collision Attack",
+      "Rainbow Table Attack"
+    ],
+    "correct_index": "C",
+    "explanation": "Hash collision attacks exploit weaknesses in hashing algorithms to find collisions."
+  },
+  {
+    "question_number": 19,
+    "question": "An attacker uses timing information or power consumption measurements to extract cryptographic keys from a device. What type of attack is this?",
+    "options": [
+      "Side-Channel Attack",
+      "Hash Collision Attack",
+      "DUHK Attack",
+      "DROWN Attack"
+    ],
+    "correct_index": "A",
+    "explanation": "Side-channel attacks exploit physical characteristics of a system to gain information."
+  },
+  {
+    "question_number": 20,
+    "question": "An attacker exploits a vulnerability in SSL/TLS implementations to decrypt encrypted traffic. Which of the following is an example of such an attack?",
+    "options": [
+      "DROWN Attack",
+      "Rainbow Table Attack",
+      "Birthday Attack",
+      "Brute-Force Attack"
+    ],
+    "correct_index": "A",
+    "explanation": "DROWN (Decrypting RSA with Obsolete and Weakened eNcryption) is a cross-protocol attack that exploits SSLv2 vulnerabilities to decrypt TLS connections."
+  }
+]

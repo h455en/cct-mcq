@@ -1,0 +1,242 @@
+[
+  {
+    "question_number": 1,
+    "question": "A data center is located in an area prone to flooding. What type of physical security threat is this?",
+    "options": [
+      "Man-made threat",
+      "Natural/Environmental threat",
+      "Internal threat",
+      "Technological threat"
+    ],
+    "correct_index": "B",
+    "explanation": "Flooding is a natural/environmental threat that can significantly impact physical security."
+  },
+  {
+    "question_number": 2,
+    "question": "A security guard is stationed at the entrance of a building to control access. What type of physical security control is this?",
+    "options": [
+      "Technical control",
+      "Administrative control",
+      "Physical control (Personnel)",
+      "Environmental control"
+    ],
+    "correct_index": "C",
+    "explanation": "Security personnel are a physical control used to deter and prevent unauthorized access."
+  },
+  {
+    "question_number": 3,
+    "question": "A server room is protected by a system that detects smoke and automatically releases a fire-suppressing agent. What type of physical security control is this?",
+    "options": [
+      "Passive fire protection",
+      "Active fire protection",
+      "Physical barrier",
+      "Environmental control"
+    ],
+    "correct_index": "B",
+    "explanation": "Active fire protection systems actively engage to suppress a fire."
+  },
+  {
+    "question_number": 4,
+    "question": "A building uses fences, gates, and locked doors to restrict access to the premises. What type of physical security control are these?",
+    "options": [
+      "Deterrent controls",
+      "Detective controls",
+      "Delay controls (Physical Barriers)",
+      "Compensating controls"
+    ],
+    "correct_index": "C",
+    "explanation": "Physical barriers delay or prevent unauthorized access."
+  },
+  {
+    "question_number": 5,
+    "question": "A visitor to a company is required to sign in at the reception desk and wear a visitor badge. What aspect of workplace security does this address?",
+    "options": [
+      "Server room security",
+      "Visitor management",
+      "Network cable security",
+      "Removable device security"
+    ],
+    "correct_index": "B",
+    "explanation": "Visitor logs and badges are key components of visitor management."
+  },
+  {
+    "question_number": 6,
+    "question": "Network cables running through easily accessible areas are secured using locked conduits. What security concern does this address?",
+    "options": [
+      "Theft of equipment",
+      "Data interception (eavesdropping)",
+      "Environmental damage to cables",
+      "Unauthorized access to the server room"
+    ],
+    "correct_index": "B",
+    "explanation": "Securing network cables prevents physical access for tapping or interception."
+  },
+  {
+    "question_number": 7,
+    "question": "A data center uses a system to maintain a constant temperature and humidity. What type of control is this?",
+    "options": [
+      "Physical barrier",
+      "Environmental control (HVAC)",
+      "Access control",
+      "Alarm system"
+    ],
+    "correct_index": "B",
+    "explanation": "HVAC systems are environmental controls that regulate temperature and humidity."
+  },
+  {
+    "question_number": 8,
+    "question": "A server room is designed with alternating rows of cold and hot air intakes. What is this design called?",
+    "options": [
+      "EMI shielding",
+      "Hot and cold aisles",
+      "Fire suppression system",
+      "Power distribution unit"
+    ],
+    "correct_index": "B",
+    "explanation": "Hot and cold aisles improve cooling efficiency in data centers."
+  },
+  {
+    "question_number": 9,
+    "question": "What is the primary purpose of EMI shielding in a data center?",
+    "options": [
+      "To prevent unauthorized physical access.",
+      "To protect equipment from electromagnetic interference.",
+      "To control temperature and humidity.",
+      "To detect fire and smoke."
+    ],
+    "correct_index": "B",
+    "explanation": "EMI shielding protects sensitive electronic equipment from electromagnetic interference that can disrupt operations."
+  },
+  {
+    "question_number": 10,
+    "question": "A mantrap is used at the entrance to a secure area. What is its primary function?",
+    "options": [
+      "To detect concealed weapons.",
+      "To allow only one person to enter at a time.",
+      "To provide emergency exit in case of fire.",
+      "To monitor visitor traffic."
+    ],
+    "correct_index": "B",
+    "explanation": "A mantrap is a physical security mechanism designed to control entry and prevent tailgating."
+  },
+    {
+    "question_number": 11,
+    "question": "What is the purpose of using security/access badges?",
+    "options": [
+      "To identify and track individuals within a facility.",
+      "To prevent unauthorized access to restricted areas.",
+      "To record entry and exit times.",
+      "All of the above."
+    ],
+    "correct_index": "D",
+    "explanation": "Access badges serve multiple security functions, including identification, access control, and tracking."
+  },
+  {
+    "question_number": 12,
+    "question": "What is a disadvantage of a cold aisle containment system?",
+    "options": [
+      "Higher cooling costs.",
+      "Difficulty in maintenance and adding new equipment.",
+      "Uneven cooling of equipment.",
+      "Increased risk of fire."
+    ],
+    "correct_index": "B",
+    "explanation": "Cold aisle containment can make it more difficult to access equipment for maintenance or upgrades."
+  },
+  {
+    "question_number": 13,
+    "question": "Which type of physical security control is a warning sign?",
+    "options": [
+      "Deterrent",
+      "Detective",
+      "Delay",
+      "Recovery"
+    ],
+    "correct_index": "A",
+    "explanation": "Warning signs are deterrent controls designed to discourage unwanted behavior."
+  },
+  {
+    "question_number": 14,
+    "question": "What is the primary function of a video surveillance system?",
+    "options": [
+      "To prevent unauthorized access.",
+      "To detect and record security events.",
+      "To control environmental conditions.",
+      "To provide emergency lighting."
+    ],
+    "correct_index": "B",
+    "explanation": "Video surveillance is a detective control used to monitor and record activities."
+  },
+  {
+    "question_number": 15,
+    "question": "What is a key security concern related to removable devices (e.g., USB drives)?",
+    "options": [
+      "Data loss or theft.",
+      "Malware infection.",
+      "Unauthorized data transfer.",
+      "All of the above."
+    ],
+    "correct_index": "D",
+    "explanation": "Removable devices pose risks of data loss, malware spread, and unauthorized data exfiltration."
+  },
+    {
+    "question_number": 16,
+    "question": "What type of physical security control is a biometric scanner?",
+    "options": [
+      "Deterrent",
+      "Detective",
+      "Delay",
+      "Preventative"
+    ],
+    "correct_index": "D",
+    "explanation": "Biometric scanners prevent unauthorized access by verifying unique biological traits."
+  },
+    {
+    "question_number": 17,
+    "question": "Which of the following is an example of a man-made physical security threat?",
+    "options": [
+      "Earthquake",
+      "Arson",
+      "Flood",
+      "Power outage due to a storm"
+    ],
+    "correct_index": "B",
+    "explanation": "Arson is an intentional act by a person, making it a man-made threat."
+  },
+    {
+    "question_number": 18,
+    "question": "What is the purpose of securing portable mobile devices with strong passwords or biometrics?",
+    "options": [
+      "To prevent physical theft of the device.",
+      "To protect data on the device if it is lost or stolen.",
+      "To improve network connectivity.",
+      "To enhance battery life."
+    ],
+    "correct_index": "B",
+    "explanation": "Strong authentication protects data even if the device falls into the wrong hands."
+  },
+  {
+    "question_number": 19,
+    "question": "What is a primary concern regarding the reception area in terms of physical security?",
+    "options": [
+      "It is the first point of contact for visitors and can be a vulnerability if not properly managed.",
+      "It is typically located in a secure area of the building.",
+      "It does not require any specific security measures.",
+      "It is only a concern during non-business hours."
+    ],
+    "correct_index": "A",
+    "explanation": "The reception area is the first point of contact and needs proper controls to manage visitor access and prevent unauthorized entry."
+  },
+  {
+    "question_number": 20,
+    "question": "Which physical security control is designed to detect the unauthorized removal of assets?",
+    "options": [
+      "Alarm systems (e.g., door sensors, motion detectors)",
+      "Fire suppression systems",
+      "HVAC systems",
+      "Lighting systems"
+    ],
+    "correct_index": "A",
+    "explanation": "Alarm systems, especially door and window sensors, are designed to detect unauthorized entry or removal of assets."
+  }
+]

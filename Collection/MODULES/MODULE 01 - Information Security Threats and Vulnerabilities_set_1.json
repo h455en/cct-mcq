@@ -1,0 +1,242 @@
+[
+  {
+    "question_number": 1,
+    "question": "An employee receives an email with an urgent message and an attachment disguised as an invoice. Upon opening it, their computer becomes infected with malware. What threat vector was used?",
+    "options": [
+      "Direct access",
+      "Email attachment",
+      "Vulnerable web application",
+      "USB drive"
+    ],
+    "correct_index": "B",
+    "explanation": "Email attachments are a common vector for malware distribution."
+  },
+  {
+    "question_number": 2,
+    "question": "A program secretly records keystrokes on a user's computer, capturing passwords and other sensitive information. What type of malware is this?",
+    "options": [
+      "Ransomware",
+      "Keylogger",
+      "Worm",
+      "Rootkit"
+    ],
+    "correct_index": "B",
+    "explanation": "Keyloggers are designed to record keystrokes."
+  },
+  {
+    "question_number": 3,
+    "question": "Malware encrypts a user's files and demands a ransom for their decryption. What type of malware is this?",
+    "options": [
+      "Trojan",
+      "Virus",
+      "Ransomware",
+      "Spyware"
+    ],
+    "correct_index": "C",
+    "explanation": "Ransomware holds data hostage until a ransom is paid."
+  },
+  {
+    "question_number": 4,
+    "question": "Malware spreads automatically across a network by exploiting vulnerabilities without requiring user interaction. What type of malware is this?",
+    "options": [
+      "Trojan",
+      "Worm",
+      "Virus",
+      "Adware"
+    ],
+    "correct_index": "B",
+    "explanation": "Worms self-propagate across networks."
+  },
+  {
+    "question_number": 5,
+    "question": "Malware disguises itself as a legitimate program to trick users into installing it. What type of malware is this?",
+    "options": [
+      "Trojan",
+      "Virus",
+      "Rootkit",
+      "Spyware"
+    ],
+    "correct_index": "A",
+    "explanation": "Trojans masquerade as legitimate software."
+  },
+  {
+    "question_number": 6,
+    "question": "Malware hides its presence and provides persistent access to a system for attackers. What type of malware is this?",
+    "options": [
+      "Trojan",
+      "Virus",
+      "Rootkit",
+      "Adware"
+    ],
+    "correct_index": "C",
+    "explanation": "Rootkits are designed to hide malicious activity."
+  },
+  {
+    "question_number": 7,
+    "question": "Software displays unwanted advertisements on a user's computer. What type of malware or PUA is this?",
+    "options": [
+      "Spyware",
+      "Adware",
+      "Keylogger",
+      "Ransomware"
+    ],
+    "correct_index": "B",
+    "explanation": "Adware displays unwanted advertisements."
+  },
+  {
+    "question_number": 8,
+    "question": "Software secretly collects information about a user's online activity without their knowledge. What type of malware is this?",
+    "options": [
+      "Spyware",
+      "Trojan",
+      "Worm",
+      "Virus"
+    ],
+    "correct_index": "A",
+    "explanation": "Spyware collects user data without consent."
+  },
+  {
+    "question_number": 9,
+    "question": "An attacker exploits a previously unknown software vulnerability for which no patch is available. What type of vulnerability is this?",
+    "options": [
+      "Misconfiguration",
+      "Default password",
+      "Zero-day vulnerability",
+      "Legacy platform vulnerability"
+    ],
+    "correct_index": "C",
+    "explanation": "Zero-day vulnerabilities are unknown to the vendor and have no patch."
+  },
+  {
+    "question_number": 10,
+    "question": "A system is running outdated software that is no longer supported by the vendor. What type of vulnerability is this?",
+    "options": [
+      "Misconfiguration",
+      "Default password",
+      "Zero-day vulnerability",
+      "Legacy platform vulnerability"
+    ],
+    "correct_index": "D",
+    "explanation": "Legacy systems are no longer patched and are therefore vulnerable."
+  },
+    {
+    "question_number": 11,
+    "question": "A server is configured with a well-known default password. What type of vulnerability is this?",
+    "options": [
+      "Misconfiguration",
+      "Default password",
+      "Zero-day vulnerability",
+      "Design flaw"
+    ],
+    "correct_index": "B",
+    "explanation": "Default passwords are easily guessable and pose a significant security risk."
+  },
+  {
+    "question_number": 12,
+    "question": "A web application does not properly validate user input, allowing an attacker to inject malicious code. What type of vulnerability is this?",
+    "options": [
+      "Misconfiguration",
+      "Application flaw (Input Validation)",
+      "Zero-day vulnerability",
+      "Poor patch management"
+    ],
+    "correct_index": "B",
+    "explanation": "Improper input validation is a common application flaw."
+  },
+  {
+    "question_number": 13,
+    "question": "A system is missing critical security patches, making it vulnerable to known exploits. What type of vulnerability is this?",
+    "options": [
+      "Poor patch management",
+      "Design flaw",
+      "Operating system flaw",
+      "System sprawl"
+    ],
+    "correct_index": "A",
+    "explanation": "Lack of timely patching leaves systems vulnerable to known exploits."
+  },
+  {
+    "question_number": 14,
+    "question": "A network device is configured to allow all traffic on a specific port, even though it's not needed. What type of vulnerability is this?",
+    "options": [
+      "Misconfiguration/Weak Configuration",
+      "Design flaw",
+      "Operating system flaw",
+      "Improper certificate and key management"
+    ],
+    "correct_index": "A",
+    "explanation": "Unnecessary open ports are a common misconfiguration."
+  },
+  {
+    "question_number": 15,
+    "question": "An application is designed with a fundamental flaw that allows attackers to bypass authentication. What type of vulnerability is this?",
+    "options": [
+      "Design flaw",
+      "Operating system flaw",
+      "Default password",
+      "Third-party risk"
+    ],
+    "correct_index": "A",
+    "explanation": "Design flaws are inherent weaknesses in the application's architecture."
+  },
+    {
+    "question_number": 16,
+    "question": "An attacker uses legitimate system administration tools to carry out an attack, making it difficult to detect. What type of malware technique is this often associated with?",
+    "options": [
+      "Viruses",
+      "Worms",
+      "Fileless Malware",
+      "Trojans"
+    ],
+    "correct_index": "C",
+    "explanation": "Fileless malware often uses existing system tools and processes, making it harder to detect with traditional antivirus."
+  },
+    {
+    "question_number": 17,
+    "question": "Your organization uses a third-party software library in its application. A security vulnerability is discovered in this library. What type of risk is this?",
+    "options": [
+      "Misconfiguration",
+      "Operating system flaw",
+      "Third-party risk",
+      "Design flaw"
+    ],
+    "correct_index": "C",
+    "explanation": "Vulnerabilities in third-party components introduce risk to your own applications."
+  },
+    {
+    "question_number": 18,
+    "question": "What is a common way for attackers to distribute malware on the web?",
+    "options": [
+      "Drive-by downloads",
+      "Malvertising (malicious advertising)",
+      "Compromised websites",
+      "All of the above"
+    ],
+    "correct_index": "D",
+    "explanation": "Attackers use various methods to distribute malware online."
+  },
+  {
+    "question_number": 19,
+    "question": "What is a key difference between a virus and a worm?",
+    "options": [
+      "Viruses self-replicate and spread automatically, while worms require user interaction.",
+      "Worms self-replicate and spread automatically, while viruses require user interaction (e.g., executing a file).",
+      "Viruses encrypt files, while worms steal data.",
+      "Worms are always more destructive than viruses."
+    ],
+    "correct_index": "B",
+    "explanation": "Worms propagate on their own, while viruses typically need a host file and user action to spread."
+  },
+  {
+    "question_number": 20,
+    "question": "An organization discovers that its private keys for SSL/TLS certificates have been compromised. What type of vulnerability is this?",
+    "options": [
+      "Misconfiguration",
+      "Improper certificate and key management",
+      "Design flaw",
+      "Operating system flaw"
+    ],
+    "correct_index": "B",
+    "explanation": "Compromised keys undermine the security of encrypted communications."
+  }
+]

@@ -1,0 +1,152 @@
+[
+    {
+        "question":  "Which of the following tools is used to calculate one-way hashes?",
+        "options":  [
+                        "PuTTY",
+                        "HashCalc",
+                        "EaseUS Data Recovery Wizard",
+                        "Genie Backup Manager"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "What does MD5 hashing provide?",
+        "options":  [
+                        "Two-way encryption",
+                        "File compression",
+                        "One-way data integrity verification",
+                        "Secure file transfer"
+                    ],
+        "correct_index":  "C"
+    },
+    {
+        "question":  "Which tool is used to create and manage certificates?",
+        "options":  [
+                        "BitLocker Drive Encryption",
+                        "Hashmyfiles",
+                        "OpenSSL",
+                        "DiskPart Utility"
+                    ],
+        "correct_index":  "C"
+    },
+    {
+        "question":  "What is the main purpose of OpenStego?",
+        "options":  [
+                        "Disk encryption",
+                        "Network troubleshooting",
+                        "Data backup",
+                        "Image steganography"
+                    ],
+        "correct_index":  "D"
+    },
+    {
+        "question":  "Which command is used in Windows to perform disk partitioning and data destruction?",
+        "options":  [
+                        "gpresult",
+                        "diskpart",
+                        "netsh",
+                        "getmac"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "What does BitLocker Drive Encryption primarily protect?",
+        "options":  [
+                        "User login credentials",
+                        "Data at rest on a drive",
+                        "Data in transit",
+                        "File system-level permissions"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "Which tool allows disk encryption and supports creating hidden volumes?",
+        "options":  [
+                        "BitLocker",
+                        "EaseUS Data Recovery Wizard",
+                        "VeraCrypt",
+                        "Genie Backup Manager"
+                    ],
+        "correct_index":  "C"
+    },
+    {
+        "question":  "Which command-line utility is best suited for troubleshooting DNS issues?",
+        "options":  [
+                        "ping",
+                        "tracert",
+                        "nslookup",
+                        "netstat"
+                    ],
+        "correct_index":  "C"
+    },
+    {
+        "question":  "What is the primary function of Hping3?",
+        "options":  [
+                        "Encrypt files using RSA",
+                        "Send custom-crafted network packets",
+                        "Recover lost data from a drive",
+                        "Create self-signed certificates"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "Which of the following tools can recover deleted files from a disk?",
+        "options":  [
+                        "EaseUS Data Recovery Wizard",
+                        "PuTTY",
+                        "BitLocker",
+                        "OpenStego"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "Which encryption method is built into Windows file systems?",
+        "options":  [
+                        "RSA encryption",
+                        "BitLocker",
+                        "EFS (Encrypting File System)",
+                        "OpenSSL"
+                    ],
+        "correct_index":  "C"
+    },
+    {
+        "question":  "Which utility is used for backing up data and restoring it in Windows?",
+        "options":  [
+                        "Genie Backup Manager",
+                        "DiskPart Utility",
+                        "OpenSSL",
+                        "HashCalc"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question":  "Which tool enables you to access a remote machine via SSH?",
+        "options":  [
+                        "nmap",
+                        "PuTTY",
+                        "Hping3",
+                        "DiskPart Utility"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question":  "What does the \u0027tracert\u0027 command do?",
+        "options":  [
+                        "Lists all active network connections",
+                        "Displays DNS cache entries",
+                        "Displays the route taken by packets to reach a destination",
+                        "Resolves domain names to IP addresses"
+                    ],
+        "correct_index":  "C"
+    },
+    {
+        "question":  "Which tool would you use to detect vulnerabilities in a web application?",
+        "options":  [
+                        "Burp Suite",
+                        "VeraCrypt",
+                        "OpenStego",
+                        "HashCalc"
+                    ],
+        "correct_index":  "A"
+    }
+]

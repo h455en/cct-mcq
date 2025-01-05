@@ -1,0 +1,242 @@
+[
+  {
+    "question_number": 1,
+    "question": "A user reports they cannot access any websites. `ping 8.8.8.8` returns 'Destination Host Unreachable'. However, `ping 127.0.0.1` is successful. What is the most likely cause?",
+    "options": [
+      "The user's network cable is unplugged.",
+      "There is a problem with the user's default gateway or DNS server.",
+      "The user's computer has a faulty network card.",
+      "There is a problem with the loopback interface."
+    ],
+    "correct_index": "B",
+    "explanation": "Successful loopback ping indicates the network card is working. 'Destination Host Unreachable' to an external IP suggests a gateway or DNS issue."
+  },
+  {
+    "question_number": 2,
+    "question": "A user can access local network resources but cannot reach the internet. `tracert 8.8.8.8` shows several hops, but the last few hops return '* * * Request timed out'. What is the likely problem?",
+    "options": [
+      "The user's computer has an incorrect IP address.",
+      "There is a routing problem or firewall blocking traffic outside the local network.",
+      "The user's network cable is damaged.",
+      "The user's DNS server is not configured correctly."
+    ],
+    "correct_index": "B",
+    "explanation": "Timed-out traceroute hops indicate a problem with routing or a firewall blocking outgoing connections."
+  },
+  {
+    "question_number": 3,
+    "question": "A user reports intermittent network connectivity. `ping` tests to the default gateway sometimes succeed and sometimes fail. What is the most likely cause?",
+    "options": [
+      "A faulty network cable or loose connection.",
+      "A problem with the DNS server.",
+      "An IP address conflict.",
+      "A problem with the web browser."
+    ],
+    "correct_index": "A",
+    "explanation": "Intermittent connectivity often points to physical layer issues like a faulty cable or connection."
+  },
+  {
+    "question_number": 4,
+    "question": "A user is unable to connect to a specific server on the local network. `ping` to the server's IP address returns 'Request timed out'. However, other users on the same network can access the server. What is the most likely issue?",
+    "options": [
+      "A problem with the server's network card.",
+      "A firewall on the user's computer blocking the connection.",
+      "A routing problem on the network.",
+      "A problem with the server's DNS record."
+    ],
+    "correct_index": "B",
+    "explanation": "If other users can connect, the problem is isolated to the user's machine, suggesting a local firewall issue."
+  },
+  {
+    "question_number": 5,
+    "question": "A network administrator notices a high volume of ICMP Redirect messages on the network. What does this indicate?",
+    "options": [
+      "A routing problem where hosts are using a suboptimal default gateway.",
+      "A successful denial-of-service attack.",
+      "A problem with the DNS server.",
+      "A problem with ARP resolution."
+    ],
+    "correct_index": "A",
+    "explanation": "ICMP Redirects are sent by routers to inform hosts of a better route to a destination."
+  },
+  {
+    "question_number": 6,
+    "question": "A user reports slow internet browsing. `ping` tests to various websites are successful, but with high latency. What is the likely cause?",
+    "options": [
+      "A problem with the user's network cable.",
+      "Network congestion or a problem with the internet service provider (ISP).",
+      "An IP address conflict on the local network.",
+      "A problem with the user's web browser."
+    ],
+    "correct_index": "B",
+    "explanation": "High latency suggests a bottleneck or delay in the network path, often outside the local network."
+  },
+  {
+    "question_number": 7,
+    "question": "A wireless user cannot connect to the Wi-Fi network. Other users can connect without issue. What is the first troubleshooting step you should take?",
+    "options": [
+      "Check the user's wireless adapter is enabled and configured correctly.",
+      "Restart the wireless access point.",
+      "Check the firewall settings on the access point.",
+      "Check the DHCP server configuration."
+    ],
+    "correct_index": "A",
+    "explanation": "Start with the simplest checks: ensuring the wireless adapter is enabled and configured correctly on the user's device."
+  },
+  {
+    "question_number": 8,
+    "question": "You are troubleshooting a network connectivity issue. You use `ipconfig` (Windows) or `ifconfig` (Linux/macOS) and find that the user's computer has an IP address of 169.254.x.x. What does this indicate?",
+    "options": [
+      "The computer has a static IP address configured correctly.",
+      "The computer is unable to obtain an IP address from the DHCP server (APIPA/Automatic Private IP Addressing).",
+      "There is an IP address conflict on the network.",
+      "The computer's DNS server is not configured correctly."
+    ],
+    "correct_index": "B",
+    "explanation": "169.254.x.x addresses indicate that the client could not reach a DHCP server."
+  },
+  {
+    "question_number": 9,
+    "question": "A user reports they can connect to the Wi-Fi but cannot access any network resources. What is a likely cause?",
+    "options": [
+      "The user has a weak Wi-Fi signal.",
+      "The user has obtained an IP address but the default gateway or DNS settings are incorrect.",
+      "The user's wireless adapter is faulty.",
+      "The wireless access point is overloaded."
+    ],
+    "correct_index": "B",
+    "explanation": "Connecting to Wi-Fi doesn't guarantee network access; proper IP configuration is also required."
+  },
+  {
+    "question_number": 10,
+    "question": "You suspect a network cable is faulty. Which tool would you use to test the cable's continuity and wiring?",
+    "options": [
+      "ping",
+      "tracert",
+      "cable tester",
+      "ipconfig/ifconfig"
+    ],
+    "correct_index": "C",
+    "explanation": "A cable tester is specifically designed to check the physical integrity of network cables."
+  },
+    {
+    "question_number": 11,
+    "question": "A user can ping their default gateway, but cannot ping any external websites by name. What is the most likely cause?",
+    "options": [
+      "DNS server issue",
+      "Routing issue",
+      "Firewall issue",
+      "Physical connectivity issue"
+    ],
+    "correct_index": "A",
+    "explanation": "The ability to ping the gateway confirms network connectivity; the inability to resolve domain names points to a DNS problem."
+  },
+  {
+    "question_number": 12,
+    "question": "You run `tracert` to a remote host and see a 'Time Exceeded' message at a specific hop. What does this mean?",
+    "options": [
+      "The packet reached the destination successfully.",
+      "The packet was dropped because the TTL (Time To Live) value reached zero.",
+      "There is a problem with the user's network card.",
+      "The destination host is unreachable."
+    ],
+    "correct_index": "B",
+    "explanation": "A 'Time Exceeded' message in `tracert` indicates a hop along the path dropped the packet because its TTL expired."
+  },
+  {
+    "question_number": 13,
+    "question": "A user reports that their internet connection is very slow, especially when downloading large files. You suspect bandwidth saturation. Which tool would you use to monitor network traffic and identify potential bottlenecks?",
+    "options": [
+      "ping",
+      "tracert",
+      "network monitoring tools (e.g., Wireshark, tcpdump)",
+      "ipconfig/ifconfig"
+    ],
+    "correct_index": "C",
+    "explanation": "Network monitoring tools capture and analyze network traffic, allowing you to identify bandwidth usage and bottlenecks."
+  },
+  {
+    "question_number": 14,
+    "question": "A network administrator configures a new subnet but users in that subnet cannot communicate with other subnets. What is the most likely issue?",
+    "options": [
+      "Missing or incorrect routing configuration.",
+      "IP address conflicts within the subnet.",
+      "Faulty network cables within the subnet.",
+      "Incorrect DNS server configuration within the subnet."
+    ],
+    "correct_index": "A",
+    "explanation": "Inter-subnet communication requires routing, so a missing or incorrect routing configuration is the most likely cause."
+  },
+  {
+    "question_number": 15,
+    "question": "A user reports they can connect to the Wi-Fi but get a 'Limited Connectivity' message. What does this usually indicate?",
+    "options": [
+      "The user has a strong Wi-Fi signal but is not receiving an IP address or other necessary network information.",
+      "The user is connected to the wrong Wi-Fi network.",
+      "The user's computer has a faulty network card.",
+      "The user's web browser is not configured correctly."
+    ],
+    "correct_index": "A",
+    "explanation": "'Limited Connectivity' usually means the client is connected to the wireless network but has not received a valid IP configuration (IP address, subnet mask, gateway, DNS)."
+  },
+  {
+    "question_number": 16,
+    "question": "You suspect an IP address conflict on the network. Which tool would you use to help identify the conflicting IP address?",
+    "options": [
+      "ping",
+      "arp -a (Windows) or arp -n (Linux/macOS)",
+      "tracert",
+      "netstat"
+    ],
+    "correct_index": "B",
+    "explanation": "The `arp` command shows the MAC address associated with an IP address. If two different MAC addresses respond to pings of the same IP, it indicates a conflict."
+  },
+  {
+    "question_number": 17,
+    "question": "A user is experiencing slow network performance only when accessing a specific website. What is the likely cause?",
+    "options": [
+      "A problem with the user's network cable.",
+      "A problem with the specific website's server or network infrastructure.",
+      "An IP address conflict on the local network.",
+      "A problem with the user's default gateway."
+    ],
+    "correct_index": "B",
+    "explanation": "If the problem is isolated to a single website, the issue is likely on the server-side or somewhere in the network path between the user and that server."
+  },
+  {
+    "question_number": 18,
+    "question": "A user is unable to access any network resources after recently installing new network drivers. What is the most likely troubleshooting step?",
+    "options": [
+      "Roll back the network driver to the previous version.",
+      "Check the physical network connections.",
+      "Check the firewall settings.",
+      "Restart the router."
+    ],
+    "correct_index": "A",
+    "explanation": "Recent driver changes are often the cause of new connectivity problems, making driver rollback a logical first step."
+  },
+  {
+    "question_number": 19,
+    "question": "You need to determine which ports are open on a remote server. Which tool would you use?",
+    "options": [
+      "ping",
+      "tracert",
+      "nmap",
+      "ipconfig/ifconfig"
+    ],
+    "correct_index": "C",
+    "explanation": "Nmap is a network scanner used for port scanning and network discovery."
+  },
+  {
+    "question_number": 20,
+    "question": "A user reports they can connect to the Wi-Fi, but are getting a 'DNS Server Not Responding' error. What is the most likely cause?",
+    "options": [
+      "A problem with the configured DNS server address on the client or the DNS server itself.",
+      "A problem with the wireless access point.",
+      "A problem with the user's network card.",
+      "A problem with the user's web browser."
+    ],
+    "correct_index": "A",
+    "explanation": "The error message directly indicates a problem with DNS resolution, either on the client's configuration or with the DNS server itself."
+  }
+]

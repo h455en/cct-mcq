@@ -1,0 +1,242 @@
+[
+    {
+        "number":  1,
+        "question":  "A company experiences a ransomware attack, and the IT team needs to prevent the malware from spreading to other systems. Which step in the incident handling process is being implemented?",
+        "options":  [
+                        "Preparation",
+                        "Incident Containment",
+                        "Eradication",
+                        "Recovery"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Incident containment focuses on isolating affected systems to prevent the spread of malware or further damage."
+    },
+    {
+        "number":  2,
+        "question":  "An organization conducts a workshop to train employees on recognizing phishing emails. Which step of the incident handling process does this activity belong to?",
+        "options":  [
+                        "Preparation",
+                        "Incident Recording",
+                        "Incident Analysis",
+                        "Post-Incident Review"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Training employees is part of the preparation phase to ensure readiness for handling potential incidents."
+    },
+    {
+        "number":  3,
+        "question":  "A data breach occurs, and the first responder is tasked with securing the impacted server. What is the primary rule the first responder must follow?",
+        "options":  [
+                        "Analyze the root cause immediately",
+                        "Document all actions taken",
+                        "Prioritize business continuity over documentation",
+                        "Notify law enforcement first"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "First responders must document all actions to ensure the integrity of evidence and maintain a clear incident timeline."
+    },
+    {
+        "number":  4,
+        "question":  "After validating a security incident, the response team determines it involves a Distributed Denial-of-Service (DDoS) attack. What step of the incident handling process does this represent?",
+        "options":  [
+                        "Incident Triage",
+                        "Incident Notification",
+                        "Incident Eradication",
+                        "Incident Recovery"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Incident triage involves analyzing and classifying the incident, including determining its type and scope."
+    },
+    {
+        "number":  5,
+        "question":  "A server compromised by malware has been restored from a known clean backup. Which step in the incident handling process is this?",
+        "options":  [
+                        "Eradication",
+                        "Recovery",
+                        "Incident Containment",
+                        "Post-Incident Activities"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "The recovery phase involves restoring affected systems to normal operations using backups or clean configurations."
+    },
+    {
+        "number":  6,
+        "question":  "An organization assigns team members to handle specific tasks, such as evidence collection and system recovery. What is this part of the preparation phase called?",
+        "options":  [
+                        "Incident Assignment",
+                        "Incident Containment Plan",
+                        "Incident Response Plan",
+                        "Incident Documentation"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "An Incident Response Plan outlines roles and responsibilities, ensuring a coordinated response to incidents."
+    },
+    {
+        "number":  7,
+        "question":  "During a forensic analysis of a cyberattack, the team finds key evidence that links the attacker to an insider threat. Which step of the incident response process does this activity fall under?",
+        "options":  [
+                        "Incident Triage",
+                        "Evidence Gathering and Forensic Analysis",
+                        "Incident Containment",
+                        "Post-Incident Review"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Evidence gathering and forensic analysis involve collecting and analyzing data to understand the incident and identify the attacker."
+    },
+    {
+        "number":  8,
+        "question":  "A company prioritizes responding to a ransomware attack over addressing a minor phishing attempt. Which concept from the incident handling process is applied here?",
+        "options":  [
+                        "Incident Notification",
+                        "Incident Prioritization",
+                        "Incident Documentation",
+                        "Incident Recovery"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Incident prioritization ensures that the most critical incidents are addressed first based on their impact and urgency."
+    },
+    {
+        "number":  9,
+        "question":  "After resolving an incident, the organization assesses its overall impact and identifies gaps in its response strategy. What step of the process is this?",
+        "options":  [
+                        "Post-Incident Activities",
+                        "Incident Containment",
+                        "Incident Triage",
+                        "Incident Notification"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Post-incident activities include reviewing the incident to assess its impact and improve future response strategies."
+    },
+    {
+        "number":  10,
+        "question":  "An organization conducts regular penetration tests to identify vulnerabilities and prepare for potential incidents. Which step of the incident handling process does this represent?",
+        "options":  [
+                        "Incident Recording",
+                        "Preparation",
+                        "Incident Containment",
+                        "Incident Eradication"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Conducting penetration tests is part of the preparation phase to proactively identify and address vulnerabilities."
+    },
+    {
+        "number":  11,
+        "question":  "The incident response team sends a company-wide alert about a detected phishing campaign targeting employees. What step of the process is being executed?",
+        "options":  [
+                        "Incident Notification",
+                        "Incident Documentation",
+                        "Incident Containment",
+                        "Incident Recovery"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Incident notification involves communicating information about an incident to relevant parties."
+    },
+    {
+        "number":  12,
+        "question":  "A cybersecurity team isolates an infected workstation from the network to prevent further spread of malware. What step of incident handling does this represent?",
+        "options":  [
+                        "Preparation",
+                        "Incident Containment",
+                        "Incident Notification",
+                        "Incident Recovery"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Isolating affected systems is a key activity in the incident containment phase."
+    },
+    {
+        "number":  13,
+        "question":  "After containing an incident, the response team updates their playbooks to include lessons learned. Which step of incident handling does this represent?",
+        "options":  [
+                        "Incident Documentation",
+                        "Post-Incident Activities",
+                        "Incident Notification",
+                        "Incident Recovery"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Post-incident activities involve updating policies and playbooks based on lessons learned to improve future responses."
+    },
+    {
+        "number":  14,
+        "question":  "An organization ensures that all incident responders understand the importance of chain-of-custody for evidence collection. Which phase of the process is being emphasized?",
+        "options":  [
+                        "Preparation",
+                        "Evidence Gathering and Forensic Analysis",
+                        "Incident Containment",
+                        "Post-Incident Activities"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Training responders on the chain-of-custody during the preparation phase ensures evidence is handled properly during incidents."
+    },
+    {
+        "number":  15,
+        "question":  "The incident response team decides to disconnect an infected server while maintaining its state for forensic analysis. What guideline is being followed?",
+        "options":  [
+                        "Incident Eradication",
+                        "Evidence Preservation",
+                        "Incident Notification",
+                        "Incident Prioritization"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Preserving evidence involves maintaining the state of a system to enable accurate forensic analysis."
+    },
+    {
+        "number":  16,
+        "question":  "During an incident response drill, employees are asked to simulate reporting and recording a suspicious activity. Which step does this scenario simulate?",
+        "options":  [
+                        "Incident Containment",
+                        "Incident Recording",
+                        "Incident Notification",
+                        "Incident Documentation"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Incident recording involves documenting the details of suspicious activities for further analysis."
+    },
+    {
+        "number":  17,
+        "question":  "A financial institution updates its incident response plan to include ransomware-specific guidelines after experiencing an attack. What activity does this represent?",
+        "options":  [
+                        "Incident Recovery",
+                        "Incident Triage",
+                        "Incident Documentation",
+                        "Post-Incident Review"
+                    ],
+        "correct_index":  "D",
+        "explanation":  "Updating the incident response plan with lessons learned is part of the post-incident review process."
+    },
+    {
+        "number":  18,
+        "question":  "An organization reviews its incident logs to identify patterns and trends in recent security breaches. What is the purpose of this activity?",
+        "options":  [
+                        "To prepare for future incidents",
+                        "To classify incidents by severity",
+                        "To prioritize responses",
+                        "To notify stakeholders"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Reviewing incident logs helps identify trends and improve preparedness for future incidents."
+    },
+    {
+        "number":  19,
+        "question":  "The incident response team tests its disaster recovery plan during a mock cyberattack. What step in the incident response process is being practiced?",
+        "options":  [
+                        "Preparation",
+                        "Incident Recovery",
+                        "Incident Containment",
+                        "Post-Incident Review"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Testing the disaster recovery plan is part of the preparation phase to ensure readiness for actual incidents."
+    },
+    {
+        "number":  20,
+        "question":  "An organization creates a dedicated incident response team and assigns roles like first responder, analyst, and coordinator. What activity is this an example of?",
+        "options":  [
+                        "Incident Prioritization",
+                        "Incident Containment",
+                        "Incident Response Planning",
+                        "Incident Notification"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Assigning specific roles is part of the incident response planning process to ensure a structured and effective response."
+    }
+]

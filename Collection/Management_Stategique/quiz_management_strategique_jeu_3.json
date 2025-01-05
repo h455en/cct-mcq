@@ -1,0 +1,122 @@
+[
+    {
+        "question_number": 1,
+        "question": "Quel est le principal objectif d'un manager selon le cours ?",
+        "options": [
+            "Augmenter la productivité individuelle",
+            "Organiser et coordonner le collectif pour atteindre un objectif commun",
+            "Prendre toutes les décisions seul",
+            "Maximiser les bénéfices financiers immédiatement"
+        ],
+        "correct_index": "B",
+        "explanation": "Le manager doit organiser le collectif pour en tirer la quintessence et atteindre un objectif commun."
+    },
+    {
+        "question_number": 2,
+        "question": "Quelles ressources sont classées comme intangibles dans le diagnostic des ressources ?",
+        "options": [
+            "Machines et équipements",
+            "Savoir-faire et capacités d'innovation",
+            "Marques, brevets et goodwill",
+            "Liquidités et capacités d'endettement"
+        ],
+        "correct_index": "C",
+        "explanation": "Les ressources intangibles incluent des éléments tels que les marques, les brevets et le goodwill."
+    },
+    {
+        "question_number": 3,
+        "question": "Quelle est la caractéristique du style de management basé sur le contrôle financier ?",
+        "options": [
+            "Un siège directif et des activités concentrées",
+            "Une autonomie des responsables de branche avec un suivi financier strict",
+            "Un contrôle stratégique souple",
+            "Une planification stratégique centralisée"
+        ],
+        "correct_index": "B",
+        "explanation": "Le contrôle financier implique que les responsables de branche sont autonomes, mais le siège exerce un suivi strict des résultats financiers."
+    },
+    {
+        "question_number": 4,
+        "question": "Pourquoi les valeurs et normes de comportement doivent-elles être collectivement partagées ?",
+        "options": [
+            "Pour garantir une adhésion totale aux objectifs financiers",
+            "Pour assurer la cohérence entre culture d'entreprise et organisation",
+            "Pour éliminer les différences culturelles",
+            "Pour éviter les conflits internes"
+        ],
+        "correct_index": "B",
+        "explanation": "Les valeurs et normes partagées assurent la cohésion entre la culture d'entreprise et les évolutions stratégiques."
+    },
+    {
+        "question_number": 5,
+        "question": "Comment un manager peut-il gérer efficacement les flux d'information en interne ?",
+        "options": [
+            "En réduisant les échanges horizontaux",
+            "En privilégiant les flux verticaux seulement",
+            "En organisant et pilotant les flux verticaux et horizontaux",
+            "En limitant les informations accessibles aux employés"
+        ],
+        "correct_index": "C",
+        "explanation": "Un manager efficace doit organiser et piloter les flux d'information verticaux et horizontaux pour garantir une circulation fluide des données."
+    },
+    {
+        "question_number": 6,
+        "question": "Quel élément est clé dans le processus de prise de décision selon le cours ?",
+        "options": [
+            "Une analyse exclusivement rationnelle",
+            "Une intuition combinée à la connaissance et à l'expérience",
+            "Un consensus absolu parmi les équipes",
+            "Une absence totale d'influence politique"
+        ],
+        "correct_index": "B",
+        "explanation": "La prise de décision s'appuie sur l'intuition, la connaissance et l'expérience pour équilibrer réflexion et efficacité."
+    },
+    {
+        "question_number": 7,
+        "question": "Quel est un des défis majeurs liés à la gestion des systèmes de pouvoir ?",
+        "options": [
+            "Assurer une hiérarchie rigide",
+            "Éviter les effets pervers de la concentration de pouvoir",
+            "Restreindre les flux d'information horizontaux",
+            "Ignorer les divisions de l'entreprise"
+        ],
+        "correct_index": "B",
+        "explanation": "Le manager doit veiller à éviter les effets pervers liés à une concentration excessive du pouvoir."
+    },
+    {
+        "question_number": 8,
+        "question": "Quelle est une caractéristique clé des entreprises utilisant un contrôle stratégique ?",
+        "options": [
+            "Un regroupement des activités par type de mission stratégique",
+            "Un siège directif et une planification centralisée",
+            "Une diversification importante des activités",
+            "Un suivi financier strict sans implication stratégique"
+        ],
+        "correct_index": "A",
+        "explanation": "Le contrôle stratégique regroupe les entités par type de mission et implique une flexibilité stratégique."
+    },
+    {
+        "question_number": 9,
+        "question": "Quelle est une approche pour gérer l'infotoxication et l'infobésité dans le pilotage de l'information ?",
+        "options": [
+            "Centraliser toutes les informations",
+            "Filtrer et cibler les informations utiles et valorisables",
+            "Supprimer toutes les données non essentielles",
+            "Adopter uniquement des solutions technologiques avancées"
+        ],
+        "correct_index": "B",
+        "explanation": "Pour lutter contre l'infotoxication, il est essentiel de cibler les informations utiles et valorisables."
+    },
+    {
+        "question_number": 10,
+        "question": "Quel commandement résume la responsabilité principale d'un manager ?",
+        "options": [
+            "Manager, c'est uniquement motiver les équipes",
+            "Manager, c'est prendre toutes les décisions seul",
+            "Manager, c'est prévenir ou lever les obstacles",
+            "Manager, c'est maximiser les profits financiers"
+        ],
+        "correct_index": "C",
+        "explanation": "Le commandement n°7 insiste sur le fait que manager consiste à prévenir ou lever les obstacles pour atteindre les objectifs."
+    }
+]
