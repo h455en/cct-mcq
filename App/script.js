@@ -28,6 +28,7 @@ const correctAnswerArea = document.getElementById("correctAnswers");
 const searchQuestionInput = document.getElementById('searchQuestion');
 const darkModeToggle = document.getElementById("darkModeToggle");
 const markRadio = document.getElementById('markQuestion'); // Get the radio button
+const resultsTextArea = document.getElementById('resultsTextArea'); // Get the textarea
 
 
 //------------
@@ -44,60 +45,56 @@ async function fetchQuizzes() {
             throw new Error("Invalid quiz list format received from API.");
         }
 
-        const allItems = [];
-
         async function fetchDirectoryContents(item) {
             if (item.type === "dir") {
                 try {
-                    const dirResponse = await fetch(item.url); // Use item.url to fetch directory contents
+                    const dirResponse = await fetch(item.url);
                     if (!dirResponse.ok) {
                         throw new Error(`HTTP error ${dirResponse.status} fetching directory contents for ${item.name}`);
                     }
                     const dirContents = await dirResponse.json();
-                    // Extract only the necessary data from the directory contents
-                    const formattedDirContents = dirContents.map(dirItem => ({
+                    item.content = dirContents.map(dirItem => ({
                         name: dirItem.name,
                         type: dirItem.type,
                         url: dirItem.url,
                         download_url: dirItem.download_url
                     }));
-                    item.content = formattedDirContents;
-                    allItems.push(item);
                     for (const subItem of item.content) {
                         await fetchDirectoryContents(subItem);
                     }
                 } catch (dirError) {
                     console.error(`Error fetching directory ${item.name}:`, dirError);
                 }
-            } else {
-                allItems.push(item);
             }
         }
 
-        for (const item of items) {
-            await fetchDirectoryContents(item);
-        }
+        // Fetch contents of all directories
+        await Promise.all(items.map(fetchDirectoryContents));
 
-        // Now that all items (files and directories with contents) are fetched, build the dropdown
+        // Build the dropdown (only top-level items)
         function buildDropdownOptions(data, depth = 0) {
             let optionsHTML = "";
             data.forEach(item => {
                 const indent = "  ".repeat(depth * 2);
-                optionsHTML += item.type === "dir"
-                    ? `<optgroup label="${indent}${item.name}">`
-                    + buildDropdownOptions(item.content || [], depth + 1) // Handle cases where content might be undefined
-                    + `</optgroup>`
-                    : `<option value="${item.download_url}">${indent}${item.name}</option>`; // Use download_url
+                if (item.type === "dir") {
+                    optionsHTML += `<optgroup label="${indent}${item.name}">`;
+                    if (item.content) { // Check if content exists before recursing
+                        optionsHTML += buildDropdownOptions(item.content, depth + 1);
+                    }
+                    optionsHTML += `</optgroup>`;
+                } else {
+                    optionsHTML += `<option value="${item.download_url}">${indent}${item.name}</option>`;
+                }
             });
             return optionsHTML;
         }
 
-        const dropdownHTML = buildDropdownOptions(allItems);
+        const dropdownHTML = buildDropdownOptions(items);
         quizDropdown.innerHTML = `<option value="" disabled selected>Choose a Quiz</option>` + dropdownHTML;
 
-        // Preload quiz data (adjusted for nested structure and download_url)
+        // Preload quiz data (using download_url)
         const loadQuizData = async (item) => {
-            if (item.download_url) { // Only load if it's a file with a download URL
+            if (item.download_url) {
                 try {
                     const quizResponse = await fetch(item.download_url);
                     if (!quizResponse.ok) {
@@ -111,7 +108,17 @@ async function fetchQuizzes() {
             }
         };
 
-        allItems.forEach(async item => await loadQuizData(item));
+        // Preload only the files that are directly in the root or in subfolders.
+        items.forEach(async item => {
+            if (item.type === 'file') {
+                await loadQuizData(item);
+            } else if (item.content) {
+                item.content.forEach(async subItem => {
+                    await loadQuizData(subItem);
+                });
+            }
+        });
+
         startQuizBtn.disabled = false;
     } catch (error) {
         console.error("Error fetching quiz data:", error);
@@ -119,18 +126,19 @@ async function fetchQuizzes() {
         startQuizBtn.disabled = true;
     }
 }
-//----------
+
+//------------
 
 function getSelectedQuizName() {
     if (uploadFile.files.length > 0) {
         return uploadFile.files[0].name;
     } else {
         const selectedOption = quizDropdown.options[quizDropdown.selectedIndex];
+        console.log("Selected option value = ", selectedOption.value);
+        selectedQuizzName = selectedOption.text;
         return selectedOption ? selectedOption.text.trim() : null; // Get the text content
     }
 }
-
-//----------
 
 // Process and store correct answers
 function preprocessQuizData(quizData) {
@@ -305,12 +313,13 @@ reStartQuizBtn.addEventListener("click", () => {
     resetQuizState();  // Reset quiz state to start over
 });
 
-// Reset quiz state to prepare for restarting
+
 function resetQuizState() {
-    currentQuiz = null;  // Clear the current quiz data
-    userAnswers = [];  // Clear user answers
-    currentQuestionIndex = 0;  // Reset question index
-    correctAnswers = [];  // Clear correct answers
+    // Reset quiz state to prepare for restarting
+    currentQuiz = null;
+    userAnswers = [];
+    currentQuestionIndex = 0;
+    correctAnswers = [];
     selectedQuizzName = null;
     resetMarkQuestionSwitch();
 }
@@ -371,14 +380,12 @@ function showEvaluation() {
 
     const percentage = Math.round((score / currentQuiz.length) * 100);
     const dateTimeString = formatDate();
-
-    let resultsText = `[${dateTimeString}] - Quiz Name: ${selectedQuizzName}\n`;
-    resultsText += `Score: ${score}/${currentQuiz.length} - ${percentage}%\n`;
+    let resultsText = `[${dateTimeString}] - Quiz Name: ${selectedQuizzName} - Score: ${score}/${currentQuiz.length} - ${percentage}%\n`;
 
     var formattedUserAnswers = userAnswers.map((e, i) => (i + 1 + "." + e)).join(' ,');
     var formattedCorrectAnswers = correctAnswers.map((e, i) => (i + 1 + "." + e)).join(' ,');
 
-    resultsText += `User answers =  ${formattedUserAnswers}\n`;
+    resultsText += `   User answers =  ${formattedUserAnswers}\n`;
     resultsText += `Correct answers =  ${formattedCorrectAnswers}\n`;
 
     document.getElementById('score').innerText = score;
@@ -386,6 +393,18 @@ function showEvaluation() {
     document.getElementById('percentage').innerText = percentage;
     document.getElementById('qName').innerText = selectedQuizzName;
     document.getElementById('resultsTextArea').innerHTML = resultsText;
+
+
+    // Copy results
+    const copyButton = document.createElement('button');
+    copyButton.textContent = "Copy to Clipboard";
+    copyButton.className = "btn btn-secondary mt-2"; // Add Bootstrap styling
+    resultsArea.appendChild(copyButton); // Add the button to the results area
+
+    copyButton.addEventListener('click', () => {
+        const textToCopy = resultsTextArea.value;
+        copyToClipboard(textToCopy);
+    });
 
     function formatDate() {
         const now = new Date();
@@ -404,7 +423,51 @@ function resetMarkQuestionSwitch() {
 }
 
 
-//____________________________
+
+//------------
+function copyToClipboard(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+        // Modern approach (requires HTTPS)
+        navigator.clipboard.writeText(text)
+            .then(() => {
+                // Optional: Provide visual feedback to the user (e.g., a tooltip)
+                console.log("Text copied to clipboard!");
+            })
+            .catch(err => {
+                console.error("Failed to copy text: ", err);
+                fallbackCopyToClipboard(text); // Fallback if modern API fails
+            });
+    } else {
+        // Fallback for older browsers or non-HTTPS contexts
+        fallbackCopyToClipboard(text);
+    }
+}
+
+function fallbackCopyToClipboard(text) {
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+
+    // Avoid scrolling to bottom
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.position = "fixed";
+
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+
+    try {
+        const successful = document.execCommand('copy');
+        const msg = successful ? 'successful' : 'unsuccessful';
+        console.log('Fallback: Copying text command was ' + msg);
+    } catch (err) {
+        console.error('Fallback: Oops, unable to copy', err);
+    }
+
+    document.body.removeChild(textArea);
+}
+//------------
+
 
 // Load quizzes on page load
 fetchQuizzes();

@@ -70,10 +70,8 @@ h4 {
     background-color: #96141e;
 }
 
-
-/* style.css */
 .option-box {
-    border: 1px solid #073950;
+    border: 1px solid #1f7fac;
     padding: 10px;
     margin-bottom: 10px;
     cursor: pointer;
@@ -103,7 +101,7 @@ h4 {
 /* Optional: Add some padding to question text */
 #questionTitle {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 15px;
 }
 

@@ -1,7 +1,7 @@
 # zip with versionning
 
-$cct = "cct323"
-$version = "v3.2.3"
+$cct = "cct327"
+$version = "v3.2.7"
 $folder = "D:\HASSEN\WORK\CYBERSEC\cct-mcq\App\App_" + $version + ".zip"
 
 $compress = @{
