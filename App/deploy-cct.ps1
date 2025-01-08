@@ -1,7 +1,8 @@
 # zip with versionning
 
-$cct = "cct327"
-$version = "v3.2.7"
+$cct = "cct333"
+$version = "v3.3.3"
+Write-Host "Preparing R$version ($cct)" -ForegroundColor Cyan
 $folder = "D:\HASSEN\WORK\CYBERSEC\cct-mcq\App\App_" + $version + ".zip"
 
 $compress = @{
@@ -12,3 +13,27 @@ $compress = @{
 
 Compress-Archive @compress
 Write-Host "Release $version ($cct)" -ForegroundColor Green
+
+
+# Rollback
+
+<#
+#----------------
+# Cleaning
+Write-Host "Cleaning ..." -ForegroundColor Cyan
+rm D:\hassen\work\CYBERSEC\cct-mcq\App\index.html
+rm D:\hassen\work\CYBERSEC\cct-mcq\App\script.js
+rm D:\hassen\work\CYBERSEC\cct-mcq\App\style.css
+
+$v = "3.2.8"
+$version = "_v" + $v + ".zip"
+$zipFolder = "D:\hassen\work\CYBERSEC\cct-mcq\App\App" + $version
+Write-Host "Rollback to version [$version]" -ForegroundColor Cyan
+Expand-Archive -LiteralPath $zipFolder -DestinationPath .
+
+Write-Host "Rollback terminated." -ForegroundColor Green
+#----------------
+
+#>
+
+

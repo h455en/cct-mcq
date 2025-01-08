@@ -1,5 +1,10 @@
+
+
+
+
 const githubAPI = "https://api.github.com/repos/h455en/cct-mcq/contents/Collection";
 const rawBaseURL = "https://raw.githubusercontent.com/h455en/cct-mcq/main/Collection/";
+const githubToken = "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";
 
 let quizzes = {};  // To hold all quizzes
 let currentQuiz = null; // To store the selected quiz
@@ -8,15 +13,17 @@ let markedAnswers = [];
 let currentQuestionIndex = 0;
 let timerInterval;
 let totalTime;
-let selectedQuizzName = null;
+let selectedQuizName = ''
+
 // Elements
+const quizSelectionPage = document.getElementById("quiz-selection");
+const quizRunPage = document.getElementById("quiz-run");
+const quizEvaluationPage = document.getElementById("quiz-evaluation");
 const quizDropdown = document.getElementById("quizDropdown");
 const uploadFile = document.getElementById("uploadFile");
 const startQuizBtn = document.getElementById("startQuizBtn");
 const reStartQuizBtn = document.getElementById("restartBtn");
-const quizSelectionPage = document.getElementById("quiz-selection");
-const quizRunPage = document.getElementById("quiz-run");
-const quizEvaluationPage = document.getElementById("quiz-evaluation");
+
 const questionTitle = document.getElementById("questionTitle");
 const optionsContainer = document.getElementById("optionsContainer");
 const nextBtn = document.getElementById("nextBtn");
@@ -32,10 +39,18 @@ const resultsTextArea = document.getElementById('resultsTextArea'); // Get the t
 
 
 //------------
-
 async function fetchQuizzes() {
     try {
-        const response = await fetch(githubAPI);
+        const headers = {
+            Authorization: `Bearer ${githubToken}`,
+            Accept: "application/vnd.github.v3+json"
+        };
+
+        // Show loading spinner
+        const loadingIndicator = document.getElementById("loadingIndicator");
+        loadingIndicator.classList.remove("d-none");
+
+        const response = await fetch(githubAPI, { headers });
         if (!response.ok) {
             throw new Error(`HTTP error ${response.status} fetching quiz list`);
         }
@@ -48,7 +63,7 @@ async function fetchQuizzes() {
         async function fetchDirectoryContents(item) {
             if (item.type === "dir") {
                 try {
-                    const dirResponse = await fetch(item.url);
+                    const dirResponse = await fetch(item.url, { headers });
                     if (!dirResponse.ok) {
                         throw new Error(`HTTP error ${dirResponse.status} fetching directory contents for ${item.name}`);
                     }
@@ -68,66 +83,93 @@ async function fetchQuizzes() {
             }
         }
 
-        // Fetch contents of all directories
+        // Fetch contents of all directories recursively
         await Promise.all(items.map(fetchDirectoryContents));
 
-        // Build the dropdown (only top-level items)
-        function buildDropdownOptions(data, depth = 0) {
-            let optionsHTML = "";
+        // Build tree view HTML dynamically
+        function buildTreeView(data) {
+            let treeHTML = "<ul class='list-group'>";
             data.forEach(item => {
-                const indent = "  ".repeat(depth * 2);
                 if (item.type === "dir") {
-                    optionsHTML += `<optgroup label="${indent}${item.name}">`;
-                    if (item.content) { // Check if content exists before recursing
-                        optionsHTML += buildDropdownOptions(item.content, depth + 1);
-                    }
-                    optionsHTML += `</optgroup>`;
-                } else {
-                    optionsHTML += `<option value="${item.download_url}">${indent}${item.name}</option>`;
+                    // Collapsible folder
+                    treeHTML += `
+                        <li class="list-group-item folder-item">
+                            <a href="#" class="folder-toggle" data-bs-target="#folder-${item.name}">
+                                📁 ${item.name}
+                            </a>
+                            <div class="folder-contents collapse" id="folder-${item.name}">
+                                ${item.content ? buildTreeView(item.content) : ""}
+                            </div>
+                        </li>
+                    `;
+                } else if (item.type === "file" && item.download_url) {
+                    // JSON file (leaf node)
+                    treeHTML += `
+                        <li class="list-group-item">
+                            <a href="#" class="quiz-select" data-url="${item.download_url}" data-name="${item.name}">
+                                📄 ${item.name}
+                            </a>
+                        </li>
+                    `;
                 }
             });
-            return optionsHTML;
+            treeHTML += "</ul>";
+            return treeHTML;
         }
 
-        const dropdownHTML = buildDropdownOptions(items);
-        quizDropdown.innerHTML = `<option value="" disabled selected>Choose a Quiz</option>` + dropdownHTML;
+        // Render tree view
+        const treeViewHTML = buildTreeView(items);
+        const quizTreeView = document.getElementById("quizTreeView");
+        quizTreeView.innerHTML = treeViewHTML;
 
-        // Preload quiz data (using download_url)
-        const loadQuizData = async (item) => {
-            if (item.download_url) {
-                try {
-                    const quizResponse = await fetch(item.download_url);
-                    if (!quizResponse.ok) {
-                        throw new Error(`HTTP error ${quizResponse.status} loading ${item.name}`);
-                    }
-                    const quizData = await quizResponse.json();
-                    quizzes[item.name] = preprocessQuizData(quizData);
-                } catch (error) {
-                    console.error(`Error loading quiz file ${item.name}:`, error);
+        // Hide loading spinner
+        loadingIndicator.classList.add("d-none");
+
+        // Attach event listeners to folders for toggling
+        document.querySelectorAll(".folder-toggle").forEach(folder => {
+            folder.addEventListener("click", (e) => {
+                e.preventDefault();
+                const target = document.querySelector(folder.getAttribute("data-bs-target"));
+                if (target.classList.contains("collapse")) {
+                    target.classList.remove("collapse");
+                } else {
+                    target.classList.add("collapse");
                 }
-            }
-        };
-
-        // Preload only the files that are directly in the root or in subfolders.
-        items.forEach(async item => {
-            if (item.type === 'file') {
-                await loadQuizData(item);
-            } else if (item.content) {
-                item.content.forEach(async subItem => {
-                    await loadQuizData(subItem);
-                });
-            }
+            });
         });
 
-        startQuizBtn.disabled = false;
+        // Attach event listeners to leaf nodes (JSON files)
+        document.querySelectorAll(".quiz-select").forEach(quiz => {
+            quiz.addEventListener("click", async (e) => {
+                e.preventDefault();
+                const quizUrl = quiz.getAttribute("data-url");
+                const quizName = quiz.getAttribute("data-name");
+
+                if (confirm(`Do you want to load and run the quiz "${quizName}"?`)) {
+                    try {
+                        const quizResponse = await fetch(quizUrl);
+                        if (!quizResponse.ok) {
+                            throw new Error(`HTTP error ${quizResponse.status} loading ${quizName}`);
+                        }
+                        const quizData = await quizResponse.json();
+                        quizzes[quizName] = preprocessQuizData(quizData);
+                        console.log(`Quiz "${quizName}" loaded successfully!`);
+                        startQuiz(quizData); // Immediately start the quiz
+                    } catch (error) {
+                        console.error(`Error loading quiz file ${quizName}:`, error);
+                        alert(`Failed to load the quiz "${quizName}".`);
+                    }
+                }
+            });
+        });
+
+        console.log("Quizzes and folders loaded successfully.");
     } catch (error) {
         console.error("Error fetching quiz data:", error);
         alert("Failed to load quizzes. Please check your internet connection or the quiz source.");
-        startQuizBtn.disabled = true;
     }
 }
 
-//------------
 
 function getSelectedQuizName() {
     if (uploadFile.files.length > 0) {
@@ -187,7 +229,7 @@ startQuizBtn.addEventListener("click", () => {
             currentQuiz = preprocessQuizData(jsonData);
             console.log("Uploaded Quiz:", currentQuiz); // Debugging log
 
-            startQuiz();
+            startQuiz(currentQuiz);
         };
 
         reader.readAsText(file);
@@ -204,45 +246,83 @@ startQuizBtn.addEventListener("click", () => {
     }
 
     currentQuiz = selectedQuizEntry[1];
-    startQuiz();
+    startQuiz(currentQuiz);
 });
 
 
-// Start Quiz
-function startQuiz() {
-    if (!currentQuiz || currentQuiz.length === 0) {
-        console.error("Error: No quiz data loaded!");
-        return alert("Quiz data not loaded properly.");
+//........
+
+function startQuiz(quizData) {
+    // Validate the provided quiz data
+    if (!quizData || !Array.isArray(quizData) || quizData.length === 0) {
+        console.error("Invalid quiz data provided:", quizData);
+        alert("Error: The selected quiz is empty or invalid.");
+        return;
     }
 
+    // Assign the quiz data to currentQuiz
+    currentQuiz = quizData;
+
+    // Transition to the quiz run page
     quizSelectionPage.classList.add("d-none");
     quizRunPage.classList.remove("d-none");
 
+    // Reset quiz state
     currentQuestionIndex = 0;
-    userAnswers = []; // Reset user answers
-    markedAnswers = []; // Reset marked answers
-    let secondsPerQuestion = 300; // 30 by default 
+    userAnswers = [];
+    markedAnswers = [];
+
+    // Start the timer
+    const secondsPerQuestion = 30; // 30 seconds per question
     startTimer(currentQuiz.length * secondsPerQuestion);
 
-    document.getElementById('qName').innerText = selectedQuizzName;
+    // Load the first question
     loadQuestion();
 }
 
-// Load Question
-function loadQuestion() {
-    resetMarkQuestionSwitch(); // Reset the switch when loading a new question
-    // Get if marked
-    const currentQuestion = currentQuiz[currentQuestionIndex];
-    questionTitle.innerText = `Q${currentQuestionIndex + 1}: ${currentQuestion.question}`;
-    optionsContainer.innerHTML = currentQuestion.options.map((option, index) => `
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="option" value="${index}" id="option${index}">
-            <label class="form-check-label" for="option${index}">${option}</label>
-        </div>
-    `).join("");
+//.......
 
-    updateProgressBar();
+
+function loadQuestion() {
+    // Check if currentQuiz is valid and the question index is within bounds
+    if (!currentQuiz || currentQuestionIndex >= currentQuiz.length) {
+        console.error("No valid question to load. currentQuiz:", currentQuiz, "currentQuestionIndex:", currentQuestionIndex);
+        alert("Error: No questions available in the quiz.");
+        return;
+    }
+
+    const currentQuestion = currentQuiz[currentQuestionIndex];
+
+    // Validate the current question structure
+    if (!currentQuestion || !currentQuestion.question || !Array.isArray(currentQuestion.options)) {
+        console.error("Invalid question structure:", currentQuestion);
+        alert("Error: Invalid question format.");
+        return;
+    }
+
+    // Render the question title
+    questionTitle.innerText = `Q${currentQuestionIndex + 1}: ${currentQuestion.question}`;
+
+    // Render the options dynamically
+    optionsContainer.innerHTML = currentQuestion.options
+        .map(
+            (option, index) => `
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="option" value="${index}" id="option${index}">
+                <label class="form-check-label" for="option${index}">
+                    ${option}
+                </label>
+            </div>
+        `
+        )
+        .join("");
+
+    //console.log("Loaded Question:", currentQuestion);
 }
+
+//.......
+
+
 
 markRadio.addEventListener('change', () => {
     if (markRadio.checked) {
@@ -251,22 +331,33 @@ markRadio.addEventListener('change', () => {
     console.log("Marked Answers:", markedAnswers);
 });
 
-
-// Record User's Answer (As 'A', 'B', 'C', 'D')
+//----
 nextBtn.addEventListener("click", () => {
+    // Validate currentQuiz
+    if (!currentQuiz || !Array.isArray(currentQuiz) || currentQuiz.length === 0) {
+        console.error("Invalid or empty quiz data:", currentQuiz);
+        alert("Error: No quiz data available.");
+        return;
+    }
+
+    // Record the user's answer for the current question
     const selectedOption = document.querySelector('input[name="option"]:checked');
-    if (!selectedOption) return alert("Please select an option!");
+    if (!selectedOption) {
+        alert("Please select an option before proceeding.");
+        return;
+    }
+    userAnswers[currentQuestionIndex] = parseInt(selectedOption.value);
 
-    const selectedIndex = parseInt(selectedOption.value);
-    userAnswers[currentQuestionIndex] = getOptionLetter(selectedIndex); // Store the answer as 'A', 'B', 'C', 'D'
+    // Move to the next question or end the quiz
     currentQuestionIndex++;
-
     if (currentQuestionIndex < currentQuiz.length) {
-        loadQuestion();
+        loadQuestion(); // Load the next question
     } else {
-        showEvaluation(); // Call evaluation when all questions are answered
+        showEvaluation(); // Show evaluation if all questions are answered
     }
 });
+
+//---
 
 
 function startTimer(duration) {
@@ -324,94 +415,104 @@ function resetQuizState() {
     resetMarkQuestionSwitch();
 }
 
+//..........
 function showEvaluation() {
     clearInterval(timerInterval);
     quizRunPage.classList.add("d-none");
     quizEvaluationPage.classList.remove("d-none");
 
     let score = 0;
-    const correctAnswers = currentQuiz.map(q => q.correct_index);
+
+    // Map numeric user answers to letter equivalents (A, B, C, D)
+    const indexToLetter = ["A", "B", "C", "D"];
+    const userAnswersAsLetters = userAnswers.map(answer => indexToLetter[answer] || "No Answer");
+
+    // Extract correct answers from currentQuiz
+    const correctAnswers = currentQuiz.map(q => indexToLetter[q.correct_index]);
     console.log("Correct answers = ", correctAnswers);
-    console.log("   User answers = ", userAnswers);
+    console.log("User answers = ", userAnswersAsLetters);
+
     const questionsAccordion = document.getElementById('questionsAccordion');
     questionsAccordion.innerHTML = ""; // Clear previous results
 
-    //__________________________________
-    // Create expandable text area
+    // Create expandable text area for detailed results
     const resultsTextArea = document.createElement('textarea');
     resultsTextArea.id = 'resultsTextArea';
     resultsTextArea.className = 'form-control mt-3';
     resultsTextArea.rows = 6; // Initial number of rows
     resultsTextArea.style.resize = 'vertical'; // Allow vertical resizing
     resultsArea.appendChild(resultsTextArea);
-    //__________________________________
-    let isMarked = false;
+
     currentQuiz.forEach((q, index) => {
-        const userAnswer = userAnswers[index] || "No Answer";
+        const userAnswer = userAnswersAsLetters[index] || "No Answer";
         const correctAnswer = correctAnswers[index];
         const isCorrect = userAnswer === correctAnswer;
-        score += isCorrect ? 1 : 0;
-        console.log("Marked = ", markedAnswers)
-        isMarked = markedAnswers.includes(index + 1);
+
+        if (isCorrect) {
+            score++;
+        }
+
+        const isMarked = markedAnswers.includes(index + 1); // Highlight marked questions
 
         const accordionItem = document.createElement('div');
         accordionItem.className = 'accordion-item';
-        //evaluatedAnswer = "";
         accordionItem.innerHTML = `
-              <h2 class="accordion-header" id="heading${index}">
-                  <button class="accordion-button collapsed ${isCorrect ? "" : "text-danger"}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}" aria-expanded="false" aria-controls="collapse${index}">
-                      ${index + 1}. ${userAnswer} ${isCorrect ? "✅" : "❌"} ${isMarked ? "💡" : ""}
-                  </button>
-              </h2>
-              <div id="collapse${index}" class="accordion-collapse collapse" aria-labelledby="heading${index}" data-bs-parent="#questionsAccordion">
-                  <div class="accordion-body">
-                      <p>${q.question}</p>
-                      <ul>
-                          ${q.options.map(option => `<li>${option}</li>`).join('')}
-                      </ul>
-                      <p>Correct Answer: ${correctAnswers[index]}</p>
-                      <p>Explanation: ${q.explanation || "No explanation provided."}</p>
-                    
-                  </div>
-              </div>
-          `;
+            <h2 class="accordion-header" id="heading${index}">
+                <button class="accordion-button collapsed ${isCorrect ? "" : "text-danger"}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}" aria-expanded="false" aria-controls="collapse${index}">
+                    ${index + 1}. ${userAnswer} ${isCorrect ? "✅" : "❌"} ${isMarked ? "💡" : ""}
+                </button>
+            </h2>
+            <div id="collapse${index}" class="accordion-collapse collapse" aria-labelledby="heading${index}" data-bs-parent="#questionsAccordion">
+                <div class="accordion-body">
+                    <p><strong>Question:</strong> ${q.question}</p>
+                    <ul>
+                        ${q.options.map((option, i) => `<li>${indexToLetter[i]}. ${option}</li>`).join('')}
+                    </ul>
+                    <p><strong>Correct Answer:</strong> ${correctAnswer}</p>
+                    <p><strong>Explanation:</strong> ${q.explanation || "No explanation provided."}</p>
+                </div>
+            </div>
+        `;
         questionsAccordion.appendChild(accordionItem);
     });
 
     const percentage = Math.round((score / currentQuiz.length) * 100);
     const dateTimeString = formatDate();
-    let resultsText = `[${dateTimeString}] - Quiz Name: ${selectedQuizzName} - Score: ${score}/${currentQuiz.length} - ${percentage}%\n`;
+    let resultsText = `[${dateTimeString}] - Quiz Name: ${selectedQuizName} - Score: ${score}/${currentQuiz.length} - ${percentage}%\n`;
 
-    var formattedUserAnswers = userAnswers.map((e, i) => (i + 1 + "." + e)).join(' ,');
-    var formattedCorrectAnswers = correctAnswers.map((e, i) => (i + 1 + "." + e)).join(' ,');
+    const formattedUserAnswers = userAnswersAsLetters.map((e, i) => `${i + 1}.${e}`).join(' , ');
+    const formattedCorrectAnswers = correctAnswers.map((e, i) => `${i + 1}.${e}`).join(' , ');
 
-    resultsText += `   User answers =  ${formattedUserAnswers}\n`;
+    resultsText += `User answers =  ${formattedUserAnswers}\n`;
     resultsText += `Correct answers =  ${formattedCorrectAnswers}\n`;
 
     document.getElementById('score').innerText = score;
     document.getElementById('totalQuestions').innerText = currentQuiz.length;
     document.getElementById('percentage').innerText = percentage;
-    document.getElementById('qName').innerText = selectedQuizzName;
-    document.getElementById('resultsTextArea').innerHTML = resultsText;
+    document.getElementById('qName').innerText = selectedQuizName;
+    resultsTextArea.value = resultsText; // Populate the text area with results
 
-
-    // Copy results
+    // Add "Copy to Clipboard" button
     const copyButton = document.createElement('button');
     copyButton.textContent = "Copy to Clipboard";
-    copyButton.className = "btn btn-secondary mt-2"; // Add Bootstrap styling
-    resultsArea.appendChild(copyButton); // Add the button to the results area
+    copyButton.className = "btn btn-primary btn-sm mt-3"; // Add Bootstrap styling
+    resultsArea.appendChild(copyButton);
 
     copyButton.addEventListener('click', () => {
         const textToCopy = resultsTextArea.value;
         copyToClipboard(textToCopy);
+        alert("Results copied to clipboard!");
     });
 
+    // Format the date and time
     function formatDate() {
         const now = new Date();
-        const dateTimeString = `${now.getDate().toString().padStart(2, '0')}.${(now.getMonth() + 1).toString().padStart(2, '0')}.${now.getFullYear()} - ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
-        return dateTimeString;
+        return `${now.getDate().toString().padStart(2, '0')}.${(now.getMonth() + 1).toString().padStart(2, '0')}.${now.getFullYear()} - ${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
     }
 }
+
+
+//........
 
 function resetMarkQuestionSwitch() {
     const markQuestionSwitch = document.getElementById('markQuestion');
@@ -421,8 +522,6 @@ function resetMarkQuestionSwitch() {
         console.error("markQuestion element not found!");
     }
 }
-
-
 
 //------------
 function copyToClipboard(text) {
@@ -468,6 +567,34 @@ function fallbackCopyToClipboard(text) {
 }
 //------------
 
+
+function setupGoHomeButton() {
+    const goHomeBtn = document.getElementById('goHomeBtn');
+    const quizSelectionPage = document.getElementById("quiz-selection");
+    const quizRunPage = document.getElementById("quiz-run");
+    const quizEvaluationPage = document.getElementById("quiz-evaluation");
+
+    if (goHomeBtn && quizSelectionPage && quizRunPage && quizEvaluationPage) {
+        goHomeBtn.addEventListener('click', () => {
+            quizEvaluationPage.classList.add("d-none");
+            quizRunPage.classList.add("d-none");
+            quizSelectionPage.classList.remove("d-none");
+            currentQuestionIndex = 0;
+            userAnswers = [];
+            markedQuestions = [];
+            clearInterval(timerInterval);
+            if (typeof resetQuiz === 'function') resetQuiz(); // call resetQuiz if defined
+        });
+    } else {
+        console.error("One or more required elements (goHomeBtn, quizSelectionPage, quizRunPage, quizEvaluationPage) not found.");
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetchQuizzes();
+    setupGoHomeButton(); // Call the function to set up the button
+});
+//----
 
 // Load quizzes on page load
 fetchQuizzes();
