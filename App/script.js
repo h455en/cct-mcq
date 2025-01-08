@@ -10,10 +10,11 @@ let quizzes = {};  // To hold all quizzes
 let currentQuiz = null; // To store the selected quiz
 let userAnswers = [];  // To store user's answers
 let markedAnswers = [];
+let correctAnswers = [];
 let currentQuestionIndex = 0;
 let timerInterval;
 let totalTime;
-let selectedQuizName = ''
+let selectedQuizName = null;
 
 // Elements
 const quizSelectionPage = document.getElementById("quiz-selection");
@@ -145,20 +146,19 @@ async function fetchQuizzes() {
                 const quizUrl = quiz.getAttribute("data-url");
                 const quizName = quiz.getAttribute("data-name");
 
-                if (confirm(`Do you want to load and run the quiz "${quizName}"?`)) {
-                    try {
-                        const quizResponse = await fetch(quizUrl);
-                        if (!quizResponse.ok) {
-                            throw new Error(`HTTP error ${quizResponse.status} loading ${quizName}`);
-                        }
-                        const quizData = await quizResponse.json();
-                        quizzes[quizName] = preprocessQuizData(quizData);
-                        console.log(`Quiz "${quizName}" loaded successfully!`);
-                        startQuiz(quizData); // Immediately start the quiz
-                    } catch (error) {
-                        console.error(`Error loading quiz file ${quizName}:`, error);
-                        alert(`Failed to load the quiz "${quizName}".`);
+                //if (confirm(`Do you want to load and run the quiz "${quizName}"?`)) {
+                try {
+                    const quizResponse = await fetch(quizUrl);
+                    if (!quizResponse.ok) {
+                        throw new Error(`HTTP error ${quizResponse.status} loading ${quizName}`);
                     }
+                    const quizData = await quizResponse.json();
+                    quizzes[quizName] = preprocessQuizData(quizData);
+                    console.log(`Quiz "${quizName}" loaded successfully!`);
+                    startQuiz(quizData); // Immediately start the quiz
+                } catch (error) {
+                    console.error(`Error loading quiz file ${quizName}:`, error);
+                    alert(`Failed to load the quiz "${quizName}".`);
                 }
             });
         });
@@ -176,8 +176,8 @@ function getSelectedQuizName() {
         return uploadFile.files[0].name;
     } else {
         const selectedOption = quizDropdown.options[quizDropdown.selectedIndex];
-        console.log("Selected option value = ", selectedOption.value);
-        selectedQuizzName = selectedOption.text;
+        console.log(`Selected option value = ${selectedOption.value} text = ${selectedOption.text}`);
+        selectedQuizzName = quizName; //selectedOption.text;
         return selectedOption ? selectedOption.text.trim() : null; // Get the text content
     }
 }
@@ -185,8 +185,8 @@ function getSelectedQuizName() {
 // Process and store correct answers
 function preprocessQuizData(quizData) {
     quizData.forEach(q => {
-        const correctAnswerLetter = getOptionLetter(q.correct_index);
-        q.correctAnswer = correctAnswerLetter;  // Store correct answer directly in each question
+        correctAnswers.push(q.correct_index);
+        // convert to letter if needed
     });
     return quizData;
 }
@@ -250,8 +250,6 @@ startQuizBtn.addEventListener("click", () => {
 });
 
 
-//........
-
 function startQuiz(quizData) {
     // Validate the provided quiz data
     if (!quizData || !Array.isArray(quizData) || quizData.length === 0) {
@@ -279,9 +277,6 @@ function startQuiz(quizData) {
     // Load the first question
     loadQuestion();
 }
-
-//.......
-
 
 function loadQuestion() {
     // Check if currentQuiz is valid and the question index is within bounds
@@ -320,9 +315,6 @@ function loadQuestion() {
     //console.log("Loaded Question:", currentQuestion);
 }
 
-//.......
-
-
 
 markRadio.addEventListener('change', () => {
     if (markRadio.checked) {
@@ -331,7 +323,6 @@ markRadio.addEventListener('change', () => {
     console.log("Marked Answers:", markedAnswers);
 });
 
-//----
 nextBtn.addEventListener("click", () => {
     // Validate currentQuiz
     if (!currentQuiz || !Array.isArray(currentQuiz) || currentQuiz.length === 0) {
@@ -356,9 +347,6 @@ nextBtn.addEventListener("click", () => {
         showEvaluation(); // Show evaluation if all questions are answered
     }
 });
-
-//---
-
 
 function startTimer(duration) {
     totalTime = duration;
@@ -427,8 +415,6 @@ function showEvaluation() {
     const indexToLetter = ["A", "B", "C", "D"];
     const userAnswersAsLetters = userAnswers.map(answer => indexToLetter[answer] || "No Answer");
 
-    // Extract correct answers from currentQuiz
-    const correctAnswers = currentQuiz.map(q => indexToLetter[q.correct_index]);
     console.log("Correct answers = ", correctAnswers);
     console.log("User answers = ", userAnswersAsLetters);
 
@@ -451,9 +437,7 @@ function showEvaluation() {
         if (isCorrect) {
             score++;
         }
-
         const isMarked = markedAnswers.includes(index + 1); // Highlight marked questions
-
         const accordionItem = document.createElement('div');
         accordionItem.className = 'accordion-item';
         accordionItem.innerHTML = `

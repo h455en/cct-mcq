@@ -1,7 +1,7 @@
 # zip with versionning
 
-$cct = "cct333"
-$version = "v3.3.3"
+$cct = "cct335"
+$version = "v3.3.5"
 Write-Host "Preparing R$version ($cct)" -ForegroundColor Cyan
 $folder = "D:\HASSEN\WORK\CYBERSEC\cct-mcq\App\App_" + $version + ".zip"
 
