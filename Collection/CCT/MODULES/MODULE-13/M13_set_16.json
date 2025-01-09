@@ -1,0 +1,154 @@
+[
+	{
+		"question": "An employee loses their company-issued smartphone containing sensitive corporate data. What should you do first?",
+		"options": [
+			"Lock the phone remotely and wipe its data.",
+			"Report the incident to law enforcement.",
+			"Inform senior management immediately.",
+			"Disable the user's corporate account."
+		],
+		"correct_index": "A"
+	},
+	{
+		"question": "A vulnerability is discovered in an IoT device used in your organization’s production line. What should you do first?",
+		"options": [
+			"Disconnect the device from the network.",
+			"Apply the manufacturer’s patch immediately.",
+			"Contact the device vendor for a replacement.",
+			"Reconfigure the device’s firewall settings."
+		],
+		"correct_index": "A",
+		"explanation": "The priority in addressing the IoT device vulnerability is Containment: Prevent exploitation by isolating the affected device or network segment if necessary."
+	},
+	{
+		"question": "An employee complains about their smartphone battery draining rapidly and unusual app behavior. What should you do to investigate?",
+		"options": [
+			"Run a malware scan on the device.",
+			"Replace the battery immediately.",
+			"Advise the employee to update their apps.",
+			"Perform a factory reset of the device."
+		],
+		"correct_index": "A"
+	},
+	{
+		"question": "Your organization uses smart thermostats to control building temperatures. You discover unauthorized access to these devices. What is your immediate action?",
+		"options": [
+			"Update the firmware of the thermostats.",
+			"Disconnect the thermostats from the network.",
+			"Contact the device manufacturer.",
+			"Reset all thermostats to factory settings."
+		],
+		"correct_index": "B"
+	},
+	{
+		"question": "A critical update is released for an OT system in your organization. How should you handle this?",
+		"options": [
+			"Apply the update during the next maintenance window.",
+			"Install the update immediately on all systems.",
+			"Skip the update if the system is functioning correctly.",
+			"Consult the system vendor for approval before updating."
+		],
+		"correct_index": "A",
+		"explanation": "Handling a critical update for an Operational Technology (OT) system requires a cautious and structured approach: Assess Impact, Test in a Controlled Environment, Plan Deployment, Backup Data and Configurations, Apply the Update, Monitor Post-Update, Document Changes"
+	},
+	{
+		"question": "A rogue app is detected on a company-owned mobile device. What is the first step in handling this situation?",
+		"options": [
+			"Uninstall the app immediately.",
+			"Isolate the device from the network.",
+			"Notify the app’s developer.",
+			"Inform the employee and take no further action."
+		],
+		"correct_index": "B"
+	},
+	{
+		"question": "An IoT camera in your organization is discovered sending data to an unknown IP address. What should you do first?",
+		"options": [
+			"Block the IP address on the firewall.",
+			"Power off the camera.",
+			"Update the camera's firmware.",
+			"Replace the camera with a secure model."
+		],
+		"correct_index": "A"
+	},
+	{
+		"question": "Your organization plans to deploy new IoT devices. What is the best practice to ensure security before deployment?",
+		"options": [
+			"Configure default credentials.",
+			"Perform a security assessment of the devices.",
+			"Deploy them immediately to identify vulnerabilities later.",
+			"Rely on the manufacturer’s default security settings."
+		],
+		"correct_index": "B"
+	},
+	{
+		"question": "A mobile device management (MDM) system fails to apply a security policy to several devices. What should you do first?",
+		"options": [
+			"Manually enforce the policy on each device.",
+			"Investigate and resolve the MDM system issue.",
+			"Reboot all affected devices.",
+			"Switch to a different MDM solution."
+		],
+		"correct_index": "B"
+	},
+	{
+		"question": "A user reports that their smart watch connected to the corporate network is acting erratically. What should you do?",
+		"options": [
+			"Disconnect the smart watch from the network.",
+			"Advise the user to contact the manufacturer.",
+			"Reboot the smart watch.",
+			"Update the firmware of the smart watch."
+		],
+		"correct_index": "A"
+	},
+	{
+		"question": "What is the most effective way to secure mobile devices in your organization?",
+		"options": [
+			"Require employees to install antivirus apps.",
+			"Enforce mobile device management (MDM) policies.",
+			"Prohibit the use of mobile devices at work.",
+			"Ensure all devices are from the same manufacturer."
+		],
+		"correct_index": "B"
+	},
+	{
+		"question": "Your organization experiences an IoT-based DDoS attack. What is your immediate response?",
+		"options": [
+			"Disconnect all IoT devices from the network.",
+			"Reboot the affected IoT devices.",
+			"Notify law enforcement.",
+			"Upgrade the affected devices."
+		],
+		"correct_index": "A"
+	},
+	{
+		"question": "A fitness tracker provided to employees for wellness programs is suspected of leaking personal data. What action should you take?",
+		"options": [
+			"Suspend the use of fitness trackers and investigate.",
+			"Request a replacement from the manufacturer.",
+			"Advise employees to reset their trackers.",
+			"Continue using the trackers but monitor closely."
+		],
+		"correct_index": "A"
+	},
+	{
+		"question": "During a network audit, you discover several IoT devices with outdated firmware. What is the most appropriate action?",
+		"options": [
+			"Update the firmware immediately.",
+			"Disable the devices until updates are applied.",
+			"Contact the device manufacturer for advice.",
+			"Isolate the devices and schedule updates."
+		],
+		"correct_index": "D"
+	},
+	{
+		"question": "What is a key security practice when configuring IoT devices in an industrial environment?",
+		"options": [
+			"Use shared credentials for easier management.",
+			"Enable remote access for all administrators.",
+			"Segment IoT devices on a separate network.",
+			"Turn off logging to improve performance."
+		],
+		"correct_index": "C"
+	}
+]

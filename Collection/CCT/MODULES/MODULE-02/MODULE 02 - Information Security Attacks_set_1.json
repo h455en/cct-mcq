@@ -1,0 +1,242 @@
+[
+  {
+    "question_number": 1,
+    "question": "An attacker uses `nslookup` and `dig` to gather information about a target's DNS servers and records. What type of attack is this?",
+    "options": [
+      "Packet sniffing",
+      "DNS Footprinting",
+      "ARP spoofing",
+      "DoS attack"
+    ],
+    "correct_index": "B",
+    "explanation": "DNS Footprinting is a reconnaissance technique used to gather information about a target's DNS infrastructure."
+  },
+  {
+    "question_number": 2,
+    "question": "An attacker intercepts communication between two computers on a network, potentially capturing sensitive data. What type of attack is this?",
+    "options": [
+      "DNS poisoning",
+      "Man-in-the-Middle (MitM) attack",
+      "MAC flooding",
+      "IP address spoofing"
+    ],
+    "correct_index": "B",
+    "explanation": "MitM attacks involve an attacker positioning themselves between two communicating parties."
+  },
+  {
+    "question_number": 3,
+    "question": "An attacker floods a switch with MAC addresses, overflowing the MAC address table and causing the switch to forward traffic to all ports. What type of attack is this?",
+    "options": [
+      "ARP spoofing",
+      "MAC flooding",
+      "DHCP starvation",
+      "DNS amplification"
+    ],
+    "correct_index": "B",
+    "explanation": "MAC flooding overwhelms the switch's CAM table, leading to network instability and potential eavesdropping."
+  },
+  {
+    "question_number": 4,
+    "question": "An attacker sends a large number of DNS requests to a DNS server, using spoofed source IP addresses to amplify the attack against a target. What type of attack is this?",
+    "options": [
+      "DNS poisoning",
+      "DNS amplification attack",
+      "DoS attack",
+      "DHCP spoofing"
+    ],
+    "correct_index": "B",
+    "explanation": "DNS amplification attacks leverage publicly accessible DNS servers to amplify the volume of traffic directed at a target."
+  },
+  {
+    "question_number": 5,
+    "question": "An attacker crafts malicious SQL queries to exploit vulnerabilities in a web application's database interactions. What type of attack is this?",
+    "options": [
+      "Cross-Site Scripting (XSS)",
+      "SQL Injection",
+      "Directory traversal",
+      "Cross-Site Request Forgery (CSRF)"
+    ],
+    "correct_index": "B",
+    "explanation": "SQL Injection attacks inject malicious SQL code into user input fields to manipulate database queries."
+  },
+  {
+    "question_number": 6,
+    "question": "An attacker injects malicious scripts into trusted websites, which are then executed in the browsers of unsuspecting users. What type of attack is this?",
+    "options": [
+      "Cross-Site Scripting (XSS)",
+      "SQL Injection",
+      "Parameter tampering",
+      "Session hijacking"
+    ],
+    "correct_index": "A",
+    "explanation": "XSS attacks inject client-side scripts into web pages viewed by other users."
+  },
+  {
+    "question_number": 7,
+    "question": "An attacker modifies URL parameters to access unauthorized resources or manipulate application behavior. What type of attack is this?",
+    "options": [
+      "Parameter tampering",
+      "Directory traversal",
+      "Cross-Site Request Forgery (CSRF)",
+      "Server-Side Request Forgery (SSRF)"
+    ],
+    "correct_index": "A",
+    "explanation": "Parameter tampering involves modifying URL parameters to alter application logic or access data."
+  },
+  {
+    "question_number": 8,
+    "question": "An attacker exploits a vulnerability to access files and directories outside the web server's root directory. What type of attack is this?",
+    "options": [
+      "Directory traversal",
+      "Cross-Site Request Forgery (CSRF)",
+      "Server-Side Request Forgery (SSRF)",
+      "XML External Entity (XXE) injection"
+    ],
+    "correct_index": "A",
+    "explanation": "Directory traversal attacks allow attackers to navigate the file system beyond intended boundaries."
+  },
+  {
+    "question_number": 9,
+    "question": "An attacker tricks a user into performing unwanted actions on a website where they are authenticated. What type of attack is this?",
+    "options": [
+      "Cross-Site Request Forgery (CSRF)",
+      "Server-Side Request Forgery (SSRF)",
+      "XML External Entity (XXE) injection",
+      "Session hijacking"
+    ],
+    "correct_index": "A",
+    "explanation": "CSRF attacks exploit the trust that a website has in an authenticated user."
+  },
+  {
+    "question_number": 10,
+    "question": "An attacker manipulates a web application to make requests to internal resources that are not publicly accessible. What type of attack is this?",
+    "options": [
+      "Server-Side Request Forgery (SSRF)",
+      "XML External Entity (XXE) injection",
+      "Session hijacking",
+      "DNS amplification"
+    ],
+    "correct_index": "A",
+    "explanation": "SSRF attacks allow an attacker to make requests from the server on behalf of the application."
+  },
+    {
+    "question_number": 11,
+    "question": "An attacker exploits a vulnerability in XML processing to access internal files or network resources. What type of attack is this?",
+    "options": [
+      "XML External Entity (XXE) injection",
+      "Session hijacking",
+      "DNS amplification",
+      "Login/Credential Stuffing Attacks"
+    ],
+    "correct_index": "A",
+    "explanation": "XXE injection exploits vulnerabilities in XML parsers to access external entities."
+  },
+  {
+    "question_number": 12,
+    "question": "An attacker compromises a website that is frequently visited by a specific group of users, hoping to infect their systems. What type of attack is this?",
+    "options": [
+      "Watering hole attack",
+      "Session replay attack",
+      "API DDoS attack",
+      "Malicious code execution"
+    ],
+    "correct_index": "A",
+    "explanation": "Watering hole attacks target a specific group by compromising a website they frequently visit."
+  },
+  {
+    "question_number": 13,
+    "question": "An attacker replays captured network traffic to re-establish a previous user session. What type of attack is this?",
+    "options": [
+      "Session replay attack",
+      "API DDoS attack",
+      "SSL stripping",
+      "Malicious code execution"
+    ],
+    "correct_index": "A",
+    "explanation": "Session replay attacks reuse captured session data to impersonate a user."
+  },
+  {
+    "question_number": 14,
+    "question": "An attacker floods an API with requests to overwhelm the server and make it unavailable. What type of attack is this?",
+    "options": [
+      "API DDoS attack",
+      "SSL stripping",
+      "Malicious code execution",
+      "Buffer overflow"
+    ],
+    "correct_index": "A",
+    "explanation": "API DDoS attacks target the availability of APIs."
+  },
+  {
+    "question_number": 15,
+    "question": "An attacker downgrades a secure HTTPS connection to HTTP to intercept traffic. What type of attack is this?",
+    "options": [
+      "SSL stripping",
+      "Malicious code execution",
+      "Buffer overflow",
+      "Password cracking"
+    ],
+    "correct_index": "A",
+    "explanation": "SSL stripping removes the encryption provided by HTTPS."
+  },
+    {
+    "question_number": 16,
+    "question": "An attacker tries a large number of commonly used passwords against user accounts to gain unauthorized access. What type of attack is this?",
+    "options": [
+      "Dictionary attack",
+      "Brute-force attack",
+      "Password spraying",
+      "Rule-based attack"
+    ],
+    "correct_index": "A",
+    "explanation": "Dictionary attacks use lists of common passwords to attempt logins."
+  },
+    {
+    "question_number": 17,
+    "question": "An attacker tries every possible combination of characters to guess a password. What type of attack is this?",
+    "options": [
+      "Dictionary attack",
+      "Brute-force attack",
+      "Password spraying",
+      "Rule-based attack"
+    ],
+    "correct_index": "B",
+    "explanation": "Brute-force attacks exhaustively try all possible password combinations."
+  },
+  {
+    "question_number": 18,
+    "question": "An attacker attempts to guess passwords by trying a few common passwords against many different user accounts. What type of attack is this?",
+    "options": [
+      "Dictionary attack",
+      "Brute-force attack",
+      "Password spraying",
+      "Rule-based attack"
+    ],
+    "correct_index": "C",
+    "explanation": "Password spraying is a targeted attack against multiple accounts with a small set of common passwords."
+  },
+  {
+    "question_number": 19,
+    "question": "An attacker uses pre-computed hashes of passwords to quickly compare against captured password hashes. What type of attack is this?",
+    "options": [
+      "Hash injection/Pass-the-Hash (PtH) attack",
+      "Rainbow table attack",
+      "Password guessing",
+      "Default passwords"
+    ],
+    "correct_index": "B",
+    "explanation": "Rainbow tables are pre-computed tables of password hashes used to speed up password cracking."
+  },
+  {
+    "question_number": 20,
+    "question": "An attacker exploits a flaw in software that was previously unknown to the vendor or the public. What type of attack leverages this flaw?",
+    "options": [
+      "Zero-day Attacks",
+      "Buffer Overflow",
+      "Return-Oriented Programming (ROP) Attack",
+      "Privilege Escalation"
+    ],
+    "correct_index": "A",
+    "explanation": "Zero-day attacks exploit previously unknown vulnerabilities."
+  }
+]

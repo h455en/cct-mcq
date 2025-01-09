@@ -1,0 +1,242 @@
+[
+    {
+        "question_number": 1,
+        "question": "John, a system administrator, needs to ensure that confidential files stored on the company's Windows server are protected against unauthorized access. He decides to use built-in encryption tools. Which type of encryption is suitable for this scenario?",
+        "options": [
+            "Data in transit encryption",
+            "Removable media encryption",
+            "File-level encryption",
+            "Database encryption"
+        ],
+        "correct_index": "C",
+        "explanation": "File-level encryption secures individual files, making it ideal for protecting confidential files stored locally or on a server."
+    },
+    {
+        "question_number": 2,
+        "question": "Emma, a data security officer, needs to classify the organization's data to comply with regulatory standards. Which of the following roles is responsible for determining the appropriate classification level?",
+        "options": [
+            "Data Custodian",
+            "Data Owner",
+            "Data User",
+            "System Administrator"
+        ],
+        "correct_index": "B",
+        "explanation": "The Data Owner is responsible for classifying data according to its sensitivity and regulatory requirements."
+    },
+    {
+        "question_number": 3,
+        "question": "A company wants to back up its data daily and ensure faster recovery. Which type of backup should be used to back up only the changes since the last backup, while reducing storage space?",
+        "options": [
+            "Full Backup",
+            "Differential Backup",
+            "Incremental Backup",
+            "Mirror Backup"
+        ],
+        "correct_index": "C",
+        "explanation": "Incremental backups save only the data that has changed since the last backup, reducing storage and backup time."
+    },
+    {
+        "question_number": 4,
+        "question": "Which of the following states of data is described as 'data actively being processed or used by applications or systems'?",
+        "options": [
+            "Data at Rest",
+            "Data in Motion",
+            "Data in Use",
+            "Data in Transition"
+        ],
+        "correct_index": "C",
+        "explanation": "Data in Use refers to data actively being processed or accessed in real-time by applications or users."
+    },
+    {
+        "question_number": 5,
+        "question": "Maria needs to ensure encrypted connections between the client and a web server. Which certificate type should she install and configure on the server?",
+        "options": [
+            "Email certificate",
+            "Digital signature certificate",
+            "SSL/TLS certificate",
+            "VPN certificate"
+        ],
+        "correct_index": "C",
+        "explanation": "An SSL/TLS certificate encrypts the communication channel, ensuring secure data transmission between a web server and its clients."
+    },
+    {
+        "question_number": 6,
+        "question": "Which RAID level provides both data redundancy and improved read performance by mirroring data across two disks?",
+        "options": [
+            "RAID 0",
+            "RAID 1",
+            "RAID 5",
+            "RAID 10"
+        ],
+        "correct_index": "B",
+        "explanation": "RAID 1 uses mirroring, providing redundancy by storing identical copies of data on two disks."
+    },
+    {
+        "question_number": 7,
+        "question": "Liam is configuring access control lists (ACLs) on a Linux server. Which command should he use to view and modify file permissions using ACLs?",
+        "options": [
+            "chmod",
+            "ls",
+            "getfacl and setfacl",
+            "umask"
+        ],
+        "correct_index": "C",
+        "explanation": "getfacl and setfacl are used in Linux to view and modify ACLs for files and directories."
+    },
+    {
+        "question_number": 8,
+        "question": "Sophia wants to enforce data security by masking sensitive information in the database before sharing it with external teams. Which technique achieves this?",
+        "options": [
+            "Tokenization",
+            "Data Masking",
+            "Database Encryption",
+            "Firewall Configuration"
+        ],
+        "correct_index": "B",
+        "explanation": "Data masking hides sensitive information by replacing it with fictional data that retains the format and usability."
+    },
+    {
+        "question_number": 9,
+        "question": "What is the primary purpose of NTFS permissions when applied to files and folders in Windows?",
+        "options": [
+            "Encrypting data",
+            "Restricting access to authorized users",
+            "Monitoring access logs",
+            "Configuring disk quotas"
+        ],
+        "correct_index": "B",
+        "explanation": "NTFS permissions are used to control access to files and folders, ensuring that only authorized users can access or modify them."
+    },
+    {
+        "question_number": 10,
+        "question": "Which of the following is NOT a type of backup strategy?",
+        "options": [
+            "Full Backup",
+            "Incremental Backup",
+            "Selective Backup",
+            "Differential Backup"
+        ],
+        "correct_index": "C",
+        "explanation": "Selective backup is not a standard backup strategy. The three main types are full, incremental, and differential."
+    },
+    {
+        "question_number": 11,
+        "question": "A security administrator needs to grant temporary access to a shared folder for a contractor using a Windows server. The contractor should only be able to read the files. Which type of NTFS permission should the administrator apply?",
+        "options": [
+            "Full Control",
+            "Read",
+            "Modify",
+            "Write"
+        ],
+        "correct_index": "B",
+        "explanation": "The 'Read' permission allows the contractor to view and read files without making any changes or executing programs."
+    },
+    {
+        "question_number": 12,
+        "question": "A database administrator wants to ensure sensitive customer data is encrypted at the database level, without requiring application-level changes. Which feature should be implemented in SQL Server?",
+        "options": [
+            "Transparent Data Encryption (TDE)",
+            "File System Encryption",
+            "Secure Sockets Layer (SSL)",
+            "Data Masking"
+        ],
+        "correct_index": "A",
+        "explanation": "Transparent Data Encryption (TDE) encrypts data at the database level without affecting applications, ensuring data at rest is secure."
+    },
+    {
+        "question_number": 13,
+        "question": "An organization is preparing a data retention policy. Which of the following is a key consideration for defining retention periods?",
+        "options": [
+            "Data classification levels",
+            "Employee count",
+            "Number of backup devices",
+            "Network bandwidth"
+        ],
+        "correct_index": "A",
+        "explanation": "Data classification levels help determine retention periods by defining the sensitivity and regulatory requirements of the data."
+    },
+    {
+        "question_number": 14,
+        "question": "A security professional needs to enforce encryption for email communication in Microsoft Outlook. Which tool or method should be implemented?",
+        "options": [
+            "Digital Certificates",
+            "Disk Encryption",
+            "Firewall Rules",
+            "Antivirus Software"
+        ],
+        "correct_index": "A",
+        "explanation": "Digital certificates enable encryption for emails, ensuring that the communication is secure and authenticated."
+    },
+    {
+        "question_number": 15,
+        "question": "A system administrator is configuring Access Control Lists (ACLs) for Linux. Which command is used to set ACL permissions on a file?",
+        "options": [
+            "chmod",
+            "setfacl",
+            "ls",
+            "chown"
+        ],
+        "correct_index": "B",
+        "explanation": "The 'setfacl' command is used in Linux to configure ACLs and manage file and folder permissions beyond traditional ownership models."
+    },
+    {
+        "question_number": 16,
+        "question": "An IT manager is tasked with ensuring data backups are resistant to ransomware attacks. Which backup strategy should be prioritized?",
+        "options": [
+            "Onsite backup only",
+            "Incremental backups stored on the same network",
+            "Air-gapped or offline backups",
+            "Continuous backups with no retention"
+        ],
+        "correct_index": "C",
+        "explanation": "Air-gapped or offline backups are isolated from the main network, reducing the risk of ransomware infection."
+    },
+    {
+        "question_number": 17,
+        "question": "A company wants to allow users to share sensitive data securely but restrict unauthorized redistribution. Which technology should be used?",
+        "options": [
+            "Rights Management Services (RMS)",
+            "Firewall Rules",
+            "Data Masking",
+            "Transparent Data Encryption"
+        ],
+        "correct_index": "A",
+        "explanation": "Rights Management Services (RMS) provides control over who can view, edit, or redistribute shared files, ensuring data security."
+    },
+    {
+        "question_number": 18,
+        "question": "A business wants to mask credit card numbers in a production database to comply with PCI-DSS regulations. Which data masking technique should be applied?",
+        "options": [
+            "Shuffling",
+            "Tokenization",
+            "Dynamic Masking",
+            "Data Encryption"
+        ],
+        "correct_index": "B",
+        "explanation": "Tokenization replaces sensitive data (e.g., credit card numbers) with unique identifiers (tokens) that cannot be used outside the secure system."
+    },
+    {
+        "question_number": 19,
+        "question": "Which RAID level provides the best balance of performance, redundancy, and storage efficiency?",
+        "options": [
+            "RAID 0",
+            "RAID 1",
+            "RAID 5",
+            "RAID 10"
+        ],
+        "correct_index": "C",
+        "explanation": "RAID 5 offers a balance of performance, fault tolerance through parity, and efficient use of storage."
+    },
+    {
+        "question_number": 20,
+        "question": "A company needs to securely transmit sensitive files to a remote server. Which protocol should they use?",
+        "options": [
+            "HTTP",
+            "FTP",
+            "SFTP",
+            "SMTP"
+        ],
+        "correct_index": "C",
+        "explanation": "SFTP (Secure File Transfer Protocol) encrypts data in transit, ensuring secure file transfers over the network."
+    }
+]

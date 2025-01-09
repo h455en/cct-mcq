@@ -1,0 +1,242 @@
+[
+    {
+        "question_number": 1,
+        "question": "A financial institution needs to secure transactions between its online platform and clients using cryptographic techniques. They require both authentication and confidentiality. Which encryption method is best suited for this scenario?",
+        "options": [
+            "Symmetric Encryption",
+            "Asymmetric Encryption",
+            "Steganography",
+            "Hashing"
+        ],
+        "correct_index": "B",
+        "explanation": "Asymmetric encryption uses a public and private key pair to provide both confidentiality and authentication, making it ideal for secure transactions."
+    },
+    {
+        "question_number": 2,
+        "question": "A security administrator notices that the MD5 hash of a critical file has remained the same for years despite regular updates to the file. What potential vulnerability might this indicate?",
+        "options": [
+            "File integrity monitoring is disabled.",
+            "MD5 hash collisions.",
+            "File encryption is weak.",
+            "Incorrect file permissions."
+        ],
+        "correct_index": "B",
+        "explanation": "MD5 is prone to hash collisions, where two different inputs produce the same hash, compromising its reliability for file integrity."
+    },
+    {
+        "question_number": 3,
+        "question": "During a security audit, you discover that an organization's Certificate Revocation List (CRL) is not updated frequently. What risk does this pose?",
+        "options": [
+            "Certificates may not function properly.",
+            "Compromised certificates could remain valid.",
+            "Increased certificate issuance costs.",
+            "Incompatibility with client browsers."
+        ],
+        "correct_index": "B",
+        "explanation": "An outdated CRL means that revoked or compromised certificates might still be trusted, posing a significant security risk."
+    },
+    {
+        "question_number": 4,
+        "question": "A company uses AES encryption to secure sensitive files. Which cipher mode should they select to ensure data integrity and confidentiality during encryption?",
+        "options": [
+            "Electronic Codebook (ECB)",
+            "Cipher Block Chaining (CBC)",
+            "Galois/Counter Mode (GCM)",
+            "Output Feedback (OFB)"
+        ],
+        "correct_index": "C",
+        "explanation": "GCM provides both data confidentiality and integrity, making it a preferred mode for secure encryption."
+    },
+    {
+        "question_number": 5,
+        "question": "An organization wants to implement blockchain technology to record transactions securely. Which cryptographic principle is fundamental to blockchain?",
+        "options": [
+            "Symmetric encryption",
+            "Public Key Infrastructure (PKI)",
+            "Hashing",
+            "Steganography"
+        ],
+        "correct_index": "C",
+        "explanation": "Blockchain relies heavily on hashing to ensure the immutability and integrity of transaction records."
+    },
+    {
+        "question_number": 6,
+        "question": "A web application developer needs to ensure secure key exchange between a client and a server. Which cryptographic technique should be used?",
+        "options": [
+            "Perfect Forward Secrecy (PFS)",
+            "Symmetric key distribution",
+            "Hashing",
+            "Digital signature"
+        ],
+        "correct_index": "A",
+        "explanation": "PFS ensures that even if a private key is compromised, past communications remain secure by using unique session keys for each exchange."
+    },
+    {
+        "question_number": 7,
+        "question": "An attacker exploits a weak hashing algorithm to reverse-engineer user passwords stored in a database. Which cryptographic concept can mitigate this risk?",
+        "options": [
+            "Key stretching",
+            "Cipher chaining",
+            "Digital certificates",
+            "Steganography"
+        ],
+        "correct_index": "A",
+        "explanation": "Key stretching increases the computational cost of generating hashes, making it harder for attackers to crack passwords."
+    },
+    {
+        "question_number": 8,
+        "question": "A company’s IT department is asked to implement PKI to secure internal communications. Which component is essential for managing the trust hierarchy?",
+        "options": [
+            "Digital certificates",
+            "Certification Authorities (CAs)",
+            "Hash functions",
+            "Symmetric keys"
+        ],
+        "correct_index": "B",
+        "explanation": "CAs issue and manage digital certificates, establishing the trust hierarchy in a PKI environment."
+    },
+    {
+        "question_number": 9,
+        "question": "Which cryptographic algorithm should be chosen for encrypting large volumes of data efficiently while ensuring strong security?",
+        "options": [
+            "RSA",
+            "DSA",
+            "AES",
+            "SHA-256"
+        ],
+        "correct_index": "C",
+        "explanation": "AES is a symmetric encryption algorithm known for its speed and strong security, making it ideal for large data sets."
+    },
+    {
+        "question_number": 10,
+        "question": "A security analyst uses HMAC to secure API communication. What advantage does HMAC provide over simple hashing?",
+        "options": [
+            "It is faster than hashing.",
+            "It provides integrity and authenticity.",
+            "It eliminates the need for keys.",
+            "It encrypts the data."
+        ],
+        "correct_index": "B",
+        "explanation": "HMAC adds a secret key to the hashing process, ensuring both integrity and authenticity of the message."
+    },
+    {
+        "question_number": 11,
+        "question": "An organization needs to implement encryption for email communications using certificates. Which cryptographic standard is essential in this scenario?",
+        "options": [
+            "PKI",
+            "MD5",
+            "AES",
+            "CHAP"
+        ],
+        "correct_index": "A",
+        "explanation": "PKI provides the framework for issuing and managing digital certificates used in email encryption."
+    },
+    {
+        "question_number": 12,
+        "question": "Which cryptographic method ensures that data cannot be altered during transit without detection?",
+        "options": [
+            "Hashing",
+            "Symmetric encryption",
+            "Steganography",
+            "Digital certificate"
+        ],
+        "correct_index": "A",
+        "explanation": "Hashing creates a unique fixed-size digest of the data, which changes if the data is altered, ensuring integrity."
+    },
+    {
+        "question_number": 13,
+        "question": "A network engineer configures a VPN to use IKE for secure communication. What is the role of IKE in this setup?",
+        "options": [
+            "Encrypts the data",
+            "Manages key exchange",
+            "Generates digital certificates",
+            "Performs hashing"
+        ],
+        "correct_index": "B",
+        "explanation": "IKE handles the secure exchange of cryptographic keys used to establish VPN connections."
+    },
+    {
+        "question_number": 14,
+        "question": "An enterprise uses certificate pinning in its mobile application. What primary risk does this practice mitigate?",
+        "options": [
+            "Certificate revocation delays",
+            "Man-in-the-middle attacks",
+            "Weak encryption algorithms",
+            "Unauthorized certificate issuance"
+        ],
+        "correct_index": "B",
+        "explanation": "Certificate pinning ensures the application trusts only specific certificates, reducing the risk of MITM attacks."
+    },
+    {
+        "question_number": 15,
+        "question": "What is a significant limitation of cryptography when protecting sensitive information?",
+        "options": [
+            "It cannot ensure data integrity.",
+            "It does not protect against insider threats.",
+            "It is incompatible with cloud environments.",
+            "It is less effective for large data volumes."
+        ],
+        "correct_index": "B",
+        "explanation": "Cryptography cannot prevent authorized users with malicious intent (insider threats) from accessing sensitive information."
+    },
+    {
+        "question_number": 16,
+        "question": "A security administrator needs to verify the authenticity of a sender's email. Which cryptographic tool is best suited for this purpose?",
+        "options": [
+            "Hashing algorithm",
+            "Digital signature",
+            "Symmetric encryption",
+            "Steganography"
+        ],
+        "correct_index": "B",
+        "explanation": "Digital signatures verify the sender's identity and ensure that the message has not been tampered with."
+    },
+    {
+        "question_number": 17,
+        "question": "During a compliance audit, it was noted that some certificates have expired, leading to secure connections failing. Which cryptographic mechanism can help prevent this issue?",
+        "options": [
+            "Online Certificate Status Protocol (OCSP)",
+            "Perfect Forward Secrecy (PFS)",
+            "Certificate Pinning",
+            "Key Escrow"
+        ],
+        "correct_index": "A",
+        "explanation": "OCSP allows clients to check the validity of certificates in real-time, ensuring expired or revoked certificates are not trusted."
+    },
+    {
+        "question_number": 18,
+        "question": "A development team needs to hash passwords securely for a web application. Which hashing algorithm is recommended to minimize vulnerabilities?",
+        "options": [
+            "MD5",
+            "SHA-256",
+            "DES",
+            "RC4"
+        ],
+        "correct_index": "B",
+        "explanation": "SHA-256 is a secure and modern hashing algorithm suitable for protecting passwords against brute force attacks."
+    },
+    {
+        "question_number": 19,
+        "question": "A legal requirement mandates that encrypted files must remain accessible for years even if technology changes. Which cryptographic practice can address this?",
+        "options": [
+            "Steganography",
+            "Key Escrow",
+            "Hashing",
+            "Digital Certificate Renewal"
+        ],
+        "correct_index": "B",
+        "explanation": "Key escrow ensures that encryption keys are securely stored and accessible for legal and compliance purposes in the future."
+    },
+    {
+        "question_number": 20,
+        "question": "Which cryptographic technique is most appropriate for authenticating users without transmitting passwords over the network?",
+        "options": [
+            "Challenge-Handshake Authentication Protocol (CHAP)",
+            "Symmetric Encryption",
+            "RSA Encryption",
+            "Digital Certificates"
+        ],
+        "correct_index": "A",
+        "explanation": "CHAP uses a challenge-response mechanism to authenticate users without transmitting their passwords, enhancing security."
+    }
+]

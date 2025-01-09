@@ -1,0 +1,222 @@
+[
+    {
+        "question_number":  1,
+        "question":  "What is the primary goal of a DNS poisoning attack?",
+        "options":  [
+                        "To overload a DNS server",
+                        "To redirect traffic to a malicious site",
+                        "To steal DNS records",
+                        "To disrupt network routing"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question_number":  2,
+        "question":  "Which attack involves unauthorized changes to a domain name registration?",
+        "options":  [
+                        "DNS Poisoning",
+                        "Domain Hijacking",
+                        "ARP Spoofing",
+                        "DHCP Spoofing"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question_number":  3,
+        "question":  "What happens during a MAC flooding attack?",
+        "options":  [
+                        "The switch’s CAM table is overflowed",
+                        "IP addresses are duplicated",
+                        "ARP tables are poisoned",
+                        "DNS requests are intercepted"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question_number":  4,
+        "question":  "Which type of attack involves spoofing a device’s MAC address?",
+        "options":  [
+                        "MAC Flooding",
+                        "MAC Spoofing",
+                        "ARP Spoofing",
+                        "DHCP Starvation"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question_number":  5,
+        "question":  "What is the purpose of a Distributed Reflection Denial-of-Service (DRDoS) attack?",
+        "options":  [
+                        "To amplify attack traffic using third-party servers",
+                        "To flood a victim with direct traffic",
+                        "To compromise a single target",
+                        "To exhaust a server’s bandwidth"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question_number":  6,
+        "question":  "What distinguishes an Advanced Persistent Threat (APT) from other attacks?",
+        "options":  [
+                        "It is highly targeted and long-term",
+                        "It uses only malware",
+                        "It focuses solely on physical security",
+                        "It relies on brute force methods"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question_number":  7,
+        "question":  "What is the key characteristic of adversarial AI attacks?",
+        "options":  [
+                        "They exploit weaknesses in AI models",
+                        "They target physical infrastructure",
+                        "They only affect web applications",
+                        "They depend on social engineering"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question_number":  8,
+        "question":  "Which type of attack is commonly used to bypass access controls in web applications?",
+        "options":  [
+                        "SQL Injection",
+                        "Cross-Site Scripting (XSS)",
+                        "Parameter Tampering",
+                        "ARP Spoofing"
+                    ],
+        "correct_index":  "C"
+    },
+    {
+        "question_number":  9,
+        "question":  "What does a Cross-Site Request Forgery (CSRF) attack exploit?",
+        "options":  [
+                        "A victim\u0027s browser’s trust in the web server",
+                        "Improper input validation",
+                        "Weak cryptographic algorithms",
+                        "Unsecured APIs"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question_number":  10,
+        "question":  "What is the primary goal of a Server-Side Request Forgery (SSRF) attack?",
+        "options":  [
+                        "To access internal resources from the server",
+                        "To execute arbitrary SQL commands",
+                        "To inject malicious scripts",
+                        "To flood the server with traffic"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question_number":  11,
+        "question":  "What does the Watering Hole attack aim to achieve?",
+        "options":  [
+                        "Target specific users by compromising trusted websites",
+                        "Flood websites with traffic",
+                        "Steal cookies from web browsers",
+                        "Bypass firewalls using malicious payloads"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question_number":  12,
+        "question":  "Which vulnerability is exploited by XML External Entity (XXE) injection?",
+        "options":  [
+                        "Insecure XML parsing",
+                        "Improper authentication",
+                        "Weak session management",
+                        "Insufficient encryption"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question_number":  13,
+        "question":  "What type of attack involves replaying intercepted session data?",
+        "options":  [
+                        "Man-in-the-Browser Attack",
+                        "Session Replay Attack",
+                        "CSRF Attack",
+                        "Parameter Tampering"
+                    ],
+        "correct_index":  "B"
+    },
+    {
+        "question_number":  14,
+        "question":  "What is a key objective of DNS amplification attacks?",
+        "options":  [
+                        "To send a flood of traffic to the victim",
+                        "To corrupt DNS server records",
+                        "To spoof IP addresses",
+                        "To hijack DNS queries"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question_number":  15,
+        "question":  "Which attack compromises APIs by targeting insecure endpoints?",
+        "options":  [
+                        "Server-Side Request Forgery (SSRF)",
+                        "Application-level DoS",
+                        "API attacks",
+                        "DNS amplification"
+                    ],
+        "correct_index":  "C"
+    },
+    {
+        "question_number":  16,
+        "question":  "What is the impact of a Directory Traversal attack?",
+        "options":  [
+                        "Gaining access to unauthorized files or directories",
+                        "Executing remote code",
+                        "Hijacking user sessions",
+                        "Exfiltrating database credentials"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question_number":  17,
+        "question":  "What does an application-level DoS attack target?",
+        "options":  [
+                        "The application layer to exhaust resources",
+                        "The network infrastructure",
+                        "Physical hardware devices",
+                        "DNS servers"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question_number":  18,
+        "question":  "What is the main purpose of a Man-in-the-Browser attack?",
+        "options":  [
+                        "To intercept and modify transactions in the browser",
+                        "To flood the network with traffic",
+                        "To hijack DNS queries",
+                        "To perform privilege escalation"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question_number":  19,
+        "question":  "What does the Diamond Model emphasize in intrusion analysis?",
+        "options":  [
+                        "The relationship between adversary, victim, capability, and infrastructure",
+                        "Attack vectors and vulnerabilities",
+                        "Application-layer threats",
+                        "Mitigation strategies"
+                    ],
+        "correct_index":  "A"
+    },
+    {
+        "question_number":  20,
+        "question":  "What is the goal of a DHCP spoofing attack?",
+        "options":  [
+                        "To provide false IP configuration details",
+                        "To exhaust DHCP server IPs",
+                        "To clone MAC addresses",
+                        "To intercept ARP requests"
+                    ],
+        "correct_index":  "A"
+    }
+]

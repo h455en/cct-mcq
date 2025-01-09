@@ -1,0 +1,242 @@
+[
+  {
+    "question_number": 1,
+    "question": "A user attempts to access a file they do not have permission to view. The system denies the access based on pre-defined rules set by the file owner. Which access control model is in use?",
+    "options": [
+      "Mandatory Access Control (MAC)",
+      "Discretionary Access Control (DAC)",
+      "Role-Based Access Control (RBAC)",
+      "Attribute-Based Access Control (ABAC)"
+    ],
+    "correct_index": "B",
+    "explanation": "DAC allows the owner of a resource to control who has access to it."
+  },
+  {
+    "question_number": 2,
+    "question": "In a highly secure environment, access to sensitive data is determined by security labels assigned to both users and data. The system compares these labels to grant or deny access. Which access control model is this?",
+    "options": [
+      "DAC",
+      "RBAC",
+      "MAC",
+      "ABAC"
+    ],
+    "correct_index": "C",
+    "explanation": "MAC uses security labels (classifications and clearances) to enforce access control based on system-wide policies."
+  },
+  {
+    "question_number": 3,
+    "question": "Users in a company are assigned roles (e.g., 'Manager,' 'Employee,' 'Guest'). Access to resources is granted based on these roles. Which access control model is being used?",
+    "options": [
+      "DAC",
+      "MAC",
+      "RBAC",
+      "ABAC"
+    ],
+    "correct_index": "C",
+    "explanation": "RBAC grants permissions based on a user's assigned role within the organization."
+  },
+  {
+    "question_number": 4,
+    "question": "A user logs in using their username and password, and then receives a one-time code on their phone to complete the login process. What type of authentication is this?",
+    "options": [
+      "Password authentication",
+      "Biometric authentication",
+      "Two-factor authentication",
+      "Single Sign-On (SSO)"
+    ],
+    "correct_index": "C",
+    "explanation": "Two-factor authentication requires two different authentication factors (something you know and something you have)."
+  },
+  {
+    "question_number": 5,
+    "question": "An employee uses their fingerprint to access a secure area. What type of authentication is this?",
+    "options": [
+      "Password authentication",
+      "Biometric authentication",
+      "Two-factor authentication",
+      "Smart card authentication"
+    ],
+    "correct_index": "B",
+    "explanation": "Biometric authentication uses unique biological characteristics for verification."
+  },
+  {
+    "question_number": 6,
+    "question": "An employee uses a card containing a chip to gain access to a building. What type of authentication is this?",
+    "options": [
+      "Password authentication",
+      "Biometric authentication",
+      "Two-factor authentication",
+      "Smart card authentication"
+    ],
+    "correct_index": "D",
+    "explanation": "Smart cards use embedded chips to store and process authentication information."
+  },
+  {
+    "question_number": 7,
+    "question": "A user logs into their company's network and can then access various applications without having to re-enter their credentials. What type of authentication is this?",
+    "options": [
+      "Password authentication",
+      "Two-factor authentication",
+      "Single Sign-On (SSO)",
+      "Multi-factor authentication"
+    ],
+    "correct_index": "C",
+    "explanation": "SSO allows users to authenticate once and access multiple related applications."
+  },
+  {
+    "question_number": 8,
+    "question": "In the context of access control, what does 'authorization' mean?",
+    "options": [
+      "Verifying the user's identity.",
+      "Determining what a user is allowed to do after they have been authenticated.",
+      "Tracking user activity and resource usage.",
+      "Creating user accounts and assigning passwords."
+    ],
+    "correct_index": "B",
+    "explanation": "Authorization determines the level of access a user has to resources."
+  },
+  {
+    "question_number": 9,
+    "question": "In the context of access control, what does 'accounting' mean?",
+    "options": [
+      "Verifying the user's identity.",
+      "Determining what a user is allowed to do.",
+      "Tracking user activity and resource usage.",
+      "Creating user accounts and assigning passwords."
+    ],
+    "correct_index": "C",
+    "explanation": "Accounting (or auditing) logs user actions for accountability and security analysis."
+  },
+  {
+    "question_number": 10,
+    "question": "A guest account on a network has limited access to resources and is typically temporary. What type of account is this?",
+    "options": [
+      "Administrator account",
+      "Standard user account",
+      "Service account",
+      "Guest account"
+    ],
+    "correct_index": "D",
+    "explanation": "Guest accounts provide temporary access for visitors or external users."
+  },
+    {
+    "question_number": 11,
+    "question": "Which access control model is often used in operating systems for file permissions?",
+    "options": [
+      "MAC",
+      "DAC",
+      "RBAC",
+      "ABAC"
+    ],
+    "correct_index": "B",
+    "explanation": "Operating systems typically use DAC, where file owners control permissions."
+  },
+  {
+    "question_number": 12,
+    "question": "In MAC, who controls access to resources?",
+    "options": [
+      "The resource owner",
+      "The system administrator or a central authority",
+      "The user requesting access",
+      "The application itself"
+    ],
+    "correct_index": "B",
+    "explanation": "MAC uses system-wide policies enforced by a central authority."
+  },
+  {
+    "question_number": 13,
+    "question": "Which of the following describes 'identification' in IAM?",
+    "options": [
+      "Verifying the identity of a user or process.",
+      "Granting or denying access to resources.",
+      "Tracking user activity.",
+      "Assigning roles to users."
+    ],
+    "correct_index": "A",
+    "explanation": "Identification establishes who or what is requesting access."
+  },
+  {
+    "question_number": 14,
+    "question": "What is the main purpose of User Identity Management (IDM)?",
+    "options": [
+      "Managing user accounts, credentials, and attributes throughout their lifecycle.",
+      "Controlling access to network resources.",
+      "Auditing user activity.",
+      "Enforcing security policies."
+    ],
+    "correct_index": "A",
+    "explanation": "IDM encompasses the processes of creating, managing, and deleting user identities."
+  },
+  {
+    "question_number": 15,
+    "question": "What is a common term for denying access to a resource based on authorization rules?",
+    "options": [
+      "Authentication",
+      "Auditing",
+      "Access control enforcement",
+      "Identification"
+    ],
+    "correct_index": "C",
+    "explanation": "Access control enforcement is the process of putting authorization decisions into action."
+  },
+    {
+    "question_number": 16,
+    "question": "Which of the following is NOT a typical type of account?",
+    "options": [
+      "User account",
+      "Administrator account",
+      "Service account",
+      "Firewall account"
+    ],
+    "correct_index": "D",
+    "explanation": "While firewalls have configurations, they don't have user accounts in the same way as users, administrators, or services do."
+  },
+    {
+    "question_number": 17,
+    "question": "What is the risk of having many administrator accounts in a system?",
+    "options": [
+      "Simplified user management.",
+      "Increased attack surface and potential for misuse of privileges.",
+      "Improved system performance.",
+      "Enhanced security auditing."
+    ],
+    "correct_index": "B",
+    "explanation": "More admin accounts increase the potential damage if one is compromised."
+  },
+  {
+    "question_number": 18,
+    "question": "In RBAC, what is a 'permission'?",
+    "options": [
+      "A set of users.",
+      "An action that can be performed on a resource.",
+      "A collection of permissions.",
+      "A unique identifier for a user."
+    ],
+    "correct_index": "B",
+    "explanation": "A permission defines what a user can do with a specific resource (e.g., read, write, execute)."
+  },
+  {
+    "question_number": 19,
+    "question": "What is a major advantage of using RBAC over DAC?",
+    "options": [
+      "Simpler management of access controls in larger organizations.",
+      "More granular control over individual resources.",
+      "Increased performance of access control checks.",
+      "Better support for mobile devices."
+    ],
+    "correct_index": "A",
+    "explanation": "RBAC simplifies administration by managing permissions at the role level rather than for each individual user and resource."
+  },
+  {
+    "question_number": 20,
+    "question": "What is the purpose of implementing multi-factor authentication?",
+    "options": [
+      "To simplify user logins.",
+      "To add additional layers of security beyond just a password.",
+      "To reduce the cost of IT infrastructure.",
+      "To improve network performance."
+    ],
+    "correct_index": "B",
+    "explanation": "Multi-factor authentication requires multiple verification factors, making it significantly harder for unauthorized users to gain access even if one factor is compromised."
+  }
+]

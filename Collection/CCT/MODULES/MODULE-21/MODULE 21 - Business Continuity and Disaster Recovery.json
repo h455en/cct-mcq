@@ -1,0 +1,182 @@
+[
+    {
+        "number":  1,
+        "question":  "A company has defined that its e-commerce website must be operational within 4 hours of a disruption. What term describes this requirement?",
+        "options":  [
+                        "Recovery Time Objective (RTO)",
+                        "Recovery Point Objective (RPO)",
+                        "Mean Time Between Failures (MTBF)",
+                        "Business Impact Analysis (BIA)"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Recovery Time Objective (RTO) specifies the maximum acceptable downtime before a system or service must be restored."
+    },
+    {
+        "number":  2,
+        "question":  "After a hurricane damages the main office, the company activates its Business Continuity Plan (BCP). What is the primary goal during this phase?",
+        "options":  [
+                        "To restore normal operations",
+                        "To minimize operational disruption",
+                        "To test disaster recovery protocols",
+                        "To rebuild the office infrastructure"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "The primary goal of activating a BCP is to minimize disruptions and ensure the continuation of critical business functions."
+    },
+    {
+        "number":  3,
+        "question":  "A company’s financial database is backed up every 24 hours. After a server crash, the team successfully restores the last backup. Which metric determines the data loss in this situation?",
+        "options":  [
+                        "Recovery Time Objective (RTO)",
+                        "Recovery Point Objective (RPO)",
+                        "Disaster Recovery Objective (DRO)",
+                        "Mean Time to Repair (MTTR)"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Recovery Point Objective (RPO) defines the maximum acceptable amount of data loss measured in time before significant business impact occurs."
+    },
+    {
+        "number":  4,
+        "question":  "An organization conducts a Business Impact Analysis (BIA) and identifies that payroll services must be restored within 12 hours during an outage. What type of activity does this represent?",
+        "options":  [
+                        "Disaster Recovery Planning",
+                        "Risk Management",
+                        "Business Continuity Planning",
+                        "Incident Response"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Restoration of critical services within a specified timeframe is part of Business Continuity Planning (BCP)."
+    },
+    {
+        "number":  5,
+        "question":  "A company uses a cold site as part of its disaster recovery plan. What does this imply about the recovery process?",
+        "options":  [
+                        "Immediate recovery is possible",
+                        "The site requires additional setup time",
+                        "The site is a fully operational duplicate",
+                        "The site stores backups only"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "A cold site requires additional setup time, as it typically provides basic facilities without pre-installed systems or data."
+    },
+    {
+        "number":  6,
+        "question":  "During a disaster recovery drill, the IT team discovers that several servers at the backup site cannot connect to the network. What should be updated in the DR plan?",
+        "options":  [
+                        "Backup frequency",
+                        "Network configuration details",
+                        "Business Impact Analysis (BIA)",
+                        "Vendor contact list"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Network configuration details must be reviewed and updated to ensure connectivity during a disaster recovery event."
+    },
+    {
+        "number":  7,
+        "question":  "A company\u0027s DRP specifies the use of cloud-based backups for data recovery. What is the main advantage of this approach?",
+        "options":  [
+                        "Eliminates the need for testing",
+                        "Allows for immediate data recovery",
+                        "Reduces the cost of DR planning",
+                        "Ensures compliance with all regulations"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Cloud-based backups enable immediate data recovery, reducing downtime during disaster recovery."
+    },
+    {
+        "number":  8,
+        "question":  "After a cyberattack, the company discovers that sensitive customer data was stolen. Which activity should be prioritized as part of the disaster recovery process?",
+        "options":  [
+                        "Updating the Business Continuity Plan",
+                        "Notifying affected customers and regulators",
+                        "Testing backup systems",
+                        "Documenting the incident in the DRP"
+                    ],
+        "correct_index":  "B",
+        "explanation":  "Notifying customers and regulators is a critical step to ensure compliance and maintain trust after a data breach."
+    },
+    {
+        "number":  9,
+        "question":  "A manufacturing company conducts a risk assessment and determines that production downtime costs $50,000 per hour. Which metric does this calculation help define?",
+        "options":  [
+                        "Recovery Point Objective (RPO)",
+                        "Recovery Time Objective (RTO)",
+                        "Business Impact Analysis (BIA)",
+                        "Downtime Cost Analysis"
+                    ],
+        "correct_index":  "D",
+        "explanation":  "Downtime Cost Analysis quantifies the financial impact of production or service unavailability."
+    },
+    {
+        "number":  10,
+        "question":  "During a BCP review, the team identifies that the plan does not address pandemics. What is the first step to rectify this gap?",
+        "options":  [
+                        "Conduct a risk assessment for pandemics",
+                        "Implement a remote work policy",
+                        "Update the disaster recovery objectives",
+                        "Test the existing BCP"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Conducting a risk assessment identifies specific impacts and mitigation strategies for pandemics, allowing for plan updates."
+    },
+    {
+        "number":  11,
+        "question":  "An organization is reviewing its disaster recovery plan. Which of the following ensures data integrity during the recovery process?",
+        "options":  [
+                        "Encrypting all backup files",
+                        "Using multiple recovery sites",
+                        "Testing the backup restoration process regularly",
+                        "Implementing a redundant internet connection"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Regular testing of the backup restoration process ensures data integrity and verifies that recovery processes work as expected."
+    },
+    {
+        "number":  12,
+        "question":  "A company has a warm site for disaster recovery. How does this type of site differ from a cold site?",
+        "options":  [
+                        "It includes some pre-installed systems",
+                        "It requires full setup before use",
+                        "It allows for instant failover",
+                        "It is cheaper to maintain than a cold site"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "A warm site includes some pre-installed systems, which makes recovery faster compared to a cold site."
+    },
+    {
+        "number":  13,
+        "question":  "A business identifies an RPO of 30 minutes for its customer database. What must the backup system ensure to meet this requirement?",
+        "options":  [
+                        "The database is backed up every 30 minutes",
+                        "Data recovery is completed within 30 minutes",
+                        "Downtime is limited to 30 minutes",
+                        "The system fails over to a secondary site within 30 minutes"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "An RPO of 30 minutes means backups must occur at least every 30 minutes to minimize data loss."
+    },
+    {
+        "number":  14,
+        "question":  "A company is implementing a staged disaster recovery deployment. What is the primary benefit of this approach?",
+        "options":  [
+                        "It minimizes initial costs",
+                        "It ensures all sites are fully operational",
+                        "It prioritizes critical functions for recovery",
+                        "It eliminates the need for backup testing"
+                    ],
+        "correct_index":  "C",
+        "explanation":  "Staged deployment prioritizes critical functions for recovery, allowing for a phased restoration of operations."
+    },
+    {
+        "number":  15,
+        "question":  "During a disaster recovery exercise, the team identifies a bottleneck in restoring network connectivity. What should the team do?",
+        "options":  [
+                        "Document the issue and plan improvements",
+                        "Ignore it if other systems are operational",
+                        "Reduce testing frequency",
+                        "Disable non-critical network services"
+                    ],
+        "correct_index":  "A",
+        "explanation":  "Bottlenecks identified during exercises should be documented and addressed to improve future recovery efforts."
+    }
+]

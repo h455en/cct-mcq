@@ -1,0 +1,242 @@
+[
+    {
+      "question_number": 1,
+      "question": "Your company is considering VDI. Employees need to access sensitive data remotely, but you're concerned about data leaving the corporate network. How does VDI address this concern?",
+      "options": [
+        "Data is stored on the user's local machine.",
+        "Data remains within the corporate data center, accessed via streamed desktops.",
+        "Data is encrypted using a complex algorithm before being sent to the user.",
+        "VDI uses a separate network for remote access."
+      ],
+      "correct_index": "B",
+      "explanation": "VDI centralizes data storage, minimizing the risk of data loss or theft on endpoint devices."
+    },
+    {
+      "question_number": 2,
+      "question": "Your team is deploying several new VMs for testing. After a few weeks, you notice a significant performance decrease on the host server. What is the likely cause?",
+      "options": [
+        "VM escape.",
+        "VM sprawl.",
+        "Insufficient network bandwidth.",
+        "A DDoS attack."
+      ],
+      "correct_index": "B",
+      "explanation": "VM sprawl occurs when VMs are created and not properly managed, consuming resources unnecessarily."
+    },
+    {
+      "question_number": 3,
+      "question": "You're deciding between VMs and containers for deploying a microservices application. You need rapid deployment and efficient resource utilization. Which is the better choice?",
+      "options": [
+        "Virtual Machines (VMs)",
+        "Containers",
+        "Both are equally suitable.",
+        "Neither is appropriate for microservices."
+      ],
+      "correct_index": "B",
+      "explanation": "Containers are lightweight and share the host OS kernel, making them ideal for microservices."
+    },
+    {
+      "question_number": 4,
+      "question": "Your company uses a public cloud provider for storage. You're concerned about data breaches. What security measure is your responsibility under the shared responsibility model?",
+      "options": [
+        "Physical security of the data center.",
+        "Encryption of data at rest and in transit.",
+        "Security of the hypervisor.",
+        "Network infrastructure security."
+      ],
+      "correct_index": "B",
+      "explanation": "In most cloud service models, data encryption is the customer's responsibility."
+    },
+    {
+      "question_number": 5,
+      "question": "You're implementing IAM in your cloud environment. What is the principle of least privilege?",
+      "options": [
+        "Granting all users full access to all resources.",
+        "Granting users only the permissions they need to perform their job duties.",
+        "Regularly rotating user passwords.",
+        "Using multi-factor authentication for all users."
+      ],
+      "correct_index": "B",
+      "explanation": "Least privilege minimizes the potential damage from compromised accounts."
+    },
+    {
+      "question_number": 6,
+      "question": "Your company uses Docker for containerization. You're concerned about vulnerabilities in container images. What is a key security best practice?",
+      "options": [
+        "Running containers as root.",
+        "Regularly scanning container images for vulnerabilities.",
+        "Disabling container resource limits.",
+        "Sharing container images publicly without any review."
+      ],
+      "correct_index": "B",
+      "explanation": "Scanning for vulnerabilities helps identify and mitigate potential security risks in container images."
+    },
+    {
+      "question_number": 7,
+      "question": "You're using Kubernetes to orchestrate your containers. What is a key security challenge you need to address?",
+      "options": [
+        "Securing the Kubernetes API server.",
+        "Managing container images.",
+        "Managing network policies between pods.",
+        "All of the above."
+      ],
+      "correct_index": "D",
+      "explanation": "All of these are important security considerations in Kubernetes environments."
+    },
+    {
+      "question_number": 8,
+      "question": "Your company is exploring serverless computing. What is a key characteristic of this model?",
+      "options": [
+        "You manage the underlying servers.",
+        "The cloud provider manages the servers, and you only focus on code.",
+        "You need to provision and scale servers manually.",
+        "It's only suitable for large, complex applications."
+      ],
+      "correct_index": "B",
+      "explanation": "Serverless abstracts away server management, allowing developers to focus on application code."
+    },
+    {
+      "question_number": 9,
+      "question": "You need to implement a solution to monitor and control cloud application usage and data access across multiple cloud services. Which tool is most suitable?",
+      "options": [
+        "Firewall",
+        "Intrusion Detection System (IDS)",
+        "Cloud Access Security Broker (CASB)",
+        "VPN"
+      ],
+      "correct_index": "C",
+      "explanation": "CASBs provide visibility and control over cloud application usage and data."
+    },
+    {
+      "question_number": 10,
+      "question": "You are migrating from on-premises to a cloud environment. What is a critical security consideration during this transition?",
+      "options": [
+        "Maintaining consistent security policies across both environments.",
+        "Ignoring security concerns as the cloud provider handles everything.",
+        "Focusing solely on physical security of the on-premises data center.",
+        "Assuming all existing on-premises tools will work seamlessly in the cloud."
+      ],
+      "correct_index": "A",
+      "explanation": "Maintaining consistent security policies is crucial for a secure cloud migration."
+    },
+      {
+      "question_number": 11,
+      "question": "You are using a container registry. Which practice is MOST important to secure your container images?",
+      "options": [
+        "Use public, untrusted base images to save time.",
+        "Regularly scan images for vulnerabilities and apply patches.",
+        "Store sensitive data directly within the container images.",
+        "Give all developers full access to the registry."
+      ],
+      "correct_index": "B",
+      "explanation": "Scanning images is crucial to identify and address security flaws before deployment."
+    },
+    {
+      "question_number": 12,
+      "question": "Your organization is adopting a multi-cloud strategy. What is a key security challenge you'll likely face?",
+      "options": [
+        "Managing consistent security policies and controls across different cloud providers.",
+        "Reduced cloud costs.",
+        "Simplified security management.",
+        "Elimination of all security risks."
+      ],
+      "correct_index": "A",
+      "explanation": "Different cloud providers have different security tools and configurations, making consistent management complex."
+    },
+    {
+      "question_number": 13,
+      "question": "What is a major concern related to VM escape?",
+      "options": [
+        "A VM consuming excessive resources.",
+        "An attacker gaining access to the hypervisor and potentially other VMs.",
+        "Data loss within a VM.",
+        "Slow VM performance."
+      ],
+      "correct_index": "B",
+      "explanation": "VM escape allows an attacker to break out of a VM and potentially compromise the host and other VMs."
+    },
+    {
+      "question_number": 14,
+      "question": "What is the primary difference between cloud computing and edge computing?",
+      "options": [
+        "Cloud computing processes data closer to the source, while edge computing relies on centralized data centers.",
+        "Cloud computing uses physical servers, while edge computing uses virtual machines.",
+        "Cloud computing relies on the internet, while edge computing uses local networks.",
+        "Cloud computing processes data in centralized data centers, while edge computing processes data closer to the source."
+      ],
+      "correct_index": "D",
+      "explanation": "Edge computing brings computation closer to the data source to reduce latency and bandwidth usage."
+    },
+    {
+      "question_number": 15,
+      "question": "Which NIST document provides recommendations for cloud security?",
+      "options": [
+        "NIST SP 800-53",
+        "NIST SP 800-145",
+        "NIST SP 800-30",
+        "NIST SP 800-12"
+      ],
+      "correct_index": "B",
+      "explanation": "NIST SP 800-145 is the NIST definition of cloud computing."
+    },
+    {
+      "question_number": 16,
+      "question": "You need to implement Single Sign-On (SSO) for your cloud applications. Which protocol is commonly used for this purpose?",
+      "options": [
+        "TLS",
+        "SAML",
+        "IPsec",
+        "SSH"
+      ],
+      "correct_index": "B",
+      "explanation": "SAML (Security Assertion Markup Language) is a widely used standard for SSO in web applications and cloud services."
+    },
+    {
+      "question_number": 17,
+      "question": "What is a major advantage of using a Next-Generation Secure Web Gateway (NG SWG)?",
+      "options": [
+        "Basic URL filtering.",
+        "Advanced threat protection, data loss prevention, and cloud application control.",
+        "Simple firewall functionality.",
+        "Basic antivirus scanning."
+      ],
+      "correct_index": "B",
+      "explanation": "NG SWGs offer comprehensive web security features beyond traditional web gateways."
+    },
+    {
+      "question_number": 18,
+      "question": "Your organization is using AWS. Which service is used for Identity and Access Management (IAM)?",
+      "options": [
+        "Amazon S3",
+        "Amazon EC2",
+        "AWS IAM",
+        "Amazon VPC"
+      ],
+      "correct_index": "C",
+      "explanation": "AWS IAM is the service specifically designed for managing user access and permissions within the AWS environment."
+    },
+    {
+      "question_number": 19,
+      "question": "What is the key difference between containers and virtual machines regarding resource utilization?",
+      "options": [
+        "Containers are more resource-intensive than VMs.",
+        "Containers share the host OS kernel, making them more lightweight than VMs.",
+        "VMs are more efficient in using resources.",
+        "There is no significant difference in resource utilization."
+      ],
+      "correct_index": "B",
+      "explanation": "Containers' shared kernel architecture leads to significantly lower overhead compared to VMs."
+    },
+    {
+      "question_number": 20,
+      "question": "You are implementing security logging in your cloud environment. What is a crucial best practice?",
+      "options": [
+        "Storing logs locally on each server.",
+        "Centralizing log collection and analysis.",
+        "Disabling logging to save storage space.",
+        "Only logging successful login attempts."
+      ],
+      "correct_index": "B",
+      "explanation": "Centralized logging provides a comprehensive view of security events and facilitates analysis and incident response."
+    }
+  ]
