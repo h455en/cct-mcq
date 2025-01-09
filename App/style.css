@@ -3,7 +3,7 @@
 
 body {
     background-color: #f6f8d3;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 h2,
@@ -174,7 +174,7 @@ body.dark-mode {
 /* Practice mode box */
 #feedbackBox {
     background-color: #f8f9fa;
-    color: #212529;
+    color: #10365c;
 }
 
 #feedbackBox.correct {

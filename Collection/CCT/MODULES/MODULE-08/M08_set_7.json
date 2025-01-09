@@ -1,152 +1,153 @@
 [
     {
-        "question":  "Which search engine operator can be used to identify specific file types in Google search?",
-        "options":  [
-                        "site:",
-                        "intitle:",
-                        "filetype:",
-                        "inurl:"
-                    ],
-        "correct_index":  "C"
+        "question": "Which search engine operator can be used to identify specific file types in Google search?",
+        "options": [
+            "site:",
+            "intitle:",
+            "filetype:",
+            "inurl:"
+        ],
+        "correct_index": "C"
     },
     {
-        "question":  "Which tool allows you to gather threat intelligence from multiple open-source feeds and sources in a unified manner?",
-        "options":  [
-                        "Kali Linux",
-                        "shodan",
-                        "threatfeeds.io",
-                        "Wireshark"
-                    ],
-        "correct_index":  "C"
+        "question": "Which tool allows you to gather threat intelligence from multiple open-source feeds and sources in a unified manner?",
+        "options": [
+            "Kali Linux",
+            "shodan",
+            "threatfeeds.io",
+            "Wireshark"
+        ],
+        "correct_index": "C"
     },
     {
-        "question":  "In the Common Weakness Enumeration (CWE) database, which vulnerability type describes the improper validation of input leading to command execution?",
-        "options":  [
-                        "CWE-79",
-                        "CWE-20",
-                        "CWE-89",
-                        "CWE-94"
-                    ],
-        "correct_index":  "B"
+        "question": "In the Common Weakness Enumeration (CWE) database, which vulnerability type describes the improper validation of input leading to command execution?",
+        "options": [
+            "CWE-79",
+            "CWE-20",
+            "CWE-89",
+            "CWE-94"
+        ],
+        "correct_index": "B"
     },
     {
-        "question":  "What is the primary purpose of a vulnerability scanner in a vulnerability assessment process?",
-        "options":  [
-                        "Identifies active hosts on a network",
-                        "Detects configuration flaws in a system",
-                        "Identifies vulnerabilities by testing the system for known flaws",
-                        "Scans for malware in files"
-                    ],
-        "correct_index":  "C"
+        "question": "What is the primary purpose of a vulnerability scanner in a vulnerability assessment process?",
+        "options": [
+            "Identifies active hosts on a network",
+            "Detects configuration flaws in a system",
+            "Identifies vulnerabilities by testing the system for known flaws",
+            "Scans for malware in files"
+        ],
+        "correct_index": "C"
     },
     {
-        "question":  "What application whitelisting tool is often used to enforce policies on applications executing on Windows-based systems?",
-        "options":  [
-                        "AppLocker",
-                        "Windows Defender",
-                        "McAfee Application Control",
-                        "AntiVir"
-                    ],
-        "correct_index":  "A"
+        "question": "What application whitelisting tool is often used to enforce policies on applications executing on Windows-based systems?",
+        "options": [
+            "AppLocker",
+            "Windows Defender",
+            "McAfee Application Control",
+            "AntiVirus"
+        ],
+        "correct_index": "A"
     },
     {
-        "question":  "What method in Burp Suite can you use to intercept and modify HTTP requests to inject malicious code for testing vulnerabilities?",
-        "options":  [
-                        "Proxy Intercept",
-                        "Scanner",
-                        "Intruder",
-                        "Repeater"
-                    ],
-        "correct_index":  "A"
+        "question": "What method in Burp Suite can you use to intercept and modify HTTP requests to inject malicious code for testing vulnerabilities?",
+        "options": [
+            "Proxy",
+            "Scanner",
+            "Intruder",
+            "Repeater"
+        ],
+        "correct_index": "A"
     },
     {
-        "question":  "Which tool is used to identify SQL injection vulnerabilities by injecting malicious SQL code into web application forms?",
-        "options":  [
-                        "SQLmap",
-                        "Nikto",
-                        "Wapiti",
-                        "Acunetix"
-                    ],
-        "correct_index":  "A"
+        "question": "Which tool is used to identify SQL injection vulnerabilities by injecting malicious SQL code into web application forms?",
+        "options": [
+            "SQLmap",
+            "Nikto",
+            "Wapiti",
+            "Acunetix"
+        ],
+        "correct_index": "A"
     },
     {
-        "question":  "When using Burp Suite to detect injection vulnerabilities, which of the following is a common parameter type you should target?",
-        "options":  [
-                        "Cookie",
-                        "Host",
-                        "Referer",
-                        "X-Forwarded-For"
-                    ],
-        "correct_index":  "A"
+        "question": "When using Burp Suite to detect injection vulnerabilities, which of the following is a common parameter type you should target?",
+        "options": [
+            "Cookie",
+            "Host",
+            "Referer",
+            "X-Forwarded-For"
+        ],
+        "correct_index": "A"
     },
     {
-        "question":  "What web application vulnerability is commonly exploited through user input fields, allowing attackers to inject scripts that execute in the user\u0027s browser?",
-        "options":  [
-                        "Cross-Site Request Forgery (CSRF)",
-                        "Cross-Site Scripting (XSS)",
-                        "Server-Side Request Forgery (SSRF)",
-                        "SQL Injection"
-                    ],
-        "correct_index":  "B"
+        "question": "What web application vulnerability is commonly exploited through user input fields, allowing attackers to inject scripts that execute in the user\u0027s browser?",
+        "options": [
+            "Cross-Site Request Forgery (CSRF)",
+            "Cross-Site Scripting (XSS)",
+            "Server-Side Request Forgery (SSRF)",
+            "SQL Injection"
+        ],
+        "correct_index": "B"
     },
     {
-        "question":  "Which of the following is a tool that can be used to detect file inclusion vulnerabilities in PHP-based web applications?",
-        "options":  [
-                        "Burp Suite",
-                        "Nikto",
-                        "Dirbuster",
-                        "Wapiti"
-                    ],
-        "correct_index":  "A"
+        "question": "Which of the following is a tool that can be used to detect file inclusion vulnerabilities in PHP-based web applications?",
+        "options": [
+            "Burp Suite",
+            "Nikto",
+            "Dirbuster",
+            "Wapiti"
+        ],
+        "correct_index": "B",
+        "explanation": "Nikto is used to discover vulnerabilities including Local File Inclusion (LFI) and Remote File Inclusion (RFI)."
     },
     {
-        "question":  "What is the purpose of sandboxing an application using tools like Sandboxie?",
-        "options":  [
-                        "To enhance network speed and reduce latency",
-                        "To isolate potentially harmful applications from the host system",
-                        "To increase user interface responsiveness",
-                        "To prevent unauthorized system shutdowns"
-                    ],
-        "correct_index":  "B"
+        "question": "What is the purpose of sandboxing an application using tools like Sandboxie?",
+        "options": [
+            "To enhance network speed and reduce latency",
+            "To isolate potentially harmful applications from the host system",
+            "To increase user interface responsiveness",
+            "To prevent unauthorized system shutdowns"
+        ],
+        "correct_index": "B"
     },
     {
-        "question":  "Which of the following techniques is commonly used to identify web application vulnerabilities by sending automated requests designed to discover flaws in input validation?",
-        "options":  [
-                        "Reconnaissance",
-                        "Fuzzing",
-                        "Phishing",
-                        "Brute Force"
-                    ],
-        "correct_index":  "B"
+        "question": "Which of the following techniques is commonly used to identify web application vulnerabilities by sending automated requests designed to discover flaws in input validation?",
+        "options": [
+            "Reconnaissance",
+            "Fuzzing",
+            "Phishing",
+            "Brute Force"
+        ],
+        "correct_index": "B"
     },
     {
-        "question":  "Which database vulnerability would be exploited using an SQL injection attack on an MSSQL server?",
-        "options":  [
-                        "Uncontrolled Resource Consumption",
-                        "Injection flaws",
-                        "Broken Authentication",
-                        "Sensitive Data Exposure"
-                    ],
-        "correct_index":  "B"
+        "question": "Which database vulnerability would be exploited using an SQL injection attack on an MSSQL server?",
+        "options": [
+            "Uncontrolled Resource Consumption",
+            "Injection flaws",
+            "Broken Authentication",
+            "Sensitive Data Exposure"
+        ],
+        "correct_index": "B"
     },
     {
-        "question":  "In the context of web server footprinting, which of the following tools is used to detect the technologies used by a web server?",
-        "options":  [
-                        "Nmap",
-                        "WhatWeb",
-                        "Wireshark",
-                        "Metasploit"
-                    ],
-        "correct_index":  "B"
+        "question": "In the context of web server footprinting, which of the following tools is used to detect the technologies used by a web server?",
+        "options": [
+            "Nmap",
+            "WhatWeb",
+            "Wireshark",
+            "Metasploit"
+        ],
+        "correct_index": "B"
     },
     {
-        "question":  "What is the primary benefit of implementing application whitelisting with AppLocker on an enterprise network?",
-        "options":  [
-                        "It allows unrestricted execution of unknown applications",
-                        "It prevents unauthorized applications from running",
-                        "It provides comprehensive endpoint protection",
-                        "It improves system stability"
-                    ],
-        "correct_index":  "B"
+        "question": "What is the primary benefit of implementing application whitelisting with AppLocker on an enterprise network?",
+        "options": [
+            "It allows unrestricted execution of unknown applications",
+            "It prevents unauthorized applications from running",
+            "It provides comprehensive endpoint protection",
+            "It improves system stability"
+        ],
+        "correct_index": "B"
     }
 ]
