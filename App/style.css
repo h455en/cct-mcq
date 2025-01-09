@@ -29,7 +29,7 @@ h4 {
 #timer {
     font-size: 1.5rem;
     color: rgb(40, 2, 85);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Nunito', sans-serif;
     position: fixed;
     transform: translate(-50%, -50%);
     text-align: center;

@@ -39,6 +39,8 @@ const darkModeToggle = document.getElementById("darkModeToggle");
 const markRadio = document.getElementById('markQuestion'); // Get the radio button
 const resultsTextArea = document.getElementById('resultsTextArea'); // Get the textarea
 const modeSelectors = document.querySelectorAll('input[name="quizMode"]');
+
+
 //------------
 async function fetchQuizzes() {
     try {
@@ -177,16 +179,6 @@ modeSelectors.forEach(selector => {
     });
 });
 
-// Feedback container for Practice Mode
-// const feedbackBox = document.createElement('div');
-// feedbackBox.id = "feedbackBox";
-// feedbackBox.className = "mt-3 p-3 border rounded d-none"; // Initially hidden
-// quizRunPage.appendChild(feedbackBox);
-
-
-//...............
-
-
 // Feedback container
 const feedbackBox = document.createElement('div');
 feedbackBox.id = "feedbackBox";
@@ -259,14 +251,7 @@ nextBtn.addEventListener("click", () => {
     }
 });
 
-// Helper function to convert index to letter (A, B, C, D)
-function getOptionLetter(index) {
-    return ["A", "B", "C", "D"][index];
-}
 
-
-
-//............
 function getSelectedQuizName() {
     if (uploadFile.files.length > 0) {
         return uploadFile.files[0].name;
@@ -361,7 +346,7 @@ function startQuiz(quizData) {
     quizRunPage.classList.remove("d-none");
 
     // Reset quiz state
-    currentQuestionIndex = 0;  // <---------------------  move to reset  ? 
+    currentQuestionIndex = 0;  // <----------------------------------------  move to reset  ? 
     userAnswers = [];
     markedAnswers = [];
 
@@ -408,6 +393,8 @@ function loadQuestion() {
         .join("");
 
     //console.log("Loaded Question:", currentQuestion);
+
+    updateProgressBar();
 }
 
 
@@ -473,8 +460,6 @@ function resetQuizState() {
     resetMarkQuestionSwitch();
 }
 
-
-//..........
 function showEvaluation() {
     clearInterval(timerInterval);
     quizRunPage.classList.add("d-none");
@@ -566,9 +551,6 @@ function showEvaluation() {
     }
 }
 
-
-//........
-
 function resetMarkQuestionSwitch() {
     const markQuestionSwitch = document.getElementById('markQuestion');
     if (markQuestionSwitch) { // Check if the element exists
@@ -578,7 +560,6 @@ function resetMarkQuestionSwitch() {
     }
 }
 
-//------------
 function copyToClipboard(text) {
     if (navigator.clipboard && window.isSecureContext) {
         // Modern approach (requires HTTPS)
@@ -620,7 +601,6 @@ function fallbackCopyToClipboard(text) {
 
     document.body.removeChild(textArea);
 }
-//------------
 
 
 function setupGoHomeButton() {
@@ -664,4 +644,4 @@ function resetMarkQuestionSwitch() {
 
 
 // Load quizzes on page load
-//fetchQuizzes();
+fetchQuizzes();
