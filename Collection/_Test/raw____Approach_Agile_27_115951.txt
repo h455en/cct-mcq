@@ -1,0 +1,339 @@
+﻿Image: CROP_10_Approach_Agile_27_115951__22.png. Time Elapsed: 2.15 seconds
+De gone about this?
+e Suggest team members to conduct time-boxed experiments to be able to give an estimate
+- Defer the work to the following week
+- Tell the team member that it is mandatory to give an estimate for planning purposes
+Orel the team member to start working and prepare the plan later
+Results :
+Reference: Agile Practice Guide Section 5.2.7
+________________________________________________________
+Image: CROP_11_Approach_Agile_27_115951__24.png. Time Elapsed: 2.50 seconds
+#11/25
+QID: 000373
+While preparing the work plan for the up coming week, team members were asked about estimates for a challenging piece of work. They responded that the work was t- complex to give an estimate. What can
+be done about this?
+Qe Suggest team members to conduct time-boxed experiments to be able to give an estimate
+- Defer the work to the following week
+- Tell the team member that it is mandatory to give an estimate for planning purposes
+Orel the team member to start working and prepare the plan later
+1
+7
+Reference: Agile Practice Guide Section 5.2.7
+________________________________________________________
+Image: CROP_12_Approach_Agile_27_115951__25.png. Time Elapsed: 2.22 seconds
+#12/25
+QID: 000364
+Aproject manager is l-king to determine the best working method for her project. The most suitable method needs to be aligned with the organiz.
+e Review the technical environment of the team
+- Use historical data about what has worked and what hasn't
+- Assess the organization's culture and areas of emphasis
+- Determine the cost of change vs. cost of stability
+tion. The best way to start this assessment is to!
+The correct answer is: "Assess the organization's culture and areas of emphasis"
+Reference: Agile Practice Guide Section 6.2.2
+________________________________________________________
+Image: CROP_13_Approach_Agile_27_115951__26.png. Time Elapsed: 1.87 seconds
+QID: 000919
+Aproduct owner created a set of requirements as product backlog items for an agile product team. The team now needs to carry out backlog refinement. Which of the following is usually NOT discussed in the
+backlog refinement meetings?
+Qe Potential challenges
+- Task assignments
+- Dependencies
+- Effort estimates
+The correct answer is: "Task assignments"
+Reference: Agile Practice Guide Section 5.2.3
+________________________________________________________
+Image: CROP_14_Approach_Agile_27_115951__27.png. Time Elapsed: 2.28 seconds
+14of25
+QID: 000198
+After reaching an important milestone, the team conducted a retrospective meeting and reflected on their experience. After brainstorming and le’
+to blame for the missed opportunities in the previous deliverable. What is wrong with this scenario?
+Q-ire retrospective is conducted only once at the end
+- The retrospective is not about assigning blame
+- The retrospective is about analyzing, not about people's feelings
+- The project manager does not seem to have been involved
+g people express their feelings, they finally arrived at who was
+The correct answer is: "The retrospective is not about assigning blame"
+Reference: Agile Practice Guide Section 5.2.1
+________________________________________________________
+Image: CROP_15_Approach_Agile_27_115951__28.png. Time Elapsed: 2.29 seconds
+QID: 000515
+A project team uses an incremental and iterative approach. At the end of the second iteration, they decided to adopt a different sampling method to improve the accuracy of test results. However, it did not work
+very well, causing the goal of the subsequent iteration to be missed. What should the team do?
+v Revert to the old sampling method, promptly discarding the ineffective method
+- Discuss this in the next retrospective and brainstorm the remedial actions
+- Outsource the sampling step to a third party with more expertise
+- Shift to tests that include the entire population rather than relying on inaccurate sampling
+The correct answer is: "Discuss this in the next retrospective and brainstorm the remedial actions"
+Reference: PMBOK® Guide - Sixth Edition, Section 8 (Considerations for agile/adaptive environments)
+________________________________________________________
+Image: CROP_16_Approach_Agile_27_115951__29.png. Time Elapsed: 2.37 seconds
+#16/25
+QID: 000032
+andup meetings for a team working on a project. However the manager finds that it feels like a reporting meeting where every team member is providing a status. What is the
+most effective way to ensure that it does not feel like a status meeting?
+v Start the meeting with some banter and small talk
+- Remind the team the objective is to microcommit and uncover problems
+Aproject manager conducts daily st
+- Extend the duration of the meeting to include the status report and the daily commitments in the same event
+- Change the agenda of the meeting to include more technical topics
+The correct answer is: "Remind the team the objective is to microcommit and uncover problems"
+Reference: Agile Practice Guide Section 5.2.4
+________________________________________________________
+Image: CROP_17_Approach_Agile_27_115951__30.png. Time Elapsed: 1.82 seconds
+#17/25
+QID: 000033
+Many modern project teams are practicing a standup meeting of the team members. The kinds of teams that can benefit most from the daily standup meeting those where:
+-ire nature of work requires intense collaboration
+- The work is very complex and technically challenging
+- The team lacks maturity to manage their own affairs
+- The teams are distributed across time zones
+Results :
+Reference: Agile Practice Guide Section 5.2.4
+________________________________________________________
+Image: CROP_18_Approach_Agile_27_115951__32.png. Time Elapsed: 1.87 seconds
+#18/25
+QID: 000365
+Ateam delivers a working product frequently in timeboxed increments. Which of the following not a correct statement when this approach is being used?
+-ire team is following an incremental approach
+- The timebox will extend until the scope planned is completed
+- The team will be able to unlock value faster to the customer
+Ole team can also benefit from early deliveries
+The correct answer is: "The timebox will extend until the scope planned is completed"
+Reference: Agile Practice Guide Fig 3-4Glossary "Timebox"
+________________________________________________________
+Image: CROP_19_Approach_Agile_27_115951__33.png. Time Elapsed: 2.11 seconds
+#19/25
+QID: 000525
+Your manager, who is new to the company and its processes, has been visiting teams and observing. He is concerned that in some teams, it is not clear who is responsible for quality while in others it is done by
+certain team members. He is especially concerned about quality in the adaptive projects. Your best action is to:
+v Explain that quality control only meets with team members after every iteration
+- Make sure that all the adaptive team members get quality training
+- Explain to him that in the adaptive approach, the Control Quality processes may be performed by all team members
+- Talk to the adaptive teams and make sure that they are enforcing quality procedures
+The correct answer is: "Explain to him that in the adaptive approach, the Control Quality processes may be performed by all team members"
+Reference: PMBOK® Guide - Sixth Edition, 8.3
+________________________________________________________
+Image: CROP_1_Approach_Agile_27_115951__1.png. Time Elapsed: 1.66 seconds
+#1/25
+QID: 000671
+One of the ways a servant leader helps the team is by promoting safety. What is the most important reason that a team needs safety in any working environment?
+e To comply with prevailing safety norms
+- To ensure that they are not bullied by the customer
+- To alleviate fear of failure
+- To safely try new technologies
+Results :
+The correct answer is: "To alleviate fear of failure"
+Reference: Agile Practice Guide Section 4.2
+________________________________________________________
+Image: CROP_20_Approach_Agile_27_115951__34.png. Time Elapsed: 1.69 seconds
+#20/25
+QID: 000012
+Agile project teams often benefit from the presence of a team facilitator role who acts like a servant leader. Which of the following are NOT titles for a team facilitator?
+Ch-se Two
+A] Product owner
+- Scrum master
+- Project manager
+Oteam coach
+- Sponsor
+The correct choices are "Product owner" and "Sponsor"
+Reference: Agile Practice Guide Table 4-2
+________________________________________________________
+Image: CROP_21_Approach_Agile_27_115951__35.png. Time Elapsed: 2.59 seconds
+#21/25
+QID: 000514
+Aproject team uses an incremental and iterative approach. They conduct a retrospective meeting at the end of every iteration. What should be the primary focus of the retrospective?
+e Perform a detailed evaluation of the product and provide feedback
+- Determine whether the product is in a state that is ready to be released to the customer
+- Determine which work items in the product backlog are ready to be picked up for development in the next iteration
+- Help the team determine opportunities to improve the working methods of the team
+The correct answer is: "Help the team determine opportunities to improve the working methods of the team"
+Reference: PMBOK® Guide - Sixth Edition, Section 8 (Considerations for agile/adaptive environments)
+________________________________________________________
+Image: CROP_22_Approach_Agile_27_115951__36.png. Time Elapsed: 2.12 seconds
+#22/25
+QID: 000295
+Aproject manager feels that the requirements for a given project are very dynamic and are likely to vary frequently in an unpredictable manner. One of the challenges for the project will be to adapt to these
+changes. The best life-cycle model to cope with and be responsive to these changes will be to adopt:
+-a Predictive life cycle
+- An Agile/Adaptive life cycle
+- Acontract life cycle
+- Awaterfall life cycle
+The correct answer is: "An Agile/Adaptive life cycle"
+Reference: PMBOK® Guide - Sixth Edition, Section X3.1
+________________________________________________________
+Image: CROP_23_Approach_Agile_27_115951__37.png. Time Elapsed: 2.60 seconds
+QID: 000025
+Aproject team that wants to become agile in delivering the product would like to conduct a working demonstration of the product every 2 weeks. However the team finds that they are unable to get the product
+to a demonstrable state at that frequency. What is the best way forward for the team?
+v Switch to a longer frequency (e.g. 4 weeks)
+- Abandon the plan to go to agile methods until the issue is sorted out
+- Keep the demonstration optional and conduct it only when the team is ready
+- To get the team additional coaching on how to better organize product increments
+The correct answer is: "To get the team additional coaching on how to better organize product increments"
+Reference: Agile Practice Guide Section 5.2.5
+________________________________________________________
+Image: CROP_24_Approach_Agile_27_115951__38.png. Time Elapsed: 2.21 seconds
+#24/25
+QID: 000710
+High variability project environments often make use of agile/adaptive methods. What is the primary reason for this?
+-rzie methods are more popular in the industry
+- Such environments inherently involve more uncertainty and risk
+- Agile methods find a way to deliver the product quickly, before the risk can be realized
+- Customers often dictate the use of agile methods
+Results :
+The correct answer is: "Such environments inherently involve more uncertainty and risk"
+Reference: PMBOK® Guide - Sixth Edition, Section 11 (Considerations for Agile/Adaptive environments)
+________________________________________________________
+Image: CROP_25_Approach_Agile_27_115951__40.png. Time Elapsed: 3.12 seconds
+QID: 000971
+Aproduct built by the project team has not received g-d feedback from its first few customers. The common response is that the product is g-d but the user's experience while using it is not g-d. What could
+have been done during product development to prevent this situation?
+v Defining user inputs at the beginning of the project and not deviating from it
+- Make use of user experience design practices and involve users during development
+- Get the sign-off from the users at the completion of the requirements stage and make a traceability matrix
+- Identify the end users who have most influence using the Power/Interest grid and consider their input
+The correct answer is: "Make use of user experience design practices and involve users during development"
+Reference: Agile Practice Guide Table 5-1
+________________________________________________________
+Image: CROP_26_Approach_Agile_27_115951__7.png. Time Elapsed: 1.81 seconds
+3of25
+QID: 001270
+Your team planned to deliver 40 story points for a 10 day iteration. You are using a burndown chart to measure your performance as the one shown. Select the point of the day where the team realizes the risk
+has increased. (Place the blue star in the correct region)
+45
+40
+35
+30
+25
+20
+45
+10
+5
+—®— Planned Story
+Points
+Story Points
+—®— Story Points
+Remaining
+1 2 3 4 5 6 7 8 9 10
+Days
+________________________________________________________
+Image: CROP_27_Approach_Agile_27_115951__9.png. Time Elapsed: 2.36 seconds
+4of25
+QID: 000564
+Self-organized and self-managed teams are advisable - not just in agile and adaptive projects but in general. Why are more and more project teams finding that self-organized teams work better?
+e Because usually the managers do not know about the technical environment of the project
+- Because the modern success measures focus more on human factors than on business outcomes from projects
+- Because successful project teams are built around motivated individuals who need trust and support
+- Because there is no evidence to show that project management is correlated with project success
+0 out of 4
+The correct answer is: "Because successful project teams are built around motivated individuals who need trust and support"
+Reference: Agile Practice Guide Section 2.2
+________________________________________________________
+Image: CROP_2_Approach_Agile_27_115951__11.png. Time Elapsed: 2.34 seconds
+#5/25
+QID: 000381
+The difference between project planning in a predictive life-cycle and agile life-cycle is that:
+-rzie teams do not plan - they basically adjust based on the feedback
+Olre extent of time spent on planning an agile project is considerably less
+Ow agile team planning is done by the Product owner but the team is more involved in planning predictive projects
+Om agile team plans and replans frequently as more information becomes available
+The correct answer is: "An agile team plans and replans frequently as more information becomes available"
+Reference: Agile Practice Guide Section 3.1.1
+________________________________________________________
+Image: CROP_3_Approach_Agile_27_115951__12.png. Time Elapsed: 2.24 seconds
+6of 25
+QID: 000572
+Atalented team member has grown in technical capabilities while working on a challenging project. The team member has found another role in the same organization which gives her further opportunity to
+grow. However her current team will be impacted by her leaving. What should the servant leader of the current team do?
+-Alow the team member to take up the new opportunity
+- Ask the team member to continue with the current team until the product is completed
+- Ask the team members to try and persuade their colleague in the self-organized team to stay back
+- Explain to the customer the impact of losing the team member
+Results :
+Reference: Agile Practice Guide Section 4.2.1.4
+________________________________________________________
+Image: CROP_4_Approach_Agile_27_115951__13.png. Time Elapsed: 1.82 seconds
+7of25
+QID: 000673
+While working on a timeboxed iteration, an engineer and a quality control analyst in an agile project team had a disagreement about the interpretation of a particular product requirement. Who can resolve this
+conflict?
+Qe Servant leader
+- Team facilitator
+- Product owner
+- Self-organizing team members
+Results :
+The correct answer is: "Product owner"
+Reference: Agile Practice Guide Table 4-2
+________________________________________________________
+Image: CROP_5_Approach_Agile_27_115951__14.png. Time Elapsed: 2.40 seconds
+8-f25
+QID: 001045
+Aproject team following agile methods is encouraged to follow a policy of "aggressive transparency” with regard to sharing information with the stakeholders. Which of the following is NOT one of the practices
+aligned with this policy?
+v Posting project artifacts in public places
+- Sharing information frequently
+- Sharing the power/interest grid and stakeholder assessment grid with all the stakeholders
+- Correcting any misalignment, dependency or issue quickly
+The correct answer is: "Sharing the power/interest grid and stakeholder assessment grid with all the stakeholders"
+Reference: PMBOK® Guide - Sixth Edition, Section 13 (Considerations for Agile/Adaptive environments)
+________________________________________________________
+Image: CROP_6_Approach_Agile_27_115951__16.png. Time Elapsed: 1.86 seconds
+9of25
+QID: 000779
+Aproject manager in a team using adaptive approaches should let the team self-organize and select work based on higher-level objectives. However, in case the team is relatively junior, then the project manager
+should:
+Qe Let the team fail a few times before explaining the right approach
+- Coach the team with work assignments before reaching the empowered state
+Otake - more command and control approach and dictate the selection and sequencing of tasks
+- Rely on the judgment of team members to generate a high level of buy-in
+The correct answer is: "Coach the team with work assignments before reaching the empowered state"
+Reference: PMBOK® Guide - Sixth Edition, Section X3.3.3
+________________________________________________________
+Image: CROP_7_Approach_Agile_27_115951__17.png. Time Elapsed: 1.64 seconds
+#10/25
+QID: 001276
+You are the product owner working with your team to refine the backlog. After an intense session, you get the following classifications according to MoSCoW prioritization:
+Order the backlog according to these priorities.
+Won't hav
+Should have items: C, F
+Must have items: D, G
+Could have items: B, E
+(1 = Most Important, 4 = Least / Not Important)
+A PS
+CandF 4v
+DandG »v
+BandE vy
+Correct order is "D and G, C and F, B and E, and A"
+1. Must have - critical to success
+________________________________________________________
+Image: CROP_8_Approach_Agile_27_115951__20.png. Time Elapsed: 1.31 seconds
+Order the backlog according to these priorities.
+Won't have: A.
+Should have items: C, F
+Must have items: D, G
+Could have items: B, E
+(1 = Most Important, 4 = Least / Not Important)
+A 29
+CandF 4v
+DandG v
+BandE vy
+Correct order is "D and G, C and F, B and E, and A"
+Must have - critical to success
+Should have - important but not time-critical
+Could have - desirable but not necessary to success
+RwWwDN Ss
+Won't have - not appropriate at the time.
+DiakAranent:
+________________________________________________________
+Image: CROP_9_Approach_Agile_27_115951__21.png. Time Elapsed: 1.91 seconds
+#11/25
+QID: 000373
+While preparing the work plan for the up coming week, team members were asked about estimates for a challenging piece of work. They responded that the work was t- complex to give an estimate. What can
+be done about this?
+v Suggest team members to conduct time-boxed experiments to be able to give an estimate
+- Defer the work to the following week
+- Tell the team member that it is mandatory to give an estimate for planning purposes
+Orel the team member to start working and prepare the plan later
+Reference: Agile Practice Guide Section 5.2.7
+________________________________________________________

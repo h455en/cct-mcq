@@ -646,7 +646,7 @@ function setupGoHomeButton() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetchQuizzes();
+    //fetchQuizzes();
     setupGoHomeButton(); // Call the function to set up the button
 });
 
@@ -664,4 +664,4 @@ function resetMarkQuestionSwitch() {
 
 
 // Load quizzes on page load
-fetchQuizzes();
+//fetchQuizzes();
