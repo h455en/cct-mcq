@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Fira+Sans:wght@400;500&display=swap');
 
 body {
-    background-color: #eaecc4;
+    background-color: #f6f8d3;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -13,7 +13,7 @@ h4 {
 
 #questionTitle {
     font-family: 'Roboto';
-    font-weight: bold;
+    font-weight: normal;
 }
 
 #optionsContainer {
@@ -22,13 +22,13 @@ h4 {
 }
 
 #timer-container {
-    border: #0b5d83;
+    border: #044461;
     position: fixed;
 }
 
 #timer {
     font-size: 1.5rem;
-    color: rgb(44, 2, 92);
+    color: rgb(40, 2, 85);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: fixed;
     transform: translate(-50%, -50%);
@@ -37,7 +37,6 @@ h4 {
     width: 100%;
     left: 50;
     top: 10;
-
 }
 
 .progress-bar {
@@ -56,7 +55,7 @@ h4 {
     font-family: 'Open Sans', sans-serif;
     min-height: 100px;
     border-radius: 10px;
-    border: 2px solid #c7b7b7;
+    border: 2px solid #0f1abb;
     overflow-y: auto;
     resize: both;
     box-sizing: border-box;
@@ -71,7 +70,7 @@ h4 {
 }
 
 .option-box {
-    border: 1px solid #1f7fac;
+    border: 1px solid #5ba6c9;
     padding: 10px;
     margin-bottom: 10px;
     cursor: pointer;
@@ -96,7 +95,6 @@ h4 {
     cursor: pointer;
     display: block;
 }
-
 
 /* Optional: Add some padding to question text */
 #questionTitle {
@@ -133,7 +131,7 @@ h4 {
 }
 
 .accordion-item {
-    border: 1px solid #dee2e6;
+    border: 1px solid #cfc8df;
     /* Light border between items */
     margin-bottom: 10px;
     /* Spacing between items */
@@ -159,17 +157,47 @@ body {
 
 /* Dark Mode */
 body.dark-mode {
-    background-color: gray;
-    color: burlywood;
+    background-color: rgb(49, 49, 49);
+    color: rgb(223, 162, 82);
 }
 
 
+/* Tree view */
 .folder-item {
     cursor: pointer;
 }
 
 .folder-contents {
-    transition: height 0.3s ease;
+    transition: height 0.2s ease;
+}
+
+/* Practice mode box */
+#feedbackBox {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+#feedbackBox.correct {
+    border: 2px solid #198754;
+    /* Green border for correct answers */
+}
+
+#feedbackBox.incorrect {
+    border: 2px solid #dc3545;
+    /* Red border for incorrect answers */
+}
+
+
+/* Submit in practice mode */
+#quizControls {
+    display: flex;
+    gap: 1rem;
+    /* Space between buttons */
+}
+
+#submitBtn.d-none,
+#nextBtn.d-none {
+    display: none !important;
 }
 
 

@@ -1,9 +1,9 @@
 # zip with versionning
 
-$cct = "cct335"
-$version = "v3.3.5"
+$cct = "cct341"
+$version = "3.4.1"
 Write-Host "Preparing R$version ($cct)" -ForegroundColor Cyan
-$folder = "D:\HASSEN\WORK\CYBERSEC\cct-mcq\App\App_" + $version + ".zip"
+$folder = "D:\HASSEN\WORK\CYBERSEC\cct-mcq\App\App_v" + $version + ".zip"
 
 $compress = @{
     LiteralPath      = "D:\HASSEN\WORK\CYBERSEC\cct-mcq\App\index.html", "D:\HASSEN\WORK\CYBERSEC\cct-mcq\App\script.js", "D:\HASSEN\WORK\CYBERSEC\cct-mcq\App\style.css"

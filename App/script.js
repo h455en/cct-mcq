@@ -1,10 +1,10 @@
-
-
-
+/*
+    MCQ : QUIZZ APP
+*/
 
 const githubAPI = "https://api.github.com/repos/h455en/cct-mcq/contents/Collection";
 const rawBaseURL = "https://raw.githubusercontent.com/h455en/cct-mcq/main/Collection/";
-const githubToken = "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";
+const githubToken = "";
 
 let quizzes = {};  // To hold all quizzes
 let currentQuiz = null; // To store the selected quiz
@@ -15,6 +15,7 @@ let currentQuestionIndex = 0;
 let timerInterval;
 let totalTime;
 let selectedQuizName = null;
+let quizMode = "Exam"; // Default to "Exam" mode
 
 // Elements
 const quizSelectionPage = document.getElementById("quiz-selection");
@@ -37,8 +38,7 @@ const searchQuestionInput = document.getElementById('searchQuestion');
 const darkModeToggle = document.getElementById("darkModeToggle");
 const markRadio = document.getElementById('markQuestion'); // Get the radio button
 const resultsTextArea = document.getElementById('resultsTextArea'); // Get the textarea
-
-
+const modeSelectors = document.querySelectorAll('input[name="quizMode"]');
 //------------
 async function fetchQuizzes() {
     try {
@@ -170,7 +170,103 @@ async function fetchQuizzes() {
     }
 }
 
+modeSelectors.forEach(selector => {
+    selector.addEventListener('change', () => {
+        quizMode = selector.value;
+        console.log(`Quiz mode set to: ${quizMode}`);
+    });
+});
 
+// Feedback container for Practice Mode
+// const feedbackBox = document.createElement('div');
+// feedbackBox.id = "feedbackBox";
+// feedbackBox.className = "mt-3 p-3 border rounded d-none"; // Initially hidden
+// quizRunPage.appendChild(feedbackBox);
+
+
+//...............
+
+
+// Feedback container
+const feedbackBox = document.createElement('div');
+feedbackBox.id = "feedbackBox";
+feedbackBox.className = "mt-3 p-3 border rounded d-none"; // Initially hidden
+quizRunPage.appendChild(feedbackBox);
+
+// Update Submit button event listener
+submitBtn.addEventListener("click", () => {
+    // Validate currentQuiz
+    if (!currentQuiz || !Array.isArray(currentQuiz) || currentQuiz.length === 0) {
+        console.error("Invalid or empty quiz data:", currentQuiz);
+        alert("Error: No quiz data available.");
+        return;
+    }
+
+    // Record the user's answer for the current question
+    const selectedOption = document.querySelector('input[name="option"]:checked');
+    if (!selectedOption) {
+        alert("Please select an option before submitting.");
+        return;
+    }
+    userAnswers[currentQuestionIndex] = parseInt(selectedOption.value);
+
+    if (quizMode === "Practice") {
+        // Practice Mode: Show feedback immediately
+        const currentQuestion = currentQuiz[currentQuestionIndex];
+        const correctAnswerIndex = currentQuestion.correct_index; // Correct index from currentQuiz
+        const correctAnswerLetter = getOptionLetter(correctAnswerIndex); // Convert to letter
+        const userAnswerLetter = getOptionLetter(userAnswers[currentQuestionIndex]); // Convert user's answer to letter
+        const explanation = currentQuestion.explanation || "No explanation provided.";
+        const isCorrect = userAnswerLetter === correctAnswerLetter;
+
+        // Display feedback in the box
+        feedbackBox.innerHTML = `
+            <h5>Feedback</h5>
+            <p><strong>Your Answer:</strong> ${userAnswerLetter}</p>
+            <p><strong>Correct Answer:</strong> ${correctAnswerLetter}</p>
+            <p>${isCorrect ? "✅ Correct!" : "❌ Incorrect."}</p>
+            <p><strong>Explanation:</strong> ${explanation}</p>
+        `;
+        feedbackBox.classList.remove("d-none");
+
+        // Show Next button and hide Submit button
+        submitBtn.classList.add("d-none");
+        nextBtn.classList.remove("d-none");
+    } else {
+        // Exam Mode: Proceed directly to next question
+        feedbackBox.classList.add("d-none");
+        submitBtn.classList.add("d-none");
+        nextBtn.classList.remove("d-none");
+    }
+});
+
+// Update Next button event listener
+nextBtn.addEventListener("click", () => {
+    // Move to the next question
+    currentQuestionIndex++;
+
+    if (currentQuestionIndex < currentQuiz.length) {
+        // Load the next question
+        loadQuestion();
+
+        // Hide feedback and show Submit button
+        feedbackBox.classList.add("d-none");
+        nextBtn.classList.add("d-none");
+        submitBtn.classList.remove("d-none");
+    } else {
+        // End of quiz: Show evaluation
+        showEvaluation();
+    }
+});
+
+// Helper function to convert index to letter (A, B, C, D)
+function getOptionLetter(index) {
+    return ["A", "B", "C", "D"][index];
+}
+
+
+
+//............
 function getSelectedQuizName() {
     if (uploadFile.files.length > 0) {
         return uploadFile.files[0].name;
@@ -191,9 +287,8 @@ function preprocessQuizData(quizData) {
     return quizData;
 }
 
-
 function getOptionLetter(index) {
-    return ['A', 'B', 'C', 'D'][index]; // Convert index to option letter (A, B, C, D)
+    return ["A", "B", "C", "D"][index]; // Helper function to convert index to letter (A, B, C, D)
 }
 
 // Add a click event listener to toggle dark mode
@@ -266,12 +361,11 @@ function startQuiz(quizData) {
     quizRunPage.classList.remove("d-none");
 
     // Reset quiz state
-    currentQuestionIndex = 0;
+    currentQuestionIndex = 0;  // <---------------------  move to reset  ? 
     userAnswers = [];
     markedAnswers = [];
 
-    // Start the timer
-    const secondsPerQuestion = 30; // 30 seconds per question
+    const secondsPerQuestion = 40; // 30 seconds per question
     startTimer(currentQuiz.length * secondsPerQuestion);
 
     // Load the first question
@@ -279,6 +373,7 @@ function startQuiz(quizData) {
 }
 
 function loadQuestion() {
+    resetMarkQuestionSwitch(); // Reset the switch when loading a new question
     // Check if currentQuiz is valid and the question index is within bounds
     if (!currentQuiz || currentQuestionIndex >= currentQuiz.length) {
         console.error("No valid question to load. currentQuiz:", currentQuiz, "currentQuestionIndex:", currentQuestionIndex);
@@ -321,31 +416,6 @@ markRadio.addEventListener('change', () => {
         markedAnswers.push(currentQuestionIndex + 1);
     }
     console.log("Marked Answers:", markedAnswers);
-});
-
-nextBtn.addEventListener("click", () => {
-    // Validate currentQuiz
-    if (!currentQuiz || !Array.isArray(currentQuiz) || currentQuiz.length === 0) {
-        console.error("Invalid or empty quiz data:", currentQuiz);
-        alert("Error: No quiz data available.");
-        return;
-    }
-
-    // Record the user's answer for the current question
-    const selectedOption = document.querySelector('input[name="option"]:checked');
-    if (!selectedOption) {
-        alert("Please select an option before proceeding.");
-        return;
-    }
-    userAnswers[currentQuestionIndex] = parseInt(selectedOption.value);
-
-    // Move to the next question or end the quiz
-    currentQuestionIndex++;
-    if (currentQuestionIndex < currentQuiz.length) {
-        loadQuestion(); // Load the next question
-    } else {
-        showEvaluation(); // Show evaluation if all questions are answered
-    }
 });
 
 function startTimer(duration) {
@@ -402,6 +472,7 @@ function resetQuizState() {
     selectedQuizzName = null;
     resetMarkQuestionSwitch();
 }
+
 
 //..........
 function showEvaluation() {
@@ -578,7 +649,19 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchQuizzes();
     setupGoHomeButton(); // Call the function to set up the button
 });
+
+
 //----
+
+function resetMarkQuestionSwitch() {
+    const markQuestionSwitch = document.getElementById('markQuestion');
+    if (markQuestionSwitch) { // Check if the element exists
+        markQuestionSwitch.checked = false;
+    } else {
+        console.error("markQuestion element not found!");
+    }
+}
+
 
 // Load quizzes on page load
 fetchQuizzes();
