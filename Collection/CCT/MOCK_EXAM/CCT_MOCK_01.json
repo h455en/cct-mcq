@@ -1,0 +1,722 @@
+[
+  {
+    "question_number": 1,
+    "question": "A company's website is defaced with political messages. Which security principle has been primarily violated?",
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Non-Repudiation"
+    ],
+    "correct_index": "B",
+    "explanation": "Defacement alters the website's content, violating integrity."
+  },
+  {
+    "question_number": 2,
+    "question": "A network experiences a SYN flood attack, overwhelming the server with connection requests. Which security principle is most directly affected?",
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Authentication"
+    ],
+    "correct_index": "C",
+    "explanation": "SYN flood attacks are a type of Denial of Service (DoS) attack, impacting availability."
+  },
+  {
+    "question_number": 3,
+    "question": "A security administrator needs to block traffic from a specific IP address. Which network device is most suitable for this task?",
+    "options": [
+      "Switch",
+      "Router",
+      "Firewall",
+      "Hub"
+    ],
+    "correct_index": "C",
+    "explanation": "Firewalls control network traffic based on rules, including blocking specific IP addresses."
+  },
+  {
+    "question_number": 4,
+    "question": "An employee receives an email with a link to a fake login page that mimics their company's intranet. What type of attack is this?",
+    "options": [
+      "Phishing",
+      "Vishing",
+      "Smishing",
+      "Spear phishing"
+    ],
+    "correct_index": "A",
+    "explanation": "Phishing uses deceptive emails or websites to trick users into revealing information."
+  },
+  {
+    "question_number": 5,
+    "question": "Malware encrypts a user's files and demands payment for decryption. What type of malware is this?",
+    "options": [
+      "Ransomware",
+      "Spyware",
+      "Adware",
+      "Keylogger"
+    ],
+    "correct_index": "A",
+    "explanation": "Ransomware encrypts files and demands a ransom for their release."
+  },
+  {
+    "question_number": 6,
+    "question": "A software vulnerability is discovered and publicly disclosed, but no patch is yet available. What type of vulnerability is this?",
+    "options": [
+      "Zero-day vulnerability",
+      "Known vulnerability",
+      "Misconfiguration",
+      "Design flaw"
+    ],
+    "correct_index": "A",
+    "explanation": "A zero-day vulnerability is unknown to the vendor and has no patch."
+  },
+  {
+    "question_number": 7,
+    "question": "A user reports they can access local network resources but cannot reach the internet. `ping 8.8.8.8` fails. What is the most likely issue?",
+    "options": [
+      "DNS server issue",
+      "Default gateway issue",
+      "Faulty network cable",
+      "IP address conflict"
+    ],
+    "correct_index": "B",
+    "explanation": "The inability to reach an external IP address suggests a problem with the default gateway."
+  },
+  {
+    "question_number": 8,
+    "question": "Which command is used to display the routing table on a Windows system?",
+    "options": [
+      "ipconfig",
+      "tracert",
+      "route print",
+      "netstat"
+    ],
+    "correct_index": "C",
+    "explanation": "`route print` displays the routing table."
+  },
+  {
+    "question_number": 9,
+    "question": "A security analyst needs to capture network traffic for analysis. Which tool is most suitable?",
+    "options": [
+      "ping",
+      "tracert",
+      "Wireshark",
+      "nslookup"
+    ],
+    "correct_index": "C",
+    "explanation": "Wireshark is a network protocol analyzer used for capturing and analyzing network traffic."
+  },
+  {
+    "question_number": 10,
+    "question": "Which type of data backup only backs up data that has changed since the last *full* backup?",
+    "options": [
+      "Full backup",
+      "Incremental backup",
+      "Differential backup",
+      "Snapshot backup"
+    ],
+    "correct_index": "C",
+    "explanation": "Differential backups back up all changes since the last full backup."
+  },
+  {
+    "question_number": 11,
+    "question": "Which RAID level provides disk mirroring?",
+    "options": [
+      "RAID 0",
+      "RAID 1",
+      "RAID 5",
+      "RAID 10"
+    ],
+    "correct_index": "B",
+    "explanation": "RAID 1 mirrors data across multiple disks."
+  },
+  {
+    "question_number": 12,
+    "question": "A company needs to hide sensitive data like credit card numbers when displaying information on a web page. What technique should they use?",
+    "options": [
+      "Encryption",
+      "Hashing",
+      "Data masking",
+      "Data destruction"
+    ],
+    "correct_index": "C",
+    "explanation": "Data masking hides sensitive portions of data while keeping other parts visible."
+  },
+  {
+    "question_number": 13,
+    "question": "An attacker gains unauthorized access to a wireless network by setting up a fake access point that mimics a legitimate one. What type of attack is this?",
+    "options": [
+      "Evil Twin attack",
+      "Jamming attack",
+      "Replay attack",
+      "Bluesnarfing"
+    ],
+    "correct_index": "A",
+    "explanation": "An Evil Twin is a rogue access point set up to mimic a legitimate Wi-Fi network."
+  },
+  {
+    "question_number": 14,
+    "question": "An attacker sends a large number of ICMP echo requests (pings) to a target system, overwhelming it with traffic. What type of attack is this?",
+    "options": [
+      "SYN flood",
+      "Ping flood",
+      "DNS amplification",
+      "Smurf attack"
+    ],
+    "correct_index": "B",
+    "explanation": "A ping flood is a type of Denial of Service (DoS) attack that overwhelms a target with ICMP echo requests."
+  },
+  {
+    "question_number": 15,
+    "question": "An attacker modifies the MAC address of their network interface card to impersonate another device on the network. What type of attack is this?",
+    "options": [
+      "IP spoofing",
+      "MAC spoofing",
+      "ARP poisoning",
+      "DNS poisoning"
+    ],
+    "correct_index": "B",
+    "explanation": "MAC spoofing changes the MAC address of a network interface."
+  },
+  {
+    "question_number": 16,
+    "question": "An attacker intercepts and modifies communication between two parties without their knowledge. What type of attack is this?",
+    "options": [
+      "Man-in-the-Middle (MitM)",
+      "Denial of Service (DoS)",
+      "Distributed Denial of Service (DDoS)",
+      "Replay attack"
+    ],
+    "correct_index": "A",
+    "explanation": "MitM attacks involve an attacker intercepting and potentially altering communications between two parties."
+  },
+  {
+    "question_number": 17,
+    "question": "Which type of attack involves tricking a user into performing actions on a website while they are authenticated, without their knowledge?",
+    "options": [
+      "Cross-Site Request Forgery (CSRF)",
+      "Cross-Site Scripting (XSS)",
+      "SQL Injection",
+      "Session hijacking"
+    ],
+    "correct_index": "A",
+    "explanation": "CSRF attacks exploit the trust a website has in an authenticated user."
+  },
+  {
+    "question_number": 18,
+    "question": "Which password attack uses pre-computed tables of hashes to speed up the cracking process?",
+    "options": [
+      "Brute-force attack",
+      "Dictionary attack",
+      "Rainbow table attack",
+      "Password spraying"
+    ],
+    "correct_index": "C",
+    "explanation": "Rainbow tables are pre-computed hash tables used for faster password cracking."
+  },
+  {
+    "question_number": 19,
+    "question": "What is the primary purpose of a rootkit?",
+    "options": [
+      "To encrypt user files",
+      "To steal user credentials",
+      "To hide malicious activity and maintain persistent access",
+      "To flood a network with traffic"
+    ],
+    "correct_index": "C",
+    "explanation": "Rootkits are designed to hide their presence and maintain persistent access to a system."
+  },
+  {
+    "question_number": 20,
+    "question": "Which type of attack targets the availability of cloud services by overwhelming them with traffic?",
+    "options": [
+      "Cloud cryptojacking",
+      "Cloud Hopper attack",
+      "Cloud DDoS attack",
+      "Man-in-the-Cloud (MITC) attack"
+    ],
+    "correct_index": "C",
+    "explanation": "Cloud DDoS attacks target cloud resources with high volumes of traffic to disrupt service."
+  },
+  {
+    "question_number": 21,
+    "question": "A technician uses a tool to check the continuity and wiring of a network cable. Which tool is most likely being used?",
+    "options": [
+      "ping",
+      "tracert",
+      "Cable tester",
+      "ipconfig"
+    ],
+    "correct_index": "C",
+    "explanation": "A cable tester is designed to verify the physical integrity of network cables."
+  },
+  {
+    "question_number": 22,
+    "question": "A network administrator observes a large number of ICMP redirect messages. What does this usually indicate?",
+    "options": [
+      "A routing problem",
+      "A DNS server failure",
+      "A firewall misconfiguration",
+      "A network loop"
+    ],
+    "correct_index": "A",
+    "explanation": "ICMP redirects indicate that hosts are using a suboptimal default gateway and are being redirected to a better route."
+  },
+  {
+    "question_number": 23,
+    "question": "A user can ping their local gateway but cannot access any external websites by name. What is the most likely cause?",
+    "options": [
+      "DNS resolution issue",
+      "Routing problem",
+      "Firewall blocking outgoing connections",
+      "Physical connectivity issue"
+    ],
+    "correct_index": "A",
+    "explanation": "The ability to ping the gateway confirms basic connectivity. The inability to resolve domain names points to a DNS problem."
+  },
+  {
+    "question_number": 24,
+    "question": "Which attack involves an attacker capturing and replaying network traffic to re-establish a session?",
+    "options": [
+      "Replay attack",
+      "Man-in-the-Middle attack",
+      "Denial-of-Service attack",
+      "DNS poisoning"
+    ],
+    "correct_index": "A",
+    "explanation": "A replay attack captures and re-sends network packets to gain unauthorized access."
+  },
+  {
+    "question_number": 25,
+    "question": "Which attack targets vulnerabilities in web applications to inject malicious client-side scripts into web pages viewed by other users?",
+    "options": [
+      "Cross-Site Scripting (XSS)",
+      "SQL Injection",
+      "Cross-Site Request Forgery (CSRF)",
+      "Directory traversal"
+    ],
+    "correct_index": "A",
+    "explanation": "XSS attacks inject malicious scripts that execute in the user's browser."
+  },
+  {
+    "question_number": 26,
+    "question": "An attacker sends a specially crafted XML document to exploit a vulnerability in an XML parser. What type of attack is this?",
+    "options": [
+      "XML External Entity (XXE) injection",
+      "SQL Injection",
+      "Directory traversal",
+      "Parameter tampering"
+    ],
+    "correct_index": "A",
+    "explanation": "XXE injection exploits vulnerabilities in XML processing to access external entities."
+  },
+  {
+    "question_number": 27,
+    "question": "Which type of attack involves an attacker tricking a user into executing unwanted actions on a website where they are currently authenticated?",
+    "options": [
+      "Cross-Site Request Forgery (CSRF)",
+      "Cross-Site Scripting (XSS)",
+      "SQL Injection",
+      "Session hijacking"
+    ],
+    "correct_index": "A",
+    "explanation": "CSRF attacks exploit the trust a website has in an authenticated user to perform actions without their consent."
+  },
+  {
+    "question_number": 28,
+    "question": "Which password attack involves trying a small set of common passwords against a large number of user accounts?",
+    "options": [
+      "Brute-force attack",
+      "Dictionary attack",
+      "Password spraying",
+      "Rainbow table attack"
+    ],
+    "correct_index": "C",
+    "explanation": "Password spraying attempts to avoid account lockouts by using a small set of passwords across many accounts."
+  },
+  {
+    "question_number": 29,
+    "question": "Which type of malware is designed to hide its presence on a system and often provides backdoor access?",
+    "options": [
+      "Virus",
+      "Worm",
+      "Trojan",
+      "Rootkit"
+    ],
+    "correct_index": "D",
+    "explanation": "Rootkits are designed for stealth and persistent access."
+  },
+  {
+    "question_number": 30,
+    "question": "Which type of wireless attack involves setting up a rogue access point that mimics a legitimate Wi-Fi network?",
+    "options": [
+      "Evil Twin attack",
+      "Bluesnarfing",
+      "Bluejacking",
+      "Deauthentication attack"
+    ],
+    "correct_index": "A",
+    "explanation": "An Evil Twin attack creates a fake Wi-Fi hotspot to capture user credentials."
+  },
+  {
+    "question_number": 31,
+    "question": "A user receives a text message claiming to be from their bank, asking them to click a link to verify their account. What type of attack is this?",
+    "options": [
+      "Phishing",
+      "Smishing",
+      "Vishing",
+      "Spear phishing"
+    ],
+    "correct_index": "B",
+    "explanation": "Smishing is phishing conducted through SMS text messages."
+  },
+  {
+    "question_number": 32,
+    "question": "Which type of cloud attack involves an attacker gaining unauthorized access to sensitive data stored in a misconfigured cloud storage bucket?",
+    "options": [
+      "Cloud cryptojacking",
+      "Cloud Hopper attack",
+      "Exploiting misconfigured cloud storage buckets",
+      "Man-in-the-Cloud (MITC) attack"
+    ],
+    "correct_index": "C",
+    "explanation": "Misconfigured cloud storage buckets can expose sensitive data to unauthorized access."
+  },
+  {
+    "question_number": 33,
+    "question": "Which cryptographic attack exploits weaknesses in hashing algorithms where two different inputs produce the same hash output?",
+    "options": [
+      "Birthday attack",
+      "Hash collision attack",
+      "Rainbow table attack",
+      "Brute-force attack"
+    ],
+    "correct_index": "B",
+    "explanation": "Hash collision attacks exploit weaknesses in hashing functions to find collisions."
+  },
+  {
+    "question_number": 34,
+    "question": "Which data security control involves restricting access to files and folders based on user and group permissions?",
+    "options": [
+      "Access Control Lists (ACLs)",
+      "Disk encryption",
+      "File-level encryption",
+      "Database encryption"
+    ],
+    "correct_index": "A",
+    "explanation": "ACLs define who has access to specific resources."
+  },
+  {
+    "question_number": 35,
+    "question": "Which data backup method creates a complete copy of all selected data?",
+    "options": [
+      "Full backup",
+      "Incremental backup",
+      "Differential backup",
+      "Snapshot backup"
+    ],
+    "correct_index": "A",
+    "explanation": "A full backup copies all data."
+  },
+  {
+    "question_number": 36,
+    "question": "Which data destruction method involves using a strong magnetic field to erase data from magnetic storage devices?",
+    "options": [
+      "Shredding",
+      "Degaussing",
+      "Overwriting",
+      "Physical destruction"
+    ],
+    "correct_index": "B",
+    "explanation": "Degaussing uses a strong magnetic field to erase data."
+  },
+  {
+    "question_number": 37,
+    "question": "What is the primary goal of Data Loss Prevention (DLP) solutions?",
+    "options": [
+      "To prevent sensitive data from leaving the organization's control",
+      "To encrypt all data at rest",
+      "To back up data regularly",
+      "To detect and respond to intrusions"
+    ],
+    "correct_index": "A",
+    "explanation": "DLP focuses on preventing data exfiltration."
+  },
+  {
+    "question_number": 38,
+    "question": "A user reports they cannot access a specific server on the local network. Pinging the server's IP address results in 'Request timed out'. Other users on the same network *can* access the server. What is the most likely cause?",
+    "options": [
+      "A firewall on the user's computer is blocking the connection.",
+      "The server is down.",
+      "There is a routing problem on the network.",
+      "The user's network cable is unplugged."
+    ],
+    "correct_index": "A",
+    "explanation": "Since other users can access the server, the problem is isolated to the user's machine, suggesting a local firewall or client-side issue."
+  },
+  {
+    "question_number": 39,
+    "question": "A technician observes a user entering their password over someone's shoulder. What type of social engineering attack is this?",
+    "options": [
+      "Shoulder surfing",
+      "Phishing",
+      "Tailgating",
+      "Dumpster diving"
+    ],
+    "correct_index": "A",
+    "explanation": "Shoulder surfing involves directly observing someone's actions to steal information."
+  },
+  {
+    "question_number": 40,
+    "question": "An attacker creates a fake website that looks identical to a legitimate online banking site to steal user credentials. What type of attack is this?",
+    "options": [
+      "Pharming",
+      "Phishing",
+      "Vishing",
+      "Smishing"
+    ],
+    "correct_index": "B",
+    "explanation": "Phishing involves creating deceptive websites or emails to trick users into revealing sensitive information."
+  },
+  {
+    "question_number": 41,
+    "question": "An attacker uses a program to record every keystroke a user makes on their keyboard. What type of malware is this?",
+    "options": [
+      "Keylogger",
+      "Spyware",
+      "Adware",
+      "Ransomware"
+    ],
+    "correct_index": "A",
+    "explanation": "Keyloggers record keystrokes to capture sensitive information like passwords."
+  },
+  {
+    "question_number": 42,
+    "question": "Which type of attack involves exploiting vulnerabilities in wireless access points to disconnect legitimate users from the network?",
+    "options": [
+      "Deauthentication attack",
+      "Evil Twin attack",
+      "WPA cracking",
+      "Bluesnarfing"
+    ],
+    "correct_index": "A",
+    "explanation": "Deauthentication attacks disrupt wireless communication by sending deauthentication packets."
+  },
+  {
+    "question_number": 43,
+    "question": "Which mobile device attack involves sending malicious text messages to trick users into revealing information or installing malware?",
+    "options": [
+      "Smishing",
+      "Bluesnarfing",
+      "Bluejacking",
+      "Jailbreaking"
+    ],
+    "correct_index": "A",
+    "explanation": "Smishing is phishing conducted through SMS text messages."
+  },
+  {
+    "question_number": 44,
+    "question": "Which cloud-specific attack involves an attacker using compromised cloud resources to mine cryptocurrency?",
+    "options": [
+      "Cloud cryptojacking",
+      "Cloud Hopper attack",
+      "Man-in-the-Cloud (MITC) attack",
+      "Side-channel attack"
+    ],
+    "correct_index": "A",
+    "explanation": "Cloud cryptojacking uses cloud resources for unauthorized cryptocurrency mining."
+  },
+  {
+    "question_number": 45,
+    "question": "Which cryptographic attack attempts to find two different inputs that produce the same hash output?",
+    "options": [
+      "Birthday attack",
+      "Brute-force attack",
+      "Rainbow table attack",
+      "Hash collision attack"
+    ],
+    "correct_index": "D",
+    "explanation": "Hash collision attacks exploit weaknesses in hashing algorithms to find collisions."
+  },
+  {
+    "question_number": 46,
+    "question": "Which data state refers to data that is being actively used or processed by a computer system?",
+    "options": [
+      "Data at rest",
+      "Data in transit",
+      "Data in use",
+      "Archived data"
+    ],
+    "correct_index": "C",
+    "explanation": "Data in use is actively being processed."
+  },
+  {
+    "question_number": 47,
+    "question": "Which data security technology encrypts the entire hard drive of a computer?",
+    "options": [
+      "File-level encryption",
+      "Disk encryption",
+      "Database encryption",
+      "Email encryption"
+    ],
+    "correct_index": "B",
+    "explanation": "Disk encryption protects the entire drive."
+  },
+  {
+    "question_number": 48,
+    "question": "Which data backup method backs up only the data that has changed since the last *full* backup?",
+    "options": [
+      "Full backup",
+      "Incremental backup",
+      "Differential backup",
+      "Snapshot backup"
+    ],
+    "correct_index": "C",
+    "explanation": "Differential backups back up changes since the last full backup."
+  },
+  {
+    "question_number": 49,
+    "question": "Which storage technology uses a dedicated high-speed network for block-level storage access?",
+    "options": [
+      "SAN (Storage Area Network)",
+      "NAS (Network Attached Storage)",
+      "DAS (Direct Attached Storage)",
+      "Cloud storage"
+    ],
+    "correct_index": "A",
+    "explanation": "SANs use a dedicated network for storage."
+  },
+  {
+    "question_number": 50,
+    "question": "What is the primary goal of a Data Loss Prevention (DLP) system?",
+    "options": [
+      "To prevent sensitive data from leaving the organization's control",
+      "To encrypt all data at rest",
+      "To perform regular data backups",
+      "To detect and prevent malware infections"
+    ],
+    "correct_index": "A",
+    "explanation": "DLP prevents data exfiltration."
+  },
+  {
+    "question_number": 51,
+    "question": "A user reports they can ping the IP address of a server but cannot connect to it using its hostname. What is the likely problem?",
+    "options": [
+      "DNS resolution issue",
+      "Routing problem",
+      "Firewall issue",
+      "Physical connectivity issue"
+    ],
+    "correct_index": "A",
+    "explanation": "The ability to ping the IP confirms network connectivity; the inability to resolve the hostname points to a DNS problem."
+  },
+  {
+    "question_number": 52,
+    "question": "Which command is used to trace the route that packets take to reach a destination on a Windows system?",
+    "options": [
+      "ping",
+      "tracert",
+      "ipconfig",
+      "netstat"
+    ],
+    "correct_index": "B",
+    "explanation": "tracert (or traceroute on Linux/macOS) traces the route of network packets."
+  },
+  {
+    "question_number": 53,
+    "question": "Which tool is commonly used for network port scanning?",
+    "options": [
+      "ping",
+      "tracert",
+      "nmap",
+      "Wireshark"
+    ],
+    "correct_index": "C",
+    "explanation": "Nmap is a powerful port scanner."
+  },
+  {
+    "question_number": 54,
+    "question": "Which type of malware replicates itself and spreads automatically across networks?",
+    "options": [
+      "Virus",
+      "Worm",
+      "Trojan",
+      "Rootkit"
+    ],
+    "correct_index": "B",
+    "explanation": "Worms self-propagate across networks."
+  },
+  {
+    "question_number": 55,
+    "question": "Which social engineering technique involves searching through trash or discarded items for sensitive information?",
+    "options": [
+      "Dumpster diving",
+      "Phishing",
+      "Shoulder surfing",
+      "Pretexting"
+    ],
+    "correct_index": "A",
+    "explanation": "Dumpster diving involves retrieving discarded information."
+  },
+  {
+    "question_number": 56,
+    "question": "Which wireless attack involves disrupting wireless communication by sending deauthentication packets?",
+    "options": [
+      "Deauthentication attack",
+      "Evil Twin attack",
+      "Jamming attack",
+      "Replay attack"
+    ],
+    "correct_index": "A",
+    "explanation": "Deauthentication attacks disconnect clients from the access point."
+  },
+  {
+    "question_number": 57,
+    "question": "Which mobile attack involves tricking users into installing malicious apps from unofficial app stores?",
+    "options": [
+      "Mobile malware",
+      "Smishing",
+      "Bluesnarfing",
+      "Jailbreaking"
+    ],
+    "correct_index": "A",
+    "explanation": "Mobile malware can be distributed through various methods, including unofficial app stores."
+  },
+  {
+    "question_number": 58,
+    "question": "Which cloud attack involves an attacker gaining unauthorized access to a cloud environment by compromising user credentials?",
+    "options": [
+      "Cloud cryptojacking",
+      "Cloud Hopper attack",
+      "Man-in-the-Cloud (MITC) attack",
+      "Side-channel attack"
+    ],
+    "correct_index": "C",
+    "explanation": "MITC attacks involve an attacker positioning themselves between the user and the cloud service."
+  },
+  {
+    "question_number": 59,
+    "question": "Which cryptographic attack involves trying all possible keys or passwords to decrypt data or gain access to a system?",
+    "options": [
+      "Brute-force attack",
+      "Dictionary attack",
+      "Rainbow table attack",
+      "Hash collision attack"
+    ],
+    "correct_index": "A",
+    "explanation": "Brute-force attacks try every possible combination."
+  },
+  {
+    "question_number": 60,
+    "question": "Which data destruction method involves physically destroying storage media using methods like shredding or incineration?",
+    "options": [
+      "Shredding/Physical destruction",
+      "Degaussing",
+      "Overwriting",
+      "Wiping"
+    ],
+    "correct_index": "A",
+    "explanation": "Physical destruction methods render the media unusable and the data unrecoverable."
+  }
+]

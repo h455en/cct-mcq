@@ -81,8 +81,7 @@ h4 {
 }
 
 .option-box:hover {
-    background-color: #1c7f86;
-    /* Light gray on hover */
+    background-color: #e2e4c3;
 }
 
 .option-box.selected {

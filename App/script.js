@@ -251,7 +251,6 @@ nextBtn.addEventListener("click", () => {
     }
 });
 
-
 function getSelectedQuizName() {
     if (uploadFile.files.length > 0) {
         return uploadFile.files[0].name;
@@ -376,7 +375,7 @@ function loadQuestion() {
     }
 
     // Render the question title
-    questionTitle.innerText = `Q${currentQuestionIndex + 1}: ${currentQuestion.question}`;
+    questionTitle.innerText = `Q${currentQuestionIndex + 1}: ${currentQuestion.question} ❓ `;
 
     // Render the options dynamically
     optionsContainer.innerHTML = currentQuestion.options
