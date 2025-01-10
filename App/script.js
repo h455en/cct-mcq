@@ -4,7 +4,7 @@
 
 const githubAPI = "https://api.github.com/repos/h455en/cct-mcq/contents/Collection";
 const rawBaseURL = "https://raw.githubusercontent.com/h455en/cct-mcq/main/Collection/";
-const githubToken = "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";
+const githubToken = "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";
 
 let quizzes = {};  // To hold all quizzes
 let currentQuiz = null; // To store the selected quiz
@@ -42,16 +42,13 @@ const modeSelectors = document.querySelectorAll('input[name="quizMode"]');
 
 
 //------------
+
 async function fetchQuizzes() {
     try {
         const headers = {
             Authorization: `Bearer ${githubToken}`,
             Accept: "application/vnd.github.v3+json"
         };
-
-        // Show loading spinner
-        const loadingIndicator = document.getElementById("loadingIndicator");
-        loadingIndicator.classList.remove("d-none");
 
         const response = await fetch(githubAPI, { headers });
         if (!response.ok) {
@@ -89,7 +86,7 @@ async function fetchQuizzes() {
         // Fetch contents of all directories recursively
         await Promise.all(items.map(fetchDirectoryContents));
 
-        // Build tree view HTML dynamically
+        // Build tree view dynamically
         function buildTreeView(data) {
             let treeHTML = "<ul class='list-group'>";
             data.forEach(item => {
@@ -97,7 +94,7 @@ async function fetchQuizzes() {
                     // Collapsible folder
                     treeHTML += `
                         <li class="list-group-item folder-item">
-                            <a href="#" class="folder-toggle" data-bs-target="#folder-${item.name}">
+                            <a href="#" class="folder-toggle" data-bs-toggle="collapse" data-bs-target="#folder-${item.name}">
                                 📁 ${item.name}
                             </a>
                             <div class="folder-contents collapse" id="folder-${item.name}">
@@ -125,22 +122,6 @@ async function fetchQuizzes() {
         const quizTreeView = document.getElementById("quizTreeView");
         quizTreeView.innerHTML = treeViewHTML;
 
-        // Hide loading spinner
-        loadingIndicator.classList.add("d-none");
-
-        // Attach event listeners to folders for toggling
-        document.querySelectorAll(".folder-toggle").forEach(folder => {
-            folder.addEventListener("click", (e) => {
-                e.preventDefault();
-                const target = document.querySelector(folder.getAttribute("data-bs-target"));
-                if (target.classList.contains("collapse")) {
-                    target.classList.remove("collapse");
-                } else {
-                    target.classList.add("collapse");
-                }
-            });
-        });
-
         // Attach event listeners to leaf nodes (JSON files)
         document.querySelectorAll(".quiz-select").forEach(quiz => {
             quiz.addEventListener("click", async (e) => {
@@ -148,19 +129,22 @@ async function fetchQuizzes() {
                 const quizUrl = quiz.getAttribute("data-url");
                 const quizName = quiz.getAttribute("data-name");
 
-                //if (confirm(`Do you want to load and run the quiz "${quizName}"?`)) {
-                try {
-                    const quizResponse = await fetch(quizUrl);
-                    if (!quizResponse.ok) {
-                        throw new Error(`HTTP error ${quizResponse.status} loading ${quizName}`);
+                if (confirm(`Do you want to load and run the quiz "${quizName}"?`)) {
+                    try {
+                        const quizResponse = await fetch(quizUrl);
+                        if (!quizResponse.ok) {
+                            throw new Error(`HTTP error ${quizResponse.status} loading ${quizName}`);
+                        }
+                        const quizData = await quizResponse.json();
+                        console.log("Loaded Quiz Data:", quizData);
+
+                        // Parse and preprocess the quiz data
+                        quizzes[quizName] = preprocessQuizData(quizData);
+                        startQuiz(quizzes[quizName]); // Start the quiz
+                    } catch (error) {
+                        console.error(`Error loading quiz file ${quizName}:`, error);
+                        alert(`Failed to load the quiz "${quizName}".`);
                     }
-                    const quizData = await quizResponse.json();
-                    quizzes[quizName] = preprocessQuizData(quizData);
-                    console.log(`Quiz "${quizName}" loaded successfully!`);
-                    startQuiz(quizData); // Immediately start the quiz
-                } catch (error) {
-                    console.error(`Error loading quiz file ${quizName}:`, error);
-                    alert(`Failed to load the quiz "${quizName}".`);
                 }
             });
         });
@@ -171,6 +155,8 @@ async function fetchQuizzes() {
         alert("Failed to load quizzes. Please check your internet connection or the quiz source.");
     }
 }
+
+//-------------
 
 modeSelectors.forEach(selector => {
     selector.addEventListener('change', () => {
@@ -214,9 +200,7 @@ submitBtn.addEventListener("click", () => {
         // Display feedback in the box
         feedbackBox.innerHTML = `
             <h5>Feedback</h5>
-            <p><strong>Your Answer:</strong> ${userAnswerLetter}</p>
-            <p><strong>Correct Answer:</strong> ${correctAnswerLetter}</p>
-            <p>${isCorrect ? "✅ Correct!" : "❌ Incorrect."}</p>
+            <p><strong>Your Answer:</strong> ${userAnswerLetter} - ${isCorrect ? "✅ Correct!" : "❌ Incorrect."} - Correct Answer:</strong> ${correctAnswerLetter}</p>
             <p><strong>Explanation:</strong> ${explanation}</p>
         `;
         feedbackBox.classList.remove("d-none");
@@ -262,14 +246,31 @@ function getSelectedQuizName() {
     }
 }
 
-// Process and store correct answers
+
+
+// quizData.forEach(q => {
+//     correctAnswers.push(q.correct_index);
+//     // convert to letter if needed
+// });
+
+
+//...........
+
 function preprocessQuizData(quizData) {
-    quizData.forEach(q => {
-        correctAnswers.push(q.correct_index);
-        // convert to letter if needed
-    });
-    return quizData;
+    // Extract metadata and preprocess questions
+    return {
+        qid: quizData.qid,
+        name: quizData.name,
+        description: quizData.description,
+        source: quizData.source,
+        questions: quizData.questions.map(q => ({
+            ...q,
+            correctAnswer: q.options[q.correct_index] // Add correctAnswer for convenience
+        }))
+    };
 }
+
+//.........
 
 function getOptionLetter(index) {
     return ["A", "B", "C", "D"][index]; // Helper function to convert index to letter (A, B, C, D)
@@ -328,73 +329,55 @@ startQuizBtn.addEventListener("click", () => {
     startQuiz(currentQuiz);
 });
 
-
 function startQuiz(quizData) {
-    // Validate the provided quiz data
-    if (!quizData || !Array.isArray(quizData) || quizData.length === 0) {
+    // Ensure quizData is valid
+    if (!quizData || !Array.isArray(quizData.questions) || quizData.questions.length === 0) {
         console.error("Invalid quiz data provided:", quizData);
         alert("Error: The selected quiz is empty or invalid.");
         return;
     }
 
-    // Assign the quiz data to currentQuiz
-    currentQuiz = quizData;
+    // Set quiz metadata
+    document.getElementById('quizName').innerText = quizData.name;
+    document.getElementById('quizDescription').innerText = quizData.description;
+    document.getElementById('quizSource').innerText = `Source: ${quizData.source}`;
 
-    // Transition to the quiz run page
+    // Initialize current quiz
+    currentQuiz = quizData.questions;
+
+    // Transition to quiz page
     quizSelectionPage.classList.add("d-none");
     quizRunPage.classList.remove("d-none");
 
     // Reset quiz state
-    currentQuestionIndex = 0;  // <----------------------------------------  move to reset  ? 
+    currentQuestionIndex = 0;
     userAnswers = [];
-    markedAnswers = [];
-
-    const secondsPerQuestion = 40; // 30 seconds per question
-    startTimer(currentQuiz.length * secondsPerQuestion);
-
-    // Load the first question
     loadQuestion();
 }
 
+
+
 function loadQuestion() {
-    resetMarkQuestionSwitch(); // Reset the switch when loading a new question
-    // Check if currentQuiz is valid and the question index is within bounds
     if (!currentQuiz || currentQuestionIndex >= currentQuiz.length) {
-        console.error("No valid question to load. currentQuiz:", currentQuiz, "currentQuestionIndex:", currentQuestionIndex);
-        alert("Error: No questions available in the quiz.");
+        alert("No more questions!");
         return;
     }
 
     const currentQuestion = currentQuiz[currentQuestionIndex];
 
-    // Validate the current question structure
-    if (!currentQuestion || !currentQuestion.question || !Array.isArray(currentQuestion.options)) {
-        console.error("Invalid question structure:", currentQuestion);
-        alert("Error: Invalid question format.");
-        return;
-    }
-
-    // Render the question title
-    questionTitle.innerText = `Q${currentQuestionIndex + 1}: ${currentQuestion.question} ❓ `;
-
-    // Render the options dynamically
-    optionsContainer.innerHTML = currentQuestion.options
-        .map(
-            (option, index) => `
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="option" value="${index}" id="option${index}">
-                <label class="form-check-label" for="option${index}">
-                    ${option}
-                </label>
-            </div>
-        `
-        )
-        .join("");
-
-    //console.log("Loaded Question:", currentQuestion);
-
-    updateProgressBar();
+    // Render the question
+    questionTitle.innerText = `Q${currentQuestionIndex + 1}: ${currentQuestion.question}`;
+    optionsContainer.innerHTML = currentQuestion.options.map((option, index) => `
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="option" value="${index}" id="option${index}">
+            <label class="form-check-label" for="option${index}">
+                ${option}
+            </label>
+        </div>
+    `).join("");
 }
+
+
 
 
 markRadio.addEventListener('change', () => {
