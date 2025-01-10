@@ -201,7 +201,7 @@
       "Session hijacking"
     ],
     "correct_index": "A",
-    "explanation": "CSRF attacks exploit the trust a website has in an authenticated user."
+    "explanation": "The attacker typically embeds malicious requests in links or scripts, leveraging the victim's browser session and authentication cookies."
   },
   {
     "question_number": 18,
@@ -441,7 +441,7 @@
       "To detect and respond to intrusions"
     ],
     "correct_index": "A",
-    "explanation": "DLP focuses on preventing data exfiltration."
+    "explanation": "The primary goal of Data Loss Prevention (DLP) solutions is to prevent the unauthorized access, transfer, or leakage of sensitive data, ensuring that data remains secure and compliant with organizational and regulatory requirements."
   },
   {
     "question_number": 38,
