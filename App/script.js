@@ -4,7 +4,7 @@
 
 const githubAPI = "https://api.github.com/repos/h455en/cct-mcq/contents/Collection";
 const rawBaseURL = "https://raw.githubusercontent.com/h455en/cct-mcq/main/Collection/";
-const githubToken = "";
+const githubToken = "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";
 
 
 let quizzes = {};  // To hold all quizzes
