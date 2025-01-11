@@ -1,7 +1,7 @@
 # zip with versionning
 
-$cct = "cct347"
-$version = "3.4.7"
+$cct = "cct350"
+$version = "3.50"
 Write-Host "Preparing R$version ($cct)" -ForegroundColor Cyan
 $folder = "D:\HASSEN\WORK\CYBERSEC\cct-mcq\App\App_v" + $version + ".zip"
 
@@ -25,7 +25,7 @@ rm D:\hassen\work\CYBERSEC\cct-mcq\App\index.html
 rm D:\hassen\work\CYBERSEC\cct-mcq\App\script.js
 rm D:\hassen\work\CYBERSEC\cct-mcq\App\style.css
 
-$v = "3.2.8"
+$v = "3.50"
 $version = "_v" + $v + ".zip"
 $zipFolder = "D:\hassen\work\CYBERSEC\cct-mcq\App\App" + $version
 Write-Host "Rollback to version [$version]" -ForegroundColor Cyan

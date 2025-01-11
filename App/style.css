@@ -3,7 +3,7 @@
 
 body {
     background-color: #f6f8d3;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h2,
@@ -40,7 +40,7 @@ h4 {
 }
 
 .progress-bar {
-    transition: width 1.2s;
+    transition: width 1.4s;
 }
 
 .text-container {
@@ -138,6 +138,7 @@ h4 {
     /* Rounded corners */
     overflow: hidden;
     /* Prevent content from overflowing rounded corners */
+    box-shadow: 1px 3px #bababd;
 }
 
 .accordion-body {

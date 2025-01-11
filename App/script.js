@@ -4,7 +4,8 @@
 
 const githubAPI = "https://api.github.com/repos/h455en/cct-mcq/contents/Collection";
 const rawBaseURL = "https://raw.githubusercontent.com/h455en/cct-mcq/main/Collection/";
-const githubToken = "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";
+const githubToken = "";
+
 
 let quizzes = {};  // To hold all quizzes
 let currentQuiz = null; // To store the selected quiz
@@ -42,13 +43,16 @@ const modeSelectors = document.querySelectorAll('input[name="quizMode"]');
 
 
 //------------
-
 async function fetchQuizzes() {
     try {
         const headers = {
             Authorization: `Bearer ${githubToken}`,
             Accept: "application/vnd.github.v3+json"
         };
+
+        // Show loading spinner
+        const loadingIndicator = document.getElementById("loadingIndicator");
+        loadingIndicator.classList.remove("d-none");
 
         const response = await fetch(githubAPI, { headers });
         if (!response.ok) {
@@ -86,7 +90,7 @@ async function fetchQuizzes() {
         // Fetch contents of all directories recursively
         await Promise.all(items.map(fetchDirectoryContents));
 
-        // Build tree view dynamically
+        // Build tree view HTML dynamically
         function buildTreeView(data) {
             let treeHTML = "<ul class='list-group'>";
             data.forEach(item => {
@@ -94,7 +98,7 @@ async function fetchQuizzes() {
                     // Collapsible folder
                     treeHTML += `
                         <li class="list-group-item folder-item">
-                            <a href="#" class="folder-toggle" data-bs-toggle="collapse" data-bs-target="#folder-${item.name}">
+                            <a href="#" class="folder-toggle" data-bs-target="#folder-${item.name}">
                                 📁 ${item.name}
                             </a>
                             <div class="folder-contents collapse" id="folder-${item.name}">
@@ -122,6 +126,22 @@ async function fetchQuizzes() {
         const quizTreeView = document.getElementById("quizTreeView");
         quizTreeView.innerHTML = treeViewHTML;
 
+        // Hide loading spinner
+        loadingIndicator.classList.add("d-none");
+
+        // Attach event listeners to folders for toggling
+        document.querySelectorAll(".folder-toggle").forEach(folder => {
+            folder.addEventListener("click", (e) => {
+                e.preventDefault();
+                const target = document.querySelector(folder.getAttribute("data-bs-target"));
+                if (target.classList.contains("collapse")) {
+                    target.classList.remove("collapse");
+                } else {
+                    target.classList.add("collapse");
+                }
+            });
+        });
+
         // Attach event listeners to leaf nodes (JSON files)
         document.querySelectorAll(".quiz-select").forEach(quiz => {
             quiz.addEventListener("click", async (e) => {
@@ -129,22 +149,19 @@ async function fetchQuizzes() {
                 const quizUrl = quiz.getAttribute("data-url");
                 const quizName = quiz.getAttribute("data-name");
 
-                if (confirm(`Do you want to load and run the quiz "${quizName}"?`)) {
-                    try {
-                        const quizResponse = await fetch(quizUrl);
-                        if (!quizResponse.ok) {
-                            throw new Error(`HTTP error ${quizResponse.status} loading ${quizName}`);
-                        }
-                        const quizData = await quizResponse.json();
-                        console.log("Loaded Quiz Data:", quizData);
-
-                        // Parse and preprocess the quiz data
-                        quizzes[quizName] = preprocessQuizData(quizData);
-                        startQuiz(quizzes[quizName]); // Start the quiz
-                    } catch (error) {
-                        console.error(`Error loading quiz file ${quizName}:`, error);
-                        alert(`Failed to load the quiz "${quizName}".`);
+                //if (confirm(`Do you want to load and run the quiz "${quizName}"?`)) {
+                try {
+                    const quizResponse = await fetch(quizUrl);
+                    if (!quizResponse.ok) {
+                        throw new Error(`HTTP error ${quizResponse.status} loading ${quizName}`);
                     }
+                    const quizData = await quizResponse.json();
+                    quizzes[quizName] = preprocessQuizData(quizData);
+                    console.log(`Quiz "${quizName}" loaded successfully!`);
+                    startQuiz(quizData); // Immediately start the quiz
+                } catch (error) {
+                    console.error(`Error loading quiz file ${quizName}:`, error);
+                    alert(`Failed to load the quiz "${quizName}".`);
                 }
             });
         });
@@ -155,8 +172,6 @@ async function fetchQuizzes() {
         alert("Failed to load quizzes. Please check your internet connection or the quiz source.");
     }
 }
-
-//-------------
 
 modeSelectors.forEach(selector => {
     selector.addEventListener('change', () => {
@@ -246,31 +261,14 @@ function getSelectedQuizName() {
     }
 }
 
-
-
-// quizData.forEach(q => {
-//     correctAnswers.push(q.correct_index);
-//     // convert to letter if needed
-// });
-
-
-//...........
-
+// Process and store correct answers
 function preprocessQuizData(quizData) {
-    // Extract metadata and preprocess questions
-    return {
-        qid: quizData.qid,
-        name: quizData.name,
-        description: quizData.description,
-        source: quizData.source,
-        questions: quizData.questions.map(q => ({
-            ...q,
-            correctAnswer: q.options[q.correct_index] // Add correctAnswer for convenience
-        }))
-    };
+    quizData.forEach(q => {
+        correctAnswers.push(q.correct_index);
+        // convert to letter if needed
+    });
+    return quizData;
 }
-
-//.........
 
 function getOptionLetter(index) {
     return ["A", "B", "C", "D"][index]; // Helper function to convert index to letter (A, B, C, D)
@@ -329,55 +327,73 @@ startQuizBtn.addEventListener("click", () => {
     startQuiz(currentQuiz);
 });
 
+
 function startQuiz(quizData) {
-    // Ensure quizData is valid
-    if (!quizData || !Array.isArray(quizData.questions) || quizData.questions.length === 0) {
+    // Validate the provided quiz data
+    if (!quizData || !Array.isArray(quizData) || quizData.length === 0) {
         console.error("Invalid quiz data provided:", quizData);
         alert("Error: The selected quiz is empty or invalid.");
         return;
     }
 
-    // Set quiz metadata
-    document.getElementById('quizName').innerText = quizData.name;
-    document.getElementById('quizDescription').innerText = quizData.description;
-    document.getElementById('quizSource').innerText = `Source: ${quizData.source}`;
+    // Assign the quiz data to currentQuiz
+    currentQuiz = quizData;
 
-    // Initialize current quiz
-    currentQuiz = quizData.questions;
-
-    // Transition to quiz page
+    // Transition to the quiz run page
     quizSelectionPage.classList.add("d-none");
     quizRunPage.classList.remove("d-none");
 
     // Reset quiz state
-    currentQuestionIndex = 0;
+    currentQuestionIndex = 0;  // <----------------------------------------  move to reset  ? 
     userAnswers = [];
+    markedAnswers = [];
+
+    const secondsPerQuestion = 40; // 30 seconds per question
+    startTimer(currentQuiz.length * secondsPerQuestion);
+
+    // Load the first question
     loadQuestion();
 }
 
-
-
 function loadQuestion() {
+    resetMarkQuestionSwitch(); // Reset the switch when loading a new question
+    // Check if currentQuiz is valid and the question index is within bounds
     if (!currentQuiz || currentQuestionIndex >= currentQuiz.length) {
-        alert("No more questions!");
+        console.error("No valid question to load. currentQuiz:", currentQuiz, "currentQuestionIndex:", currentQuestionIndex);
+        alert("Error: No questions available in the quiz.");
         return;
     }
 
     const currentQuestion = currentQuiz[currentQuestionIndex];
 
-    // Render the question
-    questionTitle.innerText = `Q${currentQuestionIndex + 1}: ${currentQuestion.question}`;
-    optionsContainer.innerHTML = currentQuestion.options.map((option, index) => `
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="option" value="${index}" id="option${index}">
-            <label class="form-check-label" for="option${index}">
-                ${option}
-            </label>
-        </div>
-    `).join("");
+    // Validate the current question structure
+    if (!currentQuestion || !currentQuestion.question || !Array.isArray(currentQuestion.options)) {
+        console.error("Invalid question structure:", currentQuestion);
+        alert("Error: Invalid question format.");
+        return;
+    }
+
+    // Render the question title
+    questionTitle.innerText = `Q${currentQuestionIndex + 1}: ${currentQuestion.question} ❓ `;
+
+    // Render the options dynamically
+    optionsContainer.innerHTML = currentQuestion.options
+        .map(
+            (option, index) => `
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="option" value="${index}" id="option${index}">
+                <label class="form-check-label" for="option${index}">
+                    ${option}
+                </label>
+            </div>
+        `
+        )
+        .join("");
+
+    //console.log("Loaded Question:", currentQuestion);
+
+    updateProgressBar();
 }
-
-
 
 
 markRadio.addEventListener('change', () => {
@@ -613,8 +629,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-//----
-
 function resetMarkQuestionSwitch() {
     const markQuestionSwitch = document.getElementById('markQuestion');
     if (markQuestionSwitch) { // Check if the element exists
@@ -623,7 +637,6 @@ function resetMarkQuestionSwitch() {
         console.error("markQuestion element not found!");
     }
 }
-
 
 // Load quizzes on page load
 fetchQuizzes();
