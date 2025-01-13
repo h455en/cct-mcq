@@ -1,0 +1,482 @@
+[
+  {
+    "question_number": 1,
+    "question": "A company's web server experiences intermittent slowdowns and error messages during peak traffic. Monitoring tools show high CPU utilization but normal network bandwidth. Further investigation reveals a large number of connections originating from seemingly legitimate IP addresses spread across different geographic locations. What is the most likely cause, and what initial steps should be taken?",
+    "options": [
+      "A Distributed Denial-of-Service (DDoS) attack using low-and-slow techniques; implement rate limiting and investigate traffic patterns for anomalies.",
+      "A hardware failure on the web server; replace the affected hardware components immediately.",
+      "A misconfiguration in the web server software; restart the web server service.",
+      "A database performance issue; optimize database queries and indexes."
+    ],
+    "correct_index": "A",
+    "explanation": "High CPU utilization with normal bandwidth and geographically dispersed connections suggests a low-and-slow DDoS attack. Rate limiting can mitigate the impact, and analyzing traffic patterns can help identify the attack vectors."
+  },
+  {
+    "question_number": 2,
+    "question": "During a penetration test, an ethical hacker discovers a vulnerability that allows them to upload arbitrary files to a web server. However, the server immediately scans uploaded files with multiple antivirus engines. What potential bypass techniques could an attacker employ to potentially execute malicious code?",
+    "options": [
+      "Obfuscating the malicious code within a seemingly benign file format (e.g., image, document) or using polymorphic code.",
+      "Uploading the malicious code in plain text format.",
+      "Uploading a large number of small files to overwhelm the antivirus engines.",
+      "Uploading the malicious code directly to the server's memory."
+    ],
+    "correct_index": "A",
+    "explanation": "File obfuscation and polymorphic code can help bypass signature-based antivirus detection. Attackers can embed malicious code within seemingly harmless file types or use techniques to change the code's signature to evade detection."
+  },
+  {
+    "question_number": 3,
+    "question": "A company implements a new security policy requiring strong passwords and regular password changes. However, after a few weeks, the security team notices a significant increase in help desk calls related to password resets. What unintended consequence might this policy be having, and what could be a better approach?",
+    "options": [
+      "Users are writing down their complex passwords or using easily guessable variations; implement password managers and user education on secure password practices.",
+      "Users are forgetting their passwords due to complexity; disable password complexity requirements.",
+      "Users are sharing passwords with colleagues; implement stricter access control policies.",
+      "Users are using the same password across multiple accounts; implement single sign-on (SSO)."
+    ],
+    "correct_index": "A",
+    "explanation": "Overly strict password policies can lead to users adopting insecure workarounds. Password managers and user education promote better security habits without the negative consequences of overly complex passwords."
+  },
+  {
+    "question_number": 4,
+    "question": "An employee receives a phone call from someone claiming to be from a software vendor, stating that their computer has a critical vulnerability and they need to install a patch immediately. The caller provides a link to download the patch. What red flags should the employee look for to identify this as a potential social engineering attack?",
+    "options": [
+      "Unexpected contact, pressure to act quickly, and downloading software from an unverified source.",
+      "The caller's professional demeanor and knowledge of technical details.",
+      "The use of a toll-free phone number and a secure website.",
+      "The vendor's name and logo being displayed on the website."
+    ],
+    "correct_index": "A",
+    "explanation": "Unexpected contact, urgency, and downloading software from unverified sources are classic red flags of social engineering attacks. Legitimate vendors rarely contact users directly to install patches in this manner."
+  },
+  {
+    "question_number": 5,
+    "question": "During a forensic investigation, an analyst discovers that a user's browser history has been deleted. However, they also find evidence of web browsing activity in the system's DNS cache. What does this indicate, and how can this information be used in the investigation?",
+    "options": [
+      "The user attempted to cover their tracks, but the DNS cache provides evidence of visited websites; this information can be used to reconstruct the user's browsing activity.",
+      "The user used a private browsing mode; the DNS cache is a normal part of browser operation.",
+      "The system was infected with malware that clears browser history; the DNS cache is irrelevant to the investigation.",
+      "The user used a VPN; the DNS cache reflects the VPN server's DNS queries."
+    ],
+    "correct_index": "A",
+    "explanation": "Even if browser history is deleted, the DNS cache can retain records of resolved domain names, providing valuable evidence of visited websites. This is because the system needs to resolve the domain name to an IP address before connecting to the website."
+  },
+  {
+    "question_number": 6,
+    "question": "An organization uses a network of interconnected IoT devices to monitor environmental conditions in a remote location. These devices communicate using a proprietary wireless protocol. What are some of the key security challenges associated with this setup?",
+    "options": [
+      "Lack of standardization, limited processing power and memory on the devices, and difficulty in patching or updating firmware.",
+      "High bandwidth consumption and network congestion.",
+      "Compatibility issues with standard network security tools.",
+      "Ease of integration with existing security infrastructure."
+    ],
+    "correct_index": "A",
+    "explanation": "Proprietary protocols, limited resources on IoT devices, and difficulty in updating firmware make them challenging to secure and manage. This can lead to vulnerabilities that are difficult to patch."
+  },
+  {
+    "question_number": 7,
+    "question": "A security analyst observes a series of DNS queries for a large number of randomly generated subdomains of a legitimate domain. What type of attack might this suggest?",
+    "options": [
+      "DNS tunneling or DNS exfiltration",
+      "DNS amplification attack",
+      "DNS cache poisoning attack",
+      "Fast flux DNS"
+    ],
+    "correct_index": "D",
+    "explanation": "Fast flux DNS is a technique used by attackers to make it difficult to track down the hosting server of a website or service. It involves rapidly changing the IP addresses associated with a domain name."
+  },
+  {
+    "question_number": 8,
+    "question": "A web application uses client-side input validation to prevent malicious input. What is the primary weakness of this approach?",
+    "options": [
+      "Client-side validation can be easily bypassed by manipulating the client-side code or using browser developer tools.",
+      "Client-side validation is more resource-intensive than server-side validation.",
+      "Client-side validation requires specialized programming skills.",
+      "Client-side validation is not compatible with all web browsers."
+    ],
+    "correct_index": "A",
+    "explanation": "Client-side validation is performed on the user's browser, making it easily bypassable by attackers who can modify the client-side code or use browser developer tools to send malicious requests directly to the server."
+  },
+  {
+    "question_number": 9,
+    "question": "A company uses a cloud-based file storage service to share sensitive documents with external partners. What are some key security considerations for protecting this data?",
+    "options": [
+      "Encryption of data at rest and in transit, strong access controls and multi-factor authentication, and secure file sharing practices.",
+      "Relying solely on the cloud provider's security measures.",
+      "Regularly downloading all data to local storage.",
+      "Using weak passwords for cloud storage accounts."
+    ],
+    "correct_index": "A",
+    "explanation": "Protecting data in cloud storage requires a multi-layered approach, including encryption, strong access controls, MFA, and secure file sharing practices. Relying solely on the provider's security is insufficient."
+  },
+  {
+    "question_number": 10,
+    "question": "A company implements a Data Loss Prevention (DLP) solution that analyzes the content of emails and files being sent outside the organization's network. What type of DLP technique is this?",
+    "options": [
+      "Content analysis or Deep content inspection",
+      "Data fingerprinting",
+      "Contextual analysis",
+      "Endpoint monitoring"
+    ],
+    "correct_index": "A",
+    "explanation": "Content analysis or deep content inspection examines the actual content of data to identify sensitive information based on keywords, patterns, or other criteria."
+  },
+  {
+    "question_number": 11,
+    "question": "A user reports that their computer is suddenly displaying a blue screen of death (BSOD) repeatedly. After restarting, the system appears to function normally for a short period before crashing again. What is a likely cause and what initial troubleshooting steps should be taken?",
+    "options": [
+      "Driver issues, hardware malfunction (RAM, hard drive), or overheating; check system logs for error codes, run hardware diagnostics (memory test, disk check), and ensure proper cooling.",
+      "Malware infection; run a full system scan with multiple antivirus programs.",
+      "Operating system corruption; reinstall the operating system.",
+      "Network connectivity issues; check network cables and network adapter settings."
+    ],
+    "correct_index": "A",
+    "explanation": "Repeated BSODs often indicate driver problems, hardware failures, or overheating. System logs and hardware diagnostics can help pinpoint the specific cause."
+  },
+  {
+    "question_number": 12,
+    "question": "A network administrator is analyzing network traffic and observes a large number of ICMP (ping) requests being sent to a target server from a single source IP address. What type of attack is this, and what is its primary impact?",
+    "options": [
+      "ICMP flood attack; it can overwhelm the target server's network interface and cause it to become unresponsive.",
+      "SYN flood attack; it can exhaust the target server's connection resources.",
+      "DNS amplification attack; it can flood the target network with DNS response traffic.",
+      "ARP poisoning attack; it can redirect network traffic to the attacker's machine."
+    ],
+    "correct_index": "A",
+    "explanation": "An ICMP flood attack overwhelms the target with ping requests, consuming bandwidth and processing resources, potentially leading to denial of service."
+  },
+  {
+    "question_number": 13,
+    "question": "A security analyst discovers that an attacker has used a technique called 'DLL injection' to execute malicious code within a legitimate process on a compromised system. What is the primary advantage of this technique for the attacker?",
+    "options": [
+      "It allows the malicious code to run with the privileges of the legitimate process, making it harder to detect and remove.",
+      "It allows the attacker to bypass firewall rules.",
+      "It allows the attacker to encrypt data without detection.",
+      "It allows the attacker to remotely control the system without any network connections."
+    ],
+    "correct_index": "A",
+    "explanation": "DLL injection allows malicious code to run within the context of a legitimate process, inheriting its privileges and making it more difficult to detect by security software."
+  },
+  {
+    "question_number": 14,
+    "question": "A user receives an email claiming to be from a government agency, stating that they owe back taxes and must pay immediately to avoid legal action. The email contains a link to a website where they can make a payment. What social engineering principles are being exploited in this attack?",
+    "options": [
+      "Authority and urgency",
+      "Scarcity and trust",
+      "Liking and reciprocity",
+      "Social proof and consensus"
+    ],
+    "correct_index": "A",
+    "explanation": "The email uses the authority of a government agency and creates a sense of urgency to pressure the victim into acting quickly without thinking."
+  },
+  {
+    "question_number": 15,
+    "question": "A security audit of an industrial control system (ICS) reveals that it is using default credentials for its administrative accounts. What is the most significant security risk associated with this finding?",
+    "options": [
+      "Unauthorized access and control of the ICS, potentially leading to physical damage, disruption of critical services, or safety hazards.",
+      "Data breaches and theft of sensitive information.",
+      "Denial-of-service attacks against the ICS.",
+      "Reduced system performance and stability."
+    ],
+    "correct_index": "A",
+    "explanation": "Default credentials provide an easy entry point for attackers to gain full control of the ICS, which can have severe consequences in industrial environments."
+  },
+  {
+    "question_number": 16,
+    "question": "During an incident response investigation, a security team needs to analyze network traffic captures to identify malicious activity. Which tool is most suitable for this task?",
+    "options": [
+      "Wireshark or tcpdump",
+      "Nmap",
+      "Metasploit",
+      "Nessus"
+    ],
+    "correct_index": "A",
+    "explanation": "Wireshark (GUI) and tcpdump (command-line) are packet capture and analysis tools used to examine network traffic in detail."
+  },
+  {
+    "question_number": 17,
+    "question": "A company wants to implement a security control that protects sensitive data stored in a database from unauthorized access, even if the database server is compromised. Which of the following is the most effective approach?",
+    "options": [
+      "Database encryption with robust key management, combined with strong access controls and regular security audits.",
+      "Firewall rules to restrict database access.",
+      "Intrusion Detection/Prevention System (IDS/IPS) to monitor database traffic.",
+      "Regular data backups to a secure offsite location."
+    ],
+    "correct_index": "A",
+    "explanation": "Database encryption with strong key management protects data even if the database server is compromised. Access controls and audits further strengthen security."
+  },
+  {
+    "question_number": 18,
+    "question": "A company wants to ensure the integrity of software updates distributed to its employees' computers. Which of the following techniques should they use?",
+    "options": [
+      "Digital signatures or code signing",
+      "Hashing algorithms",
+      "Encryption",
+      "Access control lists"
+    ],
+    "correct_index": "A",
+    "explanation": "Digital signatures and code signing verify the authenticity and integrity of software updates, ensuring they have not been tampered with."
+  },
+  {
+    "question_number": 19,
+    "question": "A company is developing a data retention policy. Which of the following factors should be considered when determining how long to retain different types of data?",
+    "options": [
+      "Legal and regulatory requirements, business needs, industry best practices, and data sensitivity.",
+      "The cost of storage and the availability of resources.",
+      "The frequency of data backups and the speed of data recovery.",
+      "The size of the data and the location of the storage media."
+    ],
+    "correct_index": "A",
+    "explanation": "A comprehensive data retention policy should consider all of these factors to ensure compliance, meet business needs, and manage risk effectively."
+  },
+  {
+    "question_number": 20,
+    "question": "A company is disposing of old hard drives containing sensitive data. Which data destruction method is considered the most secure and effective for solid-state drives (SSDs)?",
+    "options": [
+      "Physical destruction (e.g., shredding, pulverizing)",
+      "Degaussing",
+      "Overwriting the data multiple times",
+      "Formatting the drive"
+    ],
+    "correct_index": "A",
+    "explanation": "Due to the way SSDs store data, degaussing and overwriting are not as effective as with traditional hard drives. Physical destruction is the most reliable method for SSDs."
+  },
+  {
+    "question_number": 41,
+    "question": "A user reports that their web browser is redirecting them to a different website than the one they typed in the address bar. Other users on the same network are not experiencing this issue. What is the most likely cause?",
+    "options": [
+      "Malware on the user's computer or DNS poisoning on the local network.",
+      "A problem with the web server of the website they are trying to access.",
+      "A problem with the user's internet service provider (ISP).",
+      "A misconfiguration in the user's web browser settings."
+    ],
+    "correct_index": "A",
+    "explanation": "Redirects to different websites often indicate malware on the user's machine that is manipulating DNS settings or a DNS poisoning attack on the local network affecting only that user's DNS resolution."
+  },
+  {
+    "question_number": 42,
+    "question": "A network administrator is investigating a network slowdown and observes a large number of SYN packets without corresponding ACK responses being sent to a web server. What type of attack is this, and how does it impact the server?",
+    "options": [
+      "SYN flood attack; it exhausts the server's connection resources, preventing legitimate users from connecting.",
+      "UDP flood attack; it overwhelms the server's network interface with UDP packets.",
+      "ICMP flood attack; it overwhelms the server with ping requests.",
+      "DNS amplification attack; it floods the network with DNS response traffic."
+    ],
+    "correct_index": "A",
+    "explanation": "A SYN flood attack exploits the TCP three-way handshake, overwhelming the server with SYN requests and preventing it from establishing legitimate connections."
+  },
+  {
+    "question_number": 43,
+    "question": "A security analyst discovers that an attacker has used a technique called 'pass-the-hash' to gain access to a privileged account on a domain controller. What does this technique involve?",
+    "options": [
+      "Stealing the password hash of the privileged account and using it to authenticate to other systems without cracking the actual password.",
+      "Cracking the password of the privileged account using brute-force or dictionary attacks.",
+      "Exploiting a vulnerability in the operating system to bypass authentication.",
+      "Using social engineering to trick a user into revealing their password."
+    ],
+    "correct_index": "A",
+    "explanation": "Pass-the-hash involves using the hash of a password for authentication, bypassing the need to crack the password itself."
+  },
+  {
+    "question_number": 44,
+    "question": "A user receives an email claiming to be from their bank, warning them about suspicious activity on their account and urging them to click a link to verify their identity. The link leads to a website that looks almost identical to the bank's website. What type of attack is this, and what is the primary goal?",
+    "options": [
+      "Phishing attack; to steal the user's login credentials and other sensitive information.",
+      "Malware attack; to infect the user's computer with malware.",
+      "Denial-of-service attack; to disrupt the bank's online services.",
+      "Man-in-the-middle attack; to intercept communication between the user and the bank."
+    ],
+    "correct_index": "A",
+    "explanation": "This is a classic phishing attack, where the attacker tries to trick the user into revealing their credentials on a fake website."
+  },
+  {
+    "question_number": 45,
+    "question": "A security audit of a wireless network reveals that it is using WPA with TKIP encryption. What is the main security concern associated with this configuration?",
+    "options": [
+      "TKIP is considered weak and vulnerable to cracking attacks.",
+      "WPA is not compatible with modern devices.",
+      "WPA requires complex configuration.",
+      "WPA does not support encryption."
+    ],
+    "correct_index": "A",
+    "explanation": "TKIP (Temporal Key Integrity Protocol), used with WPA, has known vulnerabilities and is no longer considered secure. WPA2 with AES (CCMP) or WPA3 are the recommended protocols."
+  },
+  {
+    "question_number": 46,
+    "question": "A company wants to implement a security measure that protects mobile devices from malware and unauthorized access to corporate data. Which of the following is the most effective approach?",
+    "options": [
+      "Mobile Device Management (MDM) with strong security policies, app sandboxing, and device encryption.",
+      "Simply installing antivirus software on mobile devices.",
+      "Relying on users to use strong passwords.",
+      "Blocking all internet access on mobile devices."
+    ],
+    "correct_index": "A",
+    "explanation": "MDM provides comprehensive management and security controls for mobile devices, including policy enforcement, app sandboxing, and encryption."
+  },
+  {
+    "question_number": 47,
+    "question": "A company is using a cloud-based service that stores sensitive data. What is the company's responsibility regarding the security of this data?",
+    "options": [
+      "The company is responsible for securing the data itself, while the cloud provider is responsible for securing the underlying infrastructure.",
+      "The cloud provider is solely responsible for all aspects of security.",
+      "The company is not responsible for any security as it is a cloud service.",
+      "The company is responsible for securing the physical location of the cloud data center."
+    ],
+    "correct_index": "A",
+    "explanation": "In most cloud service models, there's a shared responsibility model. The customer is responsible for securing the data they put into the cloud, while the provider secures the infrastructure."
+  },
+  {
+    "question_number": 48,
+    "question": "Which cryptographic concept ensures that the sender of a message can be reliably identified?",
+    "options": [
+      "Authentication",
+      "Confidentiality",
+      "Integrity",
+      "Non-repudiation"
+    ],
+    "correct_index": "A",
+    "explanation": "Authentication verifies the identity of the sender of a message."
+  },
+  {
+    "question_number": 49,
+    "question": "A company is developing a data security policy. Which of the following should be included in the policy?",
+    "options": [
+      "Data classification, access control, data handling procedures, and incident response procedures.",
+      "Only password complexity requirements.",
+      "Only firewall rules and intrusion detection systems.",
+      "Only data backup and recovery procedures."
+    ],
+    "correct_index": "A",
+    "explanation": "A comprehensive data security policy should cover all aspects of data security, including classification, access control, handling procedures, and incident response."
+  },
+  {
+    "question_number": 50,
+    "question": "A company needs to ensure that sensitive data stored on decommissioned hard drives is completely unrecoverable. Which of the following methods is the most effective?",
+    "options": [
+      "Physical destruction (e.g., shredding, pulverizing)",
+      "Formatting the hard drives",
+      "Overwriting the data once",
+      "Degaussing"
+    ],
+    "correct_index": "A",
+    "explanation": "Physical destruction is the most reliable method for ensuring complete data destruction."
+  },
+  {
+    "question_number": 51,
+    "question": "A user reports that their computer is connecting to the Wi-Fi network, but they cannot access any network resources or the internet. Other devices on the same Wi-Fi network are experiencing the same issue. What is the most likely cause?",
+    "options": [
+      "Problem with the network's internet connection or the router/firewall.",
+      "Problem with the user's computer.",
+      "Problem with the DNS server.",
+      "Problem with the network's DHCP server."
+    ],
+    "correct_index": "A",
+    "explanation": "If multiple devices on the same Wi-Fi are having connectivity problems, the issue is likely with the network's internet connection or the network infrastructure (router, firewall)."
+  },
+  {
+    "question_number": 52,
+    "question": "A network administrator needs to prevent unauthorized access to the internal network from the internet. Which device is best suited for this purpose?",
+    "options": [
+      "Firewall",
+      "Switch",
+      "Router",
+      "Hub"
+    ],
+    "correct_index": "A",
+    "explanation": "Firewalls control network traffic based on defined rules, preventing unauthorized access from external networks."
+  },
+  {
+    "question_number": 53,
+    "question": "Which type of malware is designed to encrypt user files and demand a ransom for their decryption?",
+    "options": [
+      "Ransomware",
+      "Trojan",
+      "Virus",
+      "Rootkit"
+    ],
+    "correct_index": "A",
+    "explanation": "Ransomware encrypts files and demands payment for the decryption key."
+  },
+  {
+    "question_number": 54,
+    "question": "Which social engineering principle involves exploiting people's natural tendency to reciprocate favors or gifts?",
+    "options": [
+      "Reciprocity",
+      "Pretexting",
+      "Baiting",
+      "Quid pro quo"
+    ],
+    "correct_index": "A",
+    "explanation": "Reciprocity involves exploiting the tendency to return a favor or kindness."
+  },
+  {
+    "question_number": 55,
+    "question": "Which wireless attack involves creating a fake Wi-Fi access point that mimics a legitimate one to trick users into connecting to it?",
+    "options": [
+      "Evil Twin attack",
+      "Deauthentication attack",
+      "Jamming attack",
+      "Replay attack"
+    ],
+    "correct_index": "A",
+    "explanation": "An Evil Twin attack sets up a rogue access point to lure unsuspecting users."
+  },
+  {
+    "question_number": 56,
+    "question": "Which mobile security practice involves using a third-party app store or method to install apps that are not available through the official app store, potentially bypassing security checks?",
+    "options": [
+      "Sideloading",
+      "Device encryption",
+      "App sandboxing",
+      "Two-factor authentication"
+    ],
+    "correct_index": "A",
+    "explanation": "Sideloading involves installing apps from unofficial sources, which can pose security risks."
+  },
+  {
+    "question_number": 57,
+    "question": "Which cloud security concern arises from the possibility of data from different customers being stored on the same physical hardware in a cloud environment?",
+    "options": [
+      "Data commingling or Multi-tenancy risks",
+      "Cloud cryptojacking",
+      "Cloud Hopper attack",
+      "Data breach"
+    ],
+    "correct_index": "A",
+    "explanation": "Data commingling or multi-tenancy risks arise from the shared nature of cloud infrastructure, where data from different customers might reside on the same physical hardware."
+  },
+  {
+    "question_number": 58,
+    "question": "Which cryptographic concept ensures that the sender of a message cannot deny having sent it, and the recipient cannot deny having received it?",
+    "options": [
+      "Non-repudiation",
+      "Confidentiality",
+      "Integrity",
+      "Authentication"
+    ],
+    "correct_index": "A",
+    "explanation": "Non-repudiation provides proof of origin and delivery, preventing denial by either party."
+  },
+  {
+    "question_number": 59,
+    "question": "Which data security practice involves defining the roles and responsibilities of individuals and teams regarding data management and security, as well as establishing policies and procedures for data handling?",
+    "options": [
+      "Data governance",
+      "Data backup policy",
+      "Data retention policy",
+      "Data destruction policy"
+    ],
+    "correct_index": "A",
+    "explanation": "Data governance establishes the overall framework for managing data security and compliance."
+  },
+  {
+    "question_number": 60,
+    "question": "A company needs to ensure that sensitive data stored on decommissioned magnetic tapes is completely unrecoverable. Which of the following methods is the most effective?",
+    "options": [
+      "Degaussing or Physical destruction",
+      "Formatting the tapes",
+      "Overwriting the data once",
+      "Wiping"
+    ],
+    "correct_index": "A",
+    "explanation": "Degaussing (using a strong magnetic field) or physical destruction are the most effective methods for destroying data on magnetic tapes."
+  }
+]

@@ -1,0 +1,722 @@
+[
+	{
+		"question_number": 1,
+		"question": "A financial institution discovers that an attacker has been subtly manipulating transaction records over several months. The changes are small and difficult to detect, but they accumulate over time to divert funds to an external account. What type of attack is this most likely?",
+		"options": [
+			"Data diddling or Salami slicing attack",
+			"Man-in-the-Middle (MitM) attack",
+			"Denial-of-Service (DoS) attack",
+			"SQL Injection attack"
+		],
+		"correct_index": "A",
+		"explanation": "Salami slicing (or data diddling) involves making small, incremental changes to data over time to avoid immediate detection. This is often used in financial fraud."
+	},
+	{
+		"question_number": 2,
+		"question": "During a penetration test of a web application, an ethical hacker discovers a vulnerability that allows them to inject arbitrary code into the application's server-side logs. While this doesn't directly compromise the application itself, what potential risk does this vulnerability pose?",
+		"options": [
+			"It allows the attacker to deface the website.",
+			"It can be used to obfuscate malicious activity and hinder forensic investigations.",
+			"It allows the attacker to steal user credentials.",
+			"It can be used to launch a Denial-of-Service (DoS) attack."
+		],
+		"correct_index": "B",
+		"explanation": "Manipulating logs can severely hamper incident response and forensic investigations by making it difficult to trace the attacker's actions and understand the scope of the compromise."
+	},
+	{
+		"question_number": 3,
+		"question": "A company's security team detects unusual network traffic originating from an internal server to a known command-and-control (C2) server. Further investigation reveals that the server is running a legitimate software application that has been modified with a hidden backdoor. What type of attack is this?",
+		"options": [
+			"Supply chain attack or Trojanized software",
+			"Phishing attack",
+			"Ransomware attack",
+			"Denial-of-Service (DoS) attack"
+		],
+		"correct_index": "A",
+		"explanation": "This scenario describes a supply chain attack where a legitimate software application has been tampered with before distribution or installation. The backdoor allows the attacker to control the server."
+	},
+	{
+		"question_number": 4,
+		"question": "An employee receives an email that appears to be from a trusted colleague, containing a link to a shared document on a cloud storage platform. However, the link redirects to a fake login page that mimics the cloud storage provider's website. The employee enters their credentials. What type of attack is this, and what is the immediate consequence?",
+		"options": [
+			"Spear phishing leading to credential theft",
+			"Baiting leading to malware infection",
+			"Quid pro quo leading to unauthorized access",
+			"Pretexting leading to data exfiltration"
+		],
+		"correct_index": "A",
+		"explanation": "This is a targeted phishing attack (spear phishing) because it's directed at a specific individual or group within the organization. The immediate consequence is the theft of the employee's cloud storage credentials."
+	},
+	{
+		"question_number": 5,
+		"question": "During a digital forensics investigation of a compromised workstation, an analyst finds evidence of data being encrypted with a strong encryption algorithm. However, no ransom note or demand for payment is found. What is a possible explanation for this scenario?",
+		"options": [
+			"The attacker is preparing for a future ransomware attack or data exfiltration.",
+			"The encryption is part of a legitimate software application.",
+			"The attacker is using the workstation as a staging ground for other attacks.",
+			"The encryption is due to a hardware malfunction."
+		],
+		"correct_index": "A",
+		"explanation": "Encrypting data without a ransom demand can be a precursor to a future ransomware attack (where the ransom will be demanded later) or a method to secure stolen data before exfiltration."
+	},
+	{
+		"question_number": 6,
+		"question": "An organization discovers that several of its IoT devices are communicating with a known malicious IP address. These devices are responsible for monitoring environmental conditions in a manufacturing facility. What is the most significant potential impact of this compromise?",
+		"options": [
+			"Disruption of manufacturing operations, potential safety hazards, and financial losses.",
+			"Theft of sensitive customer data.",
+			"Loss of network bandwidth due to increased traffic.",
+			"Defacement of the company's website."
+		],
+		"correct_index": "A",
+		"explanation": "Compromised IoT devices in a manufacturing setting can directly impact operations, potentially causing safety issues and financial losses due to production downtime or damage to equipment."
+	},
+	{
+		"question_number": 7,
+		"question": "A security analyst observes a series of DNS queries for unusual domain names that resolve to internal IP addresses. What type of attack might this suggest?",
+		"options": [
+			"DNS rebinding attack",
+			"DNS spoofing attack",
+			"DNS amplification attack",
+			"DNS cache poisoning attack"
+		],
+		"correct_index": "A",
+		"explanation": "DNS rebinding allows an attacker to bypass same-origin policy restrictions in web browsers, potentially granting access to internal network resources."
+	},
+	{
+		"question_number": 8,
+		"question": "A web application is vulnerable to a Cross-Site Request Forgery (CSRF) attack. How could an attacker exploit this vulnerability in a real-world scenario?",
+		"options": [
+			"By injecting malicious JavaScript code into the web page.",
+			"By tricking a logged-in user into clicking a malicious link or visiting a compromised website, causing them to perform unintended actions on the web application.",
+			"By exploiting a vulnerability in the web server software.",
+			"By intercepting and modifying network traffic between the user and the web application."
+		],
+		"correct_index": "B",
+		"explanation": "CSRF attacks exploit the trust a website has in an authenticated user to perform actions without their knowledge, often by embedding malicious requests in links or web pages."
+	},
+	{
+		"question_number": 9,
+		"question": "A company implements database encryption using Transparent Data Encryption (TDE). What is the primary benefit of TDE compared to application-level encryption?",
+		"options": [
+			"TDE encrypts the entire database at rest, including data files, log files, and backups, without requiring changes to the application.",
+			"TDE provides stronger encryption algorithms than application-level encryption.",
+			"TDE is easier to implement and manage than application-level encryption.",
+			"TDE protects data even if the database server is compromised."
+		],
+		"correct_index": "A",
+		"explanation": "TDE encrypts data at the storage level, transparently to the application, without requiring code modifications."
+	},
+	{
+		"question_number": 10,
+		"question": "A company implements a Data Loss Prevention (DLP) solution that monitors network traffic for sensitive data being transmitted outside the organization's network. What type of DLP solution is this?",
+		"options": [
+			"Network DLP",
+			"Endpoint DLP",
+			"Data at Rest DLP",
+			"Cloud DLP"
+		],
+		"correct_index": "A",
+		"explanation": "Network DLP monitors data in transit across the network perimeter."
+	},
+	{
+		"question_number": 11,
+		"question": "A user reports intermittent network connectivity. Sometimes they can access websites and network resources, and other times they cannot. Pinging the default gateway sometimes succeeds and sometimes fails. What is the most likely cause?",
+		"options": [
+			"A faulty network cable or loose connection.",
+			"A DNS server issue.",
+			"An IP address conflict.",
+			"A problem with the web browser."
+		],
+		"correct_index": "A",
+		"explanation": "Intermittent connectivity suggests a physical layer issue, such as a damaged cable or a loose connection."
+	},
+	{
+		"question_number": 12,
+		"question": "During network troubleshooting, a technician uses the command `netstat -ano` (Windows) or `netstat -tulnp` (Linux). What information are they trying to gather?",
+		"options": [
+			"Active network connections, listening ports, and associated process IDs.",
+			"The routing table for the local system.",
+			"The IP configuration of the network interfaces.",
+			"The MAC address of the network adapter."
+		],
+		"correct_index": "A",
+		"explanation": "These `netstat` commands display active network connections, listening ports, and the process IDs associated with those connections, which is useful for identifying which applications are using network resources."
+	},
+	{
+		"question_number": 13,
+		"question": "A security analyst discovers that an attacker has used PowerShell to download and execute malicious code directly in memory, leaving no files on the file system. What type of attack is this?",
+		"options": [
+			"Fileless malware attack",
+			"Rootkit infection",
+			"Worm propagation",
+			"Virus infection"
+		],
+		"correct_index": "A",
+		"explanation": "Executing code directly in memory without writing files to disk is characteristic of fileless malware attacks."
+	},
+	{
+		"question_number": 14,
+		"question": "A user reports receiving a suspicious SMS message containing a link to a website that asks for their login credentials. The message appears to be from a legitimate company. What type of attack is this?",
+		"options": [
+			"Smishing (SMS phishing)",
+			"Bluesnarfing",
+			"Bluejacking",
+			"SIM swapping"
+		],
+		"correct_index": "A",
+		"explanation": "Smishing is phishing carried out through SMS messages."
+	},
+	{
+		"question_number": 15,
+		"question": "A security assessment of an industrial control system (ICS) reveals that it is using outdated software with known vulnerabilities. What is the most significant risk associated with this finding?",
+		"options": [
+			"Increased risk of remote exploitation and control of the ICS, potentially leading to physical damage or disruption of critical services.",
+			"Increased risk of data breaches and theft of sensitive information.",
+			"Increased risk of denial-of-service attacks against the ICS.",
+			"Reduced system performance and stability."
+		],
+		"correct_index": "A",
+		"explanation": "Outdated software with known vulnerabilities in ICS environments poses a significant risk of remote exploitation, which could have severe physical consequences."
+	},
+	{
+		"question_number": 16,
+		"question": "During an incident response investigation, a security team needs to determine the timeline of events on a compromised system. Which of the following data sources would be most helpful?",
+		"options": [
+			"System logs, event logs, and file timestamps",
+			"Network traffic captures",
+			"Memory dumps",
+			"Hard drive images"
+		],
+		"correct_index": "A",
+		"explanation": "System logs, event logs, and file timestamps provide a chronological record of system activity, which is crucial for establishing a timeline of events during an investigation."
+	},
+	{
+		"question_number": 17,
+		"question": "A company wants to implement a security control that prevents unauthorized access to sensitive data stored in cloud storage. Which of the following is the most effective approach?",
+		"options": [
+			"Encryption of data at rest and in transit, combined with strong access controls and multi-factor authentication.",
+			"Firewall rules to restrict access to the cloud storage.",
+			"Intrusion Detection/Prevention System (IDS/IPS) to monitor cloud traffic.",
+			"Regular data backups to a separate cloud storage location."
+		],
+		"correct_index": "A",
+		"explanation": "A combination of encryption, strong access controls, and MFA provides the most comprehensive protection for data in cloud storage."
+	},
+	{
+		"question_number": 18,
+		"question": "A company wants to protect the confidentiality of email communications between employees and external parties. Which of the following technologies should they implement?",
+		"options": [
+			"Email encryption using S/MIME or PGP",
+			"Firewall rules to filter email traffic",
+			"Antispam software to block unwanted emails",
+			"Email archiving solutions"
+		],
+		"correct_index": "A",
+		"explanation": "S/MIME and PGP are email encryption protocols that provide end-to-end encryption for email messages."
+	},
+	{
+		"question_number": 19,
+		"question": "A company is developing a data destruction policy. Which of the following factors should be considered when determining the appropriate data destruction method?",
+		"options": [
+			"The sensitivity of the data, the type of storage media, and legal/regulatory requirements.",
+			"The cost of the data destruction method and the availability of resources.",
+			"The speed of the data destruction process and the ease of implementation.",
+			"The size of the data and the location of the storage media."
+		],
+		"correct_index": "A",
+		"explanation": "The data destruction method should be chosen based on the sensitivity of the data, the type of media, and any legal or regulatory obligations."
+	},
+	{
+		"question_number": 20,
+		"question": "A company is implementing a Data Loss Prevention (DLP) solution. Which of the following is an important step in the implementation process?",
+		"options": [
+			"Classifying sensitive data and defining policies for its use and transmission.",
+			"Purchasing and installing DLP software without any prior planning.",
+			"Implementing the DLP solution without training users.",
+			"Focusing solely on preventing external data breaches and ignoring internal threats."
+		],
+		"correct_index": "A",
+		"explanation": "Data classification and policy definition are crucial for a successful DLP implementation. This ensures that the DLP solution is configured to protect the right data and enforce appropriate controls."
+	},
+	{
+		"question_number": 21,
+		"question": "A network administrator notices a sudden and significant increase in network traffic to a web server, originating from a large number of unique IP addresses. The server becomes unresponsive, and legitimate users cannot access the website. What type of attack is this most likely?",
+		"options": [
+			"Distributed Denial-of-Service (DDoS) attack",
+			"Man-in-the-Middle (MitM) attack",
+			"SQL Injection attack",
+			"Phishing attack"
+		],
+		"correct_index": "A",
+		"explanation": "A large volume of traffic from many different IP addresses overwhelming a server is a classic sign of a DDoS attack."
+	},
+	{
+		"question_number": 22,
+		"question": "During a forensic investigation, an analyst discovers a hidden partition on a hard drive containing encrypted data. What is the most likely purpose of this hidden partition?",
+		"options": [
+			"To store stolen data or malicious tools.",
+			"To store system backups.",
+			"To store temporary files.",
+			"To improve system performance."
+		],
+		"correct_index": "A",
+		"explanation": "Hidden partitions are often used by attackers to conceal malicious activity or store stolen data, making it harder to detect during investigations."
+	},
+	{
+		"question_number": 23,
+		"question": "A company's security team detects that an attacker has gained access to their network through a vulnerability in a third-party software library used by one of their applications. What type of attack is this an example of?",
+		"options": [
+			"Supply chain attack",
+			"Phishing attack",
+			"Denial-of-Service (DoS) attack",
+			"SQL Injection attack"
+		],
+		"correct_index": "A",
+		"explanation": "A supply chain attack targets vulnerabilities in third-party components or vendors to compromise the target organization."
+	},
+	{
+		"question_number": 24,
+		"question": "An employee receives a message on a social media platform from someone claiming to be a recruiter offering a high-paying job. The recruiter asks for personal information, including their social security number and bank account details. What type of social engineering attack is this?",
+		"options": [
+			"Pretexting on social media",
+			"Baiting",
+			"Quid pro quo",
+			"Phishing"
+		],
+		"correct_index": "A",
+		"explanation": "The attacker is creating a false scenario (pretexting) on social media to trick the victim into revealing sensitive information."
+	},
+	{
+		"question_number": 25,
+		"question": "A security analyst discovers that an attacker has used a vulnerability in a web application to execute commands on the underlying operating system. What type of attack is this?",
+		"options": [
+			"Remote Code Execution (RCE)",
+			"Cross-Site Scripting (XSS)",
+			"SQL Injection",
+			"Cross-Site Request Forgery (CSRF)"
+		],
+		"correct_index": "A",
+		"explanation": "RCE vulnerabilities allow attackers to execute arbitrary commands on the server, potentially gaining full control of the system."
+	},
+	{
+		"question_number": 26,
+		"question": "A security assessment of an IoT device reveals that it is using unencrypted communication protocols. What is the primary security risk associated with this?",
+		"options": [
+			"Data interception and eavesdropping",
+			"Denial-of-Service attacks",
+			"Device malfunction",
+			"Increased power consumption"
+		],
+		"correct_index": "A",
+		"explanation": "Unencrypted communication allows attackers to easily intercept and read sensitive data being transmitted by the IoT device."
+	},
+	{
+		"question_number": 27,
+		"question": "A security team detects a series of unusual DNS queries for internal hostnames from external IP addresses. What type of attack might this suggest?",
+		"options": [
+			"DNS exfiltration or reconnaissance",
+			"DNS amplification attack",
+			"DNS cache poisoning attack",
+			"DNS spoofing attack"
+		],
+		"correct_index": "A",
+		"explanation": "External DNS queries for internal hostnames can indicate reconnaissance by an attacker trying to map the internal network or exfiltration of data using DNS tunneling."
+	},
+	{
+		"question_number": 28,
+		"question": "A web application is vulnerable to an SQL Injection attack. How could an attacker exploit this vulnerability to gain access to sensitive data?",
+		"options": [
+			"By injecting malicious SQL code into input fields to manipulate database queries.",
+			"By exploiting a vulnerability in the web server software.",
+			"By intercepting and modifying network traffic between the user and the web application.",
+			"By tricking a logged-in user into clicking a malicious link."
+		],
+		"correct_index": "A",
+		"explanation": "SQL Injection involves injecting malicious SQL code into input fields to directly interact with the database and potentially retrieve sensitive information."
+	},
+	{
+		"question_number": 29,
+		"question": "A company implements multi-factor authentication (MFA) for all user accounts. What is the primary benefit of MFA compared to single-factor authentication?",
+		"options": [
+			"It provides stronger protection against credential theft and unauthorized access.",
+			"It is easier for users to remember complex passwords.",
+			"It prevents phishing attacks.",
+			"It encrypts user passwords."
+		],
+		"correct_index": "A",
+		"explanation": "MFA requires multiple authentication factors, making it significantly harder for attackers to gain access even if one factor is compromised."
+	},
+	{
+		"question_number": 30,
+		"question": "A company is implementing a data backup and recovery plan. Which of the following is a key consideration for ensuring business continuity in the event of a disaster?",
+		"options": [
+			"Regularly testing backups and having a documented recovery plan.",
+			"Storing all backups on the same server as the production data.",
+			"Performing backups only once a month.",
+			"Relying solely on cloud-based backups without any local copies."
+		],
+		"correct_index": "A",
+		"explanation": "Regular testing ensures backups are valid and can be restored, and a documented plan ensures a coordinated and efficient recovery process."
+	},
+	{
+		"question_number": 31,
+		"question": "A user reports that their computer is running very slowly and displaying unusual pop-up advertisements. What is the most likely cause?",
+		"options": [
+			"Adware or potentially unwanted programs (PUPs)",
+			"A network connectivity issue",
+			"A hardware malfunction",
+			"A DNS server issue"
+		],
+		"correct_index": "A",
+		"explanation": "Slow performance and unwanted pop-ups are common symptoms of adware or PUPs."
+	},
+	{
+		"question_number": 32,
+		"question": "A network administrator needs to block all traffic to a specific website. Which network device is best suited for this task?",
+		"options": [
+			"Firewall",
+			"Switch",
+			"Router",
+			"Hub"
+		],
+		"correct_index": "A",
+		"explanation": "Firewalls control network traffic based on defined rules, allowing them to block access to specific websites or IP addresses."
+	},
+	{
+		"question_number": 33,
+		"question": "Which type of malware is self-replicating and spreads across networks by exploiting vulnerabilities?",
+		"options": [
+			"Worm",
+			"Trojan",
+			"Virus",
+			"Rootkit"
+		],
+		"correct_index": "A",
+		"explanation": "Worms propagate across networks independently, exploiting vulnerabilities to spread."
+	},
+	{
+		"question_number": 34,
+		"question": "Which social engineering technique involves creating a false sense of trust or rapport with a victim to manipulate them?",
+		"options": [
+			"Pretexting",
+			"Phishing",
+			"Baiting",
+			"Building rapport/Developing a relationship"
+		],
+		"correct_index": "D",
+		"explanation": "Building rapport involves establishing a connection with the victim to gain their trust and make them more susceptible to manipulation."
+	},
+	{
+		"question_number": 35,
+		"question": "Which wireless attack involves capturing the handshake between a client and a wireless access point to attempt to crack the Wi-Fi password?",
+		"options": [
+			"WPA/WPA2 cracking (using a captured handshake)",
+			"Evil Twin attack",
+			"Deauthentication attack",
+			"Jamming attack"
+		],
+		"correct_index": "A",
+		"explanation": "Cracking WPA/WPA2 often involves capturing the 4-handshake"
+	},
+	{
+		"question_number": 36,
+		"question": "Which mobile security measure involves using biometrics (fingerprint, facial recognition) or a PIN/pattern to unlock the device?",
+		"options": [
+			"Screen lock/Device passcode",
+			"Remote wipe",
+			"App sandboxing",
+			"Mobile Device Management (MDM)"
+		],
+		"correct_index": "A",
+		"explanation": "Screen locks and device passcodes protect the device from unauthorized physical access."
+	},
+	{
+		"question_number": 37,
+		"question": "Which cloud security threat involves an attacker gaining access to a cloud account and using its resources for unauthorized cryptocurrency mining?",
+		"options": [
+			"Cloud cryptojacking",
+			"Cloud Hopper attack",
+			"Man-in-the-Cloud (MITC) attack",
+			"Data breach"
+		],
+		"correct_index": "A",
+		"explanation": "Cloud cryptojacking uses cloud resources for unauthorized cryptocurrency mining, often resulting in unexpected cloud computing costs."
+	},
+	{
+		"question_number": 38,
+		"question": "Which cryptographic concept ensures that data has not been altered during transmission or storage?",
+		"options": [
+			"Integrity",
+			"Confidentiality",
+			"Authentication",
+			"Non-repudiation"
+		],
+		"correct_index": "A",
+		"explanation": "Integrity ensures that data remains unchanged from its original state."
+	},
+	{
+		"question_number": 39,
+		"question": "Which data security control involves replacing sensitive data with randomly generated values that have no real-world meaning?",
+		"options": [
+			"Tokenization",
+			"Encryption",
+			"Hashing",
+			"Data masking"
+		],
+		"correct_index": "A",
+		"explanation": "Tokenization replaces sensitive data with tokens, which are random values that are not mathematically reversible to the original data."
+	},
+	{
+		"question_number": 40,
+		"question": "Which data backup strategy involves creating a full backup of all data and then regularly backing up only the changes made since the last full backup?",
+		"options": [
+			"Full and incremental backups",
+			"Full and differential backups",
+			"Mirroring",
+			"RAID"
+		],
+		"correct_index": "A",
+		"explanation": "This describes a strategy using full and incremental backups. Incremental backups only back up changes since the last backup (full or incremental)."
+	},
+	{
+		"question_number": 41,
+		"question": "A user reports they cannot access any websites, but other users on the same network can. Pinging the default gateway is successful. What is the most likely cause?",
+		"options": [
+			"DNS resolution issue on the user's machine",
+			"Default gateway issue",
+			"Firewall blocking outgoing connections on the user's machine",
+			"Incorrect IP address configuration on the user's machine"
+		],
+		"correct_index": "A",
+		"explanation": "If other users can access websites, the issue is isolated to the user's machine. Since the gateway is reachable, the issue is likely DNS on their machine."
+	},
+	{
+		"question_number": 42,
+		"question": "A network administrator needs to capture all network traffic on a specific segment of the network for analysis. Which tool is most suitable?",
+		"options": [
+			"Wireshark or tcpdump",
+			"Nmap",
+			"Ping",
+			"Tracert"
+		],
+		"correct_index": "A",
+		"explanation": "Wireshark (GUI) and tcpdump (command-line) are packet capture tools used to capture and analyze network traffic."
+	},
+	{
+		"question_number": 43,
+		"question": "Which type of malware requires user interaction to spread, typically through opening an infected file or clicking a malicious link?",
+		"options": [
+			"Virus",
+			"Worm",
+			"Trojan",
+			"Rootkit"
+		],
+		"correct_index": "A",
+		"explanation": "Viruses require user action to execute and spread."
+	},
+	{
+		"question_number": 44,
+		"question": "Which social engineering attack involves offering a desirable item or service (e.g., a free download, a prize) to lure victims into revealing information or installing malware?",
+		"options": [
+			"Baiting",
+			"Phishing",
+			"Pretexting",
+			"Quid pro quo"
+		],
+		"correct_index": "A",
+		"explanation": "Baiting uses something enticing to lure victims into a trap."
+	},
+	{
+		"question_number": 45,
+		"question": "Which wireless security protocol is considered the least secure and should not be used on modern Wi-Fi networks?",
+		"options": [
+			"WEP",
+			"WPA",
+			"WPA2",
+			"WPA3"
+		],
+		"correct_index": "A",
+		"explanation": "WEP is easily cracked and offers very weak security."
+	},
+	{
+		"question_number": 46,
+		"question": "Which mobile security practice involves restricting the permissions that apps can request on a mobile device?",
+		"options": [
+			"App permissions management",
+			"Device encryption",
+			"Remote wipe",
+			"Two-factor authentication"
+		],
+		"correct_index": "A",
+		"explanation": "Managing app permissions allows users to control what data and resources apps can access."
+	},
+	{
+		"question_number": 47,
+		"question": "Which cloud security threat involves an attacker exploiting vulnerabilities in the hypervisor or other shared infrastructure components to gain access to other customers' data?",
+		"options": [
+			"Cross-guest VM breaches or Side-channel attacks",
+			"Cloud cryptojacking",
+			"Cloud Hopper attack",
+			"Data breach"
+		],
+		"correct_index": "A",
+		"explanation": "Cross-guest VM breaches and side-channel attacks exploit the shared nature of cloud infrastructure."
+	},
+	{
+		"question_number": 48,
+		"question": "Which cryptographic concept ensures that the sender of a message cannot deny having sent it?",
+		"options": [
+			"Non-repudiation",
+			"Confidentiality",
+			"Integrity",
+			"Authentication"
+		],
+		"correct_index": "A",
+		"explanation": "Non-repudiation prevents the sender from denying their involvement in a communication."
+	},
+	{
+		"question_number": 49,
+		"question": "Which data security practice involves defining how data should be handled, accessed, and used within an organization?",
+		"options": [
+			"Data governance policy",
+			"Data backup policy",
+			"Data retention policy",
+			"Data destruction policy"
+		],
+		"correct_index": "A",
+		"explanation": "Data governance policies provide a framework for managing data within an organization."
+	},
+	{
+		"question_number": 50,
+		"question": "Which data destruction method involves overwriting the data on a storage device multiple times with different patterns?",
+		"options": [
+			"Wiping or Overwriting",
+			"Degaussing",
+			"Shredding",
+			"Formatting"
+		],
+		"correct_index": "A",
+		"explanation": "Wiping or overwriting replaces existing data with new data, making it more difficult to recover the original information. Multiple passes increase the effectiveness."
+	},
+	{
+		"question_number": 51,
+		"question": "A user reports they can access some websites but not others. Pinging external IP addresses is successful, but pinging website hostnames sometimes fails. What is the most likely cause?",
+		"options": [
+			"Intermittent DNS resolution issues",
+			"Intermittent network connectivity issues",
+			"Firewall blocking access to specific websites",
+			"Problems with the web browser cache"
+		],
+		"correct_index": "A",
+		"explanation": "The ability to ping IPs but not always hostnames suggests intermittent DNS issues."
+	},
+	{
+		"question_number": 52,
+		"question": "A network administrator needs to configure a firewall to allow only specific types of traffic to pass through. Which of the following is the most effective approach?",
+		"options": [
+			"Using access control lists (ACLs) to filter traffic based on source/destination IP addresses, ports, and protocols.",
+			"Blocking all incoming and outgoing traffic.",
+			"Allowing all traffic to pass through the firewall.",
+			"Using only antivirus software on the firewall."
+		],
+		"correct_index": "A",
+		"explanation": "ACLs provide granular control over network traffic by defining rules based on various criteria."
+	},
+	{
+		"question_number": 53,
+		"question": "Which type of malware is designed to grant an attacker persistent remote access to a compromised system?",
+		"options": [
+			"Rootkit",
+			"Worm",
+			"Virus",
+			"Trojan"
+		],
+		"correct_index": "A",
+		"explanation": "Rootkits are designed to hide their presence and provide backdoor access to the system."
+	},
+	{
+		"question_number": 54,
+		"question": "Which social engineering technique involves creating a sense of urgency or scarcity to pressure victims into making hasty decisions?",
+		"options": [
+			"Urgency/Scarcity",
+			"Pretexting",
+			"Baiting",
+			"Quid pro quo"
+		],
+		"correct_index": "A",
+		"explanation": "Creating a sense of urgency or scarcity is a common manipulation tactic used in social engineering attacks."
+	},
+	{
+		"question_number": 55,
+		"question": "Which wireless attack involves sending deauthentication packets to disconnect clients from a Wi-Fi access point?",
+		"options": [
+			"Deauthentication attack",
+			"Evil Twin attack",
+			"Jamming attack",
+			"Replay attack"
+		],
+		"correct_index": "A",
+		"explanation": "Deauthentication attacks disrupt wireless communication by sending deauthentication frames."
+	},
+	{
+		"question_number": 56,
+		"question": "Which mobile security measure involves managing and securing mobile devices within an organization, including enforcing security policies and remotely wiping devices?",
+		"options": [
+			"Mobile Device Management (MDM)",
+			"Device encryption",
+			"App sandboxing",
+			"Two-factor authentication"
+		],
+		"correct_index": "A",
+		"explanation": "MDM solutions provide centralized management and security controls for mobile devices."
+	},
+	{
+		"question_number": 57,
+		"question": "Which cloud security concern arises from the lack of visibility and control over the underlying infrastructure in some cloud service models?",
+		"options": [
+			"Lack of visibility and control",
+			"Cloud cryptojacking",
+			"Cloud Hopper attack",
+			"Data breach"
+		],
+		"correct_index": "A",
+		"explanation": "Depending on the cloud service model (SaaS, PaaS, IaaS), the customer has varying levels of visibility and control over the underlying infrastructure."
+	},
+	{
+		"question_number": 58,
+		"question": "Which cryptographic concept ensures that only authorized parties can access and read data?",
+		"options": [
+			"Confidentiality",
+			"Integrity",
+			"Authentication",
+			"Non-repudiation"
+		],
+		"correct_index": "A",
+		"explanation": "Confidentiality ensures that data is protected from unauthorized disclosure."
+	},
+	{
+		"question_number": 59,
+		"question": "Which data security practice involves defining the roles and responsibilities of individuals and teams regarding data management and security?",
+		"options": [
+			"Data governance",
+			"Data backup policy",
+			"Data retention policy",
+			"Data destruction policy"
+		],
+		"correct_index": "A",
+		"explanation": "Data governance establishes the framework for managing data within an organization, including roles and responsibilities."
+	},
+	{
+		"question_number": 60,
+		"question": "Which data destruction method involves using software to overwrite data on a storage device multiple times with different patterns?",
+		"options": [
+			"Wiping or Overwriting",
+			"Degaussing",
+			"Shredding",
+			"Formatting"
+		],
+		"correct_index": "A",
+		"explanation": "Wiping or overwriting uses software to overwrite data, making recovery more difficult."
+	}
+]

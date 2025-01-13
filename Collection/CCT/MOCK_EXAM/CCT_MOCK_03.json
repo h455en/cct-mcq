@@ -1,0 +1,482 @@
+[
+  {
+    "question_number": 1,
+    "question": "A small business owner reports that their point-of-sale (POS) system is suddenly slow and intermittently unresponsive. Upon investigation, you find unusual network traffic destined for a foreign IP address during peak business hours. The POS software vendor confirms they have not initiated any updates. What is the most likely scenario?",
+    "options": [
+      "A scheduled backup process is running slowly.",
+      "The POS system has been infected with malware and is participating in a botnet or exfiltrating data.",
+      "A network cable is faulty, causing intermittent connectivity.",
+      "The internet service provider (ISP) is experiencing temporary network congestion."
+    ],
+    "correct_index": "B",
+    "explanation": "Unusual network traffic to a foreign IP during peak hours, combined with performance issues and vendor confirmation of no updates, strongly suggests malware activity such as botnet participation or data exfiltration."
+  },
+  {
+    "question_number": 2,
+    "question": "During a penetration test, an ethical hacker discovers that a web application is vulnerable to a Server-Side Request Forgery (SSRF) attack. How could an attacker most likely exploit this vulnerability in a real-world scenario?",
+    "options": [
+      "Gain access to the web server's file system and steal sensitive data.",
+      "Bypass firewall rules to access internal network resources or services not intended to be publicly accessible.",
+      "Inject malicious JavaScript code into the web application to steal user session cookies.",
+      "Launch a Denial-of-Service (DoS) attack against the web server."
+    ],
+    "correct_index": "B",
+    "explanation": "SSRF vulnerabilities allow attackers to make requests from the server itself. This can be used to bypass firewalls and access internal resources that are normally protected."
+  },
+  {
+    "question_number": 3,
+    "question": "A company's security information and event management (SIEM) system alerts on a sudden spike in failed login attempts for multiple user accounts, followed by a successful login from an unusual IP address for one of the accounts. What type of attack is most likely taking place?",
+    "options": [
+      "Phishing attack",
+      "Brute-force attack followed by credential stuffing",
+      "Denial-of-Service (DoS) attack",
+      "SQL Injection attack"
+    ],
+    "correct_index": "B",
+    "explanation": "The spike in failed logins indicates a brute-force attempt, and the subsequent successful login from an unusual IP suggests the attacker obtained the correct credentials and is now using them."
+  },
+  {
+    "question_number": 4,
+    "question": "An employee receives a phone call from someone claiming to be from the IT department, stating that their computer has been flagged for suspicious activity and they need to install a remote access tool to fix it. What type of social engineering attack is this?",
+    "options": [
+      "Baiting",
+      "Pretexting combined with Vishing",
+      "Quid pro quo",
+      "Phishing"
+    ],
+    "correct_index": "B",
+    "explanation": "The attacker is creating a false scenario (pretexting) over the phone (Vishing) to trick the employee into installing malicious software."
+  },
+  {
+    "question_number": 5,
+    "question": "During a digital forensics investigation of a compromised server, an analyst finds evidence of time manipulation on system logs. What is the most likely reason for an attacker to manipulate timestamps?",
+    "options": [
+      "To prevent the server from rebooting.",
+      "To confuse investigators and obscure their activities.",
+      "To improve the server's performance.",
+      "To bypass security software."
+    ],
+    "correct_index": "B",
+    "explanation": "Manipulating timestamps is a common technique used by attackers to cover their tracks and make it harder to determine the timeline of events."
+  },
+  {
+    "question_number": 6,
+    "question": "An organization discovers that an attacker has compromised several IoT devices within their network, using them to launch a large-scale Distributed Denial-of-Service (DDoS) attack against an external target. What type of attack is this an example of?",
+    "options": [
+      "Botnet attack using compromised IoT devices",
+      "Man-in-the-Middle attack targeting IoT devices",
+      "Replay attack targeting IoT communications",
+      "RFID cloning attack"
+    ],
+    "correct_index": "A",
+    "explanation": "Compromised IoT devices are often used to form botnets, which can be used to launch DDoS attacks and other malicious activities."
+  },
+  {
+    "question_number": 7,
+    "question": "A security analyst observes a sudden increase in DNS queries for a specific domain name from within the organization's network, followed by data exfiltration to an IP address associated with that domain. What type of attack might this suggest?",
+    "options": [
+      "DNS amplification attack",
+      "DNS tunneling for data exfiltration",
+      "DNS poisoning attack",
+      "DNS cache poisoning attack"
+    ],
+    "correct_index": "B",
+    "explanation": "DNS tunneling uses DNS queries and responses to create a covert communication channel for data exfiltration."
+  },
+  {
+    "question_number": 8,
+    "question": "A web application is vulnerable to a directory traversal attack. How might an attacker exploit this vulnerability to access sensitive information?",
+    "options": [
+      "By injecting malicious JavaScript code into the web page.",
+      "By manipulating URL parameters to access files outside the webroot directory.",
+      "By exploiting a vulnerability in the web server software.",
+      "By sending a large number of requests to the web server to overwhelm it."
+    ],
+    "correct_index": "B",
+    "explanation": "Directory traversal attacks exploit improper input validation to access files and directories outside the intended webroot."
+  },
+  {
+    "question_number": 9,
+    "question": "A company implements file-level encryption on sensitive documents stored on employee laptops. What is the primary benefit of this approach compared to full disk encryption?",
+    "options": [
+      "It protects data even if the laptop is powered on and logged in.",
+      "It is simpler to implement and manage.",
+      "It provides stronger protection against physical theft.",
+      "It encrypts all data on the hard drive, including the operating system."
+    ],
+    "correct_index": "A",
+    "explanation": "File-level encryption protects individual files regardless of the state of the operating system or disk. Full disk encryption protects data only when the system is off."
+  },
+  {
+    "question_number": 10,
+    "question": "A security administrator needs to implement a system to prevent sensitive data, such as credit card numbers and social security numbers, from leaving the organization's network. Which technology is most appropriate?",
+    "options": [
+      "Intrusion Detection/Prevention System (IDS/IPS)",
+      "Data Loss Prevention (DLP) system",
+      "Firewall",
+      "Antivirus software"
+    ],
+    "correct_index": "B",
+    "explanation": "DLP systems are specifically designed to prevent data exfiltration."
+  },
+  {
+    "question_number": 11,
+    "question": "A user reports they can connect to the Wi-Fi network, but cannot access any internal network resources or the internet. Other users on the same Wi-Fi network are experiencing no issues. What is the most likely cause?",
+    "options": [
+      "The user's device has an incorrect IP address or subnet mask.",
+      "The Wi-Fi access point is overloaded.",
+      "The network's DHCP server is down.",
+      "There is a problem with the network's DNS server."
+    ],
+    "correct_index": "A",
+    "explanation": "If other users on the same Wi-Fi are fine, the problem is isolated to the user's device and is most likely an IP configuration issue."
+  },
+  {
+    "question_number": 12,
+    "question": "During a network troubleshooting session, a technician uses the `tracert` command and observes a series of 'Request timed out' messages after a few hops. What does this indicate?",
+    "options": [
+      "The destination host is unreachable or a firewall is blocking ICMP traffic.",
+      "The user's network cable is unplugged.",
+      "There is a problem with the local DNS server.",
+      "The network is experiencing heavy congestion."
+    ],
+    "correct_index": "A",
+    "explanation": ""
+  },
+  {
+    "question_number": 13,
+    "question": "A security analyst discovers evidence of a fileless malware attack on a server. What characteristic distinguishes this type of attack from traditional malware?",
+    "options": [
+      "It uses a virus to infect the system.",
+      "It executes malicious code directly in memory without writing files to disk.",
+      "It spreads through email attachments.",
+      "It encrypts user files and demands a ransom."
+    ],
+    "correct_index": "B",
+    "explanation": "Fileless malware operates in memory, making it harder to detect with traditional file-based antivirus solutions."
+  },
+  {
+    "question_number": 14,
+    "question": "An attacker uses a compromised mobile device to send a large number of SMS messages to premium-rate numbers, generating fraudulent charges for the device owner. What type of attack is this?",
+    "options": [
+      "SMS phishing (Smishing)",
+      "Premium SMS fraud",
+      "Bluesnarfing",
+      "Bluejacking"
+    ],
+    "correct_index": "B",
+    "explanation": "This scenario describes premium SMS fraud, where attackers exploit compromised devices to generate revenue through fraudulent SMS messages."
+  },
+  {
+    "question_number": 15,
+    "question": "A security audit of an industrial control system (ICS) reveals that it is connected directly to the internet without a firewall. What is the most significant security risk associated with this configuration?",
+    "options": [
+      "Increased risk of ransomware attacks and remote control of critical infrastructure.",
+      "Increased risk of data breaches and theft of sensitive information.",
+      "Increased risk of denial-of-service attacks against the ICS.",
+      "All of the above."
+    ],
+    "correct_index": "D",
+    "explanation": "Direct internet connectivity without a firewall exposes ICS to a wide range of threats, including ransomware, data breaches, and DoS attacks, potentially impacting critical infrastructure."
+  },
+  {
+    "question_number": 16,
+    "question": "During incident response, a security team needs to preserve volatile data from a compromised computer system. Which of the following should be collected first?",
+    "options": [
+      "Hard drive image",
+      "Network connections and running processes",
+      "System logs",
+      "RAM contents"
+    ],
+    "correct_index": "D",
+    "explanation": "RAM (Random Access Memory) contains volatile data that is lost when the system is powered off. It should be collected first in a forensic investigation."
+  },
+  {
+    "question_number": 17,
+    "question": "A company needs to protect sensitive data stored in a database from unauthorized access, even by database administrators. Which security control is most appropriate?",
+    "options": [
+      "Database encryption with key management",
+      "Access Control Lists (ACLs)",
+      "Firewall rules",
+      "Intrusion Detection/Prevention System (IDS/IPS)"
+    ],
+    "correct_index": "A",
+    "explanation": "Database encryption with proper key management can protect data even from those with administrative access to the database server."
+  },
+  {
+    "question_number": 18,
+    "question": "A company implements email encryption using digital certificates. What is the primary benefit of using digital certificates for email encryption?",
+    "options": [
+      "It ensures confidentiality and authentication of email messages.",
+      "It prevents spam and phishing emails.",
+      "It protects against malware infections spread through email attachments.",
+      "It prevents email messages from being lost or delayed."
+    ],
+    "correct_index": "A",
+    "explanation": "Digital certificates provide encryption for confidentiality and digital signatures for authentication and non-repudiation of email messages."
+  },
+  {
+    "question_number": 19,
+    "question": "A company is developing a data retention policy. Which of the following factors should be considered when determining how long to retain data?",
+    "options": [
+      "Legal and regulatory requirements, business needs, and storage capacity.",
+      "The cost of storage and the complexity of data management.",
+      "The frequency of data backups and the speed of data recovery.",
+      "The type of data and the sensitivity of the information."
+    ],
+    "correct_index": "A",
+    "explanation": "Data retention policies should be based on legal obligations, business requirements, and practical considerations like storage capacity."
+  },
+  {
+    "question_number": 20,
+    "question": "A company is disposing of old hard drives containing sensitive data. Which data destruction method is considered the most secure and effective?",
+    "options": [
+      "Formatting the hard drives",
+      "Deleting the files",
+      "Overwriting the data once",
+      "Physical destruction (e.g., shredding, pulverizing)"
+    ],
+    "correct_index": "D",
+    "explanation": "Physical destruction is the most secure method as it renders the storage media completely unusable and the data unrecoverable."
+  },
+  {
+    "question_number": 41,
+    "question": "A network technician is troubleshooting a connectivity issue where users on a specific subnet cannot access resources on a different subnet. Pinging devices within the same subnet is successful. What is the most likely cause?",
+    "options": [
+      "Missing or incorrect routing configuration between the subnets.",
+      "A firewall is blocking traffic between the subnets.",
+      "A faulty network cable is connecting the subnets.",
+      "A DHCP server is not configured correctly for the affected subnet."
+    ],
+    "correct_index": "A",
+    "explanation": "Inter-subnet communication requires routing. If devices within the same subnet can communicate but not with other subnets, the issue is almost certainly a routing problem."
+  },
+  {
+    "question_number": 42,
+    "question": "A security analyst is examining network traffic and notices a large number of UDP packets being sent to random high ports on a target server. What type of attack is this indicative of?",
+    "options": [
+      "UDP flood attack",
+      "SYN flood attack",
+      "DNS amplification attack",
+      "ICMP flood attack"
+    ],
+    "correct_index": "A",
+    "explanation": "A UDP flood attack overwhelms the target server with UDP packets, consuming bandwidth and system resources."
+  },
+  {
+    "question_number": 43,
+    "question": "A user reports receiving a series of unsolicited Bluetooth connection requests from an unknown device. What type of attack is this potentially an early stage of?",
+    "options": [
+      "Bluejacking or Bluesnarfing",
+      "Smishing",
+      "Bluebugging",
+      "Denial-of-Service attack"
+    ],
+    "correct_index": "A",
+    "explanation": "Unsolicited Bluetooth connection requests can be a precursor to bluejacking (sending unwanted messages) or bluesnarfing (unauthorized data access)."
+  },
+  {
+    "question_number": 44,
+    "question": "A security researcher discovers a vulnerability in a widely used piece of software that is not yet known to the vendor. What type of vulnerability is this?",
+    "options": [
+      "Zero-day vulnerability",
+      "Known vulnerability",
+      "Misconfiguration",
+      "Exploit"
+    ],
+    "correct_index": "A",
+    "explanation": "A zero-day vulnerability is a vulnerability that is unknown to the software vendor and for which no patch is available."
+  },
+  {
+    "question_number": 45,
+    "question": "A security administrator needs to implement a strong authentication method that requires users to provide two different factors of authentication. Which method is most suitable?",
+    "options": [
+      "Two-factor authentication (2FA) or Multi-factor authentication (MFA)",
+      "Password complexity requirements",
+      "Biometric authentication",
+      "Single sign-on (SSO)"
+    ],
+    "correct_index": "A",
+    "explanation": "2FA/MFA requires two or more different authentication factors (e.g., something you know, something you have, something you are)."
+  },
+  {
+    "question_number": 46,
+    "question": "A company is concerned about data breaches resulting from lost or stolen laptops. Which security control would provide the strongest protection for data at rest on these devices?",
+    "options": [
+      "Full disk encryption",
+      "File-level encryption",
+      "Password protection",
+      "Antivirus software"
+    ],
+    "correct_index": "A",
+    "explanation": "Full disk encryption protects all data on the hard drive, making it inaccessible without the encryption key, even if the drive is removed from the laptop."
+  },
+  {
+    "question_number": 47,
+    "question": "A security team is responding to a ransomware incident. What is the first priority during the containment phase?",
+    "options": [
+      "Isolate affected systems from the network to prevent further spread.",
+      "Identify the source of the infection.",
+      "Restore systems from backups.",
+      "Pay the ransom to decrypt the files."
+    ],
+    "correct_index": "A",
+    "explanation": "The primary goal of containment is to stop the spread of the ransomware to other systems. Isolating affected systems is the most effective way to achieve this."
+  },
+  {
+    "question_number": 48,
+    "question": "A company needs to ensure that data stored in its database is protected against unauthorized access, even by database administrators. Which security control is most effective?",
+    "options": [
+      "Transparent Database Encryption (TDE) with strong key management",
+      "Access Control Lists (ACLs) on database files",
+      "Firewall rules to restrict database access",
+      "Intrusion Detection/Prevention System (IDS/IPS)"
+    ],
+    "correct_index": "A",
+    "explanation": "TDE with proper key management encrypts the database at rest, protecting it even from privileged users who have access to the database server."
+  },
+  {
+    "question_number": 49,
+    "question": "A company needs to implement a data backup strategy that minimizes downtime in case of a server failure. Which backup method is most suitable?",
+    "options": [
+      "Full backups only",
+      "Incremental backups only",
+      "Differential backups only",
+      "A combination of full, incremental, and/or differential backups with regular testing"
+    ],
+    "correct_index": "D",
+    "explanation": "A well-planned backup strategy using a combination of backup types allows for faster recovery times. Regular testing ensures the backups are valid and can be restored successfully."
+  },
+  {
+    "question_number": 50,
+    "question": "A company is decommissioning old hard drives. Which data destruction method offers the highest level of assurance that data is unrecoverable?",
+    "options": [
+      "Formatting the hard drives",
+      "Deleting the files",
+      "Overwriting the data once",
+      "Physical destruction (e.g., shredding, pulverizing)"
+    ],
+    "correct_index": "D",
+    "explanation": "Physical destruction renders the storage media unusable and the data completely unrecoverable."
+  },
+  {
+    "question_number": 51,
+    "question": "A user reports they can connect to the Wi-Fi but cannot access any websites. Pinging external IP addresses (like 8.8.8.8) is successful. What is the most likely cause?",
+    "options": [
+      "DNS resolution issue",
+      "Default gateway issue",
+      "Firewall blocking outgoing connections",
+      "Incorrect IP address configuration"
+    ],
+    "correct_index": "A",
+    "explanation": "Pinging external IPs confirms network connectivity to the internet. The inability to access websites by name indicates a DNS problem."
+  },
+  {
+    "question_number": 52,
+    "question": "A network administrator needs to monitor network traffic in real-time to identify potential security threats. Which tool is most suitable?",
+    "options": [
+      "Nmap",
+      "Wireshark",
+      "Tcpdump",
+      "Snort"
+    ],
+    "correct_index": "D",
+    "explanation": "Snort is an open-source intrusion detection/prevention system (IDS/IPS) that monitors network traffic in real-time for malicious activity."
+  },
+  {
+    "question_number": 53,
+    "question": "Which type of malware often uses social engineering tactics to trick users into executing it?",
+    "options": [
+      "Trojan",
+      "Worm",
+      "Virus",
+      "Rootkit"
+    ],
+    "correct_index": "A",
+    "explanation": "Trojans often rely on user interaction to be executed, often disguised as legitimate software."
+  },
+  {
+    "question_number": 54,
+    "question": "Which social engineering attack involves creating a fake scenario or story to trick a victim into divulging information or performing an action?",
+    "options": [
+      "Pretexting",
+      "Phishing",
+      "Baiting",
+      "Quid pro quo"
+    ],
+    "correct_index": "A",
+    "explanation": "Pretexting involves creating a fabricated scenario to manipulate victims."
+  },
+  {
+    "question_number": 55,
+    "question": "Which wireless attack involves capturing and replaying wireless network traffic to gain unauthorized access?",
+    "options": [
+      "Replay attack",
+      "Evil Twin attack",
+      "Deauthentication attack",
+      "Jamming attack"
+    ],
+    "correct_index": "A",
+    "explanation": "Replay attacks capture and re-send network packets, potentially bypassing authentication."
+  },
+  {
+    "question_number": 56,
+    "question": "Which mobile security practice involves remotely wiping data from a lost or stolen mobile device?",
+    "options": [
+      "Remote wipe",
+      "Device encryption",
+      "App sandboxing",
+      "Multi-factor authentication"
+    ],
+    "correct_index": "A",
+    "explanation": "Remote wipe allows administrators to erase data on a lost or stolen device to protect sensitive information."
+  },
+  {
+    "question_number": 57,
+    "question": "Which cloud security concern arises from the shared nature of cloud infrastructure, where vulnerabilities in the hypervisor or other shared components could allow an attacker to access data from multiple customers?",
+    "options": [
+      "Side-channel attacks or Cross-guest VM breaches",
+      "Cloud cryptojacking",
+      "Cloud Hopper attack",
+      "Man-in-the-Cloud (MITC) attack"
+    ],
+    "correct_index": "A",
+    "explanation": "Side-channel attacks and cross-guest VM breaches exploit vulnerabilities in the shared infrastructure of cloud environments."
+  },
+  {
+    "question_number": 58,
+    "question": "Which cryptographic technique provides non-repudiation, ensuring that the sender of a message cannot deny having sent it?",
+    "options": [
+      "Digital signatures",
+      "Encryption",
+      "Hashing",
+      "Steganography"
+    ],
+    "correct_index": "A",
+    "explanation": "Digital signatures use public key cryptography to provide authentication, integrity, and non-repudiation."
+  },
+  {
+    "question_number": 59,
+    "question": "Which data security practice involves establishing procedures for notifying affected parties in the event of a data breach?",
+    "options": [
+      "Data breach notification policy",
+      "Incident response plan",
+      "Data retention policy",
+      "Data destruction policy"
+    ],
+    "correct_index": "A",
+    "explanation": "A data breach notification policy defines the steps to be taken when a data breach occurs, including notifying affected individuals and regulatory bodies."
+  },
+  {
+    "question_number": 60,
+    "question": "A company is implementing a data loss prevention (DLP) solution. Which of the following is a key consideration for a successful DLP implementation?",
+    "options": [
+      "Clearly defining sensitive data, establishing policies, and training users.",
+      "Purchasing the most expensive DLP software available.",
+      "Implementing the DLP solution without notifying users.",
+      "Focusing solely on preventing external data breaches."
+    ],
+    "correct_index": "A",
+    "explanation": "A successful DLP implementation requires a clear understanding of sensitive data, well-defined policies, and user training to ensure compliance and effectiveness."
+  }
+]
