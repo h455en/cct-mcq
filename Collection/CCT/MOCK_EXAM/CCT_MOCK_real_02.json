@@ -1,0 +1,722 @@
+[
+  {
+    "question_number": 1,
+    "question": "Scenario: Preparing for a potential recurrence of the Morris Worm (1988, but relevant for its impact). A blue team is hardening their Unix-based systems. Which of the following actions would be MOST effective in preventing a similar self-propagating worm from exploiting vulnerabilities?",
+    "options": [
+      "Disabling unnecessary network services (like `finger`, `sendmail`), patching known vulnerabilities, and implementing strong password policies.",
+      "Installing antivirus software on all servers.",
+      "Implementing multi-factor authentication for all user accounts.",
+      "Restricting physical access to server rooms."
+    ],
+    "correct_index": "A",
+    "explanation": "The Morris Worm exploited vulnerabilities in `finger`, `sendmail`, and weak passwords. Disabling unused services and patching are crucial for reducing the attack surface. While the other options are good security practices, they wouldn't have directly prevented the Morris Worm's spread."
+  },
+  {
+    "question_number": 2,
+    "question": "Scenario: Responding to a Code Red worm (2001) outbreak. A blue team detects a rapid increase in web server traffic and defacement of websites. What immediate actions should they prioritize to contain the spread of the worm?",
+    "options": [
+      "Isolate affected web servers from the network, patch the IIS vulnerability, and implement intrusion detection rules to block the worm's traffic.",
+      "Reboot all web servers immediately.",
+      "Install antivirus software on all workstations.",
+      "Change all user passwords."
+    ],
+    "correct_index": "A",
+    "explanation": "Isolating infected servers contains the spread. Patching the IIS vulnerability prevents further infections. Intrusion detection rules help block the worm's network activity. Rebooting without patching would just lead to reinfection. The other options are less relevant for immediate containment."
+  },
+  {
+    "question_number": 3,
+    "question": "Scenario: Red team simulating the Slammer worm (2003). A red team is tasked with testing the resilience of a network's SQL servers. Which attack vector would MOST effectively simulate Slammer's rapid spread?",
+    "options": [
+      "Sending a large number of UDP packets to port 1434, exploiting a buffer overflow vulnerability in Microsoft SQL Server.",
+      "Launching a denial-of-service (DoS) attack against the SQL servers.",
+      "Attempting to brute-force SQL server passwords.",
+      "Injecting SQL code into web applications connected to the SQL servers."
+    ],
+    "correct_index": "A",
+    "explanation": "Slammer spread by sending UDP packets to port 1434, exploiting a buffer overflow in SQL Server. This is the most accurate simulation of its rapid propagation."
+  },
+  {
+    "question_number": 4,
+    "question": "Scenario: Preparing for attacks similar to the Sony Pictures hack (2014). A blue team is reviewing their data exfiltration prevention measures. Which of the following controls would be MOST effective in detecting and preventing large-scale data exfiltration?",
+    "options": [
+      "Data Loss Prevention (DLP) solutions that monitor network traffic for sensitive data and implement egress filtering.",
+      "Strong password policies for all user accounts.",
+      "Multi-factor authentication for all network access.",
+      "Regular vulnerability scanning of internal systems."
+    ],
+    "correct_index": "A",
+    "explanation": "DLP solutions with egress filtering are specifically designed to detect and prevent sensitive data from leaving the network. The other options are important security practices but don't directly address data exfiltration in the same way."
+  },
+  {
+    "question_number": 5,
+    "question": "Scenario: Responding to a NotPetya-like attack (2017). A blue team discovers that systems across their network are being encrypted by ransomware that spreads laterally using multiple methods, including EternalBlue and WMI. What is the most effective approach to containing the spread?",
+    "options": [
+      "Isolating affected systems immediately, disabling SMBv1, and implementing network segmentation.",
+      "Rebooting all affected systems.",
+      "Installing antivirus software on all workstations.",
+      "Changing all user passwords."
+    ],
+    "correct_index": "A",
+    "explanation": "Isolating infected systems is crucial to stop the spread. Disabling SMBv1 mitigates the EternalBlue exploit, and network segmentation contains the lateral movement. The other options are less effective for immediate containment."
+  },
+  {
+    "question_number": 6,
+    "question": "Scenario: Red team simulating the Target breach (2013). A red team is targeting a retail organization's point-of-sale (POS) systems. What attack vector would be MOST effective in compromising these systems?",
+    "options": [
+      "Compromising a third-party vendor with access to the POS network or exploiting vulnerabilities in the POS software itself.",
+      "Launching a denial-of-service (DoS) attack against the POS systems.",
+      "Attempting to brute-force user passwords on the POS systems.",
+      "Phishing employees of the retail organization."
+    ],
+    "correct_index": "A",
+    "explanation": "The Target breach was facilitated through a compromised HVAC vendor with access to the POS network. Targeting third-party vendors or exploiting POS software vulnerabilities is a realistic attack vector."
+  },
+  {
+    "question_number": 7,
+    "question": "Scenario: Preparing for attacks similar to the Equifax breach (2017). A blue team is reviewing their vulnerability management program. Which of the following actions is MOST crucial for preventing similar breaches?",
+    "options": [
+      "Promptly patching known vulnerabilities, especially those with public exploits, and implementing robust vulnerability scanning and remediation processes.",
+      "Relying solely on firewall protection.",
+      "Using weak passwords for internal systems.",
+      "Not disclosing vulnerabilities to avoid attracting attackers."
+    ],
+    "correct_index": "A",
+    "explanation": "The Equifax breach was caused by a failure to patch a known vulnerability in Apache Struts. Prompt patching and effective vulnerability management are essential."
+  },
+  {
+    "question_number": 8,
+    "question": "Scenario: Responding to a WannaCry-like attack that has already encrypted critical systems. What steps should a blue team take to recover data and restore operations?",
+    "options": [
+      "Restore systems from clean backups, isolate infected systems, and implement patches to prevent reinfection.",
+      "Pay the ransom to decrypt the files.",
+      "Reinstall the operating system on all affected systems without restoring backups.",
+      "Disconnect all systems from the network."
+    ],
+    "correct_index": "A",
+    "explanation": "Restoring from clean backups is the most reliable way to recover encrypted data without paying the ransom. Isolating systems and patching prevents reinfection."
+  },
+  {
+    "question_number": 9,
+    "question": "Scenario: Red team simulating a supply chain attack similar to SolarWinds. A red team is targeting a software development company. What attack vector would be MOST effective in compromising the software build process?",
+    "options": [
+      "Compromising the build server infrastructure, injecting malicious code into source code repositories, or compromising developer accounts.",
+      "Launching a denial-of-service (DoS) attack against the company's website.",
+      "Phishing customers of the software development company.",
+      "Attempting to gain physical access to the company's headquarters."
+    ],
+    "correct_index": "A",
+    "explanation": "The SolarWinds attack compromised the build process, allowing the attackers to insert malicious code into legitimate software updates. Targeting the build infrastructure, source code, or developer accounts are realistic attack vectors for such a scenario."
+  },
+  {
+    "question_number": 10,
+    "question": "Scenario: Preparing for attacks similar to the Mirai botnet (2016). A blue team is securing their IoT devices. Which of the following actions would be MOST effective in preventing these devices from being recruited into a botnet?",
+    "options": [
+      "Changing default credentials, disabling unnecessary services, and implementing firmware updates.",
+      "Installing antivirus software on all IoT devices.",
+      "Implementing multi-factor authentication for all IoT device access.",
+      "Restricting physical access to IoT devices."
+    ],
+    "correct_index": "A",
+    "explanation": "Mirai exploited default credentials and vulnerabilities in IoT devices. Changing default credentials, disabling unused services, and implementing firmware updates are crucial for hardening these devices."
+  },
+  {
+    "question_number": 11,
+    "question": "Scenario: Responding to a distributed denial-of-service (DDoS) attack similar to the Dyn DNS attack (2016). A blue team notices a massive spike in traffic to their web services, making them inaccessible to legitimate users. What mitigation techniques should they prioritize?",
+    "options": [
+      "Implementing rate limiting, using a content delivery network (CDN), and working with their internet service provider (ISP) for traffic filtering.",
+      "Rebooting all web servers.",
+      "Installing antivirus software on all workstations.",
+      "Changing all user passwords."
+    ],
+    "correct_index": "A",
+    "explanation": "Rate limiting restricts the number of requests from a single source, a CDN distributes traffic across multiple servers, and working with the ISP allows for upstream filtering of malicious traffic. These are key DDoS mitigation strategies."
+  },
+  {
+    "question_number": 12,
+    "question": "Scenario: Red team simulating an attack similar to the Bangladesh Bank heist (2016). A red team is tasked with testing the security of a financial institution's SWIFT network. What attack vector would be MOST effective in simulating this type of attack?",
+    "options": [
+      "Compromising SWIFT terminals or operator credentials to manipulate SWIFT messages and initiate fraudulent fund transfers.",
+      "Launching a denial-of-service (DoS) attack against the SWIFT network.",
+      "Attempting to brute-force SWIFT network passwords.",
+      "Phishing employees of the financial institution."
+    ],
+    "correct_index": "A",
+    "explanation": "The Bangladesh Bank heist involved compromising SWIFT terminals and operator credentials to send fraudulent SWIFT messages. Simulating this requires targeting these specific components."
+  },
+  {
+    "question_number": 13,
+    "question": "Scenario: Preparing for attacks similar to the Mirai botnet (2016) targeting IoT devices. A blue team is developing a security baseline for new IoT deployments. Which of the following should be included in the baseline?",
+    "options": [
+      "Mandating strong, unique passwords, disabling default accounts and services, and implementing regular firmware updates.",
+      "Allowing default credentials for ease of use.",
+      "Not implementing any security measures to reduce costs.",
+      "Relying solely on network firewalls for protection."
+    ],
+    "correct_index": "A",
+    "explanation": "Mirai exploited default credentials and vulnerabilities in IoT devices. Strong passwords, disabling default accounts, and regular updates are essential for securing these devices."
+  },
+  {
+    "question_number": 14,
+    "question": "Scenario: Responding to a ransomware attack similar to NotPetya (2017) that has spread across the network. Besides isolating affected systems, what other critical step should the blue team prioritize?",
+    "options": [
+      "Identifying the initial infection vector and patching the vulnerability that allowed the initial compromise.",
+      "Paying the ransom to decrypt the files.",
+      "Reinstalling the operating system on all affected systems without investigating the root cause.",
+      "Disconnecting all systems from the network permanently."
+    ],
+    "correct_index": "A",
+    "explanation": "Identifying the initial infection vector and patching the vulnerability is crucial to prevent future infections. Simply restoring from backups without addressing the root cause leaves the organization vulnerable to repeat attacks."
+  },
+  {
+    "question_number": 15,
+    "question": "Scenario: Red team simulating the Olympic Destroyer attack (2018). A red team is targeting a major sporting event's IT infrastructure. What type of attack would MOST effectively disrupt the event's operations while minimizing the attacker's trace?",
+    "options": [
+      "Deploying disk-wiping malware designed to overwrite critical system files and logs, making recovery and attribution difficult.",
+      "Launching a denial-of-service (DoS) attack against the event's website.",
+      "Stealing user credentials and exfiltrating sensitive data.",
+      "Phishing employees of the event organizers."
+    ],
+    "correct_index": "A",
+    "explanation": "Olympic Destroyer was designed to cause disruption and destruction while hindering attribution. Disk-wiping malware achieves this by overwriting system files and logs."
+  },
+  {
+    "question_number": 16,
+    "question": "Scenario: Preparing for attacks similar to the Colonial Pipeline ransomware attack (2021). A blue team is securing critical infrastructure systems. What security measures are most crucial for preventing similar attacks?",
+    "options": [
+      "Implementing strong network segmentation, robust access controls, and regular security assessments, including penetration testing and vulnerability scanning.",
+      "Relying solely on perimeter firewalls for protection.",
+      "Using default credentials for critical systems.",
+      "Not implementing any security measures to reduce costs."
+    ],
+    "correct_index": "A",
+    "explanation": "Strong network segmentation limits the impact of a breach, robust access controls prevent unauthorized access, and regular assessments identify and address vulnerabilities."
+  },
+  {
+    "question_number": 17,
+    "question": "Scenario: Responding to a supply chain attack similar to SolarWinds. A blue team discovers that a legitimate software update from a trusted vendor has been compromised. What actions should they take?",
+    "options": [
+      "Isolate affected systems, investigate the scope of the compromise, and implement mitigations based on the attacker's activity.",
+      "Reinstall the operating system on all systems.",
+      "Change all user passwords.",
+      "Disconnect all systems from the internet permanently."
+    ],
+    "correct_index": "A",
+    "explanation": "Isolating affected systems prevents further spread. Investigating the scope helps understand the impact. Implementing mitigations targets the specific attacker activity. Reinstalling everything is often unnecessary and disruptive."
+  },
+  {
+    "question_number": 18,
+    "question": "Scenario: Red team simulating a multi-vector attack combining elements of the Target and Equifax breaches. A red team is targeting a large organization. What combination of attack vectors would be MOST effective?",
+    "options": [
+      "Compromising a third-party vendor with network access, exploiting a known vulnerability in a web application, and using stolen credentials to access sensitive data.",
+      "Launching a denial-of-service (DoS) attack against the organization's website.",
+      "Phishing employees of the organization.",
+      "Attempting to gain physical access to the organization's data center."
+    ],
+    "correct_index": "A",
+    "explanation": "Combining a vendor compromise (Target), a web application vulnerability exploitation (Equifax), and credential theft creates a powerful multi-stage attack that can bypass multiple security layers."
+  },
+  {
+    "question_number": 19,
+    "question": "Scenario: Preparing for attacks targeting cloud environments, drawing lessons from various cloud breaches. A blue team is reviewing their cloud security posture. What security controls are MOST important in a cloud environment?",
+    "options": [
+      "Strong access controls (IAM), encryption of data at rest and in transit, and regular security assessments specific to the cloud environment.",
+      "Relying solely on the cloud provider's security measures.",
+      "Not storing any sensitive data in the cloud.",
+      "Using default passwords for cloud accounts."
+    ],
+    "correct_index": "A",
+    "explanation": "IAM (Identity and Access Management) controls access to cloud resources. Encryption protects data confidentiality. Cloud-specific assessments identify vulnerabilities in the cloud configuration."
+  },
+  {
+    "question_number": 20,
+    "question": "Scenario: Responding to a data breach similar to the Yahoo data breaches. A blue team discovers that a large amount of user data has been exfiltrated. What immediate steps should they take?",
+    "options": [
+      "Contain the breach, notify affected users and relevant authorities, and investigate the root cause.",
+      "Ignore the breach to avoid negative publicity.",
+      "Blame a third-party vendor for the breach.",
+      "Attempt to cover up the breach."
+    ],
+    "correct_index": "A",
+    "explanation": "Containment stops further data loss. Notification is legally and ethically required. Investigating the root cause prevents future breaches. The other options are unethical and can lead to legal consequences."
+  },
+  {
+    "question_number": 21,
+    "question": "Scenario: Preparing for attacks similar to the Stuxnet attack, a blue team is focusing on securing industrial control systems (ICS). What specific security controls are most effective in this environment?",
+    "options": [
+      "Network segmentation, intrusion detection/prevention systems (IDS/IPS) specifically designed for ICS protocols, and strong access control with multi-factor authentication.",
+      "Connecting ICS networks directly to the internet for remote access.",
+      "Using standard IT security tools without any modifications for ICS protocols.",
+      "Relying solely on air-gapping the ICS network."
+    ],
+    "correct_index": "A",
+    "explanation": "ICS environments require specialized security measures. Network segmentation isolates the ICS network, ICS-specific IDS/IPS monitors for malicious activity using industrial protocols, and strong access control limits access to critical systems. While air-gapping is a strong security measure, it's often impractical for modern ICS operations that require some level of connectivity."
+  },
+  {
+    "question_number": 22,
+    "question": "Scenario: Responding to a ransomware attack similar to WannaCry, a blue team discovers that the ransomware is using the EternalBlue exploit to spread laterally. What immediate action should they take to prevent further spread?",
+    "options": [
+      "Disable the Server Message Block (SMB) protocol, especially SMBv1, and apply relevant patches.",
+      "Reboot all affected systems.",
+      "Install antivirus software on all workstations.",
+      "Change all user passwords."
+    ],
+    "correct_index": "A",
+    "explanation": "WannaCry used the EternalBlue exploit, which targets vulnerabilities in SMB. Disabling SMBv1 and patching systems are crucial for preventing further spread. The other options are less effective for immediate containment of this specific threat."
+  },
+  {
+    "question_number": 23,
+    "question": "Scenario: Red team simulating a supply chain attack similar to the SolarWinds incident. A red team has successfully compromised a software vendor's build server. What is the next most effective step they can take to maximize their impact?",
+    "options": [
+      "Inject malicious code into a widely used software update that will be distributed to numerous downstream targets.",
+      "Launch a denial-of-service attack against the software vendor's servers.",
+      "Steal sensitive data from the software vendor's internal systems.",
+      "Phish employees of the software vendor."
+    ],
+    "correct_index": "A",
+    "explanation": "Injecting malicious code into a widely distributed software update allows the attackers to compromise a large number of downstream targets, maximizing their impact."
+  },
+  {
+    "question_number": 24,
+    "question": "Scenario: Preparing for attacks similar to the Target breach, a blue team is reviewing their point-of-sale (POS) system security. Which of the following is the MOST important control to implement?",
+    "options": [
+      "Network segmentation to isolate the POS network from other parts of the network, and strong access controls to POS systems.",
+      "Installing antivirus software on all workstations.",
+      "Using strong passwords for all user accounts.",
+      "Implementing multi-factor authentication for all network access."
+    ],
+    "correct_index": "A",
+    "explanation": "Segmenting the POS network limits the impact of a compromise if one POS system is infected. Strong access controls prevent unauthorized access to POS systems."
+  },
+  {
+    "question_number": 25,
+    "question": "Scenario: Responding to a data breach similar to the Equifax breach, a blue team discovers that the attackers exploited a known vulnerability in a web application framework. What is the most important lesson learned from this type of incident?",
+    "options": [
+      "The importance of timely patching and effective vulnerability management processes.",
+      "The importance of using strong passwords.",
+      "The importance of installing antivirus software.",
+      "The importance of implementing multi-factor authentication."
+    ],
+    "correct_index": "A",
+    "explanation": "The Equifax breach highlighted the critical need for timely patching and a robust vulnerability management program to address known vulnerabilities before they can be exploited."
+  },
+  {
+    "question_number": 26,
+    "question": "Scenario: Preparing for attacks like the Olympic Destroyer malware, which aimed to disrupt the 2018 Winter Olympics, what security measures should be prioritized to ensure business continuity during a major event or crisis?",
+    "options": [
+      "Robust incident response plans, data backups stored offline or in immutable storage, and redundant systems and infrastructure.",
+      "Relying solely on perimeter firewalls for protection.",
+      "Using default credentials for all systems.",
+      "Not having any formal incident response plan."
+    ],
+    "correct_index": "A",
+    "explanation": "Incident response plans, offline backups, and redundant systems are crucial for ensuring business continuity in the face of disruptive attacks."
+  },
+  {
+    "question_number": 27,
+    "question": "Scenario: Responding to a ransomware attack similar to the Colonial Pipeline incident, a blue team discovers that the attackers gained initial access through compromised credentials. What security control could have significantly mitigated this attack vector?",
+    "options": [
+      "Multi-factor authentication (MFA) for all user accounts, especially those with privileged access.",
+      "Installing antivirus software on all endpoints.",
+      "Using strong passwords for user accounts.",
+      "Implementing network segmentation."
+    ],
+    "correct_index": "A",
+    "explanation": "MFA adds an extra layer of security, making it much harder for attackers to use stolen credentials to gain access to systems."
+  },
+  {
+    "question_number": 28,
+    "question": "Scenario: Red team simulating a multi-vector attack combining elements of the Bangladesh Bank heist and the SWIFT network compromises. What key aspect of security should the red team focus on exploiting?",
+    "options": [
+      "Weaknesses in internal controls, operator credentials, and the integrity of SWIFT messaging systems.",
+      "Launching a denial-of-service (DoS) attack against the SWIFT network.",
+      "Phishing employees of the financial institution.",
+      "Attempting to gain physical access to the financial institution's headquarters."
+    ],
+    "correct_index": "A",
+    "explanation": "The Bangladesh Bank heist exploited weaknesses in internal controls and compromised operator credentials to manipulate SWIFT messages. This should be the focus of the red team simulation."
+  },
+  {
+    "question_number": 29,
+    "question": "Scenario: Preparing for attacks targeting cloud environments, drawing lessons from various cloud breaches. A blue team is reviewing their cloud security posture. What security controls are MOST important in a cloud environment?",
+    "options": [
+      "Strong identity and access management (IAM) policies, encryption of data at rest and in transit, and regular security assessments specific to the cloud environment.",
+      "Relying solely on the cloud provider's security measures.",
+      "Not storing any sensitive data in the cloud.",
+      "Using default passwords for cloud accounts."
+    ],
+    "correct_index": "A",
+    "explanation": "IAM controls access to cloud resources. Encryption protects data confidentiality. Cloud-specific assessments identify vulnerabilities in the cloud configuration."
+  },
+  {
+    "question_number": 30,
+    "question": "Scenario: Responding to a data breach similar to the Yahoo data breaches. A blue team discovers that a large amount of user data has been exfiltrated. What immediate steps should they take?",
+    "options": [
+      "Contain the breach, notify affected users and relevant authorities, and investigate the root cause.",
+      "Ignore the breach to avoid negative publicity.",
+      "Blame a third-party vendor for the breach.",
+      "Attempt to cover up the breach."
+    ],
+    "correct_index": "A",
+    "explanation": "Containment stops further data loss. Notification is legally and ethically required. Investigating the root cause prevents future breaches. The other options are unethical and can lead to legal consequences."
+  },
+  {
+    "question_number": 31,
+    "question": "Scenario: Preparing for attacks similar to the Stuxnet attack, which targeted industrial control systems (ICS), a blue team is implementing security measures. What is a key security principle to apply in ICS environments?",
+    "options": [
+      "Defense in depth, using multiple layers of security controls to protect critical systems.",
+      "Connecting all ICS devices directly to the internet for remote monitoring.",
+      "Using standard IT security tools without any modifications for ICS protocols.",
+      "Relying solely on air-gapping the ICS network, completely isolating it from any external networks."
+    ],
+    "correct_index": "A",
+    "explanation": "Defense in depth is crucial in ICS environments due to the critical nature of these systems. Multiple layers of security provide redundancy and increase the difficulty for attackers."
+  },
+  {
+    "question_number": 32,
+    "question": "Scenario: Responding to a ransomware attack similar to WannaCry, a blue team needs to quickly identify vulnerable systems on their network. What tool or technique would be most effective?",
+    "options": [
+      "Network vulnerability scanners that can identify systems with unpatched vulnerabilities, such as those exploited by EternalBlue.",
+      "Antivirus software installed on individual workstations.",
+      "Manual inspection of each system's patch status.",
+      "Changing all user passwords."
+    ],
+    "correct_index": "A",
+    "explanation": "Vulnerability scanners automate the process of identifying systems with known vulnerabilities, allowing blue teams to quickly prioritize patching efforts."
+  },
+  {
+    "question_number": 33,
+    "question": "Scenario: Red team simulating a supply chain attack similar to the SolarWinds incident. The red team has successfully injected malicious code into a software update. What technique can they use to maintain persistence within the compromised networks after the initial compromise?",
+    "options": [
+      "Creating backdoors or establishing command-and-control (C2) channels within the compromised software.",
+      "Launching a denial-of-service (DoS) attack against the compromised networks.",
+      "Stealing sensitive data from the compromised networks and selling it on the dark web.",
+      "Phishing employees of the compromised organizations."
+    ],
+    "correct_index": "A",
+    "explanation": "Backdoors and C2 channels allow attackers to maintain remote access to compromised systems even after the initial exploit is patched or detected."
+  },
+  {
+    "question_number": 34,
+    "question": "Scenario: Preparing for attacks similar to the Target breach, a blue team is implementing stronger access controls. What principle should they follow when assigning user permissions to POS systems?",
+    "options": [
+      "Principle of least privilege, granting users only the minimum necessary permissions to perform their job duties.",
+      "Granting all users full administrative access to POS systems for ease of use.",
+      "Not implementing any access controls to reduce complexity.",
+      "Relying solely on network segmentation to protect POS systems."
+    ],
+    "correct_index": "A",
+    "explanation": "The principle of least privilege limits the potential damage from compromised accounts by restricting user access to only the resources they need."
+  },
+  {
+    "question_number": 35,
+    "question": "Scenario: Responding to a data breach similar to the Equifax breach, a blue team needs to assess the impact of the breach and identify what data was compromised. What technique would be most helpful?",
+    "options": [
+      "Analyzing system logs, database audit trails, and network traffic captures to identify the attacker's actions and the data they accessed.",
+      "Reinstalling the operating system on all affected systems.",
+      "Changing all user passwords.",
+      "Disconnecting all systems from the internet permanently."
+    ],
+    "correct_index": "A",
+    "explanation": "Log analysis, database audits, and network traffic captures provide valuable forensic evidence to reconstruct the attack timeline and determine the scope of the breach."
+  },
+  {
+    "question_number": 36,
+    "question": "Scenario: Preparing for attacks like the Olympic Destroyer malware, which aimed to disrupt operations, what is a key security practice to ensure data integrity and prevent data destruction?",
+    "options": [
+      "Regular data backups stored offline or in immutable cloud storage.",
+      "Relying solely on RAID configurations for data protection.",
+      "Not backing up any data to save storage space.",
+      "Storing all backups on the same network as the production systems."
+    ],
+    "correct_index": "A",
+    "explanation": "Offline or immutable backups provide a reliable way to restore data in case of data destruction or corruption caused by malware."
+  },
+  {
+    "question_number": 37,
+    "question": "Scenario: Responding to a ransomware attack similar to the Colonial Pipeline incident, a blue team needs to determine the initial access vector. What forensic techniques could they use?",
+    "options": [
+      "Analyzing system logs, network traffic captures, and endpoint logs to identify suspicious activity and the initial point of entry.",
+      "Paying the ransom to obtain the decryption key.",
+      "Reinstalling the operating system on all affected systems.",
+      "Disconnecting all systems from the network permanently."
+    ],
+    "correct_index": "A",
+    "explanation": "Forensic analysis of logs and network traffic can help identify the initial access vector, such as phishing emails, exploited vulnerabilities, or compromised credentials."
+  },
+  {
+    "question_number": 38,
+    "question": "Scenario: Red team simulating a multi-vector attack targeting a financial institution, similar to the Bangladesh Bank heist. What is a critical vulnerability they should look for in SWIFT systems?",
+    "options": [
+      "Weak or compromised SWIFT terminal credentials and lack of proper message validation and reconciliation processes.",
+      "Lack of network segmentation.",
+      "Weak passwords for user accounts.",
+      "Lack of antivirus software."
+    ],
+    "correct_index": "A",
+    "explanation": "The Bangladesh Bank heist exploited weaknesses in internal controls and compromised SWIFT credentials. This is a key vulnerability to target in such simulations."
+  },
+  {
+    "question_number": 39,
+    "question": "Scenario: Preparing for attacks targeting cloud environments, a blue team is implementing identity and access management (IAM) policies. What is a key principle they should follow?",
+    "options": [
+      "Principle of least privilege, granting users only the necessary permissions to access cloud resources.",
+      "Granting all users full administrative access to all cloud resources for ease of use.",
+      "Not implementing any IAM policies to reduce complexity.",
+      "Relying solely on the cloud provider's default IAM settings."
+    ],
+    "correct_index": "A",
+    "explanation": "The principle of least privilege minimizes the impact of compromised accounts by limiting the resources that an attacker can access."
+  },
+  {
+    "question_number": 40,
+    "question": "Scenario: Responding to a large-scale data breach similar to the Yahoo breaches, a blue team needs to contain the breach and prevent further data exfiltration. What immediate actions should they take?",
+    "options": [
+      "Identify and block the exfiltration channels, implement stronger access controls, and patch any exploited vulnerabilities.",
+      "Ignore the breach to avoid negative publicity.",
+      "Blame a third-party vendor for the breach.",
+      "Attempt to cover up the breach."
+    ],
+    "correct_index": "A",
+    "explanation": "Containing the breach involves stopping the flow of data out of the network. This may involve blocking network traffic, disabling compromised accounts, or patching exploited vulnerabilities."
+  },
+  {
+    "question_number": 41,
+    "question": "Scenario: Preparing for attacks similar to Stuxnet that target industrial control systems (ICS), a blue team is considering network architecture. What is a key architectural principle to implement?",
+    "options": [
+      "Network segmentation to isolate the ICS network from other parts of the network, especially corporate IT networks and the internet.",
+      "Connecting all ICS devices directly to the internet for remote monitoring and control.",
+      "Using a flat network architecture with no segmentation for simplicity.",
+      "Relying solely on perimeter firewalls to protect the ICS network."
+    ],
+    "correct_index": "A",
+    "explanation": "Network segmentation is crucial for isolating ICS networks, preventing attackers who compromise other parts of the network from easily accessing and manipulating critical industrial processes."
+  },
+  {
+    "question_number": 42,
+    "question": "Scenario: Responding to a WannaCry-like ransomware attack, a blue team is analyzing network traffic to identify infected systems. What network protocol and port should they focus on monitoring?",
+    "options": [
+      "Server Message Block (SMB) protocol on port 445.",
+      "Hypertext Transfer Protocol (HTTP) on port 80.",
+      "Domain Name System (DNS) protocol on port 53.",
+      "Internet Control Message Protocol (ICMP)."
+    ],
+    "correct_index": "A",
+    "explanation": "WannaCry exploited a vulnerability in the SMB protocol, which operates on port 445. Monitoring this port can help identify infected systems and track the spread of the ransomware."
+  },
+  {
+    "question_number": 43,
+    "question": "Scenario: Red team simulating a supply chain attack similar to SolarWinds. The red team has compromised a software build server and injected malicious code. What technique can they use to obfuscate their malicious code and avoid detection by antivirus software?",
+    "options": [
+      "Polymorphism or metamorphism, which changes the code's signature while maintaining its functionality.",
+      "Encrypting the malicious code with a strong encryption algorithm.",
+      "Storing the malicious code in a hidden partition on the hard drive.",
+      "Disabling antivirus software on the target systems."
+    ],
+    "correct_index": "A",
+    "explanation": "Polymorphism and metamorphism allow the malicious code to change its appearance, making it harder for signature-based antivirus software to detect it."
+  },
+  {
+    "question_number": 44,
+    "question": "Scenario: Preparing for attacks similar to the Target breach, a blue team is reviewing their security monitoring capabilities. What type of logs should they focus on collecting and analyzing to detect suspicious activity related to POS systems?",
+    "options": [
+      "POS system logs, network traffic logs, and security information and event management (SIEM) logs.",
+      "User authentication logs from Active Directory.",
+      "Web server access logs.",
+      "DNS server logs."
+    ],
+    "correct_index": "A",
+    "explanation": "POS system logs provide information about transactions and system activity. Network traffic logs show communication patterns. SIEM logs correlate events from various sources to detect suspicious activity."
+  },
+  {
+    "question_number": 45,
+    "question": "Scenario: Responding to a data breach similar to the Equifax breach, a blue team needs to implement measures to prevent future exploitation of similar vulnerabilities. What is a crucial step they should take?",
+    "options": [
+      "Implement a robust vulnerability management program that includes regular vulnerability scanning, penetration testing, and timely patching.",
+      "Rely solely on firewall protection.",
+      "Use default credentials for all systems.",
+      "Not disclose vulnerabilities to avoid attracting attackers."
+    ],
+    "correct_index": "A",
+    "explanation": "A robust vulnerability management program is essential for identifying and addressing vulnerabilities before they can be exploited."
+  },
+  {
+    "question_number": 46,
+    "question": "Scenario: Preparing for attacks like the Olympic Destroyer malware, which aimed to cause disruption, what security practice is most effective in ensuring system and data recovery?",
+    "options": [
+      "Regularly testing disaster recovery plans and backups to ensure they are effective and can be restored quickly.",
+      "Relying solely on RAID configurations for data protection.",
+      "Not backing up any data to save storage space.",
+      "Storing all backups on the same network as the production systems."
+    ],
+    "correct_index": "A",
+    "explanation": "Regular testing of disaster recovery plans and backups validates their effectiveness and ensures that data and systems can be restored in a timely manner."
+  },
+  {
+    "question_number": 47,
+    "question": "Scenario: Responding to a ransomware attack similar to the Colonial Pipeline incident, a blue team needs to communicate with stakeholders and manage the incident effectively. What is a crucial aspect of incident response communication?",
+    "options": [
+      "Establishing clear communication channels and providing regular updates to stakeholders, including employees, customers, and regulatory authorities.",
+      "Not communicating with anyone to avoid negative publicity.",
+      "Blaming a third-party vendor for the incident.",
+      "Attempting to cover up the incident."
+    ],
+    "correct_index": "A",
+    "explanation": "Clear and timely communication is essential for managing the incident effectively, maintaining trust with stakeholders, and complying with legal and regulatory requirements."
+  },
+  {
+    "question_number": 48,
+    "question": "Scenario: Red team simulating a multi-vector attack targeting a financial institution, similar to the Bangladesh Bank heist. What security principle should the red team exploit to gain unauthorized access to funds?",
+    "options": [
+      "Lack of separation of duties, allowing a single individual to initiate and approve fund transfers.",
+      "Strong access controls and multi-factor authentication.",
+      "Robust audit trails and monitoring of financial transactions.",
+      "Regular security assessments and penetration testing."
+    ],
+    "correct_index": "A",
+    "explanation": "Separation of duties requires multiple individuals to be involved in critical processes, preventing a single point of failure and reducing the risk of fraud."
+  },
+  {
+    "question_number": 49,
+    "question": "Scenario: Preparing for attacks targeting cloud environments, a blue team is implementing security logging and monitoring. What is a key consideration for cloud logging?",
+    "options": [
+      "Centralized logging and monitoring of all cloud resources and services, including audit logs, access logs, and security events.",
+      "Relying solely on the cloud provider's default logging settings.",
+      "Not implementing any logging to reduce costs.",
+      "Storing all logs locally on individual cloud instances."
+    ],
+    "correct_index": "A",
+    "explanation": "Centralized logging provides a comprehensive view of security events across the cloud environment, enabling effective monitoring, analysis, and incident response."
+  },
+  {
+    "question_number": 50,
+    "question": "Scenario: Responding to a large-scale data breach similar to the Yahoo breaches, a blue team needs to implement measures to prevent future credential stuffing attacks. What security control would be most effective?",
+    "options": [
+      "Implementing rate limiting on login attempts, using CAPTCHA or other challenge-response mechanisms, and monitoring for suspicious login activity.",
+      "Using weak passwords for user accounts.",
+      "Not implementing any login security measures.",
+      "Relying solely on password complexity requirements."
+    ],
+    "correct_index": "A",
+    "explanation": "Rate limiting restricts the number of login attempts, CAPTCHA prevents automated attacks, and monitoring detects suspicious login patterns."
+  },
+  {
+    "question_number": 51,
+    "question": "Scenario: Preparing for attacks targeting industrial control systems (ICS), a blue team is considering remote access. What is the most secure method for providing remote access to ICS environments?",
+    "options": [
+      "Using secure VPN connections with strong authentication and encryption, and implementing strict access controls based on the principle of least privilege.",
+      "Connecting ICS devices directly to the internet using open ports.",
+      "Using insecure remote desktop protocols without any encryption.",
+      "Not implementing any remote access at all, even for legitimate purposes."
+    ],
+    "correct_index": "A",
+    "explanation": "Secure VPNs provide encrypted connections and strong authentication, while access controls limit user permissions. Direct internet connections and insecure protocols expose ICS to significant risk."
+  },
+  {
+    "question_number": 52,
+    "question": "Scenario: Responding to a WannaCry-like ransomware attack, a blue team is analyzing the malware's propagation mechanism. What network protocol is primarily used for lateral movement within a local network?",
+    "options": [
+      "Server Message Block (SMB) protocol.",
+      "Hypertext Transfer Protocol (HTTP).",
+      "Domain Name System (DNS) protocol.",
+      "Internet Control Message Protocol (ICMP)."
+    ],
+    "correct_index": "A",
+    "explanation": "SMB is commonly used for file sharing and other network services within local networks, making it an effective vector for lateral movement of malware like WannaCry."
+  },
+  {
+    "question_number": 53,
+    "question": "Scenario: Red team simulating a supply chain attack similar to SolarWinds. The red team has compromised a software vendor's code repository. What technique can they use to ensure their malicious code is included in legitimate software builds?",
+    "options": [
+      "Modifying the build scripts or configuration files to automatically include the malicious code during the compilation process.",
+      "Manually inserting the malicious code into each software release.",
+      "Phishing employees of the software vendor to distribute the malicious code.",
+      "Launching a denial-of-service attack against the software vendor's distribution servers."
+    ],
+    "correct_index": "A",
+    "explanation": "Modifying build scripts or configuration files ensures that the malicious code is automatically included in every legitimate software build, maximizing the impact of the attack."
+  },
+  {
+    "question_number": 54,
+    "question": "Scenario: Preparing for attacks similar to the Target breach, a blue team is implementing security monitoring for POS systems. What type of security information and event management (SIEM) rules should they create to detect suspicious activity?",
+    "options": [
+      "Rules that detect unusual network traffic patterns to POS systems, unauthorized access attempts, and suspicious processes running on POS devices.",
+      "Rules that detect changes to user passwords.",
+      "Rules that detect changes to firewall rules.",
+      "Rules that detect changes to DNS records."
+    ],
+    "correct_index": "A",
+    "explanation": "SIEM rules should focus on detecting activity that deviates from normal POS system behavior, such as unusual network connections, unauthorized access, and suspicious processes."
+  },
+  {
+    "question_number": 55,
+    "question": "Scenario: Responding to a data breach similar to the Equifax breach, a blue team is implementing security controls to prevent similar incidents. What is a key security practice to adopt regarding vulnerability disclosure?",
+    "options": [
+      "Establish a responsible vulnerability disclosure program that encourages security researchers to report vulnerabilities privately and provides a process for patching them promptly.",
+      "Not disclosing vulnerabilities to avoid attracting attackers.",
+      "Publicly disclosing vulnerabilities immediately without providing time for patching.",
+      "Blaming security researchers for finding vulnerabilities."
+    ],
+    "correct_index": "A",
+    "explanation": "A responsible vulnerability disclosure program allows organizations to address vulnerabilities before they are publicly exploited by attackers."
+  },
+  {
+    "question_number": 56,
+    "question": "Scenario: Preparing for attacks like the Olympic Destroyer malware, which aimed to disrupt operations, what is a key security practice for protecting critical infrastructure?",
+    "options": [
+      "Implementing robust change management processes to control and audit changes to critical systems.",
+      "Relying solely on perimeter firewalls for protection.",
+      "Using default credentials for all systems.",
+      "Not implementing any change management processes to reduce complexity."
+    ],
+    "correct_index": "A",
+    "explanation": "Change management processes ensure that changes to critical systems are authorized, tested, and documented, reducing the risk of unauthorized or malicious modifications."
+  },
+  {
+    "question_number": 57,
+    "question": "Scenario: Responding to a ransomware attack similar to the Colonial Pipeline incident, a blue team needs to implement measures to prevent future credential compromise. What security control would be most effective?",
+    "options": [
+      "Implementing multi-factor authentication (MFA) for all user accounts, especially those with privileged access.",
+      "Installing antivirus software on all endpoints.",
+      "Using strong passwords for user accounts.",
+      "Implementing network segmentation."
+    ],
+    "correct_index": "A",
+    "explanation": "MFA significantly reduces the risk of credential compromise by requiring multiple authentication factors."
+  },
+  {
+    "question_number": 58,
+    "question": "Scenario: Red team simulating a multi-vector attack targeting a financial institution. What type of social engineering tactic could they use to compromise operator credentials for SWIFT terminals?",
+    "options": [
+      "Phishing emails or phone calls targeting SWIFT operators, using pretexting or other social engineering techniques to trick them into revealing their credentials.",
+      "Launching a denial-of-service (DoS) attack against the financial institution's website.",
+      "Attempting to gain physical access to the financial institution's headquarters.",
+      "Exploiting vulnerabilities in the financial institution's web applications."
+    ],
+    "correct_index": "A",
+    "explanation": "Phishing and other social engineering tactics are commonly used to trick users into revealing their credentials."
+  },
+  {
+    "question_number": 59,
+    "question": "Scenario: Preparing for attacks targeting cloud environments, a blue team is implementing network security controls. What is a key consideration for cloud network security?",
+    "options": [
+      "Using cloud-native security tools and services provided by the cloud provider, and implementing network segmentation using virtual private clouds (VPCs) or subnets.",
+      "Relying solely on traditional on-premises network security appliances.",
+      "Not implementing any network security controls in the cloud.",
+      "Connecting all cloud resources to the public internet without any network segmentation."
+    ],
+    "correct_index": "A",
+    "explanation": "Cloud environments require specialized security tools and techniques. Cloud-native security tools and VPCs provide effective network security in the cloud."
+  },
+  {
+    "question_number": 60,
+    "question": "Scenario: Responding to a large-scale data breach, a blue team needs to implement measures to improve their incident response capabilities. What is a key aspect of effective incident response?",
+    "options": [
+      "Establishing a well-defined incident response plan that includes clear roles, responsibilities, and procedures for handling security incidents.",
+      "Not having any formal incident response plan to allow for flexibility.",
+      "Blaming a third-party vendor for all security incidents.",
+      "Attempting to cover up security incidents to avoid negative publicity."
+    ],
+    "correct_index": "A",
+    "explanation": "A well-defined incident response plan provides a structured approach for handling incidents, minimizing damage and downtime."
+  }
+]
