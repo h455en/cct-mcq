@@ -93,7 +93,7 @@
 			"By intercepting and modifying network traffic between the user and the web application."
 		],
 		"correct_index": "B",
-		"explanation": "CSRF attacks exploit the trust a website has in an authenticated user to perform actions without their knowledge, often by embedding malicious requests in links or web pages."
+		"explanation": "In a real-world scenario, an attacker could exploit a CSRF vulnerability as follows: Crafting a Malicious Request, Tricking the Victim, Exploiting the Victim's Session"
 	},
 	{
 		"question_number": 9,
@@ -123,13 +123,13 @@
 		"question_number": 11,
 		"question": "A user reports intermittent network connectivity. Sometimes they can access websites and network resources, and other times they cannot. Pinging the default gateway sometimes succeeds and sometimes fails. What is the most likely cause?",
 		"options": [
-			"A faulty network cable or loose connection.",
+			"Communication between user computer and router is unreliable",
 			"A DNS server issue.",
 			"An IP address conflict.",
 			"A problem with the web browser."
 		],
 		"correct_index": "A",
-		"explanation": "Intermittent connectivity suggests a physical layer issue, such as a damaged cable or a loose connection."
+		"explanation": "Pinging the Default Gateway is Key: The default gateway is the first hop on the network. If pings to it are inconsistent, it means the communication between the user's computer and the router is unreliable."
 	},
 	{
 		"question_number": 12,
@@ -177,7 +177,7 @@
 			"Reduced system performance and stability."
 		],
 		"correct_index": "A",
-		"explanation": "Outdated software with known vulnerabilities in ICS environments poses a significant risk of remote exploitation, which could have severe physical consequences."
+		"explanation": "Known Vulnerabilities = Easy Exploitation: Outdated software means there are publicly known vulnerabilities that attackers can easily exploit. "
 	},
 	{
 		"question_number": 16,
@@ -405,7 +405,7 @@
 			"Building rapport/Developing a relationship"
 		],
 		"correct_index": "D",
-		"explanation": "Building rapport involves establishing a connection with the victim to gain their trust and make them more susceptible to manipulation."
+		"explanation": "Building rapport involves Creating a believable scenario, Building rapport, Manipulating the victim"
 	},
 	{
 		"question_number": 35,
@@ -473,8 +473,8 @@
 		"options": [
 			"Full and incremental backups",
 			"Full and differential backups",
-			"Mirroring",
-			"RAID"
+			"Incremental backups",
+			"Differential backups"
 		],
 		"correct_index": "A",
 		"explanation": "This describes a strategy using full and incremental backups. Incremental backups only back up changes since the last backup (full or incremental)."
