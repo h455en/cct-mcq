@@ -1,0 +1,122 @@
+[
+    {
+        "question_number": 11,
+        "question": "Your network team identifies an unknown wireless access point broadcasting within the company premises. What is the immediate action?",
+        "options": [
+            "A. Disconnect the rogue access point from power.",
+            "B. Conduct a wireless survey to locate the access point.",
+            "C. Block the access point’s MAC address at the wireless controller.",
+            "D. Notify the incident response team for further action."
+        ],
+        "correct_index": "B",
+        "explanation": "Conducting a wireless survey allows precise identification and location of the rogue access point for further actions."
+    },
+    {
+        "question_number": 12,
+        "question": "An IoT device on your network has been compromised and is participating in a botnet. What should you prioritize?",
+        "options": [
+            "A. Reset the IoT device to factory settings.",
+            "B. Block the IoT device's IP address at the firewall.",
+            "C. Disconnect the IoT device from the network.",
+            "D. Notify the IoT device vendor about the compromise."
+        ],
+        "correct_index": "C",
+        "explanation": "Disconnecting the IoT device prevents it from continuing malicious activity while you investigate and secure it."
+    },
+    {
+        "question_number": 13,
+        "question": "While analyzing network traffic, you notice an unusually high volume of DNS queries to a single domain. What does this most likely indicate?",
+        "options": [
+            "A. A Distributed Denial of Service (DDoS) attack.",
+            "B. An attempt to exfiltrate data using DNS tunneling.",
+            "C. A legitimate application generating high traffic.",
+            "D. A DNS server misconfiguration."
+        ],
+        "correct_index": "B",
+        "explanation": "High-volume DNS queries to a single domain often indicate DNS tunneling, which is used for data exfiltration or command and control."
+    },
+    {
+        "question_number": 14,
+        "question": "During forensic analysis, you find that a deleted file is still partially recoverable. What is the best way to retrieve the data?",
+        "options": [
+            "A. Use a disk cloning tool to replicate the drive.",
+            "B. Analyze the file system metadata for references to the file.",
+            "C. Utilize specialized file recovery software to restore the file.",
+            "D. Check the recycle bin or trash folder for the file."
+        ],
+        "correct_index": "C",
+        "explanation": "Specialized file recovery software is designed to retrieve partially deleted files by analyzing disk sectors."
+    },
+    {
+        "question_number": 15,
+        "question": "Your IDS has flagged a potential SQL injection attempt on your web application. What should you do first?",
+        "options": [
+            "A. Block the attacker’s IP address in the web application firewall.",
+            "B. Validate input fields in the application code.",
+            "C. Conduct a full security scan of the application.",
+            "D. Review application logs to confirm the attack."
+        ],
+        "correct_index": "D",
+        "explanation": "Reviewing logs helps confirm the flagged alert and identify the specific vector used in the attack."
+    },
+    {
+        "question_number": 16,
+        "question": "An employee connects their personal smartphone to the corporate Wi-Fi network without approval. What is the best immediate response?",
+        "options": [
+            "A. Block the device's MAC address.",
+            "B. Notify the employee’s manager.",
+            "C. Disable the Wi-Fi network temporarily.",
+            "D. Configure a guest network for personal devices."
+        ],
+        "correct_index": "A",
+        "explanation": "Blocking the device’s MAC address prevents unauthorized access to the corporate network while enforcing policy compliance."
+    },
+    {
+        "question_number": 17,
+        "question": "During a DDoS attack, your servers become unresponsive due to high traffic. What mitigation strategy should be implemented first?",
+        "options": [
+            "A. Implement rate limiting at the firewall.",
+            "B. Redirect traffic through a DDoS mitigation service.",
+            "C. Block all incoming traffic temporarily.",
+            "D. Notify your internet service provider (ISP)."
+        ],
+        "correct_index": "B",
+        "explanation": "Redirecting traffic to a DDoS mitigation service filters malicious traffic while preserving legitimate traffic."
+    },
+    {
+        "question_number": 18,
+        "question": "Your SOC team detects that a user is attempting to download a large amount of sensitive data during off-peak hours. What is your first response?",
+        "options": [
+            "A. Disable the user’s account immediately.",
+            "B. Monitor the user’s activity to gather more evidence.",
+            "C. Notify the data owner about the unusual activity.",
+            "D. Restrict access to sensitive data for the user."
+        ],
+        "correct_index": "A",
+        "explanation": "Disabling the account immediately prevents potential data exfiltration while further investigation is conducted."
+    },
+    {
+        "question_number": 19,
+        "question": "An attacker exploits an outdated IoT device in your network to spread malware. How can you prevent similar incidents in the future?",
+        "options": [
+            "A. Apply regular patches and updates to all devices.",
+            "B. Isolate IoT devices on a separate network segment.",
+            "C. Deploy a honeypot to trap malicious actors.",
+            "D. Enable logging and monitoring on IoT devices."
+        ],
+        "correct_index": "B",
+        "explanation": "Isolating IoT devices reduces the risk of lateral movement in case of a compromise."
+    },
+    {
+        "question_number": 20,
+        "question": "During a forensic investigation, you suspect a file was accessed by an attacker. What log source would provide the most reliable evidence?",
+        "options": [
+            "A. Web server logs.",
+            "B. File system audit logs.",
+            "C. Antivirus scan logs.",
+            "D. Firewall traffic logs."
+        ],
+        "correct_index": "B",
+        "explanation": "File system audit logs record specific actions such as file access, providing direct evidence of unauthorized activity."
+    }
+]

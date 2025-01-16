@@ -1,0 +1,722 @@
+[
+    {
+        "question_number": 1,
+        "question": "You discover an unpatched critical vulnerability in a production server. The server cannot be taken offline immediately due to business requirements. What is your priority action?",
+        "options": [
+            "A. Apply a virtual patch at the perimeter firewall.",
+            "B. Perform a full system backup and schedule a patch window.",
+            "C. Inform the development team to implement compensating controls.",
+            "D. Conduct a risk assessment and document the vulnerability."
+        ],
+        "correct_index": "A",
+        "explanation": "Applying a virtual patch at the firewall can immediately mitigate the threat without impacting server availability. This ensures business continuity while reducing the attack surface until the patch is applied."
+    },
+    {
+        "question_number": 2,
+        "question": "During a phishing simulation, an employee enters their credentials into a fake website. What is your next step?",
+        "options": [
+            "A. Revoke the employee’s access immediately.",
+            "B. Notify the employee and provide additional training.",
+            "C. Analyze system logs for potential unauthorized access.",
+            "D. Change the phishing website domain to prevent reuse."
+        ],
+        "correct_index": "C",
+        "explanation": "Analyzing system logs helps identify if the credentials have been misused. While training is essential, the immediate priority is to ensure no unauthorized access occurred."
+    },
+    {
+        "question_number": 3,
+        "question": "A web application is experiencing a brute force attack on its login page. What is the most effective immediate action?",
+        "options": [
+            "A. Notify the development team to enhance password complexity requirements.",
+            "B. Implement rate-limiting on login attempts.",
+            "C. Block the attacking IP addresses using a firewall rule.",
+            "D. Enable CAPTCHA on the login page."
+        ],
+        "correct_index": "B",
+        "explanation": "Rate-limiting prevents excessive login attempts, making brute force attacks inefficient. Blocking IPs or enabling CAPTCHA may help but could be less effective for distributed attacks."
+    },
+    {
+        "question_number": 4,
+        "question": "An employee reports that their system suddenly displays a message demanding payment to unlock files. What is your first step?",
+        "options": [
+            "A. Disconnect the system from the network.",
+            "B. Pay the ransom to recover the files.",
+            "C. Inform law enforcement immediately.",
+            "D. Run antivirus software to remove the ransomware."
+        ],
+        "correct_index": "A",
+        "explanation": "Disconnecting the system from the network prevents the ransomware from spreading to other systems and limits the damage."
+    },
+    {
+        "question_number": 5,
+        "question": "A penetration tester identifies an open port on a database server that should not be exposed. What is the most secure corrective action?",
+        "options": [
+            "A. Close the port immediately.",
+            "B. Restrict access to the port using a firewall rule.",
+            "C. Notify the database administrator to investigate.",
+            "D. Document the issue and monitor for unusual activity."
+        ],
+        "correct_index": "B",
+        "explanation": "Restricting access via a firewall ensures only authorized traffic can access the port, addressing the issue without immediate service disruption."
+    },
+    {
+        "question_number": 6,
+        "question": "Your intrusion detection system flags a high volume of outbound traffic to a known malicious IP address. What is your immediate action?",
+        "options": [
+            "A. Notify law enforcement.",
+            "B. Block the IP address at the firewall.",
+            "C. Isolate the affected systems.",
+            "D. Analyze the logs to determine the cause."
+        ],
+        "correct_index": "C",
+        "explanation": "Isolating affected systems stops further data exfiltration and limits the attack's impact while the root cause is investigated."
+    },
+    {
+        "question_number": 7,
+        "question": "During a red team exercise, attackers gain access to sensitive data through an unsecured API. What should the blue team do first?",
+        "options": [
+            "A. Disable the API immediately.",
+            "B. Implement authentication on the API.",
+            "C. Update the API documentation to include security warnings.",
+            "D. Review server logs to identify the extent of the breach."
+        ],
+        "correct_index": "A",
+        "explanation": "Disabling the API prevents further exploitation while other security measures are implemented."
+    },
+    {
+        "question_number": 8,
+        "question": "A security audit reveals that several employee accounts have weak passwords. What is the best course of action?",
+        "options": [
+            "A. Send an email reminding employees to update their passwords.",
+            "B. Enforce a company-wide password policy.",
+            "C. Deploy multifactor authentication (MFA).",
+            "D. Monitor accounts for suspicious activity."
+        ],
+        "correct_index": "B",
+        "explanation": "Enforcing a password policy strengthens security for all accounts by requiring complex and unique passwords."
+    },
+    {
+        "question_number": 9,
+        "question": "A user reports being redirected to unknown websites while browsing. What is the likely cause?",
+        "options": [
+            "A. The system has a misconfigured DNS server.",
+            "B. A browser extension is causing malicious behavior.",
+            "C. The network firewall is improperly configured.",
+            "D. An attacker is intercepting the user's traffic via a proxy."
+        ],
+        "correct_index": "B",
+        "explanation": "Malicious browser extensions can redirect users to unwanted sites. Removing the extension often resolves the issue."
+    },
+    {
+        "question_number": 10,
+        "question": "A server hosting critical applications starts showing signs of performance degradation, and CPU usage is at 100%. What is your first step?",
+        "options": [
+            "A. Restart the server to clear the issue.",
+            "B. Analyze running processes to identify the cause.",
+            "C. Add additional resources to the server.",
+            "D. Notify users of potential downtime."
+        ],
+        "correct_index": "B",
+        "explanation": "Analyzing running processes helps identify the root cause of high CPU usage, such as a rogue application or malicious activity."
+    },
+    {
+        "question_number": 11,
+        "question": "You observe an unauthorized device connecting to your network. What is your first response?",
+        "options": [
+            "A. Block the device at the switch port level.",
+            "B. Perform a full network scan to identify other rogue devices.",
+            "C. Notify the IT manager and wait for instructions.",
+            "D. Collect device logs for forensic analysis."
+        ],
+        "correct_index": "A",
+        "explanation": "Blocking the device at the switch port level prevents further unauthorized access while additional actions are planned."
+    },
+    {
+        "question_number": 12,
+        "question": "A malicious actor gains access to an employee’s credentials and uses them to log in to a critical system. What security control could have prevented this?",
+        "options": [
+            "A. User awareness training.",
+            "B. Multifactor authentication (MFA).",
+            "C. Privileged access management (PAM).",
+            "D. Account lockout policies."
+        ],
+        "correct_index": "B",
+        "explanation": "MFA ensures that even if credentials are compromised, access cannot be obtained without a second authentication factor."
+    },
+    {
+        "question_number": 13,
+        "question": "A company server is discovered to have an outdated software version vulnerable to remote code execution. What is the immediate action?",
+        "options": [
+            "A. Patch the server immediately.",
+            "B. Restrict access to the server using a firewall rule.",
+            "C. Notify the vendor about the vulnerability.",
+            "D. Perform a full security audit on the server."
+        ],
+        "correct_index": "B",
+        "explanation": "Restricting access minimizes exposure to attacks while planning for patch deployment."
+    },
+    {
+        "question_number": 14,
+        "question": "You receive a report of an employee accessing restricted websites during work hours. What is the best immediate action?",
+        "options": [
+            "A. Block the employee’s access to the websites.",
+            "B. Notify HR about the employee’s activities.",
+            "C. Implement web content filtering to restrict access.",
+            "D. Conduct an interview with the employee."
+        ],
+        "correct_index": "C",
+        "explanation": "Web content filtering proactively restricts access to non-work-related or malicious sites for all users."
+    },
+    {
+        "question_number": 15,
+        "question": "During an incident, you notice that a system is sending a large volume of data to an unknown external IP address. What is your immediate action?",
+        "options": [
+            "A. Block the IP address in the firewall.",
+            "B. Disconnect the system from the network.",
+            "C. Alert the incident response team.",
+            "D. Monitor the traffic for further analysis."
+        ],
+        "correct_index": "B",
+        "explanation": "Disconnecting the system prevents further data exfiltration and limits the attack's impact."
+    },
+    {
+        "question_number": 16,
+        "question": "Your SIEM system flags a sudden spike in DNS requests to a single domain. What does this most likely indicate?",
+        "options": [
+            "A. A legitimate increase in web traffic.",
+            "B. A DNS tunneling attack.",
+            "C. A configuration issue in the DNS server.",
+            "D. A phishing campaign targeting your users."
+        ],
+        "correct_index": "B",
+        "explanation": "A spike in DNS requests to a single domain often indicates DNS tunneling, where attackers exfiltrate data through DNS queries."
+    },
+    {
+        "question_number": 17,
+        "question": "A new zero-day vulnerability affecting a critical software platform is announced. What is the best course of action?",
+        "options": [
+            "A. Wait for an official patch from the vendor.",
+            "B. Disable the affected software until a fix is available.",
+            "C. Implement vendor-recommended mitigations.",
+            "D. Notify all employees to stop using the software."
+        ],
+        "correct_index": "C",
+        "explanation": "Vendor-recommended mitigations provide interim protection against zero-day vulnerabilities until a patch is released."
+    },
+    {
+        "question_number": 18,
+        "question": "You identify a phishing email that has bypassed your spam filter. What is your immediate response?",
+        "options": [
+            "A. Block the sender’s email address.",
+            "B. Notify employees about the phishing attempt.",
+            "C. Analyze email headers to identify the source.",
+            "D. Quarantine the email and its copies across mailboxes."
+        ],
+        "correct_index": "D",
+        "explanation": "Quarantining the email and its copies ensures that it does not spread further while the source is analyzed."
+    },
+    {
+        "question_number": 19,
+        "question": "A forensic investigation reveals the use of PowerShell scripts in an attempted attack. What is the most effective way to mitigate such threats?",
+        "options": [
+            "A. Block all PowerShell execution on endpoints.",
+            "B. Implement PowerShell logging and monitoring.",
+            "C. Replace PowerShell with a more secure scripting language.",
+            "D. Update PowerShell to the latest version."
+        ],
+        "correct_index": "B",
+        "explanation": "Logging and monitoring PowerShell scripts help detect malicious activities while retaining its legitimate usage."
+    },
+    {
+        "question_number": 20,
+        "question": "An attacker compromises a database and encrypts its contents. What measure could have minimized the impact of this attack?",
+        "options": [
+            "A. Encrypting the database using strong algorithms.",
+            "B. Implementing regular database backups.",
+            "C. Using multifactor authentication for database access.",
+            "D. Configuring database access control lists (ACLs)."
+        ],
+        "correct_index": "B",
+        "explanation": "Regular backups ensure that encrypted data can be restored without paying a ransom or suffering data loss."
+    },
+    {
+        "question_number": 21,
+        "question": "An internal audit reveals that an administrator account has been used to execute several unauthorized changes. What is the first step in addressing this issue?",
+        "options": [
+            "A. Revoke the administrator account immediately.",
+            "B. Review logs to determine the scope of the changes.",
+            "C. Notify senior management of the incident.",
+            "D. Change the administrator account password."
+        ],
+        "correct_index": "B",
+        "explanation": "Reviewing logs provides insights into the extent of the changes and helps in planning remediation steps."
+    },
+    {
+        "question_number": 22,
+        "question": "An attacker uses an SQL injection to compromise a database. What measure would most effectively prevent this attack?",
+        "options": [
+            "A. Using parameterized queries.",
+            "B. Encrypting database fields.",
+            "C. Implementing a web application firewall.",
+            "D. Restricting user privileges in the database."
+        ],
+        "correct_index": "A",
+        "explanation": "Parameterized queries ensure that user input is treated as data rather than executable SQL, preventing injection attacks."
+    },
+    {
+        "question_number": 23,
+        "question": "A company's web server is experiencing a Distributed Denial-of-Service (DDoS) attack. What is the most effective immediate action?",
+        "options": [
+            "A. Block the attacking IP addresses using a firewall.",
+            "B. Inform your ISP and request assistance.",
+            "C. Reboot the web server to clear malicious traffic.",
+            "D. Analyze traffic patterns to identify the attack's origin."
+        ],
+        "correct_index": "B",
+        "explanation": "ISPs can provide infrastructure-level support to filter or block malicious traffic during a DDoS attack."
+    },
+    {
+        "question_number": 24,
+        "question": "During a penetration test, the red team gains access to sensitive customer data stored in plaintext. What immediate step should the company take to protect this data?",
+        "options": [
+            "A. Encrypt the data using a strong algorithm.",
+            "B. Move the data to a more secure server.",
+            "C. Notify customers about the potential breach.",
+            "D. Implement access controls to restrict unauthorized access."
+        ],
+        "correct_index": "A",
+        "explanation": "Encrypting sensitive data ensures that it remains protected even if accessed by unauthorized individuals."
+    },
+    {
+        "question_number": 25,
+        "question": "You discover that an IoT device in your network is communicating with an external server without authorization. What should you do first?",
+        "options": [
+            "A. Disconnect the device from the network.",
+            "B. Monitor the traffic for further analysis.",
+            "C. Update the device's firmware to the latest version.",
+            "D. Contact the device vendor for support."
+        ],
+        "correct_index": "A",
+        "explanation": "Disconnecting the device prevents further unauthorized communication while investigating the issue."
+    },
+    {
+        "question_number": 26,
+        "question": "A user reports that their browser is redirecting them to malicious websites. What is the most likely cause?",
+        "options": [
+            "A. The browser's cache is corrupted.",
+            "B. A DNS poisoning attack has occurred.",
+            "C. The user is accessing an outdated website.",
+            "D. A man-in-the-middle attack is in progress."
+        ],
+        "correct_index": "B",
+        "explanation": "DNS poisoning redirects users to malicious websites by altering DNS resolution data."
+    },
+    {
+        "question_number": 27,
+        "question": "During a security review, it is discovered that a service account has excessive privileges. What is the best action to take?",
+        "options": [
+            "A. Delete the service account immediately.",
+            "B. Restrict the privileges of the service account.",
+            "C. Monitor the service account for suspicious activity.",
+            "D. Rotate the credentials for the service account."
+        ],
+        "correct_index": "B",
+        "explanation": "Restricting privileges adheres to the principle of least privilege, reducing potential security risks."
+    },
+    {
+        "question_number": 28,
+        "question": "Your intrusion detection system (IDS) identifies a brute-force attack on an SSH server. What is the first step in your response?",
+        "options": [
+            "A. Notify the system administrator immediately.",
+            "B. Block the attacking IP addresses using a firewall.",
+            "C. Increase the complexity of the SSH passwords.",
+            "D. Enable two-factor authentication on the server."
+        ],
+        "correct_index": "B",
+        "explanation": "Blocking the attacking IP addresses stops the brute-force attack while further protective measures are implemented."
+    },
+    {
+        "question_number": 29,
+        "question": "An employee reports receiving an email that appears to be from the company's CEO requesting sensitive information. What should you do first?",
+        "options": [
+            "A. Verify the email's authenticity by contacting the CEO.",
+            "B. Quarantine the email and analyze its contents.",
+            "C. Notify the entire company about the phishing attempt.",
+            "D. Report the email to law enforcement."
+        ],
+        "correct_index": "B",
+        "explanation": "Quarantining and analyzing the email helps confirm whether it is a phishing attempt and prevents further spread."
+    },
+    {
+        "question_number": 30,
+        "question": "A new employee is granted administrative privileges without proper approval. What policy violation does this represent?",
+        "options": [
+            "A. Segregation of duties.",
+            "B. Least privilege principle.",
+            "C. Access control policy.",
+            "D. Role-based access control."
+        ],
+        "correct_index": "C",
+        "explanation": "Granting administrative privileges without approval violates the organization's access control policy."
+    },
+    {
+        "question_number": 31,
+        "question": "During a vulnerability scan, a critical unpatched system is discovered. What is the most appropriate immediate action?",
+        "options": [
+            "A. Disconnect the system from the network.",
+            "B. Apply the patch during the next scheduled maintenance.",
+            "C. Implement a virtual patch through a firewall.",
+            "D. Notify senior management about the vulnerability."
+        ],
+        "correct_index": "C",
+        "explanation": "Virtual patching mitigates the risk temporarily while allowing time for proper patch deployment."
+    },
+    {
+        "question_number": 32,
+        "question": "An attacker has embedded a malicious script into a webpage to steal session cookies. Which security mechanism can prevent this?",
+        "options": [
+            "A. Content Security Policy (CSP).",
+            "B. Secure Socket Layer (SSL).",
+            "C. User input validation.",
+            "D. Multi-factor authentication."
+        ],
+        "correct_index": "A",
+        "explanation": "A Content Security Policy (CSP) can prevent malicious scripts from executing by restricting allowed sources of content."
+    },
+    {
+        "question_number": 33,
+        "question": "A server begins to overheat and shuts down after an increased CPU load. What type of attack might be responsible?",
+        "options": [
+            "A. Man-in-the-middle attack.",
+            "B. Distributed Denial-of-Service (DDoS).",
+            "C. Cryptojacking.",
+            "D. Data exfiltration."
+        ],
+        "correct_index": "C",
+        "explanation": "Cryptojacking involves hijacking computing resources for cryptocurrency mining, leading to high CPU load and overheating."
+    },
+    {
+        "question_number": 34,
+        "question": "An employee connects their personal device to the corporate network without authorization. What is the most effective preventive measure?",
+        "options": [
+            "A. Implement network segmentation.",
+            "B. Enforce a Bring Your Own Device (BYOD) policy.",
+            "C. Deploy a Network Access Control (NAC) solution.",
+            "D. Conduct employee training on network security."
+        ],
+        "correct_index": "C",
+        "explanation": "Network Access Control (NAC) ensures that only authorized devices can connect to the corporate network."
+    },
+    {
+        "question_number": 35,
+        "question": "A red team successfully bypasses multi-factor authentication (MFA) by exploiting a vulnerability in the MFA solution. What should the blue team do next?",
+        "options": [
+            "A. Disable MFA temporarily and investigate.",
+            "B. Patch the MFA system and re-enable it.",
+            "C. Notify users to change their passwords immediately.",
+            "D. Switch to a new authentication mechanism."
+        ],
+        "correct_index": "B",
+        "explanation": "Patching the MFA system addresses the specific vulnerability and restores its intended security features."
+    },
+    {
+        "question_number": 36,
+        "question": "A security engineer detects unusual lateral movement between servers. What should the engineer prioritize in their investigation?",
+        "options": [
+            "A. Check the activity logs of affected servers.",
+            "B. Perform a full system backup for forensic analysis.",
+            "C. Block all server-to-server communication temporarily.",
+            "D. Notify the incident response team immediately."
+        ],
+        "correct_index": "A",
+        "explanation": "Activity logs provide detailed insights into lateral movement, helping to identify compromised accounts or tools."
+    },
+    {
+        "question_number": 37,
+        "question": "A new application has been deployed, and users report errors when accessing it. Logs show invalid input being passed to the server. What is the likely root cause?",
+        "options": [
+            "A. Poor user training on the new application.",
+            "B. Lack of input validation in the application.",
+            "C. Inadequate server resources for processing requests.",
+            "D. Outdated application dependencies."
+        ],
+        "correct_index": "B",
+        "explanation": "Invalid input errors often result from a lack of proper input validation, which allows unexpected data to reach the server."
+    },
+    {
+        "question_number": 38,
+        "question": "A phishing campaign targets employees with emails appearing to be from HR, asking for sensitive information. What is the best defense against such campaigns?",
+        "options": [
+            "A. Regular employee training on phishing awareness.",
+            "B. Deploying an email encryption solution.",
+            "C. Implementing spam filters on email servers.",
+            "D. Using multi-factor authentication for sensitive systems."
+        ],
+        "correct_index": "A",
+        "explanation": "Phishing awareness training helps employees recognize and avoid falling victim to such attacks."
+    },
+    {
+        "question_number": 39,
+        "question": "A company stores sensitive data in a cloud service. What is the best way to ensure data security during transmission?",
+        "options": [
+            "A. Encrypt the data using AES before uploading.",
+            "B. Use a VPN to connect to the cloud service.",
+            "C. Ensure the cloud service uses HTTPS for data transfer.",
+            "D. Restrict access to the cloud service by IP address."
+        ],
+        "correct_index": "C",
+        "explanation": "HTTPS ensures encrypted communication between the client and the cloud service during data transmission."
+    },
+    {
+        "question_number": 40,
+        "question": "During a red team exercise, credentials are stolen using keylogging malware. What is the most effective defense against this type of attack?",
+        "options": [
+            "A. Educating users about malware risks.",
+            "B. Deploying endpoint detection and response (EDR) tools.",
+            "C. Implementing multi-factor authentication (MFA).",
+            "D. Using password managers to auto-fill credentials."
+        ],
+        "correct_index": "C",
+        "explanation": "MFA mitigates the impact of stolen credentials by requiring an additional authentication factor."
+    },
+    {
+        "question_number": 41,
+        "question": "Your organization’s web server is subjected to a SQL injection attack. What is the first step to mitigate the ongoing attack?",
+        "options": [
+            "A. Disable the affected application temporarily.",
+            "B. Block the attacker’s IP address using a firewall.",
+            "C. Enable input validation for user inputs in the application.",
+            "D. Update the database credentials immediately."
+        ],
+        "correct_index": "A",
+        "explanation": "Disabling the application temporarily prevents further exploitation while mitigation steps are implemented."
+    },
+    {
+        "question_number": 42,
+        "question": "During a routine scan, you detect a database server with an outdated software version. What should be your first action?",
+        "options": [
+            "A. Isolate the server from the network.",
+            "B. Apply the necessary software updates.",
+            "C. Inform the database administrator for further analysis.",
+            "D. Perform a penetration test on the server."
+        ],
+        "correct_index": "A",
+        "explanation": "Isolating the server prevents potential exploitation while addressing the issue."
+    },
+    {
+        "question_number": 43,
+        "question": "An employee receives an email from an unknown sender with an attachment claiming to be an invoice. What is the best course of action?",
+        "options": [
+            "A. Open the attachment to verify its content.",
+            "B. Report the email to the security team.",
+            "C. Delete the email immediately.",
+            "D. Forward the email to IT support."
+        ],
+        "correct_index": "B",
+        "explanation": "Reporting the email ensures the security team can investigate and take necessary actions to prevent potential harm."
+    },
+    {
+        "question_number": 44,
+        "question": "A security team notices a significant increase in outbound traffic from a file server. What should be their immediate step?",
+        "options": [
+            "A. Disable the network connection of the file server.",
+            "B. Perform a forensic analysis of the file server.",
+            "C. Scan the file server for malware.",
+            "D. Notify the incident response team."
+        ],
+        "correct_index": "A",
+        "explanation": "Disabling the network connection stops potential data exfiltration while further investigations are conducted."
+    },
+    {
+        "question_number": 45,
+        "question": "A user reports a browser pop-up warning that their system is infected and requesting a payment for cleaning. What is the immediate action?",
+        "options": [
+            "A. Disconnect the system from the network.",
+            "B. Close the browser immediately.",
+            "C. Run an antivirus scan on the system.",
+            "D. Clear the browser cache and cookies."
+        ],
+        "correct_index": "A",
+        "explanation": "Disconnecting the system prevents further potential malicious activity while the issue is analyzed."
+    },
+    {
+        "question_number": 46,
+        "question": "Your organization uses public Wi-Fi at an event, and some employees report suspicious network activity. What should you do to secure their connections?",
+        "options": [
+            "A. Enable VPN connections for all employees.",
+            "B. Block public Wi-Fi access for employee devices.",
+            "C. Educate employees on secure browsing practices.",
+            "D. Limit their activities to HTTPS websites only."
+        ],
+        "correct_index": "A",
+        "explanation": "Using a VPN ensures encrypted and secure connections over public Wi-Fi."
+    },
+    {
+        "question_number": 47,
+        "question": "A critical vulnerability is announced for a software product your organization uses. What is the best course of action?",
+        "options": [
+            "A. Monitor for exploits targeting the vulnerability.",
+            "B. Immediately patch all affected systems.",
+            "C. Notify the software vendor for support.",
+            "D. Block the software on all endpoints."
+        ],
+        "correct_index": "B",
+        "explanation": "Patching systems immediately addresses the vulnerability and prevents exploitation."
+    },
+    {
+        "question_number": 48,
+        "question": "A colleague is using an unauthorized USB drive on a corporate laptop. What is the first step to address this situation?",
+        "options": [
+            "A. Physically remove the USB drive.",
+            "B. Notify the employee’s manager.",
+            "C. Scan the laptop for malware.",
+            "D. Educate the employee on company policies."
+        ],
+        "correct_index": "A",
+        "explanation": "Physically removing the unauthorized USB drive minimizes immediate risk."
+    },
+    {
+        "question_number": 49,
+        "question": "During a DDoS attack, your website becomes unresponsive. What is the best immediate action?",
+        "options": [
+            "A. Blacklist the attacking IP addresses.",
+            "B. Activate DDoS mitigation services.",
+            "C. Disconnect the web server temporarily.",
+            "D. Notify the web hosting provider."
+        ],
+        "correct_index": "B",
+        "explanation": "Activating DDoS mitigation services absorbs or redirects malicious traffic to maintain website availability."
+    },
+    {
+        "question_number": 50,
+        "question": "An application firewall is configured to block SQL injection attacks. Despite this, a database is still compromised. What might be the cause?",
+        "options": [
+            "A. Firewall rules are too restrictive.",
+            "B. Database permissions are overly permissive.",
+            "C. Input validation is applied incorrectly.",
+            "D. Firewall signatures are outdated."
+        ],
+        "correct_index": "D",
+        "explanation": "Outdated firewall signatures can fail to detect new attack patterns, allowing exploitation."
+    },
+    {
+        "question_number": 51,
+        "question": "Your organization experiences a phishing attack that compromises several email accounts. What is the first step to contain the breach?",
+        "options": [
+            "A. Disable the compromised accounts immediately.",
+            "B. Notify affected users about the breach.",
+            "C. Block external email access for all accounts.",
+            "D. Analyze the phishing email for indicators of compromise."
+        ],
+        "correct_index": "A",
+        "explanation": "Disabling the compromised accounts prevents further misuse while containment and analysis are conducted."
+    },
+    {
+        "question_number": 52,
+        "question": "A server in your network is repeatedly flagged by your IDS for unusual outbound traffic. What is your next immediate action?",
+        "options": [
+            "A. Perform a vulnerability scan on the server.",
+            "B. Disconnect the server from the network.",
+            "C. Investigate the outbound traffic pattern.",
+            "D. Notify the server administrator."
+        ],
+        "correct_index": "B",
+        "explanation": "Disconnecting the server prevents potential data exfiltration while further investigation is carried out."
+    },
+    {
+        "question_number": 53,
+        "question": "A penetration tester successfully accesses sensitive files in your network. What is your first step after detecting the breach?",
+        "options": [
+            "A. Terminate the penetration testing engagement.",
+            "B. Isolate the affected systems.",
+            "C. Perform a full forensic analysis of the breach.",
+            "D. Notify stakeholders about the penetration tester's success."
+        ],
+        "correct_index": "B",
+        "explanation": "Isolating the affected systems limits the scope of the compromise and allows for detailed investigation."
+    },
+    {
+        "question_number": 54,
+        "question": "A workstation shows signs of malware infection, including unauthorized file modifications. What is the first step to mitigate the issue?",
+        "options": [
+            "A. Run a malware scan on the workstation.",
+            "B. Disconnect the workstation from the network.",
+            "C. Restore files from the last backup.",
+            "D. Inform the user about the infection."
+        ],
+        "correct_index": "B",
+        "explanation": "Disconnecting the workstation prevents further spread of the infection."
+    },
+    {
+        "question_number": 55,
+        "question": "Your web application is experiencing a brute force attack targeting user logins. What is the best immediate action?",
+        "options": [
+            "A. Block the attacking IP addresses temporarily.",
+            "B. Notify users to change their passwords.",
+            "C. Implement account lockout policies.",
+            "D. Redirect login attempts to a honeypot."
+        ],
+        "correct_index": "C",
+        "explanation": "Implementing account lockout policies stops brute force attempts by limiting login retries."
+    },
+    {
+        "question_number": 56,
+        "question": "A wireless network audit reveals unauthorized access points. What is your first step?",
+        "options": [
+            "A. Disconnect all unauthorized access points.",
+            "B. Notify employees about the audit findings.",
+            "C. Conduct a full scan of the wireless network.",
+            "D. Perform a forensic analysis of the access points."
+        ],
+        "correct_index": "A",
+        "explanation": "Disconnecting unauthorized access points immediately mitigates the risk they pose."
+    },
+    {
+        "question_number": 57,
+        "question": "A critical system is impacted by a zero-day exploit. What is your first priority?",
+        "options": [
+            "A. Notify the software vendor immediately.",
+            "B. Implement compensating controls to limit exposure.",
+            "C. Analyze the exploit for further understanding.",
+            "D. Remove the affected system from the network."
+        ],
+        "correct_index": "B",
+        "explanation": "Implementing compensating controls reduces exposure while the vulnerability is addressed."
+    },
+    {
+        "question_number": 58,
+        "question": "During an investigation, you discover that attackers have been exfiltrating sensitive data using DNS tunneling. What is your first action?",
+        "options": [
+            "A. Block all DNS queries temporarily.",
+            "B. Investigate the suspicious DNS traffic patterns.",
+            "C. Notify the incident response team.",
+            "D. Reconfigure DNS servers to block tunneling."
+        ],
+        "correct_index": "A",
+        "explanation": "Blocking DNS queries temporarily halts data exfiltration until a deeper investigation is conducted."
+    },
+    {
+        "question_number": 59,
+        "question": "An insider is suspected of accessing unauthorized sensitive files. What is the first step in handling this incident?",
+        "options": [
+            "A. Monitor the user's activity discreetly.",
+            "B. Revoke the user's access to sensitive files.",
+            "C. Notify the user’s manager about the suspicion.",
+            "D. Perform a forensic analysis of the accessed files."
+        ],
+        "correct_index": "B",
+        "explanation": "Revoking access prevents further unauthorized activity."
+    },
+    {
+        "question_number": 60,
+        "question": "A vulnerability scan identifies an open port on a server that should not be accessible. What is the first step?",
+        "options": [
+            "A. Close the open port immediately.",
+            "B. Investigate the service using the open port.",
+            "C. Inform the server administrator about the finding.",
+            "D. Perform a penetration test on the server."
+        ],
+        "correct_index": "B",
+        "explanation": "Investigating the service using the open port ensures an informed decision about mitigation."
+    }
+]
