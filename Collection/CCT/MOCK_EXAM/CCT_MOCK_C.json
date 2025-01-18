@@ -1,0 +1,722 @@
+[
+  {
+    "question_number": 1,
+    "question": "You are the cybersecurity technician for a large organization. The network has been slow, and users are reporting frequent disconnects. You identify a potential issue with a router’s firmware vulnerability. How would you proceed to mitigate the risk while ensuring minimal downtime?",
+    "options": [
+      "Upgrade the router firmware immediately, ensuring no configuration changes are lost.",
+      "Check for an alternative firmware version to downgrade to before upgrading.",
+      "Temporarily disable the router, and schedule a maintenance window to upgrade the firmware.",
+      "Increase the router’s bandwidth allocation to mitigate the impact of the vulnerability."
+    ],
+    "correct_answer": "C",
+    "explanation": "Upgrading the firmware during a scheduled maintenance window allows you to mitigate the risk without disrupting network availability."
+  },
+  {
+    "question_number": 2,
+    "question": "During a routine audit, you discover that several employees are using outdated versions of software that are no longer supported by the vendor. What should be your first step in addressing this issue?",
+    "options": [
+      "Immediately send a notification to the employees to uninstall the outdated software.",
+      "Recommend updating the software to the latest version and schedule a patch management procedure.",
+      "Disable the outdated software across all systems until the software can be updated.",
+      "Check if the outdated software can be patched manually before recommending updates."
+    ],
+    "correct_answer": "B",
+    "explanation": "The first step should be to recommend updating to the latest version of the software, ensuring compliance with security standards."
+  },
+  {
+    "question_number": 3,
+    "question": "While performing a vulnerability scan, you identify an open port that is unexpectedly exposed on a production server. What is the most appropriate action to take to confirm the exposure and mitigate the risk?",
+    "options": [
+      "Perform a deeper scan on the server to verify if the open port is part of the expected services.",
+      "Shut down the server immediately to prevent further exposure.",
+      "Block the port on the firewall and proceed with patching the server.",
+      "Alert the server administrator to manually verify the open port without further action."
+    ],
+    "correct_answer": "A",
+    "explanation": "A deeper scan is necessary to confirm whether the open port is legitimate and to assess its potential impact before taking further action."
+  },
+  {
+    "question_number": 4,
+    "question": "A user reports receiving suspicious emails with attachments, which they mistakenly opened, and now their system appears compromised. What is your immediate response?",
+    "options": [
+      "Run a full antivirus scan and wait for the results.",
+      "Disconnect the infected system from the network and perform an investigation.",
+      "Inform the user to change their password and continue with their work.",
+      "Reformat the system immediately and restore from a clean backup."
+    ],
+    "correct_answer": "B",
+    "explanation": "Disconnecting the system from the network prevents the malware from spreading and allows you to perform a proper investigation."
+  },
+  {
+    "question_number": 5,
+    "question": "You are tasked with assessing the security of a corporate web application. During your assessment, you discover a cross-site scripting (XSS) vulnerability. What would be your immediate recommendation to mitigate the risk?",
+    "options": [
+      "Recommend adding an input sanitization mechanism to block harmful scripts.",
+      "Advise the company to disable all JavaScript functionality within the web application.",
+      "Force the application to use a more secure version of HTTP for communication.",
+      "Recommend upgrading the web server to patch the vulnerability."
+    ],
+    "correct_answer": "A",
+    "explanation": "Input sanitization is the most effective way to prevent XSS vulnerabilities by filtering out harmful scripts before they can execute."
+  },
+  {
+    "question_number": 6,
+    "question": "After a recent update to the organization's endpoint protection software, several users report that legitimate programs are being flagged as malicious. What is the first step in addressing this false positive issue?",
+    "options": [
+      "Temporarily disable the endpoint protection on all affected systems and monitor the results.",
+      "Create and submit an exclusion rule for the falsely flagged programs to the endpoint software vendor.",
+      "Instruct users to ignore the alerts and continue using the programs until the issue resolves.",
+      "Manually scan each affected system and uninstall the endpoint protection software."
+    ],
+    "correct_answer": "B",
+    "explanation": "Submitting an exclusion rule helps to resolve false positives while maintaining the protection provided by the endpoint software."
+  },
+  {
+    "question_number": 7,
+    "question": "A critical system in your environment has been compromised by an attacker, and they have installed a backdoor. You are tasked with removing the backdoor. What is the first action you should take?",
+    "options": [
+      "Disconnect the system from the network to prevent further unauthorized access.",
+      "Reinstall the operating system to ensure the backdoor is removed.",
+      "Identify and delete any suspicious files manually from the compromised system.",
+      "Run a security tool to automatically remove the backdoor and return the system online."
+    ],
+    "correct_answer": "A",
+    "explanation": "Disconnecting the system from the network prevents the attacker from maintaining access while you investigate and remove the backdoor."
+  },
+  {
+    "question_number": 8,
+    "question": "A company has recently experienced a data breach involving employee personal information. You are tasked with identifying how the breach occurred. What would be your first step in the investigation?",
+    "options": [
+      "Analyze the access logs to determine how the attacker gained unauthorized access.",
+      "Inform the affected employees immediately and ask them to change their passwords.",
+      "Deploy a new intrusion detection system (IDS) to prevent further breaches.",
+      "Ask the employees to stop using their personal devices to avoid further exposure."
+    ],
+    "correct_answer": "A",
+    "explanation": "Reviewing access logs is the best first step to understanding the attack's origin and determining the breach's timeline."
+  },
+  {
+    "question_number": 9,
+    "question": "You are analyzing a network that experiences sporadic disruptions. After reviewing the logs, you find several unauthorized login attempts followed by a successful login. What should be your next step?",
+    "options": [
+      "Lock the account involved in the unauthorized login attempt and conduct a detailed review.",
+      "Ignore the unauthorized login attempts since they are not frequent enough to be a threat.",
+      "Reset the passwords for all users in the affected system and notify them of the breach.",
+      "Report the incident to management and let them decide the course of action."
+    ],
+    "correct_answer": "A",
+    "explanation": "Locking the affected account immediately and performing a review will help you contain the threat and investigate the unauthorized access."
+  },
+  {
+    "question_number": 10,
+    "question": "During a security audit, you find that employees are using weak passwords despite security policies being in place. What should you implement to prevent this from happening again?",
+    "options": [
+      "Enforce stronger password policies by requiring longer and more complex passwords.",
+      "Use multi-factor authentication to compensate for the weak passwords.",
+      "Monitor password attempts and lock out accounts after several failed logins.",
+      "Inform the employees that they need to manually reset their passwords to meet the policy."
+    ],
+    "correct_answer": "B",
+    "explanation": "Multi-factor authentication adds an additional layer of security that compensates for weak passwords, reducing the likelihood of unauthorized access."
+  },
+  {
+    "question_number": 11,
+    "question": "You are investigating a server that is experiencing performance issues after a network intrusion. The logs indicate multiple login attempts from an IP address in a foreign country. What should be your immediate action?",
+    "options": [
+      "Block the IP address and investigate the server for any malware or unauthorized changes.",
+      "Reset all passwords and continue monitoring the server for further anomalies.",
+      "Run a diagnostic tool to identify any network performance issues unrelated to the intrusion.",
+      "Inform the server administrator and wait for them to decide the next steps."
+    ],
+    "correct_answer": "A",
+    "explanation": "Blocking the suspicious IP address and investigating the server will help to contain the intrusion and identify any malware or unauthorized changes."
+  },
+  {
+    "question_number": 12,
+    "question": "A large-scale DDoS attack is targeting your organization's web servers, causing significant downtime. What is the most effective immediate action to reduce the impact of the attack?",
+    "options": [
+      "Redirect traffic to a backup server to mitigate the impact on the primary web servers.",
+      "Temporarily take the website offline until the attack subsides.",
+      "Contact your ISP to request a traffic scrub or mitigation service for DDoS attacks.",
+      "Add more server capacity to handle the increased traffic."
+    ],
+    "correct_answer": "C",
+    "explanation": "Contacting your ISP for traffic scrubbing or DDoS mitigation services is the most effective way to reduce the impact of a DDoS attack."
+  },
+  {
+    "question_number": 13,
+    "question": "While monitoring network traffic, you observe unusually high outbound data transmission to an external IP address. After further investigation, you find that this is an encrypted file transfer. What should you do next?",
+    "options": [
+      "Isolate the device and investigate the cause of the data transfer.",
+      "Allow the transfer to complete and report the finding to the management team.",
+      "Contact the external IP address to inquire about the legitimacy of the data transfer.",
+      "Disable all external communication from the affected device until further analysis is completed."
+    ],
+    "correct_answer": "A",
+    "explanation": "Isolating the device allows you to investigate and confirm the legitimacy of the data transfer before taking further action."
+  },
+  {
+    "question_number": 14,
+    "question": "You are responsible for monitoring security events across multiple systems in your organization. You notice several unauthorized access attempts to the admin portal from multiple internal systems. What is the most appropriate course of action?",
+    "options": [
+      "Immediately lock all admin accounts and conduct an internal investigation to determine the cause of the access attempts.",
+      "Monitor the access attempts and wait for a successful login before taking action.",
+      "Alert the system administrators to check for any misconfigurations that could be allowing unauthorized access.",
+      "Ignore the issue since internal systems are generally trusted and the access attempts are not from external sources."
+    ],
+    "correct_answer": "A",
+    "explanation": "Locking the admin accounts immediately and investigating the source of the access attempts will help to mitigate any potential breach."
+  },
+  {
+    "question_number": 15,
+    "question": "Your organization’s firewall logs show an unusual number of failed login attempts from a specific IP address. What should you do first to address the potential threat?",
+    "options": [
+      "Block the IP address at the firewall and analyze the logs for further signs of malicious activity.",
+      "Reset all passwords for users who might be affected and notify them about the failed attempts.",
+      "Ignore the failed attempts as they could be normal brute force scanning.",
+      "Report the incident to the ISP for further investigation into the source of the attack."
+    ],
+    "correct_answer": "A",
+    "explanation": "Blocking the IP address and reviewing the logs will help you to contain the threat and assess whether the attack is ongoing."
+  },
+  {
+    "question_number": 16,
+    "question": "You are notified that a system has been infected by ransomware. The ransomware has encrypted the files, and the attacker is demanding a ransom. What is your first step in responding to this incident?",
+    "options": [
+      "Disconnect the infected system from the network to prevent further spread of the ransomware.",
+      "Pay the ransom to the attacker to regain access to the encrypted files.",
+      "Attempt to remove the ransomware by running an antivirus scan and restarting the system.",
+      "Restore the system from a backup and investigate how the ransomware entered the network."
+    ],
+    "correct_answer": "A",
+    "explanation": "Disconnecting the infected system from the network will help to prevent further spread of the ransomware and allow you to take steps toward remediation."
+  },
+  {
+    "question_number": 17,
+    "question": "A team of engineers is testing a new service that will be deployed in your organization. The service requires full access to critical infrastructure, and you are tasked with securing it. What action should you take to ensure the security of the service?",
+    "options": [
+      "Configure strict access controls and ensure that only authorized personnel can interact with the service.",
+      "Allow the engineers unrestricted access to the service to avoid any testing delays.",
+      "Install antivirus software on the systems running the service to prevent potential vulnerabilities.",
+      "Use encryption to secure the data while in transit and at rest."
+    ],
+    "correct_answer": "A",
+    "explanation": "Strict access controls are critical for ensuring that only authorized personnel can interact with sensitive infrastructure and prevent unauthorized access."
+  },
+  {
+    "question_number": 18,
+    "question": "You are performing a risk assessment and discover that a critical system has several outdated security patches. What is the best way to proceed to mitigate the risks?",
+    "options": [
+      "Immediately apply the security patches during a scheduled maintenance window to minimize downtime.",
+      "Ignore the outdated patches until the next quarterly review and perform routine monitoring.",
+      "Temporarily disable the system and manually check for any signs of compromise before applying the patches.",
+      "Ask the users to manually update their systems, as they are the ones directly interacting with the system."
+    ],
+    "correct_answer": "A",
+    "explanation": "Applying the security patches during a maintenance window will minimize downtime and ensure that the system is protected from known vulnerabilities."
+  },
+  {
+    "question_number": 19,
+    "question": "You have noticed that several users in your organization are using unsecured public Wi-Fi for accessing company systems. What is your best course of action to protect the organization’s data?",
+    "options": [
+      "Enforce the use of a VPN to encrypt communications while accessing company systems from unsecured networks.",
+      "Instruct employees to avoid using public Wi-Fi networks for any work-related activities.",
+      "Monitor network traffic and block all public Wi-Fi access points from connecting to the corporate network.",
+      "Disable remote access to corporate systems while employees are connected to unsecured networks."
+    ],
+    "correct_answer": "A",
+    "explanation": "Enforcing the use of a VPN ensures that all communications are encrypted and secure, even when accessing company systems from unsecured networks."
+  },
+  {
+    "question_number": 20,
+    "question": "A user reports that their email account was accessed from an unfamiliar location. What steps should you take to investigate the incident and prevent further compromise?",
+    "options": [
+      "Check the email account's login history and reset the user's password to prevent further unauthorized access.",
+      "Wait for the user to provide more details and then monitor the account for suspicious activity.",
+      "Delete the account and create a new one for the user to avoid any potential exposure.",
+      "Contact the email provider to investigate and wait for their response."
+    ],
+    "correct_answer": "A",
+    "explanation": "Checking the login history and resetting the password is the most effective first step in preventing further unauthorized access to the account."
+  },
+  {
+    "question_number": 21,
+    "question": "You are monitoring network traffic when you notice an unusual outbound connection from a workstation to an external IP address. Upon investigation, you find that the workstation is infected with malware. What should be your immediate action?",
+    "options": [
+      "Disconnect the workstation from the network and initiate a malware scan to identify and remove the infection.",
+      "Allow the connection to complete and monitor the outbound traffic for further anomalies.",
+      "Warn the user to stop using the workstation and wait for further instructions.",
+      "Notify the network team to investigate the external IP address without disconnecting the workstation."
+    ],
+    "correct_answer": "A",
+    "explanation": "Disconnecting the infected workstation from the network is the best immediate action to prevent further damage and to initiate a detailed investigation."
+  },
+  {
+    "question_number": 22,
+    "question": "During a routine review, you identify that an employee has been using unauthorized third-party software to access internal systems. What is your best course of action to mitigate the potential risks?",
+    "options": [
+      "Immediately revoke the employee’s access and report the use of unauthorized software to the security team.",
+      "Instruct the employee to uninstall the software and continue working with their current credentials.",
+      "Allow the employee to use the software as long as it does not affect system performance.",
+      "Monitor the employee’s activities without making any immediate changes to their access."
+    ],
+    "correct_answer": "A",
+    "explanation": "Revoking access immediately and reporting the incident ensures that the use of unauthorized software is addressed before it leads to a breach or further risks."
+  },
+  {
+    "question_number": 23,
+    "question": "A user has reported that their workstation is slow and behaving abnormally. You suspect that the system may be infected with malware. What is the first step in diagnosing the issue?",
+    "options": [
+      "Run a full malware scan to detect and remove any potential threats from the system.",
+      "Perform a system reboot to see if the issue persists.",
+      "Reinstall the operating system and restore the system from a backup.",
+      "Disable the network connection and monitor the system for any unusual behavior."
+    ],
+    "correct_answer": "A",
+    "explanation": "Running a malware scan is the most effective first step in identifying and removing any malware on the system before further investigation."
+  },
+  {
+    "question_number": 24,
+    "question": "A network administrator notices that multiple systems in the organization are exhibiting high CPU usage and network bandwidth consumption. Upon further inspection, it is discovered that a botnet is spreading within the network. What should be the first action to stop the botnet’s spread?",
+    "options": [
+      "Isolate the infected systems from the network to prevent further communication with the botnet's command-and-control server.",
+      "Increase the network bandwidth to accommodate the traffic generated by the botnet.",
+      "Install a firewall rule to block outgoing connections to the botnet's command-and-control server.",
+      "Notify users to shut down their computers and restart the systems to remove the botnet."
+    ],
+    "correct_answer": "A",
+    "explanation": "Isolating infected systems from the network is crucial to stopping the botnet’s spread and preventing further damage."
+  },
+  {
+    "question_number": 25,
+    "question": "You are tasked with investigating a suspected insider threat. You find that several employees have accessed sensitive data without proper authorization. What is your first step in handling this incident?",
+    "options": [
+      "Document all access logs and investigate the extent of the unauthorized data access.",
+      "Immediately terminate the employees' access and report the incident to the legal department.",
+      "Inform the affected departments and monitor the employees’ activities for further signs of suspicious behavior.",
+      "Ignore the issue if there are no signs of any external threats affecting the organization."
+    ],
+    "correct_answer": "A",
+    "explanation": "Documenting the access logs and investigating the unauthorized access helps you understand the scope of the issue and plan an appropriate response."
+  },
+  {
+    "question_number": 26,
+    "question": "A vulnerability scan reveals that one of your organization’s web applications has an SQL injection vulnerability. What is your next step in addressing the issue?",
+    "options": [
+      "Work with the development team to patch the vulnerability and validate the fix through a follow-up scan.",
+      "Immediately disable the web application to prevent exploitation of the vulnerability.",
+      "Contact the application vendor for a patch to fix the vulnerability.",
+      "Ignore the vulnerability as it does not pose a significant risk."
+    ],
+    "correct_answer": "A",
+    "explanation": "Collaborating with the development team to patch the vulnerability and re-testing ensures the vulnerability is addressed without service disruption."
+  },
+  {
+    "question_number": 27,
+    "question": "Your organization has been targeted by a spear-phishing campaign. Several employees have received emails with malicious attachments. What is your immediate course of action?",
+    "options": [
+      "Instruct employees to immediately delete the suspicious emails and run a malware scan on their systems.",
+      "Allow employees to open the emails and report if any of them look suspicious.",
+      "Ignore the incident as phishing attempts are a common occurrence.",
+      "Take no action and wait for the employees to report any issues related to the emails."
+    ],
+    "correct_answer": "A",
+    "explanation": "Instructing employees to delete the emails and perform a malware scan minimizes the risk of any malicious software spreading or being activated."
+  },
+  {
+    "question_number": 28,
+    "question": "A critical server is running out of disk space, and you are tasked with freeing up space to ensure it continues running. What is your first step in resolving this issue?",
+    "options": [
+      "Identify and delete unnecessary files, logs, or backups to free up disk space.",
+      "Increase the server’s disk size to accommodate the additional data requirements.",
+      "Reboot the server to clear up temporary files and free space.",
+      "Inform the server administrators and wait for further instructions."
+    ],
+    "correct_answer": "A",
+    "explanation": "Identifying and deleting unnecessary files is the most effective way to immediately free up space on the server."
+  },
+  {
+    "question_number": 29,
+    "question": "You are conducting a penetration test and find an open SSH port on a target system. What is your next step in the test?",
+    "options": [
+      "Attempt to gain access by brute-forcing the SSH login using a password dictionary.",
+      "Report the open port to the client and suggest closing it immediately.",
+      "Scan the system for any other open ports or services that may present vulnerabilities.",
+      "Try to identify the system’s operating system to further tailor your attack strategy."
+    ],
+    "correct_answer": "C",
+    "explanation": "Scanning for other open ports or services can provide additional attack vectors and give a more comprehensive understanding of the system’s security posture."
+  },
+  {
+    "question_number": 30,
+    "question": "You have identified a misconfigured DNS server that is allowing attackers to redirect users to malicious websites. What should you do to address this vulnerability?",
+    "options": [
+      "Reconfigure the DNS server with appropriate access controls and ensure that it is only accessible by authorized systems.",
+      "Shut down the DNS server immediately and replace it with a secure alternative.",
+      "Monitor the DNS server for further misconfigurations and report the issue to the security team.",
+      "Ignore the misconfiguration if no immediate harm has been caused."
+    ],
+    "correct_answer": "A",
+    "explanation": "Reconfiguring the DNS server with proper security controls will address the vulnerability and prevent further exploitation of the misconfiguration."
+  },
+  {
+    "question_number": 31,
+    "question": "You are performing a vulnerability assessment and find that a critical system has an open RDP (Remote Desktop Protocol) port. What is your next step in securing the system?",
+    "options": [
+      "Immediately block RDP access from external IP addresses and implement multi-factor authentication (MFA) for RDP access.",
+      "Leave the RDP port open and monitor the system for any suspicious logins.",
+      "Disable RDP entirely and switch to a more secure remote access method.",
+      "Notify the user to stop using RDP until the vulnerability can be fixed."
+    ],
+    "correct_answer": "A",
+    "explanation": "Blocking RDP access from external IPs and implementing MFA are essential measures to protect the system from brute-force attacks and unauthorized access."
+  },
+  {
+    "question_number": 32,
+    "question": "A system administrator is troubleshooting a suspected network breach. The network logs show signs of suspicious activity, but no actual compromise has been detected yet. What is the best approach to address the situation?",
+    "options": [
+      "Isolate the affected network segment and conduct a full investigation into the suspicious activity.",
+      "Allow the network to continue operating while monitoring it for further anomalies.",
+      "Reboot the affected systems to clear any potential threats.",
+      "Notify the users and ask them to stop accessing the network until further analysis is done."
+    ],
+    "correct_answer": "A",
+    "explanation": "Isolating the affected network segment ensures that any potential threat is contained while the investigation is underway."
+  },
+  {
+    "question_number": 33,
+    "question": "Your organization has just been informed that a third-party vendor's data was breached, which included access to sensitive customer information. What is the first step you should take to mitigate the risk to your organization?",
+    "options": [
+      "Review the vendor’s security practices and verify that your organization’s data has not been affected.",
+      "Immediately notify affected customers and offer them credit monitoring services.",
+      "Wait for the vendor to resolve the breach and inform you of any actions you should take.",
+      "Disconnect the vendor’s access to your systems to prevent further data leakage."
+    ],
+    "correct_answer": "A",
+    "explanation": "Reviewing the vendor’s security practices and verifying your organization’s data will help assess the extent of the breach and allow you to mitigate any potential risks."
+  },
+  {
+    "question_number": 34,
+    "question": "A user has reported that they are unable to access a critical application. Upon investigating, you discover that the user’s IP address is being blocked by the firewall due to several failed login attempts. What is your next step?",
+    "options": [
+      "Temporarily whitelist the user’s IP address and investigate the cause of the failed login attempts.",
+      "Reboot the firewall to reset the block and allow the user to access the application.",
+      "Disable the user’s account until further investigation is completed.",
+      "Allow the user to access the application from a different device without any changes."
+    ],
+    "correct_answer": "A",
+    "explanation": "Temporarily whitelisting the IP address will allow the user to access the application while you investigate the failed login attempts for any signs of malicious activity."
+  },
+  {
+    "question_number": 35,
+    "question": "You are investigating a suspicious email that was sent to a large number of employees in your organization. The email contains an attachment that, when opened, attempts to install malicious software. What should you do first?",
+    "options": [
+      "Immediately quarantine the email, block the sender, and instruct users not to open any attachments.",
+      "Allow the employees to open the email to verify if it contains any actual threats.",
+      "Ask the employees to delete the email and continue working without any further actions.",
+      "Report the email to your email service provider for further investigation."
+    ],
+    "correct_answer": "A",
+    "explanation": "Quarantining the email and blocking the sender will prevent further exposure to the threat, while instructing users not to open any attachments will help reduce the risk of malware infection."
+  },
+  {
+    "question_number": 36,
+    "question": "A penetration test reveals that your organization's web application is vulnerable to a Cross-Site Scripting (XSS) attack. What should be your first step in addressing this vulnerability?",
+    "options": [
+      "Sanitize and validate user inputs to prevent the execution of malicious scripts.",
+      "Temporarily disable the web application until the vulnerability can be patched.",
+      "Increase the application's security by implementing a stronger password policy.",
+      "Monitor the application for any signs of exploitation and wait for a patch from the vendor."
+    ],
+    "correct_answer": "A",
+    "explanation": "Sanitizing and validating user inputs is essential to prevent malicious scripts from being executed, addressing the core issue of XSS vulnerabilities."
+  },
+  {
+    "question_number": 37,
+    "question": "You receive an alert indicating that a user’s account has been locked after multiple failed login attempts. What is your next step in handling this situation?",
+    "options": [
+      "Verify if the failed attempts were legitimate or part of a brute-force attack, and reset the user’s password if necessary.",
+      "Immediately disable the user’s account and notify the IT department.",
+      "Instruct the user to reset their password and try logging in again.",
+      "Ignore the alert since account lockouts are common and do not necessarily indicate an attack."
+    ],
+    "correct_answer": "A",
+    "explanation": "Verifying the cause of the failed attempts and resetting the password, if necessary, will help you address any potential security issues before they escalate."
+  },
+  {
+    "question_number": 38,
+    "question": "During a routine audit, you find that several users have administrative privileges on critical systems without any justification. What should you do to mitigate this risk?",
+    "options": [
+      "Immediately revoke the unnecessary administrative privileges and implement least-privilege access controls.",
+      "Notify the users and inform them to stop using their administrative privileges.",
+      "Allow the users to retain their privileges but monitor their activities closely.",
+      "Wait until the next security review to address the issue."
+    ],
+    "correct_answer": "A",
+    "explanation": "Revoking unnecessary administrative privileges and enforcing least-privilege access ensures that only authorized users have elevated access, reducing the risk of accidental or malicious actions."
+  },
+  {
+    "question_number": 39,
+    "question": "You are investigating a network breach where an attacker has gained access to a system through an exposed service. What is the first step in containing the breach?",
+    "options": [
+      "Disconnect the affected system from the network and begin forensics analysis to determine the scope of the breach.",
+      "Inform the security team and wait for them to make the necessary adjustments.",
+      "Change all system passwords and reboot the affected system.",
+      "Monitor the affected system for any signs of further malicious activity."
+    ],
+    "correct_answer": "A",
+    "explanation": "Disconnecting the affected system from the network and conducting a forensics analysis will help contain the breach and determine the extent of the compromise."
+  },
+  {
+    "question_number": 40,
+    "question": "You are part of the incident response team and have been notified of a malware outbreak across several systems in your organization. What is your first step in responding to the incident?",
+    "options": [
+      "Contain the outbreak by isolating infected systems and preventing further spread of the malware.",
+      "Notify the affected users and ask them to run antivirus scans on their systems.",
+      "Reinstall the operating systems on all affected systems to ensure that the malware is removed.",
+      "Contact law enforcement to investigate the malware outbreak."
+    ],
+    "correct_answer": "A",
+    "explanation": "Containing the outbreak by isolating infected systems is the most effective first step to prevent further spread of the malware and begin remediation."
+  },
+  {
+    "question_number": 41,
+    "question": "Your organization has been hit with a ransomware attack, and critical files have been encrypted. What is your first step in responding to the attack?",
+    "options": [
+      "Disconnect the affected systems from the network and notify the incident response team.",
+      "Pay the ransom to regain access to the encrypted files.",
+      "Attempt to restore files from backups without isolating the affected systems.",
+      "Ignore the incident and wait for the systems to recover automatically."
+    ],
+    "correct_answer": "A",
+    "explanation": "Disconnecting the affected systems from the network prevents the ransomware from spreading further and ensures a coordinated response to contain the incident."
+  },
+  {
+    "question_number": 42,
+    "question": "You receive an alert about an unusual outbound connection from one of the internal servers to a suspicious IP address. What should be your next step?",
+    "options": [
+      "Investigate the source of the connection and determine whether it is malicious or part of normal traffic.",
+      "Immediately block the IP address and inform the user about the suspicious activity.",
+      "Ignore the alert and wait for the server to report any additional issues.",
+      "Shutdown the server to prevent any further connections."
+    ],
+    "correct_answer": "A",
+    "explanation": "Investigating the source of the connection helps determine whether the traffic is malicious, allowing you to take appropriate action to mitigate the risk."
+  },
+  {
+    "question_number": 43,
+    "question": "While performing a vulnerability assessment, you find that an internal web server is exposed to the internet with default login credentials. What is your immediate course of action?",
+    "options": [
+      "Change the default credentials immediately and restrict access to the web server to only trusted IP addresses.",
+      "Report the finding to the security team and wait for them to address the issue.",
+      "Ignore the issue, as the server is not being actively exploited at the moment.",
+      "Disable the web server temporarily until further analysis is conducted."
+    ],
+    "correct_answer": "A",
+    "explanation": "Changing the default credentials and restricting access helps prevent unauthorized access and minimizes the risk of exploitation."
+  },
+  {
+    "question_number": 44,
+    "question": "During a routine review of firewall logs, you notice multiple failed login attempts from an external IP address. What is the best immediate action?",
+    "options": [
+      "Block the external IP address and review the firewall logs for any signs of further malicious activity.",
+      "Ignore the failed attempts since they may just be normal scanning activity.",
+      "Contact the user associated with the login attempts and ask them to verify their credentials.",
+      "Change the firewall rules to allow the external IP address access."
+    ],
+    "correct_answer": "A",
+    "explanation": "Blocking the external IP address and reviewing the logs helps mitigate the threat and prevent further failed login attempts or potential unauthorized access."
+  },
+  {
+    "question_number": 45,
+    "question": "A network scan reveals several outdated software versions with known vulnerabilities on critical systems. What should be your first step in addressing the issue?",
+    "options": [
+      "Prioritize patching the outdated software versions based on their criticality and potential risk to the organization.",
+      "Ignore the outdated software and continue with other security tasks.",
+      "Notify the users of the outdated software and instruct them to update it themselves.",
+      "Remove the outdated software entirely and install alternative solutions."
+    ],
+    "correct_answer": "A",
+    "explanation": "Prioritizing patches based on the criticality and known vulnerabilities ensures that the most significant risks are mitigated first."
+  },
+  {
+    "question_number": 46,
+    "question": "You are conducting a security audit and find that an employee has been accessing sensitive files without proper authorization. What is the best action to take?",
+    "options": [
+      "Document the unauthorized access and notify the security team for further investigation.",
+      "Confront the employee and ask them to stop accessing the sensitive files.",
+      "Immediately suspend the employee’s access to sensitive data without further investigation.",
+      "Allow the employee to continue their work while monitoring their activities."
+    ],
+    "correct_answer": "A",
+    "explanation": "Documenting the unauthorized access and notifying the security team ensures proper investigation and a response to the potential insider threat."
+  },
+  {
+    "question_number": 47,
+    "question": "You are investigating a suspicious file on a company server that is behaving abnormally. What should be your first course of action?",
+    "options": [
+      "Isolate the server from the network and perform a malware scan to analyze the suspicious file.",
+      "Open the file on the server to inspect it for any signs of malicious behavior.",
+      "Delete the file immediately to prevent further potential harm.",
+      "Wait for a more experienced team member to handle the investigation."
+    ],
+    "correct_answer": "A",
+    "explanation": "Isolating the server and running a malware scan ensures that the file is analyzed safely and that any malicious actions are contained."
+  },
+  {
+    "question_number": 48,
+    "question": "During a penetration test, you discover a weak password policy that allows for simple passwords. What should you do first?",
+    "options": [
+      "Recommend implementing a stronger password policy and enforcing it across the organization.",
+      "Ignore the issue, as passwords are not a significant threat vector.",
+      "Report the weak policy to the management and wait for them to take action.",
+      "Test the system with weak passwords to confirm that the policy is flawed."
+    ],
+    "correct_answer": "A",
+    "explanation": "Implementing a stronger password policy improves the security of the system and helps prevent unauthorized access."
+  },
+  {
+    "question_number": 49,
+    "question": "You have discovered that an internal system has been compromised and is now under the control of an attacker. What should be your immediate response?",
+    "options": [
+      "Disconnect the system from the network and begin analyzing the breach to contain the attack.",
+      "Inform the user of the compromise and instruct them to change their password immediately.",
+      "Reinstall the operating system on the affected system and restore from backup.",
+      "Ignore the breach until it becomes a more significant problem."
+    ],
+    "correct_answer": "A",
+    "explanation": "Disconnecting the compromised system from the network is critical to containing the attack and preventing further spread."
+  },
+  {
+    "question_number": 50,
+    "question": "A vulnerability assessment has identified that your organization’s database server is using an outdated version of MySQL with known vulnerabilities. What is your next step?",
+    "options": [
+      "Upgrade MySQL to the latest version and apply any security patches to mitigate the risk.",
+      "Leave the MySQL server as is and continue monitoring for any issues.",
+      "Switch to a different database management system entirely.",
+      "Change the database server’s access credentials to prevent exploitation of the vulnerability."
+    ],
+    "correct_answer": "A",
+    "explanation": "Upgrading MySQL to the latest version and applying security patches ensures that known vulnerabilities are addressed and the system remains secure."
+  },
+  {
+    "question_number": 51,
+    "question": "You receive an alert that an employee’s account has been logged into from an unusual location. What is your first step in investigating this incident?",
+    "options": [
+      "Check the login history and verify whether the login was authorized or part of an account compromise.",
+      "Immediately disable the employee’s account to prevent further unauthorized access.",
+      "Contact the employee and ask them to verify if they accessed their account from the suspicious location.",
+      "Ignore the alert since this could be a false alarm or a VPN-based login."
+    ],
+    "correct_answer": "A",
+    "explanation": "Checking the login history allows you to verify whether the login was legitimate or a result of unauthorized access, enabling appropriate action."
+  },
+  {
+    "question_number": 52,
+    "question": "A critical server is showing signs of unusual network traffic patterns. The traffic appears to be originating from an internal device. What should you do first?",
+    "options": [
+      "Isolate the affected server and investigate the internal device for potential malware or a compromised host.",
+      "Allow the traffic to continue while monitoring for further anomalies.",
+      "Inform the security team and wait for them to analyze the situation.",
+      "Increase the security controls on the server and continue operations as usual."
+    ],
+    "correct_answer": "A",
+    "explanation": "Isolating the server and investigating the internal device helps to contain any potential internal threat and prevents further compromise."
+  },
+  {
+    "question_number": 53,
+    "question": "While reviewing access logs, you find several failed attempts to access sensitive files on a server. What is the next step you should take?",
+    "options": [
+      "Investigate the source of the failed access attempts to determine if they are part of a brute-force attack.",
+      "Ignore the failed attempts and continue monitoring the server’s performance.",
+      "Notify the users and ask them to stop trying to access the files.",
+      "Allow the failed attempts and continue reviewing other logs."
+    ],
+    "correct_answer": "A",
+    "explanation": "Investigating the source of the failed attempts helps identify if the access attempts are part of a larger attack, such as a brute-force or credential stuffing attempt."
+  },
+  {
+    "question_number": 54,
+    "question": "You are part of a response team investigating a suspected data breach. The attacker appears to have used a phishing email to gain access to internal systems. What is your next step?",
+    "options": [
+      "Identify and block any accounts or systems compromised through the phishing attack, and contain the breach.",
+      "Ignore the phishing attack and focus on patching other vulnerabilities in the system.",
+      "Rebuild the affected systems from backups without addressing the source of the compromise.",
+      "Notify all employees to change their passwords immediately and wait for further instructions."
+    ],
+    "correct_answer": "A",
+    "explanation": "Containing the breach and blocking any compromised accounts or systems is critical to preventing the attacker from escalating their access or causing further damage."
+  },
+  {
+    "question_number": 55,
+    "question": "You have discovered that an employee has been using their personal email account for company-related business, including sharing sensitive data. What is your first step in addressing this issue?",
+    "options": [
+      "Investigate the nature of the data shared and notify the security team to assess any potential breaches.",
+      "Warn the employee to stop using their personal email and monitor their activity.",
+      "Allow the employee to continue using their personal email until the issue is raised at the next meeting.",
+      "Immediately terminate the employee’s access to company systems."
+    ],
+    "correct_answer": "A",
+    "explanation": "Investigating the nature of the shared data and notifying the security team ensures that any potential data breach is identified and mitigated."
+  },
+  {
+    "question_number": 56,
+    "question": "During a routine security scan, you discover that a server is running an outdated version of a content management system (CMS) with known vulnerabilities. What is your next step?",
+    "options": [
+      "Update the CMS to the latest version and apply all relevant security patches.",
+      "Disconnect the server from the network to prevent further exploitation of the vulnerability.",
+      "Ignore the issue since the CMS is not actively exploited at the moment.",
+      "Notify the system administrator and ask them to update the CMS during their next scheduled maintenance."
+    ],
+    "correct_answer": "A",
+    "explanation": "Updating the CMS to the latest version and applying security patches addresses the known vulnerabilities and secures the system."
+  },
+  {
+    "question_number": 57,
+    "question": "An employee reports that they are receiving strange pop-up messages while working on a company computer. What should you do first?",
+    "options": [
+      "Perform a full malware scan on the employee’s computer to check for any malicious software.",
+      "Ask the employee to ignore the pop-up messages and continue working.",
+      "Reinstall the operating system and restore the employee’s data from backups.",
+      "Instruct the employee to log out and avoid using the computer until the IT team investigates."
+    ],
+    "correct_answer": "A",
+    "explanation": "Performing a full malware scan helps identify if the pop-up messages are related to an infection, allowing you to take appropriate action."
+  },
+  {
+    "question_number": 58,
+    "question": "You have been informed that a remote employee's device has been compromised and is being used to launch attacks on internal systems. What is your immediate response?",
+    "options": [
+      "Disconnect the compromised device from the network and investigate the cause of the compromise.",
+      "Allow the employee to continue using the device while monitoring the situation.",
+      "Notify the employee to stop using the device and await further instructions from IT.",
+      "Reinstall the operating system on the device without disconnecting it from the network."
+    ],
+    "correct_answer": "A",
+    "explanation": "Disconnecting the compromised device from the network immediately helps contain the attack and prevents further damage."
+  },
+  {
+    "question_number": 59,
+    "question": "Your organization has recently implemented a new web application, and users are experiencing issues accessing it from remote locations. What is your next step in troubleshooting the issue?",
+    "options": [
+      "Check the web application’s firewall rules and network configurations to ensure remote access is not being blocked.",
+      "Ask users to access the application from a different device to see if the issue persists.",
+      "Inform users that the issue will be resolved in the next maintenance window.",
+      "Reinstall the web application on the affected systems."
+    ],
+    "correct_answer": "A",
+    "explanation": "Checking the firewall rules and network configurations ensures that remote access is properly configured and not being inadvertently blocked."
+  },
+  {
+    "question_number": 60,
+    "question": "You are conducting a security review and find that sensitive data is being stored unencrypted on a shared network drive. What is your first step in addressing this issue?",
+    "options": [
+      "Encrypt the sensitive data immediately and implement encryption policies for all future data storage.",
+      "Delete the unencrypted data and instruct employees to stop storing sensitive data on the network drive.",
+      "Monitor the shared drive for unauthorized access before taking any action.",
+      "Notify the users to encrypt the files manually and continue storing them on the network drive."
+    ],
+    "correct_answer": "A",
+    "explanation": "Encrypting the sensitive data immediately and implementing encryption policies ensures the data is protected from unauthorized access and mitigates future risks."
+  }
+]

@@ -1,0 +1,722 @@
+[
+    {
+        "question_number": 1,
+        "question": "You discover a critical web application vulnerability during a penetration test. The vulnerability could allow remote code execution. What should you do next?",
+        "options": [
+            "A. Immediately exploit the vulnerability to demonstrate its impact.",
+            "B. Report the vulnerability to the application owner with a recommended fix.",
+            "C. Publish the vulnerability details online to raise awareness.",
+            "D. Ignore the vulnerability as it’s outside the scope of the test."
+        ],
+        "correct_index": "B",
+        "explanation": "Reporting the vulnerability with a recommended fix is the ethical and professional response, ensuring the issue can be resolved securely."
+    },
+    {
+        "question_number": 2,
+        "question": "A network administrator notices significant DNS queries to a suspicious domain from several endpoints. What is the best immediate course of action?",
+        "options": [
+            "A. Block the domain at the DNS server.",
+            "B. Notify all users to avoid accessing the domain.",
+            "C. Disconnect affected endpoints from the network.",
+            "D. Capture packet data for deeper analysis."
+        ],
+        "correct_index": "A",
+        "explanation": "Blocking the domain at the DNS server prevents further communication with the suspicious domain while further analysis is conducted."
+    },
+    {
+        "question_number": 3,
+        "question": "During an incident investigation, you suspect that an attacker is using a compromised account to access sensitive files. What is your first action?",
+        "options": [
+            "A. Lock the compromised account immediately.",
+            "B. Monitor the account to gather evidence.",
+            "C. Notify the user of the account compromise.",
+            "D. Reset the account password."
+        ],
+        "correct_index": "A",
+        "explanation": "Locking the account prevents further unauthorized access while ensuring evidence can still be collected securely."
+    },
+    {
+        "question_number": 4,
+        "question": "You receive an alert for an unusually high number of failed login attempts on a database server. What does this likely indicate?",
+        "options": [
+            "A. A brute-force attack",
+            "B. A legitimate user forgot their password",
+            "C. A database performance issue",
+            "D. An account lockout policy in action"
+        ],
+        "correct_index": "A",
+        "explanation": "A high number of failed login attempts is a common indicator of a brute-force attack, where an attacker systematically guesses passwords."
+    },
+    {
+        "question_number": 5,
+        "question": "An employee accidentally connects their personal IoT device to the corporate network. What should the IT team do first?",
+        "options": [
+            "A. Disconnect the device from the network.",
+            "B. Configure the device for corporate use.",
+            "C. Notify the employee of the policy violation.",
+            "D. Monitor the device for unusual activity."
+        ],
+        "correct_index": "A",
+        "explanation": "Disconnecting the device ensures that no potential threats are introduced to the corporate network."
+    },
+    {
+        "question_number": 6,
+        "question": "A security team is tasked with analyzing a malware sample. What is the first step they should take?",
+        "options": [
+            "A. Execute the malware in a virtual sandbox.",
+            "B. Run the malware on a production server.",
+            "C. Analyze the malware’s source code.",
+            "D. Upload the sample to an online analysis tool."
+        ],
+        "correct_index": "A",
+        "explanation": "Executing the malware in a virtual sandbox provides a safe environment to analyze its behavior without risking live systems."
+    },
+    {
+        "question_number": 7,
+        "question": "An attacker uses a Man-in-the-Middle (MITM) attack to intercept encrypted traffic. What is the most effective defense against this?",
+        "options": [
+            "A. Enable mutual TLS authentication.",
+            "B. Use MAC address filtering.",
+            "C. Deploy a host-based firewall.",
+            "D. Monitor for unusual traffic patterns."
+        ],
+        "correct_index": "A",
+        "explanation": "Mutual TLS authentication ensures both parties in a communication session are verified, preventing MITM attacks."
+    },
+    {
+        "question_number": 8,
+        "question": "During a forensic investigation, you find that an attacker has deleted critical log files. What should you do next?",
+        "options": [
+            "A. Attempt to recover the logs from a backup.",
+            "B. Use alternative logs to piece together the timeline.",
+            "C. Notify management of the data loss.",
+            "D. Focus on preventing further attacks."
+        ],
+        "correct_index": "A",
+        "explanation": "Recovering the logs from a backup can provide valuable evidence and context for the investigation."
+    },
+    {
+        "question_number": 9,
+        "question": "A wireless network is experiencing interference, causing connectivity issues. What should you do first to resolve the problem?",
+        "options": [
+            "A. Change the access point’s channel.",
+            "B. Increase the power output of the access point.",
+            "C. Replace the access point with a newer model.",
+            "D. Reduce the number of connected devices."
+        ],
+        "correct_index": "A",
+        "explanation": "Changing the channel can mitigate interference from other devices operating on the same frequency."
+    },
+    {
+        "question_number": 10,
+        "question": "An attacker exploits an unpatched vulnerability in a web server to gain unauthorized access. What proactive measure could have prevented this?",
+        "options": [
+            "A. Regularly applying security patches",
+            "B. Limiting server access to trusted IPs",
+            "C. Using a network intrusion detection system",
+            "D. Encrypting all server communications"
+        ],
+        "correct_index": "A",
+        "explanation": "Regularly applying security patches addresses known vulnerabilities and reduces the risk of exploitation."
+    },
+    {
+        "question_number": 11,
+        "question": "You identify a rogue DHCP server on your network that is assigning incorrect IP configurations to devices. What is your first action?",
+        "options": [
+            "A. Disconnect the rogue server from the network.",
+            "B. Block DHCP traffic at the network switch.",
+            "C. Reconfigure the network to prevent DHCP traffic.",
+            "D. Notify users to manually configure their IP addresses."
+        ],
+        "correct_index": "A",
+        "explanation": "Disconnecting the rogue server immediately stops it from disrupting the network and assigning incorrect configurations."
+    },
+    {
+        "question_number": 12,
+        "question": "An attacker sends a phishing email containing a malicious link to several employees. One employee reports clicking the link but has not noticed any changes on their system. What is your immediate action?",
+        "options": [
+            "A. Isolate the employee’s system for analysis.",
+            "B. Run a full antivirus scan on the system.",
+            "C. Advise the employee to change their email password.",
+            "D. Block the malicious domain at the network firewall."
+        ],
+        "correct_index": "A",
+        "explanation": "Isolating the system ensures that potential malicious activity cannot spread while the incident is being investigated."
+    },
+    {
+        "question_number": 13,
+        "question": "During a routine scan, you identify a weak encryption algorithm being used by a critical application. What should you do first?",
+        "options": [
+            "A. Replace the algorithm with a stronger one.",
+            "B. Notify the application vendor for support.",
+            "C. Disable encryption temporarily for further analysis.",
+            "D. Conduct a risk assessment of the weak algorithm."
+        ],
+        "correct_index": "D",
+        "explanation": "Conducting a risk assessment helps determine the potential impact and urgency of replacing the weak encryption."
+    },
+    {
+        "question_number": 14,
+        "question": "A device on your network is observed sending a large amount of traffic to a single external IP address. What could this indicate?",
+        "options": [
+            "A. A denial-of-service attack",
+            "B. Normal network activity",
+            "C. An attempted port scan",
+            "D. A rogue access point"
+        ],
+        "correct_index": "A",
+        "explanation": "Sending large amounts of traffic to a single IP address is a common characteristic of a denial-of-service (DoS) attack."
+    },
+    {
+        "question_number": 15,
+        "question": "You detect a new malware variant spreading through your organization’s email system. What should be your first response?",
+        "options": [
+            "A. Block all email attachments at the gateway.",
+            "B. Quarantine all affected systems immediately.",
+            "C. Inform users to avoid opening suspicious emails.",
+            "D. Update antivirus definitions and initiate a scan."
+        ],
+        "correct_index": "B",
+        "explanation": "Quarantining affected systems helps contain the malware's spread while other mitigations are being implemented."
+    },
+    {
+        "question_number": 16,
+        "question": "An IoT device in your network starts communicating with an unexpected IP address in a foreign country. What is the most likely cause?",
+        "options": [
+            "A. Normal device updates",
+            "B. Device compromise",
+            "C. Configuration error",
+            "D. Network congestion"
+        ],
+        "correct_index": "B",
+        "explanation": "Unusual communication patterns from IoT devices often indicate a compromise, especially when involving foreign IPs."
+    },
+    {
+        "question_number": 17,
+        "question": "While reviewing firewall logs, you notice repeated connection attempts to a non-standard port from multiple external IP addresses. What is your immediate action?",
+        "options": [
+            "A. Block the external IP addresses.",
+            "B. Change the port to a standard one.",
+            "C. Investigate the service running on the port.",
+            "D. Disable the port on the firewall."
+        ],
+        "correct_index": "C",
+        "explanation": "Investigating the service running on the port helps identify whether it is legitimately required or being targeted."
+    },
+    {
+        "question_number": 18,
+        "question": "An attacker gains access to your network using stolen credentials. Which security measure could have prevented this?",
+        "options": [
+            "A. Multi-factor authentication (MFA)",
+            "B. Role-based access control (RBAC)",
+            "C. Network segmentation",
+            "D. Regular password rotation"
+        ],
+        "correct_index": "A",
+        "explanation": "MFA adds an extra layer of security, making it harder for attackers to gain access with stolen credentials."
+    },
+    {
+        "question_number": 19,
+        "question": "A forensic analyst is tasked with collecting evidence from a compromised server. What is the first step?",
+        "options": [
+            "A. Create a bit-level copy of the server's storage.",
+            "B. Shut down the server to preserve the state.",
+            "C. Analyze the server’s running processes.",
+            "D. Disconnect the server from the network."
+        ],
+        "correct_index": "A",
+        "explanation": "Creating a bit-level copy preserves the server’s data integrity for further analysis and legal evidence."
+    },
+    {
+        "question_number": 20,
+        "question": "An attacker is exploiting a weak WEP encryption in a wireless network. What should the administrator do to secure the network?",
+        "options": [
+            "A. Upgrade to WPA3 encryption.",
+            "B. Reduce the wireless signal strength.",
+            "C. Enable MAC address filtering.",
+            "D. Change the SSID to a less obvious name."
+        ],
+        "correct_index": "A",
+        "explanation": "Upgrading to WPA3 encryption provides stronger security mechanisms, mitigating weaknesses in WEP."
+    },
+    {
+        "question_number": 21,
+        "question": "During a forensic investigation, you identify an encrypted container on a suspect’s device. What is your immediate next step?",
+        "options": [
+            "A. Attempt to brute force the encryption key.",
+            "B. Create a forensic image of the device.",
+            "C. Analyze metadata associated with the container.",
+            "D. Contact the vendor for decryption assistance."
+        ],
+        "correct_index": "B",
+        "explanation": "Creating a forensic image preserves the integrity of the evidence while allowing further analysis of the encrypted container."
+    },
+    {
+        "question_number": 22,
+        "question": "Your SIEM system flags unusual DNS requests from an internal workstation. What could this indicate?",
+        "options": [
+            "A. Normal DNS activity",
+            "B. Data exfiltration attempt",
+            "C. Misconfigured DNS settings",
+            "D. High packet loss"
+        ],
+        "correct_index": "B",
+        "explanation": "Unusual DNS requests can be a sign of data exfiltration or command-and-control communication by malware."
+    },
+    {
+        "question_number": 23,
+        "question": "You discover that a third-party vendor’s credentials have been compromised and are being used to access your network. What is your priority action?",
+        "options": [
+            "A. Disable the vendor's account immediately.",
+            "B. Notify the vendor of the breach.",
+            "C. Review the access logs for unusual activity.",
+            "D. Apply a network-wide password reset."
+        ],
+        "correct_index": "A",
+        "explanation": "Disabling the vendor's account immediately halts unauthorized access, minimizing further risk."
+    },
+    {
+        "question_number": 24,
+        "question": "A wireless network is experiencing repeated deauthentication attacks. What is the most effective way to mitigate this?",
+        "options": [
+            "A. Change the wireless channel.",
+            "B. Implement WPA3 encryption.",
+            "C. Use 802.11w (Protected Management Frames).",
+            "D. Lower the wireless signal strength."
+        ],
+        "correct_index": "C",
+        "explanation": "802.11w (Protected Management Frames) protects against deauthentication attacks by securing management frames."
+    },
+    {
+        "question_number": 25,
+        "question": "You suspect a backdoor is present on a server, allowing unauthorized access. What is the best way to confirm this?",
+        "options": [
+            "A. Run a full antivirus scan.",
+            "B. Monitor network traffic from the server.",
+            "C. Check for unauthorized user accounts.",
+            "D. Reinstall the operating system."
+        ],
+        "correct_index": "B",
+        "explanation": "Monitoring network traffic can reveal unauthorized communication indicative of a backdoor."
+    },
+    {
+        "question_number": 26,
+        "question": "An attacker is using a vulnerability in an IoT camera to pivot into your internal network. What should you do first?",
+        "options": [
+            "A. Disconnect the IoT camera from the network.",
+            "B. Apply the latest firmware update to the camera.",
+            "C. Monitor the attacker’s activities for intelligence.",
+            "D. Block the attacker’s IP address."
+        ],
+        "correct_index": "A",
+        "explanation": "Disconnecting the compromised device prevents the attacker from further exploiting the vulnerability."
+    },
+    {
+        "question_number": 27,
+        "question": "A blue team finds evidence of unauthorized SSH access to multiple servers. What is the most likely initial attack vector?",
+        "options": [
+            "A. Exploiting a buffer overflow vulnerability",
+            "B. Credential stuffing attack",
+            "C. Misconfigured firewall rules",
+            "D. Insider threat"
+        ],
+        "correct_index": "B",
+        "explanation": "A credential stuffing attack uses stolen credentials to gain unauthorized access, making it a likely vector for SSH exploitation."
+    },
+    {
+        "question_number": 28,
+        "question": "You receive an alert about a brute-force attack targeting your email server. What is the most effective immediate mitigation?",
+        "options": [
+            "A. Block the attacker’s IP address.",
+            "B. Implement account lockout policies.",
+            "C. Notify all users of the attack.",
+            "D. Reconfigure the email server to use a non-standard port."
+        ],
+        "correct_index": "B",
+        "explanation": "Account lockout policies prevent brute-force attacks by locking accounts after multiple failed login attempts."
+    },
+    {
+        "question_number": 29,
+        "question": "A forensic analyst must analyze logs for a suspected insider threat. Which type of log is most likely to contain evidence of file access activity?",
+        "options": [
+            "A. Network traffic logs",
+            "B. System event logs",
+            "C. Application logs",
+            "D. File system audit logs"
+        ],
+        "correct_index": "D",
+        "explanation": "File system audit logs track access and modifications to files, providing evidence of suspicious insider activity."
+    },
+    {
+        "question_number": 30,
+        "question": "An attacker exploits a cross-site scripting (XSS) vulnerability in your web application. What should you do to prevent this in the future?",
+        "options": [
+            "A. Sanitize user input before processing.",
+            "B. Disable cookies for all user sessions.",
+            "C. Encrypt all user data in the database.",
+            "D. Implement IP filtering for all requests."
+        ],
+        "correct_index": "A",
+        "explanation": "Sanitizing user input ensures that malicious scripts cannot be injected into the application."
+    },
+    {
+        "question_number": 31,
+        "question": "An attacker uses a rogue DHCP server to assign IP addresses to devices on your network. What is the best way to prevent this?",
+        "options": [
+            "A. Enable DHCP snooping on network switches.",
+            "B. Use static IP addresses for all devices.",
+            "C. Block all unrecognized MAC addresses.",
+            "D. Isolate the DHCP server in a VLAN."
+        ],
+        "correct_index": "A",
+        "explanation": "DHCP snooping allows network switches to filter out rogue DHCP servers by only allowing responses from trusted ports."
+    },
+    {
+        "question_number": 32,
+        "question": "A blue team detects suspicious outbound traffic from a server containing sensitive data. What should they do first?",
+        "options": [
+            "A. Disconnect the server from the network.",
+            "B. Notify upper management of the potential breach.",
+            "C. Perform a full malware scan on the server.",
+            "D. Monitor the traffic for further patterns."
+        ],
+        "correct_index": "A",
+        "explanation": "Disconnecting the server prevents further data exfiltration while preserving evidence for investigation."
+    },
+    {
+        "question_number": 33,
+        "question": "You suspect that an attacker is spoofing ARP messages to intercept traffic. What tool would you use to confirm this?",
+        "options": [
+            "A. Wireshark",
+            "B. Metasploit",
+            "C. Nessus",
+            "D. nmap"
+        ],
+        "correct_index": "A",
+        "explanation": "Wireshark is a packet analyzer that can capture and analyze ARP traffic to detect spoofing attempts."
+    },
+    {
+        "question_number": 34,
+        "question": "A security administrator discovers that multiple IoT devices are communicating with a known malicious IP address. What should they do first?",
+        "options": [
+            "A. Update the firmware of all IoT devices.",
+            "B. Block the malicious IP address at the firewall.",
+            "C. Disconnect the IoT devices from the network.",
+            "D. Notify the device vendor of the issue."
+        ],
+        "correct_index": "C",
+        "explanation": "Disconnecting the compromised devices prevents further malicious activity and allows time for investigation."
+    },
+    {
+        "question_number": 35,
+        "question": "An attacker compromises an account through a successful phishing attempt. What is the most effective immediate response?",
+        "options": [
+            "A. Reset the account's password and log out all sessions.",
+            "B. Notify all employees of the phishing attempt.",
+            "C. Block access to the affected account temporarily.",
+            "D. Perform a full malware scan on the user's device."
+        ],
+        "correct_index": "A",
+        "explanation": "Resetting the password and terminating active sessions ensures the attacker is locked out of the account."
+    },
+    {
+        "question_number": 36,
+        "question": "A penetration test reveals that a web application is vulnerable to SQL injection. What is the best way to address this vulnerability?",
+        "options": [
+            "A. Encrypt the database to secure sensitive data.",
+            "B. Implement parameterized queries in the application code.",
+            "C. Disable database access for all users.",
+            "D. Use a Web Application Firewall (WAF) to block SQL queries."
+        ],
+        "correct_index": "B",
+        "explanation": "Parameterized queries ensure that user input cannot alter the structure of SQL commands, mitigating SQL injection attacks."
+    },
+    {
+        "question_number": 37,
+        "question": "An incident response team detects that malware is spreading via SMB shares in the network. What should they do first?",
+        "options": [
+            "A. Disable SMB on all systems immediately.",
+            "B. Identify and isolate the infected system.",
+            "C. Block SMB traffic at the firewall.",
+            "D. Notify all employees to disconnect from the network."
+        ],
+        "correct_index": "B",
+        "explanation": "Identifying and isolating the infected system prevents further spread of the malware and allows for root cause analysis."
+    },
+    {
+        "question_number": 38,
+        "question": "During a wireless penetration test, the red team successfully de-authenticates a client device. What does this type of attack enable?",
+        "options": [
+            "A. Eavesdropping on network traffic",
+            "B. Forcing the device to connect to a rogue AP",
+            "C. Injecting malicious payloads into data packets",
+            "D. Performing a replay attack on the device"
+        ],
+        "correct_index": "B",
+        "explanation": "Deauthentication attacks are used to disconnect a client, often to force it to connect to a rogue access point under the attacker’s control."
+    },
+    {
+        "question_number": 39,
+        "question": "A forensic analyst retrieves data from an SSD drive suspected of holding critical evidence. Which forensic challenge is unique to SSDs?",
+        "options": [
+            "A. Data fragmentation",
+            "B. Limited read/write cycles",
+            "C. TRIM command affecting data recovery",
+            "D. Encrypted file systems"
+        ],
+        "correct_index": "C",
+        "explanation": "The TRIM command can erase blocks of unused data, complicating data recovery during forensic investigations."
+    },
+    {
+        "question_number": 40,
+        "question": "A network administrator notices that a router's firmware is out of date. What is the primary security risk of this?",
+        "options": [
+            "A. Unauthorized physical access to the router",
+            "B. Inability to handle increased traffic load",
+            "C. Vulnerabilities that could be exploited remotely",
+            "D. Poor network performance due to inefficiency"
+        ],
+        "correct_index": "C",
+        "explanation": "Outdated firmware can contain known vulnerabilities, making the router susceptible to remote exploitation."
+    },
+    {
+        "question_number": 41,
+        "question": "An attacker successfully conducts a man-in-the-middle attack on an HTTPS session. How could this attack have been possible?",
+        "options": [
+            "A. The user ignored a certificate warning.",
+            "B. The web server used strong SSL/TLS encryption.",
+            "C. The user authenticated with a weak password.",
+            "D. The attacker exploited DNS cache poisoning."
+        ],
+        "correct_index": "A",
+        "explanation": "Ignoring a certificate warning allows attackers to use a malicious certificate, enabling a man-in-the-middle attack despite HTTPS."
+    },
+    {
+        "question_number": 42,
+        "question": "A cybersecurity analyst detects an increase in SYN flood attacks targeting a web server. What is the most effective mitigation?",
+        "options": [
+            "A. Enable SYN cookies.",
+            "B. Block incoming traffic on port 80.",
+            "C. Increase server resources to handle more connections.",
+            "D. Change the server's IP address."
+        ],
+        "correct_index": "A",
+        "explanation": "SYN cookies are a defense mechanism that helps mitigate SYN flood attacks by validating connections without allocating resources."
+    },
+    {
+        "question_number": 43,
+        "question": "An IoT security camera on the network is observed sending large volumes of outbound traffic. What is the most likely explanation?",
+        "options": [
+            "A. The camera is uploading legitimate video footage.",
+            "B. The camera is part of a botnet performing a DDoS attack.",
+            "C. The camera is sending diagnostic logs to its manufacturer.",
+            "D. The camera is experiencing a firmware malfunction."
+        ],
+        "correct_index": "B",
+        "explanation": "Compromised IoT devices are often used in botnets to perform DDoS attacks by sending large volumes of traffic."
+    },
+    {
+        "question_number": 44,
+        "question": "During a network audit, you discover that several devices are using default administrator passwords. What is the most immediate risk?",
+        "options": [
+            "A. Unauthorized physical access to devices",
+            "B. Exploitation through brute-force attacks",
+            "C. Compromise through credential stuffing attacks",
+            "D. Unauthorized remote access by attackers"
+        ],
+        "correct_index": "D",
+        "explanation": "Default credentials are widely known and can be used by attackers to gain unauthorized remote access to devices."
+    },
+    {
+        "question_number": 45,
+        "question": "A forensic investigator must analyze volatile memory from a compromised machine. Which tool would be the most appropriate for this task?",
+        "options": [
+            "A. FTK Imager",
+            "B. Volatility",
+            "C. Autopsy",
+            "D. Wireshark"
+        ],
+        "correct_index": "B",
+        "explanation": "Volatility is a memory forensics framework designed to analyze volatile memory for malware, processes, and other artifacts."
+    },
+    {
+        "question_number": 46,
+        "question": "An attacker sends malicious code embedded in an image file uploaded to a web server. What type of vulnerability allows this?",
+        "options": [
+            "A. Cross-Site Scripting (XSS)",
+            "B. SQL Injection",
+            "C. File Upload Vulnerability",
+            "D. Directory Traversal"
+        ],
+        "correct_index": "C",
+        "explanation": "A file upload vulnerability allows attackers to upload malicious files that could execute code on the server."
+    },
+    {
+        "question_number": 47,
+        "question": "Your organization’s wireless network is secured using WPA2-PSK. What is the main risk associated with this configuration?",
+        "options": [
+            "A. Weak encryption protocols",
+            "B. Vulnerability to brute-force attacks on the passphrase",
+            "C. Limited range of network coverage",
+            "D. Lack of device authentication"
+        ],
+        "correct_index": "B",
+        "explanation": "WPA2-PSK is susceptible to brute-force attacks if the passphrase is weak or easily guessable."
+    },
+    {
+        "question_number": 48,
+        "question": "A network monitoring tool detects frequent DNS queries to suspicious domains. What should the security team investigate first?",
+        "options": [
+            "A. Check for signs of malware communication.",
+            "B. Verify the DNS server configuration.",
+            "C. Analyze network latency for performance issues.",
+            "D. Perform a traceroute to the suspicious domains."
+        ],
+        "correct_index": "A",
+        "explanation": "Frequent DNS queries to suspicious domains often indicate malware attempting to communicate with a command-and-control server."
+    },
+    {
+        "question_number": 49,
+        "question": "A network administrator discovers a rogue access point broadcasting the same SSID as the corporate Wi-Fi. What is the most effective mitigation?",
+        "options": [
+            "A. Block the rogue AP's MAC address.",
+            "B. Conduct a wireless site survey.",
+            "C. Use WPA3 encryption on the corporate Wi-Fi.",
+            "D. Implement 802.1X authentication."
+        ],
+        "correct_index": "D",
+        "explanation": "802.1X authentication ensures only authorized devices can connect, even if an attacker uses the same SSID."
+    },
+    {
+        "question_number": 50,
+        "question": "An employee connects a personal device to the corporate network and downloads sensitive data. What policy could prevent this behavior?",
+        "options": [
+            "A. Acceptable Use Policy",
+            "B. Network Segmentation Policy",
+            "C. Bring Your Own Device (BYOD) Policy",
+            "D. Data Retention Policy"
+        ],
+        "correct_index": "C",
+        "explanation": "A BYOD policy governs the use of personal devices on the corporate network and can enforce restrictions on data access."
+    },
+    {
+        "question_number": 51,
+        "question": "A security team observes that endpoint antivirus is repeatedly quarantining files with similar names and hashes across several systems. What should the team do next?",
+        "options": [
+            "A. Delete the quarantined files from all systems.",
+            "B. Update antivirus definitions and re-scan.",
+            "C. Investigate the origin of the quarantined files.",
+            "D. Disable antivirus to avoid false positives."
+        ],
+        "correct_index": "C",
+        "explanation": "Investigating the origin of the files is crucial to understanding whether they represent a coordinated attack or false positives."
+    },
+    {
+        "question_number": 52,
+        "question": "During a security assessment, you discover open SSH ports accessible from the internet on several servers. What is the best immediate action?",
+        "options": [
+            "A. Change the SSH default port.",
+            "B. Disable SSH service on all servers.",
+            "C. Implement IP whitelisting for SSH access.",
+            "D. Require all users to use key-based authentication."
+        ],
+        "correct_index": "C",
+        "explanation": "IP whitelisting restricts access to known, trusted IPs, reducing exposure to brute-force or unauthorized access attempts."
+    },
+    {
+        "question_number": 53,
+        "question": "An attacker is exfiltrating data over DNS tunneling. How can this activity be detected?",
+        "options": [
+            "A. Monitor for unusually large DNS packets.",
+            "B. Disable recursive DNS lookups.",
+            "C. Implement DNSSEC for all domains.",
+            "D. Block all outbound DNS traffic."
+        ],
+        "correct_index": "A",
+        "explanation": "DNS tunneling often involves large or frequent DNS packets that deviate from normal patterns."
+    },
+    {
+        "question_number": 54,
+        "question": "A cybersecurity analyst detects unauthorized modifications to a critical configuration file. What is the first action the analyst should take?",
+        "options": [
+            "A. Revert the configuration file to a known good state.",
+            "B. Investigate how the file was modified.",
+            "C. Isolate the affected system from the network.",
+            "D. Notify senior management of the incident."
+        ],
+        "correct_index": "C",
+        "explanation": "Isolating the system prevents further damage and stops the potential spread of an attack while the issue is investigated."
+    },
+    {
+        "question_number": 55,
+        "question": "Your web application is being targeted by an SQL injection attack. What is the most effective way to mitigate this risk?",
+        "options": [
+            "A. Block all incoming traffic.",
+            "B. Use prepared statements and parameterized queries.",
+            "C. Obfuscate database table names.",
+            "D. Set up a honeypot to mislead attackers."
+        ],
+        "correct_index": "B",
+        "explanation": "Prepared statements and parameterized queries ensure that input is treated as data, not executable code, preventing SQL injection."
+    },
+    {
+        "question_number": 56,
+        "question": "An organization experiences a ransomware attack. What is the most critical step to take immediately?",
+        "options": [
+            "A. Pay the ransom to recover files quickly.",
+            "B. Identify the ransomware variant.",
+            "C. Disconnect infected systems from the network.",
+            "D. Notify customers and stakeholders about the incident."
+        ],
+        "correct_index": "C",
+        "explanation": "Disconnecting infected systems from the network prevents the ransomware from spreading to additional systems."
+    },
+    {
+        "question_number": 57,
+        "question": "A forensic investigator is examining a drive suspected to contain child exploitation material. What step must they take to preserve the integrity of the evidence?",
+        "options": [
+            "A. Analyze the data directly on the suspect's computer.",
+            "B. Create a write-protected forensic image of the drive.",
+            "C. Install antivirus software on the drive for scanning.",
+            "D. Encrypt the drive before analysis."
+        ],
+        "correct_index": "B",
+        "explanation": "Creating a write-protected forensic image ensures that the original evidence remains unaltered during analysis."
+    },
+    {
+        "question_number": 58,
+        "question": "An attacker gains physical access to a workstation and installs a keylogger. What security measure could have prevented this?",
+        "options": [
+            "A. BIOS password protection.",
+            "B. Full disk encryption.",
+            "C. Endpoint detection and response (EDR).",
+            "D. Secure boot configuration."
+        ],
+        "correct_index": "A",
+        "explanation": "A BIOS password prevents unauthorized users from booting the system or making changes to the hardware configuration."
+    },
+    {
+        "question_number": 59,
+        "question": "A wireless audit reveals the use of WEP encryption on a corporate network. What is the primary security concern?",
+        "options": [
+            "A. Limited compatibility with modern devices.",
+            "B. Vulnerability to brute-force attacks.",
+            "C. Easily cracked encryption keys.",
+            "D. Lack of support for device authentication."
+        ],
+        "correct_index": "C",
+        "explanation": "WEP uses weak encryption algorithms that can be cracked within minutes, making it highly insecure."
+    },
+    {
+        "question_number": 60,
+        "question": "An IoT device on the network is communicating with a known malicious IP address. What is the best immediate action?",
+        "options": [
+            "A. Block the IP address on the firewall.",
+            "B. Reboot the IoT device to terminate the connection.",
+            "C. Update the device firmware to the latest version.",
+            "D. Conduct a factory reset on the IoT device."
+        ],
+        "correct_index": "A",
+        "explanation": "Blocking the malicious IP address on the firewall immediately prevents further communication while other actions are investigated."
+    }
+]
