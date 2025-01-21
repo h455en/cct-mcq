@@ -1,0 +1,242 @@
+[
+  {
+    "question_number": 1,
+    "question": "Which of the following types of malwares restricts access to the user's system files and folders and then demands an online payment to the malware creator to remove the restrictions?",
+    "options": [
+      "A. Keyloggers",
+      "B. Worms",
+      "C. Ransomware",
+      "D. Virus"
+    ],
+    "correct_index": "C",
+    "explanation": "Ransomware encrypts files and demands payment for decryption."
+  },
+  {
+    "question_number": 2,
+    "question": "David, a professional hacker, has created an advertisement for an electronic product embedded with malicious program and published it on a trusted website. Whenever the visitors of that website click on the advertisement to view the product details, the malware automatically gets installed on their system. In which of the following ways did David install malware on the victims' system?",
+    "options": [
+      "A. Black hat search engine optimization",
+      "B. Drive-by downloads",
+      "C. Malvertising",
+      "D. Spear-phishing sites"
+    ],
+    "correct_index": "C",
+    "explanation": "Malvertising uses malicious advertisements to distribute malware."
+  },
+  {
+    "question_number": 3,
+    "question": "Bob, a college student, was curious about learning hacking concepts. With the mediocre knowledge, he used a free online tool to hack his college website. Bob was unable to compromise the website as it was protected using strong security controls. Which of the following categories of threats was demonstrated in the above scenario?",
+    "options": [
+      "A. Structured external threats",
+      "B. Unstructured external threats",
+      "C. Natural threats",
+      "D. Unintentional threats"
+    ],
+    "correct_index": "B",
+    "explanation": "Unstructured threats are typically carried out by less skilled individuals using readily available tools."
+  },
+  {
+    "question_number": 4,
+    "question": "Cooper, a malware programmer, has developed a potentially unwanted application (PUA) to infect the systems. This application pops-up when a user is browsing the infected website and issues bogus reminders regarding outdated software and lures the user to click on it for further activities. Which of the following types of PUA has Cooper developed in the above scenario?",
+    "options": [
+      "A. Torrent",
+      "B. Dialers",
+      "C. Adware",
+      "D. Cryptomining"
+    ],
+    "correct_index": "C",
+    "explanation": "Adware displays unwanted advertisements, often through pop-ups."
+  },
+  {
+    "question_number": 5,
+    "question": "Identify the threat actors who work both offensively and defensively at various times, which means that they help hackers find various vulnerabilities, at the same time, help vendors improve products by checking their limitations.",
+    "options": [
+      "A. Gray hats",
+      "B. Black hats",
+      "C. White hats",
+      "D. Suicide hackers"
+    ],
+    "correct_index": "A",
+    "explanation": "Gray hats operate in a gray area, sometimes using their skills for offensive purposes without malicious intent but sometimes disclosing vulnerabilities publicly."
+  },
+  {
+    "question_number": 6,
+    "question": "Joseph, a security professional, was appointed to evaluate an attack initiated on the organization's network. He performed an overall assessment of the network to identify the cause. During this process, he identified outbound connections to Internet services and a few applications running with debugging enabled. Which of the following categories of vulnerabilities did Joseph identify in the above scenario?",
+    "options": [
+      "A. Buffer overflows",
+      "B. Operating system flaws",
+      "C. Misconfiguration",
+      "D. Design flaws"
+    ],
+    "correct_index": "C",
+    "explanation": "Outbound connections and debugging enabled are examples of misconfigurations."
+  },
+  {
+    "question_number": 7,
+    "question": "Rogers, an administrator, has installed new software on an employee's system and forgot to change the credentials provided by the software vendor. Robert, an attacker, on the other hand, browsed an online resource to obtain credentials provided by the software vendor and used those credentials to gain remote access to the employee's system to steal valuable data. Identify the type of vulnerability demonstrated in the above scenario.",
+    "options": [
+      "A. TCP protocol vulnerabilities",
+      "B. Operating system vulnerabilities",
+      "C. IP protocol vulnerabilities",
+      "D. Default password and settings"
+    ],
+    "correct_index": "D",
+    "explanation": "Using default credentials is a common security vulnerability."
+  },
+  {
+    "question_number": 8,
+    "question": "In which of the following phases of hacking does an attacker use spoofing technique to exploit the system and pretend to be a legitimate user to take control of the victim's machine?",
+    "options": [
+      "A. Gaining access",
+      "B. Scanning",
+      "C. Reconnaissance",
+      "D. Clearing tracks"
+    ],
+    "correct_index": "A",
+    "explanation": "Spoofing is used to gain unauthorized access."
+  },
+  {
+    "question_number": 9,
+    "question": "Lino, a professional hacker, targeted to crash Bluetooth-enabled mobile devices. Lino used an automated tool to flood the target devices with oversized ping packets causing a buffer overflow and system crash. Identify the type of Bluetooth attack performed by Lino in the above scenario.",
+    "options": [
+      "A. Bluesmacking",
+      "B. Bluejacking",
+      "C. BlueSniff",
+      "D. Bluebugging"
+    ],
+    "correct_index": "A",
+    "explanation": "Bluesmacking is a DoS attack targeting Bluetooth devices with oversized packets."
+  },
+  {
+    "question_number": 10,
+    "question": "John, a professional hacker, targets his opponent's website. He finds susceptible user inputs, injects malicious SQL code into the database, and tampers with critical information. Which of the following types of attack did John perform in the above scenario?",
+    "options": [
+      "A. Passive attack",
+      "B. Active attack",
+      "C. Close-in attack",
+      "D. Insider attack"
+    ],
+    "correct_index": "B",
+    "explanation": "SQL injection is an active attack because it directly modifies data."
+  },
+  {
+    "question_number": 11,
+    "question": "In which of the following types of network attacks does an attacker try to gain unauthorized access to a target network and remains undetected for a long period of time obtaining information such as classified documents, user credentials, and transaction information?",
+    "options": [
+      "A. Eavesdropping",
+      "B. Advanced persistent threats",
+      "C. Denial-of-service attack",
+      "D. MAC flooding"
+    ],
+    "correct_index": "B",
+    "explanation": "APTs (Advanced Persistent Threats) are characterized by long-term, stealthy access."
+  },
+  {
+    "question_number": 12,
+    "question": "In which of the following attacks does an attacker have complete access to the plaintext message including its encryption, and he/she can also modify the content of the message by making a series of interactive queries, selecting subsequent plaintext blocks based on the information from the previous encryption queries and functions?",
+    "options": [
+      "A. Ciphertext-only attack",
+      "B. Adaptive chosen-plaintext attack",
+      "C. Chosen-plaintext attack",
+      "D. Related-key attack"
+    ],
+    "correct_index": "B",
+    "explanation": "An adaptive chosen-plaintext attack allows the attacker to choose subsequent plaintexts based on the results of previous encryptions."
+  },
+  {
+    "question_number": 13,
+    "question": "Which of the following attacks is also known as a one-click attack and occurs when a hacker instructs a user's web browser to send a request to the vulnerable website through a malicious web page?",
+    "options": [
+      "A. Parameter tampering attack",
+      "B. Directory traversal attack",
+      "C. Cross-site request forgery attack",
+      "D. Secure sockets layer stripping"
+    ],
+    "correct_index": "C",
+    "explanation": "CSRF (Cross-Site Request Forgery) tricks a user's browser into making unwanted requests."
+  },
+  {
+    "question_number": 14,
+    "question": "Identify the technique in which an attacker uses pre-recorded messages and instructions resembling a legitimate financial institution to trick victims into providing bank account or credit card details for identity verification over the telephone.",
+    "options": [
+      "A. Shoulder surfing",
+      "B. Eavesdropping",
+      "C. Vishing",
+      "D. Dumpster diving"
+    ],
+    "correct_index": "C",
+    "explanation": "Vishing is phishing conducted over the phone."
+  },
+  {
+    "question_number": 15,
+    "question": "David purchased a smartphone online using his debit card. After making the payment online, David did not receive any transaction text message to his mobile. During non-working hours of bank, David accessed his net banking account and viewed all the transactions and the current balance details. Identify the type of information security element that allowed David to view his bank details in the above scenario.",
+    "options": [
+      "A. Confidentiality",
+      "B. Integrity",
+      "C. Availability",
+      "D. Non-repudiation"
+    ],
+    "correct_index": "C",
+    "explanation": "Availability ensures that information is accessible to authorized users when needed."
+  },
+  {
+    "question_number": 16,
+    "question": "Jace, a professional hacker, was appointed by an agency to perform a cyberattack against the rival company’s servers with the intention of making the services unavailable to their customers. Jace performed a DoS attack on the servers, but he could not make the services unavailable. Which of the following components of technical security controls protected the servers from the DoS attack?",
+    "options": [
+      "A. Network security devices",
+      "B. Auditing",
+      "C. Encryption and protocols",
+      "D. System access controls"
+    ],
+    "correct_index": "A",
+    "explanation": "Network security devices like firewalls and intrusion prevention systems can mitigate DoS attacks."
+  },
+  {
+    "question_number": 17,
+    "question": "Nicholas, an incident handling and response (IH&R) team member at an organization, was assigned with the responsibility to gather information on prevalent incidents and security issues, which can be later placed into the database of internal intelligence. Which of the following IH&R roles is Nicholas playing in the above scenario?",
+    "options": [
+      "A. Threat researcher",
+      "B. Forensic investigator",
+      "C. Incident coordinator",
+      "D. Internal auditor"
+    ],
+    "correct_index": "A",
+    "explanation": "A threat researcher gathers and analyzes threat intelligence."
+  },
+  {
+    "question_number": 18,
+    "question": "Which of the following components of NIST Cybersecurity Framework (CSF) offers a set of operations or activities that include industry standards, practices, guidelines, operations, functions, and results that help in attaining the desired security outcomes?",
+    "options": [
+      "A. Profiles",
+      "B. Tiers",
+      "C. Core",
+      "D. Implementation guidelines"
+    ],
+    "correct_index": "C",
+    "explanation": "The Core is the set of cybersecurity activities, outcomes, and references."
+  },
+  {
+    "question_number": 19,
+    "question": "Which of the following network defense approaches addresses attacks and threats that the preventive approach may have failed to avert, such as DoS and DDoS attacks?",
+    "options": [
+      "A. Proactive approach",
+      "B. Reactive approach",
+      "C. Retrospective approach",
+      "D. Preventive approach"
+    ],
+    "correct_index": "B",
+    "explanation": "A reactive approach responds to incidents after they occur."
+  },
+  {
+    "question_number": 20,
+    "question": "Identify the type of network defense approach, using which an organization can implement biometric techniques such as speech or facial recognition to block attackers from entering the premises.",
+    "options": [
+      "A. Preventive approach",
+      "B. Reactive approach",
+      "C. Retrospective approach",
+      "D. Proactive approach"
+    ],
+    "correct_index": "A",
+    "explanation": "Biometric authentication is a preventive measure to control physical access."
+  }
+]

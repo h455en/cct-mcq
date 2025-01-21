@@ -1,0 +1,242 @@
+[
+  {
+    "question_number": 21,
+    "question": "Which of the following functions of NIST Cybersecurity Framework (CSF) allows controlling the impact of critical cybersecurity events and the subdivisions of this function include communications, mitigation, response planning, analysis, and improvements?",
+    "options": [
+      "A. Identify",
+      "B. Protect",
+      "C. Detect",
+      "D. Respond"
+    ],
+    "correct_index": "D",
+    "explanation": "The \"Respond\" function focuses on actions taken during and after a cybersecurity event."
+  },
+  {
+    "question_number": 22,
+    "question": "Rebecca, a security professional, was instructed to limit employees' access to critical resources. For this purpose, she implemented an access principle that provides permission to access only necessary resources that are required for their job tasks. The permissions can be extended later based on changes in their job roles. Identify the access principle implemented by Rebecca in the above scenario.",
+    "options": [
+      "A. Separation of duties (SoD)",
+      "B. Need-to-know",
+      "C. Principle of least privilege (POLP)",
+      "D. Rule-based access control"
+    ],
+    "correct_index": "C",
+    "explanation": "The principle of least privilege grants only the necessary access rights."
+  },
+  {
+    "question_number": 23,
+    "question": "Vincent, a security professional, was hired by an organization to update and make configuration changes to their existing systems. For this purpose, he was provided with a type of account that contains elevated privileges to perform administrative activities such as installing and uninstalling applications or system software. Which of the following types of account was provided to Vincent in the above scenario?",
+    "options": [
+      "A. User account",
+      "B. Guest account",
+      "C. Root account",
+      "D. Default account"
+    ],
+    "correct_index": "C",
+    "explanation": "A root (or administrator) account has elevated privileges."
+  },
+  {
+    "question_number": 24,
+    "question": "Identify the access control principle that ensures that no single individual has the authorization rights to perform all functions and simultaneously denies access of all the objects to a single individual.",
+    "options": [
+      "A. Principle of highest privilege (POHP)",
+      "B. Separation of duties (SoD)",
+      "C. Need-to-know principle",
+      "D. Discretionary access control"
+    ],
+    "correct_index": "B",
+    "explanation": "Separation of duties prevents any single person from having too much control."
+  },
+  {
+    "question_number": 25,
+    "question": "Adam, a security specialist at an organization, was tasked with implementing an authentication mechanism for their employees. He employed an authentication mechanism that scans the facial features of employees and compares them with the patterns stored in the database. Identify the authentication method implemented by Adam in the above scenario.",
+    "options": [
+      "A. Password authentication",
+      "B. Single sign-on authentication",
+      "C. Biometric authentication",
+      "D. Two-factor authentication"
+    ],
+    "correct_index": "C",
+    "explanation": "Facial recognition is a form of biometric authentication."
+  },
+  {
+    "question_number": 26,
+    "question": "Which of the following types of accounts are the default accounts of operating systems and run with the least privileges, with permissions such as running applications and creating and manipulating files that belong to their profile?",
+    "options": [
+      "A. User accounts",
+      "B. Guest accounts",
+      "C. Root accounts",
+      "D. Privileged accounts"
+    ],
+    "correct_index": "A",
+    "explanation": "Standard user accounts have limited privileges."
+  },
+  {
+    "question_number": 27,
+    "question": "Ryder, an employee at a software company, needs to log in every day before starting his work. The company has a separate HR portal for maintaining employee attendance details. Every day, Ryder accesses the portal, provides his credentials, and logs in before starting his work. Identify the authentication method demonstrated in the above scenario.",
+    "options": [
+      "A. Smart card authentication",
+      "B. Biometric authentication",
+      "C. Password authentication",
+      "D. Two-factor authentication"
+    ],
+    "correct_index": "C",
+    "explanation": "Providing credentials (username/password) is password authentication."
+  },
+  {
+    "question_number": 28,
+    "question": "James, a network administrator, was assigned a task to create a standard access control model for the organization's confidential data. He implemented an access control model that determines the usage and access policies for the users. After its implementation, only users with appropriate access rights can access the resource. Which of the following access control models has James implemented in the above scenario?",
+    "options": [
+      "A. Mandatory access control (MAC)",
+      "B. Discretionary access control (DAC)",
+      "C. Role-based access control (RBAC)",
+      "D. Rule-based access control (RB-RBAC)"
+    ],
+    "correct_index": "C",
+    "explanation": "RBAC assigns permissions based on roles within the organization."
+  },
+  {
+    "question_number": 29,
+    "question": "Which of the following activities of configuration management involves setting directions, expectations, strategies, and preparing formal documentation of the requirements and basic procedures for precise configuration management?",
+    "options": [
+      "A. Configuration status accounting",
+      "B. Configuration management and planning",
+      "C. Configuration verification and audit",
+      "D. Configuration identification"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "Configuration management and planning sets the overall strategy and documentation."
+  },
+  {
+    "question_number": 30,
+    "question": "Which of the following types of threat intelligence is collected from proactively established security infrastructure or by employing various threat manipulation techniques to lure and trap threats?",
+    "options": [
+      "A. Open-source intelligence (OSINT)",
+      "B. Cyber counterintelligence (CCI)",
+      "C. Indicators of compromise (IoCs)",
+      "D. Signals intelligence (SIGINT)"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "Cyber counterintelligence involves actively seeking out and gathering information on threats."
+  },
+  {
+    "question_number": 31,
+    "question": "Which of the following types of threat intelligence provides information about an attacker’s resources that were used to perform an attack, such as command/control channels and tools, and has a shorter lifespan than other types of intelligence?",
+    "options": [
+      "A. Operational threat intelligence",
+      "B. Tactical threat intelligence",
+      "C. Technical threat intelligence",
+      "D. Strategic threat intelligence"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "Tactical intelligence focuses on immediate threats and attack techniques."
+  },
+  {
+    "question_number": 32,
+    "question": "Which of the following rules must an ethical hacker follow while performing an investigation process to fulfill their ethical and moral obligations?",
+    "options": [
+      "A. Gain unauthorized access to perform the test",
+      "B. Follow a disclosure agreement with the client",
+      "C. Perform the test beyond the agreed-upon limits",
+      "D. Have a signed contract providing the tester permission to perform the test"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "A signed contract establishes clear authorization for the testing."
+  },
+  {
+    "question_number": 33,
+    "question": "In a type of threat hunting, enterprises are required to prioritize hunting operations to enhance the success rate. This type of threat hunting also helps in initiating hunts over critical assets with high risk and protects network resources and other intellectual properties. Identify the type of threat hunting described above.",
+    "options": [
+      "A. Hybrid hunting",
+      "B. Data-driven hunting",
+      "C. Entity-driven hunting",
+      "D. TTP-driven hunting"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "Entity-driven hunting focuses on specific assets or users deemed high-risk."
+  },
+  {
+    "question_number": 34,
+    "question": "Which of the following types of vulnerability assessment involves conducting a configuration-level check to identify possible vulnerabilities in system configurations, user directories, file systems, registry settings, and other parameters to evaluate the chances of compromise?",
+    "options": [
+      "A. Wireless network assessment",
+      "B. Host-based assessment",
+      "C. Database assessment",
+      "D. Manual assessment"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "Host-based assessments examine individual systems and their configurations."
+  },
+  {
+    "question_number": 35,
+    "question": "Identify the strategy applied in software design to permit a system to continue functioning even in the presence of faults by enhancing its robustness.",
+    "options": [
+      "A. Fault tolerance",
+      "B. Fault detection",
+      "C. Fault removal",
+      "D. Fault avoidance"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "Fault tolerance allows a system to continue operating despite failures."
+  },
+  {
+    "question_number": 36,
+    "question": "Identify the Software Security Framework (SSF) domain in which organizations consider “attack models” for understanding, measuring, and planning a software security initiative.",
+    "options": [
+      "A. Deployment",
+      "B. Governance",
+      "C. Intelligence",
+      "D. SSDL touchpoints"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "Governance establishes the framework for security initiatives, including considering attack models."
+  },
+  {
+    "question_number": 37,
+    "question": "Identify the tier of a secure application development lifecycle in which the application is deployed to a real-time environment to allow access to end users and provide all the resources required to run the application.",
+    "options": [
+      "A. Development",
+      "B. Staging",
+      "C. Production",
+      "D. Testing"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "The production environment is where the live application resides."
+  },
+  {
+    "question_number": 38,
+    "question": "An organization has partnered with a third-party web application vendor to provide a solution for its employees to download pay slips from an online application. The vendor developed an application with multiple features to allow the concerned department to upload employees' financial related data, such as monthly pay slips and tax details, on the application portal so that an employee can access their data through a valid login. Identify the impact of a successful application-level attack, if an attacker attempts to compromise any of the employees' profiles in the above scenario.",
+    "options": [
+      "A. Minimizes fraudulent transaction",
+      "B. Damages reputation",
+      "C. Protects business information",
+      "D. Ensures financial security"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "Compromising employee data can severely damage the organization's reputation."
+  },
+  {
+    "question_number": 39,
+    "question": "Which of the following tools assists security professionals from the initial mapping and analysis of an application’s attack surface to the identification and exploitation of security vulnerabilities?",
+    "options": [
+      "A. Burp Suite",
+      "B. ophcrack",
+      "C. EMC NetWorker",
+      "D. Nagios"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "Burp Suite is a comprehensive web application security testing tool."
+  },
+  {
+    "question_number": 40,
+    "question": "Which of the following Software Assurance Maturity Model (SAMM) functions assesses the management of application security in an organization?",
+    "options": [
+      "A. Verification",
+      "B. Deployment",
+      "C. Governance",
+      "D. Construction"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "Governance in SAMM focuses on the management and strategy of application security."
+  }
+]

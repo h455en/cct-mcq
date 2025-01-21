@@ -1,0 +1,243 @@
+[
+  {
+    "question_number": 101,
+    "question": "Which of the following Wireshark menus contains options to display various statistic windows including media analysis, flow diagrams, and display protocol hierarchy statistics?",
+    "options": [
+      "A. Statistics",
+      "B. Capture",
+      "C. Analyze",
+      "D. Help"
+    ],
+    "correct_index": "A",
+    "explanation": "The Statistics menu is where you find various statistical views of captured network data."
+  },
+  {
+    "question_number": 102,
+    "question": "Which of the following Linux commands helps security specialists search for a specific string in a file?",
+    "options": [
+      "A. grep command",
+      "B. more command",
+      "C. less command",
+      "D. cat command"
+    ],
+    "correct_index": "A",
+    "explanation": "grep (Global Regular Expression Print) is used for searching text using patterns."
+  },
+  {
+    "question_number": 103,
+    "question": "Which of the following tools aggregates and analyzes log data, provides insights to quickly detect and respond to internal and external attacks, and simplifies threat management?",
+    "options": [
+      "A. Splunk",
+      "B. 7Zip",
+      "C. KeePass",
+      "D. Cryptoforge"
+    ],
+    "correct_index": "A",
+    "explanation": "Splunk is a widely used Security Information and Event Management (SIEM) tool for log management and analysis."
+  },
+  {
+    "question_number": 104,
+    "question": "Leon, a network administrator at an organization, was auditing logged data on David's official system from a remote location. In this process, Leon observed a suspicious entry in the log indicating that Microsoft Excel program was corrupted when David was trying to access it. Identify the type of logs audited by Leon in the above scenario.",
+    "options": [
+      "A. Application event log",
+      "B. Security event log",
+      "C. Setup event log",
+      "D. System event log"
+    ],
+    "correct_index": "A",
+    "explanation": "Application logs record events related to specific applications, such as Excel in this case."
+  },
+  {
+    "question_number": 105,
+    "question": "Which of the following Linux commands assists security professionals retrieve the last n number of characters from a given file?",
+    "options": [
+      "A. tail [-c] [n][filename]",
+      "B. tail [-n] [filename]",
+      "C. head [-n] [filename]",
+      "D. head [-c] [n][filename]"
+    ],
+    "correct_index": "A",
+    "explanation": "tail -c displays the last *characters*. tail -n displays the last *lines*."
+  },
+  {
+    "question_number": 106,
+    "question": "Identify the type of logging that concentrates on identifying and responding to activities such as threats, viruses, malware, and data loss.",
+    "options": [
+      "A. Security logging",
+      "B. Operational logging",
+      "C. Compliance logging",
+      "D. Application debug logging"
+    ],
+    "correct_index": "A",
+    "explanation": "Security logging focuses on security-related events."
+  },
+  {
+    "question_number": 107,
+    "question": "Which of the following Linux commands displays the first 10 lines from a given text file by default?",
+    "options": [
+      "A. head",
+      "B. tail",
+      "C. less",
+      "D. cat"
+    ],
+    "correct_index": "A",
+    "explanation": "head shows the beginning of a file (10 lines by default)."
+  },
+  {
+    "question_number": 108,
+    "question": "Which of the following types of information stored in Windows event log is a set of tags that define a type of event such as AuditFailure, AuditSuccess, Classic, Correlation Hint, Response Time, SQM, WDI Context, and WDI Diag?",
+    "options": [
+      "A. Level",
+      "B. Keywords",
+      "C. Operational code",
+      "D. Computer"
+    ],
+    "correct_index": "B",
+    "explanation": "Keywords are tags that categorize events."
+  },
+  {
+    "question_number": 109,
+    "question": "Travis, a security professional at an organization, was handling an incident that had occurred on the organization's intranet. In this process, he verified the incident response plan (IRP) to know the required activities to be performed based on the incident in order to prevent further damage to the organization. Identify the element of IRP that assisted Travis in preventing further damage in the above scenario.",
+    "options": [
+      "A. Escalation procedures",
+      "B. Contacts of IH&R team",
+      "C. Containment actions",
+      "D. Procedure for reporting"
+    ],
+    "correct_index": "C",
+    "explanation": "Containment actions are designed to limit the scope and impact of an incident."
+  },
+  {
+    "question_number": 110,
+    "question": "Identify the team that consists of a group of individuals who possess the skills to detect and analyze security incidents.",
+    "options": [
+      "A. Physical security staff",
+      "B. Information security team",
+      "C. IR custodians",
+      "D. Attorney"
+    ],
+    "correct_index": "B",
+    "explanation": "The information security team (or a dedicated incident response team) handles security incidents."
+  },
+  {
+    "question_number": 111,
+    "question": "Identify the incident triage step that involves gathering all required information to determine incident category, time required for resolving, and other criteria.",
+    "options": [
+      "A. Incident classification",
+      "B. Incident prioritization",
+      "C. Incident analysis and validation",
+      "D. Incident impact assessment"
+    ],
+    "correct_index": "C",
+    "explanation": "Analysis and validation involves gathering information to understand the incident."
+  },
+  {
+    "question_number": 112,
+    "question": "In which of the following IH&R steps do IH&R personnel perform activities such as incident documentation, incident impact analysis, policy review and revision, and incident disclosure?",
+    "options": [
+      "A. Notification",
+      "B. Containment",
+      "C. Eradication",
+      "D. Post-incident activities"
+    ],
+    "correct_index": "D",
+    "explanation": "These activities occur after the incident has been handled."
+  },
+  {
+    "question_number": 113,
+    "question": "Identify the individual who oversees all IR activities in an organization and is responsible for how the IH&R team functions.",
+    "options": [
+      "A. IR custodians",
+      "B. IT staff",
+      "C. PR specialist",
+      "D. IR officer"
+    ],
+    "correct_index": "D",
+    "explanation": "The IR officer (or incident response manager) leads the incident response effort."
+  },
+  {
+    "question_number": 114,
+    "question": "Identify the post-incident activity in which organizations share incident details to the respective stakeholders after consulting with the legal department.",
+    "options": [
+      "A. Incident disclosure",
+      "B. Incident impact assessment",
+      "C. Review and revise policies",
+      "D. Close the investigation"
+    ],
+    "correct_index": "A",
+    "explanation": "Incident disclosure involves communicating details about the incident."
+  },
+  {
+    "question_number": 115,
+    "question": "In which of the following steps of the IH&R process do incident handlers alert the service providers, developers, and manufacturers about the affected resources?",
+    "options": [
+      "A. Notification",
+      "B. Incident containment",
+      "C. Eradication",
+      "D. Recovery"
+    ],
+    "correct_index": "A",
+    "explanation": "Notification involves informing relevant parties."
+  },
+  {
+    "question_number": 116,
+    "question": "Leonidas, a forensic expert, was investigating an active computer that was executing various processes. Leonidas wanted to check whether this system was used in an incident that had occurred earlier. He started inspecting and gathering the contents of RAM, cache, and DLLs to identify incident signatures. Which of the following data acquisition methods has Leonidas initiated in the above scenario?",
+    "options": [
+      "A. Non-volatile data acquisition",
+      "B. Live data acquisition",
+      "C. Dead data acquisition",
+      "D. None of these"
+    ],
+    "correct_index": "B",
+    "explanation": "Live acquisition involves collecting data from a running system."
+  },
+  {
+    "question_number": 117,
+    "question": "Kendrick, a forensic investigator, was able to retrieve evidence from a device by recognizing the information of the card and the user through the level of access, configurations, and permissions. Identify the device utilized by Kendrick to obtain the evidence.",
+    "options": [
+      "A. Thumb drive",
+      "B. Surveillance camera",
+      "C. Biometric scanner",
+      "D. Router"
+    ],
+    "correct_index": "C",
+    "explanation": "Biometric scanners identify individuals based on unique physical characteristics, which are tied to access levels and permissions."
+  },
+  {
+    "question_number": 118,
+    "question": "Kas",
+    "options": [
+      "hton, a certified forensic expert, built a forensic lab for conducting a computer-based investigation. To make the investigation processes effective, he recruited experienced individuals and experts. Kashton then assigned job roles to each team member. Which of the following considerations is illustrated in the above scenario?",
+      "A. Human resource considerations",
+      "B. Physical and structural design considerations",
+      "C. Work area considerations",
+      "D. Physical security considerations"
+    ],
+    "correct_index": "A",
+    "explanation": "Recruiting and assigning roles relates to human resources."
+  },
+  {
+    "question_number": 119,
+    "question": "Which of the following is a legal document that demonstrates the progression of evidence as it travels from the original evidence location to the forensic laboratory?",
+    "options": [
+      "A. Chain of custody",
+      "B. Security policy",
+      "C. Risk management",
+      "D. Disaster recovery plan"
+    ],
+    "correct_index": "A",
+    "explanation": "The chain of custody documents the handling and control of evidence."
+  },
+  {
+    "question_number": 120,
+    "question": "Which of the following types of logs uses an audit trail to store data related to failed logins, passwords, resources accessed and allocated, date/time, and user identity?",
+    "options": [
+      "A. Security logs",
+      "B. Network logs",
+      "C. DNS logs",
+      "D. Web access logs"
+    ],
+    "correct_index": "A",
+    "explanation": "Security logs specifically track security-related events like logins and access attempts."
+  }
+]

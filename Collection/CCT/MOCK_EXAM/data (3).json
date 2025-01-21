@@ -1,0 +1,234 @@
+[
+  {
+    "question_number": 61,
+    "question": "Which of the following mobile device security challenges includes the loss or theft of a mobile device owing to their portability and lightweight?",
+    "options": [
+      "A. Network-based risks and challenges",
+      "B. Physical risks and challenges",
+      "C. Application-based risks and challenges",
+      "D. System-based risks and challenges"
+    ],
+    "correct_index": "B",
+    "explanation": "Loss and theft are physical risks."
+  },
+  {
+    "question_number": 62,
+    "question": "Martin, a system administrator, was instructed to provide secure corporate data access to employees on their mobile devices within the enterprise. For this purpose, Martin employed a security solution that provides secure file storage and file sharing services and also enables easy and secure sharing of information between devices within the enterprise. Identify the security solution employed by Martin in the above scenario.",
+    "options": [
+      "A. Push notification services",
+      "B. Mobile content management",
+      "C. Context-aware authentication",
+      "D. Mobile email management"
+    ],
+    "correct_index": "B",
+    "explanation": "Mobile Content Management (MCM) focuses on secure file storage and sharing."
+  },
+  {
+    "question_number": 63,
+    "question": "Which of the following policies allows employees to use and manage the devices purchased by the organization and helps organizations solve regulatory and legal issues associated with deleting data on lost/stolen mobile devices?",
+    "options": [
+      "A. Bring your own device (BYOD)",
+      "B. Choose your own device (CYOD)",
+      "C. Corporate owned, personally enabled (COPE)",
+      "D. Company owned, business only (COBO)"
+    ],
+    "correct_index": "C",
+    "explanation": "COPE devices are owned by the company but allowed for some personal use."
+  },
+  {
+    "question_number": 64,
+    "question": "Preston, an employee at an organization, was using his mobile device for enterprise purposes. The mobile device contained a vulnerable program that looked like a legitimate browsing app, which was downloaded from a third-party website. The vulnerable program was exploited by an attacker to gain remote access and steal sensitive data. Identify the mobile device security risk demonstrated in the above scenario.",
+    "options": [
+      "A. Physical risks",
+      "B. Network-based risks",
+      "C. System-based risks",
+      "D. Application-based risks"
+    ],
+    "correct_index": "D",
+    "explanation": "The vulnerable app is an application-based risk."
+  },
+  {
+    "question_number": 65,
+    "question": "###############",
+    "options": [
+      ""
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "_Explanation not provided_"
+  },
+  {
+    "question_number": 66,
+    "question": "In which of the following layers of the IoT architecture, the edge processing enhances security by processing the data, packing the data into separate packets, and sending the data securely to the desired location?",
+    "options": [
+      "A. Process layer",
+      "B. Device layer",
+      "C. Communication layer",
+      "D. Cloud layer"
+    ],
+    "correct_index": "B",
+    "explanation": "Edge processing occurs at the device level, closest to the data source. This is where data is pre-processed, potentially encrypted, and packaged before transmission."
+  },
+  {
+    "question_number": 67,
+    "question": "Which of the following is a networking protocol that is used for clock synchronization between computer systems over packet-switched and variable-latency data networks?",
+    "options": [
+      "A. NTP",
+      "B. SuiteLink",
+      "C. DNS/DNSSEC",
+      "D. SOAP"
+    ],
+    "correct_index": "A",
+    "explanation": "NTP (Network Time Protocol) is specifically designed for clock synchronization across networks."
+  },
+  {
+    "question_number": 68,
+    "question": "Which of the following technologies is an ISO standard lightweight protocol used to transmit messages for long-range wireless communication and helps in establishing connections to remote locations via satellite links?",
+    "options": [
+      "A. MQTT",
+      "B. VSAT",
+      "C. Cellular",
+      "D. LPWAN"
+    ],
+    "correct_index": "D",
+    "explanation": "LPWAN (Low-Power Wide-Area Network) technologies are designed for long-range, low-power communication, often used in IoT and can be used with satellite links. VSAT (Very Small Aperture Terminal) is a satellite communication technology itself, not a protocol. While MQTT is used in IoT, it is not specifically designed for long-range or satellite communication."
+  },
+  {
+    "question_number": 69,
+    "question": "Which of the following layers of the IoT architecture provides information dashboards for administrators to monitor, analyze, and implement proactive decisions?",
+    "options": [
+      "A. Cloud layer",
+      "B. Process layer",
+      "C. Communication layer",
+      "D. Device layer"
+    ],
+    "correct_index": "A",
+    "explanation": "The cloud layer is where data is aggregated, analyzed, and visualized, providing the basis for dashboards and decision-making."
+  },
+  {
+    "question_number": 70,
+    "question": "Which of the following security controls can be used to protect the IT/OT environment at the Purdue level 0 (physical process)?",
+    "options": [
+      "A. MAC authentication",
+      "B. Communication encryption using IPsec",
+      "C. Anti-DoS solutions",
+      "D. Sandboxing"
+    ],
+    "correct_index": "D",
+    "explanation": "At Level 0, the focus is on physical security and preventing unauthorized access to physical devices. Sandboxing isolates processes to prevent them from affecting the physical process. While the others are important security controls, they are more applicable at higher levels of the Purdue model."
+  },
+  {
+    "question_number": 71,
+    "question": "Which of the following levels of the Purdue model is known as a corporate level network where Internet connectivity and management can be handled to allow smooth business operations such as B2B and B2C services?",
+    "options": [
+      "A. Level 5 (enterprise network)",
+      "B. Level 3 (operational systems/site operations)",
+      "C. Level 1 (basic controls/intelligent devices)",
+      "D. Level 0 (physical process)"
+    ],
+    "correct_index": "A",
+    "explanation": "Level 5 is the enterprise level, where typical IT functions like business applications, email, and internet connectivity reside."
+  },
+  {
+    "question_number": 72,
+    "question": "Stevie, a book worm, had purchased a new comic book from a store. As she does not like to hold cash in her wallet, she scanned her Wi-Fi card against the card swipe machine to complete the transaction Identify the type of short-range wireless communication technology demonstrated in the above scenario.",
+    "options": [
+      "A. NFC",
+      "B. Li-Fi",
+      "C. RFID",
+      "D. Z-Wave"
+    ],
+    "correct_index": "A",
+    "explanation": "NFC (Near Field Communication) is commonly used for contactless payments and card swipes. RFID is a broader category, and while NFC is a type of RFID, NFC is the most specific and appropriate answer in this context."
+  },
+  {
+    "question_number": 73,
+    "question": "-",
+    "options": [],
+    "correct_index": "_not provided_",
+    "explanation": "_Explanation not provided_"
+  },
+  {
+    "question_number": 74,
+    "question": "In which of the following types of blockchains does a supervisor or central authority decide who can join and participate in the blockchain network and only the members involved in a transaction will have knowledge about the corresponding ledgers?",
+    "options": [
+      "A. Private blockchain",
+      "B. Public blockchain",
+      "C. Public ledger",
+      "D. Consortium blockchain"
+    ],
+    "correct_index": "A",
+    "explanation": "Private blockchains are permissioned, meaning access is controlled by a central authority."
+  },
+  {
+    "question_number": 75,
+    "question": "Which of the following keys is used by the recipient to decrypt a message encrypted using asymmetric encryption algorithm?",
+    "options": [
+      "A. Receiver's public key",
+      "B. Sender's private key",
+      "C. Receiver's private key",
+      "D. Sender's public key"
+    ],
+    "correct_index": "C",
+    "explanation": "In asymmetric encryption, the recipient's private key is used to decrypt messages encrypted with their public key."
+  },
+  {
+    "question_number": 76,
+    "question": "Identify the trust model used in PGP-, OpenPGP-, and GnuPG-accessible systems that is based on the idea of decentralizing key distribution among PGP users and everyone in the network is a CA and can sign for other trusted entities.",
+    "options": [
+      "A. Peer-to-peer trust model",
+      "B. Hierarchical trust model",
+      "C. Hybrid trust model",
+      "D. Web of trust"
+    ],
+    "correct_index": "D",
+    "explanation": "PGP uses a web of trust, where users vouch for the authenticity of each other's public keys."
+  },
+  {
+    "question_number": 77,
+    "question": "Which of the following algorithms is a NIST specification for the symmetric encryption of electronic data and has a 128-bit block size, having key sizes of 128, 192, and 256 bits, respectively?",
+    "options": [
+      "A. AES",
+      "B. ECC",
+      "C. DSA",
+      "D. RSA"
+    ],
+    "correct_index": "A",
+    "explanation": "AES (Advanced Encryption Standard) is a symmetric block cipher with the specified characteristics."
+  },
+  {
+    "question_number": 78,
+    "question": "Which of the following hash functions generates an output of size 128 bits?",
+    "options": [
+      "A. MD5",
+      "B. SHA-0",
+      "C. SHA-1",
+      "D. SHA-3"
+    ],
+    "correct_index": "A",
+    "explanation": "MD5 produces a 128-bit hash value."
+  },
+  {
+    "question_number": 79,
+    "question": "Which of the following is a cryptographic technique that protects previously encrypted session data against unintended decryption, even if the private key of the server is compromised and employs key exchanging algorithms such as Diffie–Hellman key exchange to generate a unique session key?",
+    "options": [
+      "A. PFS",
+      "B. AEAD",
+      "C. DES",
+      "D. DSA"
+    ],
+    "correct_index": "A",
+    "explanation": "Perfect Forward Secrecy (PFS) ensures that past sessions remain secure even if long-term keys are compromised."
+  },
+  {
+    "question_number": 80,
+    "question": "Maximus sends a secret message to his friend that is encrypted with a classical cipher. The cipher technique used by Maximus rearranges the letters in the plaintext according to a regular system to produce the ciphertext. Which of the following types of ciphers has Maximus used in the above scenario?",
+    "options": [
+      "A. Transposition cipher",
+      "B. Substitution cipher",
+      "C. Block cipher",
+      "D. Stream cipher"
+    ],
+    "correct_index": "A",
+    "explanation": "Transposition ciphers rearrange the order of characters, while substitution ciphers replace characters with other characters."
+  }
+]

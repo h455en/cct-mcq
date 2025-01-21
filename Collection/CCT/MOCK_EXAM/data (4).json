@@ -1,0 +1,242 @@
+[
+  {
+    "question_number": 81,
+    "question": "Which of the following data destroying methods uses a hydraulic process to reduce the data objects or documents to shards and loose fibers?",
+    "options": [
+      "A. Pulping",
+      "B. Pulverizing",
+      "C. Disintegration",
+      "D. Shredding"
+    ],
+    "correct_index": "A",
+    "explanation": "Pulping involves turning paper into a slurry, effectively destroying the data."
+  },
+  {
+    "question_number": 82,
+    "question": "Identify the type of data backup that backups only files that have been changed or created after the last backup are copied to the backup media.",
+    "options": [
+      "A. Differential backup",
+      "B. Full backup",
+      "C. Incremental backup",
+      "D. Normal backup"
+    ],
+    "correct_index": "C",
+    "explanation": "Incremental backups only back up changes since the *last* backup (full or incremental)."
+  },
+  {
+    "question_number": 83,
+    "question": "Which of the following is a mutual agreement between an organization and a third party when they decide to connect their IT systems, and it works as an MOU for security risk awareness and implementing security controls?",
+    "options": [
+      "A. Interconnection security agreement",
+      "B. Data sharing and usage agreement",
+      "C. Service-level agreement",
+      "D. Confidentiality and non-disclosure agreement"
+    ],
+    "correct_index": "A",
+    "explanation": "An Interconnection Security Agreement (ISA) specifically addresses security concerns related to connecting different IT systems."
+  },
+  {
+    "question_number": 84,
+    "question": "In which of the following states of data is it considered inactive and is stored on a device or a backup medium such as hard drives, laptops, backup tapes, mobile devices, or at an offsite cloud backup?",
+    "options": [
+      "A. Data at rest",
+      "B. Data in use",
+      "C. Data in transit",
+      "D. Data in progress"
+    ],
+    "correct_index": "A",
+    "explanation": "Data at rest is data that is stored and not actively being used."
+  },
+  {
+    "question_number": 85,
+    "question": "Which of the following RAID levels blocks the interleaved distributed parity and includes a block-level striping with a distributed parity?",
+    "options": [
+      "A. RAID Level 0",
+      "B. RAID Level 1",
+      "C. RAID Level 10",
+      "D. RAID Level 5"
+    ],
+    "correct_index": "D",
+    "explanation": "RAID 5 uses block-level striping with distributed parity."
+  },
+  {
+    "question_number": 86,
+    "question": "In which of the following techniques the data in individual columns is randomly interchanged and the output appears to be real but does not disclose any sensitive information?",
+    "options": [
+      "A. Shuffling",
+      "B. Lookup substitution",
+      "C. Nulling out or deletion",
+      "D. Number and date variance"
+    ],
+    "correct_index": "A",
+    "explanation": "Shuffling (or permutation) reorders data within a column, preserving statistical properties while obscuring individual values."
+  },
+  {
+    "question_number": 87,
+    "question": "Which of the following practices should be adopted by security teams to successfully implement DLP solutions?",
+    "options": [
+      "A. Implement DLP with a maximum base",
+      "B. Enhance the DLP policies to support effective DLP operations",
+      "C. Never eliminate false positives",
+      "D. Never evaluate the DLP vendors"
+    ],
+    "correct_index": "B",
+    "explanation": "Effective DLP relies on well-defined and regularly updated policies."
+  },
+  {
+    "question_number": 88,
+    "question": "Identify the command-line utility that helps network administrators retrieve all current TCP/IP network configuration values along with the IP address, subnet mask, and default gateway for all adapters.",
+    "options": [
+      "A. ipconfig",
+      "B. dnsenum",
+      "C. traceroute",
+      "D. arp"
+    ],
+    "correct_index": "A",
+    "explanation": "ipconfig (or ipconfig /all for more detail) displays TCP/IP configuration information."
+  },
+  {
+    "question_number": 89,
+    "question": "Erick, a network administrator, was instructed to troubleshoot a network issue causing disruptions in service delivery. For this purpose, he employed a network troubleshooting utility to list out all the listening UDP connections on the host. Identify the netstat command executed by Erick in the above scenario.",
+    "options": [
+      "A. netstat -at",
+      "B. netstat -l",
+      "C. netstat -r",
+      "D. netstat –e"
+    ],
+    "correct_index": "B",
+    "explanation": "netstat -l lists listening sockets. To see UDP specifically you would use netstat -lu."
+  },
+  {
+    "question_number": 90,
+    "question": "Identify the network issues that occur due to traffic that exceeds the normal capacity of a network device and may result in abnormal network behavior or slow connectivity.",
+    "options": [
+      "A. Physical connection issues",
+      "B. Software issues",
+      "C. Traffic overload issues",
+      "D. Configuration issues"
+    ],
+    "correct_index": "C",
+    "explanation": "Traffic overload (or congestion) occurs when network traffic exceeds capacity."
+  },
+  {
+    "question_number": 91,
+    "question": "Which of the following tools is used to test whether an IP address or a website is accessible by a host and works by sending ICMP echo requests to the targeted host and waits for ICMP echo replies?",
+    "options": [
+      "A. tcpreplay",
+      "B. Ping",
+      "C. dnsenum",
+      "D. Arp"
+    ],
+    "correct_index": "B",
+    "explanation": "ping uses ICMP echo requests and replies."
+  },
+  {
+    "question_number": 92,
+    "question": "Which of the following nmap commands allows security administrators perform an ARP ping scan for discovering live hosts in the target network?",
+    "options": [
+      "A. nmap -sn -PR <IP address>",
+      "B. nmap -sn -PE <IP address range>",
+      "C. nmap -sT <IP address>",
+      "D. nmap -sS <IP address>"
+    ],
+    "correct_index": "A",
+    "explanation": "-PR specifically uses ARP ping."
+  },
+  {
+    "question_number": 93,
+    "question": "Which of the following ICMP messages is displayed on the source machine when the TTL value in the IP header of a data packet becomes ‘0' before reaching the destination?",
+    "options": [
+      "A. Unreachable networks",
+      "B. Destination unreachable message",
+      "C. Time exceeded message",
+      "D. IP parameter problem"
+    ],
+    "correct_index": "C",
+    "explanation": "A \"Time Exceeded\" message indicates that the TTL (Time To Live) has reached zero."
+  },
+  {
+    "question_number": 94,
+    "question": "Which of the following types of network issues occur due to faulty, shortened, or damaged cables in a network that may result in poor network connectivity?",
+    "options": [
+      "A. Physical connection issues",
+      "B. Software issues",
+      "C. Configuration issues",
+      "D. Traffic overload issues"
+    ],
+    "correct_index": "A",
+    "explanation": "Damaged cables are a physical layer problem."
+  },
+  {
+    "question_number": 95,
+    "question": "Samuel, a network defender at an organization, employed Wireshark for observing network activity. Samuel was reviewing multiple network-related statuses at a time by accessing multiple icons provided by Wireshark. Samuel wanted to speed up his analysis process using the quick access feature, which could assist him in quickly accessing the frequently used items from the menu. Which of the following Wireshark menu assisted Samuel in the above scenario for quick access?",
+    "options": [
+      "A. Main toolbar",
+      "B. Packet list panel",
+      "C. Help",
+      "D. Lua"
+    ],
+    "correct_index": "A",
+    "explanation": "The main toolbar provides quick access to frequently used Wireshark functions."
+  },
+  {
+    "question_number": 96,
+    "question": "Which of the following types of suspicious traffic signature indicates that an attacker is making sniffing, brute forcing, or password-cracking attempts to break into the network?",
+    "options": [
+      "A. Informational",
+      "B. Reconnaissance",
+      "C. Unauthorized access",
+      "D. Denial of service"
+    ],
+    "correct_index": "B",
+    "explanation": "Sniffing, brute-forcing, and password cracking are all reconnaissance activities aimed at gathering information before an attack."
+  },
+  {
+    "question_number": 97,
+    "question": "Which of the following advantages of network traffic monitoring will be achieved by establishing SLAs and compliance applicable to users or consumers by providing complete infrastructure information while drafting the SLA?",
+    "options": [
+      "A. Minimizing risk",
+      "B. Proactive",
+      "C. Utilization",
+      "D. Optimization"
+    ],
+    "correct_index": "B",
+    "explanation": "Establishing SLAs and compliance *proactively* helps define service levels and address potential issues before they become problems."
+  },
+  {
+    "question_number": 98,
+    "question": "Kane, a security professional at an organization, was instructed to secure the organization's network from malicious activities. For this reason, Kane employed Wireshark to observe Bluetooth and IEEE 802.11 statistics on the organization's network. Identify the Wireshark menu used by Kane in the above scenario.",
+    "options": [
+      "A. Go",
+      "B. Analyze",
+      "C. Wireless",
+      "D. Telephony"
+    ],
+    "correct_index": "B",
+    "explanation": "The Analyze menu in Wireshark contains options for analyzing various protocols, including wireless (though older versions might have a dedicated \"Wireless\" menu)."
+  },
+  {
+    "question_number": 99,
+    "question": "Which of the following traffic signatures may indicate that attackers are trying to launch denial-of-service attacks on the organization's network?",
+    "options": [
+      "A. Ping sweep attempts",
+      "B. Port scan attempts",
+      "C. Ping of death attempts",
+      "D. DNS query attempts"
+    ],
+    "correct_index": "C",
+    "explanation": "A \"Ping of Death\" is a specific type of attack attempting to overwhelm a system with oversized ICMP packets."
+  },
+  {
+    "question_number": 100,
+    "question": "Network traffic monitoring detects applications that consume the maximum bandwidth and helps in reducing bandwidth consumption. It manages server bottleneck situations and other systems connected to the network. Identify the advantage of monitoring network traffic based on the above statements.",
+    "options": [
+      "A. Minimizing risk",
+      "B. Optimization",
+      "C. Utilization",
+      "D. Proactive"
+    ],
+    "correct_index": "B",
+    "explanation": "Identifying and addressing bandwidth bottlenecks is network *optimization*."
+  }
+]

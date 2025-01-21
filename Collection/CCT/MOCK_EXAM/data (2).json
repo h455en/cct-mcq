@@ -1,0 +1,234 @@
+[
+  {
+    "question_number": 41,
+    "question": "Identify the area of automation in which continuous operations are performed after the completion of an integration process and software development teams are allowed to automate the development and testing processes in the software development lifecycle.",
+    "options": [
+      "A. Continuous deployment",
+      "B. Continuous validation",
+      "C. Continuous delivery",
+      "D. Continuous monitoring"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "Continuous delivery automates the release process, including deployment and testing."
+  },
+  {
+    "question_number": 42,
+    "question": "---",
+    "options": [],
+    "correct_index": "_not provided_",
+    "explanation": "_Explanation not provided_"
+  },
+  {
+    "question_number": 43,
+    "question": "Jesse, a programmer, wants to create an operating system instance that represents a real-time environment. He created an instance in the cloud that enables the user to control the system on the cloud and use any device to access it. The data and files are also stored in the cloud and can be accessed at any time. Which of the following types of virtualization has Jesse used in the above scenario?",
+    "options": [
+      "A. Operating system virtualization",
+      "B. Network virtualization",
+      "C. Server virtualization",
+      "D. Desktop virtualization"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "Desktop virtualization provides a virtual desktop environment accessible from any device."
+  },
+  {
+    "question_number": 44,
+    "question": "Which of the following elements of cloud security is responsible for securing shared infrastructure such as routers, switches, load balancers, firewalls, hypervisors, and directory services?",
+    "options": [
+      "A. Identity and access management",
+      "B. Cloud service consumer",
+      "C. Cloud service provider",
+      "D. Logging"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "The cloud service provider is responsible for securing the underlying infrastructure."
+  },
+  {
+    "question_number": 45,
+    "question": "An organization recently leased an online cloud service. Using this service, subscribers can develop rich, scalable containerized applications through the cloud or on-site data centers. Identify the type of cloud computing service deployed by the organization in the above scenario.",
+    "options": [
+      "A. SECaaS",
+      "B. CaaS",
+      "C. Iaas",
+      "D. IDaas"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "CaaS (Containers as a Service) provides container management and orchestration."
+  },
+  {
+    "question_number": 46,
+    "question": "Identify the type of virtualization approach in which the guest OS adopts the functionality of para virtualization and uses the virtual machine manager (VMM) for binary translation to different types of hardware resources.",
+    "options": [
+      "A. Full virtualization",
+      "B. OS-assisted virtualization",
+      "C. Hardware-assisted virtualization",
+      "D. Hybrid virtualization"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "Full virtualization uses binary translation to allow unmodified guest OSs to run. Para virtualization requires modifications to the guest OS."
+  },
+  {
+    "question_number": 47,
+    "question": "Identify the cloud security control that protects an application in a cloud environment from intentional or unintentional network downtimes by dividing servers into separate networks to enable the environment to handle failures in individual networks without losing data.",
+    "options": [
+      "A. Cloud application security",
+      "B. High availability across zones",
+      "C. Cloud integration and auditing",
+      "D. Instance awareness"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "High availability across zones (or availability zones) ensures redundancy and fault tolerance."
+  },
+  {
+    "question_number": 48,
+    "question": "Which of the following technologies is an advanced version of conventional cloud technology that is often used in solutions that require the processing of small and urgent operations within a timespan of milliseconds, where the gateway intelligence is performed within devices such as programmable automation controllers?",
+    "options": [
+      "A. Edge computing",
+      "B. Fog computing",
+      "C. Serverless computing",
+      "D. Docker networking"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "Edge computing processes data closer to the source, reducing latency."
+  },
+  {
+    "question_number": 49,
+    "question": "Identify the VM sprawl avoiding technique in which the network administrator tracks the VMs that are associated with a host or hypervisor clusters and can easily identify VMs that are not in service and disassociate them.",
+    "options": [
+      "A. Wipe out orphaned snapshots",
+      "B. Perform an audit",
+      "C. Protect idle resources",
+      "D. Identify appropriate sizes for VMs"
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "Auditing helps identify unused or orphaned VMs contributing to sprawl."
+  },
+  {
+    "question_number": 50,
+    "question": "--",
+    "options": [
+      ""
+    ],
+    "correct_index": "_not provided_",
+    "explanation": "_Explanation not provided_"
+  },
+  {
+    "question_number": 51,
+    "question": "In which of the following Wi-Fi authentication methods, each wireless station receives a shared secret key over a secure channel that is distinct from the 802.11 wireless network communication channels?",
+    "options": [
+      "A. Shared key authentication process",
+      "B. Open system authentication process",
+      "C. Centralized authentication server",
+      "D. Single sign-on authentication"
+    ],
+    "correct_index": "A",
+    "explanation": "Shared Key Authentication (now deprecated due to security weaknesses) involved pre-sharing a key out-of-band."
+  },
+  {
+    "question_number": 52,
+    "question": "Which of the following guidelines helps security professionals in choosing the appropriate locations for APs and in achieving the maximum coverage, performance, and speed?",
+    "options": [
+      "A. Avoid installing an AP on the ceiling",
+      "B. Keep the AP away from metal objects",
+      "C. Avoid placing APs in central locations",
+      "D. Mount an AP on a wall"
+    ],
+    "correct_index": "B",
+    "explanation": "Metal objects can interfere with Wi-Fi signals."
+  },
+  {
+    "question_number": 53,
+    "question": "Which of the following standards defines the quality of service (QoS) for wireless applications and maintains the quality of video and audio streaming, real-time online applications, and voice over Internet protocol (VoIP)?",
+    "options": [
+      "A. 802.11d",
+      "B. 802.11a",
+      "C. 802.11e",
+      "D. 802.11g"
+    ],
+    "correct_index": "C",
+    "explanation": "802.11e defines QoS enhancements for wireless networks."
+  },
+  {
+    "question_number": 54,
+    "question": "Which of the following is referred to as a place where wireless networks are available for public use and users can enable Wi-Fi on their devices to connect to the Internet?",
+    "options": [
+      "A. Bandwidth",
+      "B. Association",
+      "C. Hotspot",
+      "D. Service set identifier"
+    ],
+    "correct_index": "C",
+    "explanation": "A hotspot is a public Wi-Fi access point."
+  },
+  {
+    "question_number": 55,
+    "question": "Lukas, a security professional, was instructed to enhance the security of the wireless network in the organization. Lukas thus implemented a wireless encryption technology that uses RADIUS for centralized client authentication using multiple authentication methods such as token cards, Kerberos, and certificates. Identify the technology implemented by Lukas in the above scenario.",
+    "options": [
+      "A. WPA2-Personal",
+      "B. WPA2-Enterprise",
+      "C. WPA3-Personal",
+      "D. WPA3-Enterprise"
+    ],
+    "correct_index": "B",
+    "explanation": "WPA2-Enterprise (and WPA3-Enterprise) uses RADIUS for authentication."
+  },
+  {
+    "question_number": 56,
+    "question": "Which of the following components of a wireless network is a device that allows PCs to connect to a wireless network and access the Internet connection directly with the help of an ISP?",
+    "options": [
+      "A. Wireless repeater",
+      "B. Wireless network card",
+      "C. Wireless bridge",
+      "D. Wireless modem"
+    ],
+    "correct_index": "D",
+    "explanation": "A wireless *modem* connects to the ISP and provides internet access. Wireless network cards allow devices to connect to the wireless network created by the router."
+  },
+  {
+    "question_number": 57,
+    "question": "Andres, a network administrator, was instructed to install a wireless router inside the company corridor. For this purpose, he opted a highly secured encryption mode to keep the network safe from various types of attacks. Which of the following wireless encryption modes is mostly preferrable by Andres in the above scenario?",
+    "options": [
+      "A. WPA",
+      "B. WPA3",
+      "C. WPA Enterprise",
+      "D. WEP"
+    ],
+    "correct_index": "B",
+    "explanation": "WPA3 is the most modern and secure Wi-Fi encryption standard."
+  },
+  {
+    "question_number": 58,
+    "question": "Emilio, a fitness freak, often wears a smartwatch on his wrist to track his health. Emilio has interfaced the smartwatch with a health monitoring application installed on his mobile phone via Bluetooth and left the Bluetooth enabled all day, which allowed other devices to connect with his device. Which of the following security guidelines should have been followed by Emilio when he is in public places?",
+    "options": [
+      "A. Set Bluetooth-enabled devices to non-discoverable mode",
+      "B. Enable interfaces such as Bluetooth, infrared, and Wi-Fi when not in use",
+      "C. Apply the same firewall rules and filters to different combinations of user groups or devices",
+      "D. Set Bluetooth-enabled devices to discoverable mode"
+    ],
+    "correct_index": "A",
+    "explanation": "Setting Bluetooth to non-discoverable prevents unwanted connections."
+  },
+  {
+    "question_number": 59,
+    "question": "Holden, a security professional, implemented a mobile policy in his organization to prevent phishing and malware attacks. He deployed a solution that uses machine learning and real-time analysis to protect mobile endpoints and also generates alerts for the enterprise mobility management solutions to perform appropriate actions. Identify the solution deployed by Holden in the above scenario.",
+    "options": [
+      "A. Mobile email management solution",
+      "B. Mobile application management solution",
+      "C. Mobile threat defense solution",
+      "D. Mobile content management solution"
+    ],
+    "correct_index": "C",
+    "explanation": "Mobile Threat Defense (MTD) solutions focus on detecting and preventing mobile threats."
+  },
+  {
+    "question_number": 60,
+    "question": "Which of the following technologies enables peer-to-peer communication between devices without any mediator such as router, where one of the connected devices in the communication serves as a soft access point?",
+    "options": [
+      "A. 5G cellular communication",
+      "B. Wi-Fi Direct",
+      "C. RFID",
+      "D. Satcom"
+    ],
+    "correct_index": "B",
+    "explanation": "Wi-Fi Direct allows direct connections between devices."
+  }
+]

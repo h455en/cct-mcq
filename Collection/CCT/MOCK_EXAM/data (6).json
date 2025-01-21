@@ -1,0 +1,206 @@
+[
+  {
+    "question_number": 121,
+    "question": "Which of the following phases of the forensics investigation process involves reporting and documentation of all actions undertaken and the findings obtained during the investigation?",
+    "options": [
+      "A. Investigation phase",
+      "B. Pre-investigation phase",
+      "C. Post-investigation phase",
+      "D. Preparatory phase"
+    ],
+    "correct_index": "C",
+    "explanation": "Reporting and documentation occur after the investigation is complete."
+  },
+  {
+    "question_number": 122,
+    "question": "Which of the following types of cybercrime is an offensive activity in which a computer connected to the web is employed as a source point to damage an organization's reputation?",
+    "options": [
+      "A. Intellectual property theft",
+      "B. Cyber defamation",
+      "C. Data manipulation",
+      "D. Privilege escalation"
+    ],
+    "correct_index": "B",
+    "explanation": "Cyber defamation aims to damage reputation through online means."
+  },
+  {
+    "question_number": 123,
+    "question": "Which of the following goals of the business continuity plan insists organizations to retain important information such as vendor, client, and employee contacts that can be useful during an emergency in the organization?",
+    "options": [
+      "A. Restoring business conditions to pre-disaster levels",
+      "B. Maintaining vital documents and details",
+      "C. Minimizing infrastructural damage in the event of a disaster",
+      "D. Analyzing the potential risks and losses"
+    ],
+    "correct_index": "B",
+    "explanation": "Maintaining vital documents includes contact information for use during emergencies."
+  },
+  {
+    "question_number": 124,
+    "question": "In which of the following business continuity and disaster recovery activities do security professionals implement a set of actions after a disaster in order to assess business needs and reduce and limit the negative impacts of the disaster?",
+    "options": [
+      "A. Prevention",
+      "B. Response",
+      "C. Recovery",
+      "D. Restoration"
+    ],
+    "correct_index": "B",
+    "explanation": "Response is the immediate action taken *after* a disaster occurs."
+  },
+  {
+    "question_number": 125,
+    "question": "Which of the following terms is the maximum time frame for which an organization loses data after a major IT outage, and it determines the acceptable amount of data loss an enterprise can suffer in case of a disruption?",
+    "options": [
+      "A. Disaster recovery",
+      "B. Business continuity management",
+      "C. Recovery point objective",
+      "D. Recovery time objective"
+    ],
+    "correct_index": "C",
+    "explanation": "The Recovery Point Objective (RPO) defines the acceptable data loss in terms of time."
+  },
+  {
+    "question_number": 126,
+    "question": "Which of the following business continuity management (BCM) activities is the ability of an organization to respond under disaster, thereby minimizing the damage to its brand name, business operation, and revenue?",
+    "options": [
+      "A. Crisis management",
+      "B. Incident management",
+      "C. Contingency planning",
+      "D. Business recovery"
+    ],
+    "correct_index": "A",
+    "explanation": "Crisis management focuses on mitigating the impact of a disruptive event on the organization's reputation and business operations."
+  },
+  {
+    "question_number": 127,
+    "question": "Which of the following business continuity and disaster recovery activities aims to reduce the likelihood and impact of a disruptive event and calls for deterrent control strategies?",
+    "options": [
+      "A. Resumption",
+      "B. Restoration",
+      "C. Response",
+      "D. Prevention"
+    ],
+    "correct_index": "D",
+    "explanation": "Prevention focuses on stopping incidents from occurring in the first place."
+  },
+  {
+    "question_number": 128,
+    "question": "Which of the following is a plan to restore important support systems such as hardware, IT assets, and communications, in order to reduce business downtime and accelerate the restoration of business operations?",
+    "options": [
+      "A. Contingency planning",
+      "B. Business recovery",
+      "C. Emergency management",
+      "D. Disaster recovery"
+    ],
+    "correct_index": "D",
+    "explanation": "Disaster recovery focuses on restoring IT infrastructure and systems."
+  },
+  {
+    "question_number": 129,
+    "question": "Which of the following business continuity and disaster recovery activities involves the process of repairing the old site affected by a disaster or setting up a completely new alternate site to resume business operations?",
+    "options": [
+      "A. Prevention",
+      "B. Resumption",
+      "C. Restoration",
+      "D. Response"
+    ],
+    "correct_index": "C",
+    "explanation": "Restoration involves returning to a working state, either at the original site or a new one."
+  },
+  {
+    "question_number": 130,
+    "question": "In an organization, a security professional has identified few risks in the organization's IT infrastructure during the risk management process. As the severity level of the risks is acceptable, the security professional decided not to apply any of the treatment options available. Which of the following risk treatment options was demonstrated in the above scenario?",
+    "options": [
+      "A. Risk modification",
+      "B. Risk retention",
+      "C. Risk avoidance",
+      "D. Risk sharing"
+    ],
+    "correct_index": "B",
+    "explanation": "Risk retention means accepting the risk and not taking any action to mitigate it."
+  },
+  {
+    "question_number": 131,
+    "question": "Which of the following entities in the risk management team are considered as subject matter experts as they are responsible for developing and providing appropriate coaching material for the risk management process?",
+    "options": [
+      "A. Security awareness trainers",
+      "B. IT security practitioners",
+      "C. System and information owners",
+      "D. Business and functional managers"
+    ],
+    "correct_index": "B",
+    "explanation": "IT security practitioners have the technical expertise in risk management."
+  },
+  {
+    "question_number": 132,
+    "question": "A recent earthquake damaged an organization's critical assets such as databases and servers located in that geographical area. The natural threat caused severe damage to the assets and halted the organization's services for some time. Which of the following types of risks has the organization faced in the above scenario?",
+    "options": [
+      "A. Risks from legacy systems",
+      "B. Intellectual property theft",
+      "C. Risks from external sources",
+      "D. Risks from internal sources"
+    ],
+    "correct_index": "C",
+    "explanation": "Earthquakes are external events."
+  },
+  {
+    "question_number": 133,
+    "question": "Which of the following NIST risk management framework steps involve classifying the information system and the information processed, stored, and transmitted by a system according to potential worst cases, adverse impact to an organization's mission/business function, and a system?",
+    "options": [
+      "A. Categorize",
+      "B. Select",
+      "C. Implement",
+      "D. Assess"
+    ],
+    "correct_index": "A",
+    "explanation": "The \"Categorize\" step involves classifying information and systems."
+  },
+  {
+    "question_number": 134,
+    "question": "Keegan, a security team member, conducted risk assessment for the network and devices in the organization. After analyzing and prioritizing each risk, Keegan decided to take immediate action on the risks that may cause service disruption to the organization. Identify the risk level that needs immediate action to prevent service disruption.",
+    "options": [
+      "A. Moderate",
+      "B. High",
+      "C. Medium",
+      "D. Low"
+    ],
+    "correct_index": "B",
+    "explanation": "High risks require immediate attention."
+  },
+  {
+    "question_number": 135,
+    "question": "Which of the following techniques focuses on mapping the probability of occurrence for a specific event to the expected cost associated with the event?",
+    "options": [
+      "A. Quantitative risk analysis",
+      "B. Qualitative risk analysis",
+      "C. Risk review",
+      "D. Risk tracking"
+    ],
+    "correct_index": "A",
+    "explanation": "Quantitative analysis uses numerical values (costs and probabilities)."
+  },
+  {
+    "question_number": 136,
+    "question": "Which of the following risk management phases lists risks and their characteristics before such risks harm an organization?",
+    "options": [
+      "A. Risk identification",
+      "B. Risk prioritization",
+      "C. Risk treatment",
+      "D. Risk analysis"
+    ],
+    "correct_index": "A",
+    "explanation": "Risk identification is the process of discovering potential risks."
+  },
+  {
+    "question_number": 137,
+    "question": "Identify the NIST risk management framework step that involves continuously tracking changes to the information system for signs of attacks that may impact security controls, and regularly monitoring the security controls to access their effectiveness",
+    "options": [
+      "A. Categorize",
+      "B. Select",
+      "C. Implement",
+      "D. Monitor"
+    ],
+    "correct_index": "D",
+    "explanation": "The \"Monitor\" step involves ongoing observation and assessment of security controls."
+  }
+]
