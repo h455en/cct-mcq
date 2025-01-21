@@ -1,0 +1,1631 @@
+[
+    {
+        "question_number": 1,
+        "question": "Which of the following types of malwares restricts access to the user's system files and folders and then demands an online payment to the malware creator to remove the restrictions?",
+        "options": [
+            "A. Keyloggers",
+            "B. Worms",
+            "C. Ransomware",
+            "D. Virus"
+        ],
+        "correct_index": "C",
+        "explanation": "Ransomware encrypts files and demands payment for decryption."
+    },
+    {
+        "question_number": 2,
+        "question": "David, a professional hacker, has created an advertisement for an electronic product embedded with malicious program and published it on a trusted website. Whenever the visitors of that website click on the advertisement to view the product details, the malware automatically gets installed on their system. In which of the following ways did David install malware on the victims' system?",
+        "options": [
+            "A. Black hat search engine optimization",
+            "B. Drive-by downloads",
+            "C. Malvertising",
+            "D. Spear-phishing sites"
+        ],
+        "correct_index": "C",
+        "explanation": "Malvertising uses malicious advertisements to distribute malware."
+    },
+    {
+        "question_number": 3,
+        "question": "Bob, a college student, was curious about learning hacking concepts. With the mediocre knowledge, he used a free online tool to hack his college website. Bob was unable to compromise the website as it was protected using strong security controls. Which of the following categories of threats was demonstrated in the above scenario?",
+        "options": [
+            "A. Structured external threats",
+            "B. Unstructured external threats",
+            "C. Natural threats",
+            "D. Unintentional threats"
+        ],
+        "correct_index": "B",
+        "explanation": "Unstructured threats are typically carried out by less skilled individuals using readily available tools."
+    },
+    {
+        "question_number": 4,
+        "question": "Cooper, a malware programmer, has developed a potentially unwanted application (PUA) to infect the systems. This application pops-up when a user is browsing the infected website and issues bogus reminders regarding outdated software and lures the user to click on it for further activities. Which of the following types of PUA has Cooper developed in the above scenario?",
+        "options": [
+            "A. Torrent",
+            "B. Dialers",
+            "C. Adware",
+            "D. Cryptomining"
+        ],
+        "correct_index": "C",
+        "explanation": "Adware displays unwanted advertisements, often through pop-ups."
+    },
+    {
+        "question_number": 5,
+        "question": "Identify the threat actors who work both offensively and defensively at various times, which means that they help hackers find various vulnerabilities, at the same time, help vendors improve products by checking their limitations.",
+        "options": [
+            "A. Gray hats",
+            "B. Black hats",
+            "C. White hats",
+            "D. Suicide hackers"
+        ],
+        "correct_index": "A",
+        "explanation": "Gray hats operate in a gray area, sometimes using their skills for offensive purposes without malicious intent but sometimes disclosing vulnerabilities publicly."
+    },
+    {
+        "question_number": 6,
+        "question": "Joseph, a security professional, was appointed to evaluate an attack initiated on the organization's network. He performed an overall assessment of the network to identify the cause. During this process, he identified outbound connections to Internet services and a few applications running with debugging enabled. Which of the following categories of vulnerabilities did Joseph identify in the above scenario?",
+        "options": [
+            "A. Buffer overflows",
+            "B. Operating system flaws",
+            "C. Misconfiguration",
+            "D. Design flaws"
+        ],
+        "correct_index": "C",
+        "explanation": "Outbound connections and debugging enabled are examples of misconfigurations."
+    },
+    {
+        "question_number": 7,
+        "question": "Rogers, an administrator, has installed new software on an employee's system and forgot to change the credentials provided by the software vendor. Robert, an attacker, on the other hand, browsed an online resource to obtain credentials provided by the software vendor and used those credentials to gain remote access to the employee's system to steal valuable data. Identify the type of vulnerability demonstrated in the above scenario.",
+        "options": [
+            "A. TCP protocol vulnerabilities",
+            "B. Operating system vulnerabilities",
+            "C. IP protocol vulnerabilities",
+            "D. Default password and settings"
+        ],
+        "correct_index": "D",
+        "explanation": "Using default credentials is a common security vulnerability."
+    },
+    {
+        "question_number": 8,
+        "question": "In which of the following phases of hacking does an attacker use spoofing technique to exploit the system and pretend to be a legitimate user to take control of the victim's machine?",
+        "options": [
+            "A. Gaining access",
+            "B. Scanning",
+            "C. Reconnaissance",
+            "D. Clearing tracks"
+        ],
+        "correct_index": "A",
+        "explanation": "Spoofing is used to gain unauthorized access."
+    },
+    {
+        "question_number": 9,
+        "question": "Lino, a professional hacker, targeted to crash Bluetooth-enabled mobile devices. Lino used an automated tool to flood the target devices with oversized ping packets causing a buffer overflow and system crash. Identify the type of Bluetooth attack performed by Lino in the above scenario.",
+        "options": [
+            "A. Bluesmacking",
+            "B. Bluejacking",
+            "C. BlueSniff",
+            "D. Bluebugging"
+        ],
+        "correct_index": "A",
+        "explanation": "Bluesmacking is a DoS attack targeting Bluetooth devices with oversized packets."
+    },
+    {
+        "question_number": 10,
+        "question": "John, a professional hacker, targets his opponent's website. He finds susceptible user inputs, injects malicious SQL code into the database, and tampers with critical information. Which of the following types of attack did John perform in the above scenario?",
+        "options": [
+            "A. Passive attack",
+            "B. Active attack",
+            "C. Close-in attack",
+            "D. Insider attack"
+        ],
+        "correct_index": "B",
+        "explanation": "SQL injection is an active attack because it directly modifies data."
+    },
+    {
+        "question_number": 11,
+        "question": "In which of the following types of network attacks does an attacker try to gain unauthorized access to a target network and remains undetected for a long period of time obtaining information such as classified documents, user credentials, and transaction information?",
+        "options": [
+            "A. Eavesdropping",
+            "B. Advanced persistent threats",
+            "C. Denial-of-service attack",
+            "D. MAC flooding"
+        ],
+        "correct_index": "B",
+        "explanation": "APTs (Advanced Persistent Threats) are characterized by long-term, stealthy access."
+    },
+    {
+        "question_number": 12,
+        "question": "In which of the following attacks does an attacker have complete access to the plaintext message including its encryption, and he/she can also modify the content of the message by making a series of interactive queries, selecting subsequent plaintext blocks based on the information from the previous encryption queries and functions?",
+        "options": [
+            "A. Ciphertext-only attack",
+            "B. Adaptive chosen-plaintext attack",
+            "C. Chosen-plaintext attack",
+            "D. Related-key attack"
+        ],
+        "correct_index": "B",
+        "explanation": "An adaptive chosen-plaintext attack allows the attacker to choose subsequent plaintexts based on the results of previous encryptions."
+    },
+    {
+        "question_number": 13,
+        "question": "Which of the following attacks is also known as a one-click attack and occurs when a hacker instructs a user's web browser to send a request to the vulnerable website through a malicious web page?",
+        "options": [
+            "A. Parameter tampering attack",
+            "B. Directory traversal attack",
+            "C. Cross-site request forgery attack",
+            "D. Secure sockets layer stripping"
+        ],
+        "correct_index": "C",
+        "explanation": "CSRF (Cross-Site Request Forgery) tricks a user's browser into making unwanted requests."
+    },
+    {
+        "question_number": 14,
+        "question": "Identify the technique in which an attacker uses pre-recorded messages and instructions resembling a legitimate financial institution to trick victims into providing bank account or credit card details for identity verification over the telephone.",
+        "options": [
+            "A. Shoulder surfing",
+            "B. Eavesdropping",
+            "C. Vishing",
+            "D. Dumpster diving"
+        ],
+        "correct_index": "C",
+        "explanation": "Vishing is phishing conducted over the phone."
+    },
+    {
+        "question_number": 15,
+        "question": "David purchased a smartphone online using his debit card. After making the payment online, David did not receive any transaction text message to his mobile. During non-working hours of bank, David accessed his net banking account and viewed all the transactions and the current balance details. Identify the type of information security element that allowed David to view his bank details in the above scenario.",
+        "options": [
+            "A. Confidentiality",
+            "B. Integrity",
+            "C. Availability",
+            "D. Non-repudiation"
+        ],
+        "correct_index": "C",
+        "explanation": "Availability ensures that information is accessible to authorized users when needed."
+    },
+    {
+        "question_number": 16,
+        "question": "Jace, a professional hacker, was appointed by an agency to perform a cyberattack against the rival company’s servers with the intention of making the services unavailable to their customers. Jace performed a DoS attack on the servers, but he could not make the services unavailable. Which of the following components of technical security controls protected the servers from the DoS attack?",
+        "options": [
+            "A. Network security devices",
+            "B. Auditing",
+            "C. Encryption and protocols",
+            "D. System access controls"
+        ],
+        "correct_index": "A",
+        "explanation": "Network security devices like firewalls and intrusion prevention systems can mitigate DoS attacks."
+    },
+    {
+        "question_number": 17,
+        "question": "Nicholas, an incident handling and response (IH&R) team member at an organization, was assigned with the responsibility to gather information on prevalent incidents and security issues, which can be later placed into the database of internal intelligence. Which of the following IH&R roles is Nicholas playing in the above scenario?",
+        "options": [
+            "A. Threat researcher",
+            "B. Forensic investigator",
+            "C. Incident coordinator",
+            "D. Internal auditor"
+        ],
+        "correct_index": "A",
+        "explanation": "A threat researcher gathers and analyzes threat intelligence."
+    },
+    {
+        "question_number": 18,
+        "question": "Which of the following components of NIST Cybersecurity Framework (CSF) offers a set of operations or activities that include industry standards, practices, guidelines, operations, functions, and results that help in attaining the desired security outcomes?",
+        "options": [
+            "A. Profiles",
+            "B. Tiers",
+            "C. Core",
+            "D. Implementation guidelines"
+        ],
+        "correct_index": "C",
+        "explanation": "The Core is the set of cybersecurity activities, outcomes, and references."
+    },
+    {
+        "question_number": 19,
+        "question": "Which of the following network defense approaches addresses attacks and threats that the preventive approach may have failed to avert, such as DoS and DDoS attacks?",
+        "options": [
+            "A. Proactive approach",
+            "B. Reactive approach",
+            "C. Retrospective approach",
+            "D. Preventive approach"
+        ],
+        "correct_index": "B",
+        "explanation": "A reactive approach responds to incidents after they occur."
+    },
+    {
+        "question_number": 20,
+        "question": "Identify the type of network defense approach, using which an organization can implement biometric techniques such as speech or facial recognition to block attackers from entering the premises.",
+        "options": [
+            "A. Preventive approach",
+            "B. Reactive approach",
+            "C. Retrospective approach",
+            "D. Proactive approach"
+        ],
+        "correct_index": "A",
+        "explanation": "Biometric authentication is a preventive measure to control physical access."
+    },
+    {
+        "question_number": 21,
+        "question": "Which of the following functions of NIST Cybersecurity Framework (CSF) allows controlling the impact of critical cybersecurity events and the subdivisions of this function include communications, mitigation, response planning, analysis, and improvements?",
+        "options": [
+            "A. Identify",
+            "B. Protect",
+            "C. Detect",
+            "D. Respond"
+        ],
+        "correct_index": "D",
+        "explanation": "The \"Respond\" function focuses on actions taken during and after a cybersecurity event."
+    },
+    {
+        "question_number": 22,
+        "question": "Rebecca, a security professional, was instructed to limit employees' access to critical resources. For this purpose, she implemented an access principle that provides permission to access only necessary resources that are required for their job tasks. The permissions can be extended later based on changes in their job roles. Identify the access principle implemented by Rebecca in the above scenario.",
+        "options": [
+            "A. Separation of duties (SoD)",
+            "B. Need-to-know",
+            "C. Principle of least privilege (POLP)",
+            "D. Rule-based access control"
+        ],
+        "correct_index": "C",
+        "explanation": "The principle of least privilege grants only the necessary access rights."
+    },
+    {
+        "question_number": 23,
+        "question": "Vincent, a security professional, was hired by an organization to update and make configuration changes to their existing systems. For this purpose, he was provided with a type of account that contains elevated privileges to perform administrative activities such as installing and uninstalling applications or system software. Which of the following types of account was provided to Vincent in the above scenario?",
+        "options": [
+            "A. User account",
+            "B. Guest account",
+            "C. Root account",
+            "D. Default account"
+        ],
+        "correct_index": "C",
+        "explanation": "A root (or administrator) account has elevated privileges."
+    },
+    {
+        "question_number": 24,
+        "question": "Identify the access control principle that ensures that no single individual has the authorization rights to perform all functions and simultaneously denies access of all the objects to a single individual.",
+        "options": [
+            "A. Principle of highest privilege (POHP)",
+            "B. Separation of duties (SoD)",
+            "C. Need-to-know principle",
+            "D. Discretionary access control"
+        ],
+        "correct_index": "B",
+        "explanation": "Separation of duties prevents any single person from having too much control."
+    },
+    {
+        "question_number": 25,
+        "question": "Adam, a security specialist at an organization, was tasked with implementing an authentication mechanism for their employees. He employed an authentication mechanism that scans the facial features of employees and compares them with the patterns stored in the database. Identify the authentication method implemented by Adam in the above scenario.",
+        "options": [
+            "A. Password authentication",
+            "B. Single sign-on authentication",
+            "C. Biometric authentication",
+            "D. Two-factor authentication"
+        ],
+        "correct_index": "C",
+        "explanation": "Facial recognition is a form of biometric authentication."
+    },
+    {
+        "question_number": 26,
+        "question": "Which of the following types of accounts are the default accounts of operating systems and run with the least privileges, with permissions such as running applications and creating and manipulating files that belong to their profile?",
+        "options": [
+            "A. User accounts",
+            "B. Guest accounts",
+            "C. Root accounts",
+            "D. Privileged accounts"
+        ],
+        "correct_index": "A",
+        "explanation": "Standard user accounts have limited privileges."
+    },
+    {
+        "question_number": 27,
+        "question": "Ryder, an employee at a software company, needs to log in every day before starting his work. The company has a separate HR portal for maintaining employee attendance details. Every day, Ryder accesses the portal, provides his credentials, and logs in before starting his work. Identify the authentication method demonstrated in the above scenario.",
+        "options": [
+            "A. Smart card authentication",
+            "B. Biometric authentication",
+            "C. Password authentication",
+            "D. Two-factor authentication"
+        ],
+        "correct_index": "C",
+        "explanation": "Providing credentials (username/password) is password authentication."
+    },
+    {
+        "question_number": 28,
+        "question": "James, a network administrator, was assigned a task to create a standard access control model for the organization's confidential data. He implemented an access control model that determines the usage and access policies for the users. After its implementation, only users with appropriate access rights can access the resource. Which of the following access control models has James implemented in the above scenario?",
+        "options": [
+            "A. Mandatory access control (MAC)",
+            "B. Discretionary access control (DAC)",
+            "C. Role-based access control (RBAC)",
+            "D. Rule-based access control (RB-RBAC)"
+        ],
+        "correct_index": "C",
+        "explanation": "RBAC assigns permissions based on roles within the organization."
+    },
+    {
+        "question_number": 29,
+        "question": "Which of the following activities of configuration management involves setting directions, expectations, strategies, and preparing formal documentation of the requirements and basic procedures for precise configuration management?",
+        "options": [
+            "A. Configuration status accounting",
+            "B. Configuration management and planning",
+            "C. Configuration verification and audit",
+            "D. Configuration identification"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "Configuration management and planning sets the overall strategy and documentation."
+    },
+    {
+        "question_number": 30,
+        "question": "Which of the following types of threat intelligence is collected from proactively established security infrastructure or by employing various threat manipulation techniques to lure and trap threats?",
+        "options": [
+            "A. Open-source intelligence (OSINT)",
+            "B. Cyber counterintelligence (CCI)",
+            "C. Indicators of compromise (IoCs)",
+            "D. Signals intelligence (SIGINT)"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "Cyber counterintelligence involves actively seeking out and gathering information on threats."
+    },
+    {
+        "question_number": 31,
+        "question": "Which of the following types of threat intelligence provides information about an attacker’s resources that were used to perform an attack, such as command/control channels and tools, and has a shorter lifespan than other types of intelligence?",
+        "options": [
+            "A. Operational threat intelligence",
+            "B. Tactical threat intelligence",
+            "C. Technical threat intelligence",
+            "D. Strategic threat intelligence"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "Tactical intelligence focuses on immediate threats and attack techniques."
+    },
+    {
+        "question_number": 32,
+        "question": "Which of the following rules must an ethical hacker follow while performing an investigation process to fulfill their ethical and moral obligations?",
+        "options": [
+            "A. Gain unauthorized access to perform the test",
+            "B. Follow a disclosure agreement with the client",
+            "C. Perform the test beyond the agreed-upon limits",
+            "D. Have a signed contract providing the tester permission to perform the test"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "A signed contract establishes clear authorization for the testing."
+    },
+    {
+        "question_number": 33,
+        "question": "In a type of threat hunting, enterprises are required to prioritize hunting operations to enhance the success rate. This type of threat hunting also helps in initiating hunts over critical assets with high risk and protects network resources and other intellectual properties. Identify the type of threat hunting described above.",
+        "options": [
+            "A. Hybrid hunting",
+            "B. Data-driven hunting",
+            "C. Entity-driven hunting",
+            "D. TTP-driven hunting"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "Entity-driven hunting focuses on specific assets or users deemed high-risk."
+    },
+    {
+        "question_number": 34,
+        "question": "Which of the following types of vulnerability assessment involves conducting a configuration-level check to identify possible vulnerabilities in system configurations, user directories, file systems, registry settings, and other parameters to evaluate the chances of compromise?",
+        "options": [
+            "A. Wireless network assessment",
+            "B. Host-based assessment",
+            "C. Database assessment",
+            "D. Manual assessment"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "Host-based assessments examine individual systems and their configurations."
+    },
+    {
+        "question_number": 35,
+        "question": "Identify the strategy applied in software design to permit a system to continue functioning even in the presence of faults by enhancing its robustness.",
+        "options": [
+            "A. Fault tolerance",
+            "B. Fault detection",
+            "C. Fault removal",
+            "D. Fault avoidance"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "Fault tolerance allows a system to continue operating despite failures."
+    },
+    {
+        "question_number": 36,
+        "question": "Identify the Software Security Framework (SSF) domain in which organizations consider “attack models” for understanding, measuring, and planning a software security initiative.",
+        "options": [
+            "A. Deployment",
+            "B. Governance",
+            "C. Intelligence",
+            "D. SSDL touchpoints"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "Governance establishes the framework for security initiatives, including considering attack models."
+    },
+    {
+        "question_number": 37,
+        "question": "Identify the tier of a secure application development lifecycle in which the application is deployed to a real-time environment to allow access to end users and provide all the resources required to run the application.",
+        "options": [
+            "A. Development",
+            "B. Staging",
+            "C. Production",
+            "D. Testing"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "The production environment is where the live application resides."
+    },
+    {
+        "question_number": 38,
+        "question": "An organization has partnered with a third-party web application vendor to provide a solution for its employees to download pay slips from an online application. The vendor developed an application with multiple features to allow the concerned department to upload employees' financial related data, such as monthly pay slips and tax details, on the application portal so that an employee can access their data through a valid login. Identify the impact of a successful application-level attack, if an attacker attempts to compromise any of the employees' profiles in the above scenario.",
+        "options": [
+            "A. Minimizes fraudulent transaction",
+            "B. Damages reputation",
+            "C. Protects business information",
+            "D. Ensures financial security"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "Compromising employee data can severely damage the organization's reputation."
+    },
+    {
+        "question_number": 39,
+        "question": "Which of the following tools assists security professionals from the initial mapping and analysis of an application’s attack surface to the identification and exploitation of security vulnerabilities?",
+        "options": [
+            "A. Burp Suite",
+            "B. ophcrack",
+            "C. EMC NetWorker",
+            "D. Nagios"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "Burp Suite is a comprehensive web application security testing tool."
+    },
+    {
+        "question_number": 40,
+        "question": "Which of the following Software Assurance Maturity Model (SAMM) functions assesses the management of application security in an organization?",
+        "options": [
+            "A. Verification",
+            "B. Deployment",
+            "C. Governance",
+            "D. Construction"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "Governance in SAMM focuses on the management and strategy of application security."
+    },
+    {
+        "question_number": 41,
+        "question": "Identify the area of automation in which continuous operations are performed after the completion of an integration process and software development teams are allowed to automate the development and testing processes in the software development lifecycle.",
+        "options": [
+            "A. Continuous deployment",
+            "B. Continuous validation",
+            "C. Continuous delivery",
+            "D. Continuous monitoring"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "Continuous delivery automates the release process, including deployment and testing."
+    },
+    {
+        "question_number": 42,
+        "question": "---",
+        "options": [],
+        "correct_index": "_not provided_",
+        "explanation": "_Explanation not provided_"
+    },
+    {
+        "question_number": 43,
+        "question": "Jesse, a programmer, wants to create an operating system instance that represents a real-time environment. He created an instance in the cloud that enables the user to control the system on the cloud and use any device to access it. The data and files are also stored in the cloud and can be accessed at any time. Which of the following types of virtualization has Jesse used in the above scenario?",
+        "options": [
+            "A. Operating system virtualization",
+            "B. Network virtualization",
+            "C. Server virtualization",
+            "D. Desktop virtualization"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "Desktop virtualization provides a virtual desktop environment accessible from any device."
+    },
+    {
+        "question_number": 44,
+        "question": "Which of the following elements of cloud security is responsible for securing shared infrastructure such as routers, switches, load balancers, firewalls, hypervisors, and directory services?",
+        "options": [
+            "A. Identity and access management",
+            "B. Cloud service consumer",
+            "C. Cloud service provider",
+            "D. Logging"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "The cloud service provider is responsible for securing the underlying infrastructure."
+    },
+    {
+        "question_number": 45,
+        "question": "An organization recently leased an online cloud service. Using this service, subscribers can develop rich, scalable containerized applications through the cloud or on-site data centers. Identify the type of cloud computing service deployed by the organization in the above scenario.",
+        "options": [
+            "A. SECaaS",
+            "B. CaaS",
+            "C. Iaas",
+            "D. IDaas"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "CaaS (Containers as a Service) provides container management and orchestration."
+    },
+    {
+        "question_number": 46,
+        "question": "Identify the type of virtualization approach in which the guest OS adopts the functionality of para virtualization and uses the virtual machine manager (VMM) for binary translation to different types of hardware resources.",
+        "options": [
+            "A. Full virtualization",
+            "B. OS-assisted virtualization",
+            "C. Hardware-assisted virtualization",
+            "D. Hybrid virtualization"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "Full virtualization uses binary translation to allow unmodified guest OSs to run. Para virtualization requires modifications to the guest OS."
+    },
+    {
+        "question_number": 47,
+        "question": "Identify the cloud security control that protects an application in a cloud environment from intentional or unintentional network downtimes by dividing servers into separate networks to enable the environment to handle failures in individual networks without losing data.",
+        "options": [
+            "A. Cloud application security",
+            "B. High availability across zones",
+            "C. Cloud integration and auditing",
+            "D. Instance awareness"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "High availability across zones (or availability zones) ensures redundancy and fault tolerance."
+    },
+    {
+        "question_number": 48,
+        "question": "Which of the following technologies is an advanced version of conventional cloud technology that is often used in solutions that require the processing of small and urgent operations within a timespan of milliseconds, where the gateway intelligence is performed within devices such as programmable automation controllers?",
+        "options": [
+            "A. Edge computing",
+            "B. Fog computing",
+            "C. Serverless computing",
+            "D. Docker networking"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "Edge computing processes data closer to the source, reducing latency."
+    },
+    {
+        "question_number": 49,
+        "question": "Identify the VM sprawl avoiding technique in which the network administrator tracks the VMs that are associated with a host or hypervisor clusters and can easily identify VMs that are not in service and disassociate them.",
+        "options": [
+            "A. Wipe out orphaned snapshots",
+            "B. Perform an audit",
+            "C. Protect idle resources",
+            "D. Identify appropriate sizes for VMs"
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "Auditing helps identify unused or orphaned VMs contributing to sprawl."
+    },
+    {
+        "question_number": 50,
+        "question": "--",
+        "options": [
+            ""
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "_Explanation not provided_"
+    },
+    {
+        "question_number": 51,
+        "question": "In which of the following Wi-Fi authentication methods, each wireless station receives a shared secret key over a secure channel that is distinct from the 802.11 wireless network communication channels?",
+        "options": [
+            "A. Shared key authentication process",
+            "B. Open system authentication process",
+            "C. Centralized authentication server",
+            "D. Single sign-on authentication"
+        ],
+        "correct_index": "A",
+        "explanation": "Shared Key Authentication (now deprecated due to security weaknesses) involved pre-sharing a key out-of-band."
+    },
+    {
+        "question_number": 52,
+        "question": "Which of the following guidelines helps security professionals in choosing the appropriate locations for APs and in achieving the maximum coverage, performance, and speed?",
+        "options": [
+            "A. Avoid installing an AP on the ceiling",
+            "B. Keep the AP away from metal objects",
+            "C. Avoid placing APs in central locations",
+            "D. Mount an AP on a wall"
+        ],
+        "correct_index": "B",
+        "explanation": "Metal objects can interfere with Wi-Fi signals."
+    },
+    {
+        "question_number": 53,
+        "question": "Which of the following standards defines the quality of service (QoS) for wireless applications and maintains the quality of video and audio streaming, real-time online applications, and voice over Internet protocol (VoIP)?",
+        "options": [
+            "A. 802.11d",
+            "B. 802.11a",
+            "C. 802.11e",
+            "D. 802.11g"
+        ],
+        "correct_index": "C",
+        "explanation": "802.11e defines QoS enhancements for wireless networks."
+    },
+    {
+        "question_number": 54,
+        "question": "Which of the following is referred to as a place where wireless networks are available for public use and users can enable Wi-Fi on their devices to connect to the Internet?",
+        "options": [
+            "A. Bandwidth",
+            "B. Association",
+            "C. Hotspot",
+            "D. Service set identifier"
+        ],
+        "correct_index": "C",
+        "explanation": "A hotspot is a public Wi-Fi access point."
+    },
+    {
+        "question_number": 55,
+        "question": "Lukas, a security professional, was instructed to enhance the security of the wireless network in the organization. Lukas thus implemented a wireless encryption technology that uses RADIUS for centralized client authentication using multiple authentication methods such as token cards, Kerberos, and certificates. Identify the technology implemented by Lukas in the above scenario.",
+        "options": [
+            "A. WPA2-Personal",
+            "B. WPA2-Enterprise",
+            "C. WPA3-Personal",
+            "D. WPA3-Enterprise"
+        ],
+        "correct_index": "B",
+        "explanation": "WPA2-Enterprise (and WPA3-Enterprise) uses RADIUS for authentication."
+    },
+    {
+        "question_number": 56,
+        "question": "Which of the following components of a wireless network is a device that allows PCs to connect to a wireless network and access the Internet connection directly with the help of an ISP?",
+        "options": [
+            "A. Wireless repeater",
+            "B. Wireless network card",
+            "C. Wireless bridge",
+            "D. Wireless modem"
+        ],
+        "correct_index": "D",
+        "explanation": "A wireless *modem* connects to the ISP and provides internet access. Wireless network cards allow devices to connect to the wireless network created by the router."
+    },
+    {
+        "question_number": 57,
+        "question": "Andres, a network administrator, was instructed to install a wireless router inside the company corridor. For this purpose, he opted a highly secured encryption mode to keep the network safe from various types of attacks. Which of the following wireless encryption modes is mostly preferrable by Andres in the above scenario?",
+        "options": [
+            "A. WPA",
+            "B. WPA3",
+            "C. WPA Enterprise",
+            "D. WEP"
+        ],
+        "correct_index": "B",
+        "explanation": "WPA3 is the most modern and secure Wi-Fi encryption standard."
+    },
+    {
+        "question_number": 58,
+        "question": "Emilio, a fitness freak, often wears a smartwatch on his wrist to track his health. Emilio has interfaced the smartwatch with a health monitoring application installed on his mobile phone via Bluetooth and left the Bluetooth enabled all day, which allowed other devices to connect with his device. Which of the following security guidelines should have been followed by Emilio when he is in public places?",
+        "options": [
+            "A. Set Bluetooth-enabled devices to non-discoverable mode",
+            "B. Enable interfaces such as Bluetooth, infrared, and Wi-Fi when not in use",
+            "C. Apply the same firewall rules and filters to different combinations of user groups or devices",
+            "D. Set Bluetooth-enabled devices to discoverable mode"
+        ],
+        "correct_index": "A",
+        "explanation": "Setting Bluetooth to non-discoverable prevents unwanted connections."
+    },
+    {
+        "question_number": 59,
+        "question": "Holden, a security professional, implemented a mobile policy in his organization to prevent phishing and malware attacks. He deployed a solution that uses machine learning and real-time analysis to protect mobile endpoints and also generates alerts for the enterprise mobility management solutions to perform appropriate actions. Identify the solution deployed by Holden in the above scenario.",
+        "options": [
+            "A. Mobile email management solution",
+            "B. Mobile application management solution",
+            "C. Mobile threat defense solution",
+            "D. Mobile content management solution"
+        ],
+        "correct_index": "C",
+        "explanation": "Mobile Threat Defense (MTD) solutions focus on detecting and preventing mobile threats."
+    },
+    {
+        "question_number": 60,
+        "question": "Which of the following technologies enables peer-to-peer communication between devices without any mediator such as router, where one of the connected devices in the communication serves as a soft access point?",
+        "options": [
+            "A. 5G cellular communication",
+            "B. Wi-Fi Direct",
+            "C. RFID",
+            "D. Satcom"
+        ],
+        "correct_index": "B",
+        "explanation": "Wi-Fi Direct allows direct connections between devices."
+    },
+    {
+        "question_number": 61,
+        "question": "Which of the following mobile device security challenges includes the loss or theft of a mobile device owing to their portability and lightweight?",
+        "options": [
+            "A. Network-based risks and challenges",
+            "B. Physical risks and challenges",
+            "C. Application-based risks and challenges",
+            "D. System-based risks and challenges"
+        ],
+        "correct_index": "B",
+        "explanation": "Loss and theft are physical risks."
+    },
+    {
+        "question_number": 62,
+        "question": "Martin, a system administrator, was instructed to provide secure corporate data access to employees on their mobile devices within the enterprise. For this purpose, Martin employed a security solution that provides secure file storage and file sharing services and also enables easy and secure sharing of information between devices within the enterprise. Identify the security solution employed by Martin in the above scenario.",
+        "options": [
+            "A. Push notification services",
+            "B. Mobile content management",
+            "C. Context-aware authentication",
+            "D. Mobile email management"
+        ],
+        "correct_index": "B",
+        "explanation": "Mobile Content Management (MCM) focuses on secure file storage and sharing."
+    },
+    {
+        "question_number": 63,
+        "question": "Which of the following policies allows employees to use and manage the devices purchased by the organization and helps organizations solve regulatory and legal issues associated with deleting data on lost/stolen mobile devices?",
+        "options": [
+            "A. Bring your own device (BYOD)",
+            "B. Choose your own device (CYOD)",
+            "C. Corporate owned, personally enabled (COPE)",
+            "D. Company owned, business only (COBO)"
+        ],
+        "correct_index": "C",
+        "explanation": "COPE devices are owned by the company but allowed for some personal use."
+    },
+    {
+        "question_number": 64,
+        "question": "Preston, an employee at an organization, was using his mobile device for enterprise purposes. The mobile device contained a vulnerable program that looked like a legitimate browsing app, which was downloaded from a third-party website. The vulnerable program was exploited by an attacker to gain remote access and steal sensitive data. Identify the mobile device security risk demonstrated in the above scenario.",
+        "options": [
+            "A. Physical risks",
+            "B. Network-based risks",
+            "C. System-based risks",
+            "D. Application-based risks"
+        ],
+        "correct_index": "D",
+        "explanation": "The vulnerable app is an application-based risk."
+    },
+    {
+        "question_number": 65,
+        "question": "###############",
+        "options": [
+            ""
+        ],
+        "correct_index": "_not provided_",
+        "explanation": "_Explanation not provided_"
+    },
+    {
+        "question_number": 66,
+        "question": "In which of the following layers of the IoT architecture, the edge processing enhances security by processing the data, packing the data into separate packets, and sending the data securely to the desired location?",
+        "options": [
+            "A. Process layer",
+            "B. Device layer",
+            "C. Communication layer",
+            "D. Cloud layer"
+        ],
+        "correct_index": "B",
+        "explanation": "Edge processing occurs at the device level, closest to the data source. This is where data is pre-processed, potentially encrypted, and packaged before transmission."
+    },
+    {
+        "question_number": 67,
+        "question": "Which of the following is a networking protocol that is used for clock synchronization between computer systems over packet-switched and variable-latency data networks?",
+        "options": [
+            "A. NTP",
+            "B. SuiteLink",
+            "C. DNS/DNSSEC",
+            "D. SOAP"
+        ],
+        "correct_index": "A",
+        "explanation": "NTP (Network Time Protocol) is specifically designed for clock synchronization across networks."
+    },
+    {
+        "question_number": 68,
+        "question": "Which of the following technologies is an ISO standard lightweight protocol used to transmit messages for long-range wireless communication and helps in establishing connections to remote locations via satellite links?",
+        "options": [
+            "A. MQTT",
+            "B. VSAT",
+            "C. Cellular",
+            "D. LPWAN"
+        ],
+        "correct_index": "D",
+        "explanation": "LPWAN (Low-Power Wide-Area Network) technologies are designed for long-range, low-power communication, often used in IoT and can be used with satellite links. VSAT (Very Small Aperture Terminal) is a satellite communication technology itself, not a protocol. While MQTT is used in IoT, it is not specifically designed for long-range or satellite communication."
+    },
+    {
+        "question_number": 69,
+        "question": "Which of the following layers of the IoT architecture provides information dashboards for administrators to monitor, analyze, and implement proactive decisions?",
+        "options": [
+            "A. Cloud layer",
+            "B. Process layer",
+            "C. Communication layer",
+            "D. Device layer"
+        ],
+        "correct_index": "A",
+        "explanation": "The cloud layer is where data is aggregated, analyzed, and visualized, providing the basis for dashboards and decision-making."
+    },
+    {
+        "question_number": 70,
+        "question": "Which of the following security controls can be used to protect the IT/OT environment at the Purdue level 0 (physical process)?",
+        "options": [
+            "A. MAC authentication",
+            "B. Communication encryption using IPsec",
+            "C. Anti-DoS solutions",
+            "D. Sandboxing"
+        ],
+        "correct_index": "D",
+        "explanation": "At Level 0, the focus is on physical security and preventing unauthorized access to physical devices. Sandboxing isolates processes to prevent them from affecting the physical process. While the others are important security controls, they are more applicable at higher levels of the Purdue model."
+    },
+    {
+        "question_number": 71,
+        "question": "Which of the following levels of the Purdue model is known as a corporate level network where Internet connectivity and management can be handled to allow smooth business operations such as B2B and B2C services?",
+        "options": [
+            "A. Level 5 (enterprise network)",
+            "B. Level 3 (operational systems/site operations)",
+            "C. Level 1 (basic controls/intelligent devices)",
+            "D. Level 0 (physical process)"
+        ],
+        "correct_index": "A",
+        "explanation": "Level 5 is the enterprise level, where typical IT functions like business applications, email, and internet connectivity reside."
+    },
+    {
+        "question_number": 72,
+        "question": "Stevie, a book worm, had purchased a new comic book from a store. As she does not like to hold cash in her wallet, she scanned her Wi-Fi card against the card swipe machine to complete the transaction Identify the type of short-range wireless communication technology demonstrated in the above scenario.",
+        "options": [
+            "A. NFC",
+            "B. Li-Fi",
+            "C. RFID",
+            "D. Z-Wave"
+        ],
+        "correct_index": "A",
+        "explanation": "NFC (Near Field Communication) is commonly used for contactless payments and card swipes. RFID is a broader category, and while NFC is a type of RFID, NFC is the most specific and appropriate answer in this context."
+    },
+    {
+        "question_number": 73,
+        "question": "-",
+        "options": [],
+        "correct_index": "_not provided_",
+        "explanation": "_Explanation not provided_"
+    },
+    {
+        "question_number": 74,
+        "question": "In which of the following types of blockchains does a supervisor or central authority decide who can join and participate in the blockchain network and only the members involved in a transaction will have knowledge about the corresponding ledgers?",
+        "options": [
+            "A. Private blockchain",
+            "B. Public blockchain",
+            "C. Public ledger",
+            "D. Consortium blockchain"
+        ],
+        "correct_index": "A",
+        "explanation": "Private blockchains are permissioned, meaning access is controlled by a central authority."
+    },
+    {
+        "question_number": 75,
+        "question": "Which of the following keys is used by the recipient to decrypt a message encrypted using asymmetric encryption algorithm?",
+        "options": [
+            "A. Receiver's public key",
+            "B. Sender's private key",
+            "C. Receiver's private key",
+            "D. Sender's public key"
+        ],
+        "correct_index": "C",
+        "explanation": "In asymmetric encryption, the recipient's private key is used to decrypt messages encrypted with their public key."
+    },
+    {
+        "question_number": 76,
+        "question": "Identify the trust model used in PGP-, OpenPGP-, and GnuPG-accessible systems that is based on the idea of decentralizing key distribution among PGP users and everyone in the network is a CA and can sign for other trusted entities.",
+        "options": [
+            "A. Peer-to-peer trust model",
+            "B. Hierarchical trust model",
+            "C. Hybrid trust model",
+            "D. Web of trust"
+        ],
+        "correct_index": "D",
+        "explanation": "PGP uses a web of trust, where users vouch for the authenticity of each other's public keys."
+    },
+    {
+        "question_number": 77,
+        "question": "Which of the following algorithms is a NIST specification for the symmetric encryption of electronic data and has a 128-bit block size, having key sizes of 128, 192, and 256 bits, respectively?",
+        "options": [
+            "A. AES",
+            "B. ECC",
+            "C. DSA",
+            "D. RSA"
+        ],
+        "correct_index": "A",
+        "explanation": "AES (Advanced Encryption Standard) is a symmetric block cipher with the specified characteristics."
+    },
+    {
+        "question_number": 78,
+        "question": "Which of the following hash functions generates an output of size 128 bits?",
+        "options": [
+            "A. MD5",
+            "B. SHA-0",
+            "C. SHA-1",
+            "D. SHA-3"
+        ],
+        "correct_index": "A",
+        "explanation": "MD5 produces a 128-bit hash value."
+    },
+    {
+        "question_number": 79,
+        "question": "Which of the following is a cryptographic technique that protects previously encrypted session data against unintended decryption, even if the private key of the server is compromised and employs key exchanging algorithms such as Diffie–Hellman key exchange to generate a unique session key?",
+        "options": [
+            "A. PFS",
+            "B. AEAD",
+            "C. DES",
+            "D. DSA"
+        ],
+        "correct_index": "A",
+        "explanation": "Perfect Forward Secrecy (PFS) ensures that past sessions remain secure even if long-term keys are compromised."
+    },
+    {
+        "question_number": 80,
+        "question": "Maximus sends a secret message to his friend that is encrypted with a classical cipher. The cipher technique used by Maximus rearranges the letters in the plaintext according to a regular system to produce the ciphertext. Which of the following types of ciphers has Maximus used in the above scenario?",
+        "options": [
+            "A. Transposition cipher",
+            "B. Substitution cipher",
+            "C. Block cipher",
+            "D. Stream cipher"
+        ],
+        "correct_index": "A",
+        "explanation": "Transposition ciphers rearrange the order of characters, while substitution ciphers replace characters with other characters."
+    },
+    {
+        "question_number": 81,
+        "question": "Which of the following data destroying methods uses a hydraulic process to reduce the data objects or documents to shards and loose fibers?",
+        "options": [
+            "A. Pulping",
+            "B. Pulverizing",
+            "C. Disintegration",
+            "D. Shredding"
+        ],
+        "correct_index": "A",
+        "explanation": "Pulping involves turning paper into a slurry, effectively destroying the data."
+    },
+    {
+        "question_number": 82,
+        "question": "Identify the type of data backup that backups only files that have been changed or created after the last backup are copied to the backup media.",
+        "options": [
+            "A. Differential backup",
+            "B. Full backup",
+            "C. Incremental backup",
+            "D. Normal backup"
+        ],
+        "correct_index": "C",
+        "explanation": "Incremental backups only back up changes since the *last* backup (full or incremental)."
+    },
+    {
+        "question_number": 83,
+        "question": "Which of the following is a mutual agreement between an organization and a third party when they decide to connect their IT systems, and it works as an MOU for security risk awareness and implementing security controls?",
+        "options": [
+            "A. Interconnection security agreement",
+            "B. Data sharing and usage agreement",
+            "C. Service-level agreement",
+            "D. Confidentiality and non-disclosure agreement"
+        ],
+        "correct_index": "A",
+        "explanation": "An Interconnection Security Agreement (ISA) specifically addresses security concerns related to connecting different IT systems."
+    },
+    {
+        "question_number": 84,
+        "question": "In which of the following states of data is it considered inactive and is stored on a device or a backup medium such as hard drives, laptops, backup tapes, mobile devices, or at an offsite cloud backup?",
+        "options": [
+            "A. Data at rest",
+            "B. Data in use",
+            "C. Data in transit",
+            "D. Data in progress"
+        ],
+        "correct_index": "A",
+        "explanation": "Data at rest is data that is stored and not actively being used."
+    },
+    {
+        "question_number": 85,
+        "question": "Which of the following RAID levels blocks the interleaved distributed parity and includes a block-level striping with a distributed parity?",
+        "options": [
+            "A. RAID Level 0",
+            "B. RAID Level 1",
+            "C. RAID Level 10",
+            "D. RAID Level 5"
+        ],
+        "correct_index": "D",
+        "explanation": "RAID 5 uses block-level striping with distributed parity."
+    },
+    {
+        "question_number": 86,
+        "question": "In which of the following techniques the data in individual columns is randomly interchanged and the output appears to be real but does not disclose any sensitive information?",
+        "options": [
+            "A. Shuffling",
+            "B. Lookup substitution",
+            "C. Nulling out or deletion",
+            "D. Number and date variance"
+        ],
+        "correct_index": "A",
+        "explanation": "Shuffling (or permutation) reorders data within a column, preserving statistical properties while obscuring individual values."
+    },
+    {
+        "question_number": 87,
+        "question": "Which of the following practices should be adopted by security teams to successfully implement DLP solutions?",
+        "options": [
+            "A. Implement DLP with a maximum base",
+            "B. Enhance the DLP policies to support effective DLP operations",
+            "C. Never eliminate false positives",
+            "D. Never evaluate the DLP vendors"
+        ],
+        "correct_index": "B",
+        "explanation": "Effective DLP relies on well-defined and regularly updated policies."
+    },
+    {
+        "question_number": 88,
+        "question": "Identify the command-line utility that helps network administrators retrieve all current TCP/IP network configuration values along with the IP address, subnet mask, and default gateway for all adapters.",
+        "options": [
+            "A. ipconfig",
+            "B. dnsenum",
+            "C. traceroute",
+            "D. arp"
+        ],
+        "correct_index": "A",
+        "explanation": "ipconfig (or ipconfig /all for more detail) displays TCP/IP configuration information."
+    },
+    {
+        "question_number": 89,
+        "question": "Erick, a network administrator, was instructed to troubleshoot a network issue causing disruptions in service delivery. For this purpose, he employed a network troubleshooting utility to list out all the listening UDP connections on the host. Identify the netstat command executed by Erick in the above scenario.",
+        "options": [
+            "A. netstat -at",
+            "B. netstat -l",
+            "C. netstat -r",
+            "D. netstat –e"
+        ],
+        "correct_index": "B",
+        "explanation": "netstat -l lists listening sockets. To see UDP specifically you would use netstat -lu."
+    },
+    {
+        "question_number": 90,
+        "question": "Identify the network issues that occur due to traffic that exceeds the normal capacity of a network device and may result in abnormal network behavior or slow connectivity.",
+        "options": [
+            "A. Physical connection issues",
+            "B. Software issues",
+            "C. Traffic overload issues",
+            "D. Configuration issues"
+        ],
+        "correct_index": "C",
+        "explanation": "Traffic overload (or congestion) occurs when network traffic exceeds capacity."
+    },
+    {
+        "question_number": 91,
+        "question": "Which of the following tools is used to test whether an IP address or a website is accessible by a host and works by sending ICMP echo requests to the targeted host and waits for ICMP echo replies?",
+        "options": [
+            "A. tcpreplay",
+            "B. Ping",
+            "C. dnsenum",
+            "D. Arp"
+        ],
+        "correct_index": "B",
+        "explanation": "ping uses ICMP echo requests and replies."
+    },
+    {
+        "question_number": 92,
+        "question": "Which of the following nmap commands allows security administrators perform an ARP ping scan for discovering live hosts in the target network?",
+        "options": [
+            "A. nmap -sn -PR <IP address>",
+            "B. nmap -sn -PE <IP address range>",
+            "C. nmap -sT <IP address>",
+            "D. nmap -sS <IP address>"
+        ],
+        "correct_index": "A",
+        "explanation": "-PR specifically uses ARP ping."
+    },
+    {
+        "question_number": 93,
+        "question": "Which of the following ICMP messages is displayed on the source machine when the TTL value in the IP header of a data packet becomes ‘0' before reaching the destination?",
+        "options": [
+            "A. Unreachable networks",
+            "B. Destination unreachable message",
+            "C. Time exceeded message",
+            "D. IP parameter problem"
+        ],
+        "correct_index": "C",
+        "explanation": "A \"Time Exceeded\" message indicates that the TTL (Time To Live) has reached zero."
+    },
+    {
+        "question_number": 94,
+        "question": "Which of the following types of network issues occur due to faulty, shortened, or damaged cables in a network that may result in poor network connectivity?",
+        "options": [
+            "A. Physical connection issues",
+            "B. Software issues",
+            "C. Configuration issues",
+            "D. Traffic overload issues"
+        ],
+        "correct_index": "A",
+        "explanation": "Damaged cables are a physical layer problem."
+    },
+    {
+        "question_number": 95,
+        "question": "Samuel, a network defender at an organization, employed Wireshark for observing network activity. Samuel was reviewing multiple network-related statuses at a time by accessing multiple icons provided by Wireshark. Samuel wanted to speed up his analysis process using the quick access feature, which could assist him in quickly accessing the frequently used items from the menu. Which of the following Wireshark menu assisted Samuel in the above scenario for quick access?",
+        "options": [
+            "A. Main toolbar",
+            "B. Packet list panel",
+            "C. Help",
+            "D. Lua"
+        ],
+        "correct_index": "A",
+        "explanation": "The main toolbar provides quick access to frequently used Wireshark functions."
+    },
+    {
+        "question_number": 96,
+        "question": "Which of the following types of suspicious traffic signature indicates that an attacker is making sniffing, brute forcing, or password-cracking attempts to break into the network?",
+        "options": [
+            "A. Informational",
+            "B. Reconnaissance",
+            "C. Unauthorized access",
+            "D. Denial of service"
+        ],
+        "correct_index": "B",
+        "explanation": "Sniffing, brute-forcing, and password cracking are all reconnaissance activities aimed at gathering information before an attack."
+    },
+    {
+        "question_number": 97,
+        "question": "Which of the following advantages of network traffic monitoring will be achieved by establishing SLAs and compliance applicable to users or consumers by providing complete infrastructure information while drafting the SLA?",
+        "options": [
+            "A. Minimizing risk",
+            "B. Proactive",
+            "C. Utilization",
+            "D. Optimization"
+        ],
+        "correct_index": "B",
+        "explanation": "Establishing SLAs and compliance *proactively* helps define service levels and address potential issues before they become problems."
+    },
+    {
+        "question_number": 98,
+        "question": "Kane, a security professional at an organization, was instructed to secure the organization's network from malicious activities. For this reason, Kane employed Wireshark to observe Bluetooth and IEEE 802.11 statistics on the organization's network. Identify the Wireshark menu used by Kane in the above scenario.",
+        "options": [
+            "A. Go",
+            "B. Analyze",
+            "C. Wireless",
+            "D. Telephony"
+        ],
+        "correct_index": "B",
+        "explanation": "The Analyze menu in Wireshark contains options for analyzing various protocols, including wireless (though older versions might have a dedicated \"Wireless\" menu)."
+    },
+    {
+        "question_number": 99,
+        "question": "Which of the following traffic signatures may indicate that attackers are trying to launch denial-of-service attacks on the organization's network?",
+        "options": [
+            "A. Ping sweep attempts",
+            "B. Port scan attempts",
+            "C. Ping of death attempts",
+            "D. DNS query attempts"
+        ],
+        "correct_index": "C",
+        "explanation": "A \"Ping of Death\" is a specific type of attack attempting to overwhelm a system with oversized ICMP packets."
+    },
+    {
+        "question_number": 100,
+        "question": "Network traffic monitoring detects applications that consume the maximum bandwidth and helps in reducing bandwidth consumption. It manages server bottleneck situations and other systems connected to the network. Identify the advantage of monitoring network traffic based on the above statements.",
+        "options": [
+            "A. Minimizing risk",
+            "B. Optimization",
+            "C. Utilization",
+            "D. Proactive"
+        ],
+        "correct_index": "B",
+        "explanation": "Identifying and addressing bandwidth bottlenecks is network *optimization*."
+    },
+    {
+        "question_number": 101,
+        "question": "Which of the following Wireshark menus contains options to display various statistic windows including media analysis, flow diagrams, and display protocol hierarchy statistics?",
+        "options": [
+            "A. Statistics",
+            "B. Capture",
+            "C. Analyze",
+            "D. Help"
+        ],
+        "correct_index": "A",
+        "explanation": "The Statistics menu is where you find various statistical views of captured network data."
+    },
+    {
+        "question_number": 102,
+        "question": "Which of the following Linux commands helps security specialists search for a specific string in a file?",
+        "options": [
+            "A. grep command",
+            "B. more command",
+            "C. less command",
+            "D. cat command"
+        ],
+        "correct_index": "A",
+        "explanation": "grep (Global Regular Expression Print) is used for searching text using patterns."
+    },
+    {
+        "question_number": 103,
+        "question": "Which of the following tools aggregates and analyzes log data, provides insights to quickly detect and respond to internal and external attacks, and simplifies threat management?",
+        "options": [
+            "A. Splunk",
+            "B. 7Zip",
+            "C. KeePass",
+            "D. Cryptoforge"
+        ],
+        "correct_index": "A",
+        "explanation": "Splunk is a widely used Security Information and Event Management (SIEM) tool for log management and analysis."
+    },
+    {
+        "question_number": 104,
+        "question": "Leon, a network administrator at an organization, was auditing logged data on David's official system from a remote location. In this process, Leon observed a suspicious entry in the log indicating that Microsoft Excel program was corrupted when David was trying to access it. Identify the type of logs audited by Leon in the above scenario.",
+        "options": [
+            "A. Application event log",
+            "B. Security event log",
+            "C. Setup event log",
+            "D. System event log"
+        ],
+        "correct_index": "A",
+        "explanation": "Application logs record events related to specific applications, such as Excel in this case."
+    },
+    {
+        "question_number": 105,
+        "question": "Which of the following Linux commands assists security professionals retrieve the last n number of characters from a given file?",
+        "options": [
+            "A. tail [-c] [n][filename]",
+            "B. tail [-n] [filename]",
+            "C. head [-n] [filename]",
+            "D. head [-c] [n][filename]"
+        ],
+        "correct_index": "A",
+        "explanation": "tail -c displays the last *characters*. tail -n displays the last *lines*."
+    },
+    {
+        "question_number": 106,
+        "question": "Identify the type of logging that concentrates on identifying and responding to activities such as threats, viruses, malware, and data loss.",
+        "options": [
+            "A. Security logging",
+            "B. Operational logging",
+            "C. Compliance logging",
+            "D. Application debug logging"
+        ],
+        "correct_index": "A",
+        "explanation": "Security logging focuses on security-related events."
+    },
+    {
+        "question_number": 107,
+        "question": "Which of the following Linux commands displays the first 10 lines from a given text file by default?",
+        "options": [
+            "A. head",
+            "B. tail",
+            "C. less",
+            "D. cat"
+        ],
+        "correct_index": "A",
+        "explanation": "head shows the beginning of a file (10 lines by default)."
+    },
+    {
+        "question_number": 108,
+        "question": "Which of the following types of information stored in Windows event log is a set of tags that define a type of event such as AuditFailure, AuditSuccess, Classic, Correlation Hint, Response Time, SQM, WDI Context, and WDI Diag?",
+        "options": [
+            "A. Level",
+            "B. Keywords",
+            "C. Operational code",
+            "D. Computer"
+        ],
+        "correct_index": "B",
+        "explanation": "Keywords are tags that categorize events."
+    },
+    {
+        "question_number": 109,
+        "question": "Travis, a security professional at an organization, was handling an incident that had occurred on the organization's intranet. In this process, he verified the incident response plan (IRP) to know the required activities to be performed based on the incident in order to prevent further damage to the organization. Identify the element of IRP that assisted Travis in preventing further damage in the above scenario.",
+        "options": [
+            "A. Escalation procedures",
+            "B. Contacts of IH&R team",
+            "C. Containment actions",
+            "D. Procedure for reporting"
+        ],
+        "correct_index": "C",
+        "explanation": "Containment actions are designed to limit the scope and impact of an incident."
+    },
+    {
+        "question_number": 110,
+        "question": "Identify the team that consists of a group of individuals who possess the skills to detect and analyze security incidents.",
+        "options": [
+            "A. Physical security staff",
+            "B. Information security team",
+            "C. IR custodians",
+            "D. Attorney"
+        ],
+        "correct_index": "B",
+        "explanation": "The information security team (or a dedicated incident response team) handles security incidents."
+    },
+    {
+        "question_number": 111,
+        "question": "Identify the incident triage step that involves gathering all required information to determine incident category, time required for resolving, and other criteria.",
+        "options": [
+            "A. Incident classification",
+            "B. Incident prioritization",
+            "C. Incident analysis and validation",
+            "D. Incident impact assessment"
+        ],
+        "correct_index": "C",
+        "explanation": "Analysis and validation involves gathering information to understand the incident."
+    },
+    {
+        "question_number": 112,
+        "question": "In which of the following IH&R steps do IH&R personnel perform activities such as incident documentation, incident impact analysis, policy review and revision, and incident disclosure?",
+        "options": [
+            "A. Notification",
+            "B. Containment",
+            "C. Eradication",
+            "D. Post-incident activities"
+        ],
+        "correct_index": "D",
+        "explanation": "These activities occur after the incident has been handled."
+    },
+    {
+        "question_number": 113,
+        "question": "Identify the individual who oversees all IR activities in an organization and is responsible for how the IH&R team functions.",
+        "options": [
+            "A. IR custodians",
+            "B. IT staff",
+            "C. PR specialist",
+            "D. IR officer"
+        ],
+        "correct_index": "D",
+        "explanation": "The IR officer (or incident response manager) leads the incident response effort."
+    },
+    {
+        "question_number": 114,
+        "question": "Identify the post-incident activity in which organizations share incident details to the respective stakeholders after consulting with the legal department.",
+        "options": [
+            "A. Incident disclosure",
+            "B. Incident impact assessment",
+            "C. Review and revise policies",
+            "D. Close the investigation"
+        ],
+        "correct_index": "A",
+        "explanation": "Incident disclosure involves communicating details about the incident."
+    },
+    {
+        "question_number": 115,
+        "question": "In which of the following steps of the IH&R process do incident handlers alert the service providers, developers, and manufacturers about the affected resources?",
+        "options": [
+            "A. Notification",
+            "B. Incident containment",
+            "C. Eradication",
+            "D. Recovery"
+        ],
+        "correct_index": "A",
+        "explanation": "Notification involves informing relevant parties."
+    },
+    {
+        "question_number": 116,
+        "question": "Leonidas, a forensic expert, was investigating an active computer that was executing various processes. Leonidas wanted to check whether this system was used in an incident that had occurred earlier. He started inspecting and gathering the contents of RAM, cache, and DLLs to identify incident signatures. Which of the following data acquisition methods has Leonidas initiated in the above scenario?",
+        "options": [
+            "A. Non-volatile data acquisition",
+            "B. Live data acquisition",
+            "C. Dead data acquisition",
+            "D. None of these"
+        ],
+        "correct_index": "B",
+        "explanation": "Live acquisition involves collecting data from a running system."
+    },
+    {
+        "question_number": 117,
+        "question": "Kendrick, a forensic investigator, was able to retrieve evidence from a device by recognizing the information of the card and the user through the level of access, configurations, and permissions. Identify the device utilized by Kendrick to obtain the evidence.",
+        "options": [
+            "A. Thumb drive",
+            "B. Surveillance camera",
+            "C. Biometric scanner",
+            "D. Router"
+        ],
+        "correct_index": "C",
+        "explanation": "Biometric scanners identify individuals based on unique physical characteristics, which are tied to access levels and permissions."
+    },
+    {
+        "question_number": 118,
+        "question": "Kas",
+        "options": [
+            "hton, a certified forensic expert, built a forensic lab for conducting a computer-based investigation. To make the investigation processes effective, he recruited experienced individuals and experts. Kashton then assigned job roles to each team member. Which of the following considerations is illustrated in the above scenario?",
+            "A. Human resource considerations",
+            "B. Physical and structural design considerations",
+            "C. Work area considerations",
+            "D. Physical security considerations"
+        ],
+        "correct_index": "A",
+        "explanation": "Recruiting and assigning roles relates to human resources."
+    },
+    {
+        "question_number": 119,
+        "question": "Which of the following is a legal document that demonstrates the progression of evidence as it travels from the original evidence location to the forensic laboratory?",
+        "options": [
+            "A. Chain of custody",
+            "B. Security policy",
+            "C. Risk management",
+            "D. Disaster recovery plan"
+        ],
+        "correct_index": "A",
+        "explanation": "The chain of custody documents the handling and control of evidence."
+    },
+    {
+        "question_number": 120,
+        "question": "Which of the following types of logs uses an audit trail to store data related to failed logins, passwords, resources accessed and allocated, date/time, and user identity?",
+        "options": [
+            "A. Security logs",
+            "B. Network logs",
+            "C. DNS logs",
+            "D. Web access logs"
+        ],
+        "correct_index": "A",
+        "explanation": "Security logs specifically track security-related events like logins and access attempts."
+    },
+    {
+        "question_number": 121,
+        "question": "Which of the following phases of the forensics investigation process involves reporting and documentation of all actions undertaken and the findings obtained during the investigation?",
+        "options": [
+            "A. Investigation phase",
+            "B. Pre-investigation phase",
+            "C. Post-investigation phase",
+            "D. Preparatory phase"
+        ],
+        "correct_index": "C",
+        "explanation": "Reporting and documentation occur after the investigation is complete."
+    },
+    {
+        "question_number": 122,
+        "question": "Which of the following types of cybercrime is an offensive activity in which a computer connected to the web is employed as a source point to damage an organization's reputation?",
+        "options": [
+            "A. Intellectual property theft",
+            "B. Cyber defamation",
+            "C. Data manipulation",
+            "D. Privilege escalation"
+        ],
+        "correct_index": "B",
+        "explanation": "Cyber defamation aims to damage reputation through online means."
+    },
+    {
+        "question_number": 123,
+        "question": "Which of the following goals of the business continuity plan insists organizations to retain important information such as vendor, client, and employee contacts that can be useful during an emergency in the organization?",
+        "options": [
+            "A. Restoring business conditions to pre-disaster levels",
+            "B. Maintaining vital documents and details",
+            "C. Minimizing infrastructural damage in the event of a disaster",
+            "D. Analyzing the potential risks and losses"
+        ],
+        "correct_index": "B",
+        "explanation": "Maintaining vital documents includes contact information for use during emergencies."
+    },
+    {
+        "question_number": 124,
+        "question": "In which of the following business continuity and disaster recovery activities do security professionals implement a set of actions after a disaster in order to assess business needs and reduce and limit the negative impacts of the disaster?",
+        "options": [
+            "A. Prevention",
+            "B. Response",
+            "C. Recovery",
+            "D. Restoration"
+        ],
+        "correct_index": "B",
+        "explanation": "Response is the immediate action taken *after* a disaster occurs."
+    },
+    {
+        "question_number": 125,
+        "question": "Which of the following terms is the maximum time frame for which an organization loses data after a major IT outage, and it determines the acceptable amount of data loss an enterprise can suffer in case of a disruption?",
+        "options": [
+            "A. Disaster recovery",
+            "B. Business continuity management",
+            "C. Recovery point objective",
+            "D. Recovery time objective"
+        ],
+        "correct_index": "C",
+        "explanation": "The Recovery Point Objective (RPO) defines the acceptable data loss in terms of time."
+    },
+    {
+        "question_number": 126,
+        "question": "Which of the following business continuity management (BCM) activities is the ability of an organization to respond under disaster, thereby minimizing the damage to its brand name, business operation, and revenue?",
+        "options": [
+            "A. Crisis management",
+            "B. Incident management",
+            "C. Contingency planning",
+            "D. Business recovery"
+        ],
+        "correct_index": "A",
+        "explanation": "Crisis management focuses on mitigating the impact of a disruptive event on the organization's reputation and business operations."
+    },
+    {
+        "question_number": 127,
+        "question": "Which of the following business continuity and disaster recovery activities aims to reduce the likelihood and impact of a disruptive event and calls for deterrent control strategies?",
+        "options": [
+            "A. Resumption",
+            "B. Restoration",
+            "C. Response",
+            "D. Prevention"
+        ],
+        "correct_index": "D",
+        "explanation": "Prevention focuses on stopping incidents from occurring in the first place."
+    },
+    {
+        "question_number": 128,
+        "question": "Which of the following is a plan to restore important support systems such as hardware, IT assets, and communications, in order to reduce business downtime and accelerate the restoration of business operations?",
+        "options": [
+            "A. Contingency planning",
+            "B. Business recovery",
+            "C. Emergency management",
+            "D. Disaster recovery"
+        ],
+        "correct_index": "D",
+        "explanation": "Disaster recovery focuses on restoring IT infrastructure and systems."
+    },
+    {
+        "question_number": 129,
+        "question": "Which of the following business continuity and disaster recovery activities involves the process of repairing the old site affected by a disaster or setting up a completely new alternate site to resume business operations?",
+        "options": [
+            "A. Prevention",
+            "B. Resumption",
+            "C. Restoration",
+            "D. Response"
+        ],
+        "correct_index": "C",
+        "explanation": "Restoration involves returning to a working state, either at the original site or a new one."
+    },
+    {
+        "question_number": 130,
+        "question": "In an organization, a security professional has identified few risks in the organization's IT infrastructure during the risk management process. As the severity level of the risks is acceptable, the security professional decided not to apply any of the treatment options available. Which of the following risk treatment options was demonstrated in the above scenario?",
+        "options": [
+            "A. Risk modification",
+            "B. Risk retention",
+            "C. Risk avoidance",
+            "D. Risk sharing"
+        ],
+        "correct_index": "B",
+        "explanation": "Risk retention means accepting the risk and not taking any action to mitigate it."
+    },
+    {
+        "question_number": 131,
+        "question": "Which of the following entities in the risk management team are considered as subject matter experts as they are responsible for developing and providing appropriate coaching material for the risk management process?",
+        "options": [
+            "A. Security awareness trainers",
+            "B. IT security practitioners",
+            "C. System and information owners",
+            "D. Business and functional managers"
+        ],
+        "correct_index": "B",
+        "explanation": "IT security practitioners have the technical expertise in risk management."
+    },
+    {
+        "question_number": 132,
+        "question": "A recent earthquake damaged an organization's critical assets such as databases and servers located in that geographical area. The natural threat caused severe damage to the assets and halted the organization's services for some time. Which of the following types of risks has the organization faced in the above scenario?",
+        "options": [
+            "A. Risks from legacy systems",
+            "B. Intellectual property theft",
+            "C. Risks from external sources",
+            "D. Risks from internal sources"
+        ],
+        "correct_index": "C",
+        "explanation": "Earthquakes are external events."
+    },
+    {
+        "question_number": 133,
+        "question": "Which of the following NIST risk management framework steps involve classifying the information system and the information processed, stored, and transmitted by a system according to potential worst cases, adverse impact to an organization's mission/business function, and a system?",
+        "options": [
+            "A. Categorize",
+            "B. Select",
+            "C. Implement",
+            "D. Assess"
+        ],
+        "correct_index": "A",
+        "explanation": "The \"Categorize\" step involves classifying information and systems."
+    },
+    {
+        "question_number": 134,
+        "question": "Keegan, a security team member, conducted risk assessment for the network and devices in the organization. After analyzing and prioritizing each risk, Keegan decided to take immediate action on the risks that may cause service disruption to the organization. Identify the risk level that needs immediate action to prevent service disruption.",
+        "options": [
+            "A. Moderate",
+            "B. High",
+            "C. Medium",
+            "D. Low"
+        ],
+        "correct_index": "B",
+        "explanation": "High risks require immediate attention."
+    },
+    {
+        "question_number": 135,
+        "question": "Which of the following techniques focuses on mapping the probability of occurrence for a specific event to the expected cost associated with the event?",
+        "options": [
+            "A. Quantitative risk analysis",
+            "B. Qualitative risk analysis",
+            "C. Risk review",
+            "D. Risk tracking"
+        ],
+        "correct_index": "A",
+        "explanation": "Quantitative analysis uses numerical values (costs and probabilities)."
+    },
+    {
+        "question_number": 136,
+        "question": "Which of the following risk management phases lists risks and their characteristics before such risks harm an organization?",
+        "options": [
+            "A. Risk identification",
+            "B. Risk prioritization",
+            "C. Risk treatment",
+            "D. Risk analysis"
+        ],
+        "correct_index": "A",
+        "explanation": "Risk identification is the process of discovering potential risks."
+    },
+    {
+        "question_number": 137,
+        "question": "Identify the NIST risk management framework step that involves continuously tracking changes to the information system for signs of attacks that may impact security controls, and regularly monitoring the security controls to access their effectiveness",
+        "options": [
+            "A. Categorize",
+            "B. Select",
+            "C. Implement",
+            "D. Monitor"
+        ],
+        "correct_index": "D",
+        "explanation": "The \"Monitor\" step involves ongoing observation and assessment of security controls."
+    }
+]
