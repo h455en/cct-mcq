@@ -1,0 +1,50 @@
+{
+	"plants": [
+		{
+			"name": "Argan (Argania spinosa)",
+			"proprietes": [
+				"Utile pour la peau",
+				"Soigne la chute des cheveux",
+				"Soigne les maladies de peau telles que l'eczéma",
+				"Soin pour le système immunitaire au niveau de la peau",
+				"Utile pour la santé de la peau et des ongles"
+			],
+			"partieUtile": "L'huile d'argan",
+			"utilisation": "En externe, on se masse avec cette huile la nuit une seule fois",
+			"treats": [
+				"Eczéma",
+				"Psoriasis"
+			]
+		},
+		{
+			"name": "Artichaut (Cynara cardunculus)",
+			"proprietes": [
+				"Renforce l'appétit",
+				"Nettoie le foie",
+				"Soigne les indigestions",
+				"Aide à la digestion des graisses",
+				"Baisse le taux de cholestérol et de graisses"
+			],
+			"partieUtile": "Les têtes florales et les pousses foliaires",
+			"utilisation": "Faire bouillir 20 grammes de feuilles séchées dans un demi-litre d'eau pendant 10 minutes. Filtrer et boire à raison d'un verre 10 minutes avant les repas deux fois par jour.",
+			"treats": [
+				"Indigestion",
+				"Cholestérol élevé"
+			]
+		}
+	],
+	"maladies": [
+		{
+			"name": "Bronchite (rhume et toux)",
+			"soignePar": [
+				"Réglisse",
+				"Propolis",
+				"Vitamine C",
+				"Citron",
+				"Échinacée",
+				"Thym"
+			],
+			"modeUtilisation": "Extraire liquide de réglisse, citron, propolis et échinacée - prendre une cuillère deux fois par jour"
+		}
+	]
+}
