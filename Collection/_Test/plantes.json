@@ -17,19 +17,225 @@
 			]
 		},
 		{
-			"name": "Artichaut (Cynara cardunculus)",
+			"name": "Prunier d'Afrique (Prunus africana)",
 			"proprietes": [
-				"Renforce l'appétit",
-				"Nettoie le foie",
-				"Soigne les indigestions",
-				"Aide à la digestion des graisses",
-				"Baisse le taux de cholestérol et de graisses"
+				"Renforce le corps",
+				"Nettoie le conduit urinaire",
+				"S'utilise pour soigner le gonflement de la prostate"
 			],
-			"partieUtile": "Les têtes florales et les pousses foliaires",
-			"utilisation": "Faire bouillir 20 grammes de feuilles séchées dans un demi-litre d'eau pendant 10 minutes. Filtrer et boire à raison d'un verre 10 minutes avant les repas deux fois par jour.",
+			"partieUtile": "L'écorce de la plante",
+			"utilisation": "Prendre deux gélules de sa poudre deux fois par jour au cours des repas.",
 			"treats": [
-				"Indigestion",
+				"Hypertrophie de la prostate"
+			]
+		},
+		{
+			"name": "Ronce commune ou mûrier des haies (Rubus fruticosus)",
+			"proprietes": [
+				"Soigne la bronchite",
+				"Diminue la température",
+				"Utile en cas de diarrhée",
+				"Utile contre le rhume et la toux",
+				"Renforce le système immunitaire"
+			],
+			"partieUtile": "Les fruits et les feuilles",
+			"utilisation": "Boire son jus trois fois par jour pour les inflammations. Préparation à base de graines de mûres dans de l'eau bouillante à jeun le matin pour soigner la diarrhée.",
+			"treats": [
+				"Bronchite",
+				"Diarrhée",
+				"Rhume"
+			]
+		},
+		{
+			"name": "Ail (Allium sativum)",
+			"proprietes": [
+				"Diminue le cholestérol et les graisses",
+				"Utile contre le diabète",
+				"Soigne l'athérosclérose et anticancéreux",
+				"Diminue la pression artérielle",
+				"Agit contre les crises cardiaques",
+				"Aide à digérer",
+				"Purifie l'intestin (expulse les vers)"
+			],
+			"partieUtile": "Les gousses",
+			"utilisation": "Prendre une gélule de poudre d'ail inodore trois fois par jour. Comprimés disponibles en pharmacie.",
+			"treats": [
+				"Cholestérol élevé",
+				"Diabète",
+				"Hypertension"
+			]
+		},
+		{
+			"name": "Ginkgo (Ginkgo biloba)",
+			"proprietes": [
+				"Renforce la circulation sanguine et la mémoire",
+				"Aide à réduire les varices",
+				"Stimulant de la libido",
+				"Stimule les fonctions cérébrales",
+				"Utile contre les bourdonnements d'oreille",
+				"Contre la paralysie"
+			],
+			"partieUtile": "Les feuilles",
+			"utilisation": "Sous forme de gélules pour varices : deux par jour. Comprimés pour fonctions cérébrales : un deux fois par jour.",
+			"treats": [
+				"Varices",
+				"Problèmes de mémoire",
+				"Acouphènes"
+			]
+		},
+		{
+			"name": "Ginseng indien (Withania somnifera)",
+			"proprietes": [
+				"Lutte contre le stress et les troubles psychologiques",
+				"Renforce les performances physiques",
+				"Stimule le désir sexuel",
+				"Contre les inflammations et le vieillissement",
+				"Combat l'arthrite et l'anémie",
+				"Augmente le nombre de spermatozoïdes"
+			],
+			"partieUtile": "Les racines",
+			"utilisation": "1-2 gélules/jour pour la libido. 1-2 comprimés/jour pendant 3 mois maximum.",
+			"treats": [
+				"Stress",
+				"Dépression",
+				"Infertilité masculine"
+			]
+		},
+		{
+			"name": "Ginseng de Sibérie (Eleutherococcus senticosus)",
+			"proprietes": [
+				"Renforce le système immunitaire",
+				"Améliore l'endurance",
+				"Protège contre le rhume",
+				"Fait baisser le taux de cholestérol",
+				"Bénéfique pour la prostate",
+				"Utile contre la dépression"
+			],
+			"partieUtile": "La racine",
+			"utilisation": "Deux gélules deux fois par jour après les repas.",
+			"treats": [
+				"Fatigue chronique",
+				"Dépression",
+				"Problèmes immunitaires"
+			]
+		},
+		{
+			"name": "Chrysanthème (Chrysanthemum)",
+			"proprietes": [
+				"Diminue le cholestérol",
+				"Aide à la digestion des graisses",
+				"Soigne le foie et la vésicule biliaire",
+				"Renforce et tonifie la circulation sanguine"
+			],
+			"partieUtile": "Les fleurs et la plante toute entière",
+			"utilisation": "Mettre une petite cuillère de fleurs dans une tasse d'eau bouillante. En prendre deux fois par jour avant les repas pour diminuer le cholestérol et soigner les maladies du foie et de la vésicule biliaire.",
+			"treats": [
+				"Cholestérol élevé",
+				"Problèmes hépatiques"
+			]
+		},
+		{
+			"name": "Ananas (Ananas comosus)",
+			"proprietes": [
+				"Aide à nettoyer le côlon et l'intestin",
+				"Traite les problèmes de ballonnements et de maux au bas-ventre",
+				"Très utile pour l'appareil digestif",
+				"Utile pour maigrir"
+			],
+			"partieUtile": "Le fruit et en particulier sa colonne intérieure et ses feuilles",
+			"utilisation": "On prend une petite cuillère de poudre du cœur du fruit dans un verre d'eau après le repas. On peut prendre une gélule de poudre d'ananas (broméline) après le repas chaque jour.",
+			"treats": [
+				"Ballonnements",
+				"Problèmes digestifs"
+			]
+		},
+		{
+			"name": "Olivier (Olea europaea)",
+			"proprietes": [
+				"Utiles pour les cas de diabète",
+				"Utiles pour les cas de constipations chroniques",
+				"Utile pour lutter contre la chute des cheveux",
+				"Utile contre l'hypertension artérielle",
+				"Baisse le taux de cholestérol"
+			],
+			"partieUtile": "Les feuilles et également les fruits",
+			"utilisation": "Mettre 20 feuilles séchées dans un demi-litre d'eau et faire bouillir 15 minutes. Filtrer et en boire trois fois par jour après les repas pour soigner le diabète et l'hypertension artérielle et pour faire baisser le taux de cholestérol dans le sang.",
+			"treats": [
+				"Diabète",
+				"Hypertension",
 				"Cholestérol élevé"
+			]
+		},
+		{
+			"name": "Camomille romaine (Chamaemelum nobile)",
+			"proprietes": [
+				"Lutte contre les problèmes de digestion",
+				"Empêche les crampes intestinales",
+				"Utile pour faire baisser le stress",
+				"Très utile contre l'eczéma et le psoriasis",
+				"Anxiolytique",
+				"Réduit les inflammations de la peau",
+				"Soigne les ulcères",
+				"Soigne les problèmes de contractions utérines"
+			],
+			"partieUtile": "Les fleurs",
+			"utilisation": "En interne : On met une cuillère de fleurs dans une tasse d'eau bouillante pendant dix minutes puis on filtre et on boit le matin ou avant de dormir. En externe : On utilise la poudre florale en crème sur les inflammations (eczéma).",
+			"treats": [
+				"Eczéma",
+				"Psoriasis",
+				"Ulcères",
+				"Stress"
+			]
+		},
+		{
+			"name": "Marjolaine (Origanum majorana)",
+			"proprietes": [
+				"Soigne l'asthme et la toux",
+				"Fait baisser la fièvre et soigne les maux de tête",
+				"Donne de l'appétit, aide à la digestion et réduit les gaz intestinaux",
+				"Utile pour système nerveux",
+				"Soigne les ulcères"
+			],
+			"partieUtile": "Les parties aériennes",
+			"utilisation": "Mettre l'équivalent d'une cuillère de poudre de fleurs de marjolaine dans une tasse d'eau bouillante pendant dix minutes, filtrer et en boire trois fois par jour.",
+			"treats": [
+				"Asthme",
+				"Toux",
+				"Ulcères",
+				"Problèmes digestifs"
+			]
+		},
+		{
+			"name": "Palmier de Floride ou sérénoa rampant (Serenoa repens)",
+			"proprietes": [
+				"Soigne le gonflement de la prostate et son inflammation",
+				"Augmente l'activité du corps",
+				"Stérilise et désinfecte les voies urinaires",
+				"Diurétique",
+				"Augmente la quantité de spermatozoïdes"
+			],
+			"partieUtile": "Les graines de couleur noire",
+			"utilisation": "Existe sous forme de gélules, en prendre une par jour.",
+			"treats": [
+				"Hypertrophie de la prostate",
+				"Problèmes urinaires"
+			]
+		},
+		{
+			"name": "Lin (Linum usitatissimum)",
+			"proprietes": [
+				"Soigne les maladies du cœur",
+				"Aide à la perte de poids",
+				"Empêche la constipation",
+				"Fait diminuer le cholestérol dans le sang",
+				"Renforce les os et soigne les maladies de peau"
+			],
+			"partieUtile": "Les graines et l'huile",
+			"utilisation": "En interne : mettre une cuillère de poudre de graines de lin dans un demi-litre d'eau bouillante puis filtrer et ajouter éventuellement du jus de citron. Boire trois fois par jour après les repas. En externe : Son huile soigne les hémorroïdes.",
+			"treats": [
+				"Cholestérol élevé",
+				"Constipation",
+				"Maladies cardiaques"
 			]
 		}
 	],
