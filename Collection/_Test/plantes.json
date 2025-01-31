@@ -241,7 +241,7 @@
 	],
 	"maladies": [
 		{
-			"name": "Bronchite (rhume et toux)",
+			"name": "Bronchite (le rhume et la toux)",
 			"soignePar": [
 				"Réglisse",
 				"Propolis",
@@ -250,7 +250,106 @@
 				"Échinacée",
 				"Thym"
 			],
-			"modeUtilisation": "Extraire liquide de réglisse, citron, propolis et échinacée - prendre une cuillère deux fois par jour"
+			"modeUtilisation": "Il existe un extrait liquide de réglisse, de citron, de propolis et d'échinacée. On en prend une grande cuillère deux fois par jour. La vitamine C : Anti-oxydant, protège des crises cardiaques et des rhumes, aide à absorber le fer et les autres minéraux, renforce les vaisseaux sanguins."
+		},
+		{
+			"name": "Dépression",
+			"soignePar": [
+				"Millepertuis",
+				"Ginseng sibérien",
+				"Citronnelle",
+				"Magnésium"
+			],
+			"modeUtilisation": "Sachets de thé composés de millepertuis, citronnelle et ginseng sibérien - 1 sachet 3 fois/jour. Gélules de magnésium : 1/jour après le dîner."
+		},
+		{
+			"name": "Diarrhée",
+			"soignePar": [
+				"Caroube",
+				"Riz",
+				"Thé vert",
+				"Camomille",
+				"Mûre",
+				"Genuévrier",
+				"Potassium"
+			],
+			"modeUtilisation": "Mélange de thé vert, marjolaine et camomille en infusion 3 fois/jour. Comprimés de potassium 1/jour après repas."
+		},
+		{
+			"name": "Otite (inflammation de l'oreille)",
+			"soignePar": [
+				"Échinacée",
+				"Millepertuis",
+				"Ginkgo",
+				"Zinc"
+			],
+			"modeUtilisation": "Gélules de ginkgo (1 cuillère 3 fois/jour) et zinc (2/jour)."
+		},
+		{
+			"name": "Eczéma",
+			"soignePar": [
+				"Huile de bourrache",
+				"Salsepareille",
+				"Camomille",
+				"Iode"
+			],
+			"modeUtilisation": "Crème de camomille 2 fois/jour. Gélules d'iode 2 fois/jour après repas."
+		},
+		{
+			"name": "Élévation du taux de cholestérol",
+			"soignePar": [
+				"Graine de lin",
+				"Ail",
+				"Fenugrec",
+				"Gingembre",
+				"Spiruline",
+				"Piment rouge",
+				"Lécithine"
+			],
+			"modeUtilisation": "1 cuillère de graines de lin dans du jus de citron quotidiennement. Gélules de lécithine 3 fois/jour."
+		},
+		{
+			"name": "Élévation du taux de graisses",
+			"soignePar": [
+				"Fenugrec",
+				"Thé vert",
+				"Ail",
+				"Plantain",
+				"Huile de foie de morue"
+			],
+			"modeUtilisation": "Huile de foie de morue : 1 cuillère/jour à jeun pour inflammation articulaire et côlon."
+		},
+		{
+			"name": "Insomnie",
+			"soignePar": [
+				"Valériane",
+				"Citronnelle",
+				"Menthe",
+				"Passiflore",
+				"Mélatonine"
+			],
+			"modeUtilisation": "Mélange thé valériane/passiflore/mélisse - 1 sachet 10min infusion avant coucher."
+		},
+		{
+			"name": "Hypertension",
+			"soignePar": [
+				"Fenouil",
+				"Gingembre",
+				"Huile de foie de morue",
+				"Magnésium",
+				"Huile d'olive"
+			],
+			"modeUtilisation": "Décoction de 20 feuilles d'olivier 3 fois/jour. Gélules de feuilles d'olivier 3 fois/jour."
+		},
+		{
+			"name": "Hypertrophie de la prostate",
+			"soignePar": [
+				"Palmier de Floride",
+				"Prunier d'Afrique",
+				"Ginseng sibérien",
+				"Pollen d'abeille"
+			],
+			"modeUtilisation": "1 cuillère de pollen d'abeille dans du jus de citron 2 fois/jour."
 		}
 	]
 }
