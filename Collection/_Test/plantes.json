@@ -638,6 +638,361 @@
 				"Toux",
 				"Problèmes digestifs"
 			]
+		},
+		{
+			"name": "Tilleul (Tilia)",
+			"proprietes": [
+				"Tonifie le cœur",
+				"Utile contre l'épilepsie",
+				"Facilite le sommeil",
+				"Soigne les varices",
+				"Lutte contre l'angoisse"
+			],
+			"partieUtile": "Les feuilles et les fleurs",
+			"utilisation": "Infusion de fleurs le soir pour le sommeil. Trois sachets par jour pour l'éjaculation précoce."
+		},
+		{
+			"name": "Bourrache (Borago officinalis)",
+			"proprietes": [
+				"Renforce le système sanguin",
+				"Utile contre les rhumatismes",
+				"Soigne l'eczéma",
+				"Régule les glandes endocrines"
+			],
+			"partieUtile": "Graines et branches fleuries",
+			"utilisation": "Gélules deux fois par jour avant les repas pour la peau."
+		},
+		{
+			"name": "Aubépine (Crataegus)",
+			"proprietes": [
+				"Renforce la circulation sanguine",
+				"Facilite le sommeil",
+				"Protège le cœur"
+			],
+			"partieUtile": "Graines et branches fleuries",
+			"utilisation": "Gélule le soir avant de dormir. Sachets de thé trois fois/jour."
+		},
+		{
+			"name": "Onagre bisannuelle (Oenothera biennis)",
+			"proprietes": [
+				"Lutte contre le diabète",
+				"Soulage les douleurs menstruelles",
+				"Diminue le stress",
+				"Adoucit la peau"
+			],
+			"partieUtile": "Graines",
+			"utilisation": "Deux gélules après chaque repas pour les règles."
+		},
+		{
+			"name": "Passiflore (Passiflora)",
+			"proprietes": [
+				"Contre l'insomnie",
+				"Réduit le stress",
+				"Calme la colère"
+			],
+			"partieUtile": "Parties aériennes",
+			"utilisation": "Gélule trois fois/jour. Infusion matin et soir."
+		},
+		{
+			"name": "Safran (Crocus sativus)",
+			"proprietes": [
+				"Renforce la circulation sanguine",
+				"Soigne les rhumatismes",
+				"Soulage les poussées dentaires"
+			],
+			"partieUtile": "Stigmates des fleurs",
+			"utilisation": "Pommade pour enfants. Utilisation en cuisine."
+		},
+		{
+			"name": "Gingembre (Zingiber officinale)",
+			"proprietes": [
+				"Purifie le côlon",
+				"Lutte contre le cholestérol",
+				"Stimulant sexuel",
+				"Antibactérien"
+			],
+			"partieUtile": "Rhizomes",
+			"utilisation": "Infusion avec miel contre le rhume. Gélules pour digestion."
+		},
+		{
+			"name": "Fenouil (Foeniculum vulgare)",
+			"proprietes": [
+				"Contre l'hypertension",
+				"Soigne les brûlures d'estomac",
+				"Aide à perdre du poids"
+			],
+			"partieUtile": "Fruits et racines",
+			"utilisation": "Décoction de fruits pour le côlon."
+		},
+		{
+			"name": "Avoine cultivée (Avena sativa L.)",
+			"proprietes": [
+				"Augmente la libido",
+				"Soigne les rhumatismes",
+				"Lutte contre le diabète"
+			],
+			"partieUtile": "Grains et parties aériennes",
+			"utilisation": "Infusion trois fois/jour. Gélules pour libido."
+		},
+		{
+			"name": "Thé vert (Camellia sinensis)",
+			"proprietes": [
+				"Prévient le cancer",
+				"Brûle les graisses",
+				"Protège la peau"
+			],
+			"partieUtile": "Feuilles",
+			"utilisation": "Infusion matin et après-midi pour maigrir."
+		},
+		{
+			"name": "Spiruline (Arthrospira)",
+			"proprietes": [
+				"Riche en protéines",
+				"Combatt le cancer",
+				"Augmente la libido"
+			],
+			"partieUtile": "Algue entière",
+			"utilisation": "9 gélules/jour (3 matin, 3 midi, 3 soir)."
+		},
+		{
+			"name": "Réglisse (Glycyrrhiza glabra)",
+			"proprietes": [
+				"Soigne les ulcères",
+				"Nettoie le côlon",
+				"Lutte contre la fatigue"
+			],
+			"partieUtile": "Racine",
+			"utilisation": "Sachets de thé trois fois/jour. Décoction de racine."
+		},
+		{
+			"name": "Pin sylvestre (Pinus sylvestris)",
+			"proprietes": [
+				"Contre la toux sévère",
+				"Soigne les allergies",
+				"Traite les rhumes"
+			],
+			"partieUtile": "Parties aériennes",
+			"utilisation": "Gélules après repas. Pommade nocturne."
+		},
+		{
+			"name": "Euphraise (Euphrasia)",
+			"proprietes": [
+				"Soigne les infections oculaires",
+				"Réduit les larmoiements",
+				"Lutte contre la fatigue oculaire"
+			],
+			"partieUtile": "Parties aériennes",
+			"utilisation": "Gouttes oculaires trois fois/jour."
+		},
+		{
+			"name": "Ficaire (Ficaria verna)",
+			"proprietes": [
+				"Traite les hémorroïdes",
+				"Renforce les veines",
+				"Améliore la circulation"
+			],
+			"partieUtile": "Racines et feuilles",
+			"utilisation": "Pommade deux fois/jour. Suppositoires."
+		},
+		{
+			"name": "Mélisse officinale (Melissa officinalis)",
+			"proprietes": [
+				"Améliore la mémoire",
+				"Anti-dépressive",
+				"Facilite le sommeil"
+			],
+			"partieUtile": "Racines et feuilles",
+			"utilisation": "Gélules avant repas. Sachets de thé contre dépression."
+		},
+		{
+			"name": "Genevrier (Juniperus)",
+			"proprietes": [
+				"Antiseptique urinaire",
+				"Calme les douleurs",
+				"Élimine les calculs rénaux"
+			],
+			"partieUtile": "Fruits et feuilles",
+			"utilisation": "Infusion de 25 fruits/jour. Huile pour peau."
+		},
+		{
+			"name": "Guarana (Paullinia cupana)",
+			"proprietes": [
+				"Coupe-faim naturel",
+				"Brûleur de graisses",
+				"Tonifiant énergétique"
+			],
+			"partieUtile": "Graines",
+			"utilisation": "Gélules trois fois/jour pendant les repas."
+		},
+		{
+			"name": "Gotu kola (Centella asiatica)",
+			"proprietes": [
+				"Stimule la libido",
+				"Soigne les varices",
+				"Lutte contre la fatigue"
+			],
+			"partieUtile": "Graines et feuilles",
+			"utilisation": "Gélules trois fois/jour pour mémoire et circulation."
+		},
+		{
+			"name": "Piment (Capsicum frutescens)",
+			"proprietes": [
+				"Contre le diabète",
+				"Soulage les rhumatismes",
+				"Stimule l'appétit"
+			],
+			"partieUtile": "Fruits et feuilles",
+			"utilisation": "Pommade contre douleurs articulaires le soir."
+		},
+		{
+			"name": "Salsepareille (Smilax aspera L.)",
+			"proprietes": [
+				"Traite l'impuissance",
+				"Soigne le psoriasis",
+				"Donne de l'énergie"
+			],
+			"partieUtile": "Racines",
+			"utilisation": "Deux gélules trois fois/jour pour vitalité."
+		},
+		{
+			"name": "Soja (Glycine max)",
+			"proprietes": [
+				"Prévient l'ostéoporose",
+				"Régule le cholestérol",
+				"Aide la santé féminine"
+			],
+			"partieUtile": "Graines",
+			"utilisation": "Gélules trois fois/jour après repas."
+		},
+		{
+			"name": "Marronnier commun (Aesculus hippocastanum L.)",
+			"proprietes": [
+				"Soigne les varices",
+				"Traite les hémorroïdes",
+				"Réduit les démangeaisons"
+			],
+			"partieUtile": "Graines et bogues",
+			"utilisation": "Gélules trois fois/jour. Pommade externe."
+		},
+		{
+			"name": "Girofle (Syzygium aromaticum)",
+			"proprietes": [
+				"Soigne les problèmes dentaires",
+				"Traite les ulcères buccaux",
+				"Aide la digestion"
+			],
+			"partieUtile": "Boutons floraux (clous)",
+			"utilisation": "Infusion de clous. Pommade dentaire."
+		},
+		{
+			"name": "Ortie (Urtica)",
+			"proprietes": [
+				"Contre l'anémie",
+				"Soigne les rhumatismes",
+				"Baisse la glycémie"
+			],
+			"partieUtile": "Feuilles, racines et graines",
+			"utilisation": "Infusion trois fois/jour. Gélules après repas."
+		},
+		{
+			"name": "Curcuma (Curcuma longa)",
+			"proprietes": [
+				"Protège le foie",
+				"Anti-inflammatoire puissant",
+				"Prévient le cancer"
+			],
+			"partieUtile": "Rhizomes",
+			"utilisation": "Gélules trois fois/jour. Comprimés pour calculs rénaux."
+		},
+		{
+			"name": "Plantain des Indes (Plantago ovata)",
+			"proprietes": [
+				"Lutte contre l'obésité",
+				"Soigne la constipation",
+				"Régule le diabète"
+			],
+			"partieUtile": "Tégument du fruit",
+			"utilisation": "Cuillère de sirop/jour. Mélangé avec du beurre."
+		},
+		{
+			"name": "Harpagophyton (Harpagophytum procumbens)",
+			"proprietes": [
+				"Analgésique naturel",
+				"Contre la sciatique",
+				"Soulage l'arthrite"
+			],
+			"partieUtile": "Racines",
+			"utilisation": "Gélules quatre fois/jour en cas de crise."
+		},
+		{
+			"name": "Sauge officinale (Salvia officinalis)",
+			"proprietes": [
+				"Régule les règles",
+				"Réduit la transpiration",
+				"Antibactérien"
+			],
+			"partieUtile": "Feuilles",
+			"utilisation": "Infusion trois fois/jour. Gélules l'après-midi."
+		},
+		{
+			"name": "Balsamier (Commiphora)",
+			"proprietes": [
+				"Soigne la mauvaise haleine",
+				"Traite les aphtes",
+				"Antibactérien buccal"
+			],
+			"partieUtile": "Gomme (myrrhe)",
+			"utilisation": "Bain de bouche trois fois/jour."
+		},
+		{
+			"name": "Chiendent (Elytrigia)",
+			"proprietes": [
+				"Diurétique puissant",
+				"Élimine les calculs",
+				"Soulage la prostate"
+			],
+			"partieUtile": "Parties aériennes",
+			"utilisation": "Infusion trois fois/jour. Gélules quotidiennes."
+		},
+		{
+			"name": "Valériane officinale (Valeriana officinalis)",
+			"proprietes": [
+				"Contre l'insomnie",
+				"Réduit l'anxiété",
+				"Baisse la tension artérielle"
+			],
+			"partieUtile": "Racines",
+			"utilisation": "Deux gélules avant le coucher. Comprimés trois fois/jour."
+		},
+		{
+			"name": "Menthe (Mentha)",
+			"proprietes": [
+				"Aide la digestion",
+				"Soigne le rhume",
+				"Réduit l'insomnie"
+			],
+			"partieUtile": "Feuilles",
+			"utilisation": "Infusion trois fois/jour. Inhalation contre rhume."
+		},
+		{
+			"name": "Pissenlit (Taraxacum sp.)",
+			"proprietes": [
+				"Protège le foie",
+				"Lutte contre l'obésité",
+				"Détoxifie l'organisme"
+			],
+			"partieUtile": "Racines et feuilles",
+			"utilisation": "Sachets de thé après repas. Gélules pour foie."
+		},
+		{
+			"name": "Eucalyptus (Eucalyptus)",
+			"proprietes": [
+				"Contre l'asthme",
+				"Soigne la sinusite",
+				"Réduit la fièvre"
+			],
+			"partieUtile": "Feuilles",
+			"utilisation": "Gélules trois fois/jour. Inhalations pour sinusite."
 		}
 	],
 	"maladies": [
